@@ -1,10 +1,5 @@
 *************************
 Classes are Monday-Friday 10AM-2PM.
-Here's the link for classes from Monday onwards.
-
-https://unitec-ac-nz.zoom.us/j/99532928119?pwd=wGaUyE0Lq9UQhpoALP5XJpwpEcT0zt.1
-
-
 
 Unitec Email: swamys05@myunitec.ac.nz
 *************************
