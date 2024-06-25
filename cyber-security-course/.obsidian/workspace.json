@@ -167,9 +167,19 @@
             "id": "3db77891281d5ee4",
             "type": "leaf",
             "state": {
+              "type": "image",
+              "state": {
+                "file": "Pasted image 20240625173558.png"
+              }
+            }
+          },
+          {
+            "id": "73b216118ffe9d5f",
+            "type": "leaf",
+            "state": {
               "type": "markdown",
               "state": {
-                "file": "Notes - Daily/To-Do's.md",
+                "file": "Test.md",
                 "mode": "source",
                 "source": false
               }
@@ -200,7 +210,7 @@
             }
           }
         ],
-        "currentTab": 13
+        "currentTab": 14
       },
       {
         "id": "2fb0e64401067da2",
@@ -293,7 +303,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Notes - Daily/To-Do's.md",
+                "file": "Test.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -310,7 +320,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Notes - Daily/To-Do's.md",
+                "file": "Test.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -333,7 +343,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Notes - Daily/To-Do's.md"
+                "file": "Test.md"
               }
             }
           }
@@ -354,8 +364,11 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "3db77891281d5ee4",
+  "active": "73b216118ffe9d5f",
   "lastOpenFiles": [
+    "Pasted image 20240625173558.png",
+    "Test.md",
+    "Notes - Daily/To-Do's.md",
     "1.2 Resources.md",
     "1.0 Cyber Security.md",
     "Notes - Daily/Week 01/20240625 - Tuesday.md",
@@ -363,9 +376,7 @@
     "Notes - Daily/Various.md",
     "Notes - Daily/Week 01/20240624 - Monday.md",
     "3.0 Operating Systems (Desktops, Laptops).md",
-    "Pasted image 20240625173558.png",
     "Pasted image 20240625173221.png",
-    "Notes - Daily/To-Do's.md",
     "5.0 Operating Systems (Servers).md",
     "1.4 Notes.md",
     "2.0 Types of Attacks.md",
