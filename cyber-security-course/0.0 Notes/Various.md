@@ -4,8 +4,7 @@ Here's the link for classes from Monday onwards.
 
 https://unitec-ac-nz.zoom.us/j/99532928119?pwd=wGaUyE0Lq9UQhpoALP5XJpwpEcT0zt.1
 
-Meeting ID: 995 3292 8119
-Passcode: 131725
+
 
 Unitec Email: swamys05@myunitec.ac.nz
 *************************

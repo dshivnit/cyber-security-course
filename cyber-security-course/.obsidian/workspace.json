@@ -226,7 +226,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "0.0 Notes/Week 01/20240625 - Tuesday.md",
+                "file": "0.0 Notes/Various.md",
                 "mode": "source",
                 "source": false
               }
@@ -299,7 +299,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "0.0 Notes/Week 01/20240625 - Tuesday.md",
+                "file": "3.0 Operating Systems (Desktops & Laptops)/3.0 Operating Systems (Desktops, Laptops).md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -316,7 +316,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "0.0 Notes/Week 01/20240625 - Tuesday.md",
+                "file": "3.0 Operating Systems (Desktops & Laptops)/3.0 Operating Systems (Desktops, Laptops).md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -339,7 +339,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "0.0 Notes/Week 01/20240625 - Tuesday.md"
+                "file": "3.0 Operating Systems (Desktops & Laptops)/3.0 Operating Systems (Desktops, Laptops).md"
               }
             }
           }
@@ -360,15 +360,15 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "a97d20ab7840ae9f",
+  "active": "3db77891281d5ee4",
   "lastOpenFiles": [
+    "0.0 Notes/Various.md",
     "3.0 Operating Systems (Desktops & Laptops)/3.0 Operating Systems (Desktops, Laptops).md",
+    "1.0 Cyber Security Course/1.0 Cyber Security.md",
     "0.0 Notes/Week 01/20240625 - Tuesday.md",
     "4.0 Operating Systems (Handheld Portables)/4.0 Operating Systems (Handheld Portables).md",
-    "1.0 Cyber Security Course/1.0 Cyber Security.md",
     "0.0 Notes/Questions.md",
     "0.0 Notes/To-Do's.md",
-    "0.0 Notes/Various.md",
     "6.0 Central Processing Units (CPU's)/6.0 Central Processing Units (CPU's).md",
     "6.0 Central Processing Units (CPU's)",
     "3.0 Operating Systems (Desktops & Laptops)/3.1 Windows (10 & 11).md",
