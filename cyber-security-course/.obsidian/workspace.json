@@ -6,6 +6,7 @@
       {
         "id": "4bc0d5af393be1f6",
         "type": "tabs",
+        "dimension": 50.848765432098766,
         "children": [
           {
             "id": "973c7ff657a0d974",
@@ -13,7 +14,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "1.3 Certifications.md",
+                "file": "1.0 Cyber Security Course/1.3 Certifications.md",
                 "mode": "source",
                 "source": false
               }
@@ -25,7 +26,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "1.0 Cyber Security.md",
+                "file": "1.0 Cyber Security Course/1.0 Cyber Security.md",
                 "mode": "source",
                 "source": false
               }
@@ -37,7 +38,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Notes - Daily/Various.md",
+                "file": "0.0 Notes/Various.md",
                 "mode": "source",
                 "source": false
               }
@@ -49,7 +50,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "1.0 Cyber Security.md",
+                "file": "1.0 Cyber Security Course/1.0 Cyber Security.md",
                 "mode": "source",
                 "source": false
               }
@@ -61,7 +62,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Notes - Daily/Week 01/20240625 - Tuesday.md",
+                "file": "0.0 Notes/Week 01/20240625 - Tuesday.md",
                 "mode": "source",
                 "source": false
               }
@@ -73,7 +74,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Notes - Daily/Week 01/20240625 - Tuesday.md",
+                "file": "0.0 Notes/Week 01/20240625 - Tuesday.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +86,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "3.0 Operating Systems (Desktops, Laptops).md",
+                "file": "3.0 Operating Systems (Desktops & Laptops)/3.0 Operating Systems (Desktops, Laptops).md",
                 "mode": "source",
                 "source": false
               }
@@ -97,7 +98,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "3.1 Windows (10 & 11).md",
+                "file": "3.0 Operating Systems (Desktops & Laptops)/3.1 Windows (10 & 11).md",
                 "mode": "source",
                 "source": false
               }
@@ -109,7 +110,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "3.2 Linux.md",
+                "file": "3.0 Operating Systems (Desktops & Laptops)/3.2 Linux.md",
                 "mode": "source",
                 "source": false
               }
@@ -121,7 +122,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "3.3 MacOS.md",
+                "file": "3.0 Operating Systems (Desktops & Laptops)/3.3 MacOS.md",
                 "mode": "source",
                 "source": false
               }
@@ -133,7 +134,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "4.0 Operating Systems (Handheld Portables).md",
+                "file": "4.0 Operating Systems (Handheld Portables)/4.0 Operating Systems (Handheld Portables).md",
                 "mode": "source",
                 "source": false
               }
@@ -145,7 +146,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "4.1 Android.md",
+                "file": "4.0 Operating Systems (Handheld Portables)/4.1 Android.md",
                 "mode": "source",
                 "source": false
               }
@@ -157,7 +158,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "4.2 iOS.md",
+                "file": "4.0 Operating Systems (Handheld Portables)/4.2 iOS.md",
                 "mode": "source",
                 "source": false
               }
@@ -169,7 +170,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "1.2 Resources.md",
+                "file": "0.0 Notes/To-Do's.md",
                 "mode": "source",
                 "source": false
               }
@@ -181,7 +182,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "1.3 Certifications.md",
+                "file": "1.0 Cyber Security Course/1.3 Certifications.md",
                 "mode": "source",
                 "source": false
               }
@@ -193,7 +194,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "1.2 Resources.md",
+                "file": "1.0 Cyber Security Course/1.2 Resources.md",
                 "mode": "source",
                 "source": false
               }
@@ -205,6 +206,7 @@
       {
         "id": "2fb0e64401067da2",
         "type": "tabs",
+        "dimension": 49.151234567901234,
         "children": [
           {
             "id": "e17ff2a0b2e26585",
@@ -212,7 +214,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Notes - Daily/Week 01/20240625 - Tuesday.md",
+                "file": "0.0 Notes/Week 01/20240625 - Tuesday.md",
                 "mode": "source",
                 "source": false
               }
@@ -277,7 +279,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 318.5
   },
   "right": {
     "id": "ef67db9403793248",
@@ -293,7 +295,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "1.2 Resources.md",
+                "file": "0.0 Notes/To-Do's.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -310,7 +312,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "1.2 Resources.md",
+                "file": "0.0 Notes/To-Do's.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -333,7 +335,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "1.2 Resources.md"
+                "file": "0.0 Notes/To-Do's.md"
               }
             }
           }
@@ -342,7 +344,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 262.5
+    "width": 247.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -356,34 +358,40 @@
   },
   "active": "3db77891281d5ee4",
   "lastOpenFiles": [
-    "Notes - Daily/To-Do's.md",
-    "3.0 Operating Systems (Desktops, Laptops).md",
-    "Pasted image 20240625173558.png",
+    "2.0 Types of Attacks/2.0 Types of Attacks.md",
+    "Images Used",
+    "5.0 Operating Systems (Servers)",
+    "4.0 Operating Systems (Handheld Portables)",
+    "2.0 Types of Attacks",
+    "3.0 Operating Systems (Desktops & Laptops)",
+    "1.0 Cyber Security Course/1.0 Cyber Security.md",
+    "1.0 Cyber Security Course",
+    "0.0 Notes/Various.md",
+    "0.0 Notes/To-Do's.md",
+    "1.0 Cyber Security Course/1.2 Resources.md",
+    "3.0 Operating Systems (Desktops & Laptops)/3.0 Operating Systems (Desktops, Laptops).md",
+    "Images Used/Pasted image 20240625173558.png",
     "Test.md",
-    "1.2 Resources.md",
-    "1.0 Cyber Security.md",
-    "Notes - Daily/Week 01/20240625 - Tuesday.md",
-    "Notes - Daily/Week 01/20240626 - Wednesday.md",
-    "Notes - Daily/Various.md",
-    "Notes - Daily/Week 01/20240624 - Monday.md",
+    "0.0 Notes/Week 01/20240625 - Tuesday.md",
+    "0.0 Notes/Week 01/20240626 - Wednesday.md",
+    "0.0 Notes/Week 01/20240624 - Monday.md",
     "Pasted image 20240625173221.png",
-    "5.0 Operating Systems (Servers).md",
-    "1.4 Notes.md",
-    "2.0 Types of Attacks.md",
-    "3.1 Windows (10 & 11).md",
-    "1.5 Questions.md",
-    "4.0 Operating Systems (Handheld Portables).md",
-    "4.2 iOS.md",
-    "4.1 Android.md",
-    "3.3 MacOS.md",
-    "3.2 Linux.md",
+    "5.0 Operating Systems (Servers)/5.0 Operating Systems (Servers).md",
+    "1.0 Cyber Security Course/1.4 Notes.md",
+    "3.0 Operating Systems (Desktops & Laptops)/3.1 Windows (10 & 11).md",
+    "1.0 Cyber Security Course/1.5 Questions.md",
+    "4.0 Operating Systems (Handheld Portables)/4.0 Operating Systems (Handheld Portables).md",
+    "4.0 Operating Systems (Handheld Portables)/4.2 iOS.md",
+    "4.0 Operating Systems (Handheld Portables)/4.1 Android.md",
+    "3.0 Operating Systems (Desktops & Laptops)/3.3 MacOS.md",
+    "3.0 Operating Systems (Desktops & Laptops)/3.2 Linux.md",
     "Untitled.canvas",
-    "Notes - Daily/Week 01/20240623_Monday.txt",
-    "Notes - Daily/Week 01/20240624_Tuesday.txt",
-    "Notes - Daily/Week 01",
-    "1.1 Course Team.md",
-    "1.3 Certifications.md",
-    "Notes - Daily",
+    "0.0 Notes/Week 01/20240623_Monday.txt",
+    "0.0 Notes/Week 01/20240624_Tuesday.txt",
+    "0.0 Notes/Week 01",
+    "1.0 Cyber Security Course/1.1 Course Team.md",
+    "1.0 Cyber Security Course/1.3 Certifications.md",
+    "0.0 Notes",
     "Welcome.md"
   ]
 }

@@ -1,0 +1,21 @@
+- Go through all the TODO's and TAKEAWAY's from each class
+- Tidy up this Vault
+	- Make folders for each of the main headings (ie 1.0, 2.0 etc)
+		- This has been completed
+	- Link the folder contents respectively to where they belong in other pages
+	- Put a bloody space between paragraphs... lel (make it look cleaner)
+- Test to see if the Vault is accessible on other Rigs (via OneDrive)
+- Tidy up Brave Bookmarks and replicate them on other Browsers when complete (mainly the Learning folder created for this course and merge it into the main that is currently there)
+- Tidy up all URL's linked in each page to make sure they are following the Obisidian standard (wtf that is..)
+- Review the 'website' with NoScript, uBlock and Brave
+	- Check the URL's of the blocked ones
+		- This has been completed, however, ongoing adjustments when using all three. Brave seems to have its own functionality (similar to that of both NoScript and uBlock) built into it which you can tweak. 
+	- Be Bold, Be Brave.
+		- This is ongoing.. wtf :3 
+- Check out links from:
+	- Clark: [https://skillsforall.com/course/introduction-to-cybersecurity?utm_source=netacad.com&utm_medium=referral&utm_campaign=intro-cybersecurity&courseLang=en-US&userlogin=0&userlogin=0](https://skillsforall.com/course/introduction-to-cybersecurity?utm_source=netacad.com&utm_medium=referral&utm_campaign=intro-cybersecurity&courseLang=en-US&userlogin=0&userlogin=0 "https://skillsforall.com/course/introduction-to-cybersecurity?utm_source=netacad.com&utm_medium=referral&utm_campaign=intro-cybersecurity&courseLang=en-US&userlogin=0&userlogin=0")
+		- Peel through this where and when you want
+	- Randle: [https://stackoverflow.com/questions/14347206/what-are-the-differences-between-virtual-memory-and-physical-memory](https://stackoverflow.com/questions/14347206/what-are-the-differences-between-virtual-memory-and-physical-memory "https://stackoverflow.com/questions/14347206/what-are-the-differences-between-virtual-memory-and-physical-memory")
+		- Add this to the relevant Topic in this Vault
+	- Blair: [https://join.replit.com/python](https://join.replit.com/python "https://join.replit.com/python")
+		- Get ya Python on!
