@@ -167,9 +167,11 @@
             "id": "3db77891281d5ee4",
             "type": "leaf",
             "state": {
-              "type": "image",
+              "type": "markdown",
               "state": {
-                "file": "Pasted image 20240625173558.png"
+                "file": "1.2 Resources.md",
+                "mode": "source",
+                "source": false
               }
             }
           },
@@ -291,6 +293,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "1.2 Resources.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -307,6 +310,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "1.2 Resources.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -329,7 +333,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Test.md"
+                "file": "1.2 Resources.md"
               }
             }
           }
@@ -350,18 +354,18 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "cba70bc0aa0f21a9",
+  "active": "3db77891281d5ee4",
   "lastOpenFiles": [
+    "Notes - Daily/To-Do's.md",
+    "3.0 Operating Systems (Desktops, Laptops).md",
     "Pasted image 20240625173558.png",
     "Test.md",
-    "Notes - Daily/To-Do's.md",
     "1.2 Resources.md",
     "1.0 Cyber Security.md",
     "Notes - Daily/Week 01/20240625 - Tuesday.md",
     "Notes - Daily/Week 01/20240626 - Wednesday.md",
     "Notes - Daily/Various.md",
     "Notes - Daily/Week 01/20240624 - Monday.md",
-    "3.0 Operating Systems (Desktops, Laptops).md",
     "Pasted image 20240625173221.png",
     "5.0 Operating Systems (Servers).md",
     "1.4 Notes.md",

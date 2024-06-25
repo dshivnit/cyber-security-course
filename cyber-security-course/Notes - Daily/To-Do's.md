@@ -7,4 +7,6 @@
 - Tidy up Brave Bookmarks and replicate them on other Browsers when complete (mainly the Learning folder created for this course and merge it into the main that is currently there)
 - Perhaps start sharing this Obsidian Vault (as a .md file?) on GitHub (private preferably)
 - Tidy up all URL's linked in each page to make sure they are following the Obisidian standard (wtf that is..)
+- Review the 'website' with NoScript, uBlock and Brave
+	- Check the URL's of the blocked ones
 - 
