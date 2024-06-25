@@ -1,0 +1,73 @@
+
+##---------------------------------
+Dila - introduction and some orientation
+- First course if four weeks long
+- Level 5
+- Industry placement at the end of the first four weeks
+
+Kris Pritchard
+- Level 5 & 6 course
+- 10:00 teach for an hour
+- 10 min break 
+- Break after every one hour
+- Half hour lunch break mid way through the day 
+- Will setup a Discord server later today
+- Teaching style is informal > jump in if you have a question (you're welcome to interrupt!)
+- More interactive of a teaching style > using Zoom > sharing screens and with Kris annotating
+    
+- Source fourge was used pre-2008 for project collaboration whereas now GitHub is now the standard
+- GitHub was created by Linus Trovalds
+- For version management with the outdated systems/platforms prior to GitHub
+- GitHub a social network for developers
+- MS spent several billion to acquire GitHub
+- 95-98% of software developed by Teams have involved GitHub
+- GitLab, SourceHeart, and more > ask Kris if you want to know more
+- If you're defending against attacks/threats > GitHub would be the place to go to see what exists, what's being worked on, issues, and so on
+- VisualStudio has been an IDE for many years (VisualStudio Code)
+- Went over MFA and OTP (One Time Pad is what Kris called it - I thought it was One Time Password.. o_O ) 
+
+- Go through the various Repositories in Kris-Classes GitHub organisation (the pinned ones)
+- github.com/trending (check it out sometime!)
+- github.com/topics 
+
+- Kris uses Obisian (he'll show us) for note taking
+- Acronyms will be used
+- CLI
+- GUI
+- TUI (Textual User Interface)
+
+- Tools
+- NMAP (to enumerate a bunch of different servers that are sitting on the same network as you | when you run it it will tell you that there are "servers running on this network, running on these IP addresses and these Ports, sockets | creator: Theodore, had a mailing list called BugTrack, vulnerabilities were identified and people would go and research more into it or update their systems/software etc, a few thousand people were in it, only, 90s to around 2008ish/2013ish or so, 2013 he closed it down
+
+- https://pauljerimy.com/security-certification-roadmap/
+- Certifications starting with G are from GIAC (Global Information Assurance Certification)
+- OSCP (Offensive Security Certified Professional)
+
+- Interviewing is a skill > practice, practice, practice.
+- OWASP, KiwiCon (KawaiCon) - small meetups that get together 
+- Kris will get us links to these when the Discord Server is setup
+- DefCon (hackers united lolol)
+
+- Kurl (Software) > to connect to URLs to download content | Now integrated into so many different pieces of software around the world | daniel@haxx.se | Any software that uses Kurl has the copyright that mentions the @haxx.se email address that the creator had made back in the day (people when they see this think he's hacked them and email him ... lel)
+
+- SSL (Secure Sockets Layer) had been renamed to TLS (Transport Layer Security)
+
+- https://attack.mitre.org/
+- Topics and techniques used by attackers and defenders
+
+- https://replit.com/
+- Allows you to use a text editor to run commands without having the systems installed on your computer
+- #<shell>/$ git clone 'url'   --> (URL from any GitHub repository, repository has to be made public in GitHub)
+- readme.md (.md file extensions are Markdown files | a way to annotate your text | 
+
+- Code Review in GitHub
+- Developers will change code >> Code Reviewers will then acknowledge if the change is appropriate and allow it to be pushed through
+
+- Staged release of changes made to a system
+- There can be potential security vulnerabilities in these types of releases >> which is why this Course has come about being
+- Deployment process
+##---------------------------------
+KEY TAKEAWAYS
+- Play around with GitHub (click all the buttons, see what happens)
+- Anything that is dangerous is highlighted in red (danger zone)
+##---------------------------------
