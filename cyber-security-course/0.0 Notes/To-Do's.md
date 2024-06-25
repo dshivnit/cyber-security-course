@@ -6,6 +6,7 @@
 	- Put a bloody space between paragraphs... lel (make it look cleaner)
 - Test to see if the Vault is accessible on other Rigs (via OneDrive)
 - Tidy up Brave Bookmarks and replicate them on other Browsers when complete (mainly the Learning folder created for this course and merge it into the main that is currently there)
+- Adjust other browsers to disable Javascript by default on all websites
 - Tidy up all URL's linked in each page to make sure they are following the Obisidian standard (wtf that is..)
 - Review the 'website' with NoScript, uBlock and Brave
 	- Check the URL's of the blocked ones

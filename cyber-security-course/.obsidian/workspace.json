@@ -170,7 +170,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "0.0 Notes/To-Do's.md",
+                "file": "3.0 Operating Systems (Desktops & Laptops)/3.0 Operating Systems (Desktops, Laptops).md",
                 "mode": "source",
                 "source": false
               }
@@ -224,8 +224,12 @@
             "id": "a97d20ab7840ae9f",
             "type": "leaf",
             "state": {
-              "type": "graph",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "0.0 Notes/Week 01/20240625 - Tuesday.md",
+                "mode": "source",
+                "source": false
+              }
             }
           }
         ],
@@ -295,7 +299,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "0.0 Notes/To-Do's.md",
+                "file": "0.0 Notes/Week 01/20240625 - Tuesday.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -312,7 +316,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "0.0 Notes/To-Do's.md",
+                "file": "0.0 Notes/Week 01/20240625 - Tuesday.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -335,7 +339,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "0.0 Notes/To-Do's.md"
+                "file": "0.0 Notes/Week 01/20240625 - Tuesday.md"
               }
             }
           }
@@ -356,31 +360,33 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "3db77891281d5ee4",
+  "active": "a97d20ab7840ae9f",
   "lastOpenFiles": [
+    "3.0 Operating Systems (Desktops & Laptops)/3.0 Operating Systems (Desktops, Laptops).md",
+    "0.0 Notes/Week 01/20240625 - Tuesday.md",
+    "4.0 Operating Systems (Handheld Portables)/4.0 Operating Systems (Handheld Portables).md",
+    "1.0 Cyber Security Course/1.0 Cyber Security.md",
+    "0.0 Notes/Questions.md",
+    "0.0 Notes/To-Do's.md",
+    "0.0 Notes/Various.md",
+    "6.0 Central Processing Units (CPU's)/6.0 Central Processing Units (CPU's).md",
+    "6.0 Central Processing Units (CPU's)",
+    "3.0 Operating Systems (Desktops & Laptops)/3.1 Windows (10 & 11).md",
     "2.0 Types of Attacks/2.0 Types of Attacks.md",
+    "0.0 Notes/Week 01/20240626 - Wednesday.md",
     "Images Used",
     "5.0 Operating Systems (Servers)",
     "4.0 Operating Systems (Handheld Portables)",
     "2.0 Types of Attacks",
     "3.0 Operating Systems (Desktops & Laptops)",
-    "1.0 Cyber Security Course/1.0 Cyber Security.md",
     "1.0 Cyber Security Course",
-    "0.0 Notes/Various.md",
-    "0.0 Notes/To-Do's.md",
     "1.0 Cyber Security Course/1.2 Resources.md",
-    "3.0 Operating Systems (Desktops & Laptops)/3.0 Operating Systems (Desktops, Laptops).md",
     "Images Used/Pasted image 20240625173558.png",
     "Test.md",
-    "0.0 Notes/Week 01/20240625 - Tuesday.md",
-    "0.0 Notes/Week 01/20240626 - Wednesday.md",
     "0.0 Notes/Week 01/20240624 - Monday.md",
     "Pasted image 20240625173221.png",
     "5.0 Operating Systems (Servers)/5.0 Operating Systems (Servers).md",
     "1.0 Cyber Security Course/1.4 Notes.md",
-    "3.0 Operating Systems (Desktops & Laptops)/3.1 Windows (10 & 11).md",
-    "1.0 Cyber Security Course/1.5 Questions.md",
-    "4.0 Operating Systems (Handheld Portables)/4.0 Operating Systems (Handheld Portables).md",
     "4.0 Operating Systems (Handheld Portables)/4.2 iOS.md",
     "4.0 Operating Systems (Handheld Portables)/4.1 Android.md",
     "3.0 Operating Systems (Desktops & Laptops)/3.3 MacOS.md",
@@ -391,7 +397,6 @@
     "0.0 Notes/Week 01",
     "1.0 Cyber Security Course/1.1 Course Team.md",
     "1.0 Cyber Security Course/1.3 Certifications.md",
-    "0.0 Notes",
     "Welcome.md"
   ]
 }
