@@ -238,7 +238,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "0.0 Cyber Security Course/Notes/To-Do's.md",
+                "file": "0.0 Cyber Security Course/Course Team.md",
                 "mode": "source",
                 "source": false
               }
@@ -372,13 +372,14 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "cba70bc0aa0f21a9",
+  "active": "c976a62d86d83421",
   "lastOpenFiles": [
-    "2.0 Operating Systems/Operating Systems.md",
+    "0.0 Cyber Security Course/Course Team.md",
     "5.0 Networking/5.0 Networking.md",
+    "0.0 Cyber Security Course/Notes/To-Do's.md",
+    "2.0 Operating Systems/Operating Systems.md",
     "3.0 Central Processing Units (CPU's)/Central Processing Units (CPU's).md",
     "0.0 Cyber Security Course/Notes/Week 01/20240626 - Wednesday.md",
-    "0.0 Cyber Security Course/Notes/To-Do's.md",
     "0.0 Cyber Security Course/Commands.md",
     "0.0 Cyber Security Course/Resources.md",
     "0.0 Cyber Security Course/Cyber Security Course.md",
@@ -401,7 +402,6 @@
     "2.0 Operating Systems/2.2 Portable Handheld Portables/2.2.1 Android.md",
     "2.0 Operating Systems/2.1 Desktops & Laptops/2.1.3 MacOS.md",
     "2.0 Operating Systems/2.1 Desktops & Laptops/2.1.2 Linux.md",
-    "2.0 Operating Systems/2.1 Desktops & Laptops/2.1.1 Windows (10 & 11).md",
     "3.0 Operating Systems (Desktops & Laptops)/3.2 Portable Handheld Portables/Untitled",
     "2.0 Operating Systems/2.2 Portable Handheld Portables",
     "2.0 Operating Systems/2.1 Desktops & Laptops",

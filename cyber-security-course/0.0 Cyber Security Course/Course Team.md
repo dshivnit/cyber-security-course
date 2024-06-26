@@ -37,7 +37,7 @@ Samoan
 
 Felila Kapoa
 - AUT Bachelor of Science (wasn't for her)
-- - Samoan
+- Samoan
 - Image scanner and also did some warehousing in the past
 - Likes this course because of Kris' background
 
