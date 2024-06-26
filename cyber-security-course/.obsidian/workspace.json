@@ -170,7 +170,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "0.0 Cyber Security Course/Cyber Security Course.md",
+                "file": "0.0 Cyber Security Course/Notes/Week 01/20240627 - Thursday.md",
                 "mode": "source",
                 "source": false
               }
@@ -194,14 +194,14 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "0.0 Cyber Security Course/Resources.md",
+                "file": "0.0 Cyber Security Course/Notes/Week 01/20240627 - Thursday.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
         ],
-        "currentTab": 13
+        "currentTab": 15
       },
       {
         "id": "2fb0e64401067da2",
@@ -236,16 +236,11 @@
             "id": "dfc9d5fd06cbd758",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "0.0 Cyber Security Course/Course Team.md",
-                "mode": "source",
-                "source": false
-              }
+              "type": "graph",
+              "state": {}
             }
           }
-        ],
-        "currentTab": 2
+        ]
       }
     ],
     "direction": "vertical"
@@ -311,7 +306,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "0.0 Cyber Security Course/Cyber Security Course.md",
+                "file": "0.0 Cyber Security Course/Notes/Week 01/20240627 - Thursday.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -328,7 +323,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "0.0 Cyber Security Course/Cyber Security Course.md",
+                "file": "0.0 Cyber Security Course/Notes/Week 01/20240627 - Thursday.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -351,7 +346,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "0.0 Cyber Security Course/Cyber Security Course.md"
+                "file": "0.0 Cyber Security Course/Notes/Week 01/20240627 - Thursday.md"
               }
             }
           }
@@ -372,21 +367,22 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "c976a62d86d83421",
+  "active": "bd224fb460d78abb",
   "lastOpenFiles": [
-    "0.0 Cyber Security Course/Notes/Notes.md",
+    "0.0 Cyber Security Course/Course Team.md",
+    "0.0 Cyber Security Course/Notes/Week 01/20240627 - Thursday.md",
+    "0.0 Cyber Security Course/Resources.md",
+    "0.0 Cyber Security Course/Notes/Week 01/20240625 - Tuesday.md",
+    "0.0 Cyber Security Course/Notes/To-Do's.md",
     "0.0 Cyber Security Course/Cyber Security Course.md",
+    "3.0 Central Processing Units (CPU's)/Central Processing Units (CPU's).md",
+    "0.0 Cyber Security Course/Notes/Notes.md",
     "5.0 Networking/Networking.md",
     "4.0 Memory/Memory.md",
-    "0.0 Cyber Security Course/Course Team.md",
-    "0.0 Cyber Security Course/Notes/To-Do's.md",
     "2.0 Operating Systems/Operating Systems.md",
-    "3.0 Central Processing Units (CPU's)/Central Processing Units (CPU's).md",
     "0.0 Cyber Security Course/Notes/Week 01/20240626 - Wednesday.md",
     "0.0 Cyber Security Course/Commands.md",
-    "0.0 Cyber Security Course/Resources.md",
     "0.0 Cyber Security Course/Notes/Tools.md",
-    "0.0 Cyber Security Course/Notes/Week 01/20240625 - Tuesday.md",
     "5.0 Networking",
     "5.0 Networking.md",
     "3.0 Central Processing Units (CPU's)/3.1 AMD CPUs.md",
@@ -394,7 +390,6 @@
     "3.0 Central Processing Units (CPU's)/AMD",
     "2.0 Operating Systems/2.1 Desktops & Laptops/2.1.0 Operating Systems (Desktops & Laptops).md",
     "2.0 Operating Systems/2.2 Portable Handheld Portables/2.2.0 Operating Systems (Handheld Portables).md",
-    "0.0 Cyber Security Course/Notes/Week 01/20240627 - Thursday.md",
     "0.0 Cyber Security Course/Notes/Various.md",
     "2.0 Operating Systems/2.3 Servers/2.3.0 Operating Systems (Servers).md",
     "2.0 Operating Systems/2.2 Portable Handheld Portables/3.2.3 Windows Phone.md",

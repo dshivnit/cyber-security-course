@@ -75,6 +75,7 @@ Maraea Dewes
  - Chemical and construction engineering
  - Honours was in the use of AI and identifying flow details
  - Worked in IP Lore and web development and software engineering
+ - Used to work in IP and software patenting
 
 Reuben 
 - 2010 MacOS machine (chugging along)
