@@ -272,4 +272,9 @@ TO DO and Terminologies:
 		- Install OpenVPN
 		- Configure it to speak with the HackTheBox system
 			- Hopefully this bypasses that 2-hour countdown (Kris mentioned something along the lines of this)
+- Add the AppSec Event to the Calendar
+	- https://appsec.org.nz/conference/
+	- OWASP New Zealand Day 2024
+		3 - 6 September 2024
+		Auckland University of Technology (AUT) City Campus
 ##---------------------------------
