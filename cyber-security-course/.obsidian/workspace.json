@@ -170,7 +170,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "3.0 Operating Systems (Desktops & Laptops)/3.0 Operating Systems (Desktops, Laptops).md",
+                "file": "0.0 Notes/Week 01/20240626 - Wednesday.md",
                 "mode": "source",
                 "source": false
               }
@@ -226,7 +226,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "0.0 Notes/Various.md",
+                "file": "0.0 Notes/Week 01/20240626 - Wednesday.md",
                 "mode": "source",
                 "source": false
               }
@@ -299,7 +299,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "0.0 Notes/Various.md",
+                "file": "0.0 Notes/Week 01/20240626 - Wednesday.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -316,7 +316,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "0.0 Notes/Various.md",
+                "file": "0.0 Notes/Week 01/20240626 - Wednesday.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -339,7 +339,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "0.0 Notes/Various.md"
+                "file": "0.0 Notes/Week 01/20240626 - Wednesday.md"
               }
             }
           }
@@ -362,13 +362,14 @@
   },
   "active": "a97d20ab7840ae9f",
   "lastOpenFiles": [
+    "1.0 Cyber Security Course/1.2 Resources.md",
     "0.0 Notes/Week 01/20240626 - Wednesday.md",
+    "0.0 Notes/Questions.md",
     "0.0 Notes/Week 01/20240625 - Tuesday.md",
     "0.0 Notes/Various.md",
     "3.0 Operating Systems (Desktops & Laptops)/3.0 Operating Systems (Desktops, Laptops).md",
     "1.0 Cyber Security Course/1.0 Cyber Security.md",
     "4.0 Operating Systems (Handheld Portables)/4.0 Operating Systems (Handheld Portables).md",
-    "0.0 Notes/Questions.md",
     "0.0 Notes/To-Do's.md",
     "6.0 Central Processing Units (CPU's)/6.0 Central Processing Units (CPU's).md",
     "6.0 Central Processing Units (CPU's)",
@@ -380,7 +381,6 @@
     "2.0 Types of Attacks",
     "3.0 Operating Systems (Desktops & Laptops)",
     "1.0 Cyber Security Course",
-    "1.0 Cyber Security Course/1.2 Resources.md",
     "Images Used/Pasted image 20240625173558.png",
     "Test.md",
     "0.0 Notes/Week 01/20240624 - Monday.md",
