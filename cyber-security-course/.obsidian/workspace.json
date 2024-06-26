@@ -226,14 +226,26 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "0.0 Cyber Security Course/Resources.md",
+                "file": "0.0 Cyber Security Course/Notes/To-Do's.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "dfc9d5fd06cbd758",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "0.0 Cyber Security Course/Commands.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -299,7 +311,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "0.0 Cyber Security Course/Notes/Week 01/20240626 - Wednesday.md",
+                "file": "0.0 Cyber Security Course/Commands.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -316,7 +328,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "0.0 Cyber Security Course/Notes/Week 01/20240626 - Wednesday.md",
+                "file": "0.0 Cyber Security Course/Commands.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -339,7 +351,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "0.0 Cyber Security Course/Notes/Week 01/20240626 - Wednesday.md"
+                "file": "0.0 Cyber Security Course/Commands.md"
               }
             }
           }
@@ -360,13 +372,14 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "c976a62d86d83421",
+  "active": "dfc9d5fd06cbd758",
   "lastOpenFiles": [
+    "0.0 Cyber Security Course/Notes/Week 01/20240626 - Wednesday.md",
     "0.0 Cyber Security Course/Notes/To-Do's.md",
+    "0.0 Cyber Security Course/Resources.md",
     "0.0 Cyber Security Course/Cyber Security Course.md",
     "0.0 Cyber Security Course/Notes/Tools.md",
     "0.0 Cyber Security Course/Notes/Notes.md",
-    "0.0 Cyber Security Course/Resources.md",
     "0.0 Cyber Security Course/Notes/Week 01/20240625 - Tuesday.md",
     "5.0 Networks/5.0 Networks.md",
     "5.0 Networks",
@@ -378,7 +391,6 @@
     "2.0 Operating Systems/Operating Systems.md",
     "2.0 Operating Systems/2.1 Desktops & Laptops/2.1.0 Operating Systems (Desktops & Laptops).md",
     "2.0 Operating Systems/2.2 Portable Handheld Portables/2.2.0 Operating Systems (Handheld Portables).md",
-    "0.0 Cyber Security Course/Notes/Week 01/20240626 - Wednesday.md",
     "0.0 Cyber Security Course/Notes/Week 01/20240627 - Thursday.md",
     "0.0 Cyber Security Course/Notes/Various.md",
     "4.0 Memory/4.0 Memory.md",

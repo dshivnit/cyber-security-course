@@ -32,7 +32,12 @@
 	[AMD Opteron A1100 series](https://en.wikipedia.org/wiki/List_of_AMD_Opteron_processors#Opteron_A1100-series_%22Seattle%22_(28nm) "List of AMD Opteron processors")
 	Look into that further
 - Expand CPU basics
-	
+- Sort the bookmarks made so far into a logical manner (Tidy house is better!)
+- [https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/removing-sensitive-data-from-a-repository](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/removing-sensitive-data-from-a-repository "https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/removing-sensitive-data-from-a-repository") - check this out from Josh and secure the previous repo versions from Wed 26/06/24 -- for the sake of experience (also, cheers for the share Josh!! Ya absolute legend!  o/ )
+	- bfg-repo-cleaner may need a bash environment
+	- Setup a VM in VirtualBox
+	- OR WSL! That Kris had mentioned
+		- 
 
 
 
