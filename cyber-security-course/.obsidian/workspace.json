@@ -299,7 +299,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "1.0 Cyber Security Course/1.2 Resources.md",
+                "file": "0.0 Notes/Week 01/20240626 - Wednesday.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -316,7 +316,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "1.0 Cyber Security Course/1.2 Resources.md",
+                "file": "0.0 Notes/Week 01/20240626 - Wednesday.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -339,7 +339,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "1.0 Cyber Security Course/1.2 Resources.md"
+                "file": "0.0 Notes/Week 01/20240626 - Wednesday.md"
               }
             }
           }
@@ -360,12 +360,12 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "a97d20ab7840ae9f",
+  "active": "3db77891281d5ee4",
   "lastOpenFiles": [
+    "1.0 Cyber Security Course/1.2 Resources.md",
     "1.0 Cyber Security Course/1.0 Cyber Security.md",
     "0.0 Notes/Week 01/20240626 - Wednesday.md",
     "2.0 Types of Attacks/2.0 Types of Attacks.md",
-    "1.0 Cyber Security Course/1.2 Resources.md",
     "0.0 Notes/Questions.md",
     "0.0 Notes/Week 01/20240625 - Tuesday.md",
     "0.0 Notes/Various.md",

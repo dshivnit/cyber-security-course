@@ -73,9 +73,6 @@ Knowledge Half-life
 - Kris: Technical books have a half-life due to technology advancing at the rate that it is and new standards coming into place
 - Half of what was relevant in the past, may or may not be relevant in the present
 
-File Redirection (in bash):
-- 
-
 COMMANDS:
 - pwd - print working directory
 - cd - change directory (cd "argument/switch/parameter")
