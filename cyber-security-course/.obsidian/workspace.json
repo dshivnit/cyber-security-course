@@ -38,7 +38,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "99.99 Notes/Various.md",
+                "file": "0.0 Cyber Security Course/Notes/Various.md",
                 "mode": "source",
                 "source": false
               }
@@ -62,7 +62,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "99.99 Notes/Week 01/20240625 - Tuesday.md",
+                "file": "0.0 Cyber Security Course/Notes/Week 01/20240625 - Tuesday.md",
                 "mode": "source",
                 "source": false
               }
@@ -74,7 +74,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "99.99 Notes/Week 01/20240625 - Tuesday.md",
+                "file": "0.0 Cyber Security Course/Notes/Week 01/20240625 - Tuesday.md",
                 "mode": "source",
                 "source": false
               }
@@ -170,7 +170,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "0.0 Cyber Security Course/Cyber Security Course.md",
+                "file": "0.0 Cyber Security Course/Notes/Notes.md",
                 "mode": "source",
                 "source": false
               }
@@ -214,7 +214,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "99.99 Notes/Week 01/20240625 - Tuesday.md",
+                "file": "0.0 Cyber Security Course/Notes/Week 01/20240625 - Tuesday.md",
                 "mode": "source",
                 "source": false
               }
@@ -226,7 +226,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "99.99 Notes/Week 01/20240625 - Tuesday.md",
+                "file": "0.0 Cyber Security Course/Notes/Week 01/20240625 - Tuesday.md",
                 "mode": "source",
                 "source": false
               }
@@ -299,7 +299,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "0.0 Cyber Security Course/Cyber Security Course.md",
+                "file": "0.0 Cyber Security Course/Notes/Notes.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -316,7 +316,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "0.0 Cyber Security Course/Cyber Security Course.md",
+                "file": "0.0 Cyber Security Course/Notes/Notes.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -339,7 +339,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "0.0 Cyber Security Course/Cyber Security Course.md"
+                "file": "0.0 Cyber Security Course/Notes/Notes.md"
               }
             }
           }
@@ -360,8 +360,9 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "3db77891281d5ee4",
+  "active": "cba70bc0aa0f21a9",
   "lastOpenFiles": [
+    "0.0 Cyber Security Course/Cyber Security Course.md",
     "4.0 Memory/4.0 Memory.md",
     "3.0 Central Processing Units (CPU's)/Central Processing Units (CPU's).md",
     "2.0 Operating Systems/2.3 Servers/2.3.0 Operating Systems (Servers).md",
@@ -377,30 +378,29 @@
     "1.0 Types of Attacks/Types of Attacks.md",
     "0.0 Cyber Security Course/Certifications.md",
     "0.0 Cyber Security Course/Resources.md",
-    "0.0 Cyber Security Course/Cyber Security Course.md",
     "0.0 Cyber Security Course/Course Team.md",
-    "99.99 Notes/Notes.md",
-    "99.99 Notes/To-Do's.md",
-    "99.99 Notes/Various.md",
-    "99.99 Notes/Week 01/20240625 - Tuesday.md",
-    "99.99 Notes/Terminologies.md",
-    "99.99 Notes/Commands.md",
-    "99.99 Notes/Week 01/20240626 - Wednesday.md",
+    "0.0 Cyber Security Course/Notes/Notes.md",
+    "0.0 Cyber Security Course/Notes/To-Do's.md",
+    "0.0 Cyber Security Course/Notes/Various.md",
+    "0.0 Cyber Security Course/Notes/Week 01/20240625 - Tuesday.md",
+    "0.0 Cyber Security Course/Notes/Terminologies.md",
+    "0.0 Cyber Security Course/Notes/Commands.md",
+    "0.0 Cyber Security Course/Notes/Week 01/20240626 - Wednesday.md",
     "3.0 Operating Systems (Desktops & Laptops)/3.2 Portable Handheld Portables/Untitled",
     "2.0 Operating Systems/2.2 Portable Handheld Portables",
     "2.0 Operating Systems/2.1 Desktops & Laptops",
-    "99.99 Notes/Week 01/20240627 - Thursday.md",
-    "Images Used/Pasted image 20240626151911.png",
+    "0.0 Cyber Security Course/Notes/Week 01/20240627 - Thursday.md",
+    "99.99 Images Used/Pasted image 20240626151911.png",
     "4.0 Memory",
     "0.0 Notes/Questions.md",
-    "Images Used/Pasted image 20240626151914.png",
+    "99.99 Images Used/Pasted image 20240626151914.png",
     "3.0 Central Processing Units (CPU's)",
-    "Images Used",
+    "99.99 Images Used",
     "2.0 Operating Systems/2.3 Servers",
     "4.0 Operating Systems (Handheld Portables)",
     "1.0 Types of Attacks",
     "2.0 Operating Systems",
-    "Images Used/Pasted image 20240625173558.png",
+    "99.99 Images Used/Pasted image 20240625173558.png",
     "Pasted image 20240625173221.png",
     "Untitled.canvas"
   ]
