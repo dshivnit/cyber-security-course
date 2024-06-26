@@ -170,7 +170,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "3.0 Central Processing Units (CPU's)/Central Processing Units (CPU's).md",
+                "file": "Networking/5.0 Networking.md",
                 "mode": "source",
                 "source": false
               }
@@ -311,7 +311,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "3.0 Central Processing Units (CPU's)/Central Processing Units (CPU's).md",
+                "file": "Networking/5.0 Networking.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -328,7 +328,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "3.0 Central Processing Units (CPU's)/Central Processing Units (CPU's).md",
+                "file": "Networking/5.0 Networking.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -351,7 +351,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "3.0 Central Processing Units (CPU's)/Central Processing Units (CPU's).md"
+                "file": "Networking/5.0 Networking.md"
               }
             }
           }
@@ -374,8 +374,8 @@
   },
   "active": "c976a62d86d83421",
   "lastOpenFiles": [
-    "2.0 Operating Systems/Operating Systems.md",
     "3.0 Central Processing Units (CPU's)/Central Processing Units (CPU's).md",
+    "2.0 Operating Systems/Operating Systems.md",
     "0.0 Cyber Security Course/Notes/Week 01/20240626 - Wednesday.md",
     "0.0 Cyber Security Course/Notes/To-Do's.md",
     "0.0 Cyber Security Course/Commands.md",
@@ -384,8 +384,8 @@
     "0.0 Cyber Security Course/Notes/Tools.md",
     "0.0 Cyber Security Course/Notes/Notes.md",
     "0.0 Cyber Security Course/Notes/Week 01/20240625 - Tuesday.md",
-    "5.0 Networks/5.0 Networks.md",
-    "5.0 Networks",
+    "Networking/5.0 Networking.md",
+    "Networking",
     "5.0 Networking.md",
     "3.0 Central Processing Units (CPU's)/3.1 AMD CPUs.md",
     "1.0 Types of Attacks/Types of Attacks.md",
