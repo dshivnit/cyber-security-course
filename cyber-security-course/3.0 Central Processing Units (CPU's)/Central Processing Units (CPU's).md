@@ -1,6 +1,9 @@
 - AMD
 - Intel
-- *List others here ie RTOS, others*
+- Qualcomm
+- Exynos
+- MediaTek
+
 
 - *Describe general basics*
 	- CPU Cache

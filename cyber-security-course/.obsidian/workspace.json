@@ -170,7 +170,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "0.0 Cyber Security Course/Notes/Week 01/20240626 - Wednesday.md",
+                "file": "3.0 Central Processing Units (CPU's)/Central Processing Units (CPU's).md",
                 "mode": "source",
                 "source": false
               }
@@ -311,7 +311,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "0.0 Cyber Security Course/Notes/To-Do's.md",
+                "file": "3.0 Central Processing Units (CPU's)/Central Processing Units (CPU's).md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -328,7 +328,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "0.0 Cyber Security Course/Notes/To-Do's.md",
+                "file": "3.0 Central Processing Units (CPU's)/Central Processing Units (CPU's).md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -351,7 +351,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "0.0 Cyber Security Course/Notes/To-Do's.md"
+                "file": "3.0 Central Processing Units (CPU's)/Central Processing Units (CPU's).md"
               }
             }
           }
@@ -372,11 +372,13 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "dfc9d5fd06cbd758",
+  "active": "c976a62d86d83421",
   "lastOpenFiles": [
-    "0.0 Cyber Security Course/Commands.md",
+    "2.0 Operating Systems/Operating Systems.md",
+    "3.0 Central Processing Units (CPU's)/Central Processing Units (CPU's).md",
     "0.0 Cyber Security Course/Notes/Week 01/20240626 - Wednesday.md",
     "0.0 Cyber Security Course/Notes/To-Do's.md",
+    "0.0 Cyber Security Course/Commands.md",
     "0.0 Cyber Security Course/Resources.md",
     "0.0 Cyber Security Course/Cyber Security Course.md",
     "0.0 Cyber Security Course/Notes/Tools.md",
@@ -385,11 +387,9 @@
     "5.0 Networks/5.0 Networks.md",
     "5.0 Networks",
     "5.0 Networking.md",
-    "3.0 Central Processing Units (CPU's)/Central Processing Units (CPU's).md",
     "3.0 Central Processing Units (CPU's)/3.1 AMD CPUs.md",
     "1.0 Types of Attacks/Types of Attacks.md",
     "3.0 Central Processing Units (CPU's)/AMD",
-    "2.0 Operating Systems/Operating Systems.md",
     "2.0 Operating Systems/2.1 Desktops & Laptops/2.1.0 Operating Systems (Desktops & Laptops).md",
     "2.0 Operating Systems/2.2 Portable Handheld Portables/2.2.0 Operating Systems (Handheld Portables).md",
     "0.0 Cyber Security Course/Notes/Week 01/20240627 - Thursday.md",
