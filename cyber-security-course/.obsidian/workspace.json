@@ -170,7 +170,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "3.0 Operating Systems (Desktops & Laptops)/3.0 Operating Systems.md",
+                "file": "5.0 Memory/5.0 Memory.md",
                 "mode": "source",
                 "source": false
               }
@@ -299,7 +299,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "3.0 Operating Systems (Desktops & Laptops)/3.0 Operating Systems.md",
+                "file": "5.0 Memory/5.0 Memory.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -316,7 +316,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "3.0 Operating Systems (Desktops & Laptops)/3.0 Operating Systems.md",
+                "file": "5.0 Memory/5.0 Memory.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -339,7 +339,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "3.0 Operating Systems (Desktops & Laptops)/3.0 Operating Systems.md"
+                "file": "5.0 Memory/5.0 Memory.md"
               }
             }
           }
@@ -362,12 +362,13 @@
   },
   "active": "3db77891281d5ee4",
   "lastOpenFiles": [
-    "3.0 Operating Systems (Desktops & Laptops)/3.3 Servers/3.3.0 Operating Systems (Servers).md",
+    "4.0 Central Processing Units (CPU's)/4.0 Central Processing Units (CPU's).md",
+    "1.0 Cyber Security Course/1.0 Cyber Security.md",
     "3.0 Operating Systems (Desktops & Laptops)/3.0 Operating Systems.md",
+    "3.0 Operating Systems (Desktops & Laptops)/3.3 Servers/3.3.0 Operating Systems (Servers).md",
     "3.0 Operating Systems (Desktops & Laptops)/3.2 Portable Handheld Portables/3.2.0 Operating Systems (Handheld Portables).md",
     "3.0 Operating Systems (Desktops & Laptops)/3.1 Desktops & Laptops/3.1.0 Operating Systems (Desktops & Laptops).md",
     "3.0 Operating Systems (Desktops & Laptops)/3.2 Portable Handheld Portables/3.2.3 Windows Phone.md",
-    "6.0 Central Processing Units (CPU's)/6.0 Central Processing Units (CPU's).md",
     "3.0 Operating Systems (Desktops & Laptops)/3.2 Portable Handheld Portables/Untitled",
     "3.0 Operating Systems (Desktops & Laptops)/3.1 Desktops & Laptops/3.1.1 Windows (10 & 11).md",
     "3.0 Operating Systems (Desktops & Laptops)/3.1 Desktops & Laptops/3.1.3 MacOS.md",
@@ -379,17 +380,16 @@
     "3.0 Operating Systems (Desktops & Laptops)/3.1 Desktops & Laptops",
     "0.0 Notes/Week 01/20240626 - Wednesday.md",
     "0.0 Notes/Week 01/20240627 - Thursday.md",
-    "7.0 Memory/7.0 Memory.md",
+    "5.0 Memory/5.0 Memory.md",
     "Images Used/Pasted image 20240626151911.png",
-    "7.0 Memory",
+    "5.0 Memory",
     "1.0 Cyber Security Course/1.2 Resources.md",
     "0.0 Notes/Questions.md",
     "Images Used/Pasted image 20240626151914.png",
-    "1.0 Cyber Security Course/1.0 Cyber Security.md",
     "2.0 Types of Attacks/2.0 Types of Attacks.md",
     "0.0 Notes/Various.md",
     "0.0 Notes/To-Do's.md",
-    "6.0 Central Processing Units (CPU's)",
+    "4.0 Central Processing Units (CPU's)",
     "Images Used",
     "3.0 Operating Systems (Desktops & Laptops)/3.3 Servers",
     "4.0 Operating Systems (Handheld Portables)",
