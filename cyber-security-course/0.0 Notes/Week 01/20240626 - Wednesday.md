@@ -266,5 +266,10 @@ TO DO and Terminologies:
 		- Look up others
 - Clean up Mailbox folders
 - DualLingo - GO GO FOR MANDARIN! (from Blair Hodson, chur!)
-- 
+- Read through rules for both of the Discord channels Kris shared today
+- Install VirtualBox
+		- Setup a VM of a variant of a Linux distro
+		- Install OpenVPN
+		- Configure it to speak with the HackTheBox system
+			- Hopefully this bypasses that 2-hour countdown (Kris mentioned something along the lines of this)
 ##---------------------------------
