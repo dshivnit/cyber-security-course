@@ -37,7 +37,9 @@
 	- bfg-repo-cleaner may need a bash environment
 	- Setup a VM in VirtualBox
 	- OR WSL! That Kris had mentioned
-		- 
+		- completed with WSL
+- Go through the HTB (HackTheBox) cheat sheets
+- 
 
 
 
