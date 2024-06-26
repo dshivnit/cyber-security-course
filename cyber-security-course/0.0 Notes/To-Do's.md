@@ -20,3 +20,4 @@
 		- Add this to the relevant Topic in this Vault
 	- Blair: [https://join.replit.com/python](https://join.replit.com/python "https://join.replit.com/python")
 		- Get ya Python on!
+- Fix breakers (the lines between each heading/segment/topic) in Notes
