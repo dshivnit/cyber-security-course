@@ -8,4 +8,3 @@ WEEK ONE
 [[20240627 - Thursday]]
 
 [[To-Do's]]
-[[Various]]

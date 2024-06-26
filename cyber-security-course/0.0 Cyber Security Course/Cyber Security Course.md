@@ -5,6 +5,8 @@
 
 [[Resources]]
 
+[[Tools]]
+
 [[Terminologies]]
 
 [[Commands]]
