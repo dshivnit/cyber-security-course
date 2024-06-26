@@ -20,6 +20,7 @@
 - XML Bomb
 	- A form of DOS/DDOS attack where a small piece of code is sent to overwhelm the program that parses XML files and crash the server. 
 	- When an XML parser tries to process the message, nested data entities inside of it start growing exponentially and crash the server. 
+	- A BILLION Laughs (lol)
 - Growth Hacking
 	- **RESEARCH THIS**
 - 

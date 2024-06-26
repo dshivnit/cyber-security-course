@@ -1,3 +1,4 @@
+(Please take note that these todo's are tailored for me personally and may not apply to you, reader) 
 - Go through all the TODO's and TAKEAWAY's from each class
 - Tidy up this Vault
 	- Make folders for each of the main headings (ie 1.0, 2.0 etc)
@@ -13,6 +14,7 @@
 		- This has been completed, however, ongoing adjustments when using all three. Brave seems to have its own functionality (similar to that of both NoScript and uBlock) built into it which you can tweak. 
 	- Be Bold, Be Brave.
 		- This is ongoing.. wtf :3 
+		- Configure Brave further, look into it
 - Check out links from:
 	- Clark: [https://skillsforall.com/course/introduction-to-cybersecurity?utm_source=netacad.com&utm_medium=referral&utm_campaign=intro-cybersecurity&courseLang=en-US&userlogin=0&userlogin=0](https://skillsforall.com/course/introduction-to-cybersecurity?utm_source=netacad.com&utm_medium=referral&utm_campaign=intro-cybersecurity&courseLang=en-US&userlogin=0&userlogin=0 "https://skillsforall.com/course/introduction-to-cybersecurity?utm_source=netacad.com&utm_medium=referral&utm_campaign=intro-cybersecurity&courseLang=en-US&userlogin=0&userlogin=0")
 		- Peel through this where and when you want
@@ -20,6 +22,25 @@
 		- Add this to the relevant Topic in this Vault
 	- Blair: [https://join.replit.com/python](https://join.replit.com/python "https://join.replit.com/python")
 		- Get ya Python on!
+		- And touch on Java etc again
 - Fix breakers (the lines between each heading/segment/topic) in Notes
 - Make this Vault look tidier..
+	- Fix up the look on GitHub, it's janky atm
+	- Make the headings actual headings in this Vault
+- Go through each class's content (not the todo's but the content itself) and look up topics/keywords etc
+- ARM64 based Opteron Processors (2016)
+	[AMD Opteron A1100 series](https://en.wikipedia.org/wiki/List_of_AMD_Opteron_processors#Opteron_A1100-series_%22Seattle%22_(28nm) "List of AMD Opteron processors")
+	Look into that further
+- Expand CPU basics
+	
+
+
+
+Randoms:
+- - Look up the F-35 oxygen system cutting out to the pilot
+	- In relation to RTOS (Real Time OS)
+- CrackMe
+	- Software that was designed by the programmer and a fun little 'thingy' for the sake of testing and learning
+	- Look up some examples for s&g's
+- Look up XZ Backdoor story
 - 

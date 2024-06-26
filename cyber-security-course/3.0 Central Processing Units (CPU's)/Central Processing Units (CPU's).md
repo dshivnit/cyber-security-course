@@ -1,6 +1,14 @@
 - AMD
 - Intel
-- *List others here*
+- *List others here ie RTOS, others*
+
+- *Describe general basics*
+	- CPU Cache
+	- Current standards (in particular from AMD, X3D BABY!)
+	- Performance Cores
+	- Energy-saving Cores
+	- Page Files
+	
 
 - Hyperthreading
 	- Hyperthreading is a technology that enables a single processor to handle multiple tasks simultaneously, thereby improving performance.
@@ -45,4 +53,3 @@
 		  - All the threads within a process are required to be synchronised to avoid unexpected results
 		  - By using threads, you can perform multiple tasks simultaneously within a single application, leading to improved performance and responsiveness. Threads are commonly used in applications that involve heavy computational tasks, network communication, and graphical user interfaces (from lenovo.com)
 - 
- - 
