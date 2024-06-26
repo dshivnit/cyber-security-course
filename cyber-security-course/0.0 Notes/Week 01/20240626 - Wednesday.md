@@ -149,6 +149,10 @@ Tools:
 - Putty
 - SH? (double-check this)
 - VIM - text editor l337
+- TryHackMe.com
+- HackTheBox
+- Kalia (LInux on the fly OS)
+	- Look up others
 - 
 ##---------------------------------
 TO DO and Terminologies:
@@ -250,5 +254,17 @@ TO DO and Terminologies:
 	- User
 	- Group
 	- Other
+- Pi-hole - from Cameron - check it out | for RPi's
+- Check out:
+	- TryHackMe.com
+	- HackTheBox (will have to adjust NoScript policies as well as with Brave and uBlock)
+		- Search up Unitec as the University
+- Build your LinkedIn with certifications granted from the above online tools
+	- (and the others as well, post a soft copy of the papers you have)
+- Look into:
+	- Kali  (LInux on the fly OS)
+		- Look up others
+- Clean up Mailbox folders
+- DualLingo - GO GO FOR MANDARIN! (from Blair Hodson, chur!)
 - 
 ##---------------------------------
