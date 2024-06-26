@@ -170,7 +170,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "5.0 Memory/5.0 Memory.md",
+                "file": "1.0 Cyber Security Course/1.0 Cyber Security.md",
                 "mode": "source",
                 "source": false
               }
@@ -299,7 +299,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "5.0 Memory/5.0 Memory.md",
+                "file": "1.0 Cyber Security Course/1.0 Cyber Security.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -316,7 +316,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "5.0 Memory/5.0 Memory.md",
+                "file": "1.0 Cyber Security Course/1.0 Cyber Security.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -339,7 +339,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "5.0 Memory/5.0 Memory.md"
+                "file": "1.0 Cyber Security Course/1.0 Cyber Security.md"
               }
             }
           }
@@ -362,6 +362,7 @@
   },
   "active": "3db77891281d5ee4",
   "lastOpenFiles": [
+    "5.0 Memory/5.0 Memory.md",
     "4.0 Central Processing Units (CPU's)/4.0 Central Processing Units (CPU's).md",
     "1.0 Cyber Security Course/1.0 Cyber Security.md",
     "3.0 Operating Systems (Desktops & Laptops)/3.0 Operating Systems.md",
@@ -380,7 +381,6 @@
     "3.0 Operating Systems (Desktops & Laptops)/3.1 Desktops & Laptops",
     "0.0 Notes/Week 01/20240626 - Wednesday.md",
     "0.0 Notes/Week 01/20240627 - Thursday.md",
-    "5.0 Memory/5.0 Memory.md",
     "Images Used/Pasted image 20240626151911.png",
     "5.0 Memory",
     "1.0 Cyber Security Course/1.2 Resources.md",
