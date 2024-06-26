@@ -1,5 +1,3 @@
-[[To-Do's]]
-[[Various]]
 [[Commands]]
 [[Terminologies]]
 
@@ -8,3 +6,6 @@ WEEK ONE
 [[20240625 - Tuesday]]
 [[20240626 - Wednesday]]
 [[20240627 - Thursday]]
+
+[[To-Do's]]
+[[Various]]

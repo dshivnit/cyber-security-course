@@ -1,6 +1,5 @@
 *************************
 Classes are Monday-Friday 10AM-2PM.
-Unitec Email: swamys05@myunitec.ac.nz
 *************************
 GENERAL NOTES:
 - Linux uses GPL (General Public License) 
