@@ -2,7 +2,7 @@
 - (please bear in mind that these notes are made on the fly and some topics/items may have been missed, and also, they're more directed in my thought process, thinking, but hopefully will be helpful where it can be! :) )
 
 - Weekly recap and heartbeat
-- Owasp event
+- AppSec event
 	- Kris will get us tickets to this
 	- September 5-6th September
 	- Thur/Fri
@@ -153,6 +153,8 @@ Tools:
 ##---------------------------------
 TO DO and Terminologies:
 - Check out **Pirates of Silicon Valley (Movie/Doco)**
+	- Set aside for a later time
+
 - WSL - Windows Subsystem for Linux
 - Shell - comes from referencing a nut, hard shell on the outside, and inside is the kernel 
 - Kernel is the main part of the operating system
