@@ -131,7 +131,6 @@ COMMANDS:
 
 Unix Shell
 - ctrl+d - tells the system taht you're finished
-- 
 
 Admin Groups
 	Windows - Administrators
@@ -145,7 +144,7 @@ Admin Groups
 Tools:
 - Putty
 - SH? (double-check this)
-- VIM - text editor l337
+- VIM - text editor 1337
 - TryHackMe.com
 - HackTheBox
 - Kalia (LInux on the fly OS)

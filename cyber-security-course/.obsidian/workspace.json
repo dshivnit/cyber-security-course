@@ -6,7 +6,7 @@
       {
         "id": "4bc0d5af393be1f6",
         "type": "tabs",
-        "dimension": 50.848765432098766,
+        "dimension": 54.12213740458015,
         "children": [
           {
             "id": "973c7ff657a0d974",
@@ -170,7 +170,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "0.0 Notes/Week 01/20240626 - Wednesday.md",
+                "file": "6.0 Central Processing Units (CPU's)/6.0 Central Processing Units (CPU's).md",
                 "mode": "source",
                 "source": false
               }
@@ -206,7 +206,7 @@
       {
         "id": "2fb0e64401067da2",
         "type": "tabs",
-        "dimension": 49.151234567901234,
+        "dimension": 45.87786259541985,
         "children": [
           {
             "id": "e17ff2a0b2e26585",
@@ -226,7 +226,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "1.0 Cyber Security Course/1.2 Resources.md",
+                "file": "0.0 Notes/Week 01/20240625 - Tuesday.md",
                 "mode": "source",
                 "source": false
               }
@@ -299,7 +299,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "0.0 Notes/Week 01/20240626 - Wednesday.md",
+                "file": "0.0 Notes/Week 01/20240625 - Tuesday.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -316,7 +316,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "0.0 Notes/Week 01/20240626 - Wednesday.md",
+                "file": "0.0 Notes/Week 01/20240625 - Tuesday.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -339,7 +339,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "0.0 Notes/Week 01/20240626 - Wednesday.md"
+                "file": "0.0 Notes/Week 01/20240625 - Tuesday.md"
               }
             }
           }
@@ -360,19 +360,25 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "3db77891281d5ee4",
+  "active": "a97d20ab7840ae9f",
   "lastOpenFiles": [
-    "1.0 Cyber Security Course/1.2 Resources.md",
-    "1.0 Cyber Security Course/1.0 Cyber Security.md",
-    "0.0 Notes/Week 01/20240626 - Wednesday.md",
-    "2.0 Types of Attacks/2.0 Types of Attacks.md",
-    "0.0 Notes/Questions.md",
-    "0.0 Notes/Week 01/20240625 - Tuesday.md",
-    "0.0 Notes/Various.md",
-    "3.0 Operating Systems (Desktops & Laptops)/3.0 Operating Systems (Desktops, Laptops).md",
     "4.0 Operating Systems (Handheld Portables)/4.0 Operating Systems (Handheld Portables).md",
-    "0.0 Notes/To-Do's.md",
+    "3.0 Operating Systems (Desktops & Laptops)/3.0 Operating Systems (Desktops, Laptops).md",
+    "0.0 Notes/Week 01/20240625 - Tuesday.md",
     "6.0 Central Processing Units (CPU's)/6.0 Central Processing Units (CPU's).md",
+    "0.0 Notes/Week 01/20240626 - Wednesday.md",
+    "0.0 Notes/Week 01/20240627 - Thursday.md",
+    "7.0 Memory/7.0 Memory.md",
+    "Images Used/Pasted image 20240626151911.png",
+    "7.0 Memory",
+    "1.0 Cyber Security Course/1.2 Resources.md",
+    "3.0 Operating Systems (Desktops & Laptops)/3.2 Linux.md",
+    "0.0 Notes/Questions.md",
+    "Images Used/Pasted image 20240626151914.png",
+    "1.0 Cyber Security Course/1.0 Cyber Security.md",
+    "2.0 Types of Attacks/2.0 Types of Attacks.md",
+    "0.0 Notes/Various.md",
+    "0.0 Notes/To-Do's.md",
     "6.0 Central Processing Units (CPU's)",
     "3.0 Operating Systems (Desktops & Laptops)/3.1 Windows (10 & 11).md",
     "Images Used",
@@ -390,11 +396,9 @@
     "4.0 Operating Systems (Handheld Portables)/4.2 iOS.md",
     "4.0 Operating Systems (Handheld Portables)/4.1 Android.md",
     "3.0 Operating Systems (Desktops & Laptops)/3.3 MacOS.md",
-    "3.0 Operating Systems (Desktops & Laptops)/3.2 Linux.md",
     "Untitled.canvas",
     "0.0 Notes/Week 01/20240623_Monday.txt",
     "0.0 Notes/Week 01/20240624_Tuesday.txt",
-    "0.0 Notes/Week 01",
     "1.0 Cyber Security Course/1.1 Course Team.md",
     "1.0 Cyber Security Course/1.3 Certifications.md",
     "Welcome.md"
