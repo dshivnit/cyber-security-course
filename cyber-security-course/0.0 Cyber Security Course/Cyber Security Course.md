@@ -17,5 +17,9 @@
 
 [[Central Processing Units (CPU's)]]
 
+[[Memory]]
+
+[[Networking]]
+
 [[Notes]]
 

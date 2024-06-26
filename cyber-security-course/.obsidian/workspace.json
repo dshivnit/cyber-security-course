@@ -170,7 +170,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "5.0 Networking/5.0 Networking.md",
+                "file": "0.0 Cyber Security Course/Cyber Security Course.md",
                 "mode": "source",
                 "source": false
               }
@@ -311,7 +311,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "5.0 Networking/5.0 Networking.md",
+                "file": "0.0 Cyber Security Course/Cyber Security Course.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -328,7 +328,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "5.0 Networking/5.0 Networking.md",
+                "file": "0.0 Cyber Security Course/Cyber Security Course.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -351,7 +351,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "5.0 Networking/5.0 Networking.md"
+                "file": "0.0 Cyber Security Course/Cyber Security Course.md"
               }
             }
           }
@@ -374,17 +374,18 @@
   },
   "active": "c976a62d86d83421",
   "lastOpenFiles": [
+    "0.0 Cyber Security Course/Notes/Notes.md",
+    "0.0 Cyber Security Course/Cyber Security Course.md",
+    "5.0 Networking/Networking.md",
+    "4.0 Memory/Memory.md",
     "0.0 Cyber Security Course/Course Team.md",
-    "5.0 Networking/5.0 Networking.md",
     "0.0 Cyber Security Course/Notes/To-Do's.md",
     "2.0 Operating Systems/Operating Systems.md",
     "3.0 Central Processing Units (CPU's)/Central Processing Units (CPU's).md",
     "0.0 Cyber Security Course/Notes/Week 01/20240626 - Wednesday.md",
     "0.0 Cyber Security Course/Commands.md",
     "0.0 Cyber Security Course/Resources.md",
-    "0.0 Cyber Security Course/Cyber Security Course.md",
     "0.0 Cyber Security Course/Notes/Tools.md",
-    "0.0 Cyber Security Course/Notes/Notes.md",
     "0.0 Cyber Security Course/Notes/Week 01/20240625 - Tuesday.md",
     "5.0 Networking",
     "5.0 Networking.md",
@@ -395,7 +396,6 @@
     "2.0 Operating Systems/2.2 Portable Handheld Portables/2.2.0 Operating Systems (Handheld Portables).md",
     "0.0 Cyber Security Course/Notes/Week 01/20240627 - Thursday.md",
     "0.0 Cyber Security Course/Notes/Various.md",
-    "4.0 Memory/4.0 Memory.md",
     "2.0 Operating Systems/2.3 Servers/2.3.0 Operating Systems (Servers).md",
     "2.0 Operating Systems/2.2 Portable Handheld Portables/3.2.3 Windows Phone.md",
     "2.0 Operating Systems/2.2 Portable Handheld Portables/2.2.2 iOS.md",
