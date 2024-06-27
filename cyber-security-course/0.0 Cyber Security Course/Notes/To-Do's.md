@@ -39,7 +39,9 @@
 	- OR WSL! That Kris had mentioned
 		- completed with WSL
 - Go through the HTB (HackTheBox) cheat sheets
-- 
+- Check Kris' news links that he's posted (from Discord)
+- Check out other GitHub repo's and see how the general trend of commits are made
+- Stop realising that the todo list will never end xD
 
 
 
