@@ -1,3 +1,5 @@
+[[3.1 AMD CPUs]]
+
 - AMD
 - Intel
 - Qualcomm

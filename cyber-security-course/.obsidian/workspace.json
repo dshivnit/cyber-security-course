@@ -194,7 +194,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "0.0 Cyber Security Course/Notes/Week 01/20240627 - Thursday.md",
+                "file": "0.0 Cyber Security Course/Resources.md",
                 "mode": "source",
                 "source": false
               }
@@ -212,8 +212,12 @@
             "id": "e17ff2a0b2e26585",
             "type": "leaf",
             "state": {
-              "type": "graph",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "0.0 Cyber Security Course/Notes/To-Do's.md",
+                "mode": "source",
+                "source": false
+              }
             }
           },
           {
@@ -302,7 +306,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "0.0 Cyber Security Course/Notes/Week 01/20240627 - Thursday.md",
+                "file": "0.0 Cyber Security Course/Resources.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -319,7 +323,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "0.0 Cyber Security Course/Notes/Week 01/20240627 - Thursday.md",
+                "file": "0.0 Cyber Security Course/Resources.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -342,7 +346,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "0.0 Cyber Security Course/Notes/Week 01/20240627 - Thursday.md"
+                "file": "0.0 Cyber Security Course/Resources.md"
               }
             }
           }
@@ -365,6 +369,9 @@
   },
   "active": "bd224fb460d78abb",
   "lastOpenFiles": [
+    "0.0 Cyber Security Course/Notes/Week 01/20240627 - Thursday.md",
+    "0.0 Cyber Security Course/Notes/To-Do's.md",
+    "3.0 Central Processing Units (CPU's)/Central Processing Units (CPU's).md",
     "0.0 Cyber Security Course/Resources.md",
     "0.0 Cyber Security Course/Cyber Security Course.md",
     "0.0 Cyber Security Course/Commands.md",
@@ -374,11 +381,8 @@
     "0.0 Cyber Security Course/Notes/Week 01/20240626 - Wednesday.md",
     "0.0 Cyber Security Course/Notes/Week 01/20240625 - Tuesday.md",
     "0.0 Cyber Security Course/Notes/Week 01/20240624 - Monday.md",
-    "0.0 Cyber Security Course/Notes/To-Do's.md",
-    "0.0 Cyber Security Course/Notes/Week 01/20240627 - Thursday.md",
     "1.md",
     "3.md",
-    "3.0 Central Processing Units (CPU's)/Central Processing Units (CPU's).md",
     "0.0 Cyber Security Course/Notes/Notes.md",
     "5.0 Networking/Networking.md",
     "4.0 Memory/Memory.md",
