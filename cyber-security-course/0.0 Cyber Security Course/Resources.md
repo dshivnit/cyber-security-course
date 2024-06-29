@@ -45,7 +45,12 @@
     Spaced Repetition
     Spaced repetition is a method of reviewing material at systematic intervals. At the beginning of the learning process, the intervals are spaced closely together (for example, one hour; four hours; one day). As the material is reviewed, the intervals become systematically longer (four days; one week; two weeks). (referenced from kpu.ca)
     
-15. 
+15. Cyber Security Roadmap
+	https://roadmap.sh/cyber-security
+
+16. HTB Careers in Cyber:
+    https://tryhackme.com/r/room/careersincyber
+
 
 MICROSOFT
 
