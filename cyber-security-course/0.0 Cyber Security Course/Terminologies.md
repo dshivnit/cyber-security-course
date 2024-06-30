@@ -26,5 +26,6 @@
 				- root>bin
 - Piping
 	- In computer programming, especially in Unix OSes, a pipe is a technique for passing information from one program process or command to another. 
-	  Unlike other forms of interprocess communication (IPC), ie the communication between related processes, a pipe refers to one-way communication only
+	  Unlike other forms of interprocess communication (IPC), ie the communication between related processes, a pipe refers to one-way communication only (techtarget.com)
+	  - A pipe is a form of redirection (transfer of standard output to some other destination) that is used in Linux and other Unix-like operating systems to send the output of one command/program/porocess to another command/program /process for further processing. (geeksforgeeks.org)
   IPC - Inter-Process Communciation
