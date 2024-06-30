@@ -156,18 +156,29 @@ TO DO and Terminologies:
 	- Set aside for a later time
 
 - WSL - Windows Subsystem for Linux
-- Shell - comes from referencing a nut, hard shell on the outside, and inside is the kernel 
+	- Done
+
+- Shell - comes from referencing a nut, hard shell on the outside, and inside is the kernel
 - Kernel is the main part of the operating system
+	- The two above have been noted
+	
 - A kernel in Windows is NT OS (New Technology OS)
 - MACH used in MacOS
 - The shell is the interface that speaks with the kernel
 
 - Check out who created the Mouse and the GUI
 	- In relation to Xerox? Palta Alto (something like that)
+	  Noted in the main todo's
+	  
 - Binaries
 	- Contain a list of utilities/functions
 	- Example: "ls" , "cat"
+		- Simple definition and Win/Linux default PATH's described in the Terminologies page
+		  
 - Check out that Everything Tool to check out descriptions of the various utilities
+	  Pretty neat, kind of like Finder in MacOS, real fast to search for stuff when compared to your usual File Explorer in Windows
+	  Noted in the Tools page
+  
 - Piping - check it
 - Check out Multics
 - Alexander Graham Bell - Invented the telegram/telephone

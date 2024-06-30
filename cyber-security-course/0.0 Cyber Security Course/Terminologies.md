@@ -3,4 +3,28 @@
 	- A LoRA (short for Learned Rank Augmentation) model is **a small model that is applied on top of a standard image generation model like Stable Diffusion**. It allows for fine-tuning of the base model without having to retrain the whole model from scratch, which can be very time-consuming and resource-intensive. (from a reddit board)
 	- LoRa is a wireless modulation technique derived from **Chirp Spread Spectrum (CSS)** technology. It encodes information on radio waves using chirp pulses - similar to the way dolphins and bats communicate! LoRa modulated transmission is robust against disturbances and can be received across great distances. (https://linovision.com/blogs/blogs/what-are-lora-and-lorawan-and-why-is-lorawan-so-awesome#:~:text=LoRa%20is%20ideal%20for%20applications,operate%20in%20low%20power%20mode.)
 - CVSS - Common Vulnerability Scoring System
-- 
+- CLI - Command-Line Interpreter/Interface
+- Shell
+	- An interface present between the kernel and the user
+	- A shell is a CLI
+- Kernel
+	- The very core of an OS. 
+	- A type of low-level program that has its interfacing with the hardware on top of which all the applications run (disks, RAM, CPU, Video Adaptor(s) and so on)
+- Mach
+	- The name of the MacOS kernel
+- Windows NT
+	- Microsoft's kernel family (first created 27th July, 1993)
+- Binary/Binaries
+	- Bit - A binary digit and the smallest unit of data (comprised of either a 0 or a 1 - meaning a signal is involved or it isn't)
+	- Byte - Comprises of eight (8) bits
+	- Binaries
+		- Compiled code that allow a program to be installed without having to compile the source code
+		- Usually placed in one default/regular location in an OS's file system
+			- Windows:
+				- Windows>System32
+			- Unix/Linux
+				- root>bin
+- Piping
+	- In computer programming, especially in Unix OSes, a pipe is a technique for passing information from one program process or command to another. 
+	  Unlike other forms of interprocess communication (IPC), ie the communication between related processes, a pipe refers to one-way communication only
+  IPC - Inter-Process Communciation

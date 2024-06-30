@@ -42,7 +42,9 @@
 - Check Kris' news links that he's posted (from Discord)
 - Check out other GitHub repo's and see how the general trend of commits are made
 - Stop realising that the todo list will never end xD
-
+- Compare Firefox and Brave browsers with various findings
+- Sort through the Terminologies page and sort them in a fashionable and organised manner :P 
+- 
 
 
 Randoms:
@@ -52,4 +54,5 @@ Randoms:
 	- Software that was designed by the programmer and a fun little 'thingy' for the sake of testing and learning
 	- Look up some examples for s&g's
 - Look up XZ Backdoor story
-- 
+- Check out who created the Mouse and the GUI
+	- In relation to Xerox? Palta Alto (something like that)
