@@ -180,18 +180,27 @@ TO DO and Terminologies:
 	  Noted in the Tools page
   
 - Piping - check it
+		Some notes added in Terminologies
+		
 - Check out Multics
+	  Brief recap on this historical OS in terminologies
 - Alexander Graham Bell - Invented the telegram/telephone
 	- Check him out
 	- Turned into AT&T (from Bell technologies or something like this? )
 	- Check out the story
 	- And the anti-trust laws that had taken place
+		  Added to random todo's
+		  
 - Internet Explorer v5 and 6
 	- Anti-trust issues check it out
 	- Web 2.0
 	- The good ol' compatibility issue days!!!! >_<
+			- Added to Random Todo's
+	
 - Have a look at the "GO" dev language
 	- Made by Google
+	  Added to Random Todo's
+	  
 - Also a framework called "flutter"
 	- Mainly for mobile development
 	- Java and C++ 
@@ -202,16 +211,30 @@ TO DO and Terminologies:
 		- if a project doesn't take off massively, they will kill the project
 		- there is a Google graveyard of projects that didn't make it
 			- CHECK THAT OUT!
+				  Added to Random todo's
+			  
 - Check out Samsung KNOX in more detail
 - https://xkcd.com/927/ check it out from Josh
 	- Use VirusTotal first, lol, ;) nah jokes trust you Josh
+		  Added to Random Todo's
+		  
 - Check out the different types of SHELLS
 	- Bourne/born again shell (bash)
-	- 
+		  A list of shell varieties has been added in the Terminologies page
+		  
 - Check out angular.js (came out of personal projects from workers at Google)
+	  Added to random todo's
+	  
 - Sunsetting a project - announcement date > sunset time > then the actual killing of the project
+	  Note added in Terminologies
+	  
 - Check out FlutterFlow programming language (Clark)
+	  Programming Languages page has now been created in this Vault
+	  This will be expanded in the days to come
+	  
 - Look into a cheatsheet for useful bash commands (and also Windows Powershell)
+		Done and shared with the class.
+		
 - Brad: https://en.wikipedia.org/wiki/Filesystem_Hierarchy_Standard
 - ICMS - Spark/Telecom - used SSH or something or rather to do something; see what you can find
 - TP2? - still being used by VF? have a look or ask around

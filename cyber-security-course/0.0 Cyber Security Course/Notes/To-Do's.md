@@ -44,7 +44,9 @@
 - Stop realising that the todo list will never end xD
 - Compare Firefox and Brave browsers with various findings
 - Sort through the Terminologies page and sort them in a fashionable and organised manner :P 
-- 
+- Go through the differences of each of the shells listed in the Terminologies page
+	- Get better with PowerShell and Bash scripting
+- Expand on the Programming Languages page
 
 
 Randoms:
@@ -56,3 +58,28 @@ Randoms:
 - Look up XZ Backdoor story
 - Check out who created the Mouse and the GUI
 	- In relation to Xerox? Palta Alto (something like that)
+- Alexander Graham Bell - Invented the telegram/telephone
+	- Check him out
+	- Turned into AT&T (from Bell technologies or something like this? )
+	- Check out the story
+	- And the anti-trust laws that had taken place
+- Internet Explorer v5 and 6
+	- Anti-trust issues check it out
+	- Web 2.0
+- Google's GO programming language 
+	- Similar to C
+	- check it out
+	- https://go.dev/
+- The Flutter Framework
+	- Google's open-source UI software development kit. Used to develop cross platform apps from a single codebase for the web, Fuchsia, Android, iOS, Linux, MacOS and Windows
+	- Sounds bloody awesome!
+	- Google laid off a bunch of staff who were working with Flutter
+	- if a project doesn't take off massively, they will kill the project
+	- there is a Google graveyard of projects that didn't make it
+	- Check it out
+	- https://flutter.dev/
+- Look into Samsung's KNOX in further detail
+- https://xkcd.com/927/ - from Josh
+- Angular.js - discontinued
+	- But check out a bit more about it
+- 

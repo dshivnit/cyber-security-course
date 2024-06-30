@@ -7,6 +7,23 @@
 - Shell
 	- An interface present between the kernel and the user
 	- A shell is a CLI
+	- Varieties:
+		- Bourne Shell
+		- Ksh
+		- CSH
+		- C Shell
+		- Korn shell
+		- Z shell
+		- Bash
+		- Zsh shell
+		- Tenex C shell
+		- Friendly interactive shell
+		- Debian Almquist shell
+		- Fish
+		- POSIX shell
+		- Tcsh
+		- Exotic shells
+		- PowerShell
 - Kernel
 	- The very core of an OS. 
 	- A type of low-level program that has its interfacing with the hardware on top of which all the applications run (disks, RAM, CPU, Video Adaptor(s) and so on)
@@ -28,4 +45,12 @@
 	- In computer programming, especially in Unix OSes, a pipe is a technique for passing information from one program process or command to another. 
 	  Unlike other forms of interprocess communication (IPC), ie the communication between related processes, a pipe refers to one-way communication only (techtarget.com)
 	  - A pipe is a form of redirection (transfer of standard output to some other destination) that is used in Linux and other Unix-like operating systems to send the output of one command/program/porocess to another command/program /process for further processing. (geeksforgeeks.org)
-  IPC - Inter-Process Communciation
+  - IPC - Inter-Process Communciation
+  - MULTICS - Multiplexed Information and Computing Service 
+	  - A pioneering computer operating system developed in the 1960s and 1970s. Its influence on modern computing is noteworthy.
+	  - Based on the concept of single-level memory
+	  - Revolutionised file management and storage by introducing a hierarchical file structure. 
+  - Sunsetting A Project
+	  - Announcement Date -> Sunset Time -> Then the actual killing of the project
+	  - Meaning that the announcement of killing/ending a project doesn't mean that it will necessarily end straight away, there is that 'sunset time'
+  - 

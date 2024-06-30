@@ -21,5 +21,7 @@
 
 [[Networking]]
 
+[[Cheat Sheets]]
+
 [[Notes]]
 
