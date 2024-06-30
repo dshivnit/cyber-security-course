@@ -31,19 +31,19 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "0.0 Cyber Security Course/Notes/To-Do's.md",
+                "file": "0.0 Cyber Security Course/Resources.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "abba824d66ee5b49",
+            "id": "0a49d17f5a81d3e1",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "0.0 Cyber Security Course/Notes/Week 02/20240701 - Monday.md",
+                "file": "0.0 Cyber Security Course/Terminologies.md",
                 "mode": "source",
                 "source": false
               }
@@ -55,7 +55,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "0.0 Cyber Security Course/Cheat Sheets.md",
+                "file": "0.0 Cyber Security Course/Notes/Week 01/20240626 - Wednesday.md",
                 "mode": "source",
                 "source": false
               }
@@ -69,8 +69,7 @@
               "state": {}
             }
           }
-        ],
-        "currentTab": 3
+        ]
       }
     ],
     "direction": "vertical"
@@ -136,6 +135,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "0.0 Cyber Security Course/Resources.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -152,6 +152,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "0.0 Cyber Security Course/Resources.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -173,7 +174,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "0.0 Cyber Security Course/Resources.md"
+              }
             }
           }
         ],
@@ -193,14 +196,17 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "dfc9d5fd06cbd758",
+  "active": "98fa4ab08efc16a1",
   "lastOpenFiles": [
-    "0.0 Cyber Security Course/Notes/To-Do's.md",
     "0.0 Cyber Security Course/Notes/Week 02/20240701 - Monday.md",
-    "0.0 Cyber Security Course/Notes/Week 01/20240626 - Wednesday.md",
-    "0.0 Cyber Security Course/Notes/Week 01/20240627 - Thursday.md",
+    "0.0 Cyber Security Course/Resources.md",
+    "0.0 Cyber Security Course/Notes/To-Do's.md",
     "0.0 Cyber Security Course/Terminologies.md",
+    "0.0 Cyber Security Course/Notes/Week 01/20240626 - Wednesday.md",
+    "0.0 Cyber Security Course/Notes/Week 01/20240625 - Tuesday.md",
+    "0.0 Cyber Security Course/Notes/Week 01/20240624 - Monday.md",
     "0.0 Cyber Security Course/Cheat Sheets.md",
+    "0.0 Cyber Security Course/Notes/Week 01/20240627 - Thursday.md",
     "0.0 Cyber Security Course/Tools.md",
     "0.0 Cyber Security Course/Cyber Security Course.md",
     "8.0 Blockchain/Blockchain.md",
@@ -210,17 +216,14 @@
     "2.0 Operating Systems/2.1 Desktops & Laptops/2.1.2 Linux & Unix.md",
     "6.0 Programming Languages/Programming Languages.md",
     "5.0 Networking/Networking.md",
-    "0.0 Cyber Security Course/Resources.md",
     "6.0 Programming Languages",
     "0.0 Cyber Security Course/Notes/Notes.md",
     "0.0 Cyber Security Course/Certifications.md",
-    "0.0 Cyber Security Course/Notes/Week 01/20240625 - Tuesday.md",
     "0.0 Cyber Security Course/Notes/Week 02",
     "3.0 Central Processing Units (CPU's)/Central Processing Units (CPU's).md",
     "0.0 Cyber Security Course/Commands.md",
     "0.0 Cyber Security Course/Course Team.md",
     "3.0 Central Processing Units (CPU's)/3.1 AMD CPUs.md",
-    "0.0 Cyber Security Course/Notes/Week 01/20240624 - Monday.md",
     "1.md",
     "3.md",
     "4.0 Memory/Memory.md",

@@ -63,3 +63,20 @@
 	  - Scripts that run before the build script is executed. They allow you to customise the build environment or configure settings early in the build. 
   - systemd - the new init framework
 	  - LOOK INTO THIS MORE in comparison with init (cheatsheet added)
+  - AES encryption - Advanced Encryption Standard (add this to the Crypto page)
+  - DMCA - Digital Millennium Copyright Act
+  - PuTTy - 
+Encryption/Cryptology Terms  
+  - PT - Plaintext
+  - CT - Ciphertext
+  - K - Key
+  - Symmetric key encryption
+  - Asymmetric key encryption
+  - PGP - Pretty Good Privacy
+	  - Typically used for emails
+  - Entropy
+	- Entropy, in the context of cryptography, is **related to random number generation, and more precisely, it refers to the “amount of unpredictable randomness**” in a physical system. We call an entropy source the physical system that produces random signals. (Quside)
+- 0-day, zero-day vulnerability
+	- Special type of bug where people have not had any time to prepare any defense for
+	- A zero-day is a vulnerability in software or hardware that is typically unknown to the vendor and for which no patch or other fix is available. The vendor has zero days to prepare a patch as the vulnerability has already been described or exploited. (Wikipedia)
+- 

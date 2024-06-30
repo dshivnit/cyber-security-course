@@ -51,7 +51,10 @@
 16. HTB Careers in Cyber:
     https://tryhackme.com/r/room/careersincyber
     
-17. 
+17. CVE (Critical) - Latest (you can also adjust the severity query)
+	https://www.opencve.io/cve?cvss=critical
+	
+18. 
 
 
 MICROSOFT
