@@ -55,4 +55,11 @@
 	  - Meaning that the announcement of killing/ending a project doesn't mean that it will necessarily end straight away, there is that 'sunset time'
   - Technical Debt
 	  - In software development and other Information Technology fields, technical debt is the implied cost of future reworking required when choosing an easy but limited solution instead of a better approach that could take more time. (wikipedia)
-  - 
+  - Blockchain (Append-only)
+	  - Once data is written to the blockchain, it cannot be altered or deleted. Each block in the chain contains a record of transaction or data, and once a block is added to the chain, it becomes a permanent part of the ledger. (brainly.in)
+  - I2P - The Invisible Internet Project
+	  - An anonymous network layer that allows for censorship-resistant, peer-to-peer communication. Anonymous connections are achieved by encrypting the user's traffic, and sending it through a volunteer-run network of roughly 55,000 computers distributed around the world. 
+  - init script - Initialisation Script (SysVinit)
+	  - Scripts that run before the build script is executed. They allow you to customise the build environment or configure settings early in the build. 
+  - systemd - the new init framework
+	  - LOOK INTO THIS MORE in comparison with init (cheatsheet added)

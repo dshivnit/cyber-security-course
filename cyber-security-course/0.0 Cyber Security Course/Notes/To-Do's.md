@@ -48,6 +48,8 @@
 	- Get better with PowerShell and Bash scripting
 - Expand on the Programming Languages page
 - Tidy up the main index of this vault
+- Rationalise topics in this Vault/Book.
+	- ie Put all "Hardware" related topics under a main topic of Hardware, etc
 - 
 
 
@@ -87,3 +89,11 @@ Randoms:
 - ICMS - Spark/Telecom - used SSH or something or rather to do something; see what you can find
 	  ???? Ahh, I think this is the tool that Telecom/Spark used to use and still use
 - TP2? - still being used by VF? have a look or ask around
+- tharchive.org - wayback machine (check it out)
+	- Issues accessing this page
+	  They did also get sued in the days of Covid for copyright infringments (but this could have been a different outfit from thearchive.org group
+	  There is however blog.thearchive.org which reads, "THE BATTLE CONTINUES!"
+	  Virustotal says it's safe)
+- YouTube Downloaders (get a good one)
+	- YouTube Downloader - for referencing to a video online, grab a local copy of it and upload it on to your online platform should you need to refer to it (to prevent broken links in the future - in the event that vid goes down)
+- architects holy hell album art (From Jason)

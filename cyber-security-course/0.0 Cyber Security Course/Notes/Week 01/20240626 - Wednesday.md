@@ -250,13 +250,30 @@ TO DO and Terminologies:
 	  
 - Blockchains - Append-only database
 	- Kris' blockchain analogy with Banks having the ability to manipulate balances wherein blockchain's would prevent such mischievous acts
+		  Definition has been added to Terminologies page
+		  
 - Hyperledger (IBM) - check this out 
+	  Added for further research
+	  
 - tharchive.org - wayback machine (check it out)
+	- Issues accessing this page
+	  They did also get sued in the days of Covid for copyright infringments (but this could have been a different outfit from thearchive.org group
+	  There is however blog.thearchive.org which reads, "THE BATTLE CONTINUES!"
+	  Virustotal says it's safe)
+		  Added to Random Todo's
+		  
 - YouTube Downloader - for referencing to a video online, grab a local copy of it and upload it on to your online platform should you need to refer to it (to prevent broken links in the future - in the event that vid goes down)
+
 - [https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/removing-sensitive-data-from-a-repository](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/removing-sensitive-data-from-a-repository "https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/removing-sensitive-data-from-a-repository") - check this out from Josh and secure the previous repo versions
+	  Noted, read, and saved for when the time arises.
+	  Bit of a process this one
+	  
 - To look into in mucho more detalio
 	- TOR
+		  already done
 	- I2P 
+		  Noted, done.
+		  
 - From Mark O'Gorman:
 	- initscripts is an example of something going out of date. the initscripts start up system has been replaced in most operating systems by systemd.
 	  Look into these terms in more detail
