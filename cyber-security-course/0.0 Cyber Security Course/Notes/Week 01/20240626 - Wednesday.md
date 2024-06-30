@@ -236,9 +236,18 @@ TO DO and Terminologies:
 		Done and shared with the class.
 		
 - Brad: https://en.wikipedia.org/wiki/Filesystem_Hierarchy_Standard
+	  Have taken a note of this in Linux OS Page and in the Cheat Sheets page
+	  
 - ICMS - Spark/Telecom - used SSH or something or rather to do something; see what you can find
+	  ????
+	  Added to Random todo's
+	  
 - TP2? - still being used by VF? have a look or ask around
+	  Noted
+	  
 - Technical Debt - check more
+	  noted in Terminologies
+	  
 - Blockchains - Append-only database
 	- Kris' blockchain analogy with Banks having the ability to manipulate balances wherein blockchain's would prevent such mischievous acts
 - Hyperledger (IBM) - check this out 

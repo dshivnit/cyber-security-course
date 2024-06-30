@@ -53,4 +53,6 @@
   - Sunsetting A Project
 	  - Announcement Date -> Sunset Time -> Then the actual killing of the project
 	  - Meaning that the announcement of killing/ending a project doesn't mean that it will necessarily end straight away, there is that 'sunset time'
+  - Technical Debt
+	  - In software development and other Information Technology fields, technical debt is the implied cost of future reworking required when choosing an easy but limited solution instead of a better approach that could take more time. (wikipedia)
   - 

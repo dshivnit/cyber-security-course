@@ -47,6 +47,8 @@
 - Go through the differences of each of the shells listed in the Terminologies page
 	- Get better with PowerShell and Bash scripting
 - Expand on the Programming Languages page
+- Tidy up the main index of this vault
+- 
 
 
 Randoms:
@@ -82,4 +84,6 @@ Randoms:
 - https://xkcd.com/927/ - from Josh
 - Angular.js - discontinued
 	- But check out a bit more about it
-- 
+- ICMS - Spark/Telecom - used SSH or something or rather to do something; see what you can find
+	  ???? Ahh, I think this is the tool that Telecom/Spark used to use and still use
+- TP2? - still being used by VF? have a look or ask around

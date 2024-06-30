@@ -18,32 +18,45 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "57b63296a1af7d53",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "0.0 Cyber Security Course/Cyber Security Course.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       },
       {
         "id": "2fb0e64401067da2",
         "type": "tabs",
         "children": [
           {
-            "id": "e17ff2a0b2e26585",
+            "id": "98fa4ab08efc16a1",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "6.0 Programming Languages/Programming Languages.md",
+                "file": "0.0 Cyber Security Course/Notes/To-Do's.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "a97d20ab7840ae9f",
+            "id": "abba824d66ee5b49",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "0.0 Cyber Security Course/Cyber Security Course.md",
+                "file": "0.0 Cyber Security Course/Terminologies.md",
                 "mode": "source",
                 "source": false
               }
@@ -185,17 +198,20 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "a97d20ab7840ae9f",
+  "active": "57b63296a1af7d53",
   "lastOpenFiles": [
-    "0.0 Cyber Security Course/Cheat Sheets.md",
+    "0.0 Cyber Security Course/Notes/Week 01/20240626 - Wednesday.md",
+    "0.0 Cyber Security Course/Terminologies.md",
     "0.0 Cyber Security Course/Cyber Security Course.md",
+    "7.0 Cryptography/Cryptography.md",
+    "7.0 Cryptography",
+    "0.0 Cyber Security Course/Notes/To-Do's.md",
+    "0.0 Cyber Security Course/Cheat Sheets.md",
+    "2.0 Operating Systems/2.1 Desktops & Laptops/2.1.2 Linux & Unix.md",
+    "6.0 Programming Languages/Programming Languages.md",
     "0.0 Cyber Security Course/Tools.md",
     "5.0 Networking/Networking.md",
-    "0.0 Cyber Security Course/Notes/Week 01/20240626 - Wednesday.md",
     "0.0 Cyber Security Course/Resources.md",
-    "0.0 Cyber Security Course/Notes/To-Do's.md",
-    "6.0 Programming Languages/Programming Languages.md",
-    "0.0 Cyber Security Course/Terminologies.md",
     "6.0 Programming Languages",
     "0.0 Cyber Security Course/Notes/Notes.md",
     "0.0 Cyber Security Course/Certifications.md",
@@ -214,9 +230,7 @@
     "2.0 Operating Systems/Operating Systems.md",
     "5.0 Networking",
     "5.0 Networking.md",
-    "1.0 Types of Attacks/Types of Attacks.md",
     "3.0 Central Processing Units (CPU's)/AMD",
-    "2.0 Operating Systems/2.1 Desktops & Laptops/2.1.0 Operating Systems (Desktops & Laptops).md",
     "3.0 Operating Systems (Desktops & Laptops)/3.2 Portable Handheld Portables/Untitled",
     "2.0 Operating Systems/2.2 Portable Handheld Portables",
     "2.0 Operating Systems/2.1 Desktops & Laptops",
@@ -224,7 +238,6 @@
     "4.0 Memory",
     "99.99 Images Used/Pasted image 20240626151914.png",
     "3.0 Central Processing Units (CPU's)",
-    "99.99 Images Used",
     "99.99 Images Used/Pasted image 20240625173558.png",
     "Pasted image 20240625173221.png",
     "Untitled.canvas"
