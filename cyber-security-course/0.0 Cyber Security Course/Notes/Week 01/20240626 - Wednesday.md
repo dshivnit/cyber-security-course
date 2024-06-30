@@ -277,7 +277,14 @@ TO DO and Terminologies:
 - From Mark O'Gorman:
 	- initscripts is an example of something going out of date. the initscripts start up system has been replaced in most operating systems by systemd.
 	  Look into these terms in more detail
+		  Cheatsheet created
+		  Some notes defined in Terminologies
+		  Done, for now. 
+	  
   - Find out which profile in bash needs to be updated to save alias changes to commands
+	    Pretty sure this should be the .bash_profile from memory
+		    Added to main Todo's page for now
+	    
   - Great power comes with great responsibility (a different way to look at things)
   - Look into seeing if the --help can be run on commands that have an alias variation made in the shell
   - Look into these

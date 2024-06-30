@@ -97,3 +97,5 @@ Randoms:
 - YouTube Downloaders (get a good one)
 	- YouTube Downloader - for referencing to a video online, grab a local copy of it and upload it on to your online platform should you need to refer to it (to prevent broken links in the future - in the event that vid goes down)
 - architects holy hell album art (From Jason)
+- Find out which profile in bash needs to be updated to save alias changes to commands
+- 
