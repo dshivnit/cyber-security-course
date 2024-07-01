@@ -20,6 +20,9 @@ Tools mainly being used so far in this course will be described here (note - the
 		- This will scan for all open ports
 		- Scanning all ports up to 65535 (max number of possible ports)
 		- Trying to go as fast as it can
+	- -sV : Probe open ports to determine service/version info
+	- -sC : equivalent to --script=default
+		- example: nmap -sC -sV *ip_address/hostname*
 - redis-tools
 	- installed in Ubuntu (apt install redis-tools)
 - GoBuster
@@ -36,3 +39,10 @@ Tools mainly being used so far in this course will be described here (note - the
 - Task Manager (Windows)
 	- Task Manager is a built-in GUI-based Windows utility that allows users to see what is running on the Windows system. It also provides information on resource usage, such as how much each process utilizes CPU and memory. When a program is not responding, the Task Manager is used to terminate the process. (TryHackMe Endpoint Sec Fundamentals module)
 - Lynx - text-based browser for Linux
+- mysql
+	- -h : connect to a host 
+	- Three DB's in each MySQL instance that are common across ALL MySQL instances:
+		- information_schema
+		- mysql
+		- performance_schema
+	- 
