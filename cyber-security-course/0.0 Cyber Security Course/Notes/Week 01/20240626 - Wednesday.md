@@ -285,22 +285,44 @@ TO DO and Terminologies:
 	    Pretty sure this should be the .bash_profile from memory
 		    Added to main Todo's page for now
 	    
-  - Great power comes with great responsibility (a different way to look at things)
+  - Great power comes with great responsibility. 
+		I choose Mark Manson's version
+			With great responsibility comes great power. 
+			
   - Look into seeing if the --help can be run on commands that have an alias variation made in the shell
+	    Noted in the main todos
+	    
   - Look into these
-	  - CLSID's
+	  - CLSID
+		  - A globally unique identifier that identifies a COM class object. (learn.microsoft.com)
+		  - A serial number that represents a globally unique identifier for any application component in Windows
+		    (NordVPN)
+				    This has been noted in Terminologies for now, with the idea of expanding it at a later date
 	  - UUID's
+		    Noted in Terminologies for now
+		    
   - Check out symbolic links for when in bash or similar shell
 	  - Similar to shortcuts
+		    Noted in Terminologies and also to look further into in ToDos
+  - 
   - Look into the details of sbin and it's commands in more detail
+	    Cheat sheets updated with the Unix Filesystem Cheat Sheet
+	    
   - CloudFlare DNS:
 	  - 1.1.1.1
+		    noted - in my head.
+		    
   - Text Editor:
-	  - CHECK IT OUT
+	  - CHECK IT OUT .... wtf was I thinking here, too much bs
+	    
   - Continue with Network+ modules
 	  - IPv6 should not be far away..?
+		    Yes.
+		    
   - List up (in this Vault) the most useful and common commands for all OS's
 	  - Reference to online cheat sheets where possible (always reference - be good)
+			    THIS IS A WIP
+			    
   - md5
 	- message digest version 5
 	- Made by Ron Rivest in 1991
@@ -311,35 +333,61 @@ TO DO and Terminologies:
 	- You'd need to use ctrl+d to tell the system you're finished with whatever input you want to hash (this is in the Unix/Linux shell)
 	- scream for --help if stuck
 	- MD5 checksum (used to verify the integrity of files :) )
+			This has been noted in the Cryptography section
+			
 	- Look into symbolic links in a unix/linux shell further
 		- this one confused me in the past and still does, gg - git good
+			  Symbolic links will be looked into further when I get to that part of bash again.
 - jabberd
 	- Instant messaging system back in the days (check it for the sake of looking into days past)
+		  Noted in random todo's
+		  
 - Look into Unix Permissions further (chmod'aring all dae)
 	- User
 	- Group
 	- Other
+		  Done in the past, reviewed again, but will elaborate further later
+		  
 - Pi-hole - from Cameron - check it out | for RPi's
+	  Added to random todo's list
+	  
 - Check out:
 	- TryHackMe.com
 	- HackTheBox (will have to adjust NoScript policies as well as with Brave and uBlock)
 		- Search up Unitec as the University
+				Done, WIP, still needing to search up Unitec as the University when I get to that stage
+	
 - Build your LinkedIn with certifications granted from the above online tools
 	- (and the others as well, post a soft copy of the papers you have)
+		  Noted in random todo's
+		  
 - Look into:
 	- Kali  (LInux on the fly OS)
 		- Look up others
+			  Done, initial list given in OSes > Linux and Unix
+			  
 - Clean up Mailbox folders
+	  Added to random todo's
+	  
 - DualLingo - GO GO FOR MANDARIN! (from Blair Hodson, chur!)
+	  Added to random todo's
+	  
 - Read through rules for both of the Discord channels Kris shared today
+	  Added to Todo's (so many bloody Discords..)
+	  
 - Install VirtualBox
 		- Setup a VM of a variant of a Linux distro
 		- Install OpenVPN
+			  done whilst using WSL for now
 		- Configure it to speak with the HackTheBox system
 			- Hopefully this bypasses that 2-hour countdown (Kris mentioned something along the lines of this)
+				  Diverted to using WSL for the time being running Ubuntu for now
+	  Noted in Todo's will tend to this at a later stage as I want some VMs set up to familiarise with various GUI's and shells.
+  
 - Add the AppSec Event to the Calendar
 	- https://appsec.org.nz/conference/
 	- OWASP New Zealand Day 2024
 		3 - 6 September 2024
 		Auckland University of Technology (AUT) City Campus
+			Added to calendar etc etc
 ##---------------------------------

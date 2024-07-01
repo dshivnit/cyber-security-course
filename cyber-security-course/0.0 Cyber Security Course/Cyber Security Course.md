@@ -1,3 +1,4 @@
+"With great responsibility comes great power." - Mark Manson
 
 [[Course Team]]
 

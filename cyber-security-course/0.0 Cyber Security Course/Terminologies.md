@@ -85,3 +85,25 @@ Encryption/Cryptology Terms
 - CVSS - Common Vulnerability Scoring System (there are different versions)
 	- Responsible disclosure
 - 
+- CLSID
+	- A globally unique identifier that identifies a COM class object. (learn.microsoft.com)
+	- A serial number that represents a globally unique identifier for any application component in Windows
+		(NordVPN)****
+- COM
+	- Communication Port
+		- The serial port interfaces found on personal computers (PCs)
+		- It may refer to a single physical port, or several emulated ports like USB 3.0 and Bluetooth
+- COM (Component Object Model) Class Object (programming)
+	- An intermediate object that supports functions common to creating new instances of a given class
+- UUID (Universal Unique Identifier)
+	- A 128-bit value used to uniquely identify an object or entity on the Internet. A UUID is either guaranteed to be different or is, at least, extremely likely to be different from any other UUID generated until the year 3400 AD. (TechTarget.com)
+	- A UUID can be represented as a 128 bit integer. For example, the UUID **550e8400-e29b-41d4-a716-446655440000** can also be represented as 113059749145936325402354257176981405696. (wikipedia.org)
+- GUID (Globally Unique Identifier)
+	- A 128-bit text string that represents an identification (ID). 
+	- Organisations generate GUIDs when a unique reference number is needed to identify information on a computer or network. A GUID can be used to ID hardware, software, accounts, documents and other items.
+	- https://learn.microsoft.com/en-us/dotnet/framework/data/adonet/sql/comparing-guid-and-uniqueidentifier-values
+- Symbolic Link (symlink)
+	- A file whose purpose is to point to a file or directory (called the "target") by specifying a path thereto. (wikipedia.org)
+	- Symbolic links are supported by POSIX and by most UNIX-like OSes (FreeBSD, Linux and MacOS)
+	- 
+- 

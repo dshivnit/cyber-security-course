@@ -60,7 +60,20 @@
 	- Then go through all the content and fill in the topic gaps that are up in this vault
 - Check out QNAP
 - Check out how to format properly in .md (markdown) files so that they can be seen the way they look in Obsidian
+- Look into seeing if the --help can be run on commands that have an alias variation made in the shell
+- Look into Symbolic Links more
+- Continue with Network+ modules
+- HackTheBox (will have to adjust NoScript policies as well as with Brave and uBlock)
+		- Search up Unitec as the University
+				Done, WIP, still needing to search up Unitec as the University when I get to that stage
+- Read through the rules for the two Discord servers that Kris shared
+	  HackTheBox
+	  TryHackMe
+- Install VirtualBox
+		- Setup a VM of a variant of a Linux distro
+		-
 - 
+	
 
 Randoms:
 - - Look up the F-35 oxygen system cutting out to the pilot
@@ -110,4 +123,11 @@ Randoms:
 - Touch on Quantum Computing again :) 
 - Shor's Algorithm
 	- Look into this
+- jabberd
+	- Instant messaging system back in the days (check it for the sake of looking into days past, sigh, days passed... xD)
+- Pi-hole - from Cameron - check it out | for RPi's
+- Build your LinkedIn with certifications granted from the above online tools
+	- (and the others as well, post a soft copy of the papers you have)
+- Clean up Mailbox folders
+- DualLingo - GO GO FOR MANDARIN! (from Blair Hodson, chur!)
 - 

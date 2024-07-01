@@ -16,4 +16,7 @@
 - Redis
 	https://redis.io/learn/howtos/quick-start/cheat-sheet
 	
+- Unix Filesystem Cheat Sheet
+	https://github.com/ttaylordev/cheat-sheets-etc/blob/master/filesystem-hierarchy.md
+	
 - 
