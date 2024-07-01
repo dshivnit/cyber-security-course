@@ -45,7 +45,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "1.0 Types of Attacks & Defense/1.1 Attacks/1.1.1 Types of Attacks.md",
+                "file": "3.0 Software/3.1 Operating Systems/3.1.1 Desktops & Laptops/3.1.1.2 Linux & Unix.md",
                 "mode": "source",
                 "source": false
               }
@@ -75,7 +75,8 @@
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -141,7 +142,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "1.0 Types of Attacks & Defense/1.1 Attacks/1.1.1 Types of Attacks.md",
+                "file": "0.0 Cyber Security Course/Commands.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -158,7 +159,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "1.0 Types of Attacks & Defense/1.1 Attacks/1.1.1 Types of Attacks.md",
+                "file": "0.0 Cyber Security Course/Commands.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -181,7 +182,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "1.0 Types of Attacks & Defense/1.1 Attacks/1.1.1 Types of Attacks.md"
+                "file": "0.0 Cyber Security Course/Commands.md"
               }
             }
           }
@@ -202,17 +203,18 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "17376f0c887d6e0d",
+  "active": "2b6a769a6a4ec684",
   "lastOpenFiles": [
-    "0.0 Cyber Security Course/Tools.md",
+    "3.0 Software/3.1 Operating Systems/3.1.1 Desktops & Laptops/3.1.1.2 Linux & Unix.md",
     "0.0 Cyber Security Course/Commands.md",
+    "1.0 Types of Attacks & Defense/1.1 Attacks/1.1.1 Types of Attacks.md",
+    "0.0 Cyber Security Course/Tools.md",
     "0.0 Cyber Security Course/Resources.md",
     "0.0 Cyber Security Course/Terminologies.md",
     "0.0 Cyber Security Course/Notes/To-Do's.md",
     "1.0 Types of Attacks & Defense/1.2 Defense/1.2.1 Types of Defense.md",
     "0.0 Cyber Security Course/Class Topics.md",
     "1.0 Types of Attacks & Defense/Types of Attacks & Defense.md",
-    "1.0 Types of Attacks & Defense/1.1 Attacks/1.1.1 Types of Attacks.md",
     "0.0 Cyber Security Course/Cyber Security Course.md",
     "1.0 Types of Attacks & Defense/1.2 Defense",
     "1.0 Types of Attacks & Defense/1.1 Attacks",
@@ -228,7 +230,6 @@
     "3.0 Software/3.1 Operating Systems/3.1.2 Portable Handheld Portables/3.1.2.0 Operating Systems (Handheld Portables).md",
     "3.0 Software/3.1 Operating Systems/3.1.1 Desktops & Laptops/3.1.1.0 Operating Systems (Desktops & Laptops).md",
     "3.0 Software/3.1 Operating Systems/3.1.1 Desktops & Laptops/3.1.1.3 MacOS.md",
-    "3.0 Software/3.1 Operating Systems/3.1.1 Desktops & Laptops/3.1.1.2 Linux & Unix.md",
     "3.0 Software/3.1 Operating Systems/3.1.1 Desktops & Laptops/3.1.1.1 Windows (10 & 11).md",
     "3.0 Software/3.1 Operating Systems/Operating Systems.md",
     "3.0 Software",

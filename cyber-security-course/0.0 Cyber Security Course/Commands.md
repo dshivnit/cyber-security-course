@@ -17,4 +17,17 @@ Bash
 - sudo 
 	- SUPERUSER DO!
 	- Run a command as a superuser whilst in the environment/shell as another regular (non admin) user
-- 
+- awk
+	- Tool and programming language that allows users to process and manipulate data and produce formatted reports. 
+		- To list all usernames on the system:
+			- awk -F: '{ print $1 }' /etc/passwd   OR
+			- cat /etc/passwd   (this will get you a more detailed list of users, with UIDs etc)
+- id
+	- Print real and effective user and group IDs
+	- Example:
+		- id
+			- Will get you the current User's UID, GID, and the GROUPS the User belongs to
+		- id *username*
+			- Will get you the given usernames UID, GID and the GROUPS the given username belongs to
+			- In the context of UIDs, don't forget that anything that isn't 0, is NOT root.
+		- 
