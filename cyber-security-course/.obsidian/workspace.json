@@ -31,7 +31,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "0.0 Cyber Security Course/Terminologies.md",
+                "file": "0.0 Cyber Security Course/Tools.md",
                 "mode": "source",
                 "source": false
               }
@@ -127,7 +127,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "0.0 Cyber Security Course/Notes/Week 02/20240701 - Monday.md",
+                "file": "0.0 Cyber Security Course/Tools.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -144,7 +144,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "0.0 Cyber Security Course/Notes/Week 02/20240701 - Monday.md",
+                "file": "0.0 Cyber Security Course/Tools.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -167,7 +167,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "0.0 Cyber Security Course/Notes/Week 02/20240701 - Monday.md"
+                "file": "0.0 Cyber Security Course/Tools.md"
               }
             }
           }
@@ -188,7 +188,7 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "57b63296a1af7d53",
+  "active": "98fa4ab08efc16a1",
   "lastOpenFiles": [
     "0.0 Cyber Security Course/Terminologies.md",
     "0.0 Cyber Security Course/Notes/Week 02/20240701 - Monday.md",
