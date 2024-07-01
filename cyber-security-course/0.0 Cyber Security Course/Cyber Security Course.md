@@ -2,6 +2,8 @@
 
 [[Course Team]]
 
+[[Class Topics]]
+
 [[Certifications]]
 
 [[Resources]]
