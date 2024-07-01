@@ -10,4 +10,7 @@
 - Systemd vs Init
 	https://www.geeksforgeeks.org/systemd-vs-init-cheatsheet-for-linux/#:~:text=Systemd%20is%20the%20new%20init,%2Fand%20so%20on%2Frc.
 	
+- nmap
+	https://www.stationx.net/nmap-cheat-sheet/
+
 - 
