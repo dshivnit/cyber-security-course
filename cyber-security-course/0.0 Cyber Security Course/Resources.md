@@ -62,6 +62,8 @@
 	- Who created this?
 	  
 20. 
+    
+21. 
 
 MICROSOFT
 
@@ -70,6 +72,8 @@ MICROSOFT
 	- Process Explorer: https://learn.microsoft.com/en-us/sysinternals/downloads/process-explorer
 	- TCPView: https://learn.microsoft.com/en-us/sysinternals/downloads/tcpview
 	- Process Monitor: https://learn.microsoft.com/en-us/sysinternals/downloads/procmon
+- MS Security Update Guide
+    https://www.reddit.com/r/qnap/comments/n14rr0/whos_walter_shao/?rdt=42023
 	  
 - Built into Windows:
 	- Device Manager (built into Windows)

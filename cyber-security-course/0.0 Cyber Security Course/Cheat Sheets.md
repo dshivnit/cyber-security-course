@@ -13,4 +13,7 @@
 - nmap
 	https://www.stationx.net/nmap-cheat-sheet/
 
+- Redis
+	https://redis.io/learn/howtos/quick-start/cheat-sheet
+	
 - 

@@ -34,4 +34,4 @@
 [[Notes]]
 
 
-"What are our risks?" - common question asked of a (to a?) Security Consultant, Engineer.
+"What are our risks?" - common question asked of a (to a?) Security Consultant/Engineer.

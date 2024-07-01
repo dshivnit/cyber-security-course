@@ -13,30 +13,43 @@
             "state": {
               "type": "markdown",
               "state": {
+                "file": "0.0 Cyber Security Course/Cheat Sheets.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "aa3cbceea753bfb4",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "0.0 Cyber Security Course/Resources.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "63e4f57da556cf00",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
                 "file": "0.0 Cyber Security Course/Notes/Week 02/20240701 - Monday.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ]
+        ],
+        "currentTab": 2
       },
       {
         "id": "2fb0e64401067da2",
         "type": "tabs",
         "children": [
-          {
-            "id": "98fa4ab08efc16a1",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "9.0 Databases/Databases.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
           {
             "id": "75699622a18e31f6",
             "type": "leaf",
@@ -44,6 +57,18 @@
               "type": "markdown",
               "state": {
                 "file": "0.0 Cyber Security Course/Cyber Security Course.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "98fa4ab08efc16a1",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "0.0 Cyber Security Course/Commands.md",
                 "mode": "source",
                 "source": false
               }
@@ -140,7 +165,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "0.0 Cyber Security Course/Cyber Security Course.md",
+                "file": "0.0 Cyber Security Course/Notes/Week 02/20240701 - Monday.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -157,7 +182,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "0.0 Cyber Security Course/Cyber Security Course.md",
+                "file": "0.0 Cyber Security Course/Notes/Week 02/20240701 - Monday.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -180,7 +205,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "0.0 Cyber Security Course/Cyber Security Course.md"
+                "file": "0.0 Cyber Security Course/Notes/Week 02/20240701 - Monday.md"
               }
             }
           }
@@ -201,23 +226,24 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "75699622a18e31f6",
+  "active": "63e4f57da556cf00",
   "lastOpenFiles": [
-    "9.0 Databases/Databases.md",
+    "0.0 Cyber Security Course/Resources.md",
+    "0.0 Cyber Security Course/Notes/Week 02/20240701 - Monday.md",
+    "0.0 Cyber Security Course/Cheat Sheets.md",
+    "0.0 Cyber Security Course/Commands.md",
+    "0.0 Cyber Security Course/Tools.md",
     "9.0 Databases/9.2 Traditional Database.md",
     "9.0 Databases/9.1 In-memory Database.md",
-    "0.0 Cyber Security Course/Tools.md",
-    "9.0 Databases",
+    "9.0 Databases/Databases.md",
     "0.0 Cyber Security Course/Notes/To-Do's.md",
-    "0.0 Cyber Security Course/Cheat Sheets.md",
-    "0.0 Cyber Security Course/Notes/Week 02/20240701 - Monday.md",
+    "0.0 Cyber Security Course/Cyber Security Course.md",
+    "9.0 Databases",
     "0.0 Cyber Security Course/Terminologies.md",
     "1.0 Types of Attacks/Types of Attacks.md",
-    "0.0 Cyber Security Course/Resources.md",
     "6.0 Programming Languages/Programming Languages.md",
     "7.0 Cryptography/Cryptography.md",
     "0.0 Cyber Security Course/Notes/Week 01/20240626 - Wednesday.md",
-    "0.0 Cyber Security Course/Cyber Security Course.md",
     "0.0 Cyber Security Course/Notes/Week 01/20240625 - Tuesday.md",
     "0.0 Cyber Security Course/Notes/Week 01/20240624 - Monday.md",
     "0.0 Cyber Security Course/Notes/Week 01/20240627 - Thursday.md",
@@ -231,7 +257,6 @@
     "0.0 Cyber Security Course/Certifications.md",
     "0.0 Cyber Security Course/Notes/Week 02",
     "3.0 Central Processing Units (CPU's)/Central Processing Units (CPU's).md",
-    "0.0 Cyber Security Course/Commands.md",
     "0.0 Cyber Security Course/Course Team.md",
     "3.0 Central Processing Units (CPU's)/3.1 AMD CPUs.md",
     "5.0 Networking",
