@@ -19,4 +19,10 @@
 - Unix Filesystem Cheat Sheet
 	https://github.com/ttaylordev/cheat-sheets-etc/blob/master/filesystem-hierarchy.md
 	
+- MySQL Cheat Sheet
+  https://gist.github.com/bradtraversy/c831baaad44343cc945e76c2e30927b3
+
+- OWASP SQL Injection Prevention Cheat Sheet
+  https://cheatsheetseries.owasp.org/cheatsheets/SQL_Injection_Prevention_Cheat_Sheet.html
+
 - 

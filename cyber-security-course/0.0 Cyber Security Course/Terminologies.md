@@ -120,3 +120,5 @@ Encryption/Cryptology Terms
 	- Examples:
 		- Amazon S3 buckets
 		- Google Cloud buckets
+- WAP - Web Application Firewall
+- 
