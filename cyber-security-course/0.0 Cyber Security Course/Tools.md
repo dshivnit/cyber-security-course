@@ -55,4 +55,7 @@ Tools mainly being used so far in this course will be described here (note - the
   https://who.is/
 - Parallels (Windows on MacOS)
 - DIG - Domain Information Groper (can also get this on Windows via WSL)
-- 
+- - Sysinternals TCPView
+- nmap (for both Unix and Windows shells)
+- dnscrypt
+	- 

@@ -1,0 +1,94 @@
+RANDOMS:
+- - Look up the F-35 oxygen system cutting out to the pilot
+	- In relation to RTOS (Real Time OS)
+- CrackMe
+	- Software that was designed by the programmer and a fun little 'thingy' for the sake of testing and learning
+	- Look up some examples for s&g's
+- Look up XZ Backdoor story
+- Check out who created the Mouse and the GUI
+	- In relation to Xerox? Palta Alto (something like that)
+- Alexander Graham Bell - Invented the telegram/telephone
+	- Check him out
+	- Turned into AT&T (from Bell technologies or something like this? )
+	- Check out the story
+	- And the anti-trust laws that had taken place
+- Internet Explorer v5 and 6
+	- Anti-trust issues check it out
+	- Web 2.0
+- Google's GO programming language 
+	- Similar to C
+	- check it out
+	- https://go.dev/
+- The Flutter Framework
+	- Google's open-source UI software development kit. Used to develop cross platform apps from a single codebase for the web, Fuchsia, Android, iOS, Linux, MacOS and Windows
+	- Sounds bloody awesome!
+	- Google laid off a bunch of staff who were working with Flutter
+	- if a project doesn't take off massively, they will kill the project
+	- there is a Google graveyard of projects that didn't make it
+	- Check it out
+	- https://flutter.dev/
+- Look into Samsung's KNOX in further detail
+- https://xkcd.com/927/ - from Josh
+- Angular.js - discontinued
+	- But check out a bit more about it
+- ICMS - Spark/Telecom - used SSH or something or rather to do something; see what you can find
+	  ???? Ahh, I think this is the tool that Telecom/Spark used to use and still use
+- TP2? - still being used by VF? have a look or ask around
+- tharchive.org - wayback machine (check it out)
+	- Issues accessing this page
+	  They did also get sued in the days of Covid for copyright infringments (but this could have been a different outfit from thearchive.org group
+	  There is however blog.thearchive.org which reads, "THE BATTLE CONTINUES!"
+	  Virustotal says it's safe)
+- YouTube Downloaders (get a good one)
+	- YouTube Downloader - for referencing to a video online, grab a local copy of it and upload it on to your online platform should you need to refer to it (to prevent broken links in the future - in the event that vid goes down)
+- architects holy hell album art (From Jason)
+- Find out which profile in bash needs to be updated to save alias changes to commands
+- Touch on Quantum Computing again :) 
+- Shor's Algorithm
+	- Look into this
+- jabberd
+	- Instant messaging system back in the days (check it for the sake of looking into days past, sigh, days passed... xD)
+- Pi-hole - from Cameron - check it out | for RPi's
+- Build your LinkedIn with certifications granted from the above online tools
+	- (and the others as well, post a soft copy of the papers you have)
+- Clean up Mailbox folders
+- DualLingo - GO GO FOR MANDARIN! (from Blair Hodson, chur!)
+- Rewatch Mr Robot (because it's awesome, and the hackathon thing that Blair mentioned wherein the show had stolen the output or something or rather of a real number and started to call it)
+- The PING of death on Win98
+	- Was able to send more than 32bytes of data when sending out pings
+- Armenian Internet-connection getting dropped because of a lady digging?
+- Check out how the Brooklyn Bridge was made (by vacuuming out the water) - Kris and Blair (in relation to undersea cabelling)
+	- Also check out sharks, because sharks. And their noses biting undersea cables
+- Bermuda Triangle lels - Josh
+	- As radio has become more advanced, a lot of the dangers don't seem no prominent anymore
+	- Lemmino did a whole documentary on it - I recommend watching it (Kazuki) (https://www.youtube.com/watch?v=AgMcqNnqatw)
+- i4free and z4free
+	- Internet service providers in NZ back in the days
+	- History look up (in difference to paid service providers)
+- Double check GeekZone access when on Brave
+- Tip into foive eyz
+- Search up Australia Backdoor Law 
+- Sub-marine Cable Map:
+  https://www.submarinecablemap.com/ put this somewhere where it's a bit better organised in this Vault
+- - Look into kryptos sculpturing
+	- https://www.cia.gov/legacy/headquarters/kryptos-sculpture
+	- From Jason
+- https://www.icann.org/en/announcements/details/advisory-concerning-verisigns-deployment-of-dns-wildcard-service-19-9-2003-en
+- https://archive.nytimes.com/www.nytimes.com/library/cyber/week/071797dns.html - From Marc - chickidy check it out
+- https://www.datacenterdynamics.com/en/analysis/ovhcloud-fire-france-data-center/
+  OVH Data Centre up in smoke 
+	  lel
+- NZ Post owned the copper-network to begin with from where the NZ taxpayer had paid for installation of the network through the country
+- Telecom then had bought the network out
+- Look into the history of this, this is our country - would be good to know :) 
+- [https://www.youtube.com/watch?v=nd1x0csO3hU&list=WL&index=7&t=1s](https://www.youtube.com/watch?v=nd1x0csO3hU&list=WL&index=7&t=1s "https://www.youtube.com/watch?v=nd1x0csO3hU&list=WL&index=7&t=1s") - check this out when you can
+-  Cap'n Crunch - some blind dude had super hearing hearing ability would then be able to recreate a super tone dial to get into admin mode somewhere -- Kris will link a doco to it
+- Check out that link you saved in Bookmarks (in the who.is)
+- Shebuya (sp - in Japan)
+	- Local bodies using a frequency to prevent people from loitering
+	- Babies crying, parents don't know
+	- GG (interesting look it up)
+Kris' How to send an email "Early Emails" : https://www.youtube.com/watch?v=szdbKz5CyhA
+- https://www.youtube.com/watch?v=FufYSx2_6Bg
+- Look up David McBride
+- stable diffusion - check it out (term given by Kris)

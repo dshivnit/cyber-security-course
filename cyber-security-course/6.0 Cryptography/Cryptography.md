@@ -7,4 +7,5 @@ The process of hiding or coding information so that only the person a message wa
 			- You can make hash out of a potato, but you turn hash back into a potato (lel)
 	- Made by Ron Rivest in 1991
 	- MD5 Checksums say for example, can verify the integrity of files received on the receiving end of a connection
-	- 
+- DNSCrypt
+	- *expand on this*

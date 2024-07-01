@@ -40,5 +40,7 @@
 
 [[Notes]]
 
+[[To-Do's (RANDO)]]
+
 
 "What are our risks?" - common question asked of a (to a?) Security Consultant/Engineer.
