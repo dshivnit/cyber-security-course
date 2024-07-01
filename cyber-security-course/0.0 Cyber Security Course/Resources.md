@@ -54,7 +54,10 @@
 17. CVE (Critical) - Latest (you can also adjust the severity query)
 	https://www.opencve.io/cve?cvss=critical
 	
-18. 
+18. Python Library
+    https://docs.python.org/3/library/index.html
+    
+19. 
 
 
 MICROSOFT

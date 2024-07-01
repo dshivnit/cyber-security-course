@@ -23,8 +23,6 @@
 
 [[Cheat Sheets]]
 
-[[Notes]]
-
 [[Programming Languages]]
 
 [[Cryptography]]
@@ -32,3 +30,7 @@
 [[Blockchain]]
 
 
+[[Notes]]
+
+
+"What are our risks?" - common question asked of a (to a?) Security Consultant, Engineer.

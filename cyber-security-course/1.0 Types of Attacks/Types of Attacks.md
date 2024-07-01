@@ -8,6 +8,11 @@
 - Social Engineering Attacks.
 (the above was taken from crowdstrike.com as the 12 most common types of attacks today June 2024)
 
+
+- SQL Injection Attack
+	- A common attack vector that uses malicious SQL code for backend database manipulation to access information that was not intended to be displayed. 
+- HTTP Request Smuggling (HRS)
+
 - Fork Bomb
 	- Also known as a Rabbit Virus)
 	- Self-replicating child processes consume system resources, blocking legitimate programs from running and preventing the creation of new processes. During an attack, keyboard inputs (log out attempts for example) are ignored, essentially locking the system
