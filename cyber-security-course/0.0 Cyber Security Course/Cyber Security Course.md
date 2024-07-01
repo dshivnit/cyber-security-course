@@ -14,7 +14,7 @@
 
 [[Commands]]
 
-[[Types of Attacks]]
+[[1.1.1 Types of Attacks]]
 
 [[Operating Systems]]
 
