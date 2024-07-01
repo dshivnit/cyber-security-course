@@ -104,4 +104,7 @@
 -  Look into RIPE in relation to DNS 
 	- **Ensuring the uniqueness of Internet number** resource usage through registration of information related to the resources and their Registrants and Maintainers (RIPE INR)18 Dec 2023
 	- LOOK INTO THIS FURTHER
+- Kris in response to Blair on Discord (regarding YT Fireship's channel and YT feeds now showing more techie related stuff since the course started and what Blair has been looking up on z'YT)
+	- "Yeah YouTube's algorithm does that. You search one tiny topic or click on a video from friends/family and next thing your entire feed is full of the topic. There's a good way to control what it gives you that I can talk about"
+- 
 
