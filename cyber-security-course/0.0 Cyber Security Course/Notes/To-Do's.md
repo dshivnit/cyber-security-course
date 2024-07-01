@@ -130,4 +130,5 @@ Randoms:
 	- (and the others as well, post a soft copy of the papers you have)
 - Clean up Mailbox folders
 - DualLingo - GO GO FOR MANDARIN! (from Blair Hodson, chur!)
+- Rewatch Mr Robot (because it's awesome, and the hackathon thing that Blair mentioned wherein the show had stolen the output or something or rather of a real number and started to call it)
 - 

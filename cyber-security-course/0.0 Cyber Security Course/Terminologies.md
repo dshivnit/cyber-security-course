@@ -1,3 +1,4 @@
+*Rationalise/organise these ...*
 - POC - Proof of Concept
 - RCE - Remote Code Execution
 - LoRA - Low-Rank Adaptation || Learned Rank Augmentation || A wireless modulation technique
@@ -105,5 +106,5 @@ Encryption/Cryptology Terms
 - Symbolic Link (symlink)
 	- A file whose purpose is to point to a file or directory (called the "target") by specifying a path thereto. (wikipedia.org)
 	- Symbolic links are supported by POSIX and by most UNIX-like OSes (FreeBSD, Linux and MacOS)
-	- 
+- CIDR - Classless Inter-Domain Routing
 - 

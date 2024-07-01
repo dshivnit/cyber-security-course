@@ -14,7 +14,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "0.0 Cyber Security Course/Class Topics.md",
+                "file": "0.0 Cyber Security Course/Notes/Week 01/20240627 - Thursday.md",
                 "mode": "source",
                 "source": false
               }
@@ -40,7 +40,31 @@
         "dimension": 46.12462006079027,
         "children": [
           {
-            "id": "de8f7b02e079b1ca",
+            "id": "17376f0c887d6e0d",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "0.0 Cyber Security Course/Tools.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "ddf9081fdc196ff7",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "5.0 Networking/Networking.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "a6267192cedd2291",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -50,57 +74,9 @@
                 "source": false
               }
             }
-          },
-          {
-            "id": "17376f0c887d6e0d",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "0.0 Cyber Security Course/Commands.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "a9b6c928882cb62e",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "7.0 Cryptography/Cryptography.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "63e4f57da556cf00",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "0.0 Cyber Security Course/Cheat Sheets.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "5f1401350d267311",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "2.0 Operating Systems/Operating Systems.md",
-                "mode": "source",
-                "source": false
-              }
-            }
           }
         ],
-        "currentTab": 4
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -166,7 +142,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "0.0 Cyber Security Course/Class Topics.md",
+                "file": "0.0 Cyber Security Course/Terminologies.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -183,7 +159,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "0.0 Cyber Security Course/Class Topics.md",
+                "file": "0.0 Cyber Security Course/Terminologies.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -206,7 +182,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "0.0 Cyber Security Course/Class Topics.md"
+                "file": "0.0 Cyber Security Course/Terminologies.md"
               }
             }
           }
@@ -227,22 +203,24 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "57b63296a1af7d53",
+  "active": "a6267192cedd2291",
   "lastOpenFiles": [
+    "5.0 Networking/Networking.md",
+    "0.0 Cyber Security Course/Notes/Week 01/20240627 - Thursday.md",
+    "0.0 Cyber Security Course/Notes/To-Do's.md",
+    "0.0 Cyber Security Course/Tools.md",
+    "0.0 Cyber Security Course/Resources.md",
+    "0.0 Cyber Security Course/Commands.md",
     "2.0 Operating Systems/Operating Systems.md",
     "0.0 Cyber Security Course/Class Topics.md",
     "0.0 Cyber Security Course/Cyber Security Course.md",
     "0.0 Cyber Security Course/Notes/Week 01/20240626 - Wednesday.md",
     "2.0 Operating Systems/2.3 Servers/2.3.0 Operating Systems (Servers).md",
-    "0.0 Cyber Security Course/Notes/To-Do's.md",
     "2.0 Operating Systems/2.1 Desktops & Laptops/2.1.2 Linux & Unix.md",
-    "0.0 Cyber Security Course/Tools.md",
-    "0.0 Cyber Security Course/Commands.md",
     "0.0 Cyber Security Course/Cheat Sheets.md",
     "7.0 Cryptography/Cryptography.md",
     "0.0 Cyber Security Course/Terminologies.md",
     "0.0 Cyber Security Course/Notes/Week 02/20240701 - Monday.md",
-    "0.0 Cyber Security Course/Resources.md",
     "2.0 Operating Systems/2.1 Desktops & Laptops/2.1.0 Operating Systems (Desktops & Laptops).md",
     "2.0 Operating Systems/2.2 Portable Handheld Portables/2.2.0 Operating Systems (Handheld Portables).md",
     "9.0 Databases/9.2 Traditional Database.md",
@@ -253,11 +231,9 @@
     "6.0 Programming Languages/Programming Languages.md",
     "0.0 Cyber Security Course/Notes/Week 01/20240625 - Tuesday.md",
     "0.0 Cyber Security Course/Notes/Week 01/20240624 - Monday.md",
-    "0.0 Cyber Security Course/Notes/Week 01/20240627 - Thursday.md",
     "8.0 Blockchain/Blockchain.md",
     "8.0 Blockchain",
     "7.0 Cryptography",
-    "5.0 Networking/Networking.md",
     "6.0 Programming Languages",
     "0.0 Cyber Security Course/Notes/Week 02",
     "5.0 Networking",
