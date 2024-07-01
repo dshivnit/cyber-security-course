@@ -75,8 +75,7 @@
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -142,7 +141,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "0.0 Cyber Security Course/Commands.md",
+                "file": "0.0 Cyber Security Course/Tools.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -159,7 +158,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "0.0 Cyber Security Course/Commands.md",
+                "file": "0.0 Cyber Security Course/Tools.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -182,7 +181,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "0.0 Cyber Security Course/Commands.md"
+                "file": "0.0 Cyber Security Course/Tools.md"
               }
             }
           }
@@ -203,12 +202,12 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "2b6a769a6a4ec684",
+  "active": "17376f0c887d6e0d",
   "lastOpenFiles": [
+    "0.0 Cyber Security Course/Notes/To-Do's.md",
     "1.0 Types of Attacks & Defense/1.2 Defense/1.2.1 Types of Defense.md",
     "0.0 Cyber Security Course/Commands.md",
     "0.0 Cyber Security Course/Tools.md",
-    "0.0 Cyber Security Course/Notes/To-Do's.md",
     "0.0 Cyber Security Course/Class Topics.md",
     "1.0 Types of Attacks & Defense/Types of Attacks & Defense.md",
     "1.0 Types of Attacks & Defense/1.1 Attacks/1.1.1 Types of Attacks.md",
