@@ -111,8 +111,7 @@
               }
             }
           }
-        ],
-        "currentTab": 2
+        ]
       }
     ],
     "direction": "vertical"
@@ -178,7 +177,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "2.0 Operating Systems/2.1 Desktops & Laptops/2.1.2 Linux & Unix.md",
+                "file": "0.0 Cyber Security Course/Tools.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -195,7 +194,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "2.0 Operating Systems/2.1 Desktops & Laptops/2.1.2 Linux & Unix.md",
+                "file": "0.0 Cyber Security Course/Tools.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -218,7 +217,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "2.0 Operating Systems/2.1 Desktops & Laptops/2.1.2 Linux & Unix.md"
+                "file": "0.0 Cyber Security Course/Tools.md"
               }
             }
           }
@@ -239,12 +238,12 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "ab4565f530f8aac2",
+  "active": "17376f0c887d6e0d",
   "lastOpenFiles": [
-    "0.0 Cyber Security Course/Notes/Week 01/20240627 - Thursday.md",
     "2.0 Operating Systems/2.1 Desktops & Laptops/2.1.2 Linux & Unix.md",
-    "0.0 Cyber Security Course/Terminologies.md",
     "0.0 Cyber Security Course/Cheat Sheets.md",
+    "0.0 Cyber Security Course/Notes/Week 01/20240627 - Thursday.md",
+    "0.0 Cyber Security Course/Terminologies.md",
     "0.0 Cyber Security Course/Resources.md",
     "0.0 Cyber Security Course/Tools.md",
     "5.0 Networking/Networking.md",

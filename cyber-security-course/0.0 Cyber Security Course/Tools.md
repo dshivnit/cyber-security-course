@@ -31,4 +31,5 @@ Tools mainly being used so far in this course will be described here (note - the
 		- Open Amazon S3 buckets
 		- Open Google Cloud Buckets
 		- TFTP servers
-	- 
+	- Wordlists - generally kept in PATH /usr/share/wordlists, however, you can keep these wherever
+	- git clone https://github.com/danielmiessler/SecLists.git = one of the most famous wordlist collections in use today
