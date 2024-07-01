@@ -6,7 +6,7 @@
       {
         "id": "438c1a7e8461736c",
         "type": "tabs",
-        "dimension": 53.87537993920972,
+        "dimension": 53.87537993920973,
         "children": [
           {
             "id": "57b63296a1af7d53",
@@ -45,7 +45,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "0.0 Cyber Security Course/Tools.md",
+                "file": "1.0 Types of Attacks & Defense/1.1 Attacks/1.1.1 Types of Attacks.md",
                 "mode": "source",
                 "source": false
               }
@@ -141,7 +141,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "0.0 Cyber Security Course/Tools.md",
+                "file": "1.0 Types of Attacks & Defense/1.1 Attacks/1.1.1 Types of Attacks.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -158,7 +158,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "0.0 Cyber Security Course/Tools.md",
+                "file": "1.0 Types of Attacks & Defense/1.1 Attacks/1.1.1 Types of Attacks.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -181,7 +181,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "0.0 Cyber Security Course/Tools.md"
+                "file": "1.0 Types of Attacks & Defense/1.1 Attacks/1.1.1 Types of Attacks.md"
               }
             }
           }
@@ -204,10 +204,12 @@
   },
   "active": "17376f0c887d6e0d",
   "lastOpenFiles": [
+    "0.0 Cyber Security Course/Tools.md",
+    "0.0 Cyber Security Course/Commands.md",
+    "0.0 Cyber Security Course/Resources.md",
+    "0.0 Cyber Security Course/Terminologies.md",
     "0.0 Cyber Security Course/Notes/To-Do's.md",
     "1.0 Types of Attacks & Defense/1.2 Defense/1.2.1 Types of Defense.md",
-    "0.0 Cyber Security Course/Commands.md",
-    "0.0 Cyber Security Course/Tools.md",
     "0.0 Cyber Security Course/Class Topics.md",
     "1.0 Types of Attacks & Defense/Types of Attacks & Defense.md",
     "1.0 Types of Attacks & Defense/1.1 Attacks/1.1.1 Types of Attacks.md",
@@ -232,8 +234,6 @@
     "3.0 Software",
     "2.0 Hardware",
     "0.0 Cyber Security Course/Notes/Week 02/20240702 - Day 006.md",
-    "0.0 Cyber Security Course/Notes/Week 02/20240701 - Day 005.md",
-    "0.0 Cyber Security Course/Notes/Week 01/20240627 - Day 004.md",
     "8.0 Databases",
     "7.0 Blockchain",
     "6.0 Cryptography",
