@@ -20,4 +20,4 @@ Tools mainly being used so far in this course will be described here (note - the
 		- This will scan for all open ports
 		- Scanning all ports up to 65535 (max number of possible ports)
 		- Trying to go as fast as it can
-		- 
+	- 

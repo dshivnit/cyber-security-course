@@ -59,7 +59,8 @@
 - Adjust each day's note taking with the key topics that were covered
 	- Then go through all the content and fill in the topic gaps that are up in this vault
 - Check out QNAP
-
+- Check out how to format properly in .md (markdown) files so that they can be seen the way they look in Obsidian
+- 
 
 Randoms:
 - - Look up the F-35 oxygen system cutting out to the pilot
