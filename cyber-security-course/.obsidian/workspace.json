@@ -64,12 +64,36 @@
             }
           },
           {
-            "id": "a6267192cedd2291",
+            "id": "ab4565f530f8aac2",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
                 "file": "0.0 Cyber Security Course/Terminologies.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "a6267192cedd2291",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "0.0 Cyber Security Course/Resources.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "b715854db63fbba1",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "0.0 Cyber Security Course/Notes/To-Do's.md",
                 "mode": "source",
                 "source": false
               }
@@ -203,13 +227,14 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "a6267192cedd2291",
+  "active": "ab4565f530f8aac2",
   "lastOpenFiles": [
-    "5.0 Networking/Networking.md",
     "0.0 Cyber Security Course/Notes/Week 01/20240627 - Thursday.md",
-    "0.0 Cyber Security Course/Notes/To-Do's.md",
+    "0.0 Cyber Security Course/Terminologies.md",
     "0.0 Cyber Security Course/Tools.md",
+    "5.0 Networking/Networking.md",
     "0.0 Cyber Security Course/Resources.md",
+    "0.0 Cyber Security Course/Notes/To-Do's.md",
     "0.0 Cyber Security Course/Commands.md",
     "2.0 Operating Systems/Operating Systems.md",
     "0.0 Cyber Security Course/Class Topics.md",
@@ -219,7 +244,6 @@
     "2.0 Operating Systems/2.1 Desktops & Laptops/2.1.2 Linux & Unix.md",
     "0.0 Cyber Security Course/Cheat Sheets.md",
     "7.0 Cryptography/Cryptography.md",
-    "0.0 Cyber Security Course/Terminologies.md",
     "0.0 Cyber Security Course/Notes/Week 02/20240701 - Monday.md",
     "2.0 Operating Systems/2.1 Desktops & Laptops/2.1.0 Operating Systems (Desktops & Laptops).md",
     "2.0 Operating Systems/2.2 Portable Handheld Portables/2.2.0 Operating Systems (Handheld Portables).md",

@@ -22,3 +22,13 @@ Tools mainly being used so far in this course will be described here (note - the
 		- Trying to go as fast as it can
 - redis-tools
 	- installed in Ubuntu (apt install redis-tools)
+- GoBuster
+	- https://github.com/OJ/gobuster
+	- A tool to brute-force:
+		- URI (directories and files) in websites
+		- DNS subdomains (with wildcard support)
+		- Virtual Host names on target web servers
+		- Open Amazon S3 buckets
+		- Open Google Cloud Buckets
+		- TFTP servers
+	- 

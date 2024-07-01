@@ -71,7 +71,10 @@
 22. OWASP Top-Ten Classifications
 	https://owasp.org/www-project-top-ten/
 	
-23. 
+23. HTTP Status Codes
+    https://en.wikipedia.org/wiki/List_of_HTTP_status_codes
+
+24. 
 
 MICROSOFT
 

@@ -107,4 +107,16 @@ Encryption/Cryptology Terms
 	- A file whose purpose is to point to a file or directory (called the "target") by specifying a path thereto. (wikipedia.org)
 	- Symbolic links are supported by POSIX and by most UNIX-like OSes (FreeBSD, Linux and MacOS)
 - CIDR - Classless Inter-Domain Routing
-- 
+- Directory - What a folder is called usually, but also when thinking of web-application technology (HTB)
+- URI - Uniform Resource Identifier
+	- A string of characters used to identify or name a resource on the Internet. Common method for identifying and addressing resources, such as web pages, images, videos, and files, over different protocols like HTTP and FTP. (hostinger.com)
+- URL - Uniform Resource Locator
+	- Specifies the location of a resource on the Internet
+- URN - Uniform Resource Name
+	- A permanent identifier for internet resources and employs the urn scheme. A location-independent string of characters that identifies every resource on the Internet, regardless of its form, such as a website or email. 
+- Cloud Storage Buckets
+	- The basic containers that hold your data
+	- Everything that you store in Cloud Storage must be contained in a bucket
+	- Examples:
+		- Amazon S3 buckets
+		- Google Cloud buckets

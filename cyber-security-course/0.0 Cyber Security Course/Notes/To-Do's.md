@@ -72,6 +72,7 @@
 - Install VirtualBox
 		- Setup a VM of a variant of a Linux distro
 		-
+- From Blair - Fireship: https://www.youtube.com/watch?v=FhqNN1LykWU
 - 
 	
 
