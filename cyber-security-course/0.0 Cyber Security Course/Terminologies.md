@@ -124,4 +124,5 @@ Encryption/Cryptology Terms
 - Threat Modeling
 	- Identifying and communicating information about the threats that may impact a particular system or network. 
 	- Enables an IT Team to understand the nature of threats, as well as how they may impact the network.
+- DBMS - Database Management System
 - 

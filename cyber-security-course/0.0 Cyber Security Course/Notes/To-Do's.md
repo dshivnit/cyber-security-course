@@ -82,6 +82,7 @@
 - Figure out how to do softlinks (or is it a hardlink?) to subsections on different pages in this Vault
 - Go through the lists that NoScript and Brave have "allowed" and look em up. No need for lead generators really. Spam, or be spammed. 
 - Check out what AdBlocking companies do to maintain their lists of malicious sites
+- Go through each man or --help of commands and list them where needs be in their own sub-sections (in this vault)
 	
 
 RANDOMS:
