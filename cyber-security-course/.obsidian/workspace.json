@@ -31,7 +31,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "0.0 Cyber Security Course/Notes/To-Do's.md",
+                "file": "0.0 Cyber Security Course/Terminologies.md",
                 "mode": "source",
                 "source": false
               }
@@ -61,8 +61,7 @@
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -189,17 +188,17 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "0a49d17f5a81d3e1",
+  "active": "57b63296a1af7d53",
   "lastOpenFiles": [
+    "0.0 Cyber Security Course/Terminologies.md",
+    "0.0 Cyber Security Course/Notes/Week 02/20240701 - Monday.md",
+    "1.0 Types of Attacks/Types of Attacks.md",
     "0.0 Cyber Security Course/Notes/To-Do's.md",
     "0.0 Cyber Security Course/Resources.md",
-    "0.0 Cyber Security Course/Notes/Week 02/20240701 - Monday.md",
     "6.0 Programming Languages/Programming Languages.md",
     "7.0 Cryptography/Cryptography.md",
-    "0.0 Cyber Security Course/Terminologies.md",
     "0.0 Cyber Security Course/Notes/Week 01/20240626 - Wednesday.md",
     "0.0 Cyber Security Course/Cyber Security Course.md",
-    "1.0 Types of Attacks/Types of Attacks.md",
     "0.0 Cyber Security Course/Tools.md",
     "0.0 Cyber Security Course/Notes/Week 01/20240625 - Tuesday.md",
     "0.0 Cyber Security Course/Notes/Week 01/20240624 - Monday.md",

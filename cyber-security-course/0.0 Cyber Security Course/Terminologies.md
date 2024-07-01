@@ -1,3 +1,5 @@
+- POC - Proof of Concept
+- RCE - Remote Code Execution
 - LoRA - Low-Rank Adaptation || Learned Rank Augmentation || A wireless modulation technique
 	- Low-Rank Adaptation (LoRA) is **a technique designed to refine and optimise large language models**. Unlike traditional fine-tuning methods that require extensive retraining of the entire model, LoRA focuses on adapting only specific parts of the neural network.22 Jan 2024 (from deeperinsights.com/ai-blog)
 	- A LoRA (short for Learned Rank Augmentation) model is **a small model that is applied on top of a standard image generation model like Stable Diffusion**. It allows for fine-tuning of the base model without having to retrain the whole model from scratch, which can be very time-consuming and resource-intensive. (from a reddit board)

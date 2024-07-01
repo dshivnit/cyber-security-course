@@ -8,7 +8,8 @@
 - Social Engineering Attacks.
 (the above was taken from crowdstrike.com as the 12 most common types of attacks today June 2024)
 
-
+- RCE - Remote Code Execution
+- 
 - SQL Injection Attack
 	- A common attack vector that uses malicious SQL code for backend database manipulation to access information that was not intended to be displayed. 
 - HTTP Request Smuggling (HRS)

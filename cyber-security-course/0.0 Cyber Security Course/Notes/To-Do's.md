@@ -58,7 +58,7 @@
 - Muck around with the CVEs listed in opencve.io and have a look at the various articles/links described in each CVE
 - Adjust each day's note taking with the key topics that were covered
 	- Then go through all the content and fill in the topic gaps that are up in this vault
-- 
+- Check out QNAP
 
 
 Randoms:
