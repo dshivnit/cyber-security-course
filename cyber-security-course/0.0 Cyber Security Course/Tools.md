@@ -45,4 +45,14 @@ Tools mainly being used so far in this course will be described here (note - the
 		- information_schema
 		- mysql
 		- performance_schema
-	- 
+- Windows Powertoys:
+  https://learn.microsoft.com/en-us/windows/powertoys/)
+- MXToolBox:
+  https://mxtoolbox.com/
+- NZ Domain Name Commision - WHOIS lookup:
+  https://dnc.org.nz/whois/whois-lookup/
+- WHOIS lookup:
+  https://who.is/
+- Parallels (Windows on MacOS)
+- DIG - Domain Information Groper (can also get this on Windows via WSL)
+- 

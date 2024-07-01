@@ -155,3 +155,6 @@ RANDOMS:
 - Double check GeekZone access when on Brave
 - Tip into foive eyz
 - Search up Australia Backdoor Law 
+- Sub-marine Cable Map:
+  https://www.submarinecablemap.com/ put this somewhere where it's a bit better organised in this Vault
+- 
