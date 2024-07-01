@@ -73,6 +73,8 @@
 		- Setup a VM of a variant of a Linux distro
 		-
 - From Blair - Fireship: https://www.youtube.com/watch?v=FhqNN1LykWU
+- Go through the wordlist SecList and find which ones can be useful
+	- There is A LOT in there..
 - 
 	
 
