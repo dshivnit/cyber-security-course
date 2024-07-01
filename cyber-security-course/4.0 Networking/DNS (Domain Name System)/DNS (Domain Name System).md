@@ -1,0 +1,3 @@
+- DNS Root Servers
+- *Expand with more topics here as there is plenty from Day004 and on the topic in general..*
+- 

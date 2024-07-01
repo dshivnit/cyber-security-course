@@ -80,9 +80,11 @@
 - Go through the wordlist SecList and find which ones can be useful
 	- There is A LOT in there..
 - Figure out how to do softlinks (or is it a hardlink?) to subsections on different pages in this Vault
+- Go through the lists that NoScript and Brave have "allowed" and look em up. No need for lead generators really. Spam, or be spammed. 
+- Check out what AdBlocking companies do to maintain their lists of malicious sites
 	
 
-Randoms:
+RANDOMS:
 - - Look up the F-35 oxygen system cutting out to the pilot
 	- In relation to RTOS (Real Time OS)
 - CrackMe
@@ -138,4 +140,17 @@ Randoms:
 - Clean up Mailbox folders
 - DualLingo - GO GO FOR MANDARIN! (from Blair Hodson, chur!)
 - Rewatch Mr Robot (because it's awesome, and the hackathon thing that Blair mentioned wherein the show had stolen the output or something or rather of a real number and started to call it)
-- 
+- The PING of death on Win98
+	- Was able to send more than 32bytes of data when sending out pings
+- Armenian Internet-connection getting dropped because of a lady digging?
+- Check out how the Brooklyn Bridge was made (by vacuuming out the water) - Kris and Blair (in relation to undersea cabelling)
+	- Also check out sharks, because sharks. And their noses biting undersea cables
+- Bermuda Triangle lels - Josh
+	- As radio has become more advanced, a lot of the dangers don't seem no prominent anymore
+	- Lemmino did a whole documentary on it - I recommend watching it (Kazuki) (https://www.youtube.com/watch?v=AgMcqNnqatw)
+- i4free and z4free
+	- Internet service providers in NZ back in the days
+	- History look up (in difference to paid service providers)
+- Double check GeekZone access when on Brave
+- Tip into foive eyz
+- Search up Australia Backdoor Law 

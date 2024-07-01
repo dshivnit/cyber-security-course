@@ -4,6 +4,7 @@
 - LAN (Local Area Network)
 	- WLAN (Wireless LAN)
 - SAN (Storage Area Network)
+  
 - Protocols
 	- TCP/IP
 	  Transmission Control Protocol / Internet Protocol
@@ -76,6 +77,11 @@
 			- 224.0.0.0 - 239.255.255.255 (for multicast addresses)
 		- CIDR (Classless Inter-Domain Routing)
 	- Multicasting
+		- Multicast is a type of group communication where data transmission is addressed to a group of destination computers simultaneously. Multicast can be one-to-many or many-to-many distribution. Multicast differs from physical layer point-to-multipoint communication. (Wikipedia)
+		- A single source of communication with simultaneous multiple receivers
+		- Only certain, designated receivers will receive the transmission. (orhanergun.net)
+	- Broadcast
+		- All devices connected to the network will receive the transmission. (orhanergun.net)
 
 Classful Subnets:
 

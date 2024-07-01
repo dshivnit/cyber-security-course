@@ -121,4 +121,7 @@ Encryption/Cryptology Terms
 		- Amazon S3 buckets
 		- Google Cloud buckets
 - WAP - Web Application Firewall
+- Threat Modeling
+	- Identifying and communicating information about the threats that may impact a particular system or network. 
+	- Enables an IT Team to understand the nature of threats, as well as how they may impact the network.
 - 
