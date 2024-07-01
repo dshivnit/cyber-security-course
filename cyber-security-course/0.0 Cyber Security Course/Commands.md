@@ -11,4 +11,4 @@ Bash
 		- Will connect to a database with the given index number
 		- Refer to the keys command before
 	- 
-- 
+- chmod (User, Group, Other)
