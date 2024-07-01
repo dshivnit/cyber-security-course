@@ -1,5 +1,11 @@
 (Please take note that these todo's are tailored for me personally and may not apply to you, reader) 
+
+- **Go through each main subject and the content covered in teh notes and expand on them in respective sections of this vault**
+- **Rationalise/rationalize/organise! each topic/content in this vault**
+  
 - Go through all the TODO's and TAKEAWAY's from each class
+- **Go through each main subject and the content covered in teh notes and expand on them in respective sections of this vault**
+- **Rationalise/rationalize/organise! each topic/content in this vault**
 - READ THROUGH THE HTB WRITEUP's
 	- Again, and then again
 	- They are really informative and thorough
