@@ -33,3 +33,6 @@ Tools mainly being used so far in this course will be described here (note - the
 		- TFTP servers
 	- Wordlists - generally kept in PATH /usr/share/wordlists, however, you can keep these wherever
 	- git clone https://github.com/danielmiessler/SecLists.git = one of the most famous wordlist collections in use today
+- Task Manager (Windows)
+	- Task Manager is a built-in GUI-based Windows utility that allows users to see what is running on the Windows system. It also provides information on resource usage, such as how much each process utilizes CPU and memory. When a program is not responding, the Task Manager is used to terminate the process. (TryHackMe Endpoint Sec Fundamentals module)
+- 

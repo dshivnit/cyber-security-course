@@ -12,3 +12,9 @@ Bash
 		- Refer to the keys command before
 	- 
 - chmod (User, Group, Other)
+- su
+	- login as root or SUPERUSER in the shell (password if configured will be needed, password should have been configured initially anywho :) ) 
+- sudo 
+	- SUPERUSER DO!
+	- Run a command as a superuser whilst in the environment/shell as another regular (non admin) user
+- 

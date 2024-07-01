@@ -4,6 +4,7 @@
 	- Make folders for each of the main headings (ie 1.0, 2.0 etc)
 		- This has been completed
 	- Link the folder contents respectively to where they belong in other pages
+	- Figure out how to do softlinks (or is it a hardlink?) to subsections on different pages in this Vault
 	- Put a bloody space between paragraphs... lel (make it look cleaner)
 - Test to see if the Vault is accessible on other Rigs (via OneDrive)
 - Tidy up Brave Bookmarks and replicate them on other Browsers when complete (mainly the Learning folder created for this course and merge it into the main that is currently there)
@@ -75,7 +76,7 @@
 - From Blair - Fireship: https://www.youtube.com/watch?v=FhqNN1LykWU
 - Go through the wordlist SecList and find which ones can be useful
 	- There is A LOT in there..
-- 
+- Figure out how to do softlinks (or is it a hardlink?) to subsections on different pages in this Vault
 	
 
 Randoms:

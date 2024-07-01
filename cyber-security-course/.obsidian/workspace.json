@@ -14,7 +14,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "1.0 Types of Attacks & Defense/Types of Attacks & Defense.md",
+                "file": "1.0 Types of Attacks & Defense/1.2 Defense/1.2.1 Types of Defense.md",
                 "mode": "source",
                 "source": false
               }
@@ -52,60 +52,12 @@
             }
           },
           {
-            "id": "41035a0b659cc9bd",
+            "id": "2b6a769a6a4ec684",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "0.0 Cyber Security Course/Class Topics.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "ddf9081fdc196ff7",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "4.0 Networking/Networking.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "ab4565f530f8aac2",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "3.0 Software/3.1 Operating Systems/3.1.1 Desktops & Laptops/3.1.1.2 Linux & Unix.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "f449883f1409e03d",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "0.0 Cyber Security Course/Cheat Sheets.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "a6267192cedd2291",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "0.0 Cyber Security Course/Resources.md",
+                "file": "0.0 Cyber Security Course/Commands.md",
                 "mode": "source",
                 "source": false
               }
@@ -190,7 +142,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "1.0 Types of Attacks & Defense/Types of Attacks & Defense.md",
+                "file": "0.0 Cyber Security Course/Commands.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -207,7 +159,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "1.0 Types of Attacks & Defense/Types of Attacks & Defense.md",
+                "file": "0.0 Cyber Security Course/Commands.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -230,7 +182,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "1.0 Types of Attacks & Defense/Types of Attacks & Defense.md"
+                "file": "0.0 Cyber Security Course/Commands.md"
               }
             }
           }
@@ -251,15 +203,17 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "57b63296a1af7d53",
+  "active": "2b6a769a6a4ec684",
   "lastOpenFiles": [
+    "0.0 Cyber Security Course/Tools.md",
+    "0.0 Cyber Security Course/Notes/To-Do's.md",
     "1.0 Types of Attacks & Defense/1.2 Defense/1.2.1 Types of Defense.md",
-    "1.0 Types of Attacks & Defense/1.1 Attacks/1.1.1 Types of Attacks.md",
+    "0.0 Cyber Security Course/Class Topics.md",
     "1.0 Types of Attacks & Defense/Types of Attacks & Defense.md",
+    "1.0 Types of Attacks & Defense/1.1 Attacks/1.1.1 Types of Attacks.md",
     "0.0 Cyber Security Course/Cyber Security Course.md",
     "1.0 Types of Attacks & Defense/1.2 Defense",
     "1.0 Types of Attacks & Defense/1.1 Attacks",
-    "0.0 Cyber Security Course/Class Topics.md",
     "0.0 Cyber Security Course/Notes/Notes.md",
     "8.0 Databases/Databases.md",
     "8.0 Databases/8.2 Traditional Database.md",
@@ -277,12 +231,10 @@
     "3.0 Software/3.1 Operating Systems/Operating Systems.md",
     "3.0 Software",
     "2.0 Hardware",
-    "0.0 Cyber Security Course/Tools.md",
     "0.0 Cyber Security Course/Notes/Week 02/20240702 - Day 006.md",
     "0.0 Cyber Security Course/Notes/Week 02/20240701 - Day 005.md",
     "0.0 Cyber Security Course/Notes/Week 01/20240627 - Day 004.md",
     "0.0 Cyber Security Course/Notes/Week 01/20240626 - Day 003.md",
-    "0.0 Cyber Security Course/Notes/Week 01/20240625 - Day 002.md",
     "8.0 Databases",
     "7.0 Blockchain",
     "6.0 Cryptography",
