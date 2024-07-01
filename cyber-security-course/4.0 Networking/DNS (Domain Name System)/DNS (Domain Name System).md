@@ -1,4 +1,40 @@
+ *Expand with more topics here as there is plenty from Day004 and on the topic in general..*
+ 
 - DNS Root Servers
-- *Expand with more topics here as there is plenty from Day004 and on the topic in general..*
-- DNSCrypt
-- 
+	- DNC - Domain Name Commission(er)
+	- BIND
+		- To host your own DNS Servers
+	- DNS Records:
+		- MX Record
+			- Mail Exchange Record (ie mail.example.tld)
+			- For email handling
+		- A Record
+			- A name to an IP address 
+		- AAA Record
+			- A name to an IPv6 address
+		- CNAME
+			- Canonical Name
+			- Fancy term that means it's a name pointing to another name
+				- if there isa full-stop at the end of this with nothing after it, it will tell the resolver to stop
+				- Otherwise you get a continuous loop that can happen (because the process hasn't been told to stop/die/get-killed)
+			- SOA
+				- Start Of Authority
+	- DNS Anonymization
+		- Instead of directly responding to clients, a resolver can act as a transparent proxy to another resolver, hiding the real client IP to the latter. 
+		  Anonymized DNSCrypt, specifically designed for DNS traffic is a lightweight alternative to running DNSCrypt through Tor and SOCKS proxies. (from Wikipedia)
+	- DNS Root Server
+		- DNS nameservers that operate in the root zone. 
+		- DNS Root Servers can directly answer queries for records stored or cached within the root zone, and they can also refer other requests to the appropriate Top Level Domain (TLD) server. (CloudFlare)
+	- Top Level Domain (TLD) Name Server
+		- Represents the first stop after the root zone. 
+		- Is everything that follows the final dot (.) of a domain name. 
+		- Example: google.com = .com is the TLD
+	- RIPE
+		- **Ensuring the uniqueness of Internet number** resource usage through registration of information related to the resources and their Registrants and Maintainers (RIPE INR)18 Dec 2023
+	- DNSCrypt (https://www.dnscrypt.org/)
+		- A protocol that authenticates communications between a DNS client and a DNS resolver. It prevents DNS spoofing. It uses cryptographic singatures to verify that responses originate from the chosen DNS resolver and haven't been tampered with. 
+		- (free and open-source implementations - not affiliated with any company or organisation)
+	- TTL - Time to Live
+	- DIG - Domain Information Groper
+	- NIC (in the context of DNS)
+		- Network Information Centre

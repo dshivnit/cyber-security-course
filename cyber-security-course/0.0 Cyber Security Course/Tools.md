@@ -57,5 +57,7 @@ Tools mainly being used so far in this course will be described here (note - the
 - DIG - Domain Information Groper (can also get this on Windows via WSL)
 - - Sysinternals TCPView
 - nmap (for both Unix and Windows shells)
-- dnscrypt
-	- 
+- DNSCrypt (https://www.dnscrypt.org/)
+	- A protocol that authenticates communications between a DNS client and a DNS resolver. It prevents DNS spoofing. It uses cryptographic singatures to verify that responses originate from the chosen DNS resolver and haven't been tampered with. 
+	- (free and open-source implementations - not affiliated with any company or organisation)
+- 
