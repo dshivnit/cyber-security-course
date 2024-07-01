@@ -1,4 +1,4 @@
-[[3.1 AMD CPUs]]
+[[2.1.1.0 AMD CPUs]]
 
 - AMD
 - Intel
