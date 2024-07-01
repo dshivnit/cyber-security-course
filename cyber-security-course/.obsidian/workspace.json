@@ -31,7 +31,19 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "0.0 Cyber Security Course/Tools.md",
+                "file": "9.0 Databases/Databases.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "75699622a18e31f6",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "0.0 Cyber Security Course/Cyber Security Course.md",
                 "mode": "source",
                 "source": false
               }
@@ -61,7 +73,8 @@
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -127,7 +140,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "0.0 Cyber Security Course/Tools.md",
+                "file": "0.0 Cyber Security Course/Cyber Security Course.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -144,7 +157,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "0.0 Cyber Security Course/Tools.md",
+                "file": "0.0 Cyber Security Course/Cyber Security Course.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -167,7 +180,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "0.0 Cyber Security Course/Tools.md"
+                "file": "0.0 Cyber Security Course/Cyber Security Course.md"
               }
             }
           }
@@ -188,10 +201,14 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "98fa4ab08efc16a1",
+  "active": "75699622a18e31f6",
   "lastOpenFiles": [
-    "0.0 Cyber Security Course/Notes/To-Do's.md",
+    "9.0 Databases/Databases.md",
+    "9.0 Databases/9.2 Traditional Database.md",
+    "9.0 Databases/9.1 In-memory Database.md",
     "0.0 Cyber Security Course/Tools.md",
+    "9.0 Databases",
+    "0.0 Cyber Security Course/Notes/To-Do's.md",
     "0.0 Cyber Security Course/Cheat Sheets.md",
     "0.0 Cyber Security Course/Notes/Week 02/20240701 - Monday.md",
     "0.0 Cyber Security Course/Terminologies.md",
@@ -217,16 +234,12 @@
     "0.0 Cyber Security Course/Commands.md",
     "0.0 Cyber Security Course/Course Team.md",
     "3.0 Central Processing Units (CPU's)/3.1 AMD CPUs.md",
-    "1.md",
-    "3.md",
-    "4.0 Memory/Memory.md",
     "5.0 Networking",
     "3.0 Central Processing Units (CPU's)/AMD",
     "3.0 Operating Systems (Desktops & Laptops)/3.2 Portable Handheld Portables/Untitled",
     "2.0 Operating Systems/2.2 Portable Handheld Portables",
     "2.0 Operating Systems/2.1 Desktops & Laptops",
     "99.99 Images Used/Pasted image 20240626151911.png",
-    "4.0 Memory",
     "99.99 Images Used/Pasted image 20240626151914.png",
     "99.99 Images Used/Pasted image 20240625173558.png",
     "Pasted image 20240625173221.png",
