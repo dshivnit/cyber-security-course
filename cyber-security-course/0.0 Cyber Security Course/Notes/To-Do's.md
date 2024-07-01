@@ -2,12 +2,14 @@
 
 - **Go through each main subject and the content covered in teh notes and expand on them in respective sections of this vault**
 - **Rationalise/rationalize/organise! each topic/content in this vault**
+	- Create a brief intro to each page/section
 - Regarding the VirtualLab project - some resources will be:
 	- VulnHub - https://www.vulnhub.com/
 	- Test encryption using Wireshark
 	- LAN Lab
 	- See if you can sniff the packets and decrypt the hash blocks (or whatever cipher is being used by Viber say for example in a transmitted packet/message | concatenate all the packets sent to resemble the full message, gather them all, and then try brute fuck the shit out of it)
 		- Perhaps also see if there are any differences in software versions (of say Viber etc) in different OS builds (as they're constructed differently - however the encryption algo's would still be the same)
+- Find all references to PATH and change them to CWD (CurrentWorkingDirectory) where relevant
 
 - Go through all the TODO's and TAKEAWAY's from each class
 - **Go through each main subject and the content covered in teh notes and expand on them in respective sections of this vault**

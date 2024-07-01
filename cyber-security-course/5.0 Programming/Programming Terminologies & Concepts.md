@@ -1,0 +1,32 @@
+- Variables (in programming)
+	- recap from programming courses (do a Google search if you get stuck and define this in Terminologies)
+	- In the words of Kris (LUL):
+		- Java - for those types who like to be precise about everything in their lives
+		- Python - for laid back people
+	- In the words of Randle (Matthew)
+		- TypeScript (JavaScript with Syntax for Types)
+		- When you're coding in a programming language (normally) you're typing in a high-level language
+			- Which the language via its compiler, will translate to a lower-level machine type language for the computer system to process
+		- VBA - Visual Basic for Applications
+			- Used in Excel/Word/Office applications to create Macros etc
+		- PowerShell 
+		(The above is not verbatim but generally along the lines of what Randle said)
+	- Compiler
+		- A special program that translates a programming language's source code into machine code, bytecode or another programming language 
+	- Interpreter
+		- A computer program that directly executes instructions written in a programming or scripting language, without requiring them previously to have been compiled into a machine language program. (Wikipedia)
+		- Kris's analogy
+			- Like the United Nations you have reps from each country in the UN who talk about their topics/issues etc
+				- They speak in their own language, and other reps/people won't be able to understand
+				- Interpreters are there in real-time (with some delay, few seconds or whatever) translating what each speaker is saying for the given rep of that country
+				- You don't lose precision, HOWEVER, you do lose performance.
+	- Control Flow 
+	- Different kinds of Teams
+		- Defensive Team
+		- Red Teaming
+		- SOC - Security Operations Centre
+		- Compliance
+	- Debugging
+	- 
+- Constant
+		- If you try and 
