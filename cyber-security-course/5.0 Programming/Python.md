@@ -126,6 +126,21 @@ Resources
 		- Whether that be as a way to store the output of your script or to import a list of 100s of websites from a file to enumerate. 
 	- Example:
 		f = open( "file_name", "r" )
-		print.( f.read( ) )
-	- 
+		print( f.read( ) )
+	- The 'r' parameter in the above example is for read
+	- 'w' would be for write
+		- Used for creating a new file
+	- 'a' would be for append
+		- Adding to an existing file
 
+- Imports
+	- Importing Python libraries (https://docs.python.org/3/library/index.html) 
+		- Others: https://docs.pwntools.com/en/stable/
+		- https://scapy.readthedocs.io/en/latest/introduction.html
+	- You're importing functions that you can use that have already been written (why recreate the wheel unless you make a more efficient one.
+		- Examples:
+			- datetime
+				import datetime
+				current_time = datetime.datetime.now()
+				print(current_time)
+			- 

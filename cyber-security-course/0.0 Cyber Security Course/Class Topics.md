@@ -52,3 +52,15 @@ Python Basics:
 Vulnerabilities 101: 
 [https://tryhackme.com/r/room/vulnerabilities101](https://tryhackme.com/r/room/vulnerabilities101 "https://tryhackme.com/r/room/vulnerabilities101")
 
+=== Week 2 Day 2 Core Topics:
+- Note-taking Revision
+- OSINT:
+    - FlightRadar24: [https://www.flightradar24.com/](https://www.flightradar24.com/ "https://www.flightradar24.com/")
+    - VesselFinder: [https://www.vesselfinder.com/](https://www.vesselfinder.com/ "https://www.vesselfinder.com/")
+    - InTheSky Satellite Map: [https://in-the-sky.org/satmap_worldmap.php](https://in-the-sky.org/satmap_worldmap.php "https://in-the-sky.org/satmap_worldmap.php")
+    - Strava Heatmap: [https://www.strava.com/maps/global-heatmap](https://www.strava.com/maps/global-heatmap "https://www.strava.com/maps/global-heatmap")
+    Other Resources:
+    - OSINT Framework: [https://osintframework.com/](https://osintframework.com/ "https://osintframework.com/")
+	- Awesome-OSINT: [https://github.com/jivoi/awesome-osint](https://github.com/jivoi/awesome-osint "https://github.com/jivoi/awesome-osint")
+	- More Python: [https://github.com/krp/python-examples](https://github.com/krp/python-examples "https://github.com/krp/python-examples")
+

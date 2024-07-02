@@ -58,7 +58,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "1.0 Types of Attacks & Defense/1.1 Attacks/1.1.1 Types of Attacks.md",
+                "file": "0.0 Cyber Security Course/Notes/Clones Made.md",
                 "mode": "source",
                 "source": false
               }
@@ -131,7 +131,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "1.0 Types of Attacks & Defense/1.1 Attacks/1.1.1 Types of Attacks.md",
+                "file": "0.0 Cyber Security Course/Notes/Clones Made.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -148,7 +148,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "1.0 Types of Attacks & Defense/1.1 Attacks/1.1.1 Types of Attacks.md",
+                "file": "0.0 Cyber Security Course/Notes/Clones Made.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -171,7 +171,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "1.0 Types of Attacks & Defense/1.1 Attacks/1.1.1 Types of Attacks.md"
+                "file": "0.0 Cyber Security Course/Notes/Clones Made.md"
               }
             }
           }
@@ -194,7 +194,12 @@
   },
   "active": "8c5a2d552c2cf603",
   "lastOpenFiles": [
+    "0.0 Cyber Security Course/Notes/To-Do's.md",
     "5.0 Programming/Python.md",
+    "0.0 Cyber Security Course/Class Topics.md",
+    "0.0 Cyber Security Course/Cyber Security Course.md",
+    "0.0 Cyber Security Course/Notes/Clones Made.md",
+    "99.99 Images Used/Pasted image 20240702214553.png",
     "1.0 Types of Attacks & Defense/1.1 Attacks/1.1.1 Types of Attacks.md",
     "1.0 Types of Attacks & Defense/Types of Attacks & Defense.md",
     "2.0 Hardware/2.3 Storage/Storage.md",
@@ -205,8 +210,6 @@
     "5.0 Programming/Programming Languages.md",
     "0.0 Cyber Security Course/Commands.md",
     "9.0 Virtual Machines/Virtual Machines (VM's).md",
-    "0.0 Cyber Security Course/Cyber Security Course.md",
-    "0.0 Cyber Security Course/Class Topics.md",
     "9.0 Virtual Machines",
     "0.0 Cyber Security Course/Notes/MuckingAroundPage.md",
     "0.0 Cyber Security Course/Untitled",
@@ -223,8 +226,6 @@
     "3.0 Software/3.1 Operating Systems/3.1.1 Desktops & Laptops/3.1.1.1 Windows (10 & 11).md",
     "Pasted image 20240702104549.png",
     "4.0 Networking/DNS (Domain Name System)/DNS (Domain Name System).md",
-    "0.0 Cyber Security Course/Notes/To-Do's.md",
-    "0.0 Cyber Security Course/Notes/To-Do's (RANDO).md",
     "4.0 Networking/DNS (Domain Name System)",
     "1.0 Types of Attacks & Defense/1.2 Defense",
     "1.0 Types of Attacks & Defense/1.1 Attacks",

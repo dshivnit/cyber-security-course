@@ -1,4 +1,4 @@
-(Please take note that these todo's are tailored for me personally and may not apply to you, reader) 
+(Please take note that these todo's are tailored for me personally and may not apply to you, reader.)
 
 - **Go through each main subject and the content covered in teh notes and expand on them in respective sections of this vault**
 - **Rationalise/rationalize/organise! each topic/content in this vault**
@@ -10,9 +10,10 @@
 	- See if you can sniff the packets and decrypt the hash blocks (or whatever cipher is being used by Viber say for example in a transmitted packet/message | concatenate all the packets sent to resemble the full message, gather them all, and then try brute fuck the shit out of it)
 		- Perhaps also see if there are any differences in software versions (of say Viber etc) in different OS builds (as they're constructed differently - however the encryption algo's would still be the same)
 - Find all references to PATH and change them to CWD (CurrentWorkingDirectory) where relevant
+	- Perhaps decide whether to do this or not because sometimes path can be a reference to a pwd command (or the current working directory and so on)
 
 - Go through all the TODO's and TAKEAWAY's from each class
-- **Go through each main subject and the content covered in teh notes and expand on them in respective sections of this vault**
+- **Go through each main subject and the content covered in the notes and expand on them in respective sections of this vault**
 - **Rationalise/rationalize/organise! each topic/content in this vault**
 - READ THROUGH THE HTB WRITEUP's
 	- Again, and then again
@@ -108,5 +109,6 @@
 	- LOOK INTO THIS FURTHER
 - Kris in response to Blair on Discord (regarding YT Fireship's channel and YT feeds now showing more techie related stuff since the course started and what Blair has been looking up on z'YT)
 	- "Yeah YouTube's algorithm does that. You search one tiny topic or click on a video from friends/family and next thing your entire feed is full of the topic. There's a good way to control what it gives you that I can talk about"
+- Go through Python page and have a look for different libraries from the ones listed
 - 
 
