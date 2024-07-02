@@ -53,7 +53,8 @@
 		  With their peer threads within a process that they belong to
 		- All the threads within a process are required to be synchronised to avoid unexpected results
 
-![[TutorialsPointProcThrComparison.png]]
+![](https://github.com/dshivnit/cyber-security-course/blob/main/cyber-security-course/99.99%20Images%20Used/TutorialsPointProcThrComparison.png?raw=true)
+
  (the above has been taken from tutorialspoint.com - https://www.tutorialspoint.com/difference-between-process-and-thread)
 		  - All the threads within a process are required to be synchronised to avoid unexpected results
 		  - By using threads, you can perform multiple tasks simultaneously within a single application, leading to improved performance and responsiveness. Threads are commonly used in applications that involve heavy computational tasks, network communication, and graphical user interfaces (from lenovo.com)

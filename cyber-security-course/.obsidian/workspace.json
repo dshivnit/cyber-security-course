@@ -92,7 +92,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "2.0 Hardware/2.1 Central Processing Units (CPU's)/Central Processing Units (CPU's).md",
+                "file": "3.0 Software/3.1 Operating Systems/3.1.1 Desktops & Laptops/3.1.1.0 Operating Systems (Desktops & Laptops).md",
                 "mode": "source",
                 "source": false
               }
@@ -165,7 +165,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "2.0 Hardware/2.1 Central Processing Units (CPU's)/Central Processing Units (CPU's).md",
+                "file": "3.0 Software/3.1 Operating Systems/3.1.1 Desktops & Laptops/3.1.1.0 Operating Systems (Desktops & Laptops).md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -182,7 +182,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "2.0 Hardware/2.1 Central Processing Units (CPU's)/Central Processing Units (CPU's).md",
+                "file": "3.0 Software/3.1 Operating Systems/3.1.1 Desktops & Laptops/3.1.1.0 Operating Systems (Desktops & Laptops).md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -205,7 +205,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "2.0 Hardware/2.1 Central Processing Units (CPU's)/Central Processing Units (CPU's).md"
+                "file": "3.0 Software/3.1 Operating Systems/3.1.1 Desktops & Laptops/3.1.1.0 Operating Systems (Desktops & Laptops).md"
               }
             }
           }
@@ -228,13 +228,15 @@
   },
   "active": "9411c149c48076fc",
   "lastOpenFiles": [
+    "2.0 Hardware/2.1 Central Processing Units (CPU's)/Central Processing Units (CPU's).md",
+    "2.0 Hardware/2.2 Memory/Memory.md",
     "3.0 Software/3.1 Operating Systems/Operating Systems.md",
-    "3.0 Software/3.1 Operating Systems/3.1.1 Desktops & Laptops/3.1.1.0 Operating Systems (Desktops & Laptops).md",
-    "99.99 Images Used/TutorialsPointProcThrComparison.png",
+    "3.0 Software/3.1 Operating Systems/3.1.1 Desktops & Laptops/3.1.1.1 Windows (10 & 11).md",
     "99.99 Images Used/Reddit_csharp_HandlesDef.png",
+    "99.99 Images Used/TutorialsPointProcThrComparison.png",
+    "3.0 Software/3.1 Operating Systems/3.1.1 Desktops & Laptops/3.1.1.0 Operating Systems (Desktops & Laptops).md",
     "99.99 Images Used/Clones_20240702.png",
     "99.99 Images Used/Pasted image 20240702214553.png",
-    "2.0 Hardware/2.1 Central Processing Units (CPU's)/Central Processing Units (CPU's).md",
     "0.0 Cyber Security Course/Commands.md",
     "9.0 Virtual Machines/Virtual Machines (VM's).md",
     "0.0 Cyber Security Course/Notes/To-Do's.md",
@@ -261,7 +263,6 @@
     "0.0 Cyber Security Course/Terminologies.md",
     "4.0 Networking/Networking.md",
     "4.0 Networking/Protocols",
-    "0.0 Cyber Security Course/People.md",
     "Pasted image 20240702104549.png",
     "4.0 Networking/DNS (Domain Name System)",
     "1.0 Types of Attacks & Defense/1.2 Defense",
