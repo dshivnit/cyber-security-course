@@ -1,3 +1,6 @@
+- Syntax
+	- Describes the structure of a valid programming language. 
+	- Tells the comptuer how to read code using rules that control the structure of symbols, punctuation, and words of a programming language. 
 - Variables (in programming)
 	- recap from programming courses (do a Google search if you get stuck and define this in Terminologies)
 	- In the words of Kris (LUL):
@@ -27,6 +30,5 @@
 		- SOC - Security Operations Centre
 		- Compliance
 	- Debugging
-	- 
 - Constant
 		- *Expand on this*
