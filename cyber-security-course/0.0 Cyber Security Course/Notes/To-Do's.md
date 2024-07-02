@@ -12,6 +12,7 @@
 - Find all references to PATH and change them to CWD (CurrentWorkingDirectory) where relevant
 	- Perhaps decide whether to do this or not because sometimes path can be a reference to a pwd command (or the current working directory and so on)
 - Scripting (in bash and zsh)
+- Obsidian plugins - do some looking intoooo
 
 - Go through all the TODO's and TAKEAWAY's from each class
 - **Go through each main subject and the content covered in the notes and expand on them in respective sections of this vault**
