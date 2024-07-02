@@ -10,5 +10,6 @@ Hypervisor
 	- Hyper-V
 	- VMware
 	- VirtualBox
+	- Qemu
 - A decent read:
 	https://www.reddit.com/r/Windows11/comments/skgxd7/what_is_the_best_virtual_machine_for_windows/

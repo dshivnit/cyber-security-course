@@ -1,6 +1,6 @@
 *Some of these commands will be in relation to tools that are described in the Tools section - rationalisation will be required here*
 
-Windows
+PowerShell
 - wsl (Windows Subsystem for Linux)
 
 Bash
@@ -52,4 +52,6 @@ Bash
 	- Wordlists and Domains will be helpful if trying to brute into a box/machine/server (take note that these are also required by the gobuster)
 		- Example: 
 			gobuster -m dir -w /usr/share/wordlists/SecLists/Discovery/Web-Content/directory-list-2.3-small.txt -u http://10.129.1.15/
-	
+
+zsh (z Shell)
+- 

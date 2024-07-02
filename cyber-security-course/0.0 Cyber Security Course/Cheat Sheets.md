@@ -25,4 +25,7 @@
 - OWASP SQL Injection Prevention Cheat Sheet
   https://cheatsheetseries.owasp.org/cheatsheets/SQL_Injection_Prevention_Cheat_Sheet.html
 
+- zsh (z shell) Cheat Sheet
+	https://gist.github.com/ClementNerma/1dd94cb0f1884b9c20d1ba0037bdcde2
+
 - 
