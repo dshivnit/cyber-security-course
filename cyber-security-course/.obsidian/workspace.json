@@ -31,9 +31,19 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "01784573a2fd8f3c",
+            "type": "leaf",
+            "state": {
+              "type": "image",
+              "state": {
+                "file": "99.99 Images Used/TutorialsPointProcThrComparison.png"
+              }
+            }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       },
       {
         "id": "2fb0e64401067da2",
@@ -82,7 +92,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "9.0 Virtual Machines/Virtual Machines (VM's).md",
+                "file": "2.0 Hardware/2.1 Central Processing Units (CPU's)/Central Processing Units (CPU's).md",
                 "mode": "source",
                 "source": false
               }
@@ -155,7 +165,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "9.0 Virtual Machines/Virtual Machines (VM's).md",
+                "file": "2.0 Hardware/2.1 Central Processing Units (CPU's)/Central Processing Units (CPU's).md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -172,7 +182,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "9.0 Virtual Machines/Virtual Machines (VM's).md",
+                "file": "2.0 Hardware/2.1 Central Processing Units (CPU's)/Central Processing Units (CPU's).md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -195,7 +205,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "9.0 Virtual Machines/Virtual Machines (VM's).md"
+                "file": "2.0 Hardware/2.1 Central Processing Units (CPU's)/Central Processing Units (CPU's).md"
               }
             }
           }
@@ -218,23 +228,27 @@
   },
   "active": "9411c149c48076fc",
   "lastOpenFiles": [
-    "0.0 Cyber Security Course/Notes/To-Do's.md",
+    "3.0 Software/3.1 Operating Systems/Operating Systems.md",
+    "3.0 Software/3.1 Operating Systems/3.1.1 Desktops & Laptops/3.1.1.0 Operating Systems (Desktops & Laptops).md",
+    "99.99 Images Used/TutorialsPointProcThrComparison.png",
+    "99.99 Images Used/Reddit_csharp_HandlesDef.png",
+    "99.99 Images Used/Clones_20240702.png",
+    "99.99 Images Used/Pasted image 20240702214553.png",
+    "2.0 Hardware/2.1 Central Processing Units (CPU's)/Central Processing Units (CPU's).md",
     "0.0 Cyber Security Course/Commands.md",
+    "9.0 Virtual Machines/Virtual Machines (VM's).md",
+    "0.0 Cyber Security Course/Notes/To-Do's.md",
     "3.0 Software/3.1 Operating Systems/3.1.1 Desktops & Laptops/3.1.1.2 Linux & Unix.md",
     "0.0 Cyber Security Course/Cheat Sheets.md",
-    "9.0 Virtual Machines/Virtual Machines (VM's).md",
     "5.0 Programming/Python.md",
     "0.0 Cyber Security Course/Notes/Clones Made.md",
-    "99.99 Images Used/Clones_20240702.png",
     "99.99 Images Used/Clones_20240702.png.crdownload",
     "1.0 Types of Attacks & Defense/1.1 Attacks/1.1.1 Types of Attacks.md",
     "0.0 Cyber Security Course/Notes/Week 02/20240702 - Day 006.md",
     "0.0 Cyber Security Course/Class Topics.md",
     "0.0 Cyber Security Course/Cyber Security Course.md",
-    "99.99 Images Used/Pasted image 20240702214553.png",
     "1.0 Types of Attacks & Defense/Types of Attacks & Defense.md",
     "2.0 Hardware/2.3 Storage/Storage.md",
-    "3.0 Software/3.1 Operating Systems/Operating Systems.md",
     "2.0 Hardware/2.3 Storage",
     "5.0 Programming/Programming Terminologies & Concepts.md",
     "5.0 Programming/Programming Languages.md",
@@ -248,17 +262,12 @@
     "4.0 Networking/Networking.md",
     "4.0 Networking/Protocols",
     "0.0 Cyber Security Course/People.md",
-    "3.0 Software/3.1 Operating Systems/3.1.1 Desktops & Laptops/3.1.1.3 MacOS.md",
-    "3.0 Software/3.1 Operating Systems/3.1.1 Desktops & Laptops/3.1.1.1 Windows (10 & 11).md",
     "Pasted image 20240702104549.png",
     "4.0 Networking/DNS (Domain Name System)",
     "1.0 Types of Attacks & Defense/1.2 Defense",
     "1.0 Types of Attacks & Defense/1.1 Attacks",
     "3.0 Software",
     "2.0 Hardware",
-    "99.99 Images Used/Pasted image 20240626151911.png",
-    "99.99 Images Used/Pasted image 20240626151914.png",
-    "99.99 Images Used/Pasted image 20240625173558.png",
     "Pasted image 20240625173221.png",
     "Untitled.canvas"
   ]
