@@ -8,3 +8,9 @@
 	- Java
 	- *List others here*
 
+- Matlab
+	- List indexing starts at 1 (not 0 like in other languages)
+	- Regarded as a mathematical programming language which is why the above is the case (Matthew Randle)
+- Lua
+	- List indexing starts at 1 (not 0 like in other languages)
+

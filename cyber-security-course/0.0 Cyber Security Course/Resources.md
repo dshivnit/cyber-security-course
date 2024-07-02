@@ -80,7 +80,10 @@
 25. VulnHub - Vulnerable By Design
     https://www.vulnhub.com/
 
-26. 
+26. Python Examples (KRP)
+	https://github.com/krp/python-examples
+
+27. 
 
 MICROSOFT
 
