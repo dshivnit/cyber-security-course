@@ -230,4 +230,6 @@ Encryption/Cryptology Terms
 - WinRM - Windows Remote Management
 	- MS implementation of the WS-Management protocol
 	- Intended audience is IT professionals - who write scripts to automate the management of servers - and Independent Software Vendor (ISV) developers, who want to obtain data for management applications. 
+- SSDP - Simple Service Discovery Protocol
+	- A network protocol based on the Internet protocol suite for advertisement and discovery of network services and presence information. 
 - 

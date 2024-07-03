@@ -86,6 +86,11 @@ ie Windows applications/software, Other OS applications/software, PowerShell too
 	- One of several tools that can take a NetNTLMv2 challenge/response and try millions of passwords to see if any of them generate the same response. 
 - LogicMonitor
 	- Enables you to control which users in your account use the REST API, and monitor how often they are using it. 
+- evil-winrm
+	- 
+
+
+
 - IDEs (Integrated Development Environment)
   *revise these*
 	- Obisidian (not really an IDE but I'm putting it in here)

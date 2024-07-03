@@ -43,3 +43,6 @@
   Port 22
 - DNSCrypt
 	- Network protocol that authenticates and encrypts Domain Name System (DNS) traffic between the User's computer and recursive name servers. DNSCrypt wraps unmodified DNS traffic between a client and a DNS resolver in a cryptographic construction, preventing eavesdropping and forgery by a main-in-the-middle attack.
+- SSDP - Simple Service Discovery Protocol
+	- A network protocol based on the Internet protocol suite for advertisement and discovery of network services and presence information. 
+- 
