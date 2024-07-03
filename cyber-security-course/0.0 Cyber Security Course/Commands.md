@@ -57,6 +57,8 @@ Bash
 	- Wordlists and Domains will be helpful if trying to brute into a box/machine/server (take note that these are also required by the gobuster)
 		- Example: 
 			gobuster -m dir -w /usr/share/wordlists/SecLists/Discovery/Web-Content/directory-list-2.3-small.txt -u http://10.129.1.15/
+	- -x : can enumerate hidden files, or remote directories
+	- -e : can be used for completing printing URL when extracting a hidden file or directory
 
 zsh (z Shell)
 *remember that some commands will require you to do a sudo*

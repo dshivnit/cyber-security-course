@@ -196,4 +196,38 @@ Encryption/Cryptology Terms
 	- Managing tasks and services that ensure our systems run smoothly
 - SDLC - Software Development Lifecycle
 - pip - Package Installer Python
+- NTLM - New Technology LAN Manager
+	- MS security protocols intended to provide authentication, integrity, and confidentiality to users.
+	- NTLM is a collection of authentication protocols created by Microsoft. It is a challenge-response authentication protocol used to authenticate a client to a resource on an Active Directory domain.
+- NetNTLMv2
+	- Used for authentication between clients and servers in a Windows network environment.
+	- Commonly employed in scenarios such as user logins and access to shared resources. 
+	- Challenge-Response Mechanism: NTLMv2 uses a challenge-response mechanism for authentication. 
+- API Token
+- LMv1
+	- token-based
+	- A key-based authentication which allows you to authenticate API calls to the LogicMonitor (*needing to look into this*) platform. These tokens are created on a per-user basis
+- LMv1, NTLMv1, LMv2 or NTLMv2
+	- *expand on these*
+- LLMNR (Link Local Multicast Name Resolution)
+	- *expand on this*
+- SAM - Security Accounts Manager
+	- A database file in the mS Windows OS that contains usernames and passwords
+- Hash Function
+	- One-way function that takes any amount of data and returns a fixed sized value. 
+	- Referred to as a hash, digest, or fingerprint
+	- Used for storing passwords more securely
+	- There is no way to convert the has directly back to the original data (though there are attacks to attempt to recover passwords from hash) 
+	- A server can store a hash of your password, and when you submit your password to the site, it hashes your input and compares the result to the hash in the database.
+		- If they match, it will know you supplied the correct password. 
+- NTHash
+	- Output of the algorithm used to store passwords on Windows systems in the SAM (security accounts manager) database and on domain controllers. An NTHash is often referred to as an NTLM hash or even just an NTLM, which is very misleading/confusing... (from THM)
+- Kusto Query Language (KQL) - A powerful tool to explore your data and discover patterns, identify anomoalies and outliers, create statistical modeling and more
+- Yara-L is a language used to create rules for searching through your enterprise log data (hence the L). 
+- ISV (Independent Software Vendor)
+- WS-Management Protocol
+	- A standard Simple Object Access Protocol (SOAP)-based, firewall-friendly protocol that allows interoperation between hardware and operating systems from different vendors. 
+- WinRM - Windows Remote Management
+	- MS implementation of the WS-Management protocol
+	- Intended audience is IT professionals - who write scripts to automate the management of servers - and Independent Software Vendor (ISV) developers, who want to obtain data for management applications. 
 - 

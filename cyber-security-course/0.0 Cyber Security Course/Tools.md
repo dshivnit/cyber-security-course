@@ -1,5 +1,6 @@
 Tools mainly being used so far in this course will be described here (note - there are HEAPS out there - refer to the Book of "Secret" Knowledge - lel, secret)
-*Perhaps put these into their own sections and further expand.*
+*Perhaps put these into their own sections and further expand.
+ie Windows applications/software, Other OS applications/software, PowerShell tools, Unix/Linux shell tools - differentiating between the different shells if relevant (bash, zsh etc) - atm this section is all jumbled up*
 
 - Finder
 	- Pretty neat, kind of like Finder in MacOS, real fast to search for stuff when compared to your usual File Explorer in Windows
@@ -23,6 +24,7 @@ Tools mainly being used so far in this course will be described here (note - the
 	- -sV : Probe open ports to determine service/version info
 	- -sC : equivalent to --script=default
 		- example: nmap -sC -sV *ip_address/hostname*
+		- nmap -p- --min-rate 1000 -sV *ipaddress*
 - redis-tools
 	- installed in Ubuntu (apt install redis-tools)
 - GoBuster
@@ -57,14 +59,33 @@ Tools mainly being used so far in this course will be described here (note - the
 - DIG - Domain Information Groper (can also get this on Windows via WSL)
 - - Sysinternals TCPView
 - nmap (for both Unix and Windows shells)
+	- nmap -p- --min-rate 1000 -sV 10.129.164.215
 - DNSCrypt (https://www.dnscrypt.org/)
 	- A protocol that authenticates communications between a DNS client and a DNS resolver. It prevents DNS spoofing. It uses cryptographic singatures to verify that responses originate from the chosen DNS resolver and haven't been tampered with. 
 	- (free and open-source implementations - not affiliated with any company or organisation)
 - Spectrum Analyzers & Network Scanning Tools
 	- WiFi Analyser (for example)
-- 
-
-
+- tee : read from standard input and write to standard output and files
+	- -a : appends to the file
+	- Example:
+		echo "some shit goes at the end of the piped file" | sudo tee -a *filename* 
+	- What this does is, it will print out the "some shit.." string and then pipe the tee command to append it into whatever the *filename* is
+- vim
+	- Text Editor in zshell
+- Responder (Python)
+	- Tool for:
+		- LLMNR
+		- NBTNS
+		- MDNS poisoning
+		- WPAD spoofing
+	- It can also be used in 'analyze' mode.
+	- Browser mode: inspect "Browse Service" messages and map IP addresses with NetBIOS names. 
+		(from thehacker.recipes)
+- John-The-Ripper:
+	  https://github.com/piyushcse29/john-the-ripper/blob/master/doc/NETNTLM_README
+	- One of several tools that can take a NetNTLMv2 challenge/response and try millions of passwords to see if any of them generate the same response. 
+- LogicMonitor
+	- Enables you to control which users in your account use the REST API, and monitor how often they are using it. 
 - IDEs (Integrated Development Environment)
   *revise these*
 	- Obisidian (not really an IDE but I'm putting it in here)
