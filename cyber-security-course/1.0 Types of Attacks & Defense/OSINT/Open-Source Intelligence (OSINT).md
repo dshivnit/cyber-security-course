@@ -1,0 +1,3 @@
+- OSINT Framework: [https://osintframework.com/](https://osintframework.com/ "https://osintframework.com/")
+- Awesome-OSINT: [https://github.com/jivoi/awesome-osint](https://github.com/jivoi/awesome-osint "https://github.com/jivoi/awesome-osint")
+- 

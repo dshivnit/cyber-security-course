@@ -194,4 +194,6 @@ Encryption/Cryptology Terms
 - Daemon
 	- A background process that operates autonomously, performing tasks without user intervention.
 	- Managing tasks and services that ensure our systems run smoothly
+- SDLC - Software Development Lifecycle
+- pip - Package Installer Python
 - 

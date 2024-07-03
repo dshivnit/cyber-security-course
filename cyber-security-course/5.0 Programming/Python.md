@@ -2,6 +2,8 @@ Resources
 - https://github.com/krp/python-examples
 - https://tryhackme.com/r/room/pythonbasics
 
+- pip - Package Installer Python 
+
 - Data Types
 	- String
 		- Used for combinations of characters, such as letters or symbols

@@ -1,5 +1,10 @@
 *Some of these commands will be in relation to tools that are described in the Tools section - rationalisation will be required here*
 
+Covered/covering so far:
+- Powershell
+- Bash
+- zh 
+
 PowerShell
 - wsl (Windows Subsystem for Linux)
 
@@ -54,4 +59,24 @@ Bash
 			gobuster -m dir -w /usr/share/wordlists/SecLists/Discovery/Web-Content/directory-list-2.3-small.txt -u http://10.129.1.15/
 
 zsh (z Shell)
-- 
+*remember that some commands will require you to do a sudo*
+- id
+	- Lists the current user's:
+		- uid
+		- gid
+		- groups
+- id *username*
+	- Lists the above for the given user
+- groupadd *groupName*
+	- Will create a new group named with the given name
+	- To verify that the group was added, you can do a:
+		- tail /etc/group
+- usermod *options* 
+	- Modify a user account
+	- -a --append
+	- -G --groups GROUP
+		- new list of supplementary GROUPS
+		- example: sudo usermod -a -G *groupName userName*
+		- You can verify by:
+			- tail /etc/group | grep *groupName*
+	- 

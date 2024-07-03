@@ -60,9 +60,13 @@ Tools mainly being used so far in this course will be described here (note - the
 - DNSCrypt (https://www.dnscrypt.org/)
 	- A protocol that authenticates communications between a DNS client and a DNS resolver. It prevents DNS spoofing. It uses cryptographic singatures to verify that responses originate from the chosen DNS resolver and haven't been tampered with. 
 	- (free and open-source implementations - not affiliated with any company or organisation)
+- Spectrum Analyzers & Network Scanning Tools
+	- WiFi Analyser (for example)
+- 
 
 
 - IDEs (Integrated Development Environment)
+  *revise these*
 	- Obisidian (not really an IDE but I'm putting it in here)
 	- VisualStudio
 	- Notepad++

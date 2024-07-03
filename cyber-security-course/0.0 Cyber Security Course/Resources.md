@@ -86,7 +86,13 @@
 27. Oracle's VirtualBox
     https://www.virtualbox.org/
 
-28. 
+28. OffSec (Courses and Certifications)
+	https://www.offsec.com/courses-and-certifications/
+	
+29. Gobuster - Penetration Testing Tools in Kali Tools
+	https://www.geeksforgeeks.org/gobuster-penetration-testing-tools-in-kali-tools/
+
+30. 
 
 MICROSOFT
 
