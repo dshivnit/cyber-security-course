@@ -92,7 +92,10 @@
 29. Gobuster - Penetration Testing Tools in Kali Tools
 	https://www.geeksforgeeks.org/gobuster-penetration-testing-tools-in-kali-tools/
 
-30. 
+30. Keyboard Shortcuts
+	https://support.microsoft.com/en-us/windows/keyboard-shortcuts-in-windows-dcc61a57-8ff0-cffe-9796-cb9706c75eec
+	https://support.apple.com/en-nz/102650
+	
 
 MICROSOFT
 

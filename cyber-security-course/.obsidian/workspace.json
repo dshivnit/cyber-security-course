@@ -9,67 +9,18 @@
         "dimension": 53.875379939209736,
         "children": [
           {
-            "id": "57b63296a1af7d53",
+            "id": "3123d9d581fb0e3a",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "0.0 Cyber Security Course/Notes/Week 02/20240703 - Day 007.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "0d33d185c9c2480b",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "1.0 Types of Attacks & Defense/OSINT/Open-Source Intelligence (OSINT).md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "113b995181167c65",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "0.0 Cyber Security Course/Terminologies.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "395694f05fdc5919",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "0.0 Cyber Security Course/Tools.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "a12564dad0cbbf2d",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "4.0 Networking/Protocols/Protocols.md",
+                "file": "0.0 Cyber Security Course/Notes/Week 02/20240704 - Day 008.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ],
-        "currentTab": 3
+        ]
       },
       {
         "id": "2fb0e64401067da2",
@@ -89,24 +40,36 @@
             }
           },
           {
-            "id": "49b3f578e8bcc191",
+            "id": "79ab59a83f434e07",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "0.0 Cyber Security Course/Commands.md",
+                "file": "0.0 Cyber Security Course/Tools.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "3123d9d581fb0e3a",
+            "id": "692ba02c4019d46a",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "0.0 Cyber Security Course/Notes/Week 02/20240704 - Day 008.md",
+                "file": "0.0 Cyber Security Course/Resources.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "49b3f578e8bcc191",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "0.0 Cyber Security Course/Commands.md",
                 "mode": "source",
                 "source": false
               }
@@ -179,7 +142,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "0.0 Cyber Security Course/Tools.md",
+                "file": "0.0 Cyber Security Course/Notes/Week 02/20240704 - Day 008.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -196,7 +159,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "0.0 Cyber Security Course/Tools.md",
+                "file": "0.0 Cyber Security Course/Notes/Week 02/20240704 - Day 008.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -219,7 +182,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "0.0 Cyber Security Course/Tools.md"
+                "file": "0.0 Cyber Security Course/Notes/Week 02/20240704 - Day 008.md"
               }
             }
           }
@@ -228,7 +191,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 247.5
+    "width": 200
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -240,20 +203,21 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "395694f05fdc5919",
+  "active": "3123d9d581fb0e3a",
   "lastOpenFiles": [
+    "0.0 Cyber Security Course/Resources.md",
+    "6.0 Cryptography/Cryptography.md",
     "0.0 Cyber Security Course/Notes/Week 02/20240704 - Day 008.md",
+    "0.0 Cyber Security Course/Tools.md",
+    "0.0 Cyber Security Course/Terminologies.md",
+    "0.0 Cyber Security Course/Commands.md",
+    "4.0 Networking/Protocols/Protocols.md",
     "0.0 Cyber Security Course/Class Topics.md",
     "0.0 Cyber Security Course/Course Team.md",
     "1.0 Types of Attacks & Defense/1.1 Attacks/1.1.1 Types of Attacks.md",
-    "0.0 Cyber Security Course/Commands.md",
-    "0.0 Cyber Security Course/Tools.md",
-    "0.0 Cyber Security Course/Terminologies.md",
-    "4.0 Networking/Protocols/Protocols.md",
     "0.0 Cyber Security Course/Notes/Week 02/20240703 - Day 007.md",
     "0.0 Cyber Security Course/Notes/Notes.md",
     "10. System Administration/System Administration.md",
-    "0.0 Cyber Security Course/Resources.md",
     "5.0 Programming/Python.md",
     "1.0 Types of Attacks & Defense/OSINT/Open-Source Intelligence (OSINT).md",
     "1.0 Types of Attacks & Defense/OSINT",
@@ -274,7 +238,6 @@
     "99.99 Images Used/Reddit_csharp_HandlesDef.png",
     "99.99 Images Used/Clones_20240702.png",
     "99.99 Images Used/Pasted image 20240702214553.png",
-    "0.0 Cyber Security Course/Cheat Sheets.md",
     "99.99 Images Used/Clones_20240702.png.crdownload",
     "2.0 Hardware/2.3 Storage",
     "9.0 Virtual Machines",
