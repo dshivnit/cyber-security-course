@@ -96,7 +96,16 @@ ie Windows applications/software, Other OS applications/software, PowerShell too
 - evil-winrm
 - PGP - Pretty Good Privacy
 	- An encryption program that provides cryptographic privacy and authentication for data communication. Used for signing, encrypting and decrypting texts, emails, files, directories, and whole disk partitions and to increase the security of email communications. (created by Philip Zimmerman) 
-
+- EDR - Endpoint Detection and Response tool
+	- Used to audit devices for common and known vulnerabilities (I'm thinking against a known and well updated database or several of them)
+	- Monitoring a device for suspicious activity
+		- Privilege escalations (UACs I'm thinking)
+		- Recording normal behaviour of the device to pick up any weird or out of the ordinary anomaly type patterns 
+		- Monitoring for suspicious activity
+			- Unauthorised logins
+			- Brute-force attacks
+			- Privilege escalations
+		- 
 
 
 - IDEs (Integrated Development Environment)

@@ -245,3 +245,12 @@
 	- A network protocol based on the Internet protocol suite for advertisement and discovery of network services and presence information. 
 - Telemetry
 	- The automatic recording and transmission of data from remote or inaccessible sources to an IT system in a different location for monitoring and analysis. 
+- SIEM - System Information and Event Management (a type of tool that enterprises use in relation to Sysmon)
+- Sysmon - Used in conjunction with SIEMs or other log parsing solutions that aggregate, filter and visualise events.  
+- EDR - Endpoint Detection and Response tools
+	- Tools and applications that monitor devices for an activity that could indicate a threat or security breach. These tools and applications have features that include: 
+		- Auditing a device for common vulnerabilities
+		- Proactively monitoring a device for suspicious activity such as unauthorised logins, brute-force attacks, or privilege escalations.
+		- Visualizing complex data and events into neat and trendy graphs
+		- Recording a device's normal operating behaviour to help with detecting anomalies
+		- 

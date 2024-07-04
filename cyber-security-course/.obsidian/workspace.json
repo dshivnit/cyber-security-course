@@ -12,8 +12,12 @@
             "id": "3123d9d581fb0e3a",
             "type": "leaf",
             "state": {
-              "type": "graph",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "1.0 Types of Attacks & Defense/1.2 Defense/1.2.1 Types of Defense.md",
+                "mode": "source",
+                "source": false
+              }
             }
           }
         ]
@@ -41,7 +45,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "5.0 Programming/Programming.md",
+                "file": "0.0 Cyber Security Course/Terminologies.md",
                 "mode": "source",
                 "source": false
               }
@@ -126,6 +130,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "1.0 Types of Attacks & Defense/1.2 Defense/1.2.1 Types of Defense.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -142,6 +147,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "1.0 Types of Attacks & Defense/1.2 Defense/1.2.1 Types of Defense.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -163,7 +169,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "1.0 Types of Attacks & Defense/1.2 Defense/1.2.1 Types of Defense.md"
+              }
             }
           }
         ],
@@ -185,12 +193,18 @@
   },
   "active": "3123d9d581fb0e3a",
   "lastOpenFiles": [
+    "0.0 Cyber Security Course/Tools.md",
+    "1.0 Types of Attacks & Defense/1.2 Defense/1.2.1 Types of Defense.md",
+    "0.0 Cyber Security Course/Terminologies.md",
+    "5.0 Programming/Programming.md",
+    "0.0 Cyber Security Course/Notes/Week 02/20240704 - Day 008.md",
+    "0.0 Cyber Security Course/Notes/Week 02/20240705 - Day 009.md",
+    "0.0 Cyber Security Course/Resources.md",
     "1.0 Types of Attacks & Defense/Types of Attacks & Defense.md",
     "1.0 Types of Attacks & Defense/OSINT/Open-Source Intelligence (OSINT).md",
     "4.0 Networking/Networking.md",
     "4.0 Networking/Network Administration/Network Administration.md",
     "0.0 Cyber Security Course/Cyber Security Course.md",
-    "5.0 Programming/Programming.md",
     "5.0 Programming/5.1 Programming Languages/Programming Languages.md",
     "5.0 Programming/5.1 Programming Languages/Python.md",
     "5.0 Programming/Programming Terminologies & Concepts.md",
@@ -208,12 +222,6 @@
     "2.0 Hardware/2.1 Central Processing Units (CPU's)/2.1.1.0 AMD CPUs.md",
     "Untitled.canvas",
     "4.0 Networking/DNS (Domain Name System)/DNS (Domain Name System).md",
-    "0.0 Cyber Security Course/Notes/Week 02/20240701 - Day 005.md",
-    "0.0 Cyber Security Course/People.md",
-    "0.0 Cyber Security Course/Notes/Week 02/20240702 - Day 006.md",
-    "12. Artificial Intelligence/Artificial Intelligence.md",
-    "13. Companies/Companies.md",
-    "10. System Administration/System Administration.md",
     "13. Companies",
     "3.0 Software/3.2 Applications",
     "12. Artificial Intelligence",
