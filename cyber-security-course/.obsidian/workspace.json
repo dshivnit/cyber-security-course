@@ -26,7 +26,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "0.0 Cyber Security Course/Terminologies.md",
+                "file": "0.0 Cyber Security Course/Notes/Week 02/20240705 - Day 009.md",
                 "mode": "source",
                 "source": false
               }
@@ -58,7 +58,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "0.0 Cyber Security Course/Notes/Week 01/20240627 - Day 004.md",
+                "file": "5.0 Programming/5.1 Programming Languages/Python.md",
                 "mode": "source",
                 "source": false
               }
@@ -154,7 +154,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "0.0 Cyber Security Course/Notes/Week 01/20240627 - Day 004.md",
+                "file": "0.0 Cyber Security Course/Notes/Week 02/20240705 - Day 009.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -171,7 +171,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "0.0 Cyber Security Course/Notes/Week 01/20240627 - Day 004.md",
+                "file": "0.0 Cyber Security Course/Notes/Week 02/20240705 - Day 009.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -194,7 +194,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "0.0 Cyber Security Course/Notes/Week 01/20240627 - Day 004.md"
+                "file": "0.0 Cyber Security Course/Notes/Week 02/20240705 - Day 009.md"
               }
             }
           }
@@ -215,37 +215,37 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "4903a08226214767",
+  "active": "ed45924a904295d1",
   "lastOpenFiles": [
+    "0.0 Cyber Security Course/Notes/To-Do's.md",
+    "0.0 Cyber Security Course/Notes/To-Do's (RANDO).md",
+    "5.0 Programming/5.1 Programming Languages/Programming Languages.md",
+    "5.0 Programming/Programming.md",
+    "5.0 Programming/5.1 Programming Languages/HTML (Hyper-Text Markup Language).md",
+    "0.0 Cyber Security Course/Terminologies.md",
+    "5.0 Programming/5.1 Programming Languages/Python.md",
+    "5.0 Programming/Programming Terminologies & Concepts.md",
+    "0.0 Cyber Security Course/Notes/Week 02/20240705 - Day 009.md",
+    "0.0 Cyber Security Course/Notes/Week 02/20240704 - Day 008.md",
+    "0.0 Cyber Security Course/Notes/Week 02/20240703 - Day 007.md",
+    "0.0 Cyber Security Course/Notes/Week 02/20240702 - Day 006.md",
+    "0.0 Cyber Security Course/Notes/Week 02/20240701 - Day 005.md",
+    "0.0 Cyber Security Course/Notes/Week 01/20240627 - Day 004.md",
     "0.0 Cyber Security Course/Notes/Week 01/20240626 - Day 003.md",
     "0.0 Cyber Security Course/Notes/Week 01/20240625 - Day 002.md",
     "0.0 Cyber Security Course/Notes/Week 01/20240624 - Day 001.md",
     "0.0 Cyber Security Course/Cyber Security Course.md",
     "1.0 Types of Attacks & Defense/Types of Attacks & Defense.md",
-    "0.0 Cyber Security Course/Terminologies.md",
     "1.0 Types of Attacks & Defense/1.1 Attacks/1.1.1 Types of Attacks.md",
     "13.0 Companies/Companies.md",
     "0.0 Cyber Security Course/Tools.md",
-    "0.0 Cyber Security Course/Notes/To-Do's.md",
     "1.0 Types of Attacks & Defense/Untitled.md",
     "Untitled 1.canvas",
     "Untitled.canvas",
     "0.0 Cyber Security Course/People.md",
     "6.0 Cryptography/Cryptography.md",
     "1.0 Types of Attacks & Defense/1.2 Defense/1.2.1 Types of Defense.md",
-    "5.0 Programming/Programming.md",
-    "0.0 Cyber Security Course/Notes/Week 02/20240704 - Day 008.md",
-    "0.0 Cyber Security Course/Notes/Week 02/20240705 - Day 009.md",
-    "0.0 Cyber Security Course/Resources.md",
-    "1.0 Types of Attacks & Defense/OSINT/Open-Source Intelligence (OSINT).md",
-    "4.0 Networking/Networking.md",
-    "4.0 Networking/Network Administration/Network Administration.md",
-    "5.0 Programming/5.1 Programming Languages/Programming Languages.md",
-    "5.0 Programming/5.1 Programming Languages/Python.md",
-    "5.0 Programming/Programming Terminologies & Concepts.md",
-    "3.0 Software/Software.md",
     "5.0 Programming/5.1 Programming Languages",
-    "0.0 Cyber Security Course/Notes/Notes.md",
     "13.0 Companies",
     "3.0 Software/3.2 Applications",
     "12.0 Artificial Intelligence",

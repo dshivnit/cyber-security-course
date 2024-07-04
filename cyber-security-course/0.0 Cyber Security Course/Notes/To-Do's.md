@@ -1,5 +1,6 @@
 (Please take note that these todo's are tailored for me personally and may not apply to you, reader.)
 
+- WIN+SHIFT+C : gives you the colour hex tag! (note this and other random keyboard shortcuts somewhere - and also the usual ones)
 - **Get back to training with Python**
 - **Go through each main subject and the content covered in teh notes and expand on them in respective sections of this vault**
 - **Rationalise/rationalize/organise! each topic/content in this vault**

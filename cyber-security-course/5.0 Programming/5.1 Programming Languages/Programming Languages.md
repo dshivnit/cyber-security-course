@@ -1,5 +1,7 @@
 *expand and detail this list further when you can*
 
+[[HTML (Hyper-Text Markup Language)]]
+
 [[Python]]
 
 - FlutterFlow
