@@ -1,5 +1,11 @@
 *Bruh - rationalise/organise this page..*
 
+[[Protocols]]
+
+[[DNS (Domain Name System)]]
+
+[[Network Administration]]
+
 - WAN (Wide Area Network)
 - LAN (Local Area Network)
 	- WLAN (Wireless LAN)

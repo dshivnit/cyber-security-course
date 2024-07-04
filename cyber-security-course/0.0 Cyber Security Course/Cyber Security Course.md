@@ -10,15 +10,15 @@
 
 [[Terminologies]]
 
+[[Software]]
+
+[[Hardware]]
+
 [[Commands]]
 
-[[1.1.1 Types of Attacks]]
+[[Types of Attacks & Defense]]
 
 [[Operating Systems]]
-
-[[Central Processing Units (CPU's)]]
-
-[[Memory]]
 
 [[Networking]]
 
@@ -37,6 +37,8 @@
 [[People]]
 
 [[System Administration]]
+
+[[Network Administration]]
 
 [[Networking]]
 

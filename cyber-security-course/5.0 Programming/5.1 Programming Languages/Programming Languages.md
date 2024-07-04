@@ -1,4 +1,7 @@
 *expand and detail this list further when you can*
+
+[[Python]]
+
 - FlutterFlow
 - Brainfuck
 - FRACTRAN

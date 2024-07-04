@@ -12,12 +12,8 @@
             "id": "3123d9d581fb0e3a",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "0.0 Cyber Security Course/Notes/Week 02/20240701 - Day 005.md",
-                "mode": "source",
-                "source": false
-              }
+              "type": "graph",
+              "state": {}
             }
           }
         ]
@@ -45,7 +41,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "0.0 Cyber Security Course/Notes/To-Do's (RANDO).md",
+                "file": "5.0 Programming/Programming.md",
                 "mode": "source",
                 "source": false
               }
@@ -130,7 +126,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "0.0 Cyber Security Course/Notes/Week 02/20240701 - Day 005.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -147,7 +142,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "0.0 Cyber Security Course/Notes/Week 02/20240701 - Day 005.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -169,9 +163,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "0.0 Cyber Security Course/Notes/Week 02/20240701 - Day 005.md"
-              }
+              "state": {}
             }
           }
         ],
@@ -193,37 +185,40 @@
   },
   "active": "3123d9d581fb0e3a",
   "lastOpenFiles": [
+    "1.0 Types of Attacks & Defense/Types of Attacks & Defense.md",
+    "1.0 Types of Attacks & Defense/OSINT/Open-Source Intelligence (OSINT).md",
+    "4.0 Networking/Networking.md",
+    "4.0 Networking/Network Administration/Network Administration.md",
+    "0.0 Cyber Security Course/Cyber Security Course.md",
+    "5.0 Programming/Programming.md",
+    "5.0 Programming/5.1 Programming Languages/Programming Languages.md",
+    "5.0 Programming/5.1 Programming Languages/Python.md",
+    "5.0 Programming/Programming Terminologies & Concepts.md",
+    "3.0 Software/Software.md",
+    "5.0 Programming/5.1 Programming Languages",
+    "Untitled 1.canvas",
+    "0.0 Cyber Security Course/Notes/Notes.md",
+    "3.0 Software/3.2 Applications/Applications.md",
+    "2.0 Hardware/2.2 Memory/Memory.md",
+    "3.0 Software/3.1 Operating Systems/Operating Systems.md",
+    "2.0 Hardware/Hardware.md",
     "0.0 Cyber Security Course/Notes/To-Do's (RANDO).md",
-    "0.0 Cyber Security Course/People.md",
+    "2.0 Hardware/2.3 Storage/Storage.md",
+    "2.0 Hardware/2.1 Central Processing Units (CPU's)/Central Processing Units (CPU's).md",
+    "2.0 Hardware/2.1 Central Processing Units (CPU's)/2.1.1.0 AMD CPUs.md",
+    "Untitled.canvas",
+    "4.0 Networking/DNS (Domain Name System)/DNS (Domain Name System).md",
     "0.0 Cyber Security Course/Notes/Week 02/20240701 - Day 005.md",
+    "0.0 Cyber Security Course/People.md",
     "0.0 Cyber Security Course/Notes/Week 02/20240702 - Day 006.md",
-    "11. Network Administration/Network Administration.md",
     "12. Artificial Intelligence/Artificial Intelligence.md",
     "13. Companies/Companies.md",
-    "0.0 Cyber Security Course/Cyber Security Course.md",
     "10. System Administration/System Administration.md",
     "13. Companies",
-    "1.0 Types of Attacks & Defense/1.1 Attacks/1.1.1 Types of Attacks.md",
-    "0.0 Cyber Security Course/Resources.md",
-    "0.0 Cyber Security Course/Tools.md",
-    "0.0 Cyber Security Course/Notes/To-Do's.md",
-    "6.0 Cryptography/Cryptography.md",
-    "4.0 Networking/Protocols/Protocols.md",
-    "3.0 Software/3.1 Operating Systems/3.1.4 Applications/3.1.4.1 Applications.md",
-    "0.0 Cyber Security Course/Terminologies.md",
-    "3.0 Software/3.1 Operating Systems/3.1.4 Applications",
-    "5.0 Programming/Programming Languages.md",
+    "3.0 Software/3.2 Applications",
     "12. Artificial Intelligence",
-    "0.0 Cyber Security Course/Notes/Week 01/20240627 - Day 004.md",
-    "0.0 Cyber Security Course/Notes/Week 02/20240705 - Day 009.md",
-    "0.0 Cyber Security Course/Notes/Week 02/20240704 - Day 008.md",
-    "0.0 Cyber Security Course/Commands.md",
-    "0.0 Cyber Security Course/Notes/Week 01/20240626 - Day 003.md",
-    "0.0 Cyber Security Course/Class Topics.md",
-    "0.0 Cyber Security Course/Course Team.md",
-    "0.0 Cyber Security Course/Notes/Week 02/20240703 - Day 007.md",
     "1.0 Types of Attacks & Defense/OSINT",
-    "11. Network Administration",
+    "4.0 Networking/Network Administration",
     "10. System Administration",
     "99.99 Images Used/TutorialsPointProcThrComparison.png",
     "99.99 Images Used/Reddit_csharp_HandlesDef.png",
@@ -232,9 +227,7 @@
     "99.99 Images Used/Clones_20240702.png.crdownload",
     "2.0 Hardware/2.3 Storage",
     "9.0 Virtual Machines",
-    "0.0 Cyber Security Course/Untitled",
     "Pasted image 20240702104549.png",
-    "Pasted image 20240625173221.png",
-    "Untitled.canvas"
+    "Pasted image 20240625173221.png"
   ]
 }
