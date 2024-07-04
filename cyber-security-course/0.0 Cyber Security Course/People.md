@@ -38,3 +38,6 @@
 		(from Wikipedia)
 - Troy Hunt
 	- Created the "Have I Been Pwned" website
+- Ronald Rivest
+	- Created MD5 (Message Digest version 5) hash algorithm in 1991
+- 

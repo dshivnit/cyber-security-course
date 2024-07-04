@@ -13,13 +13,32 @@ The process of hiding or coding information so that only the person a message wa
 	- Security of public-key cryptography depends on keeping the private key secret - the public key can be openly distributed without compromising security. 
 	- Anyone with a public key can encrypt a message, yielding a ciphertext. BUT only those who know the corresponding private key can decrypt the ciphertext to obtain the original message. 
 		(Wikipedia) 
-- MD5 (Message Digest Version 5)
+- Hash
+	- Takes plaintext and converts it into a hash (encrypted)
+	- They are not reversible
+		- "You can make hash out of a potato, but you can't make hash back into a potato" (lol good one Teacher)
+	- Most popular uses:
+		- File Identification
+		- Storing sensitive data (like passwords)
+			- When you create a password on a website, your password is converted to hash and stored in the websystem's database
+			- If you use the same password when logging in again, the website will convert it to hash, and compare it with the hash in the database. 
+				- If they match, you're in love, and you're connected
+- MD5 (Message Digest Version 5) - https://www.md5hashgenerator.com/
 	- Cryptographic hash algorithm used to generate a 128-bit digest from a string of any length
 	- Remember that HASH is one-way encryption, you can't reverse it.
 		- Kris's analogy:
 			- You can make hash out of a potato, but you turn hash back into a potato (lel)
 	- Made by Ron Rivest in 1991
 	- MD5 Checksums say for example, can verify the integrity of files received on the receiving end of a connection
+	- That's how the word "hello" looks as MD5 hash 5d41402abc4b2a76b9719d911017c592
+	- Also used to ensure the data integrity of files. Because MD5 always produces the same output for the same given input, it can be used to compare a hash of the source file with a newly created hash of the destination file to check that it is intact and unmodified.
+		- Real useful for data integrity when transferring data (such as in TCP/IP)
+- Encoding - https://www.base64decode.org/
+	- Encoded data can be decoded immediately, without keys. 
+	- It is not a form of encryption, it's just a way of representing data
+	- Popular encoding base is Base64. 
+	- Here's what "hi there" looks with Base64 encoding: **aGkgdGhlcmU=**
+- 
 - DNSCrypt
 	- *expand on this*
 - Nonce (Number Used Once)
@@ -31,3 +50,4 @@ The process of hiding or coding information so that only the person a message wa
 	- Password-authenticated key agreements are used to prevent MitM (man in the middle) attacks!
 - Shor's Algorithm
 	- A quantum algorithm for finding the prime factors of an integer. It was developed in 1994 by Peter Shor. 
+- 

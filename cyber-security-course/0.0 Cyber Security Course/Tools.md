@@ -105,7 +105,12 @@ ie Windows applications/software, Other OS applications/software, PowerShell too
 			- Unauthorised logins
 			- Brute-force attacks
 			- Privilege escalations
-		- 
+- MD5 Hash Generator:
+	- https://www.md5hashgenerator.com/
+- Base64 Encoder/Decoder:
+	- https://www.base64decode.org/
+- CVSS Calculator: https://nvd.nist.gov/vuln-metrics/cvss/v3-calculator
+- 
 
 
 - IDEs (Integrated Development Environment)

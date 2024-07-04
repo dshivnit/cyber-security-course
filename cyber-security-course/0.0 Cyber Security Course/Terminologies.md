@@ -10,6 +10,7 @@
 	- A LoRA (short for Learned Rank Augmentation) model is **a small model that is applied on top of a standard image generation model like Stable Diffusion**. It allows for fine-tuning of the base model without having to retrain the whole model from scratch, which can be very time-consuming and resource-intensive. (from a reddit board)
 	- LoRa is a wireless modulation technique derived from **Chirp Spread Spectrum (CSS)** technology. It encodes information on radio waves using chirp pulses - similar to the way dolphins and bats communicate! LoRa modulated transmission is robust against disturbances and can be received across great distances. (https://linovision.com/blogs/blogs/what-are-lora-and-lorawan-and-why-is-lorawan-so-awesome#:~:text=LoRa%20is%20ideal%20for%20applications,operate%20in%20low%20power%20mode.)
 - CVSS - Common Vulnerability Scoring System (there are different versions)
+	- Introduced in 2005
 - CLI - Command-Line Interpreter/Interface
 - Shell
 	- An interface present between the kernel and the user
@@ -177,9 +178,8 @@
 	- DIG - Domain Information Groper
 	- NIC (in the context of DNS)
 		- Network Information Centre
-- Thread Modeling
+- Threat Modeling
 	- Structured representation of all the information that affects the security of an application
-- 
 - OSINT - Open Source Intelligence
 - POTS - Plain Old Telephone System
 	- Copper-based network
@@ -253,4 +253,25 @@
 		- Proactively monitoring a device for suspicious activity such as unauthorised logins, brute-force attacks, or privilege escalations.
 		- Visualizing complex data and events into neat and trendy graphs
 		- Recording a device's normal operating behaviour to help with detecting anomalies
-		- 
+- CIA Triad
+	- Confidentiality
+	- Integrity
+	- Availability
+- VPR (Vulnerability Priority Rating)
+	- Used by corporations mainly as it is not open-source
+	- Has over 150 factors considered when rating scoring a potential risk/vulnerability
+	- Scores of a risk change over time
+	- Does not consider the CIA Triad (Confidentiality, Integrity and Availability) of a vulnerability
+- CMS (Content Management System)
+	- Website off-the-shelf systems from recollection
+	- *Describe this further later*
+- NVD (National Vulnerability Database) (http://nvd.nist.govt/)
+	- created by a hacker group called milw0rm in 2004, however, this could be disputed (and I must check this sometime) as it is OffSec who currently maintain it
+- Exploit-DB (https://exploit-db.com)
+- Vulnerability
+	- A weakness or flaw in the design, implementation or behaviours of a system or application
+- Exploit
+	- Something such as an action or behaviour that utilises a vulnerability on a system or application
+- (PoC) Proof of Concept
+	- Technique or tool that often demonstrates the exploitation of a vulnerability
+- 
