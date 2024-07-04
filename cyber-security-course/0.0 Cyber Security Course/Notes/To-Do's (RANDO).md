@@ -92,3 +92,14 @@ Kris' How to send an email "Early Emails" : https://www.youtube.com/watch?v=szdb
 - https://www.youtube.com/watch?v=FufYSx2_6Bg
 - Look up David McBride
 - stable diffusion - check it out (term given by Kris)
+- Look into the background of Skype
+- Check out the MS YoutubeDownload issue that happened
+- - Read https://github.blog/2020-11-16-standing-up-for-developers-youtube-dl-is-back/ further
+	- Also https://itwire.com/your-it-news/apps/microsoft-reinstates-github-repository-for-youtube-video-downloader.html
+- Ian and his wife Deb - Debian (look into the history)
+- Debian had a bug in 2008
+	- With openSSH
+	- When generating a key, you need some source of randomness
+- Checkout Reddit Enhancement Suite
+- Here's the post that mentions the QNAP backdoor password of 'walter' a few years back: [https://forum.qnap.com/viewtopic.php?p=788325#p788325](https://forum.qnap.com/viewtopic.php?p=788325#p788325 "https://forum.qnap.com/viewtopic.php?p=788325#p788325")
+	- https://www.reddit.com/r/qnap/comments/n14rr0/whos_walter_shao/?rdt=42023

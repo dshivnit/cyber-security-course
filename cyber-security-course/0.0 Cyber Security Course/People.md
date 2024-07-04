@@ -15,4 +15,26 @@
 	- Boolean logic
 	- Determining whether something is true or false
 	- Invented in the 1800s
-- 
+- Brendon Eich
+	- Born 4 July 1961
+	- Created the JavaScript language
+	- Co-Founded the Mozilla project, the Mozilla Foundation, and the Mozilla Corporation
+	- Computer programmer and tech exec
+- Peter Gutmann
+	- Developed the Secure File System (SFS) in 1996
+	- Currently based in NZ!
+	- The Gutmann Wipe Method
+		- An algorithm for securely erasing the contents of computer hard disk drives. (it achieves a complete erase of the disk contents by repeatedly writing 35 segments in the sectors to be erased)
+		- However, the Gutmann method (according to the Information Security Stack Exchange) is no longer useful for modern devices, whether it be a harddrive or a solid state drive. (wear leveling is irrelevant). 
+		- For any modern drive, the best way to erase data on it is to wipe it once with a random pattern. 
+		- SED and TRIM are the way to go when wanting to wipe an SSD (*may want to look into this more*)
+- Philip Zimmerman
+	- Created PGP (Pretty Good Privacy) which is still widely used today. Also known for his work in VoIP encryption protocols - notably ZRTP and Zfone. 
+- Peter Williston Shor
+	- Born 14 August 1959
+	- American professor
+	- Known for his work on quantum computation and for devising the Shor's algorithm
+		- A quantum algorithm for factoring exponentially faster than the best currently-known algorithm running on a classical computer. 
+		(from Wikipedia)
+- Troy Hunt
+	- Created the "Have I Been Pwned" website

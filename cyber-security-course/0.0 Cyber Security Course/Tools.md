@@ -8,7 +8,14 @@ ie Windows applications/software, Other OS applications/software, PowerShell too
 	- Quick filename indexing
 - Burp Suite
 	- Software security application used for penetration testing of web applications
+	- Well-known use cases involve scanning for many types of vulnerabilities.
+	- Can identify common security flaws such as SQL injection, XSS (Cross-site Scripting), CSRF (Cross-site Request Forgery), and more..
 	- https://portswigger.net/burp
+- Nessus
+	- Made by Tenable
+	- A proprietary vulnerability scanner
+	- Alternative to Burp Suite
+	
 - PuTTY - Pretty Useful Teletypewriter
 	- Good way to telnet, SSH so on so forth to machines
 - Have I Been Pwned?
@@ -87,7 +94,8 @@ ie Windows applications/software, Other OS applications/software, PowerShell too
 - LogicMonitor
 	- Enables you to control which users in your account use the REST API, and monitor how often they are using it. 
 - evil-winrm
-	- 
+- PGP - Pretty Good Privacy
+	- An encryption program that provides cryptographic privacy and authentication for data communication. Used for signing, encrypting and decrypting texts, emails, files, directories, and whole disk partitions and to increase the security of email communications. (created by Philip Zimmerman) 
 
 
 

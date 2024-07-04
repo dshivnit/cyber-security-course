@@ -72,7 +72,7 @@
 	  - LOOK INTO THIS MORE in comparison with init (cheatsheet added)
   - DMCA - Digital Millennium Copyright Act
   - PuTTy - Try and find out what the Pu means again!!! TTy - Teletypewriter
-Encryption/Cryptology Terms  
+- Encryption/Cryptology Terms  
   - PT - Plaintext
   - CT - Ciphertext
   - K - Key
@@ -115,7 +115,7 @@ Encryption/Cryptology Terms
 - URI - Uniform Resource Identifier
 	- A string of characters used to identify or name a resource on the Internet. Common method for identifying and addressing resources, such as web pages, images, videos, and files, over different protocols like HTTP and FTP. (hostinger.com)
 - URL - Uniform Resource Locator
-	- Specifies the location of a resource on the Internet
+	- Specifies the location of a resource on the Internet (the website name down to the TLD)
 - URN - Uniform Resource Name
 	- A permanent identifier for internet resources and employs the urn scheme. A location-independent string of characters that identifies every resource on the Internet, regardless of its form, such as a website or email. 
 - Cloud Storage Buckets
@@ -130,12 +130,20 @@ Encryption/Cryptology Terms
 	- Enables an IT Team to understand the nature of threats, as well as how they may impact the network.
 - DBMS - Database Management System
 - EULA - End-User License Agreement
-- Domains
+- DNS - Domain Name System
 	- DNS Root Servers
+		- Servers that operate in the root 'zone'
+		- Directly answer queries for records stored or cached within the root zone
+		- They can also refer other requests to the appropriate Top Level Domain (TLD) server
+	- Root Zone Database
+		- Represents the delegation details of top-level domains, including gTLDs such as .com, and the country-code TLD such as .nz
+		- As the manager of the DNZ root zone, we are responsible for coordinating these delegations in accordance with our policies and procedures (this is from IANA - Internet Assigned Numbers Authority)
 	- DNC - Domain Name Commission(er)
+		- For example for New Zealand
+		- The Domain Name Commission regulates the .nz domain namespace. They help individuals, businesses and communities have an online presence that is unique to Aotearoa New Zealand. 
 	- BIND
 		- To host your own DNS Servers
-	- DNS Records:
+	- DNS Records (who.is):
 		- MX Record
 			- Mail Exchange Record (ie mail.example.tld)
 			- For email handling
@@ -169,6 +177,9 @@ Encryption/Cryptology Terms
 	- DIG - Domain Information Groper
 	- NIC (in the context of DNS)
 		- Network Information Centre
+- Thread Modeling
+	- Structured representation of all the information that affects the security of an application
+- 
 - OSINT - Open Source Intelligence
 - POTS - Plain Old Telephone System
 	- Copper-based network
@@ -232,4 +243,5 @@ Encryption/Cryptology Terms
 	- Intended audience is IT professionals - who write scripts to automate the management of servers - and Independent Software Vendor (ISV) developers, who want to obtain data for management applications. 
 - SSDP - Simple Service Discovery Protocol
 	- A network protocol based on the Internet protocol suite for advertisement and discovery of network services and presence information. 
-- 
+- Telemetry
+	- The automatic recording and transmission of data from remote or inaccessible sources to an IT system in a different location for monitoring and analysis. 

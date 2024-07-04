@@ -1,3 +1,4 @@
+*expand and detail this list further when you can*
 - FlutterFlow
 - Brainfuck
 - FRACTRAN
@@ -14,3 +15,10 @@
 - Lua
 	- List indexing starts at 1 (not 0 like in other languages)
 
+- Scheme
+	- Primarily a functional programming language. It shares many characteristics with other members of the Lisp programming language. 
+	- Scheme's very simple syntax is based on s-expressions, paranthesis lists in which a prefix operator is followed by its arguments. 
+
+- Lisp
+	- Originally created a a practical mathematical notation for computer programs
+	- 

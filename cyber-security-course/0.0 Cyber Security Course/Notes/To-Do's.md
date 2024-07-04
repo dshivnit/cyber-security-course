@@ -1,5 +1,6 @@
 (Please take note that these todo's are tailored for me personally and may not apply to you, reader.)
 
+- **Get back to training with Python**
 - **Go through each main subject and the content covered in teh notes and expand on them in respective sections of this vault**
 - **Rationalise/rationalize/organise! each topic/content in this vault**
 	- Create a brief intro to each page/section
@@ -15,7 +16,7 @@
 - Scripting (in bash and zsh)
 - Obsidian plugins - do some looking intoooo
 - How does a VM running on a Type 2 hypervisor route network traffic? 
-
+- Look into the various forms/methods of telemetry
 - Go through all the TODO's and TAKEAWAY's from each class
 - **Go through each main subject and the content covered in the notes and expand on them in respective sections of this vault**
 - **Rationalise/rationalize/organise! each topic/content in this vault**
@@ -114,5 +115,11 @@
 - Kris in response to Blair on Discord (regarding YT Fireship's channel and YT feeds now showing more techie related stuff since the course started and what Blair has been looking up on z'YT)
 	- "Yeah YouTube's algorithm does that. You search one tiny topic or click on a video from friends/family and next thing your entire feed is full of the topic. There's a good way to control what it gives you that I can talk about"
 - Go through Python page and have a look for different libraries from the ones listed
-- 
-
+- Expand on the various programming languages, their history, their differences, where they are mainly/largely used
+- Github > Burger menu > Explore > Trending > Language (Python for example) >> have a look around
+-  YoutubeDownloadPlus - https://github.com/yt-dlp/yt-dlp >> have a look
+-  https://github.com/yt-dlp/yt-dlp/tree/master/yt_dlp --> check it out
+	- Cover this first when you do: https://www.youtube.com/watch?v=kqtD5dpn9C8 and then take it away with other resources from there
+	- Compare it to Java to begin with (also play with Java and javascript again)
+	- C variants ... One day, again.
+- Factoring (mathematics, prime factoring aka prime number factoring)

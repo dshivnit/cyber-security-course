@@ -45,4 +45,8 @@
 	- Network protocol that authenticates and encrypts Domain Name System (DNS) traffic between the User's computer and recursive name servers. DNSCrypt wraps unmodified DNS traffic between a client and a DNS resolver in a cryptographic construction, preventing eavesdropping and forgery by a main-in-the-middle attack.
 - SSDP - Simple Service Discovery Protocol
 	- A network protocol based on the Internet protocol suite for advertisement and discovery of network services and presence information. 
+- ZRTP
+	- A cryptographic key-agreement protocol to negotiate the keys for encryption between two endpoints in a Voice over IP telephony call based on the Real-time Transport Protocol
+- RTP - Real-time Transfer Protocol
+	- Network protocol used to deliver streaming audio and video media over the internet. Thereby enabling VoIP
 - 

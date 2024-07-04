@@ -1,5 +1,18 @@
 The process of hiding or coding information so that only the person a message was intended for can read it. The art of cryptography has been used to code messages for thousands of years and continues to be used in bank cards, computer passwords, and ecommerce. (Fortinet)
 
+- Plaintext
+	- As it reads, just plain text. Not encrypted in any way 
+- Ciphertext
+	- Encrypted text transformed from plaintext using an encryption algorithm. (TechTarget)
+- Symmetric
+	- Use the same cryptographic keys for both the encryption of plaintext and the decryption of ciphertext (from Wikipedia)
+- Asymmetric
+	- Public-key cryptography (or asymmetric cryptography), is the field of cryptographic systems that use pairs of related keys. 
+	- Each key pair consists of a public key and a corresponding private key. 
+	- Key pairs are generated with cryptographic algorithms based on mathematical problems termed one-way functions. 
+	- Security of public-key cryptography depends on keeping the private key secret - the public key can be openly distributed without compromising security. 
+	- Anyone with a public key can encrypt a message, yielding a ciphertext. BUT only those who know the corresponding private key can decrypt the ciphertext to obtain the original message. 
+		(Wikipedia) 
 - MD5 (Message Digest Version 5)
 	- Cryptographic hash algorithm used to generate a 128-bit digest from a string of any length
 	- Remember that HASH is one-way encryption, you can't reverse it.
@@ -10,3 +23,11 @@ The process of hiding or coding information so that only the person a message wa
 - DNSCrypt
 	- *expand on this*
 - Nonce (Number Used Once)
+- ZRTP
+	- Cryptographic key-agreement protocol to negotiate the keys for encryption between two end points in a Voice over IP telephony call based on the RTP (Real-time Transfer Protocol). It uses the Diffie-Hellman key exchange and the Secure Real-time Transport Protocol for encryption. (Wikipedia)
+- Diffie-Hellman Key Exchange
+	- the goal of this is to securely establish a channel to create and share a key for symmetric key algorithms. 
+	- Generally it's used for encryption, password-authenticated key agreement and forward security. 
+	- Password-authenticated key agreements are used to prevent MitM (man in the middle) attacks!
+- Shor's Algorithm
+	- A quantum algorithm for finding the prime factors of an integer. It was developed in 1994 by Peter Shor. 
