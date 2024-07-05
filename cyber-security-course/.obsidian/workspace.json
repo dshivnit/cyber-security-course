@@ -33,6 +33,18 @@
             }
           },
           {
+            "id": "3f2dac8b36cb6dc3",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "0.0 Cyber Security Course/People.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
             "id": "36ad8653a310b9c9",
             "type": "leaf",
             "state": {
@@ -58,7 +70,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "5.0 Programming/5.1 Programming Languages/Python.md",
+                "file": "0.0 Cyber Security Course/People.md",
                 "mode": "source",
                 "source": false
               }
@@ -70,7 +82,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "1.0 Types of Attacks & Defense/1.1 Attacks/1.1.1 Types of Attacks.md",
+                "file": "6.0 Cryptography/Cryptography.md",
                 "mode": "source",
                 "source": false
               }
@@ -154,7 +166,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "0.0 Cyber Security Course/Notes/Week 02/20240705 - Day 009.md",
+                "file": "0.0 Cyber Security Course/People.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -171,7 +183,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "0.0 Cyber Security Course/Notes/Week 02/20240705 - Day 009.md",
+                "file": "0.0 Cyber Security Course/People.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -194,7 +206,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "0.0 Cyber Security Course/Notes/Week 02/20240705 - Day 009.md"
+                "file": "0.0 Cyber Security Course/People.md"
               }
             }
           }
@@ -215,17 +227,22 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "ed45924a904295d1",
+  "active": "4903a08226214767",
   "lastOpenFiles": [
+    "1.0 Types of Attacks & Defense/Types of Attacks & Defense.md",
+    "0.0 Cyber Security Course/Notes/Week 02/20240705 - Day 009.md",
+    "6.0 Cryptography/Cryptography.md",
+    "1.0 Types of Attacks & Defense/1.1 Attacks/1.1.1 Types of Attacks.md",
+    "0.0 Cyber Security Course/People.md",
+    "13.0 Companies/Companies.md",
+    "5.0 Programming/5.1 Programming Languages/Python.md",
     "0.0 Cyber Security Course/Notes/To-Do's.md",
     "0.0 Cyber Security Course/Notes/To-Do's (RANDO).md",
     "5.0 Programming/5.1 Programming Languages/Programming Languages.md",
     "5.0 Programming/Programming.md",
     "5.0 Programming/5.1 Programming Languages/HTML (Hyper-Text Markup Language).md",
     "0.0 Cyber Security Course/Terminologies.md",
-    "5.0 Programming/5.1 Programming Languages/Python.md",
     "5.0 Programming/Programming Terminologies & Concepts.md",
-    "0.0 Cyber Security Course/Notes/Week 02/20240705 - Day 009.md",
     "0.0 Cyber Security Course/Notes/Week 02/20240704 - Day 008.md",
     "0.0 Cyber Security Course/Notes/Week 02/20240703 - Day 007.md",
     "0.0 Cyber Security Course/Notes/Week 02/20240702 - Day 006.md",
@@ -235,15 +252,10 @@
     "0.0 Cyber Security Course/Notes/Week 01/20240625 - Day 002.md",
     "0.0 Cyber Security Course/Notes/Week 01/20240624 - Day 001.md",
     "0.0 Cyber Security Course/Cyber Security Course.md",
-    "1.0 Types of Attacks & Defense/Types of Attacks & Defense.md",
-    "1.0 Types of Attacks & Defense/1.1 Attacks/1.1.1 Types of Attacks.md",
-    "13.0 Companies/Companies.md",
     "0.0 Cyber Security Course/Tools.md",
     "1.0 Types of Attacks & Defense/Untitled.md",
     "Untitled 1.canvas",
     "Untitled.canvas",
-    "0.0 Cyber Security Course/People.md",
-    "6.0 Cryptography/Cryptography.md",
     "1.0 Types of Attacks & Defense/1.2 Defense/1.2.1 Types of Defense.md",
     "5.0 Programming/5.1 Programming Languages",
     "13.0 Companies",

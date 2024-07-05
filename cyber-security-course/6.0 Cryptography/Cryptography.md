@@ -33,6 +33,9 @@ The process of hiding or coding information so that only the person a message wa
 	- That's how the word "hello" looks as MD5 hash 5d41402abc4b2a76b9719d911017c592
 	- Also used to ensure the data integrity of files. Because MD5 always produces the same output for the same given input, it can be used to compare a hash of the source file with a newly created hash of the destination file to check that it is intact and unmodified.
 		- Real useful for data integrity when transferring data (such as in TCP/IP)
+- SHA1
+- SHA256
+- SHA512
 - Encoding - https://www.base64decode.org/
 	- Encoded data can be decoded immediately, without keys. 
 	- It is not a form of encryption, it's just a way of representing data

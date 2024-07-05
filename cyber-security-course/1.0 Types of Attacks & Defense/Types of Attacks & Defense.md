@@ -1,9 +1,12 @@
+*All of these will need to be revised, updated and added to*
 [[1.1.1 Types of Attacks]]
 
 [[1.2.1 Types of Defense]]
 
 [[Open-Source Intelligence (OSINT)]]
 
+- Heap Corruption
+- 
 - Vulnerabilities
 	- A weakness or flaw in the design, implementation or behaviours of a system or application. 
 	- NIST defines, "weakness in an information system, system security procedures, internal controls, or implementation that could be exploited or triggered by a threat source." 
