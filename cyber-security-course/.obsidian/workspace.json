@@ -14,7 +14,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "0.0 Cyber Security Course/Tools.md",
+                "file": "0.0 Cyber Security Course/Notes/Week 02/20240705 - Day 009.md",
                 "mode": "source",
                 "source": false
               }
@@ -26,7 +26,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "0.0 Cyber Security Course/Notes/Week 02/20240705 - Day 009.md",
+                "file": "0.0 Cyber Security Course/People.md",
                 "mode": "source",
                 "source": false
               }
@@ -56,8 +56,7 @@
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       },
       {
         "id": "2fb0e64401067da2",
@@ -166,7 +165,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "0.0 Cyber Security Course/People.md",
+                "file": "0.0 Cyber Security Course/Notes/Week 02/20240705 - Day 009.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -183,7 +182,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "0.0 Cyber Security Course/People.md",
+                "file": "0.0 Cyber Security Course/Notes/Week 02/20240705 - Day 009.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -206,7 +205,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "0.0 Cyber Security Course/People.md"
+                "file": "0.0 Cyber Security Course/Notes/Week 02/20240705 - Day 009.md"
               }
             }
           }
@@ -227,13 +226,14 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "4903a08226214767",
+  "active": "3123d9d581fb0e3a",
   "lastOpenFiles": [
-    "1.0 Types of Attacks & Defense/Types of Attacks & Defense.md",
+    "0.0 Cyber Security Course/Tools.md",
+    "0.0 Cyber Security Course/People.md",
     "0.0 Cyber Security Course/Notes/Week 02/20240705 - Day 009.md",
+    "1.0 Types of Attacks & Defense/Types of Attacks & Defense.md",
     "6.0 Cryptography/Cryptography.md",
     "1.0 Types of Attacks & Defense/1.1 Attacks/1.1.1 Types of Attacks.md",
-    "0.0 Cyber Security Course/People.md",
     "13.0 Companies/Companies.md",
     "5.0 Programming/5.1 Programming Languages/Python.md",
     "0.0 Cyber Security Course/Notes/To-Do's.md",
@@ -252,7 +252,6 @@
     "0.0 Cyber Security Course/Notes/Week 01/20240625 - Day 002.md",
     "0.0 Cyber Security Course/Notes/Week 01/20240624 - Day 001.md",
     "0.0 Cyber Security Course/Cyber Security Course.md",
-    "0.0 Cyber Security Course/Tools.md",
     "1.0 Types of Attacks & Defense/Untitled.md",
     "Untitled 1.canvas",
     "Untitled.canvas",
