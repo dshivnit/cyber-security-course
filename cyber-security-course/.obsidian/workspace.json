@@ -14,7 +14,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "0.0 Cyber Security Course/Notes/Week 02/20240705 - Day 009.md",
+                "file": "0.0 Cyber Security Course/Notes/Week 03/20240708 - Day 010.md",
                 "mode": "source",
                 "source": false
               }
@@ -165,7 +165,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "0.0 Cyber Security Course/Notes/Week 02/20240705 - Day 009.md",
+                "file": "0.0 Cyber Security Course/Notes/Week 03/20240708 - Day 010.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -182,7 +182,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "0.0 Cyber Security Course/Notes/Week 02/20240705 - Day 009.md",
+                "file": "0.0 Cyber Security Course/Notes/Week 03/20240708 - Day 010.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -205,7 +205,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "0.0 Cyber Security Course/Notes/Week 02/20240705 - Day 009.md"
+                "file": "0.0 Cyber Security Course/Notes/Week 03/20240708 - Day 010.md"
               }
             }
           }
@@ -228,12 +228,14 @@
   },
   "active": "3123d9d581fb0e3a",
   "lastOpenFiles": [
+    "1.0 Types of Attacks & Defense/1.1 Attacks/1.1.1 Types of Attacks.md",
+    "0.0 Cyber Security Course/Notes/Week 03/20240708 - Day 010.md",
+    "0.0 Cyber Security Course/Notes/Week 02/20240705 - Day 009.md",
+    "0.0 Cyber Security Course/Notes/Week 03",
     "0.0 Cyber Security Course/Tools.md",
     "0.0 Cyber Security Course/People.md",
-    "0.0 Cyber Security Course/Notes/Week 02/20240705 - Day 009.md",
     "1.0 Types of Attacks & Defense/Types of Attacks & Defense.md",
     "6.0 Cryptography/Cryptography.md",
-    "1.0 Types of Attacks & Defense/1.1 Attacks/1.1.1 Types of Attacks.md",
     "13.0 Companies/Companies.md",
     "5.0 Programming/5.1 Programming Languages/Python.md",
     "0.0 Cyber Security Course/Notes/To-Do's.md",
@@ -255,7 +257,6 @@
     "1.0 Types of Attacks & Defense/Untitled.md",
     "Untitled 1.canvas",
     "Untitled.canvas",
-    "1.0 Types of Attacks & Defense/1.2 Defense/1.2.1 Types of Defense.md",
     "5.0 Programming/5.1 Programming Languages",
     "13.0 Companies",
     "3.0 Software/3.2 Applications",
@@ -269,7 +270,6 @@
     "99.99 Images Used/Pasted image 20240702214553.png",
     "99.99 Images Used/Clones_20240702.png.crdownload",
     "2.0 Hardware/2.3 Storage",
-    "9.0 Virtual Machines",
     "Pasted image 20240702104549.png",
     "Pasted image 20240625173221.png"
   ]
