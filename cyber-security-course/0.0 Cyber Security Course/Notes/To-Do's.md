@@ -5,6 +5,7 @@
 - **Go through each main subject and the content covered in teh notes and expand on them in respective sections of this vault**
 - **Rationalise/rationalize/organise! each topic/content in this vault**
 	- Create a brief intro to each page/section
+- Stacking Tandems
 - Regarding the VirtualLab project - some resources will be:
 	- VulnHub - https://www.vulnhub.com/
 	- Test encryption using Wireshark
