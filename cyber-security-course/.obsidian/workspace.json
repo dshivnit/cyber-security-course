@@ -14,7 +14,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "0.0 Cyber Security Course/Notes/Week 03/20240708-20240712  - Day 010-Day 14.md",
+                "file": "4.0 Networking/Protocols/HTTP (Hyper-Text Transfer Protocol).md",
                 "mode": "source",
                 "source": false
               }
@@ -165,7 +165,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "0.0 Cyber Security Course/Notes/Week 03/20240708-20240712  - Day 010-Day 14.md",
+                "file": "4.0 Networking/Protocols/HTTP (Hyper-Text Transfer Protocol).md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -182,7 +182,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "0.0 Cyber Security Course/Notes/Week 03/20240708-20240712  - Day 010-Day 14.md",
+                "file": "4.0 Networking/Protocols/HTTP (Hyper-Text Transfer Protocol).md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -205,7 +205,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "0.0 Cyber Security Course/Notes/Week 03/20240708-20240712  - Day 010-Day 14.md"
+                "file": "4.0 Networking/Protocols/HTTP (Hyper-Text Transfer Protocol).md"
               }
             }
           }
@@ -228,8 +228,12 @@
   },
   "active": "3123d9d581fb0e3a",
   "lastOpenFiles": [
-    "0.0 Cyber Security Course/Notes/Week 04/20240715 - Day 15.md",
+    "5.0 Programming/5.1 Programming Languages/HTML (Hyper-Text Markup Language).md",
+    "4.0 Networking/Protocols/HTTP (Hyper-Text Transfer Protocol).md",
+    "1.0 Types of Attacks & Defense/1.1 Attacks/1.1.1 Types of Attacks.md",
+    "4.0 Networking/Protocols/Protocols.md",
     "0.0 Cyber Security Course/Notes/Week 03/20240708-20240712  - Day 010-Day 14.md",
+    "0.0 Cyber Security Course/Notes/Week 04/20240715 - Day 15.md",
     "0.0 Cyber Security Course/Notes/Week 04",
     "Week",
     "0.0 Cyber Security Course/Terminologies.md",
@@ -237,7 +241,6 @@
     "0.0 Cyber Security Course/Notes/Clones Made.md",
     "0.0 Cyber Security Course/Notes/MuckingAroundPage.md",
     "0.0 Cyber Security Course/Notes/To-Do's.md",
-    "1.0 Types of Attacks & Defense/1.1 Attacks/1.1.1 Types of Attacks.md",
     "0.0 Cyber Security Course/Notes/Week 02/20240705 - Day 009.md",
     "0.0 Cyber Security Course/Notes/Week 03",
     "0.0 Cyber Security Course/Tools.md",
@@ -249,14 +252,11 @@
     "0.0 Cyber Security Course/Notes/To-Do's (RANDO).md",
     "5.0 Programming/5.1 Programming Languages/Programming Languages.md",
     "5.0 Programming/Programming.md",
-    "5.0 Programming/5.1 Programming Languages/HTML (Hyper-Text Markup Language).md",
     "5.0 Programming/Programming Terminologies & Concepts.md",
     "0.0 Cyber Security Course/Notes/Week 02/20240704 - Day 008.md",
     "0.0 Cyber Security Course/Notes/Week 02/20240703 - Day 007.md",
     "0.0 Cyber Security Course/Notes/Week 02/20240702 - Day 006.md",
     "0.0 Cyber Security Course/Notes/Week 02/20240701 - Day 005.md",
-    "0.0 Cyber Security Course/Notes/Week 01/20240627 - Day 004.md",
-    "0.0 Cyber Security Course/Notes/Week 01/20240626 - Day 003.md",
     "Untitled 1.canvas",
     "Untitled.canvas",
     "5.0 Programming/5.1 Programming Languages",

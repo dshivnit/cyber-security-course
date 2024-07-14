@@ -23,11 +23,20 @@
   Spanning Tree Protocol
   Port - none, runs in Layer 2
 - HTTP
-  Hyper-Text Transfer Protocol
-  Port 80
+	  Hyper-Text Transfer Protocol
+	  Port 80
+	  The protocol that is used whenever you visit/view a website
+	  Developed by Tim Berners-Lee and his team between 1989-1991
 - HTTPS
-  Hypter-text Transfer Protocol Secure
-  Port 443 (I want to double-check this - used to be known as SSL Secure-Sockets Layer, apparently now TLS Transport Layer Security - could be all the same )
+	  Hypter-text Transfer Protocol Secure
+	  Port 443 (I want to double-check this - used to be known as SSL Secure-Sockets Layer, apparently now TLS Transport Layer Security - could be all the same )
+	  Secure version of HTTP
+	  Traffic is encrypted
+	  Also gives you assurances that you are speaking with the correct server at times as well
+- URL (Uniform Resource Locator)
+	- An instruction on how to access a resource on the Internet
+	- Instructs on what protocol to use for accessing the resource such as HTTP, HTTPS, FTP 
+	- 
 - FTP
   File Transfer Protocol
   Ports 20, 21
