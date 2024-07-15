@@ -14,67 +14,32 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "0.0 Cyber Security Course/Notes/Week 04/20240715 - Day 015.md",
+                "file": "2.0 Hardware/2.4 Servers/2.4.1 Web Servers/Web Servers.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "ed45924a904295d1",
+            "id": "d98f031cb16fec5b",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "0.0 Cyber Security Course/People.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "36ad8653a310b9c9",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "13.0 Companies/Companies.md",
+                "file": "5.0 Programming/5.1 Programming Languages/HTML (Hyper-Text Markup Language).md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       },
       {
         "id": "2fb0e64401067da2",
         "type": "tabs",
         "dimension": 46.124620060790264,
         "children": [
-          {
-            "id": "4903a08226214767",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "1.0 Types of Attacks & Defense/Types of Attacks & Defense.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "234227dd52cb806a",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "6.0 Cryptography/Cryptography.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
           {
             "id": "2337441aca00e4a7",
             "type": "leaf",
@@ -86,8 +51,21 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "e234370ded654d95",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "0.0 Cyber Security Course/Terminologies.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -153,7 +131,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "0.0 Cyber Security Course/Notes/Week 04/20240715 - Day 015.md",
+                "file": "5.0 Programming/5.1 Programming Languages/HTML (Hyper-Text Markup Language).md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -170,7 +148,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "0.0 Cyber Security Course/Notes/Week 04/20240715 - Day 015.md",
+                "file": "5.0 Programming/5.1 Programming Languages/HTML (Hyper-Text Markup Language).md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -193,7 +171,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "0.0 Cyber Security Course/Notes/Week 04/20240715 - Day 015.md"
+                "file": "5.0 Programming/5.1 Programming Languages/HTML (Hyper-Text Markup Language).md"
               }
             }
           }
@@ -214,23 +192,29 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "3123d9d581fb0e3a",
+  "active": "d98f031cb16fec5b",
   "lastOpenFiles": [
+    "5.0 Programming/5.1 Programming Languages/JavaScript (JS).md",
+    "5.0 Programming/5.1 Programming Languages/HTML (Hyper-Text Markup Language).md",
+    "4.0 Networking/Protocols/HTTP (Hyper-Text Transfer Protocol).md",
+    "2.0 Hardware/2.4 Servers/2.4.1 Web Servers/Web Servers.md",
+    "0.0 Cyber Security Course/Terminologies.md",
+    "4.0 Networking/Protocols/Protocols.md",
+    "6.0 Cryptography/Cryptography.md",
     "1.0 Types of Attacks & Defense/Types of Attacks & Defense.md",
+    "2.0 Hardware/2.4 Servers/2.4.1 Web Servers",
+    "2.0 Hardware/2.4 Servers/Servers.md",
+    "2.0 Hardware/Hardware.md",
+    "2.0 Hardware/2.4 Servers",
+    "0.0 Cyber Security Course/Notes/Week 04/20240715 - Day 015.md",
     "1.0 Types of Attacks & Defense/1.1 Attacks/1.1.1 Types of Attacks.md",
     "1.0 Types of Attacks & Defense/1.2 Defense/1.2.1 Types of Defense.md",
     "0.0 Cyber Security Course/Resources.md",
-    "0.0 Cyber Security Course/Notes/Week 04/20240715 - Day 015.md",
     "0.0 Cyber Security Course/Tools.md",
-    "0.0 Cyber Security Course/Terminologies.md",
     "0.0 Cyber Security Course/People.md",
     "0.0 Cyber Security Course/Notes/Week 03/20240708-20240712  - Day 010-Day 14.md",
-    "6.0 Cryptography/Cryptography.md",
     "0.0 Cyber Security Course/Notes/Week 01/20240626 - Day 003.md",
     "0.0 Cyber Security Course/Notes/Week 02/20240703 - Day 007.md",
-    "4.0 Networking/Protocols/HTTP (Hyper-Text Transfer Protocol).md",
-    "5.0 Programming/5.1 Programming Languages/HTML (Hyper-Text Markup Language).md",
-    "4.0 Networking/Protocols/Protocols.md",
     "0.0 Cyber Security Course/Notes/Week 04",
     "Week",
     "0.0 Cyber Security Course/Notes/Clones Made.md",
@@ -241,10 +225,6 @@
     "13.0 Companies/Companies.md",
     "5.0 Programming/5.1 Programming Languages/Python.md",
     "0.0 Cyber Security Course/Notes/To-Do's (RANDO).md",
-    "5.0 Programming/5.1 Programming Languages/Programming Languages.md",
-    "5.0 Programming/Programming.md",
-    "5.0 Programming/Programming Terminologies & Concepts.md",
-    "0.0 Cyber Security Course/Notes/Week 02/20240704 - Day 008.md",
     "Untitled 1.canvas",
     "Untitled.canvas",
     "5.0 Programming/5.1 Programming Languages",
@@ -252,8 +232,6 @@
     "3.0 Software/3.2 Applications",
     "12.0 Artificial Intelligence",
     "1.0 Types of Attacks & Defense/OSINT",
-    "4.0 Networking/Network Administration",
-    "10.0 System Administration",
     "99.99 Images Used/TutorialsPointProcThrComparison.png",
     "99.99 Images Used/Reddit_csharp_HandlesDef.png",
     "99.99 Images Used/Clones_20240702.png",

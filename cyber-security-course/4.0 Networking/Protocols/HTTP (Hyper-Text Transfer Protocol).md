@@ -15,3 +15,32 @@
 	- 400-499 (Client Errors)
 	- 500-599 (Server Errors)
 
+- Common HTTP Request Headers
+	- Host
+		- Some web servers host multiple websites so by providing the host headers you can tell it which one you require
+	- User-Agent
+		- Your browser software and version number
+		- Telling the webserver your browser software helps it format the website properly for the client you are running
+	- Content-Length
+		- When sending data to a web server such as in a form, the content length tells the web server how much data to expect in the web request. 
+		- This way the server can ensure that it isn't missing any data
+	- Accept-Encoding
+		- Tells the web server what types of compression methods the browser supports so that the data can be made smaller for transmitting over the Internet. 
+	- Cookie
+		- Data sent to the server to help remember your information
+- Common HTTP Response Headers
+	- Set-Cookie
+		- Information to store which gets sent back to the web server on each request
+	- Cache-Control
+		- How long to store the content of the response in the browsers cache before it requests it again
+	- Content-Type
+		- Tells the client what type of data is being returned
+			- HTML
+			- CSS
+			- JavaScript
+			- Images
+			- PDF
+			- Video
+			- etc
+	- Content-Encoding
+		- What method has been used to compress the data to make it smaller when sending it over the Internet
