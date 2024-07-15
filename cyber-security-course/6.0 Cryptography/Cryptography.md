@@ -53,4 +53,9 @@ The process of hiding or coding information so that only the person a message wa
 	- Password-authenticated key agreements are used to prevent MitM (man in the middle) attacks!
 - Shor's Algorithm
 	- A quantum algorithm for finding the prime factors of an integer. It was developed in 1994 by Peter Shor. 
-- 
+- Caesar Cipher
+	- Used by Julius Caesar around 58 BC
+	- Substitution cipher that shifts letters in a message to make it unreadable if intercepted
+	- To decrypt, the receiver reverses the shift
+	- Arab mathematician, Al-Kindi, broke the Caesar Cipher using frequency analysis, which exploits patterns in letter frequencies
+	- 

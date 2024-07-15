@@ -1,10 +1,16 @@
 (Please take note that these todo's are tailored for me personally and may not apply to you, reader.)
 
+- GET THE TODO's SORTED FROM CLASSES! :) 
 - WIN+SHIFT+C : gives you the colour hex tag! (note this and other random keyboard shortcuts somewhere - and also the usual ones)
 - **Get back to training with Python**
 - **Go through each main subject and the content covered in teh notes and expand on them in respective sections of this vault**
 - **Rationalise/rationalize/organise! each topic/content in this vault**
 	- Create a brief intro to each page/section
+- picoctf
+	- Online CTF platform allowing for creative learning
+-  MattKC Video on PS2 Savefile Recovery
+- Bash scripting basics
+- Find out if there is a difference from an email blocklist and an email blacklist
 - Stacking Tandems
 - Regarding the VirtualLab project - some resources will be:
 	- VulnHub - https://www.vulnhub.com/
@@ -13,6 +19,13 @@
 	- See if you can sniff the packets and decrypt the hash blocks (or whatever cipher is being used by Viber say for example in a transmitted packet/message | concatenate all the packets sent to resemble the full message, gather them all, and then try brute fuck the shit out of it)
 		- Perhaps also see if there are any differences in software versions (of say Viber etc) in different OS builds (as they're constructed differently - however the encryption algo's would still be the same)
 		- MFA packets on a VPN connection, and a non-VPN routed connection - results? 
+   - Look into alternatives for Protonmail and Lavapit
+   - Password Storage
+	- bcrypt
+	- scrypt
+	- Argon2
+	- PBKDF2
+	- Salts
 - Find all references to PATH and change them to CWD (CurrentWorkingDirectory) where relevant
 	- Perhaps decide whether to do this or not because sometimes path can be a reference to a pwd command (or the current working directory and so on)
 - Scripting (in bash and zsh)

@@ -31,9 +31,21 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "cae80328ce4e7ba4",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "0.0 Cyber Security Course/Notes/Week 03/20240708-20240712  - Day 010-Day 14.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       },
       {
         "id": "2fb0e64401067da2",
@@ -65,12 +77,24 @@
             }
           },
           {
-            "id": "cae80328ce4e7ba4",
+            "id": "87ea2b740a23bb4e",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "4.0 Networking/Web Browsers/The Console.md",
+                "file": "0.0 Cyber Security Course/Notes/To-Do's.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "066853a96fbae7e5",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "0.0 Cyber Security Course/Tools.md",
                 "mode": "source",
                 "source": false
               }
@@ -167,7 +191,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "4.0 Networking/Web Browsers/The Console.md",
+                "file": "0.0 Cyber Security Course/Notes/Week 03/20240708-20240712  - Day 010-Day 14.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -184,7 +208,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "4.0 Networking/Web Browsers/The Console.md",
+                "file": "0.0 Cyber Security Course/Notes/Week 03/20240708-20240712  - Day 010-Day 14.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -207,7 +231,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "4.0 Networking/Web Browsers/The Console.md"
+                "file": "0.0 Cyber Security Course/Notes/Week 03/20240708-20240712  - Day 010-Day 14.md"
               }
             }
           }
@@ -230,37 +254,37 @@
   },
   "active": "cae80328ce4e7ba4",
   "lastOpenFiles": [
-    "5.0 Programming/5.1 Programming Languages/CSS (Cascading Style-Sheets).md",
+    "0.0 Cyber Security Course/Notes/To-Do's.md",
+    "0.0 Cyber Security Course/Terminologies.md",
+    "0.0 Cyber Security Course/Notes/Week 03/20240708-20240712  - Day 010-Day 14.md",
+    "0.0 Cyber Security Course/Tools.md",
+    "4.0 Networking/Protocols/Protocols.md",
+    "0.0 Cyber Security Course/People.md",
+    "6.0 Cryptography/Cryptography.md",
+    "0.0 Cyber Security Course/Notes/Week 04/20240715 - Day 015.md",
+    "0.0 Cyber Security Course/Notes/Week 04/20240716 - Day 016.md",
+    "0.0 Cyber Security Course/Notes/Week 03/20240708 - Day 10.md",
     "4.0 Networking/Web Browsers/The Console.md",
+    "5.0 Programming/5.1 Programming Languages/CSS (Cascading Style-Sheets).md",
     "4.0 Networking/Web Browsers",
     "5.0 Programming/5.1 Programming Languages/HTML (Hyper-Text Markup Language).md",
     "4.0 Networking/Email(s).md",
     "5.0 Programming/5.1 Programming Languages/JavaScript (JS).md",
     "0.0 Cyber Security Course/Resources.md",
-    "0.0 Cyber Security Course/Terminologies.md",
     "1.0 Types of Attacks & Defense/1.1 Attacks/1.1.1 Types of Attacks.md",
     "6.0 Cryptography/Base64.md",
-    "4.0 Networking/Protocols/Protocols.md",
-    "0.0 Cyber Security Course/People.md",
     "1.0 Types of Attacks & Defense/1.2 Defense/1.2.1 Types of Defense.md",
     "0.0 Cyber Security Course/Notes/Week 02/20240705 - Day 009.md",
     "4.0 Networking/Protocols/HTTP (Hyper-Text Transfer Protocol).md",
     "2.0 Hardware/2.4 Servers/2.4.1 Web Servers/Web Servers.md",
-    "6.0 Cryptography/Cryptography.md",
     "1.0 Types of Attacks & Defense/Types of Attacks & Defense.md",
     "2.0 Hardware/2.4 Servers/2.4.1 Web Servers",
     "2.0 Hardware/2.4 Servers/Servers.md",
     "2.0 Hardware/Hardware.md",
     "2.0 Hardware/2.4 Servers",
-    "0.0 Cyber Security Course/Notes/Week 04/20240715 - Day 015.md",
-    "0.0 Cyber Security Course/Tools.md",
-    "0.0 Cyber Security Course/Notes/Week 03/20240708-20240712  - Day 010-Day 14.md",
     "0.0 Cyber Security Course/Notes/Week 01/20240626 - Day 003.md",
-    "0.0 Cyber Security Course/Notes/Week 02/20240703 - Day 007.md",
     "0.0 Cyber Security Course/Notes/Week 04",
     "Week",
-    "0.0 Cyber Security Course/Notes/Clones Made.md",
-    "0.0 Cyber Security Course/Notes/MuckingAroundPage.md",
     "0.0 Cyber Security Course/Notes/Week 03",
     "Untitled 1.canvas",
     "Untitled.canvas",

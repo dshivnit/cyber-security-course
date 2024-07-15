@@ -50,6 +50,9 @@
   Port 23
 - SSH Secure Shell
   Port 22
+	- Cryptographic Network Protocol for operating network services securely over an unsecured network
+	- Most notable applications are remote login and CLI execution
+- 
 - DNSCrypt
 	- Network protocol that authenticates and encrypts Domain Name System (DNS) traffic between the User's computer and recursive name servers. DNSCrypt wraps unmodified DNS traffic between a client and a DNS resolver in a cryptographic construction, preventing eavesdropping and forgery by a main-in-the-middle attack.
 - SSDP - Simple Service Discovery Protocol

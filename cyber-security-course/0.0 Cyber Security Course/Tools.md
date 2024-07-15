@@ -18,6 +18,7 @@ ie Windows applications/software, Other OS applications/software, PowerShell too
 	
 - PuTTY - Pretty Useful Teletypewriter
 	- Good way to telnet, SSH so on so forth to machines
+	  https://www.putty.org/
 - Have I Been Pwned?
 	  https://haveibeenpwned.com/
 - nmap
@@ -111,8 +112,23 @@ ie Windows applications/software, Other OS applications/software, PowerShell too
 	- https://www.base64decode.org/
 - CVSS Calculator: https://nvd.nist.gov/vuln-metrics/cvss/v3-calculator
 - VXUnderground
-
-
+- OSINT | Exif Tool (https://exif.osint-tool.com/)
+	- A tool that allows for viewing hidden metadata in your images
+	- Details like 
+		- geolocation
+		- Camera settings
+		- Image Properties
+		- And others
+  - Lavabit (https://lavabit.com/)
+	  A tool to use to encrypt emails
+	  Was shut down in 2013, Edward Snowden was known to be using this tool
+	  Has been resurrected in 2017
+	  Now uses Flow for consumer-grade solutions
+	  Enterprise-grade have paid for solutions
+  - Protonmail https://proton.me/mail
+	  - Opensource alternative to the what is now Lavabit
+	  - However you have to signup to be able to use the service (and the free version has slight limitations compared to the paid for ones)
+	  
 - IDEs (Integrated Development Environment)
   *revise these*
 	- Obisidian (not really an IDE but I'm putting it in here)

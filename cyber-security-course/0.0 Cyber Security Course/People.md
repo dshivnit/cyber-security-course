@@ -43,4 +43,6 @@
 - Ray Tomlinson
 	- Invented the concept of emails
 	- Dates to the 1970s for Arpanet
-	- 
+- Samuel Morse
+	- Contributed to the invention of a single-wire telegraph system based on European telegraphs
+- 
