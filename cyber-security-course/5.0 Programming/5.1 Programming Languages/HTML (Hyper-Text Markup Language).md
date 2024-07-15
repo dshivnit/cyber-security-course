@@ -21,6 +21,11 @@ Elements (or HTML Tags)
 	- p
 		- Paragraph
 	- There MANY more elements, these are just the basic ones
+- HTML Entity Encoding
+	- HTML Entities are special sequences of characters used to represent reserved characters and other special characters in HTML
+		- example: &#80;&#97;&#114;&#114;&#111;&#116;&#80;&#111;&#115;&#116;&#32;&#83;&#101;&#99;&#117;&#114;&#101;&#32;&#87;&#101;&#98;&#109;&#97;&#105;&#108;&#32;&#76;&#111;&#103;&#105;&#110
+		- These can be decoded with tools like CyberChef
+	- 
 
 Sensitive Data Exposure
 - When a website doesn't properly protect (or remove) sensitive clear-text information to the end-user, usually found in the sites frontend source code
@@ -36,4 +41,5 @@ HTML Injection (also put this into Types of Attacks)
 	- Removing any unsafe characters from user inputs
 	- Validating will check to see if the data is in the expected format and type
 	- Sanitizing modifies the input to ensure it's in a valid format for display, or before insertion in a database
+
 - 

@@ -38,6 +38,17 @@
 	- How to analyse an Email Header
 		- NOTE: every line can be forged when reading an Email Header
 		- ONLY the received lines that are created by your service or computer should be trusted.
+		- Run the headers (full/raw version) in MXToolbox or something similar (however, MXToolbox is awesome :) ) and review the RECEIVED section or trust that in comparison to the rest
+	- Custom Email Headers
+		- Starting with "X-"
+			- are custom headers the sender can add
+			- The X prefix is usually to denote that the header is not official or standardised, as what the IETF does
+				- The IETF are the Internet Engineers Task Force
+					- They create the technical standards that make up the Internet Protocol suite. 
+			- These custom headers often provide additional information or metadata about the email, such as
+				- tagging the email for spam filtering
+				- sorting purposes
+				- adding information specific to a particular organisation or system
 
 - Email Body
 	- Either in plain-text or in HTML
@@ -47,5 +58,11 @@
 			- Content-Transfer-Encoding:
 			- Content-Type:
 		- Always be careful to not just open any random (and or any) attachment
-- 
+		- 
+- IETF (Internet Engineering Task Force)
+	- The standard that emails generally follow is defined by the IETF
+		- Specifically RFC 5322
+			- Which specifies the syntax and semantics of email messages
+		- RFC 2045-2049
+			- which defines the MIME (Multipurpose Internet Mail Extensions) standards for email messages on the Internet
 

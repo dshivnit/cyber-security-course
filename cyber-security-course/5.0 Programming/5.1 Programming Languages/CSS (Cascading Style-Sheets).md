@@ -1,0 +1,4 @@
+- A web language used for declaring the visual design of a web page written in HTML.
+- CSS allows web dfevelopers to separate the presentation of a document from its content, making it easier to create and maintain visually appealing web pages. 
+- CSS can also be directly into HTML code/pages as well (although usually called upon from pages - so as to have a master template as such)
+- 

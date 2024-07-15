@@ -1,0 +1,2 @@
+- Using tools such as https://base64.guru/ to decode and encode can be useful
+- 

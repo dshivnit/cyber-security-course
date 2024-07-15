@@ -294,4 +294,13 @@
 	- ie
 		- www.something.com would become www/./something/./com 
 - MIME - Multipurpose Internet Mail Extensions
-- 
+- DKIM Signature
+	- Domain Keys Identified Mail
+		- An email authentication approach that allows the recipient to verify the authenticity of the sender through a public key
+		- Using tools via MXToolbox is a good way to verify Email Headers of suspicious emails
+- IETF (Internet Engineering Task Force)
+	- The standard that emails generally follow is defined by the IETF
+		- Specifically RFC 5322
+			- Which specifies the syntax and semantics of email messages
+		- RFC 2045-2049
+			- which defines the MIME (Multipurpose Internet Mail Extensions) standards for email messages on the Internet

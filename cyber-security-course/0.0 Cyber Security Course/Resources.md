@@ -118,9 +118,20 @@
 - CyberChef
   https://gchq.github.io/CyberChef/
 
+- SublimeText 
+  (not a resource as such, but looks like a neat Text Editor)
+  https://www.sublimetext.com/
 
+- IPLocation.io
+  https://iplocation.io/
   
-
+- Base64 Guru
+  Useful for decoding and encoding Base64 data (or, of course, CyberChef :) 
+  https://base64.guru/
+  
+- dirtyMarkup
+  https://www.10bestdesign.com/dirtymarkup/#:~:text=DirtyMarkup%3A%20HTML%20Beautifier,a%20billion%20lines%20of%20code.
+  (tool to tidy up cluttered HTML code)
 
 MICROSOFT
 

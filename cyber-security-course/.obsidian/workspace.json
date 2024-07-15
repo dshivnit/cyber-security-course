@@ -63,9 +63,45 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "cae80328ce4e7ba4",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "4.0 Networking/Web Browsers/The Console.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "6f76a14e872e9b68",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "0.0 Cyber Security Course/Resources.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "8b2b345d935eb6d5",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "6.0 Cryptography/Base64.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -131,7 +167,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "1.0 Types of Attacks & Defense/1.1 Attacks/1.1.1 Types of Attacks.md",
+                "file": "4.0 Networking/Web Browsers/The Console.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -148,7 +184,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "1.0 Types of Attacks & Defense/1.1 Attacks/1.1.1 Types of Attacks.md",
+                "file": "4.0 Networking/Web Browsers/The Console.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -171,7 +207,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "1.0 Types of Attacks & Defense/1.1 Attacks/1.1.1 Types of Attacks.md"
+                "file": "4.0 Networking/Web Browsers/The Console.md"
               }
             }
           }
@@ -192,18 +228,22 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "e234370ded654d95",
+  "active": "cae80328ce4e7ba4",
   "lastOpenFiles": [
-    "0.0 Cyber Security Course/Terminologies.md",
-    "0.0 Cyber Security Course/Resources.md",
-    "1.0 Types of Attacks & Defense/1.1 Attacks/1.1.1 Types of Attacks.md",
+    "5.0 Programming/5.1 Programming Languages/CSS (Cascading Style-Sheets).md",
+    "4.0 Networking/Web Browsers/The Console.md",
+    "4.0 Networking/Web Browsers",
+    "5.0 Programming/5.1 Programming Languages/HTML (Hyper-Text Markup Language).md",
     "4.0 Networking/Email(s).md",
+    "5.0 Programming/5.1 Programming Languages/JavaScript (JS).md",
+    "0.0 Cyber Security Course/Resources.md",
+    "0.0 Cyber Security Course/Terminologies.md",
+    "1.0 Types of Attacks & Defense/1.1 Attacks/1.1.1 Types of Attacks.md",
+    "6.0 Cryptography/Base64.md",
     "4.0 Networking/Protocols/Protocols.md",
     "0.0 Cyber Security Course/People.md",
     "1.0 Types of Attacks & Defense/1.2 Defense/1.2.1 Types of Defense.md",
     "0.0 Cyber Security Course/Notes/Week 02/20240705 - Day 009.md",
-    "5.0 Programming/5.1 Programming Languages/HTML (Hyper-Text Markup Language).md",
-    "5.0 Programming/5.1 Programming Languages/JavaScript (JS).md",
     "4.0 Networking/Protocols/HTTP (Hyper-Text Transfer Protocol).md",
     "2.0 Hardware/2.4 Servers/2.4.1 Web Servers/Web Servers.md",
     "6.0 Cryptography/Cryptography.md",
@@ -221,17 +261,13 @@
     "Week",
     "0.0 Cyber Security Course/Notes/Clones Made.md",
     "0.0 Cyber Security Course/Notes/MuckingAroundPage.md",
-    "0.0 Cyber Security Course/Notes/To-Do's.md",
     "0.0 Cyber Security Course/Notes/Week 03",
-    "13.0 Companies/Companies.md",
-    "5.0 Programming/5.1 Programming Languages/Python.md",
     "Untitled 1.canvas",
     "Untitled.canvas",
     "5.0 Programming/5.1 Programming Languages",
     "13.0 Companies",
     "3.0 Software/3.2 Applications",
     "12.0 Artificial Intelligence",
-    "1.0 Types of Attacks & Defense/OSINT",
     "99.99 Images Used/TutorialsPointProcThrComparison.png",
     "99.99 Images Used/Reddit_csharp_HandlesDef.png",
     "99.99 Images Used/Clones_20240702.png",
