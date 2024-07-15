@@ -304,3 +304,7 @@
 			- Which specifies the syntax and semantics of email messages
 		- RFC 2045-2049
 			- which defines the MIME (Multipurpose Internet Mail Extensions) standards for email messages on the Internet
+- Email Blocklists
+	- A record that contains IP addresses and/or domains that have been flagged by spam filters
+	- Servers use this information to determine which addresses to block. Either by diverting directly to a spam folder, or by disallowing the send to occur at all
+	- Needing to look into how this is different from blacklisting
