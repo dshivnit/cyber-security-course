@@ -1,7 +1,9 @@
 *Rationalise/organise these ...*
+- PIP - Preferred Installer Program
 - IDE - Integrated Development Environment
 - POC - Proof of Concept
 - RCE - Remote Code Execution
+- IoC - Indicator of Compromise
 - PATH:
 	- An environment variable on Unix, DOS, OS/2, and MS Windows, specifying a set of directories where executable programs are located. 
 	- Each User Session has its own PATH settings
