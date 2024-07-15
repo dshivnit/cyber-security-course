@@ -38,7 +38,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "0.0 Cyber Security Course/Notes/Week 03/20240708-20240712  - Day 010-Day 14.md",
+                "file": "6.0 Cryptography/Cryptography.md",
                 "mode": "source",
                 "source": false
               }
@@ -82,7 +82,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "0.0 Cyber Security Course/Notes/To-Do's.md",
+                "file": "5.0 Programming/5.1 Programming Languages/Python.md",
                 "mode": "source",
                 "source": false
               }
@@ -191,7 +191,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "0.0 Cyber Security Course/Notes/Week 03/20240708-20240712  - Day 010-Day 14.md",
+                "file": "6.0 Cryptography/Cryptography.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -208,7 +208,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "0.0 Cyber Security Course/Notes/Week 03/20240708-20240712  - Day 010-Day 14.md",
+                "file": "6.0 Cryptography/Cryptography.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -231,7 +231,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "0.0 Cyber Security Course/Notes/Week 03/20240708-20240712  - Day 010-Day 14.md"
+                "file": "6.0 Cryptography/Cryptography.md"
               }
             }
           }
@@ -254,15 +254,18 @@
   },
   "active": "cae80328ce4e7ba4",
   "lastOpenFiles": [
+    "0.0 Cyber Security Course/Notes/Week 04/20240716 - Day 016.md",
+    "6.0 Cryptography/Cryptography.md",
+    "5.0 Programming/5.1 Programming Languages/Python.md",
     "0.0 Cyber Security Course/Notes/To-Do's.md",
-    "0.0 Cyber Security Course/Terminologies.md",
+    "4.0 Networking/Network Administration/Wireshark.md",
+    "4.0 Networking/Network Administration/Network Administration.md",
     "0.0 Cyber Security Course/Notes/Week 03/20240708-20240712  - Day 010-Day 14.md",
+    "0.0 Cyber Security Course/Terminologies.md",
     "0.0 Cyber Security Course/Tools.md",
     "4.0 Networking/Protocols/Protocols.md",
     "0.0 Cyber Security Course/People.md",
-    "6.0 Cryptography/Cryptography.md",
     "0.0 Cyber Security Course/Notes/Week 04/20240715 - Day 015.md",
-    "0.0 Cyber Security Course/Notes/Week 04/20240716 - Day 016.md",
     "0.0 Cyber Security Course/Notes/Week 03/20240708 - Day 10.md",
     "4.0 Networking/Web Browsers/The Console.md",
     "5.0 Programming/5.1 Programming Languages/CSS (Cascading Style-Sheets).md",
@@ -279,10 +282,7 @@
     "2.0 Hardware/2.4 Servers/2.4.1 Web Servers/Web Servers.md",
     "1.0 Types of Attacks & Defense/Types of Attacks & Defense.md",
     "2.0 Hardware/2.4 Servers/2.4.1 Web Servers",
-    "2.0 Hardware/2.4 Servers/Servers.md",
-    "2.0 Hardware/Hardware.md",
     "2.0 Hardware/2.4 Servers",
-    "0.0 Cyber Security Course/Notes/Week 01/20240626 - Day 003.md",
     "0.0 Cyber Security Course/Notes/Week 04",
     "Week",
     "0.0 Cyber Security Course/Notes/Week 03",

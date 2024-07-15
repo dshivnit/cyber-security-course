@@ -1,4 +1,5 @@
 The process of hiding or coding information so that only the person a message was intended for can read it. The art of cryptography has been used to code messages for thousands of years and continues to be used in bank cards, computer passwords, and ecommerce. (Fortinet)
+*please take note that some of the content here will not be encryption - I'll place whatever those entries are in their own section at some stage .. Maybe :) 
 
 - Plaintext
 	- As it reads, just plain text. Not encrypted in any way 
@@ -58,4 +59,18 @@ The process of hiding or coding information so that only the person a message wa
 	- Substitution cipher that shifts letters in a message to make it unreadable if intercepted
 	- To decrypt, the receiver reverses the shift
 	- Arab mathematician, Al-Kindi, broke the Caesar Cipher using frequency analysis, which exploits patterns in letter frequencies
-	- 
+- ASCII
+	- A 7-bit encoding standard which represents text using integers 0-127
+	- Hexadecimal can be used to represent an ASCII string
+- Base64
+	- An encoding scheme
+	- Represents binary data as ASCII string using an alphabet of 64 chars. 
+	- One character in a Base64 string will encode 6 bits (4 characters would equal 24bits, thus three Bytes)
+	- Base64 when used online allows for binary data like images to be included into CSS or HTML files
+- RSA (Rivest-Shamir-Adleman)
+	- basis of a cryptosystem
+	- Used for specific security services or purposes
+	- Enables public key encryption and is widely used to secure sensitive data when being sent over an unsecure network
+	- RSA works on numbers, although message are made up of characters/string
+	- One would need to consider how to convert an RSA message into numbers so that that mathematical calculations can be performed
+- 

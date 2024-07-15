@@ -8,6 +8,7 @@ Resources
 	- String
 		- Used for combinations of characters, such as letters or symbols
 	- Integer - Whole numbers
+	- long - for extremely large integer values
 	- Float - Numbers that contain decimal points or for fractions
 	- Boolean - Used for data that is restricted to True or False options
 	- List - Series of different data types stored in a collection
@@ -146,3 +147,24 @@ Resources
 				current_time = datetime.datetime.now()
 				print(current_time)
 			- 
+
+
+- chr()
+	- convert an Integer in ASCII to a character/letter
+- ord()
+	- convert an ASCII character/letter to an Integer
+- bytes.fromhex()
+	- convert a hex String into bytes
+- Base64
+	- import it's library first "import base64"
+	- base64.b64encode()
+	- Make sure the parameter is in byte form
+- RSA
+	- Works with numbers
+	- Messages however are in string or in long format
+	- Either way, they'd need to be converted into bytes in moving forward
+	- the PyCryptodome library would be needed 
+		- "from Crypto.Util.number import * "
+			- bytes_to_long()
+			- long_to_bytes()
+				functions can then be called
