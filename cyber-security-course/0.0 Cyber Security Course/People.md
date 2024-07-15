@@ -40,4 +40,7 @@
 	- Created the "Have I Been Pwned" website
 - Ronald Rivest
 	- Created MD5 (Message Digest version 5) hash algorithm in 1991
-- 
+- Ray Tomlinson
+	- Invented the concept of emails
+	- Dates to the 1970s for Arpanet
+	- 

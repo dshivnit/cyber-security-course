@@ -112,6 +112,14 @@
 - ISM (Information Security Management) Document
   https://nzism.gcsb.govt.nz/ism-document#Chapter-16188
 
+- Cryptohack
+  https://cryptohack.org/
+
+- CyberChef
+  https://gchq.github.io/CyberChef/
+
+
+  
 
 
 MICROSOFT

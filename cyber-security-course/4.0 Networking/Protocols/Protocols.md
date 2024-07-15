@@ -58,4 +58,9 @@
 	- A cryptographic key-agreement protocol to negotiate the keys for encryption between two endpoints in a Voice over IP telephony call based on the Real-time Transport Protocol
 - RTP - Real-time Transfer Protocol
 	- Network protocol used to deliver streaming audio and video media over the internet. Thereby enabling VoIP
-- 
+- SMTP - Simple Mail Transfer Protocol
+	- SMTP Secure Port: 587 (formerly 465)
+- POP3 (Post Office Protocol)
+	- POP3 Secure Port: 445
+- IMAP (Internet Message Access Protocol)
+	- IMAP Secure Port: 443

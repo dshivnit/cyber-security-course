@@ -21,12 +21,12 @@
             }
           },
           {
-            "id": "d98f031cb16fec5b",
+            "id": "e234370ded654d95",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "5.0 Programming/5.1 Programming Languages/HTML (Hyper-Text Markup Language).md",
+                "file": "1.0 Types of Attacks & Defense/1.1 Attacks/1.1.1 Types of Attacks.md",
                 "mode": "source",
                 "source": false
               }
@@ -41,7 +41,7 @@
         "dimension": 46.124620060790264,
         "children": [
           {
-            "id": "2337441aca00e4a7",
+            "id": "a4005c0aad20da8a",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -53,7 +53,7 @@
             }
           },
           {
-            "id": "e234370ded654d95",
+            "id": "b7a64b1247ddb2e8",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -131,7 +131,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "5.0 Programming/5.1 Programming Languages/HTML (Hyper-Text Markup Language).md",
+                "file": "1.0 Types of Attacks & Defense/1.1 Attacks/1.1.1 Types of Attacks.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -148,7 +148,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "5.0 Programming/5.1 Programming Languages/HTML (Hyper-Text Markup Language).md",
+                "file": "1.0 Types of Attacks & Defense/1.1 Attacks/1.1.1 Types of Attacks.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -171,7 +171,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "5.0 Programming/5.1 Programming Languages/HTML (Hyper-Text Markup Language).md"
+                "file": "1.0 Types of Attacks & Defense/1.1 Attacks/1.1.1 Types of Attacks.md"
               }
             }
           }
@@ -192,14 +192,20 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "d98f031cb16fec5b",
+  "active": "e234370ded654d95",
   "lastOpenFiles": [
-    "5.0 Programming/5.1 Programming Languages/JavaScript (JS).md",
+    "0.0 Cyber Security Course/Terminologies.md",
+    "0.0 Cyber Security Course/Resources.md",
+    "1.0 Types of Attacks & Defense/1.1 Attacks/1.1.1 Types of Attacks.md",
+    "4.0 Networking/Email(s).md",
+    "4.0 Networking/Protocols/Protocols.md",
+    "0.0 Cyber Security Course/People.md",
+    "1.0 Types of Attacks & Defense/1.2 Defense/1.2.1 Types of Defense.md",
+    "0.0 Cyber Security Course/Notes/Week 02/20240705 - Day 009.md",
     "5.0 Programming/5.1 Programming Languages/HTML (Hyper-Text Markup Language).md",
+    "5.0 Programming/5.1 Programming Languages/JavaScript (JS).md",
     "4.0 Networking/Protocols/HTTP (Hyper-Text Transfer Protocol).md",
     "2.0 Hardware/2.4 Servers/2.4.1 Web Servers/Web Servers.md",
-    "0.0 Cyber Security Course/Terminologies.md",
-    "4.0 Networking/Protocols/Protocols.md",
     "6.0 Cryptography/Cryptography.md",
     "1.0 Types of Attacks & Defense/Types of Attacks & Defense.md",
     "2.0 Hardware/2.4 Servers/2.4.1 Web Servers",
@@ -207,11 +213,7 @@
     "2.0 Hardware/Hardware.md",
     "2.0 Hardware/2.4 Servers",
     "0.0 Cyber Security Course/Notes/Week 04/20240715 - Day 015.md",
-    "1.0 Types of Attacks & Defense/1.1 Attacks/1.1.1 Types of Attacks.md",
-    "1.0 Types of Attacks & Defense/1.2 Defense/1.2.1 Types of Defense.md",
-    "0.0 Cyber Security Course/Resources.md",
     "0.0 Cyber Security Course/Tools.md",
-    "0.0 Cyber Security Course/People.md",
     "0.0 Cyber Security Course/Notes/Week 03/20240708-20240712  - Day 010-Day 14.md",
     "0.0 Cyber Security Course/Notes/Week 01/20240626 - Day 003.md",
     "0.0 Cyber Security Course/Notes/Week 02/20240703 - Day 007.md",
@@ -220,11 +222,9 @@
     "0.0 Cyber Security Course/Notes/Clones Made.md",
     "0.0 Cyber Security Course/Notes/MuckingAroundPage.md",
     "0.0 Cyber Security Course/Notes/To-Do's.md",
-    "0.0 Cyber Security Course/Notes/Week 02/20240705 - Day 009.md",
     "0.0 Cyber Security Course/Notes/Week 03",
     "13.0 Companies/Companies.md",
     "5.0 Programming/5.1 Programming Languages/Python.md",
-    "0.0 Cyber Security Course/Notes/To-Do's (RANDO).md",
     "Untitled 1.canvas",
     "Untitled.canvas",
     "5.0 Programming/5.1 Programming Languages",

@@ -278,4 +278,20 @@
 	- Something such as an action or behaviour that utilises a vulnerability on a system or application
 - (PoC) Proof of Concept
 	- Technique or tool that often demonstrates the exploitation of a vulnerability
+- SMTP - Simple Mail Transfer Protocol
+	- Utilised to handle the sending of emails
+- POP3 (Post Office Protocol)
+	- Responsible for transferring emails between a client and a mail server
+- IMAP (Internet Message Access Protocol)
+	- Responsible for transferring emails between a client and a mail server
+- IMF (Internet Message Format) 
+	- The standardised ASCII syntax required by SMTP for all email message bitstreams used by a message transfer agent (sometimes referred to as MTA)
+- MTA - Message Transfer Agent
+- Modus Operandi
+	- Latin term that describes an individual or group's habitual way of operating, which represents a discernible pattern
+- Defanged
+	- a way of making the URL/domain or email address unclickable to avoid accidental clicks (which may result in a serious security breach)
+	- ie
+		- www.something.com would become www/./something/./com 
+- MIME - Multipurpose Internet Mail Extensions
 - 

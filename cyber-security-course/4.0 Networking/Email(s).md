@@ -1,0 +1,51 @@
+ - Protocols:
+	 - SMTP - Simple Mail Transfer Protocol
+		- Utilised to handle the sending of emails
+		- SMTP Secure Port: 587 (formerly 465)
+	- POP3 (Post Office Protocol)
+		- Responsible for transferring emails between a client and a mail server
+		- Emails are downloaded and stored on a single device
+		- Sent messages are stored on the device from which the email was sent
+		- If you want to keep messages on the server, ensuring to have the "Keep Mail on the Server" is enabled
+			- Else all messages are deleted from the server once downloaded on to the single devices email client
+		- POP3 Secure Port: 445
+	- IMAP (Internet Message Access Protocol)
+		- Responsible for transferring emails between a client and a mail server
+		- IMAP Secure Port: 443
+
+- How an email is sent:
+	- Sending mail client
+	- SMTP server
+	- DNS server
+	- back to the original SMTP server
+	- Through a firewall
+	- Over the Internet
+	- Through another Firewall
+	- SMTP server
+	- POP3/IMAP server
+	- To the Receiving mail client
+	
+- Email Headers:
+	- Information about the email - such as the email servers that relayed the email
+	- Email messages use the syntax known as IMF (Internet Message Format) 
+	- Basic Header:
+		- From
+		- Subject
+		- Date
+		- To
+	- Raw/Full Headers
+		- Can be pulled from the email client one is using (process is client version/developer dependent)
+	- How to analyse an Email Header
+		- NOTE: every line can be forged when reading an Email Header
+		- ONLY the received lines that are created by your service or computer should be trusted.
+
+- Email Body
+	- Either in plain-text or in HTML
+	- Can also view the source of the message
+		- If there are attachments then you can see details around the attachment
+			- Content-Disposition:
+			- Content-Transfer-Encoding:
+			- Content-Type:
+		- Always be careful to not just open any random (and or any) attachment
+- 
+
