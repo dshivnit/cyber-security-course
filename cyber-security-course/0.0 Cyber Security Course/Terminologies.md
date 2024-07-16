@@ -308,3 +308,8 @@
 	- A record that contains IP addresses and/or domains that have been flagged by spam filters
 	- Servers use this information to determine which addresses to block. Either by diverting directly to a spam folder, or by disallowing the send to occur at all
 	- Needing to look into how this is different from blacklisting
+- HumINT
+	- Human Intelligence gathering
+	- By means of human sources and interpersonal communication
+- Evil Maid attack
+	- An attack is on an unattended device (physical access)

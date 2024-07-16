@@ -163,7 +163,7 @@ Resources
 	- Works with numbers
 	- Messages however are in string or in long format
 	- Either way, they'd need to be converted into bytes in moving forward
-	- the PyCryptodome library would be needed 
+	- the PyCryptodome library would be needed (and you'd need to install it into your environment first before importing it)
 		- "from Crypto.Util.number import * "
 			- bytes_to_long()
 			- long_to_bytes()
