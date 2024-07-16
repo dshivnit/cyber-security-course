@@ -167,4 +167,20 @@ Resources
 		- "from Crypto.Util.number import * "
 			- bytes_to_long()
 			- long_to_bytes()
-				functions can then be called
+				functions can then be called as needed
+- ord()
+	- Given a string representing one Unicode character, return an integer representing the Unicode code point of that character. 
+		- ord('a') will return the integer 97
+		- ord('$') will return 36
+- bin()
+	- Convert an integer number to binary string prefixed with "0b". 
+
+- xor()
+	- bitwise operator which returns0 if the bits are identical, and a 1 if not. Mainly identified by the ^ character
+		- 0 0 = 0 
+		- 0 1 = 1
+	- for longer numbers (binary) we XOR a bit at a time, for example
+		- 1001 ^ 0101 = 1100
+	- XOR integers can be done by first converting the integer from decimal to binary
+	- Strings can be XORd by converting each character to the integer representing the Unicode character
+- 

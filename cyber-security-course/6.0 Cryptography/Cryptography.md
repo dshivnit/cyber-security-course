@@ -60,8 +60,10 @@ The process of hiding or coding information so that only the person a message wa
 	- To decrypt, the receiver reverses the shift
 	- Arab mathematician, Al-Kindi, broke the Caesar Cipher using frequency analysis, which exploits patterns in letter frequencies
 - ASCII
+  American Standard Code for Information Interchange
 	- A 7-bit encoding standard which represents text using integers 0-127
 	- Hexadecimal can be used to represent an ASCII string
+	- Used for electronic communication and in programming languages such as HTML. 
 - Base64
 	- An encoding scheme
 	- Represents binary data as ASCII string using an alphabet of 64 chars. 
@@ -73,4 +75,11 @@ The process of hiding or coding information so that only the person a message wa
 	- Enables public key encryption and is widely used to secure sensitive data when being sent over an unsecure network
 	- RSA works on numbers, although message are made up of characters/string
 	- One would need to consider how to convert an RSA message into numbers so that that mathematical calculations can be performed
+- Unicode
+  Universal Character Set
+	- Standard by the Industry for encoding and representing characters in computers
+- XOR
+	- bitwise operator which returns 0 if the bits are identical, and a 1 if not. Mainly identified by the ^ character
+		- 0 0 = 0 
+		- 0 1 = 1
 - 
