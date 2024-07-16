@@ -183,4 +183,20 @@ Resources
 		- 1001 ^ 0101 = 1100
 	- XOR integers can be done by first converting the integer from decimal to binary
 	- Strings can be XORd by converting each character to the integer representing the Unicode character
-- 
+	- xor() properties
+		- to undo a chain of operations that have encrypted a file
+		- Essentially comparing keys to one another
+		- Four main properties
+			- Commutative:
+				- The order of order of XOR operations is not important
+				- A ^ B = B ^ A
+			- Associative:
+				- A chain of operations can be carried out without order (we don't need to fuss about brackets)
+				- A ^ (B ^ C) = (A ^ B) ^ C
+			- Identity:
+				- The identity is 0, so XOR with 0 won't do anything
+				- A ^ 0 = 0 
+			- Self-Inverse:
+				- Something XOR'd with itself results in 0
+				- A ^ A = 0
+		- 
