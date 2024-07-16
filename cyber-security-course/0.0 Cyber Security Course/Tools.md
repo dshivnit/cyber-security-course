@@ -2,7 +2,7 @@ Tools mainly being used so far in this course will be described here (note - the
 *Perhaps put these into their own sections and further expand.
 ie Windows applications/software, Other OS applications/software, PowerShell tools, Unix/Linux shell tools - differentiating between the different shells if relevant (bash, zsh etc) - atm this section is all jumbled up*
 
-- Finder
+- Everything
 	- Pretty neat, kind of like Finder in MacOS, real fast to search for stuff when compared to your usual File Explorer in Windows
 	- voidtools.com
 	- Quick filename indexing
@@ -128,7 +128,8 @@ ie Windows applications/software, Other OS applications/software, PowerShell too
   - Protonmail https://proton.me/mail
 	  - Opensource alternative to the what is now Lavabit
 	  - However you have to signup to be able to use the service (and the free version has slight limitations compared to the paid for ones)
-	  
+  - WappAlyzer
+	  - Can identify the tools used on websites you visit 	  
 - IDEs (Integrated Development Environment)
   *revise these*
 	- Obisidian (not really an IDE but I'm putting it in here)

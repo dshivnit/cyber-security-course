@@ -82,4 +82,33 @@ The process of hiding or coding information so that only the person a message wa
 	- bitwise operator which returns 0 if the bits are identical, and a 1 if not. Mainly identified by the ^ character
 		- 0 0 = 0 
 		- 0 1 = 1
+	- xor() properties
+		- to undo a chain of operations that have encrypted a file
+		- Essentially comparing keys to one another
+		- Four main properties
+			- Commutative:
+				- The order of order of XOR operations is not important
+				- A ^ B = B ^ A
+			- Associative:
+				- A chain of operations can be carried out without order (we don't need to fuss about brackets)
+				- A ^ (B ^ C) = (A ^ B) ^ C
+			- Identity:
+				- The identity is 0, so XOR with 0 won't do anything
+				- A ^ 0 = 0 
+			- Self-Inverse:
+				- Something XOR'd with itself results in 0
+				- A ^ A = 0
+- Cryptography Salts
+	- Made up of random bits added to each password instance before its hashing
+	- Salts create unique passwords even in the instance of two users choosing the same password
+	- Help mitigate hash table attacks by forcing attacks to re-compute them using the salts for each user
+	- Extra bit of randomness that is stored in the DB containing the hashed password (salt)
+	- Added after the password has been supplied (ie pass123, then the salt is applied after to create the hash and is stored in the DB)
+- Pepper
+	- A pepper is a secret added to an input such as a password during hashing with a cryptographic hash function. 
+	- This value differs from a salt in that it is not stored alongside a password hash, but rather the pepper is kept separate in some other medium, such as a Hardware Security Module. 
+- Steganography
+	- Practice of concealing information within another message or physical object to avoid detection. 
+	- Can be used to hide virtually any type of digital content, including text, image video or audio content. 
+	- The hidden data is then extracted at its destination
 - 
