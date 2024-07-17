@@ -313,3 +313,6 @@
 	- By means of human sources and interpersonal communication
 - Evil Maid attack
 	- An attack is on an unattended device (physical access)
+- JSON - JavaScript Object Notation
+	- 
+- 

@@ -129,7 +129,14 @@ ie Windows applications/software, Other OS applications/software, PowerShell too
 	  - Opensource alternative to the what is now Lavabit
 	  - However you have to signup to be able to use the service (and the free version has slight limitations compared to the paid for ones)
   - WappAlyzer
-	  - Can identify the tools used on websites you visit 	  
+	  - Can identify the tools used on websites you visit 
+- awscli
+	- Allows for the interaction with S3 Buckets
+	- 
+
+
+
+
 - IDEs (Integrated Development Environment)
   *revise these*
 	- Obisidian (not really an IDE but I'm putting it in here)
