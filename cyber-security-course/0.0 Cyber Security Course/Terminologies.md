@@ -1,5 +1,5 @@
 *Rationalise/organise these ...*
-- PIP - Preferred Installer Program
+- PIP - Preferred Installer Program (heck I thought this was the Python installer program..)
 - IDE - Integrated Development Environment
 - POC - Proof of Concept
 - RCE - Remote Code Execution
@@ -329,4 +329,7 @@
 	- A program which creates and administers "containers" on a local system. 
 	- It provides the API to allow higher level managers, such as LXD to administer containers
 	  (sounds like VirtualMachinery to me - will look into this further later) 
-- 
+- NDR
+	- Network Detection and Response
+- EDR
+	- Endpoint Detection and Response

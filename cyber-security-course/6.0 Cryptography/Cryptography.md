@@ -111,4 +111,7 @@ The process of hiding or coding information so that only the person a message wa
 	- Practice of concealing information within another message or physical object to avoid detection. 
 	- Can be used to hide virtually any type of digital content, including text, image video or audio content. 
 	- The hidden data is then extracted at its destination
-- 
+- Diffie-Hellman Key Exchange
+	- Mathematical method of securely exchanging crypto keys over a public channel and was one of the first public key protocols
+	- Producer: Ralph Merke
+		- Named after Whitfield Diffie and Martin Hellman
