@@ -6,20 +6,8 @@
       {
         "id": "438c1a7e8461736c",
         "type": "tabs",
-        "dimension": 53.875379939209736,
+        "dimension": 47.2808701215611,
         "children": [
-          {
-            "id": "a83be39b0c62d3e8",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "0.0 Cyber Security Course/Tools.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
           {
             "id": "d83d1234674b7af3",
             "type": "leaf",
@@ -27,26 +15,6 @@
               "type": "markdown",
               "state": {
                 "file": "0.0 Cyber Security Course/Notes/Week 04/20240717 - Day 017.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          }
-        ],
-        "currentTab": 1
-      },
-      {
-        "id": "2fb0e64401067da2",
-        "type": "tabs",
-        "dimension": 46.124620060790264,
-        "children": [
-          {
-            "id": "e0a48fc8ccbc7fd8",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "0.0 Cyber Security Course/Tools.md",
                 "mode": "source",
                 "source": false
               }
@@ -63,8 +31,65 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "8aa59529a0e8fd65",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "0.0 Cyber Security Course/Terminologies.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 2
+      },
+      {
+        "id": "2fb0e64401067da2",
+        "type": "tabs",
+        "dimension": 52.7191298784389,
+        "children": [
+          {
+            "id": "e0a48fc8ccbc7fd8",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "6.0 Cryptography/Cryptography.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "4243e859685067ea",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "1.0 Types of Attacks & Defense/1.1 Attacks/1.1.1 Types of Attacks.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "a83be39b0c62d3e8",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "0.0 Cyber Security Course/Tools.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          }
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -114,7 +139,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 313.5
+    "width": 286.5
   },
   "right": {
     "id": "ef67db9403793248",
@@ -130,7 +155,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "0.0 Cyber Security Course/Notes/Week 04/20240717 - Day 017.md",
+                "file": "0.0 Cyber Security Course/Terminologies.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -147,7 +172,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "0.0 Cyber Security Course/Notes/Week 04/20240717 - Day 017.md",
+                "file": "0.0 Cyber Security Course/Terminologies.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -165,12 +190,24 @@
             }
           },
           {
+            "id": "748d337d45644e7f",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "0.0 Cyber Security Course/Terminologies.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
             "id": "6bd64327369b895d",
             "type": "leaf",
             "state": {
               "type": "outline",
               "state": {
-                "file": "0.0 Cyber Security Course/Notes/Week 04/20240717 - Day 017.md"
+                "file": "0.0 Cyber Security Course/Terminologies.md"
               }
             }
           }
@@ -179,7 +216,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 200,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -191,20 +229,20 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "d83d1234674b7af3",
+  "active": "8aa59529a0e8fd65",
   "lastOpenFiles": [
     "0.0 Cyber Security Course/Tools.md",
-    "3.0 Software/3.1 Operating Systems/3.1.1 Desktops & Laptops/3.1.1.1 Windows (10 & 11).md",
-    "0.0 Cyber Security Course/Notes/Week 04/20240717 - Day 017.md",
-    "3.0 Software/3.1 Operating Systems/3.1.1 Desktops & Laptops/3.1.1.2 Linux & Unix.md",
     "0.0 Cyber Security Course/Terminologies.md",
+    "0.0 Cyber Security Course/Notes/Week 04/20240717 - Day 017.md",
+    "1.0 Types of Attacks & Defense/1.1 Attacks/1.1.1 Types of Attacks.md",
+    "6.0 Cryptography/Cryptography.md",
+    "3.0 Software/3.1 Operating Systems/3.1.1 Desktops & Laptops/3.1.1.1 Windows (10 & 11).md",
+    "3.0 Software/3.1 Operating Systems/3.1.1 Desktops & Laptops/3.1.1.2 Linux & Unix.md",
     "13.0 Cloud Services/AWS.md",
     "5.0 Programming/5.1 Programming Languages/Python.md",
-    "6.0 Cryptography/Cryptography.md",
     "0.0 Cyber Security Course/Commands.md",
     "0.0 Cyber Security Course/Notes/MuckingAroundPage.md",
     "0.0 Cyber Security Course/Resources.md",
-    "1.0 Types of Attacks & Defense/1.1 Attacks/1.1.1 Types of Attacks.md",
     "2024-07-16.md",
     "3.0 Software/3.2 Applications/Applications.md",
     "0.0 Cyber Security Course/Notes/Week 03/20240708-20240712  - Day 010-Day 14.md",

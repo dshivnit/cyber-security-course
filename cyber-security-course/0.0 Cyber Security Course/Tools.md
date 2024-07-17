@@ -132,6 +132,12 @@ ie Windows applications/software, Other OS applications/software, PowerShell too
 	  - Can identify the tools used on websites you visit 
 - awscli
 	- Allows for the interaction with S3 Buckets
+- smbclient
+	- Speaks with port 445 (Microsoft's SMB) service which allows for shares (printers, files etc)
+	- The "backups" share is non-admin'd  (usually)
+- impacket (impacket-netview)
+	- A python3 tool focused on providing access to network packets
+- winPEAS
 	- 
 
 

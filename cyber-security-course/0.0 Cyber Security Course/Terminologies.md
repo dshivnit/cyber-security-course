@@ -315,4 +315,18 @@
 	- An attack is on an unattended device (physical access)
 - JSON - JavaScript Object Notation
 	- 
+- XXE - XML External Entity Injection 
+	- A web security vulnerability that allows an attacker to interfere with an application's processing of XML data
+- IDOR - Insecure Direct Object References
+	- A type of access control vulnerability that arises when an application uses user-supplied input to access objects directly. 
+- Log4j
+	- Used to log messages within software and has the ability to communicate with other services on a system.
+	- Exactly what I was thinking - it is this communication functionality where the vulnerability exists. 
+		- Providing an opening for an attacker to inject malicious code into the logs so it can be executed on the system
+- LXD (Lex-Dee)
+	- The lightervisor, or lightweight container hypervisor.
+- LXC (Lex-See)
+	- A program which creates and administers "containers" on a local system. 
+	- It provides the API to allow higher level managers, such as LXD to administer containers
+	  (sounds like VirtualMachinery to me - will look into this further later) 
 - 
