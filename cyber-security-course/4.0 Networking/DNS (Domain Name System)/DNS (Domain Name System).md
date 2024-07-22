@@ -1,5 +1,26 @@
  *Expand with more topics here as there is plenty from Day004 and on the topic in general..*
  
+- DNS
+	- Domain Name System
+	- Provides a simple way for us to communicate with devices on the Internet without remembers complex numbers (ie IP Addresses v4/6)
+- Top-Level Domain (TLD)
+	- ccTLD (Country Code Top-Level Domain)
+		- .nz
+		- .au
+		- .us
+	- gTLD (Generic Top-Level Domain)
+		- .com
+		- .biz
+	- The last bit in a URL/Domain Name
+- Second-Level Domain
+	- example.com (example here would be the Second Level Domain name) 
+	- Limited to 63 characters
+	- Only the use of a-z, 0-9 and hyphen characters (cannot start or end with hyphens nor have consecutive hyphens, sorry Mr Hyphen)
+- Subdomains
+	- Presented to the left of the Second-Level Domain in a given full domain name
+	- Has the same creation restrictions as the Second-Level Domain
+	- Limited to 63 characters and the same restrictions as a SLD, well second level domain
+	- 
 - DNS Root Servers
 	- DNC - Domain Name Commission(er)
 	- BIND
@@ -38,3 +59,24 @@
 	- DIG - Domain Information Groper
 	- NIC (in the context of DNS)
 		- Network Information Centre
+- DNS Record Types 
+  *just note taking for the most part here, these sections will be revised at a later date so as to reduce redundancy, I understand that these types/elements have been discussed just above*
+	- A Record
+		- Resolve a "name" to an IP address on the Internet (the human-readable website name pointing to an IP address on the Internet)
+	- AAAA Record
+		- Similar to above but relating to the direction to IPv6 addresses as opposed to IPv4
+	- CNAME Record
+		- Canonical name (that word always seems interesting to me, Canonical)
+		- Records that resolve to another domain name
+		- ie shops.myshop.com --> store.myshop.com 
+		- Another DNS request would then resolve the pointed-to's actual A Record and IP Address
+	- MX Record
+		- Mail Exchange Address
+		- Handles the email queries for the domain that one would be querying
+	- TXT Record
+		- Free text fields
+		- Multiple uses
+		- Common ones:
+			- List servers that have the authority to send an email on behalf of the domain (can help in the battle of spam and spoofed emails)
+			- Verify the ownership of the domain name when signing up for third party services
+	- 
