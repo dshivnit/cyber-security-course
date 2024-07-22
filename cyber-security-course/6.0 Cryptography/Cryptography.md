@@ -1,6 +1,11 @@
 The process of hiding or coding information so that only the person a message was intended for can read it. The art of cryptography has been used to code messages for thousands of years and continues to be used in bank cards, computer passwords, and ecommerce. (Fortinet)
 *please take note that some of the content here will not be encryption - I'll place whatever those entries are in their own section at some stage .. Maybe :) 
 
+- Encoding/Decoding && Encrypting/Decrypting
+	- There's a difference, always know that
+	- Decrypting and encrypting will normally involve a "key" 
+	- Encoding and decoding can happen immediately, without keys
+		- It's more of a way to represent data, in a somewhat more secure manner
 - Plaintext
 	- As it reads, just plain text. Not encrypted in any way 
 - Ciphertext

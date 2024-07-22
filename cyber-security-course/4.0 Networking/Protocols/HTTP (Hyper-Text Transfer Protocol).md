@@ -8,7 +8,7 @@
 	- DELETE
 		- Used for deleting information/records from a web server
 
-- HTTP Status Codes
+- HTTP Status Codes (https://http.cat/)
 	- 100-199 (information responses)
 	- 200-299 (Success)
 	- 300-399 (Redirection)
@@ -44,3 +44,8 @@
 			- etc
 	- Content-Encoding
 		- What method has been used to compress the data to make it smaller when sending it over the Internet
+- Cookies
+	- Can be used for many purposes but most commonly for Website Authentication. 
+	- Won't usually be a clear plaintext string where you can see the password, but a token
+	- Clear these upon browser-exit everytime please whoever is reading this :) 
+- 
