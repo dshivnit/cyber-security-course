@@ -14,7 +14,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "0.0 Cyber Security Course/Notes/Week 04/20240719 - Day 019.md",
+                "file": "0.0 Cyber Security Course/Notes/Week 05/20240724-20240726 - Days 020-024.md",
                 "mode": "source",
                 "source": false
               }
@@ -154,7 +154,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "1.0 Types of Attacks & Defense/Types of Attacks & Defense.md",
+                "file": "0.0 Cyber Security Course/Notes/Week 05/20240724-20240726 - Days 020-024.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -171,7 +171,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "1.0 Types of Attacks & Defense/Types of Attacks & Defense.md",
+                "file": "0.0 Cyber Security Course/Notes/Week 05/20240724-20240726 - Days 020-024.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -206,7 +206,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "1.0 Types of Attacks & Defense/Types of Attacks & Defense.md"
+                "file": "0.0 Cyber Security Course/Notes/Week 05/20240724-20240726 - Days 020-024.md"
               }
             }
           }
@@ -228,9 +228,12 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "d2f32a110d9446e7",
+  "active": "8aa59529a0e8fd65",
   "lastOpenFiles": [
     "1.0 Types of Attacks & Defense/Types of Attacks & Defense.md",
+    "0.0 Cyber Security Course/Notes/Week 05/20240724-20240726 - Days 020-024.md",
+    "0.0 Cyber Security Course/Notes/Week 04/20240719 - Day 019.md",
+    "0.0 Cyber Security Course/Notes/Week 05",
     "0.0 Cyber Security Course/Tools.md",
     "3.0 Software/3.1 Operating Systems/3.1.1 Desktops & Laptops/3.1.1.2 Linux & Unix.md",
     "5.0 Programming/5.1 Programming Languages/Python.md",
@@ -238,7 +241,6 @@
     "0.0 Cyber Security Course/Notes/To-Do's.md",
     "0.0 Cyber Security Course/People.md",
     "1.0 Types of Attacks & Defense/1.2 Defense/1.2.1 Types of Defense.md",
-    "0.0 Cyber Security Course/Notes/Week 04/20240719 - Day 019.md",
     "0.0 Cyber Security Course/Notes/Week 04/Untitled",
     "0.0 Cyber Security Course/Commands.md",
     "0.0 Cyber Security Course/Class Topics.md",
@@ -256,7 +258,6 @@
     "0.0 Cyber Security Course/Notes/Week 03/20240708-20240712  - Day 010-Day 014.md",
     "6.0 Cryptography/Cryptography.md",
     "0.0 Cyber Security Course/Terminologies.md",
-    "0.0 Cyber Security Course/Notes/Week 04/20240717 - Day 017.md",
     "Untitled.canvas",
     "4.0 Networking/Web Browsers",
     "2.0 Hardware/2.4 Servers/2.4.1 Web Servers",
@@ -267,7 +268,6 @@
     "Untitled 1.canvas",
     "5.0 Programming/5.1 Programming Languages",
     "13.0 Cloud Services",
-    "3.0 Software/3.2 Applications",
     "99.99 Images Used/TutorialsPointProcThrComparison.png",
     "99.99 Images Used/Reddit_csharp_HandlesDef.png",
     "99.99 Images Used/Clones_20240702.png",
