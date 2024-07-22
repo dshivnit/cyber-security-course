@@ -12,6 +12,10 @@
 - Bash scripting basics
 - Find out if there is a difference from an email blocklist and an email blacklist
 - Stacking Tandems
+-Reputation and location check on IP's
+* AbuseIPDB
+* Cisco Talos Intelligence
+* 
 - Regarding the VirtualLab project - some resources will be:
 	- VulnHub - https://www.vulnhub.com/
 	- Test encryption using Wireshark

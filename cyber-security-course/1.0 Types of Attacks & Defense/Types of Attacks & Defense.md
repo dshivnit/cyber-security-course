@@ -66,4 +66,121 @@
 		- However, other sources say that it is OffSec who maintain it and are seen as the author of the DB
 	- Version Disclosure
 		- When one version of an application has exploits that have been identified perhaps sometimes released for public information
-		- 
+- Penetration Testing
+	- An Authorised audit of a computer system's security and defenses as agreed by the owners of the system(s)
+	- NCSC 
+		- National Cyber Security Centre
+		- Have the CHECK accreditation to ensure that companies with the CHECK accreditation are able to carry out pentesting
+		- Ethics
+	- The Hats
+		- Black
+		- Grey
+		- White
+	- Rules of Engagement (ROE)
+		- Permission
+		- Test Scope
+		- Rules
+	- Methodology
+		- Information Gathering
+		- Enumeration/Scanning
+		- Exploitation
+		- Privilege Escalation
+		- Post-Exploitation
+			- What other hosts can be targeted? (pivoting)
+			- What additional information can we gather from the host now that we are priv'd?
+			- Covering tracks
+			- Reporting
+	- OSSTMM
+		- Open Source Security Testing Methodology Manual
+		- Provides a detailed framework of testing strategies for systems, software, communication and the human aspect of cybersec
+			- Telecommunications (phones, VoIP and the like)
+			- Wired Networks
+			- Wireless Communications
+	- OWASP (Open Web Application Security Project)
+		- community-driven 
+		- Frequently updated framework used solely to test the security of web apps and services
+	- NIST Cybersec Framework 1.1
+		- Used to improve an organisations cybersecurity standards and manage the risk of cyber threats
+	- NCSC CAF
+		- Cyber Assessment Framework
+			- Data
+			- System
+			- Identity and Access control
+			- Resiliency
+			- Monitoring
+			- Response and recovery planning
+	- Black-Box Testing
+		- High-level process where the tester is not given any information abou tthe inner workings of the application or the service
+		- Acts as a regular user testing the functionality and interaction of the application or piece of software
+		- Increases the amount of time spent during the information gathering and enumeration phase to understand the attack surface of the target
+	- Grey-Box Testing
+		- Most popular for things such as pentesting.
+		- Combination of both black and white box testing
+		- Tester will have *some* limited knowledge of the internal components of the application or piece of software
+		- Often chosen for extremely well-hardened attack surfaces
+	- White-Box Testing
+		- low-level process done by a software dev who knows programming and application logic
+		- Testing the internal components of the application or piece of software
+		- Test will normally have *full* knowledge of the application and its expected behaviour
+	- Vulnerability Assessment and Pentest Limitations
+	- APTs (Advanced Persistent Threats)
+		- Pentets are loud
+			- An actual attacker won't be so noisy
+		- Non-technical attack vectors might be overlooked
+		- Relaxation of security mechanisms
+		- A highly skilled group of attackers
+		- Usually sponsored by nations or criminal groups
+		- Target:
+			- Critical infrastructure
+			- Financial organisations
+			- Government institutions
+		- Called persistent because the operations of these groups can remain undetected on compromised networks for long periods of time
+	- Red Team / Blue Team
+		- A term borrowed from the military
+		- Chase to the Crown Jewels and/or Flags
+	- TTP
+		- Tactics, Techniques and Procedures
+	- Red Team
+		- Attack Surfaces
+			- Technical Infrastructure
+			- Social Engineering
+			- Physical Intrusion
+		- Full Engagement
+		- Assumed Breach
+		- Table-top Exercise
+		- Red Team Lead
+		- Red Team Assistant Lead
+		- Red Team Operator
+	- Cyber Kill Chain
+		- Reconnaisance
+		- Weaponisation
+		- Delivery
+		- Exploitation
+		- Installation
+		- Command and Control
+		- Actions on Objectives
+- Web App Security (OWASP Top 10)
+	- Identification and Authentication Failure
+		- Allowing the use of brute force attacks
+		- Allowing Users to use weak passwords
+		- Storing these passwords inappropriately ie in plaintext)
+	- Broken Access Control
+		- Giving Users more access permissions
+		- Being able to view or modify another users account by using its unique identifier
+		- Being able to browse pages that require authentication
+		- IDOR (Insecure Direct Object References)
+	- Injection
+		- Where an attacker an insert malicious code as part of their input
+		- (not having sufficient input masking/filtering)
+	- Cryptographic Failures
+		- ie using HTTP instead of HTTPS
+		- Using trivial cryptographic algorithms
+
+- Passive Reconnaissance
+	- Publicly available knowledge
+	- DNS Lookups, Whois
+	- Mate, anything that is available that you know about (and trust, there are records out there that you wouldn't even think of that are fully open to the public. -- not going to list those here)
+- Active Reconnaissance
+	- Direct engagement with the mark/target
+	- ^ 
+- 

@@ -138,7 +138,12 @@ ie Windows applications/software, Other OS applications/software, PowerShell too
 - impacket (impacket-netview)
 	- A python3 tool focused on providing access to network packets
 - winPEAS
-	- 
+- PDFinfo
+- Mimikatz
+	- Used to steal authentication information from compromised Windows computers. 
+- DNSDumpster (https://dnsdumpster.com/)
+	- Subdomain finderr
+- 
 
 
 

@@ -24,7 +24,7 @@
 
 [[Cheat Sheets]]
 
-[[Programming Languages]]
+[[Programming]]
 
 [[Cryptography]]
 
