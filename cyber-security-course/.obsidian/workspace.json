@@ -26,7 +26,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "4.0 Networking/DNS (Domain Name System)/DNS (Domain Name System).md",
+                "file": "1.0 Types of Attacks & Defense/1.1 Attacks/1.1.1 Types of Attacks.md",
                 "mode": "source",
                 "source": false
               }
@@ -46,13 +46,38 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "6.0 Cryptography/Cryptography.md",
+                "file": "5.0 Programming/5.1 Programming Languages/Web - Developer Tools.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "96ffbb733be5cc1c",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "0.0 Cyber Security Course/Tools.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "8416fa590062edc0",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "0.0 Cyber Security Course/Terminologies.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ]
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -118,7 +143,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "4.0 Networking/DNS (Domain Name System)/DNS (Domain Name System).md",
+                "file": "0.0 Cyber Security Course/Terminologies.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -135,7 +160,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "4.0 Networking/DNS (Domain Name System)/DNS (Domain Name System).md",
+                "file": "0.0 Cyber Security Course/Terminologies.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -170,7 +195,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "4.0 Networking/DNS (Domain Name System)/DNS (Domain Name System).md"
+                "file": "0.0 Cyber Security Course/Terminologies.md"
               }
             }
           }
@@ -192,21 +217,25 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "e0a48fc8ccbc7fd8",
+  "active": "8416fa590062edc0",
   "lastOpenFiles": [
+    "0.0 Cyber Security Course/Tools.md",
+    "5.0 Programming/5.1 Programming Languages/Web - Developer Tools.md",
+    "1.0 Types of Attacks & Defense/1.1 Attacks/1.1.1 Types of Attacks.md",
+    "5.0 Programming/5.1 Programming Languages/HTML (Hyper-Text Markup Language).md",
+    "0.0 Cyber Security Course/Notes/Week 04/20240717 - Day 017.md",
+    "0.0 Cyber Security Course/Terminologies.md",
+    "0.0 Cyber Security Course/Notes/Week 04/20240718 - Day 018.md",
+    "0.0 Cyber Security Course/Notes/Week 04/20240719 - Day 019.md",
     "6.0 Cryptography/Cryptography.md",
-    "0.0 Cyber Security Course/People.md",
     "4.0 Networking/DNS (Domain Name System)/DNS (Domain Name System).md",
+    "0.0 Cyber Security Course/People.md",
     "1.0 Types of Attacks & Defense/Types of Attacks & Defense.md",
     "1.0 Types of Attacks & Defense/OSINT/Open-Source Intelligence (OSINT).md",
     "1.0 Types of Attacks & Defense/1.2 Defense/1.2.1 Types of Defense.md",
-    "1.0 Types of Attacks & Defense/1.1 Attacks/1.1.1 Types of Attacks.md",
     "0.0 Cyber Security Course/Notes/Week 05/20240724-20240726 - Days 020-024.md",
-    "0.0 Cyber Security Course/Terminologies.md",
     "4.0 Networking/Protocols/HTTP (Hyper-Text Transfer Protocol).md",
-    "0.0 Cyber Security Course/Notes/Week 04/20240719 - Day 019.md",
     "0.0 Cyber Security Course/Notes/Week 05",
-    "0.0 Cyber Security Course/Tools.md",
     "3.0 Software/3.1 Operating Systems/3.1.1 Desktops & Laptops/3.1.1.2 Linux & Unix.md",
     "5.0 Programming/5.1 Programming Languages/Python.md",
     "0.0 Cyber Security Course/Notes/To-Do's.md",
@@ -218,10 +247,6 @@
     "0.0 Cyber Security Course/Notes/To-Do's (RANDO).md",
     "0.0 Cyber Security Course/Notes/Week 01/20240625 - Day 002.md",
     "0.0 Cyber Security Course/Notes/Week 01/20240626 - Day 003.md",
-    "0.0 Cyber Security Course/Notes/Week 01/20240624 - Day 001.md",
-    "5.0 Programming/5.1 Programming Languages/Programming Languages.md",
-    "5.0 Programming/Programming.md",
-    "0.0 Cyber Security Course/Cyber Security Course.md",
     "Untitled.canvas",
     "4.0 Networking/Web Browsers",
     "2.0 Hardware/2.4 Servers/2.4.1 Web Servers",

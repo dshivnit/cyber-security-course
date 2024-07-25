@@ -333,3 +333,11 @@
 	- Network Detection and Response
 - EDR
 	- Endpoint Detection and Response
+- Web Crawler
+	- (aka Spider)
+	- A program or automated script which browses the web in a structured manner
+	- Search engines in particular use spidering as a means of keeping up-to-date with websystems/sites that are on the WWW
+- APK - Android Package Kit
+- Crypters
+	- Programs capable of encrypting, obfuscating and manipulating malware to bypass detection mechanisms, while keeping the malware's functionalities intact. 
+- 
