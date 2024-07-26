@@ -48,4 +48,10 @@
 - Jayson E Street
 - Ken Zatyko
 	- Director of the Defense Computer Forensics Laboratory
+- John Hulquist
+	- Chief Analyst of Mandiant Intelligence at Google Cloud
+	- Him and his team uncovered the Russian threat actor known as Sandworm, this was prior to the acquisition of iSIGHT Partners by FireEye, Mandiant - John was leading the iSIGHT cyber espionage practice
+- Marcus Hutchins
+	- WannaCry killswitch
+- Chris Wysopal
 - 

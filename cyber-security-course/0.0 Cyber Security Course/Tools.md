@@ -143,7 +143,10 @@ ie Windows applications/software, Other OS applications/software, PowerShell too
 	- Used to steal authentication information from compromised Windows computers. 
 - DNSDumpster (https://dnsdumpster.com/)
 	- Subdomain finderr
-- 
+- Burp Suite
+	- Can act as a proxy between web requests
+	- Able to identify website structure and relay this to the requestor amongst other uses
+	- 
 
 
 

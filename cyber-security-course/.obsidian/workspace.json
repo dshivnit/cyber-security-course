@@ -26,7 +26,19 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "1.0 Types of Attacks & Defense/1.1 Attacks/1.1.1 Types of Attacks.md",
+                "file": "1.0 Types of Attacks & Defense/1.2 Defense/1.2.1 Types of Defense.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "8a670a579b394f99",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "0.0 Cyber Security Course/People.md",
                 "mode": "source",
                 "source": false
               }
@@ -65,12 +77,24 @@
             }
           },
           {
-            "id": "8416fa590062edc0",
+            "id": "26cf128849596ac9",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
                 "file": "0.0 Cyber Security Course/Terminologies.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "8416fa590062edc0",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "4.0 Networking/The Stacks/TCPIP Stack.md",
                 "mode": "source",
                 "source": false
               }
@@ -217,22 +241,30 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "8416fa590062edc0",
+  "active": "26cf128849596ac9",
   "lastOpenFiles": [
-    "0.0 Cyber Security Course/Tools.md",
-    "5.0 Programming/5.1 Programming Languages/Web - Developer Tools.md",
+    "4.0 Networking/The Stacks/TCPIP Stack.md",
+    "1.0 Types of Attacks & Defense/1.2 Defense/1.2.1 Types of Defense.md",
     "1.0 Types of Attacks & Defense/1.1 Attacks/1.1.1 Types of Attacks.md",
+    "4.0 Networking/The Stacks/Open Systems Interconnect (OSI) Stack.md",
+    "5.0 Programming/5.1 Programming Languages/ASM - Assembly Language.md",
+    "4.0 Networking/The Stacks",
+    "0.0 Cyber Security Course/People.md",
+    "0.0 Cyber Security Course/Tools.md",
+    "0.0 Cyber Security Course/Terminologies.md",
+    "5.0 Programming/5.1 Programming Languages/Untitled.md",
+    "0.0 Cyber Security Course/Cyber Security Course.md",
+    "3.0 Software/3.3 Application Testing/Application Testing.md",
+    "3.0 Software/3.3 Application Testing",
+    "5.0 Programming/5.1 Programming Languages/Web - Developer Tools.md",
     "5.0 Programming/5.1 Programming Languages/HTML (Hyper-Text Markup Language).md",
     "0.0 Cyber Security Course/Notes/Week 04/20240717 - Day 017.md",
-    "0.0 Cyber Security Course/Terminologies.md",
     "0.0 Cyber Security Course/Notes/Week 04/20240718 - Day 018.md",
     "0.0 Cyber Security Course/Notes/Week 04/20240719 - Day 019.md",
     "6.0 Cryptography/Cryptography.md",
     "4.0 Networking/DNS (Domain Name System)/DNS (Domain Name System).md",
-    "0.0 Cyber Security Course/People.md",
     "1.0 Types of Attacks & Defense/Types of Attacks & Defense.md",
     "1.0 Types of Attacks & Defense/OSINT/Open-Source Intelligence (OSINT).md",
-    "1.0 Types of Attacks & Defense/1.2 Defense/1.2.1 Types of Defense.md",
     "0.0 Cyber Security Course/Notes/Week 05/20240724-20240726 - Days 020-024.md",
     "4.0 Networking/Protocols/HTTP (Hyper-Text Transfer Protocol).md",
     "0.0 Cyber Security Course/Notes/Week 05",
@@ -241,12 +273,6 @@
     "0.0 Cyber Security Course/Notes/To-Do's.md",
     "0.0 Cyber Security Course/Notes/Week 04/Untitled",
     "0.0 Cyber Security Course/Commands.md",
-    "0.0 Cyber Security Course/Class Topics.md",
-    "0.0 Cyber Security Course/Cheat Sheets.md",
-    "0.0 Cyber Security Course/Certifications.md",
-    "0.0 Cyber Security Course/Notes/To-Do's (RANDO).md",
-    "0.0 Cyber Security Course/Notes/Week 01/20240625 - Day 002.md",
-    "0.0 Cyber Security Course/Notes/Week 01/20240626 - Day 003.md",
     "Untitled.canvas",
     "4.0 Networking/Web Browsers",
     "2.0 Hardware/2.4 Servers/2.4.1 Web Servers",
@@ -255,8 +281,6 @@
     "Week",
     "0.0 Cyber Security Course/Notes/Week 03",
     "Untitled 1.canvas",
-    "5.0 Programming/5.1 Programming Languages",
-    "13.0 Cloud Services",
     "99.99 Images Used/TutorialsPointProcThrComparison.png",
     "99.99 Images Used/Reddit_csharp_HandlesDef.png",
     "99.99 Images Used/Clones_20240702.png",

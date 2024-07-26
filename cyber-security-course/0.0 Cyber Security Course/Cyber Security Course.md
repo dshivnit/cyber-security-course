@@ -1,5 +1,11 @@
 "With great responsibility comes great power." - Mark Manson
 
+Confidentiality
+Integrity
+Availability
+	of information
+(CIA)
+
 [[Class Topics]]
 
 [[Certifications]]

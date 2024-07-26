@@ -1,0 +1,7 @@
+Six Types (through each stage of the SDLC - Software Development Lifecycle)
+- Penetration Testing (for the SDLC)
+- Dynamic Application Security Testing (DAST)
+- Static Application Security Testing (SAST)
+- Interactive Application Security Testing (IAST)
+- Fuzz Testing for API's (Application Programming Interface)
+- Application Security Posture Management (ASPM)

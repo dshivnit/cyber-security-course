@@ -340,4 +340,13 @@
 - APK - Android Package Kit
 - Crypters
 	- Programs capable of encrypting, obfuscating and manipulating malware to bypass detection mechanisms, while keeping the malware's functionalities intact. 
-- 
+- TDS
+	- Traffic Distribution System
+- NSA ANT Catalogue
+	- National Security Agency (NSA)
+	- Tailored Access Operations (TAO)
+	- NSA TAO
+	- Advanced Network Technology (ANT)
+		- 50-page classified document which lists technology available to the above
+		- To aid in Cyber Surveillance
+	- 
