@@ -54,4 +54,4 @@
 - Marcus Hutchins
 	- WannaCry killswitch
 - Chris Wysopal
-- 
+- Kevin Mitnick
