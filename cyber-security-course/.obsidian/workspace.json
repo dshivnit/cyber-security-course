@@ -38,7 +38,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "0.0 Cyber Security Course/Notes/Week 06/20240729 - Day 025.md",
+                "file": "0.0 Cyber Security Course/Commands.md",
                 "mode": "source",
                 "source": false
               }
@@ -106,7 +106,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "0.0 Cyber Security Course/Notes/To-Do's.md",
+                "file": "3.0 Software/3.1 Operating Systems/3.1.1 Desktops & Laptops/3.1.1.2 Linux & Unix.md",
                 "mode": "source",
                 "source": false
               }
@@ -179,7 +179,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "0.0 Cyber Security Course/Notes/Week 06/20240729 - Day 025.md",
+                "file": "0.0 Cyber Security Course/Commands.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -196,7 +196,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "0.0 Cyber Security Course/Notes/Week 06/20240729 - Day 025.md",
+                "file": "0.0 Cyber Security Course/Commands.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -231,7 +231,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "0.0 Cyber Security Course/Notes/Week 06/20240729 - Day 025.md"
+                "file": "0.0 Cyber Security Course/Commands.md"
               }
             }
           }
@@ -255,9 +255,15 @@
   },
   "active": "8a670a579b394f99",
   "lastOpenFiles": [
-    "0.0 Cyber Security Course/Notes/To-Do's.md",
-    "0.0 Cyber Security Course/Notes/Week 06/20240729 - Day 025.md",
+    "0.0 Cyber Security Course/Notes/Week 06/20240730 - Day 026.md",
     "3.0 Software/3.1 Operating Systems/3.1.1 Desktops & Laptops/3.1.1.2 Linux & Unix.md",
+    "0.0 Cyber Security Course/Notes/Week 06/20240729 - Day 025.md",
+    "0.0 Cyber Security Course/Notes/Week 04/20240718 - Day 018.md",
+    "0.0 Cyber Security Course/Notes/Week 04/20240719 - Day 019.md",
+    "4.0 Networking/Protocols/Protocols.md",
+    "0.0 Cyber Security Course/Notes/To-Do's.md",
+    "1.0 Types of Attacks & Defense/1.2 Defense/1.2.1 Types of Defense.md",
+    "0.0 Cyber Security Course/Notes/To-Do's (RANDO).md",
     "0.0 Cyber Security Course/Tools.md",
     "4.0 Networking/The Stacks/TCPIP Stack.md",
     "4.0 Networking/Protocols/HTTP (Hyper-Text Transfer Protocol).md",
@@ -268,7 +274,6 @@
     "0.0 Cyber Security Course/Notes/Week 05/20240724-20240726 - Days 020-024.md",
     "0.0 Cyber Security Course/Notes/Week 03/20240708-20240712  - Day 010-Day 014.md",
     "0.0 Cyber Security Course/Notes/Week 06",
-    "1.0 Types of Attacks & Defense/1.2 Defense/1.2.1 Types of Defense.md",
     "1.0 Types of Attacks & Defense/1.1 Attacks/1.1.1 Types of Attacks.md",
     "4.0 Networking/The Stacks/Open Systems Interconnect (OSI) Stack.md",
     "5.0 Programming/5.1 Programming Languages/ASM - Assembly Language.md",
@@ -279,11 +284,6 @@
     "3.0 Software/3.3 Application Testing",
     "5.0 Programming/5.1 Programming Languages/Web - Developer Tools.md",
     "0.0 Cyber Security Course/Notes/Week 04/20240717 - Day 017.md",
-    "0.0 Cyber Security Course/Notes/Week 04/20240718 - Day 018.md",
-    "0.0 Cyber Security Course/Notes/Week 04/20240719 - Day 019.md",
-    "6.0 Cryptography/Cryptography.md",
-    "4.0 Networking/DNS (Domain Name System)/DNS (Domain Name System).md",
-    "1.0 Types of Attacks & Defense/Types of Attacks & Defense.md",
     "0.0 Cyber Security Course/Notes/Week 05",
     "0.0 Cyber Security Course/Notes/Week 04/Untitled",
     "Untitled.canvas",

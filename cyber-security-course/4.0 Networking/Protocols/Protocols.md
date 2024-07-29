@@ -67,3 +67,5 @@
 	- POP3 Secure Port: 445
 - IMAP (Internet Message Access Protocol)
 	- IMAP Secure Port: 443
+- SOCKS
+	- An Internet protocol that exchanges network packets between a client and a server through a proxy server. 
