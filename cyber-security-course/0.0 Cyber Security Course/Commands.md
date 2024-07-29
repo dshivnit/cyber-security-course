@@ -60,6 +60,10 @@ Bash
 	- -x : can enumerate hidden files, or remote directories (ie: php, txt, html   and so on. This actually specifies specific file types you want the scan/search to pick up :) )
 	- -e : can be used for completing printing URL when extracting a hidden file or directory
 	- -o : save the output to a filename (you'll have to describe it)
+- nc (netcap)
+	- nc -lv 6969 (will start listening on port 6969 and will show you traffic)
+- curl
+	- Transfers data to or from a server
 
 zsh (z Shell) (/bin/zsh (providing it's there) will change $SHELL on the fly, zsh is cool)
 *remember that some commands will require you to do a sudo*
