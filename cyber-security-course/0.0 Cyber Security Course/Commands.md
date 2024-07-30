@@ -61,9 +61,11 @@ Bash
 	- -e : can be used for completing printing URL when extracting a hidden file or directory
 	- -o : save the output to a filename (you'll have to describe it)
 - nc (netcap)
-	- nc -lv 6969 (will start listening on port 6969 and will show you traffic)
+	- nc -lvnp 6969 (will start listening on port 6969 and will show you traffic)
 - curl
 	- Transfers data to or from a server
+- which <function/package name> 
+	- will show you if the package is installed on the machine or not (ie, which python3 > if it returns /usr/bin/python3 then python3 is installed)
 
 zsh (z Shell) (/bin/zsh (providing it's there) will change $SHELL on the fly, zsh is cool)
 *remember that some commands will require you to do a sudo*
@@ -86,4 +88,7 @@ zsh (z Shell) (/bin/zsh (providing it's there) will change $SHELL on the fly, zs
 		- example: sudo usermod -a -G *groupName userName*
 		- You can verify by:
 			- tail /etc/group | grep *groupName*
-	- 
+- tcpdump
+	- Data-network packet analyser program that runs in terminal (CLI). Displays TCP/IP and other packets transmitted or received over a NIC
+	- tcpdump -i (interface#refence) port 389 (this would be for LDAP services per say)
+- 

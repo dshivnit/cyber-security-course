@@ -146,7 +146,9 @@ ie Windows applications/software, Other OS applications/software, PowerShell too
 - Burp Suite
 	- Can act as a proxy between web requests
 	- Able to identify website structure and relay this to the requestor amongst other uses
-	- 
+- Reverse Shell Generator
+	- revshells.com
+- 
 
 
 

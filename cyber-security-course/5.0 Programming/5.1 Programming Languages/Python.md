@@ -65,6 +65,11 @@ Resources
 			age = age + 1
 			print ( age ) 
 		- The above example will output: 31
+- Containers
+	- tuple
+	- list
+	- dictionary
+	- set
 	
 - Loops
 	- Loops allow programs to iterate and perform actions a number of times. There are two types of loops:
@@ -120,6 +125,8 @@ Resources
 - ALWAYS KEEP AN NOTE ON INDENTS!
 
 - Data Structures
+	- Graph
+	- 
 
 - If Statements
 
