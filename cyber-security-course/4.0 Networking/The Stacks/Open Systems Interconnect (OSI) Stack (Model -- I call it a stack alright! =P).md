@@ -1,5 +1,7 @@
 *(Please Do Not Throw Sausage Pizza Away ;) -- as a term of reference to the various layers, I don't give a toss what you do with your pizza just don't waste food.)*
 
+*(I'll fill in more on these sections as I review the Network+ and other course material)*
+
 Specific processes take place to each bit of data that passes through these layers, from bottom down to bottom up respectively.
 
 Pieces of data added and also removed as they move between layers. 
@@ -34,6 +36,7 @@ It is also useful to note that you can identify technical issues and which layer
 - Transport
 	- TCP (Transmission Control Protocol)
 		- Three-way handshake
+		- Connection-based
 		- Provides a constant connection between the two devices for the amount of time that it would take for the data transfer to complete
 		- Incorporates error checking to ensure that all the packets are sent and also received
 		- Reliable
@@ -47,7 +50,33 @@ It is also useful to note that you can identify technical issues and which layer
 			- Web browsing
 			- Emails
 			- FTP
+		- Packet Details:
+			- Source Port
+			- Destination Port
+			- Source IP
+			- Destination IP
+			- Sequence Number (SEQ)
+			- Acknowledgement Number (ACK)
+			- Checksum
+			- Data
+			- Flag
+		- Three-way Handshake
+			- SYN
+			- SYN/ACK
+			- ACK
+			- DATA
+			- FIN
+			- RST
+				- Ends all communication
+				- Indicates that there was some problem during the connection
+					- low resources
+					- application error
+					- etc
+			- TCP will close a connection once it has been determined that all data has been sent AND received
+			- It is best to close TCP connections as soonest as possible, as they do soak up resources
+			- a FIN packet is sent to initiate the closing of a connection
 	- UDP (User Datagram Protocol)
+		- Stateless (not a government state but a connectionless state - lel)
 		- No error checking or reliability
 		- Sending device will transmit regardless if the receiver receives the packets or not
 		- No synchronisation between either device
@@ -61,12 +90,14 @@ It is also useful to note that you can identify technical issues and which layer
 		- Also useful for larger files
 			- Video streaming
 				- Consider pixelation when streaming, nyaar not all packets are being received properly
-	- Packet Contents:
-		- Time To Live
-		- Checksum
-			- If data has changed on the receiving side then that packet will be deemed corrupt and will need to be retransmitted (TCP)
-		- Source Address
-		- Destination Address
+		- Packet Contents:
+			- Time To Live (TTL)
+			- Source Address
+			- Destination Address
+			- Source Port
+			- Destination Port
+			- Data
+		
 - Network
 	- Routing
 	- Re-assembly of data

@@ -54,7 +54,82 @@
 	  Port 22
 	- DNSCrypt
 		- Network protocol that authenticates and encrypts Domain Name System (DNS) traffic between the User's computer and recursive name servers. DNSCrypt wraps unmodified DNS traffic between a client and a DNS resolver in a cryptographic construction, preventing eavesdropping and forgery by a main-in-the-middle attack.
-	  
+
+- Port Forwarding
+	- Forwarding data from a device that is internal to a LAN or Private Network to an external network (mainly the WWW)
+		- such as in the case of Web Servers
+	- Allowing external entities to be able to access internal entities by specifying which external port would be used to cater for that internal connection
+		- Internally it could be 172.23.69.69:80 (for the sake of a generic web server) however externally you could configure that port to be accessible via (WAN_IP or External IP Addy:6969)
+
+- Firewall (operates on the third and fourth layers)
+	- Permits or denies network traffic from passing to and from a network
+	- Can filter on:
+		- Where the traffic is coming from
+		- What protocols (rulez) are being used
+		- What ports are being prompted for
+	- Perform packet inspection to identify what kind of elements are being catered for in data traffic
+	- Can be standalone service specific devices or software
+	- Categories:
+		- Stateful
+			- Uses the entire information from a connection
+			- Rather than analysing an individual packet, will determine the behaviour of a device - based upon the entire connection
+		- Stateless
+			- Use of a static set of rules to determine whether or not individual packets are acceptable or not
+			- Only effective as the rules that define them
+			- Good for when receiving large amounts of data from different hosts (such as in a DDOS attack)
+
+- VPNs (Virtual Private Networks)
+	- Allows devices on separate networks to communicate securely by creating a dedicated path between each other over the Internet (tunneling) 
+	- Essentially forming their own logical private network
+	- Offers:
+		- Allows networks in different geographical locations to be connected
+		- Privacy
+			- Use of encryption to protect data
+			- Data isn't vulnerable to sniffing
+		- Anonymity
+			- Depends on how the VPN is set up
+				- Logs
+				- Data history etc
+			- If everything is being noted, then wtf is the point? 
+	- Technologies:
+		- PPP
+			- Point To Point Protocol
+			- Used by PPTP
+			- To allow authentication and provide encryption of data
+			- Use of a private and public key (like SSH)
+			- "This technology is not capable of leaving a network by itself (non-routable)" THM
+		- PPTP
+			- Point To Point Tunneling Protocol
+			- Allows data from PPP to travel and leave a network
+			- Supported by most devices
+			- Weakly encrypted in comparison to alternatives
+		- IPSec
+			- Difficult to set up compared to alternatives
+			- Boasts strong encryption and is also supported by many devices
+
+- Routers
+	- Layer 3
+	- Routing
+		- The process of data travelling across networks
+		- Creating a path between networks so that this data can be successfully delivered
+	- Normally dedicated devices that do not operate like an L2 switch
+		- However, do take into account SOHO (Small Office, Home Office) Routers which are multifunctional devices and not just a standalone Router like you'd normally find in a corporate environment
+	- Factors considered:
+		- What path is shortest
+		- What path is most reliable
+		- Which path has the fastest medium (copper, fibre, air)
+- Switches
+	- L2 devices normally but there are also L3 switches
+	- Supporting 3/4 - 63 devices
+	- Use of Ethernet Cables
+	- Forwarding and receiving of Frames
+	- MAC Addresses are what are considered
+	- L3 Switches
+		- VLANs (Virtual Local Area Networks)
+		- Forwarding of packets (obviously based on IP, since packets) to other networks that are identified on the L3 Switch (ie VLANs)
+		- These VLANs are physically connected to the Switch, but are logically independent of each other - hence why IP Addresses are considered in such cases
+	- 
+
 - Services
 	- DNS
 		- Domains (expand on this - TLDs etc)

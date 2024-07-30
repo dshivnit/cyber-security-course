@@ -1,3 +1,5 @@
+*This section and other network related sections will be detailed further when I review the Network+ and other related material*
+
 Local Area Networks
 
 - Topologies
@@ -27,7 +29,6 @@ Local Area Networks
 		- Data is sent across the loop until it reaches its destined device
 		- Devices will transmit their own data first before passing on data that has been sent from another device
 		- One cable or one device failing will result in a network failure... lel
-
 
 - Switches
 	- Dedicated devices that are designed to aggregate multiple other devices (computers, printers, VOIP phones, IP Cams, connections to other networking equipment and so on)
