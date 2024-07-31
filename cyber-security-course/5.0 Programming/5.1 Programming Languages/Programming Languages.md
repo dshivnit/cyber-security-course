@@ -26,4 +26,13 @@
 
 - Lisp
 	- Originally created a a practical mathematical notation for computer programs
-	- 
+- Go
+	- statically typed
+	- high-level
+	- Designed at Google by Robert Griesemer
+	- Similar to C's syntax
+	- Has:
+		- memory safety
+		- garbage collection
+		- structural typing
+		- CSP-style concurrency

@@ -1,5 +1,7 @@
 "With great responsibility comes great power." - Mark Manson
 
+**All content in this repository are for the purposes of education, knowledge and understanding how to better protect a system. All information held within is publicly available.**
+
 Confidentiality
 Integrity
 Availability

@@ -55,3 +55,5 @@
 	- WannaCry killswitch
 - Chris Wysopal
 - Kevin Mitnick
+- Robert Griesemer
+	- Designed the Go programming language

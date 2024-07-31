@@ -15,6 +15,7 @@
 	- Look into this more and do some practice ... n00b
 - **Rationalise/rationalize/organise! each topic/content in this vault**
 	- Create a brief intro to each page/section
+- Practice with Hydra
 - picoctf
 	- Online CTF platform allowing for creative learning
 -  MattKC Video on PS2 Savefile Recovery

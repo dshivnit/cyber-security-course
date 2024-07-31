@@ -148,6 +148,13 @@ ie Windows applications/software, Other OS applications/software, PowerShell too
 	- Able to identify website structure and relay this to the requestor amongst other uses
 - Reverse Shell Generator
 	- revshells.com
+- waybackurls (in conjunction with web.archive.org)
+	- admin panels
+		- site:whatevs.com inurl:admin
+	- Le pwords:
+		- filetype:log "password" site:whatevs.com
+	- backup dirs:
+		- intitle:"index of" "backup" site:whatevssss.com
 - 
 
 
