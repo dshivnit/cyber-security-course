@@ -128,7 +128,6 @@
 		- VLANs (Virtual Local Area Networks)
 		- Forwarding of packets (obviously based on IP, since packets) to other networks that are identified on the L3 Switch (ie VLANs)
 		- These VLANs are physically connected to the Switch, but are logically independent of each other - hence why IP Addresses are considered in such cases
-	- 
 
 - Services
 	- DNS

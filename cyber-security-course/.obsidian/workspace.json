@@ -9,18 +9,43 @@
         "dimension": 47.2808701215611,
         "children": [
           {
-            "id": "d2f32a110d9446e7",
+            "id": "533bd73318185975",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "4.0 Networking/Networking.md",
+                "file": "1.0 Types of Attacks & Defense/1.1 Attacks/1.1.1 Types of Attacks.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "7dfee3d29c34c888",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "0.0 Cyber Security Course/Terminologies.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "9fde9219a076e52b",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "3.0 Software/3.1 Operating Systems/3.1.1 Desktops & Laptops/3.1.1.2 Linux & Unix.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ]
+        ],
+        "currentTab": 2
       },
       {
         "id": "2fb0e64401067da2",
@@ -28,18 +53,67 @@
         "dimension": 52.7191298784389,
         "children": [
           {
+            "id": "d2f32a110d9446e7",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "3.0 Software/3.1 Operating Systems/3.1.1 Desktops & Laptops/3.1.1.2 Linux & Unix.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
             "id": "8aa59529a0e8fd65",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "4.0 Networking/LANs/LANs.md",
+                "file": "0.0 Cyber Security Course/Resources.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "02a2a6ddb12b25f3",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "0.0 Cyber Security Course/Commands.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "f5b3e960c42bc691",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "0.0 Cyber Security Course/Terminologies.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "b2bcbb613283167f",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "0.0 Cyber Security Course/Notes/To-Do's (RANDO).md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ]
+        ],
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -105,7 +179,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "4.0 Networking/Networking.md",
+                "file": "3.0 Software/3.1 Operating Systems/3.1.1 Desktops & Laptops/3.1.1.2 Linux & Unix.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -122,7 +196,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "4.0 Networking/Networking.md",
+                "file": "3.0 Software/3.1 Operating Systems/3.1.1 Desktops & Laptops/3.1.1.2 Linux & Unix.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -157,7 +231,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "4.0 Networking/Networking.md"
+                "file": "3.0 Software/3.1 Operating Systems/3.1.1 Desktops & Laptops/3.1.1.2 Linux & Unix.md"
               }
             }
           }
@@ -179,11 +253,19 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "d2f32a110d9446e7",
+  "active": "9fde9219a076e52b",
   "lastOpenFiles": [
+    "0.0 Cyber Security Course/Terminologies.md",
+    "3.0 Software/3.1 Operating Systems/3.1.1 Desktops & Laptops/3.1.1.2 Linux & Unix.md",
+    "0.0 Cyber Security Course/Commands.md",
+    "1.0 Types of Attacks & Defense/1.1 Attacks/1.1.1 Types of Attacks.md",
+    "0.0 Cyber Security Course/Notes/To-Do's.md",
+    "0.0 Cyber Security Course/Resources.md",
     "0.0 Cyber Security Course/Notes/Week 06/20240731 - Day 027.md",
-    "4.0 Networking/The Stacks/Open Systems Interconnect (OSI) Stack (Model -- I call it a stack alright! =P).md",
+    "0.0 Cyber Security Course/Notes/To-Do's (RANDO).md",
     "4.0 Networking/LANs/LANs.md",
+    "4.0 Networking/Networking.md",
+    "4.0 Networking/The Stacks/Open Systems Interconnect (OSI) Stack (Model -- I call it a stack alright! =P).md",
     "4.0 Networking/The Stacks/TCPIP Stack.md",
     "5.0 Programming/5.1 Programming Languages/Web - Developer Tools.md",
     "4.0 Networking/Protocols/Protocols.md",
@@ -194,20 +276,12 @@
     "8.0 Databases/Databases.md",
     "3.0 Software/3.3 Application Testing/Application Testing.md",
     "3.0 Software/Software.md",
-    "0.0 Cyber Security Course/Commands.md",
     "4.0 Networking/Protocols/HTTP (Hyper-Text Transfer Protocol).md",
     "0.0 Cyber Security Course/Tools.md",
     "1.0 Types of Attacks & Defense/1.2 Defense/1.2.1 Types of Defense.md",
-    "3.0 Software/3.1 Operating Systems/3.1.1 Desktops & Laptops/3.1.1.2 Linux & Unix.md",
     "5.0 Programming/5.1 Programming Languages/Python.md",
     "0.0 Cyber Security Course/Notes/Week 06/20240730 - Day 026.md",
     "0.0 Cyber Security Course/Notes/Week 06/20240729 - Day 025.md",
-    "0.0 Cyber Security Course/Notes/Week 04/20240718 - Day 018.md",
-    "0.0 Cyber Security Course/Notes/Week 04/20240719 - Day 019.md",
-    "0.0 Cyber Security Course/Notes/To-Do's.md",
-    "0.0 Cyber Security Course/Notes/To-Do's (RANDO).md",
-    "5.0 Programming/5.1 Programming Languages/HTML (Hyper-Text Markup Language).md",
-    "0.0 Cyber Security Course/Resources.md",
     "0.0 Cyber Security Course/Notes/Week 06",
     "4.0 Networking/The Stacks",
     "3.0 Software/3.3 Application Testing",

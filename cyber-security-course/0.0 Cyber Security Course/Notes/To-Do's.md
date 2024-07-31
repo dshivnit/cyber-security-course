@@ -1,11 +1,15 @@
 (Please take note that these todo's are tailored for me personally and may not apply to you, reader.)
 
 - GET THE TODO's SORTED FROM CLASSES! :) 
+- Androgynous - lel, thanks kham
 - Podman VMs and Docker (look into)
 - MainDTRig = Fedora main
+- Create a section just for CHEAT SHEETS pls
 - WIN+SHIFT+C : gives you the colour hex tag! (note this and other random keyboard shortcuts somewhere - and also the usual ones)
 - **Get back to training with Python** (WIP)
-- **Go through each main subject and the content covered in teh notes and expand on them in respective sections of this vault**
+- **Go through each main subject and the content covered in teh notes and expand on them in respective sections of this vault
+- Background and Foregrounding processes in Linux
+	- Look into this more and do some practice ... n00b
 - **Rationalise/rationalize/organise! each topic/content in this vault**
 	- Create a brief intro to each page/section
 - picoctf
@@ -14,10 +18,10 @@
 - Bash scripting basics
 - Find out if there is a difference from an email blocklist and an email blacklist
 - Stacking Tandems
--Reputation and location check on IP's
+- Reputation and location check on IP's
 * AbuseIPDB
 * Cisco Talos Intelligence
-* 
+* Updog on the fly webserver (similar to Python3's SimpleHTTPServer)
 - Regarding the VirtualLab project - some resources will be:
 	- VulnHub - https://www.vulnhub.com/
 	- Test encryption using Wireshark

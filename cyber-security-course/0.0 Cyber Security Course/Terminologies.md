@@ -349,4 +349,12 @@
 	- Advanced Network Technology (ANT)
 		- 50-page classified document which lists technology available to the above
 		- To aid in Cyber Surveillance
+- Cone of Uncertainty
+	- Buffer time
+	- Padding out time
+	- For unexpected occurrences in a project for example
+- GPG Keys
+	- GNU Privacy Guard
+	- A safety check
+	- If keys don't match with what your system trusts and what the devs used, then the software won't be installed
 	- 

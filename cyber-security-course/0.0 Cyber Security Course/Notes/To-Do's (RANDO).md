@@ -1,6 +1,7 @@
 RANDOMS:
 - - Look up the F-35 oxygen system cutting out to the pilot
 	- In relation to RTOS (Real Time OS)
+- 18650s - scrap dealer, get some from old battery packs (from power drills and the like)
 - CrackMe
 	- Software that was designed by the programmer and a fun little 'thingy' for the sake of testing and learning
 	- Look up some examples for s&g's

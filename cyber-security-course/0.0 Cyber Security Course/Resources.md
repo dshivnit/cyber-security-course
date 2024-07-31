@@ -136,7 +136,14 @@
 - How To Rotate
   https://howtorotate.com/docs/introduction/getting-started/
 
+- VIM Cheatsheet
+  https://vim.rtorr.com/
+
+- LM Studio
+  https://lmstudio.ai/
+
 - 
+
 
 MICROSOFT
 

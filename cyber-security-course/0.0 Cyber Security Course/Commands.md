@@ -91,4 +91,38 @@ zsh (z Shell) (/bin/zsh (providing it's there) will change $SHELL on the fly, zs
 - tcpdump
 	- Data-network packet analyser program that runs in terminal (CLI). Displays TCP/IP and other packets transmitted or received over a NIC
 	- tcpdump -i (interface#refence) port 389 (this would be for LDAP services per say)
-- 
+- scp
+	- Secure Copy
+	- Check out help/man details for further information, functionality
+	- scp SOURCE DESTINATION
+		- Sending:
+			- scp text.file username@ipaddress,computername,domain/filedirectory
+		- Receiving/pulling:
+			- scp username@ipaddress,computername,domain/filedirectory filename you want to save the file to
+- ps
+	- Shows processes running
+	- ps aux
+		- will show processes running from other users not in the session (mainly the system)
+- top
+	- Another variant as to what processes are running
+	- More real-time updates
+	- Shows additional system information as well
+
+- kill
+	- kill (pid) killing specific processes
+	- SIGTERM - kill the pid, but allow it do some cleanup tasks first
+	- SIGKILL - kill the pid, don't do any cleanup
+	- SIGSTOP - stop/suspect a pid
+
+- NAMESPACES
+	- Only PIDs in the same namespace will be able to see each other
+	- Good for security as it divvies up various processes running on any given system
+
+- systemctl
+	- Control the systemd system and service manager
+	- freedesktop.org/software/systemd/man/systemctl.html
+	- systemctl stop (service name)
+		- start
+		- enable
+		- disable
+	- 
