@@ -173,6 +173,7 @@
 		- Represents the first stop after the root zone. 
 		- Is everything that follows the final dot (.) of a domain name. 
 		- Example: google.com = .com is the TLD
+	- DCV - Domain Control Validation
 	- RIPE
 		- **Ensuring the uniqueness of Internet number** resource usage through registration of information related to the resources and their Registrants and Maintainers (RIPE INR)18 Dec 2023
 	- DNSCrypt (https://www.dnscrypt.org/)
@@ -357,4 +358,9 @@
 	- GNU Privacy Guard
 	- A safety check
 	- If keys don't match with what your system trusts and what the devs used, then the software won't be installed
-	- 
+- WMI Control (Windows Management Instrumentation)
+	- Allows scripting languages (VBScript, or PowerShell) to m anage MS Windows devices (locally and remotely)
+	- WMIC
+		- Windows Management Instrumentation Command-line
+- PII (Personally Identifiable Information)
+- (APT) Advanced Persistent Threat
