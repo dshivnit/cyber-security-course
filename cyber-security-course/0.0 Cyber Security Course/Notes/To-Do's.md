@@ -1,6 +1,9 @@
 (Please take note that these todo's are tailored for me personally and may not apply to you, reader.)
 
 - GET THE TODO's SORTED FROM CLASSES! :) 
+- Describe chmod in Linux
+	- In detail
+- Go through the notes from what the speakers presented/shared
 - Androgynous - lel, thanks kham
 - Podman VMs and Docker (look into)
 - MainDTRig = Fedora main
@@ -148,3 +151,4 @@
 	- Compare it to Java to begin with (also play with Java and javascript again)
 	- C variants ... One day, again.
 - Factoring (mathematics, prime factoring aka prime number factoring)
+- Look at ADS in further detail
