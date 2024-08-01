@@ -13,4 +13,4 @@ This message is to let you know, reader, that the the information contained in t
 <br>Whatever you're doing, enjoy it. Ciao!
 <br>
 <br>
-<b>**All content in this repository are for the purposes of education, knowledge and understanding how to better protect a digital system. All information held within is publicly available.**</b>
+<b>**All content in this repository are for the purposes of education, knowledge and understanding how to better protect a digital system. All information held within is from publicly available sources.**</b>
