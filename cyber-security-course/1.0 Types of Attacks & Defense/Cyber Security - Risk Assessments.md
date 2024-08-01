@@ -61,4 +61,4 @@ Identify potential security threats and vulnerabilities on a Client's system and
 7. Create a Risk Assessment Report for the client which will summarise the findings above, the risk mitigation strategy, and any recommended measures that can be set in place for implementation
 -------------------------------------------------------------------------
 Risk Matrix Schema:
-![[Pasted image 20240802064619.png]]
+![[RiskMatrixSchema.png]]
