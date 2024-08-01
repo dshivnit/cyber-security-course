@@ -163,6 +163,8 @@
 				- Otherwise you get a continuous loop that can happen (because the process hasn't been told to stop/die/get-killed)
 			- SOA
 				- Start Of Authority
+	- IDN - Internationalized Domain Name
+		- Enable people around the world to use domain names in local languages and scripts
 	- DNS Anonymization
 		- Instead of directly responding to clients, a resolver can act as a transparent proxy to another resolver, hiding the real client IP to the latter. 
 		  Anonymized DNSCrypt, specifically designed for DNS traffic is a lightweight alternative to running DNSCrypt through Tor and SOCKS proxies. (from Wikipedia)
@@ -364,3 +366,11 @@
 		- Windows Management Instrumentation Command-line
 - PII (Personally Identifiable Information)
 - (APT) Advanced Persistent Threat
+- SIEM
+	- Security Information and Event Management
+- SOAR Tools
+	- Security, Orchestration, Automation and Response
+- EDR Tools
+	- Endpoint Detection and Response
+- Living Off the Land
+	- 

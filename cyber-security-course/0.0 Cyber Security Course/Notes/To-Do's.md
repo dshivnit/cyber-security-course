@@ -5,6 +5,7 @@
 	- In detail
 - Go through the notes from what the speakers presented/shared
 - Androgynous - lel, thanks kham
+- 
 - Podman VMs and Docker (look into)
 - MainDTRig = Fedora main
 - Create a section just for CHEAT SHEETS pls
@@ -153,3 +154,7 @@
 	- C variants ... One day, again.
 - Factoring (mathematics, prime factoring aka prime number factoring)
 - Look at ADS in further detail
+- Pareto Principle
+	- 80% of consequences come from 20% of causes
+		- ie 80% of the work can be completed in 20% of the time spent (and vice versa)
+- 
