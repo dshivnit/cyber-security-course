@@ -343,6 +343,8 @@
 - APK - Android Package Kit
 - Crypters
 	- Programs capable of encrypting, obfuscating and manipulating malware to bypass detection mechanisms, while keeping the malware's functionalities intact. 
+- Obfuscation
+	- Technique of intentioanlly making information difficult to read, especially in coding
 - TDS
 	- Traffic Distribution System
 - NSA ANT Catalogue
@@ -373,4 +375,17 @@
 - EDR Tools
 	- Endpoint Detection and Response
 - Living Off the Land
+	- Attackers use built-in Windows tools and utilities in an attempt to go undetected within the victim environment. 
+- TPM - Trusted Platform Module
+	- designed to provide hardware-based, security-related functions. A TPM chip is a secure crypto-processor that is designed to carry out cryptographic operations. The chip includes multiple physical security mechanisms to make it tamper-resistant, and malicious software is unable to tamper with the security functions of the TPM. 
+- VSS - Volume Shadow Copy Service
+	- Coordinates the required actions to create a consistent shadow copy (a snapshot) of the data to be packed up
+	- Stored in the Sys Vol Info folder on each drive that has it turned on 
+		- Creating restore points
+		- Performing system restores
+		- Configuring restore settings
+		- Deleting restore points
+	- Malware writers know of this Windows feature and will target their code to look for these files and delete them
+		- Thus making it impossible to recover from a ransomware attack
+		- Unless there is an offline or offsite backup
 	- 
