@@ -128,9 +128,23 @@
             "id": "fb52ed3c136e1f20",
             "type": "leaf",
             "state": {
-              "type": "image",
+              "type": "markdown",
               "state": {
-                "file": "99.99 Images Used/RiskMatrixSchema.png"
+                "file": "0.0 Cyber Security Course/Notes/Clones Made.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "c28767092f372e4f",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "1.0 Types of Attacks & Defense/Cyber Security - Risk Assessments.md",
+                "mode": "source",
+                "source": false
               }
             }
           },
@@ -171,7 +185,7 @@
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -237,7 +251,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "99.99 Images Used/RiskMatrixSchema.png",
+                "file": "1.0 Types of Attacks & Defense/Cyber Security - Risk Assessments.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -254,7 +268,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "99.99 Images Used/RiskMatrixSchema.png",
+                "file": "1.0 Types of Attacks & Defense/Cyber Security - Risk Assessments.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -289,7 +303,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "99.99 Images Used/RiskMatrixSchema.png"
+                "file": "1.0 Types of Attacks & Defense/Cyber Security - Risk Assessments.md"
               }
             }
           }
@@ -311,9 +325,11 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "cba70bc0aa0f21a9",
+  "active": "c28767092f372e4f",
   "lastOpenFiles": [
+    "0.0 Cyber Security Course/Notes/Clones Made.md",
     "1.0 Types of Attacks & Defense/Cyber Security - Risk Assessments.md",
+    "0.0 Cyber Security Course/Notes/Week 06/20240802 - Day 029.md",
     "99.99 Images Used/RiskMatrixSchema.png",
     "0.0 Cyber Security Course/Terminologies.md",
     "3.0 Software/3.1 Operating Systems/3.1.1 Desktops & Laptops/3.1.1.1 Windows (10 & 11).md",
@@ -339,7 +355,6 @@
     "4.0 Networking/Protocols/Protocols.md",
     "1.0 Types of Attacks & Defense/Types of Attacks & Defense.md",
     "4.0 Networking/LANs",
-    "8.0 Databases/8.2 Traditional Database (DBMS - Database Management Systems).md",
     "0.0 Cyber Security Course/Notes/Week 06",
     "4.0 Networking/The Stacks",
     "3.0 Software/3.3 Application Testing",
