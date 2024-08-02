@@ -1,4 +1,5 @@
 *Rationalise/organise these ...*
+- CERT NZ (Computer Emergency Response Team)
 - PIP - Preferred Installer Program (heck I thought this was the Python installer program..)
 - IDE - Integrated Development Environment
 - POC - Proof of Concept
@@ -388,4 +389,5 @@
 	- Malware writers know of this Windows feature and will target their code to look for these files and delete them
 		- Thus making it impossible to recover from a ransomware attack
 		- Unless there is an offline or offsite backup
-	- 
+- GRC
+	- Governance, Risk (management) and Compliance

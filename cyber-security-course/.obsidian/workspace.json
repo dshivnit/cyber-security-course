@@ -93,7 +93,7 @@
             }
           }
         ],
-        "currentTab": 4
+        "currentTab": 1
       },
       {
         "id": "2fb0e64401067da2",
@@ -161,6 +161,18 @@
             }
           },
           {
+            "id": "4d78c8a6017b2bdd",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "0.0 Cyber Security Course/Terminologies.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
             "id": "d6a1b7c0647d55ba",
             "type": "leaf",
             "state": {
@@ -185,7 +197,7 @@
             }
           }
         ],
-        "currentTab": 3
+        "currentTab": 5
       }
     ],
     "direction": "vertical"
@@ -251,7 +263,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "1.0 Types of Attacks & Defense/Cyber Security - Risk Assessments.md",
+                "file": "0.0 Cyber Security Course/Terminologies.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -268,7 +280,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "1.0 Types of Attacks & Defense/Cyber Security - Risk Assessments.md",
+                "file": "0.0 Cyber Security Course/Terminologies.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -303,7 +315,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "1.0 Types of Attacks & Defense/Cyber Security - Risk Assessments.md"
+                "file": "0.0 Cyber Security Course/Terminologies.md"
               }
             }
           }
@@ -325,21 +337,21 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "c28767092f372e4f",
+  "active": "4d78c8a6017b2bdd",
   "lastOpenFiles": [
-    "0.0 Cyber Security Course/Notes/Clones Made.md",
+    "1.0 Types of Attacks & Defense/1.1 Attacks/1.1.1 Types of Attacks.md",
+    "0.0 Cyber Security Course/Terminologies.md",
+    "0.0 Cyber Security Course/Commands.md",
+    "3.0 Software/3.1 Operating Systems/3.1.1 Desktops & Laptops/3.1.1.2 Linux & Unix.md",
+    "0.0 Cyber Security Course/Tools.md",
     "1.0 Types of Attacks & Defense/Cyber Security - Risk Assessments.md",
+    "0.0 Cyber Security Course/Notes/Clones Made.md",
     "0.0 Cyber Security Course/Notes/Week 06/20240802 - Day 029.md",
     "99.99 Images Used/RiskMatrixSchema.png",
-    "0.0 Cyber Security Course/Terminologies.md",
     "3.0 Software/3.1 Operating Systems/3.1.1 Desktops & Laptops/3.1.1.1 Windows (10 & 11).md",
-    "0.0 Cyber Security Course/Commands.md",
-    "1.0 Types of Attacks & Defense/1.1 Attacks/1.1.1 Types of Attacks.md",
     "0.0 Cyber Security Course/Notes/To-Do's.md",
-    "3.0 Software/3.1 Operating Systems/3.1.1 Desktops & Laptops/3.1.1.2 Linux & Unix.md",
     "3.0 Software/3.1 Operating Systems/3.1.1 Desktops & Laptops/3.1.1.0 Operating Systems (Desktops & Laptops).md",
     "0.0 Cyber Security Course/Notes/To-Do's (RANDO).md",
-    "0.0 Cyber Security Course/Tools.md",
     "0.0 Cyber Security Course/Notes/Week 06/20240801 - Day 028.md",
     "0.0 Cyber Security Course/Cyber Security Course.md",
     "1.0 Types of Attacks & Defense/1.2 Defense/1.2.1 Types of Defense.md",
