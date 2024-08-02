@@ -154,7 +154,13 @@ Resources
 				current_time = datetime.datetime.now()
 				print(current_time)
 			- 
-
+- import
+	- random
+	- getpass
+	- os
+	- time
+	- pygame
+	- 
 
 - chr()
 	- convert an Integer in ASCII to a character/letter
