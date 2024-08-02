@@ -1,14 +1,14 @@
 "With great responsibility comes great power." - Mark Manson
 
-**All content in this repository are for the purposes of education, knowledge and understanding how to better protect a system. All information held within is publicly available.**
+**All content in this repository are for the purposes of education, knowledge and understanding how to better protect a system. All information held within is from publicly available sources and my thought-process.**
 
 Confidentiality
 Integrity
 Availability
-	of information
+	*of information*
 (CIA)
 
-[[Class Topics]]
+[[Topics]]
 
 [[Certifications]]
 
