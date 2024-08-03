@@ -175,7 +175,7 @@ Resources
 		- print(i, end="\\v")
 			- I have no idea how to describe this... 
 	- sep=
-- f0strings (format)
+- f-strings (format)
 	- Format
 	- Method to combine variables and text together
 		 var1
@@ -184,7 +184,25 @@ Resources
 		 print("this is {} who is {}, and loves to {}".format(var1, var2, var3))
 	- Looking at the example above you can actually format the fugger properly :)
 	- Pattern as you may have picked up is that the variables (in sequential order) go where the curly brackets are placed (the {}'s ) ;) 
-	- 
+	- The format can also call the local variables within the curlys, as per below:
+		 var1
+		 var2
+		 var3
+		 print("This is {var1} who is {var2} and doesn't like to {var3}".format(var1=var1, var2=var2, var3=var3))
+	 - Better yet bruv, do it like this:
+		  var1
+		  var2
+		  var3
+		  print(f"This is {var1} who is {var2} and straight up loves to {var3}.")
+	 - Easy and clean
+	 - Gaps
+		 - < left
+		 - > right
+		 - ^ centre
+			 - print(f"Counting from {i: <2} of {var}")
+			 - and so on
+		 - 
+	 - 
 - chr()
 	- convert an Integer in ASCII to a character/letter
 - ord()
