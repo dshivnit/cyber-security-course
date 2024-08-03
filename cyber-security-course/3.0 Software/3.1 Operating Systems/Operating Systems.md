@@ -3,12 +3,9 @@
 [[3.1.3.0 Operating Systems (Servers)]]
 - *List others here ie RTOS, others*
 
-Tools
-(these will have to be placed in their respective sub-topic headings)
-- Task Manager
-- Sysinternals Process Explorer
-- Event Viewer
-- Resource Monitor
-- Process Monitor
-- Sysinternals TCPView
+Always remember, that the following *should* be secured when considering information systems:
+- Confidentiality
+- Integrity
+- Availability
+
 

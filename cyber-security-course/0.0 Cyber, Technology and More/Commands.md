@@ -125,4 +125,6 @@ zsh (z Shell) (/bin/zsh (providing it's there) will change $SHELL on the fly, zs
 		- start
 		- enable
 		- disable
-	- 
+- history
+	- lel
+- 

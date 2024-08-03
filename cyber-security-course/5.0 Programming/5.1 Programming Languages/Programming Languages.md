@@ -36,3 +36,4 @@
 		- garbage collection
 		- structural typing
 		- CSP-style concurrency
+- Rust

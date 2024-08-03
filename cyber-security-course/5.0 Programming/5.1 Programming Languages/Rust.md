@@ -1,0 +1,6 @@
+- Cargo
+	- Rust's build system and package manager
+	- Building code
+	- Downloading required libraries
+		- Further building those libraries
+- 

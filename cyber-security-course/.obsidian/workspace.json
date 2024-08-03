@@ -14,122 +14,26 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "0.0 Cyber, Technology and More/Notes/To-Do's.md",
+                "file": "4.0 Networking/Networking.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "533bd73318185975",
+            "id": "2195421a62eb23f5",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "1.0 Types of Attacks & Defense/1.1 Attacks/1.1.1 Types of Attacks.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "fdbff60209ec67f2",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "5.0 Programming/5.1 Programming Languages/Python.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "92ae6b3198c2986b",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "0.0 Cyber, Technology and More/Cyber, Technology and More.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "7dfee3d29c34c888",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "5.0 Programming/5.1 Programming Languages/Programming Languages.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "353e6e80a83ffd50",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "0.0 Cyber, Technology and More/Notes/CyberSec Course/Week 06/20240801 - Day 028.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "f5b3e960c42bc691",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "3.0 Software/3.1 Operating Systems/3.1.1 Desktops & Laptops/3.1.1.1 Windows (10 & 11).md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "f2442f07bf6f1748",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "3.0 Software/3.1 Operating Systems/3.1.1 Desktops & Laptops/3.1.1.2 Linux & Unix.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "db2bab89e9b06213",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "0.0 Cyber, Technology and More/Notes/To-Do's.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "02a2a6ddb12b25f3",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "0.0 Cyber, Technology and More/Commands.md",
+                "file": "0.0 Cyber, Technology and More/Terminologies.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
         ],
-        "currentTab": 3
+        "currentTab": 1
       },
       {
         "id": "2fb0e64401067da2",
@@ -142,74 +46,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "0.0 Cyber, Technology and More/Resources.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "fb52ed3c136e1f20",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "0.0 Cyber, Technology and More/Notes/Clones Made.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "c28767092f372e4f",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "1.0 Types of Attacks & Defense/Cyber Security - Risk Assessments.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "099d36083ce48023",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "0.0 Cyber, Technology and More/Tools.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "d6a1b7c0647d55ba",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "0.0 Cyber, Technology and More/Commands.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "b2bcbb613283167f",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "0.0 Cyber, Technology and More/Notes/To-Do's (RANDO).md",
+                "file": "1.0 Types of Attacks & Defense/1.2 Defense/SOC - Security Operations Centre.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ],
-        "currentTab": 3
+        ]
       }
     ],
     "direction": "vertical"
@@ -275,7 +118,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "0.0 Cyber, Technology and More/Tools.md",
+                "file": "1.0 Types of Attacks & Defense/1.2 Defense/SOC - Security Operations Centre.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -292,7 +135,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "0.0 Cyber, Technology and More/Tools.md",
+                "file": "1.0 Types of Attacks & Defense/1.2 Defense/SOC - Security Operations Centre.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -327,7 +170,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "0.0 Cyber, Technology and More/Tools.md"
+                "file": "1.0 Types of Attacks & Defense/1.2 Defense/SOC - Security Operations Centre.md"
               }
             }
           }
@@ -349,74 +192,39 @@
       "command-palette:Open command palette": false
     }
   },
-  "floating": {
-    "id": "ba24c08f10bf1687",
-    "type": "floating",
-    "children": [
-      {
-        "id": "839135c51968c65c",
-        "type": "window",
-        "children": [
-          {
-            "id": "1b7c3338dc88f90a",
-            "type": "tabs",
-            "children": [
-              {
-                "id": "4d78c8a6017b2bdd",
-                "type": "leaf",
-                "state": {
-                  "type": "markdown",
-                  "state": {
-                    "file": "5.0 Programming/5.1 Programming Languages/Python.md",
-                    "mode": "source",
-                    "source": false
-                  }
-                }
-              }
-            ]
-          }
-        ],
-        "direction": "vertical",
-        "x": 2890,
-        "y": 0,
-        "width": 950,
-        "height": 1032,
-        "maximize": false,
-        "zoom": 0
-      }
-    ]
-  },
-  "active": "099d36083ce48023",
+  "active": "8aa59529a0e8fd65",
   "lastOpenFiles": [
-    "5.0 Programming/5.1 Programming Languages/Python.md",
-    "0.0 Cyber, Technology and More/Tools.md",
+    "0.0 Cyber, Technology and More/Terminologies.md",
+    "4.0 Networking/Networking.md",
+    "1.0 Types of Attacks & Defense/1.2 Defense/SOC - Security Operations Centre.md",
+    "1.0 Types of Attacks & Defense/1.2 Defense/1.2.1 Types of Defense.md",
+    "1.0 Types of Attacks & Defense/1.1 Attacks/Methodologes and TTPs.md",
+    "1.0 Types of Attacks & Defense/1.1 Attacks/1.1.1 Types of Attacks.md",
+    "2.0 Hardware/2.5 Network/Network Hardware (Devices).md",
+    "0.0 Cyber, Technology and More/Commands.md",
+    "2.0 Hardware/2.5 Network",
     "0.0 Cyber, Technology and More/Cyber, Technology and More.md",
+    "0.0 Cyber, Technology and More/Notes/Notes.md",
+    "0.0 Cyber, Technology and More/Certifications.md",
+    "3.0 Software/3.1 Operating Systems/Operating Systems.md",
+    "3.0 Software/3.1 Operating Systems/3.1.3 Servers/3.1.3.0 Operating Systems (Servers).md",
+    "3.0 Software/3.1 Operating Systems/3.1.1 Desktops & Laptops/3.1.1.2 Linux & Unix.md",
+    "5.0 Programming/5.1 Programming Languages/Rust.md",
+    "5.0 Programming/5.1 Programming Languages/Python.md",
+    "0.0 Cyber, Technology and More/Notes/To-Do's (RANDO).md",
+    "0.0 Cyber, Technology and More/Notes/To-Do's.md",
+    "0.0 Cyber, Technology and More/Resources.md",
+    "5.0 Programming/5.1 Programming Languages/Programming Languages.md",
+    "0.0 Cyber, Technology and More/Tools.md",
     "0.0 Cyber, Technology and More/Notes/CyberSec Course/Week 07/20240803 - Day 030.md",
     "0.0 Cyber, Technology and More/Notes/CyberSec Course",
     "0.0 Cyber, Technology and More/Topics.md",
     "0.0 Cyber, Technology and More/Notes/CyberSec Course/Week 07",
     "14.0 Project Methodologies/Methodologies.md",
-    "0.0 Cyber, Technology and More/Terminologies.md",
     "14.0 Project Methodologies",
-    "1.0 Types of Attacks & Defense/1.1 Attacks/1.1.1 Types of Attacks.md",
-    "0.0 Cyber, Technology and More/Commands.md",
-    "3.0 Software/3.1 Operating Systems/3.1.1 Desktops & Laptops/3.1.1.2 Linux & Unix.md",
     "1.0 Types of Attacks & Defense/Cyber Security - Risk Assessments.md",
     "0.0 Cyber, Technology and More/Notes/Clones Made.md",
-    "0.0 Cyber, Technology and More/Notes/CyberSec Course/Week 06/20240802 - Day 029.md",
     "99.99 Images Used/RiskMatrixSchema.png",
-    "3.0 Software/3.1 Operating Systems/3.1.1 Desktops & Laptops/3.1.1.1 Windows (10 & 11).md",
-    "0.0 Cyber, Technology and More/Notes/To-Do's.md",
-    "3.0 Software/3.1 Operating Systems/3.1.1 Desktops & Laptops/3.1.1.0 Operating Systems (Desktops & Laptops).md",
-    "0.0 Cyber, Technology and More/Notes/To-Do's (RANDO).md",
-    "0.0 Cyber, Technology and More/Notes/CyberSec Course/Week 06/20240801 - Day 028.md",
-    "1.0 Types of Attacks & Defense/1.2 Defense/1.2.1 Types of Defense.md",
-    "5.0 Programming/5.1 Programming Languages/Programming Languages.md",
-    "0.0 Cyber, Technology and More/People.md",
-    "0.0 Cyber, Technology and More/Resources.md",
-    "0.0 Cyber, Technology and More/Notes/CyberSec Course/Week 06/20240731 - Day 027.md",
-    "4.0 Networking/LANs/LANs.md",
-    "4.0 Networking/Networking.md",
     "4.0 Networking/LANs",
     "0.0 Cyber, Technology and More/Notes/CyberSec Course/Week 06",
     "4.0 Networking/The Stacks",
@@ -424,7 +232,6 @@
     "0.0 Cyber, Technology and More/Notes/CyberSec Course/Week 05",
     "0.0 Cyber Security Course/Notes/Week 04/Untitled",
     "Untitled.canvas",
-    "4.0 Networking/Web Browsers",
     "Untitled 1.canvas",
     "99.99 Images Used/TutorialsPointProcThrComparison.png",
     "99.99 Images Used/Reddit_csharp_HandlesDef.png",

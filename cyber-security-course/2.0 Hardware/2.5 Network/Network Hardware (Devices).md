@@ -1,0 +1,4 @@
+- Firewall appliance
+- IDS - Intrusion Detection System appliance
+- IPS - Intrusion Prevention System appliance
+- VPN - Virtual Private Network concentrator appliance

@@ -391,3 +391,5 @@
 		- Unless there is an offline or offsite backup
 - GRC
 	- Governance, Risk (management) and Compliance
+- NSM
+	- Network Security Monitoring

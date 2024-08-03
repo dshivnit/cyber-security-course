@@ -59,8 +59,6 @@ Availability
 
 [[Notes]]
 
-[[To-Do's (RANDO)]]
-
 [[Clones Made]]
 
 
