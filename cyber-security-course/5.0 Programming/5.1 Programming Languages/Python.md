@@ -104,7 +104,7 @@ Resources
 			print("Hello " + name + "! Nice to meet you.")
 		sayHello("Shiv") # Output here would be "Hello Shiv! Nice to meet you"
 	- def
-		- keyword that indicates the beginning of a function
+		- keyword that indicates the beginning of a function, called SUBROUTINES in Python
 	- name
 		- the def function call is then followed by a name that the developer will chose
 		- In the example above it is sayHello
@@ -112,7 +112,7 @@ Resources
 	- A colon marks the end of a function header
 		- Similar to IF statements and ELIF statements
 	- There are always indents following a colon from what I've observed
-- Functions can return a result
+- Functions... Subroutines can return a result
 	- Example
 		def calcCost(item):
 			if ( item == "banana"):
@@ -160,8 +160,31 @@ Resources
 	- os
 	- time
 	- pygame
-	- 
 
+- print
+	- end=
+		- print(variable_whatever, end="Stringies")
+		- print(i, end="\\n") 
+			- Feeder to the next line at the end
+		- print(i, end=", ")
+			- print i (in this context from a range) in one line, with a comma and a space between each value
+		- print(i, end="")
+			- Print i in one line, without any spaces, all nice and tight smelling each other
+		- print(i, end="\\t")
+			- What do you think it does, off the bat, that backslash t will add a tab limiter/space between each value, on one line
+		- print(i, end="\\v")
+			- I have no idea how to describe this... 
+	- sep=
+- f0strings (format)
+	- Format
+	- Method to combine variables and text together
+		 var1
+		 var2
+		 var3
+		 print("this is {} who is {}, and loves to {}".format(var1, var2, var3))
+	- Looking at the example above you can actually format the fugger properly :)
+	- Pattern as you may have picked up is that the variables (in sequential order) go where the curly brackets are placed (the {}'s ) ;) 
+	- 
 - chr()
 	- convert an Integer in ASCII to a character/letter
 - ord()
