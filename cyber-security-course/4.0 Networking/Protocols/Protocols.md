@@ -69,3 +69,13 @@
 	- IMAP Secure Port: 443
 - SOCKS
 	- An Internet protocol that exchanges network packets between a client and a server through a proxy server. 
+- SMB
+	- Server Message Block Protocol
+- NetBEUI
+	- Non-routable protocol that is designed for a single LAN segment
+	- Doesn't contain a network address for routing to different networks
+- IPX/SPX
+	- Internetwork Packet Exchange / Sequenced Packet Exchange
+	- Used on MS Windows LANs
+	- Not really used these days
+- 

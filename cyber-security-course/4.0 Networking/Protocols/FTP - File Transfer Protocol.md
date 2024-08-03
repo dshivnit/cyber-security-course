@@ -1,0 +1,15 @@
+- Port 21 (and 20)
+- Sessions operate using two channels:
+	- command (control) channel
+	- data channel
+- Client-server protocol
+- Active Connection
+	- Client opens a port and listens
+	- Server actively connects to it
+- Passive Connection
+	- Server opens a port and listens
+	- Client connects to it
+- Separation of channels allows for commands to be sent whilst waiting for current data transfers to complete
+	- More efficient
+- unencrypted (note, this is not sFTP but just FTP)
+- 

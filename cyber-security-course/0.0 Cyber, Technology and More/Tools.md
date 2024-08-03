@@ -45,7 +45,7 @@ ie Windows applications/software, Other OS applications/software, PowerShell too
 			- Forms somewhat of a baseline
 			- (do you want to accept ICMP or not?)
 				- -sn ip_netaddr.+1-254 for example
-	- **-p0- asks Nmap to scan every possible TCP port**, -v asks Nmap to be verbose about it, -A enables aggressive tests such as remote OS detection, service/version detection, and the Nmap Scripting Engine (NSE). Finally, -T4 enables a more aggressive timing policy to speed up the scan. (nmap.org)
+	- **-p- asks Nmap to scan every possible TCP port**, -v asks Nmap to be verbose about it, -A enables aggressive tests such as remote OS detection, service/version detection, and the Nmap Scripting Engine (NSE). Finally, -T4 enables a more aggressive timing policy to speed up the scan. (nmap.org)
 	- https://www.stationx.net/nmap-cheat-sheet/
 	- -open : Only show open (or possibly open) ports
 	- example: nmap -open -p- -T5 *ip_address/hostname*
@@ -54,7 +54,7 @@ ie Windows applications/software, Other OS applications/software, PowerShell too
 		- Trying to go as fast as it can
 	- -sV : Probe open ports to determine service/version info
 	- -sC : equivalent to --script=default
-	- -P- : scan all ports
+	- -p- : scan all ports
 	- -sT
 		- TCP Connect Scans
 	- -sS
@@ -233,6 +233,9 @@ ie Windows applications/software, Other OS applications/software, PowerShell too
 		- filetype:log "password" site:whatevs.com
 	- backup dirs:
 		- intitle:"index of" "backup" site:whatevssss.com
+- enum4linux
+	- enumerate SMB shares (both on Win and Linux platforms)
+- smbclient
 - 
 
 

@@ -9,7 +9,7 @@ Encapsulation and decapsulation are terms to define the adding and removing of s
 
 It is also useful to note that you can identify technical issues and which layer they reside in - some Teams in the professional/corporate environment tend to live and focus in specific areas, and will relay with other Teams to further troubleshoot identified issues. (ie Network Engineers to Software Developers and so on)
 
-- Application
+- Application - 7th
 	- Email Clients
 	- Web Browsers
 	- GUI-based Applications
@@ -18,12 +18,12 @@ It is also useful to note that you can identify technical issues and which layer
 	- SSH
 	- HTTP
 	- SMTP
-- Presentation
+- Presentation - 6th
 	- Acts as a translator for data to and from the 7th layer. 
 	- The receiving computer will also understand data sent to a computer in one format destined for another format
 	- You may send an email with Outlook, however, the person receiving it may be using Thunderbird. 
 		- Either way the content will still need to be presented in the same way
-- Session
+- Session - 5th
 	- The Fifth Layer
 	- Will begin to create a connection to the computer that the data from the previous, Sixth Layer, is meant for.
 	- When a connection is established, a session is created
@@ -33,7 +33,7 @@ It is also useful to note that you can identify technical issues and which layer
 		- This is helpful as if the connection between the two nodes happens to go down, then it will only be the remaining packets that will need to be sent. 
 	- Sessions are unique
 		- Data doesn't travel over different sessions but stay within the one
-- Transport
+- Transport - 4th
 	- TCP (Transmission Control Protocol)
 		- Three-way handshake
 		- Connection-based
@@ -96,9 +96,8 @@ It is also useful to note that you can identify technical issues and which layer
 			- Destination Address
 			- Source Port
 			- Destination Port
-			- Data
-		
-- Network
+			- Data	
+- Network - 3rd
 	- Routing
 	- Re-assembly of data
 	- Determines the optimal path that packets should travel
@@ -107,14 +106,14 @@ It is also useful to note that you can identify technical issues and which layer
 	- RIP
 		- Routing Information Protocol
 	- Everything IP Address
-- Data Link
+- Data Link - 2nd
 	- Frames
 		- No IP addresses
 	- MAC Addresses associated with NICs (Network Interface Cards)
 	- MAC Addy's can't be changed, BUT they can be spoofed
 	- When data is transmitted, it is the MAC (physical) Address that is used to identify where it came from
 	- Also responsible for presenting data suitable for transmission
-- Physical
+- Physical - 1st
 	- 1s 
 	- 0s
 	- Electrical signals being transmitted

@@ -1,0 +1,4 @@
+- Application protocol
+- Everything's sent in plaintext, darpe
+- Replaced by SSH for the most part, 99.99% :) 
+- 
