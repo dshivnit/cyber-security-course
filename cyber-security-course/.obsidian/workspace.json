@@ -26,7 +26,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "0.0 Cyber, Technology and More/Terminologies.md",
+                "file": "0.0 Cyber, Technology and More/Tools.md",
                 "mode": "source",
                 "source": false
               }
@@ -46,13 +46,38 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "1.0 Types of Attacks & Defense/1.2 Defense/SOC - Security Operations Centre.md",
+                "file": "1.0 Types of Attacks & Defense/Methodologes and TTPs.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "c1b18c53868edbf6",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "1.0 Types of Attacks & Defense/Types of Attacks & Defense.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "daa5ddfb95e0616d",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "0.0 Cyber, Technology and More/Terminologies.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ]
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -118,7 +143,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "1.0 Types of Attacks & Defense/1.2 Defense/SOC - Security Operations Centre.md",
+                "file": "0.0 Cyber, Technology and More/Tools.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -135,7 +160,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "1.0 Types of Attacks & Defense/1.2 Defense/SOC - Security Operations Centre.md",
+                "file": "0.0 Cyber, Technology and More/Tools.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -170,7 +195,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "1.0 Types of Attacks & Defense/1.2 Defense/SOC - Security Operations Centre.md"
+                "file": "0.0 Cyber, Technology and More/Tools.md"
               }
             }
           }
@@ -192,14 +217,16 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "8aa59529a0e8fd65",
+  "active": "2195421a62eb23f5",
   "lastOpenFiles": [
     "0.0 Cyber, Technology and More/Terminologies.md",
-    "4.0 Networking/Networking.md",
-    "1.0 Types of Attacks & Defense/1.2 Defense/SOC - Security Operations Centre.md",
-    "1.0 Types of Attacks & Defense/1.2 Defense/1.2.1 Types of Defense.md",
-    "1.0 Types of Attacks & Defense/1.1 Attacks/Methodologes and TTPs.md",
+    "0.0 Cyber, Technology and More/Tools.md",
+    "1.0 Types of Attacks & Defense/Types of Attacks & Defense.md",
+    "1.0 Types of Attacks & Defense/Methodologes and TTPs.md",
     "1.0 Types of Attacks & Defense/1.1 Attacks/1.1.1 Types of Attacks.md",
+    "1.0 Types of Attacks & Defense/1.2 Defense/SOC - Security Operations Centre.md",
+    "4.0 Networking/Networking.md",
+    "1.0 Types of Attacks & Defense/1.2 Defense/1.2.1 Types of Defense.md",
     "2.0 Hardware/2.5 Network/Network Hardware (Devices).md",
     "0.0 Cyber, Technology and More/Commands.md",
     "2.0 Hardware/2.5 Network",
@@ -215,7 +242,6 @@
     "0.0 Cyber, Technology and More/Notes/To-Do's.md",
     "0.0 Cyber, Technology and More/Resources.md",
     "5.0 Programming/5.1 Programming Languages/Programming Languages.md",
-    "0.0 Cyber, Technology and More/Tools.md",
     "0.0 Cyber, Technology and More/Notes/CyberSec Course/Week 07/20240803 - Day 030.md",
     "0.0 Cyber, Technology and More/Notes/CyberSec Course",
     "0.0 Cyber, Technology and More/Topics.md",
@@ -223,7 +249,6 @@
     "14.0 Project Methodologies/Methodologies.md",
     "14.0 Project Methodologies",
     "1.0 Types of Attacks & Defense/Cyber Security - Risk Assessments.md",
-    "0.0 Cyber, Technology and More/Notes/Clones Made.md",
     "99.99 Images Used/RiskMatrixSchema.png",
     "4.0 Networking/LANs",
     "0.0 Cyber, Technology and More/Notes/CyberSec Course/Week 06",

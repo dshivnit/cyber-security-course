@@ -393,3 +393,17 @@
 	- Governance, Risk (management) and Compliance
 - NSM
 	- Network Security Monitoring
+- NSE
+	- nmap Scripting Engine
+	- Written in the Lua programming language
+			- Scanning for vulns
+			- Automating exploits
+			- Recon
+			- Categories:
+				- safe - won't affect the target
+				- intrusive - not safe, most likely will affect the target
+				- vuln - probing for vulns
+				- exploit - attempt to exp a vuln
+				- auth - attempt to bypass authentication for running services (like FTP)
+				- brute - attempt to bf creds for running services
+				- discovery - query running services for further info on the network

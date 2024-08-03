@@ -22,6 +22,29 @@ ie Windows applications/software, Other OS applications/software, PowerShell too
 - Have I Been Pwned?
 	  https://haveibeenpwned.com/
 - nmap
+	- NSE - NMap Scripting Engine
+		- Written in the Lua programming language
+			- Scanning for vulns
+			- Automating exploits
+			- Recon
+			- Categories:
+				- safe - won't affect the target
+				- intrusive - not safe, most likely will affect the target
+				- vuln - probing for vulns
+				- exploit - attempt to exp a vuln
+				- auth - attempt to bypass authentication for running services (like FTP)
+				- brute - attempt to bf creds for running services
+				- discovery - query running services for further info on the network
+		- --script=< script_name > (can use commas to run multiple scripts at za same time)
+		- /usr/share/nmap/scripts
+			- alluvdem
+			- script.db (for details of the list)
+	- ping sweep
+		- nmap will send an ICMP packet to each possible IP address in the given network
+			- It will mark valid responses as active hosts
+			- Forms somewhat of a baseline
+			- (do you want to accept ICMP or not?)
+				- -sn ip_netaddr.+1-254 for example
 	- **-p0- asks Nmap to scan every possible TCP port**, -v asks Nmap to be verbose about it, -A enables aggressive tests such as remote OS detection, service/version detection, and the Nmap Scripting Engine (NSE). Finally, -T4 enables a more aggressive timing policy to speed up the scan. (nmap.org)
 	- https://www.stationx.net/nmap-cheat-sheet/
 	- -open : Only show open (or possibly open) ports
@@ -31,8 +54,63 @@ ie Windows applications/software, Other OS applications/software, PowerShell too
 		- Trying to go as fast as it can
 	- -sV : Probe open ports to determine service/version info
 	- -sC : equivalent to --script=default
-		- example: nmap -sC -sV *ip_address/hostname*
-		- nmap -p- --min-rate 1000 -sV *ipaddress*
+	- -P- : scan all ports
+	- -sT
+		- TCP Connect Scans
+	- -sS
+		- SYN "Half-open" scans, or "stealth" scans
+		- Second packet sent is an RST to stop the other side from repeatedly trying to get an ACK back (this is after getting a SYN/ACK from it)
+		- Some services are bought down by SYN scans
+			- Keep this in mind if the client (or scenario) involves a Prod Env
+		- Can be issued with CAP_NET_RAW, CAP_NET_ADMIN, CAP_NET_BIND_SERVICE
+			- keep note that this may bugger some of the NSE scripts to run
+		- SYN scans do not form the whole three-way handshake, 'member that
+			- Hence why they're considered half-open and stealthy, as most detection systems will only pick up active connections, wherein a handshake has been completed
+				- *This to be contested with further research down the line and testing*
+	- -sU
+		- UDP Scans
+		- UDP ports don't respond. (response given by end-node is "open|filtered")
+			- Closed is closed (unreachable)
+			- Responses given with ICMP
+		- Consider, top 20 ports being UDP scanned (system design to revert commonly used ports and so on)
+		- UDP scans with NMAP take a long, long time. 
+	- -sN
+		- TCP Null Scans
+		- No flag packet sent
+	- -sF
+		- TCP FIN Scans
+		- FIN flag packet sent
+	- -sX
+		- TCP Xmas Scans
+		- A radiated mungbean packet is sent
+				The last three above will expect a 'open|filtered' 'closed' or 'filtered' response
+				if a filtered response is given, the other side sent an ICMP packet
+				RFC 793 states that hosts respond to malformed (radiated mungbean ;) ) packets with a RST TCP packet for ports that are closed
+					No response at all for open ports.
+				Consider:
+					Most firewalls drop TCP packets to blocked ports which have the SYN flag set.
+						Sending packets which aren't with a SYN flag steps through this (depends on *design* and config)
+					Windows and Cisco devices respond with an RST packet to a radiated mungbean incoming packet
+						Which describes a closed port, when in actuality it is open.
+	- -Pn
+		- Don't send an ICMP / ping packet before scanning 
+		- nmap will treat the host as being alive
+			- bypasses ICMP blocks
+			- Takes a flapping long time (even if the host truly is offline, or not there)
+				consider: ARP
+	- -f
+		- Fragment packets
+	- --mtu (maximum transmittable unit) < number >
+		- (has to be a multiple of 8)
+	- --scan-delay < time >ms
+	- --badsum
+		- bad bad
+	- -sn
+		- ICMP network sweep
+		- can also do subnet masks
+		- either ICMP or ARP (sudo'd)
+	- **Question - how do you design your system. to best defend it from such?** 
+		
 - redis-tools
 	- installed in Ubuntu (apt install redis-tools)
 - GoBuster
