@@ -419,4 +419,13 @@
 	- Set User ID
 - SCP
 	- Secure Copy Protocol
-- 
+- Foo (Metasyntactic Variable)
+	- Termed used by developers as a placeholder for a value that can change
+	- depending on conditions or on information passed to the program
+	- Otherwise known as a Metasyntactic Variable
+- MTA
+	- Mail Transfer Agent
+	- Responsible for receiving Email messages
+- Postfix
+	- An MTA agent
+	- An open-source MTA that routes and delivers Emails
