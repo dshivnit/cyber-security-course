@@ -407,3 +407,16 @@
 				- auth - attempt to bypass authentication for running services (like FTP)
 				- brute - attempt to bf creds for running services
 				- discovery - query running services for further info on the network
+- NFS
+	- Network File System
+- NFSD
+	- Network File System Daemon
+- NLM
+	- Network Lock Manager
+- RPC
+	- Remote Procedure Call
+- SUID
+	- Set User ID
+- SCP
+	- Secure Copy Protocol
+- 

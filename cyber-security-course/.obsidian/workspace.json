@@ -26,7 +26,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "4.0 Networking/Protocols/Telnet.md",
+                "file": "4.0 Networking/Protocols/NFS - Network File System (and NFS Protocol).md",
                 "mode": "source",
                 "source": false
               }
@@ -53,12 +53,12 @@
             }
           },
           {
-            "id": "c1b18c53868edbf6",
+            "id": "a3b0dea41cef84c5",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "1.0 Types of Attacks & Defense/Types of Attacks & Defense.md",
+                "file": "4.0 Networking/Protocols/Protocols.md",
                 "mode": "source",
                 "source": false
               }
@@ -77,30 +77,6 @@
             }
           },
           {
-            "id": "a3b0dea41cef84c5",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "4.0 Networking/Protocols/Protocols.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "4520a9cadf92800d",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "4.0 Networking/Protocols/FTP - File Transfer Protocol.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
             "id": "eb2f56ae21edf16b",
             "type": "leaf",
             "state": {
@@ -111,21 +87,9 @@
                 "source": false
               }
             }
-          },
-          {
-            "id": "9800385627654158",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "4.0 Networking/The Stacks/Open Systems Interconnect (OSI) Stack (Model -- I call it a stack alright! =P).md",
-                "mode": "source",
-                "source": false
-              }
-            }
           }
         ],
-        "currentTab": 4
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -191,7 +155,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "5.0 Programming/5.1 Programming Languages/Python.md",
+                "file": "4.0 Networking/Protocols/NFS - Network File System (and NFS Protocol).md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -208,7 +172,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "5.0 Programming/5.1 Programming Languages/Python.md",
+                "file": "4.0 Networking/Protocols/NFS - Network File System (and NFS Protocol).md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -243,7 +207,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "5.0 Programming/5.1 Programming Languages/Python.md"
+                "file": "4.0 Networking/Protocols/NFS - Network File System (and NFS Protocol).md"
               }
             }
           }
@@ -265,55 +229,20 @@
       "command-palette:Open command palette": false
     }
   },
-  "floating": {
-    "id": "5efd1a3f3b27d6b5",
-    "type": "floating",
-    "children": [
-      {
-        "id": "dbba3c9f7b570543",
-        "type": "window",
-        "children": [
-          {
-            "id": "f148756b66905438",
-            "type": "tabs",
-            "children": [
-              {
-                "id": "7c21ef98f44ceb44",
-                "type": "leaf",
-                "state": {
-                  "type": "markdown",
-                  "state": {
-                    "file": "5.0 Programming/5.1 Programming Languages/Python.md",
-                    "mode": "source",
-                    "source": false
-                  }
-                }
-              }
-            ]
-          }
-        ],
-        "direction": "vertical",
-        "x": 2880,
-        "y": 0,
-        "width": 960,
-        "height": 1032,
-        "maximize": false,
-        "zoom": 0
-      }
-    ]
-  },
-  "active": "7c21ef98f44ceb44",
+  "active": "2195421a62eb23f5",
   "lastOpenFiles": [
-    "4.0 Networking/Protocols/FTP - File Transfer Protocol.md",
-    "5.0 Programming/5.1 Programming Languages/Python.md",
     "0.0 Cyber, Technology and More/Tools.md",
-    "4.0 Networking/Protocols/SMB - Server Message Block Protocol.md",
-    "0.0 Cyber, Technology and More/Commands.md",
-    "4.0 Networking/Protocols/Telnet.md",
-    "1.0 Types of Attacks & Defense/1.1 Attacks/1.1.1 Types of Attacks.md",
-    "4.0 Networking/The Stacks/Open Systems Interconnect (OSI) Stack (Model -- I call it a stack alright! =P).md",
+    "4.0 Networking/Protocols/NFS - Network File System (and NFS Protocol).md",
     "4.0 Networking/Protocols/Protocols.md",
     "0.0 Cyber, Technology and More/Terminologies.md",
+    "4.0 Networking/LANs/LANs.md",
+    "4.0 Networking/Protocols/Telnet.md",
+    "4.0 Networking/Protocols/FTP - File Transfer Protocol.md",
+    "5.0 Programming/5.1 Programming Languages/Python.md",
+    "4.0 Networking/Protocols/SMB - Server Message Block Protocol.md",
+    "0.0 Cyber, Technology and More/Commands.md",
+    "1.0 Types of Attacks & Defense/1.1 Attacks/1.1.1 Types of Attacks.md",
+    "4.0 Networking/The Stacks/Open Systems Interconnect (OSI) Stack (Model -- I call it a stack alright! =P).md",
     "1.0 Types of Attacks & Defense/Types of Attacks & Defense.md",
     "1.0 Types of Attacks & Defense/Methodologes and TTPs.md",
     "1.0 Types of Attacks & Defense/1.2 Defense/SOC - Security Operations Centre.md",
@@ -329,8 +258,6 @@
     "3.0 Software/3.1 Operating Systems/3.1.1 Desktops & Laptops/3.1.1.2 Linux & Unix.md",
     "5.0 Programming/5.1 Programming Languages/Rust.md",
     "0.0 Cyber, Technology and More/Notes/To-Do's (RANDO).md",
-    "0.0 Cyber, Technology and More/Notes/To-Do's.md",
-    "0.0 Cyber, Technology and More/Resources.md",
     "0.0 Cyber, Technology and More/Notes/Course",
     "0.0 Cyber, Technology and More/Notes/Course/Week 07",
     "14.0 Project Methodologies",

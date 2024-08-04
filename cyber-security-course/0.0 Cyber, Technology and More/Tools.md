@@ -236,8 +236,34 @@ ie Windows applications/software, Other OS applications/software, PowerShell too
 - enum4linux
 	- enumerate SMB shares (both on Win and Linux platforms)
 - smbclient
-- 
-
+- - nfs-common
+			-  Used by both Clients and Servers
+			- Client side > can issue a command to choose a location to house the $SHARE to
+- sudo mount -t nfs IP:share /tmp/mount/ -nolock
+	for example ^
+	- -t 
+		- Defines what kind of system we are mounting to, in this case it will be an NFS system
+	- IP:share
+		- the IP address of the Server were are looking at, along with the name of the share
+			- '/tmp/mount'
+				- wise to chuck it into tmp
+	- -nolock
+		- toggle to use no NLM (Network Lock Manager) lock
+	- In example:
+	  sudo mount -t nfs 1.2.3.4:sharefolder /tmp/mount/ -nolock
+- SCP
+	- Secure Copy Protocol
+- chmod
+	- chmod u+s file
+		- switches SUID for the current user
+		- g+s would toggle it for the group
+	- u+r
+		- Read
+	- u+x
+		- Execute
+			- and so on
+	- there are switches in numbers as well
+		- 
 
 
 
