@@ -91,4 +91,45 @@ Identification and Authentication Failures
 	- Strong password policies
 	- Login attempt count and timeout for numerous unsuccessful attempts
 	- MFA and additional login processes
-	- 
+	- Sanitise logins
+
+Software and Data Integrity Failures
+- Data Integrity
+	- The need to ensure that data remains credible and is unjustifiably modified. 
+		- ie, whatever you may be accessing on the Internet, is it how it should be? You aren't seeing that data/information live on the server, it is being transferred to you - has anything happened in transit? Has it been manipulated, corrupted? 
+		- Checksums have been put in place for scenarios like the above - so that both ends know that the integrity of the file is how it should be with ACKs and confirmations. Usually in the form of a hash
+- Mitigation
+	- Do integrity checks on both sides! (well, mainly on the receiving side)
+- Software Integrity Failures
+	- Linking to external/third-party resources
+		- Such as linking a script in src to an external reference)
+		- It's not in your zone/scope to maintain the integrity of that external source, if it becomes compromised that inadvertently will impact the security of your system as well
+		- Subresource Integrity (SRI) - Mordern Web-Browsers have an integrity check comparing hash's between entities (sources and receivers/pullers) to ensure .. Integrity (farms)
+			- srihash.org
+- Data Integrity Failures
+	- Session Tokens
+		- Cookies
+			- Key-value pairs that a WebApp will store on the Users end that will be automatically repeated with each Request made to the Website, by that User
+			- Each User would have their own Cookie that would contain their Username
+			- The Server would know which User/Session to respond to by with what is sent by the Client's Browser (what Cookie is sent) 
+			- Nothing is stopping the User from tampering with said Cookie
+				- Could potentially lead to a failure in data integrity 
+				- Mitigation:
+					- Integrity mechanism(s)
+					- ie JSON Web Tokens
+						- use of either a private secret or a public/private key between Server and Client
+						- JWT Tokens are formed with three parts:
+							- Header
+								- Indicating that *this* is a JWT
+								- Signing algorithm (ie HS256)
+							- Payload
+								- If this is changed, the Websystem will know by verifying that the signature won't match the payload
+							- Signature
+						- Unlike simple hashing, this matching signature needs and uses the Secret Key method. 
+						- The three-parted token is simply plaintext encoded with base64
+					- Vulnerability
+						- JWT and the None Algorithm
+							- Changing the alg: part of the header to "none" from whatever algorithm was in there prior
+							- Payload "username" to admin
+							- This vuln was from a while ago
+						- 

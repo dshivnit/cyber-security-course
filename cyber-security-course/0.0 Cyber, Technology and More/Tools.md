@@ -269,9 +269,21 @@ ie Windows applications/software, Other OS applications/software, PowerShell too
 - Wappalyzer
 - sqlite3
 	- Client for querying a flat-file SQLite Database
+- WinSCP
+	- File Manager
+	- SSH FTP
+	- FTP
+	- WebDAV
+		- Web-based Distributed Authoring and Versioning
+	- Amazon S3
+	- Secure Copy
+- Hash Checking
+	- md5sum "filename"
+	- sha1sum "filename"
+	- sha256sum "filename"
 - 
 
-
+------------------
 
 - IDEs (Integrated Development Environment)
   *revise these*

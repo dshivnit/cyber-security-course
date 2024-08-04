@@ -19,18 +19,6 @@
                 "source": false
               }
             }
-          },
-          {
-            "id": "f631783633f30c81",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "0.0 Cyber, Technology and More/Tools.md",
-                "mode": "source",
-                "source": false
-              }
-            }
           }
         ]
       },
@@ -62,21 +50,9 @@
                 "source": false
               }
             }
-          },
-          {
-            "id": "e53e088fd3d02201",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "8.0 Databases/SQLite.md",
-                "mode": "source",
-                "source": false
-              }
-            }
           }
         ],
-        "currentTab": 2
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -229,7 +205,31 @@
             "type": "tabs",
             "children": [
               {
-                "id": "3e8eda67830a8eb4",
+                "id": "f631783633f30c81",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "0.0 Cyber, Technology and More/Tools.md",
+                    "mode": "source",
+                    "source": false
+                  }
+                }
+              },
+              {
+                "id": "acdb63e67d03afdc",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "0.0 Cyber, Technology and More/Terminologies.md",
+                    "mode": "source",
+                    "source": false
+                  }
+                }
+              },
+              {
+                "id": "e53e088fd3d02201",
                 "type": "leaf",
                 "state": {
                   "type": "markdown",
@@ -240,7 +240,8 @@
                   }
                 }
               }
-            ]
+            ],
+            "currentTab": 2
           }
         ],
         "direction": "vertical",
@@ -253,16 +254,16 @@
       }
     ]
   },
-  "active": "3e8eda67830a8eb4",
+  "active": "e53e088fd3d02201",
   "lastOpenFiles": [
-    "8.0 Databases/SQLite.md",
+    "0.0 Cyber, Technology and More/Tools.md",
     "1.0 Types of Attacks & Defense/1.1 Attacks/OWASP Top 10.md",
+    "8.0 Databases/SQLite.md",
+    "0.0 Cyber, Technology and More/Terminologies.md",
     "0.0 Cyber, Technology and More/Notes/Course/Week 07/20240805 - Day 030.md",
     "4.0 Networking/Networking.md",
-    "0.0 Cyber, Technology and More/Tools.md",
     "8.0 Databases/MySQL.md",
     "8.0 Databases/SQL.md",
-    "0.0 Cyber, Technology and More/Terminologies.md",
     "4.0 Networking/Protocols/Protocols.md",
     "1.0 Types of Attacks & Defense/1.1 Attacks/1.1.1 Types of Attacks.md",
     "4.0 Networking/BurpSuite.md",

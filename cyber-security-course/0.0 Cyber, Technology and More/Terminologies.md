@@ -431,4 +431,13 @@
 	- An open-source MTA that routes and delivers Emails
 - IDOR
 	- Insecure Direct Object Reference
-	- 
+- SRI - Subresource Integrity
+	- Web-Browsers may implement this to ensure that external scripts/resources that are referenced in a Websystems code are checked for consistency
+		- (referencing a Javscript library from another source in your code)
+	- Checking the downloaded file with what is expected
+	- Example of how it should be written on the Websystem:
+		script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous">
+- JSON Web Token
+	- Proposed Internet standard for creating data with optional signature and/or optional encryption whose payload holds JSON that asserts some of numberof claims
+	- Signed either private secret or public/private key
+- 
