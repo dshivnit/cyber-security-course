@@ -14,7 +14,19 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "4.0 Networking/Networking.md",
+                "file": "1.0 Types of Attacks & Defense/1.1 Attacks/OWASP Top 10.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "f631783633f30c81",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "0.0 Cyber, Technology and More/Tools.md",
                 "mode": "source",
                 "source": false
               }
@@ -52,19 +64,19 @@
             }
           },
           {
-            "id": "eb2f56ae21edf16b",
+            "id": "e53e088fd3d02201",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "0.0 Cyber, Technology and More/Tools.md",
+                "file": "8.0 Databases/SQLite.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -130,7 +142,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "4.0 Networking/Protocols/MySQL - Structured Query Language).md",
+                "file": "1.0 Types of Attacks & Defense/1.1 Attacks/OWASP Top 10.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -147,7 +159,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "4.0 Networking/Protocols/MySQL - Structured Query Language).md",
+                "file": "1.0 Types of Attacks & Defense/1.1 Attacks/OWASP Top 10.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -182,7 +194,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "4.0 Networking/Protocols/MySQL - Structured Query Language).md"
+                "file": "1.0 Types of Attacks & Defense/1.1 Attacks/OWASP Top 10.md"
               }
             }
           }
@@ -209,20 +221,20 @@
     "type": "floating",
     "children": [
       {
-        "id": "a568528276920ccf",
+        "id": "44ebf30cf1c1613e",
         "type": "window",
         "children": [
           {
-            "id": "116a6027bacd0066",
+            "id": "9f5c319faf1d708d",
             "type": "tabs",
             "children": [
               {
-                "id": "daa5ddfb95e0616d",
+                "id": "3e8eda67830a8eb4",
                 "type": "leaf",
                 "state": {
                   "type": "markdown",
                   "state": {
-                    "file": "4.0 Networking/Protocols/MySQL - Structured Query Language).md",
+                    "file": "1.0 Types of Attacks & Defense/1.1 Attacks/OWASP Top 10.md",
                     "mode": "source",
                     "source": false
                   }
@@ -232,7 +244,7 @@
           }
         ],
         "direction": "vertical",
-        "x": 2880,
+        "x": 1920,
         "y": 0,
         "width": 960,
         "height": 1032,
@@ -241,9 +253,19 @@
       }
     ]
   },
-  "active": "daa5ddfb95e0616d",
+  "active": "3e8eda67830a8eb4",
   "lastOpenFiles": [
+    "8.0 Databases/SQLite.md",
+    "1.0 Types of Attacks & Defense/1.1 Attacks/OWASP Top 10.md",
+    "0.0 Cyber, Technology and More/Notes/Course/Week 07/20240805 - Day 030.md",
+    "4.0 Networking/Networking.md",
+    "0.0 Cyber, Technology and More/Tools.md",
+    "8.0 Databases/MySQL.md",
+    "8.0 Databases/SQL.md",
     "0.0 Cyber, Technology and More/Terminologies.md",
+    "4.0 Networking/Protocols/Protocols.md",
+    "1.0 Types of Attacks & Defense/1.1 Attacks/1.1.1 Types of Attacks.md",
+    "4.0 Networking/BurpSuite.md",
     "4.0 Networking/Protocols/MySQL - Structured Query Language).md",
     "4.0 Networking/Protocols/SMTP - Simple Mail Transfer Protocol (Port 25 normally).md",
     "99.99 Images Used/TutorialsPointProcThrComparison.png",
@@ -251,30 +273,20 @@
     "99.99 Images Used/Reddit_csharp_HandlesDef.png",
     "99.99 Images Used/Clones_20240702.png",
     "99.99 Images Used/Pasted image 20240804134321.png",
-    "0.0 Cyber, Technology and More/Tools.md",
     "4.0 Networking/Protocols/NFS - Network File System (and NFS Protocol).md",
-    "4.0 Networking/Protocols/Protocols.md",
     "4.0 Networking/LANs/LANs.md",
     "4.0 Networking/Protocols/Telnet.md",
     "4.0 Networking/Protocols/FTP - File Transfer Protocol.md",
     "5.0 Programming/5.1 Programming Languages/Python.md",
     "4.0 Networking/Protocols/SMB - Server Message Block Protocol.md",
     "0.0 Cyber, Technology and More/Commands.md",
-    "1.0 Types of Attacks & Defense/1.1 Attacks/1.1.1 Types of Attacks.md",
     "4.0 Networking/The Stacks/Open Systems Interconnect (OSI) Stack (Model -- I call it a stack alright! =P).md",
     "1.0 Types of Attacks & Defense/Types of Attacks & Defense.md",
     "1.0 Types of Attacks & Defense/Methodologes and TTPs.md",
     "1.0 Types of Attacks & Defense/1.2 Defense/SOC - Security Operations Centre.md",
-    "4.0 Networking/Networking.md",
     "1.0 Types of Attacks & Defense/1.2 Defense/1.2.1 Types of Defense.md",
     "2.0 Hardware/2.5 Network/Network Hardware (Devices).md",
     "2.0 Hardware/2.5 Network",
-    "0.0 Cyber, Technology and More/Cyber, Technology and More.md",
-    "0.0 Cyber, Technology and More/Notes/Notes.md",
-    "0.0 Cyber, Technology and More/Certifications.md",
-    "3.0 Software/3.1 Operating Systems/Operating Systems.md",
-    "3.0 Software/3.1 Operating Systems/3.1.3 Servers/3.1.3.0 Operating Systems (Servers).md",
-    "3.0 Software/3.1 Operating Systems/3.1.1 Desktops & Laptops/3.1.1.2 Linux & Unix.md",
     "0.0 Cyber, Technology and More/Notes/Course",
     "0.0 Cyber, Technology and More/Notes/Course/Week 07",
     "14.0 Project Methodologies",

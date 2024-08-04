@@ -429,3 +429,6 @@
 - Postfix
 	- An MTA agent
 	- An open-source MTA that routes and delivers Emails
+- IDOR
+	- Insecure Direct Object Reference
+	- 

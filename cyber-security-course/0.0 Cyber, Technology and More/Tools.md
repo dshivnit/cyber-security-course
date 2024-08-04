@@ -263,7 +263,13 @@ ie Windows applications/software, Other OS applications/software, PowerShell too
 		- Execute
 			- and so on
 	- there are switches in numbers as well
-		- 
+- Nessus
+- BurpSuite
+- FoxyProxy
+- Wappalyzer
+- sqlite3
+	- Client for querying a flat-file SQLite Database
+- 
 
 
 
