@@ -164,4 +164,5 @@ Server-Side Request Forgery
 - When an Adversary/Attacker manipulates a Server to send Requests on their behalf
 - They keep control of the contents of the Request
 - These vulns usually happen when the Web Application relies upon a third party services
-file://///proc/net/arp%23
+localhost:Port/admin%23&id=12345
+	%23 here is a URL-encoded "#"  (which is a comment character in URLs, anything after it isn't processed..)

@@ -14,7 +14,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "1.0 Types of Attacks & Defense/1.1 Attacks/OWASP Top 10.md",
+                "file": "5.0 Programming/5.1 Programming Languages/C.md",
                 "mode": "source",
                 "source": false
               }
@@ -31,8 +31,33 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "b7e32b6e67f3cfb3",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "5.0 Programming/5.1 Programming Languages/SQL.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "9ef36c75991e6148",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "1.0 Types of Attacks & Defense/1.1 Attacks/1.1.1 Types of Attacks.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 3
       },
       {
         "id": "2fb0e64401067da2",
@@ -141,7 +166,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "1.0 Types of Attacks & Defense/1.1 Attacks/OWASP Top 10.md",
+                "file": "1.0 Types of Attacks & Defense/1.1 Attacks/1.1.1 Types of Attacks.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -158,7 +183,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "1.0 Types of Attacks & Defense/1.1 Attacks/OWASP Top 10.md",
+                "file": "1.0 Types of Attacks & Defense/1.1 Attacks/1.1.1 Types of Attacks.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -193,7 +218,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "1.0 Types of Attacks & Defense/1.1 Attacks/OWASP Top 10.md"
+                "file": "1.0 Types of Attacks & Defense/1.1 Attacks/1.1.1 Types of Attacks.md"
               }
             }
           }
@@ -215,22 +240,25 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "02a55c9a58bc4c2f",
+  "active": "9ef36c75991e6148",
   "lastOpenFiles": [
+    "5.0 Programming/5.1 Programming Languages/SQL.md",
     "0.0 Cyber, Technology and More/Tools.md",
+    "0.0 Cyber, Technology and More/Notes/Course/Week 07/20240805 - Day 030.md",
+    "1.0 Types of Attacks & Defense/1.1 Attacks/1.1.1 Types of Attacks.md",
+    "5.0 Programming/5.1 Programming Languages/C.md",
     "1.0 Types of Attacks & Defense/1.1 Attacks/OWASP Top 10.md",
-    "3.0 Software/3.1 Operating Systems/3.1.1 Desktops & Laptops/3.1.1.2 Linux & Unix.md",
     "0.0 Cyber, Technology and More/Commands.md",
+    "0.0 Cyber, Technology and More/Notes/Course/Week 07/20240806 - Day 031.md",
+    "3.0 Software/3.1 Operating Systems/3.1.1 Desktops & Laptops/3.1.1.2 Linux & Unix.md",
     "0.0 Cyber, Technology and More/Terminologies.md",
     "5.0 Programming/5.1 Programming Languages/Python.md",
-    "0.0 Cyber, Technology and More/Notes/Course/Week 07/20240805 - Day 030.md",
     "4.0 Networking/Protocols/Protocols.md",
     "1.0 Types of Attacks & Defense/Methodologes and TTPs.md",
     "8.0 Databases/SQLite.md",
     "4.0 Networking/Networking.md",
     "8.0 Databases/MySQL.md",
     "8.0 Databases/SQL.md",
-    "1.0 Types of Attacks & Defense/1.1 Attacks/1.1.1 Types of Attacks.md",
     "4.0 Networking/BurpSuite.md",
     "4.0 Networking/Protocols/MySQL - Structured Query Language).md",
     "4.0 Networking/Protocols/SMTP - Simple Mail Transfer Protocol (Port 25 normally).md",
@@ -245,9 +273,6 @@
     "4.0 Networking/Protocols/FTP - File Transfer Protocol.md",
     "4.0 Networking/Protocols/SMB - Server Message Block Protocol.md",
     "4.0 Networking/The Stacks/Open Systems Interconnect (OSI) Stack (Model -- I call it a stack alright! =P).md",
-    "1.0 Types of Attacks & Defense/Types of Attacks & Defense.md",
-    "1.0 Types of Attacks & Defense/1.2 Defense/SOC - Security Operations Centre.md",
-    "1.0 Types of Attacks & Defense/1.2 Defense/1.2.1 Types of Defense.md",
     "2.0 Hardware/2.5 Network",
     "0.0 Cyber, Technology and More/Notes/Course",
     "0.0 Cyber, Technology and More/Notes/Course/Week 07",

@@ -282,6 +282,10 @@ ie Windows applications/software, Other OS applications/software, PowerShell too
 	- sha1sum "filename"
 	- sha256sum "filename"
 - strings (filename)
+- Poison Null Byte
+	%00
+		Null Terminator
+- 
 
 ------------------
 
