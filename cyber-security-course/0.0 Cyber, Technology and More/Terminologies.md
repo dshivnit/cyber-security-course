@@ -442,4 +442,7 @@
 	- Signed either private secret or public/private key
 - TUI
 	- Textual User Interface
-- 
+- vhost
+	- Virtual Host
+	- name-based Virtual Hosting
+	- 

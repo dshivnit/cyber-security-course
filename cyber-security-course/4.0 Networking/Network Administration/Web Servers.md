@@ -1,0 +1,11 @@
+
+- Hosts file
+	- A file that maps IP Addresses to Domain Names bypassing the usual DNS service given by DNS servers
+	- Useful for in-house, inter-business networking wherein a Web Server will be able to point to local resources for company devices to access via a Domain Name
+	- Also useful for when a Web Server is hosting multiple Websites (vhosting - Virtual Hosting)
+		- vhosting
+			- name-based virtual hosting
+	- Locations:
+		- C: Windows > System32 > drivers > etc > hosts
+		- /etc/hosts
+	- 

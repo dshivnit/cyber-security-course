@@ -45,12 +45,12 @@
             }
           },
           {
-            "id": "9ef36c75991e6148",
+            "id": "e1075669d698efaa",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "1.0 Types of Attacks & Defense/1.1 Attacks/1.1.1 Types of Attacks.md",
+                "file": "0.0 Cyber, Technology and More/Commands.md",
                 "mode": "source",
                 "source": false
               }
@@ -65,36 +65,12 @@
         "dimension": 52.7191298784389,
         "children": [
           {
-            "id": "a3b0dea41cef84c5",
+            "id": "72947e727b026a19",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "0.0 Cyber, Technology and More/Tools.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "678d895847171685",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "0.0 Cyber, Technology and More/Terminologies.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "8aa59529a0e8fd65",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "5.0 Programming/5.1 Programming Languages/Python.md",
+                "file": "5.0 Programming/5.1 Programming Languages/C.md",
                 "mode": "source",
                 "source": false
               }
@@ -166,7 +142,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "1.0 Types of Attacks & Defense/1.1 Attacks/1.1.1 Types of Attacks.md",
+                "file": "0.0 Cyber, Technology and More/Commands.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -183,7 +159,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "1.0 Types of Attacks & Defense/1.1 Attacks/1.1.1 Types of Attacks.md",
+                "file": "0.0 Cyber, Technology and More/Commands.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -218,7 +194,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "1.0 Types of Attacks & Defense/1.1 Attacks/1.1.1 Types of Attacks.md"
+                "file": "0.0 Cyber, Technology and More/Commands.md"
               }
             }
           }
@@ -240,23 +216,113 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "9ef36c75991e6148",
+  "floating": {
+    "id": "c95ded40452aaeff",
+    "type": "floating",
+    "children": [
+      {
+        "id": "6a790fd363ba18ba",
+        "type": "window",
+        "children": [
+          {
+            "id": "183a19c3566dbc89",
+            "type": "tabs",
+            "children": [
+              {
+                "id": "a3b0dea41cef84c5",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "4.0 Networking/Network Administration/Web Servers.md",
+                    "mode": "source",
+                    "source": false
+                  }
+                }
+              },
+              {
+                "id": "9ef36c75991e6148",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "1.0 Types of Attacks & Defense/1.1 Attacks/1.1.1 Types of Attacks.md",
+                    "mode": "source",
+                    "source": false
+                  }
+                }
+              },
+              {
+                "id": "00c16813fe344692",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "0.0 Cyber, Technology and More/Tools.md",
+                    "mode": "source",
+                    "source": false
+                  }
+                }
+              },
+              {
+                "id": "678d895847171685",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "0.0 Cyber, Technology and More/Terminologies.md",
+                    "mode": "source",
+                    "source": false
+                  }
+                }
+              },
+              {
+                "id": "8aa59529a0e8fd65",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "3.0 Software/3.1 Operating Systems/Operating Systems.md",
+                    "mode": "source",
+                    "source": false
+                  }
+                }
+              }
+            ],
+            "currentTab": 2
+          }
+        ],
+        "direction": "vertical",
+        "x": 960,
+        "y": 0,
+        "width": 960,
+        "height": 1032,
+        "maximize": false,
+        "zoom": 0
+      }
+    ]
+  },
+  "active": "e1075669d698efaa",
   "lastOpenFiles": [
-    "5.0 Programming/5.1 Programming Languages/SQL.md",
     "0.0 Cyber, Technology and More/Tools.md",
-    "0.0 Cyber, Technology and More/Notes/Course/Week 07/20240805 - Day 030.md",
     "1.0 Types of Attacks & Defense/1.1 Attacks/1.1.1 Types of Attacks.md",
-    "5.0 Programming/5.1 Programming Languages/C.md",
-    "1.0 Types of Attacks & Defense/1.1 Attacks/OWASP Top 10.md",
     "0.0 Cyber, Technology and More/Commands.md",
+    "3.0 Software/3.1 Operating Systems/Operating Systems.md",
+    "3.0 Software/3.1 Operating Systems/3.1.1 Desktops & Laptops/3.1.1.0 Operating Systems (Desktops & Laptops).md",
+    "5.0 Programming/5.1 Programming Languages/Python.md",
+    "5.0 Programming/5.1 Programming Languages/C.md",
+    "4.0 Networking/Network Administration/Web Servers.md",
+    "5.0 Programming/5.1 Programming Languages/ASM - Assembly Language.md",
+    "0.0 Cyber, Technology and More/Terminologies.md",
+    "4.0 Networking/Networking.md",
+    "1.0 Types of Attacks & Defense/1.1 Attacks/OWASP Top 10.md",
+    "5.0 Programming/5.1 Programming Languages/SQL.md",
+    "0.0 Cyber, Technology and More/Notes/Course/Week 07/20240805 - Day 030.md",
     "0.0 Cyber, Technology and More/Notes/Course/Week 07/20240806 - Day 031.md",
     "3.0 Software/3.1 Operating Systems/3.1.1 Desktops & Laptops/3.1.1.2 Linux & Unix.md",
-    "0.0 Cyber, Technology and More/Terminologies.md",
-    "5.0 Programming/5.1 Programming Languages/Python.md",
     "4.0 Networking/Protocols/Protocols.md",
     "1.0 Types of Attacks & Defense/Methodologes and TTPs.md",
     "8.0 Databases/SQLite.md",
-    "4.0 Networking/Networking.md",
     "8.0 Databases/MySQL.md",
     "8.0 Databases/SQL.md",
     "4.0 Networking/BurpSuite.md",
@@ -269,10 +335,6 @@
     "99.99 Images Used/Pasted image 20240804134321.png",
     "4.0 Networking/Protocols/NFS - Network File System (and NFS Protocol).md",
     "4.0 Networking/LANs/LANs.md",
-    "4.0 Networking/Protocols/Telnet.md",
-    "4.0 Networking/Protocols/FTP - File Transfer Protocol.md",
-    "4.0 Networking/Protocols/SMB - Server Message Block Protocol.md",
-    "4.0 Networking/The Stacks/Open Systems Interconnect (OSI) Stack (Model -- I call it a stack alright! =P).md",
     "2.0 Hardware/2.5 Network",
     "0.0 Cyber, Technology and More/Notes/Course",
     "0.0 Cyber, Technology and More/Notes/Course/Week 07",

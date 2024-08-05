@@ -285,8 +285,17 @@ ie Windows applications/software, Other OS applications/software, PowerShell too
 - Poison Null Byte
 	%00
 		Null Terminator
-- 
-
+- Metasploit
+	- Meterpreter
+		- Provides an interactive shell
+		- Used in in-memorry DLL
+			- (Completely lives in physical memory and will write nothing to the drive)
+- Msfvenom
+	- Ships by itself, although is actually a part of the Metasploit Framework
+	- Used to generate payloads in real-time
+- Logs
+	- journalctl (Linux)
+	- 
 ------------------
 
 - IDEs (Integrated Development Environment)

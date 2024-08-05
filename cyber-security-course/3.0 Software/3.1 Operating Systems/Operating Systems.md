@@ -8,4 +8,8 @@ Always remember, that the following *should* be secured when considering informa
 - Integrity
 - Availability
 
-
+Shells
+- What we use when interfacing with a CLI
+- Linux *commonly* uses bash or sh (zsh ftw)
+- Windows uses PowerShell and cmd.exe
+- 
