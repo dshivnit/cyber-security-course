@@ -281,7 +281,7 @@ ie Windows applications/software, Other OS applications/software, PowerShell too
 	- md5sum "filename"
 	- sha1sum "filename"
 	- sha256sum "filename"
-- 
+- strings (filename)
 
 ------------------
 
