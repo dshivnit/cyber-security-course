@@ -12,4 +12,12 @@ Shells
 - What we use when interfacing with a CLI
 - Linux *commonly* uses bash or sh (zsh ftw)
 - Windows uses PowerShell and cmd.exe
-- 
+
+
+Logs
+- Linux
+	- journalctl
+	- /var/log
+- Windows
+	- Event Viewer
+	- %systemroot% > System32 > winevt > Logs

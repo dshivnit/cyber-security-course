@@ -294,8 +294,23 @@ ie Windows applications/software, Other OS applications/software, PowerShell too
 	- Ships by itself, although is actually a part of the Metasploit Framework
 	- Used to generate payloads in real-time
 - Logs
-	- journalctl (Linux)
-	- 
+	- Linux
+		- journalctl
+		- /var/log
+	- Windows
+		- Event Viewer
+		- %systemroot% > System32 > winevt > Logs
+- nc
+- rlwrap
+	- Gives access to history, tab autocompletes, arrow keys immediately upon receiving/binding a shell
+	- CTRL+C requires some manual steps
+	- rlwrap nc -lvnp "port"
+		- Prepends the Netcat listener
+	- Useful when dealing with Windows Shells
+		- Which are bloody hard to stabilise
+	- Same with the previous Python technique:
+		- CTRL+Z; then
+		- stty raw -echo; fg
 ------------------
 
 - IDEs (Integrated Development Environment)

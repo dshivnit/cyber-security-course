@@ -127,4 +127,11 @@ zsh (z Shell) (/bin/zsh (providing it's there) will change $SHELL on the fly, zs
 		- disable
 - history
 	- lel
-- 
+- Shelling
+	- - python -c 'import pty;pty.spawn("/bin/bash")'
+		- Uses Python in the Reverse Shell / Bind Shell to spawn a more featured bash shell (you might need to specify python2 or python3 depending on the Linux box you are shelling to/from)
+		- export TERM=xterm
+			- additional access to commands such as 'clear'
+		- Background the shell with CTRL+Z (backgrounds the Remote Shell) THEN stty raw -echo; fg (turns off our own terminal echo (which gives us access to commands like tab autocompletions, arrows, CTRL+C then bring the Remote Shell back into the Foreground)
+				- reset
+					- Re-enable terminal echo (from when the 'stty raw -echo' command was issued -- otherwise the Terminal will be pretty shiddy)
