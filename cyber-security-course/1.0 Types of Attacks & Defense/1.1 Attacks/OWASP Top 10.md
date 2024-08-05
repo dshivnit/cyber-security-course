@@ -1,3 +1,5 @@
+Open Worldwide Application Security Project
+
 1. Broken Access Control
 2. Cryptographic Failures
 3. Injection
@@ -42,7 +44,6 @@ Injection
 	- Server-side code execution (like PHP)
 	- Make a call to a function that interacts with the Server's console
 	- Allows the adversary to take control - as if they were sitting on the Server as root
-	- 
 - Defense:
 	- Allow-lists:
 		- User-input is referenced to a list of safe inputs or characters
@@ -106,30 +107,61 @@ Software and Data Integrity Failures
 		- It's not in your zone/scope to maintain the integrity of that external source, if it becomes compromised that inadvertently will impact the security of your system as well
 		- Subresource Integrity (SRI) - Mordern Web-Browsers have an integrity check comparing hash's between entities (sources and receivers/pullers) to ensure .. Integrity (farms)
 			- srihash.org
-- Data Integrity Failures
-	- Session Tokens
-		- Cookies
-			- Key-value pairs that a WebApp will store on the Users end that will be automatically repeated with each Request made to the Website, by that User
-			- Each User would have their own Cookie that would contain their Username
-			- The Server would know which User/Session to respond to by with what is sent by the Client's Browser (what Cookie is sent) 
-			- Nothing is stopping the User from tampering with said Cookie
-				- Could potentially lead to a failure in data integrity 
-				- Mitigation:
-					- Integrity mechanism(s)
-					- ie JSON Web Tokens
-						- use of either a private secret or a public/private key between Server and Client
-						- JWT Tokens are formed with three parts:
-							- Header
-								- Indicating that *this* is a JWT
-								- Signing algorithm (ie HS256)
-							- Payload
-								- If this is changed, the Websystem will know by verifying that the signature won't match the payload
-							- Signature
-						- Unlike simple hashing, this matching signature needs and uses the Secret Key method. 
-						- The three-parted token is simply plaintext encoded with base64
-					- Vulnerability
-						- JWT and the None Algorithm
-							- Changing the alg: part of the header to "none" from whatever algorithm was in there prior
-							- Payload "username" to admin
-							- This vuln was from a while ago
-						- 
+
+Data Integrity Failures
+- Session Tokens
+	- Cookies
+		- Key-value pairs that a WebApp will store on the Users end that will be automatically repeated with each Request made to the Website, by that User
+		- Each User would have their own Cookie that would contain their Username
+		- The Server would know which User/Session to respond to by with what is sent by the Client's Browser (what Cookie is sent) 
+		- Nothing is stopping the User from tampering with said Cookie
+			- Could potentially lead to a failure in data integrity 
+			- Mitigation:
+				- Integrity mechanism(s)
+				- ie JSON Web Tokens
+					- use of either a private secret or a public/private key between Server and Client
+					- JWT Tokens are formed with three parts:
+						- Header
+							- Indicating that *this* is a JWT
+							- Signing algorithm (ie HS256)
+						- Payload
+							- If this is changed, the Websystem will know by verifying that the signature won't match the payload
+						- Signature
+					- Unlike simple hashing, this matching signature needs and uses the Secret Key method. 
+					- The three-parted token is simply plaintext encoded with base64
+				- Vulnerability
+					- JWT and the None Algorithm
+						- Changing the alg: part of the header to "none" from whatever algorithm was in there prior
+						- Payload "username" to admin
+						- This vuln was from a while ago
+
+Security Logging and Monitoring Failures
+- Every action should be logged
+- More than useful, a necessity, because if something happens, an incident say, logs should be able to outline every action that had taken place through (and before) the event/incident had taken place. 
+	- ie who logged in and where, when, etc
+		- What did they do? 
+- Attackers may want to dispose of such logs prior to their exit, so do the logs live in one place? Or are they actively copied to a redundant location? (this may not be the right term to use - but you know what I mean, hopefully.)
+- Regulatory damage
+	- if sensitive, personal information is compromised and if there is no record outlining this - the application owners could be subject to fines or further prosecution depending on local and sometimes other regulations
+- Risk of further attacks
+	- An attackers exploits may be undetected without logging which could allow for further attacks/breaches/exploits further down the line of time. 
+		- Defensive Teams will need to be able to reflect on what actions, methods (etc)  took place by the attacking side to be able to determine where previous, current, and what are possible flaws could be
+- Usual information stored in logs:
+	- HTTP Status Codes
+	- Time Stamps
+	- Usernames
+	- API Endpoints/Page Locations
+	- IP Addresses
+	(bear in mind that these are items from OWASP - Application Security, so I haven't included other items that could also be considered in logs - such as Server Names (these could be multiple devices depending on what has happened) etc)
+- Ideally you want to be monitoring for any suspect movements/activity in real-time with the idea to stop the perpetrator actively or to reduce their efforts. 
+- Some examples of suspect activity :) :
+	- Multiple unauth'd attempts for a particular action
+	- Requests coming from anomalous IP addresses or geographical locations, these can be false positives but should be looked into. Or there should be a common task/job that runs looking out for such activity in defense systems
+	- Automated Tools - patterns of how frequently some requests or tasks are being made
+	- Common Payloads - some attackers will use well-known or identified payloads in the industry.
+
+Server-Side Request Forgery
+- When an Adversary/Attacker manipulates a Server to send Requests on their behalf
+- They keep control of the contents of the Request
+- These vulns usually happen when the Web Application relies upon a third party services
+file://///proc/net/arp%23

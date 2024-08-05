@@ -440,4 +440,6 @@
 - JSON Web Token
 	- Proposed Internet standard for creating data with optional signature and/or optional encryption whose payload holds JSON that asserts some of numberof claims
 	- Signed either private secret or public/private key
+- TUI
+	- Textual User Interface
 - 
