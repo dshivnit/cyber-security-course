@@ -311,6 +311,9 @@ ie Windows applications/software, Other OS applications/software, PowerShell too
 	- Same with the previous Python technique:
 		- CTRL+Z; then
 		- stty raw -echo; fg
+- Socat
+	- A static compiled library
+	- Refer to the other section on this
 ------------------
 
 - IDEs (Integrated Development Environment)

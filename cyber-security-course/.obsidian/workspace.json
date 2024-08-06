@@ -26,7 +26,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "8.0 Databases/MariaDB.md",
+                "file": "3.0 Software/3.1 Operating Systems/3.1.1 Desktops & Laptops/3.1.1.2 Linux & Unix.md",
                 "mode": "source",
                 "source": false
               }
@@ -143,7 +143,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "0.0 Cyber, Technology and More/Notes/Course/Week 07/20240806 - Day 031.md",
+                "file": "1.0 Types of Attacks & Defense/1.1 Attacks/1.1.1 Types of Attacks.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -160,7 +160,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "0.0 Cyber, Technology and More/Notes/Course/Week 07/20240806 - Day 031.md",
+                "file": "1.0 Types of Attacks & Defense/1.1 Attacks/1.1.1 Types of Attacks.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -195,7 +195,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "0.0 Cyber, Technology and More/Notes/Course/Week 07/20240806 - Day 031.md"
+                "file": "1.0 Types of Attacks & Defense/1.1 Attacks/1.1.1 Types of Attacks.md"
               }
             }
           }
@@ -306,7 +306,7 @@
           }
         ],
         "direction": "vertical",
-        "x": 2880,
+        "x": 960,
         "y": 0,
         "width": 960,
         "height": 1032,
@@ -346,24 +346,24 @@
       }
     ]
   },
-  "active": "ae5b22ea481852c1",
+  "active": "9ef36c75991e6148",
   "lastOpenFiles": [
-    "1.0 Types of Attacks & Defense/1.1 Attacks/1.1.1 Types of Attacks.md",
+    "0.0 Cyber, Technology and More/Tools.md",
+    "0.0 Cyber, Technology and More/Notes/Course/Week 07/20240806 - Day 031.md",
+    "3.0 Software/3.1 Operating Systems/3.1.1 Desktops & Laptops/3.1.1.2 Linux & Unix.md",
     "8.0 Databases/MariaDB.md",
+    "1.0 Types of Attacks & Defense/1.1 Attacks/1.1.1 Types of Attacks.md",
     "8.0 Databases/8.2 Traditional Database (DBMS - Database Management Systems).md",
     "8.0 Databases/8.1 In-memory Database.md",
     "8.0 Databases/PostgreSQL.md",
-    "0.0 Cyber, Technology and More/Notes/Course/Week 07/20240806 - Day 031.md",
     "8.0 Databases/Redis.md",
     "8.0 Databases/Databases.md",
-    "3.0 Software/3.1 Operating Systems/3.1.1 Desktops & Laptops/3.1.1.2 Linux & Unix.md",
     "4.0 Networking/Networking.md",
     "4.0 Networking/Network Administration/Network Administration.md",
     "5.0 Programming/5.1 Programming Languages/SQL.md",
     "0.0 Cyber, Technology and More/Notes/Course/Week 07/20240805 - Day 030.md",
     "0.0 Cyber, Technology and More/Commands.md",
     "5.0 Programming/5.1 Programming Languages/C.md",
-    "0.0 Cyber, Technology and More/Tools.md",
     "3.0 Software/3.1 Operating Systems/Operating Systems.md",
     "3.0 Software/3.1 Operating Systems/3.1.1 Desktops & Laptops/3.1.1.0 Operating Systems (Desktops & Laptops).md",
     "5.0 Programming/5.1 Programming Languages/Python.md",
