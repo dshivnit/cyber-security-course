@@ -10,6 +10,10 @@ PowerShell
 
 Bash
 - Reference: https://github.com/RehanSaeed/Bash-Cheat-Sheet
+- arch
+- whoami
+- hostname
+- uname -a
 - pwd
 	- presents the working directory
 - redis-cli
