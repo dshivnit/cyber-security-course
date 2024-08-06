@@ -26,38 +26,14 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "3.0 Software/3.1 Operating Systems/3.1.1 Desktops & Laptops/3.1.1.2 Linux & Unix.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "b7e32b6e67f3cfb3",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "5.0 Programming/5.1 Programming Languages/SQL.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "e1075669d698efaa",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "0.0 Cyber, Technology and More/Commands.md",
+                "file": "8.0 Databases/MariaDB.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
         ],
-        "currentTab": 3
+        "currentTab": 1
       },
       {
         "id": "2fb0e64401067da2",
@@ -75,8 +51,33 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "e1075669d698efaa",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "0.0 Cyber, Technology and More/Commands.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "b7e32b6e67f3cfb3",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "4.0 Networking/Networking.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -142,7 +143,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "1.0 Types of Attacks & Defense/1.1 Attacks/1.1.1 Types of Attacks.md",
+                "file": "0.0 Cyber, Technology and More/Notes/Course/Week 07/20240806 - Day 031.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -159,7 +160,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "1.0 Types of Attacks & Defense/1.1 Attacks/1.1.1 Types of Attacks.md",
+                "file": "0.0 Cyber, Technology and More/Notes/Course/Week 07/20240806 - Day 031.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -194,7 +195,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "1.0 Types of Attacks & Defense/1.1 Attacks/1.1.1 Types of Attacks.md"
+                "file": "0.0 Cyber, Technology and More/Notes/Course/Week 07/20240806 - Day 031.md"
               }
             }
           }
@@ -305,7 +306,38 @@
           }
         ],
         "direction": "vertical",
-        "x": 960,
+        "x": 2880,
+        "y": 0,
+        "width": 960,
+        "height": 1032,
+        "maximize": false,
+        "zoom": 0
+      },
+      {
+        "id": "ea9b855caa448616",
+        "type": "window",
+        "children": [
+          {
+            "id": "1454881e08b8e5da",
+            "type": "tabs",
+            "children": [
+              {
+                "id": "ae5b22ea481852c1",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "0.0 Cyber, Technology and More/Notes/Course/Week 07/20240806 - Day 031.md",
+                    "mode": "source",
+                    "source": false
+                  }
+                }
+              }
+            ]
+          }
+        ],
+        "direction": "vertical",
+        "x": 1920,
         "y": 0,
         "width": 960,
         "height": 1032,
@@ -314,39 +346,39 @@
       }
     ]
   },
-  "active": "9ef36c75991e6148",
+  "active": "ae5b22ea481852c1",
   "lastOpenFiles": [
-    "0.0 Cyber, Technology and More/Tools.md",
     "1.0 Types of Attacks & Defense/1.1 Attacks/1.1.1 Types of Attacks.md",
+    "8.0 Databases/MariaDB.md",
+    "8.0 Databases/8.2 Traditional Database (DBMS - Database Management Systems).md",
+    "8.0 Databases/8.1 In-memory Database.md",
+    "8.0 Databases/PostgreSQL.md",
+    "0.0 Cyber, Technology and More/Notes/Course/Week 07/20240806 - Day 031.md",
+    "8.0 Databases/Redis.md",
+    "8.0 Databases/Databases.md",
+    "3.0 Software/3.1 Operating Systems/3.1.1 Desktops & Laptops/3.1.1.2 Linux & Unix.md",
+    "4.0 Networking/Networking.md",
+    "4.0 Networking/Network Administration/Network Administration.md",
+    "5.0 Programming/5.1 Programming Languages/SQL.md",
+    "0.0 Cyber, Technology and More/Notes/Course/Week 07/20240805 - Day 030.md",
     "0.0 Cyber, Technology and More/Commands.md",
     "5.0 Programming/5.1 Programming Languages/C.md",
+    "0.0 Cyber, Technology and More/Tools.md",
     "3.0 Software/3.1 Operating Systems/Operating Systems.md",
     "3.0 Software/3.1 Operating Systems/3.1.1 Desktops & Laptops/3.1.1.0 Operating Systems (Desktops & Laptops).md",
     "5.0 Programming/5.1 Programming Languages/Python.md",
     "4.0 Networking/Network Administration/Web Servers.md",
     "5.0 Programming/5.1 Programming Languages/ASM - Assembly Language.md",
     "0.0 Cyber, Technology and More/Terminologies.md",
-    "4.0 Networking/Networking.md",
     "1.0 Types of Attacks & Defense/1.1 Attacks/OWASP Top 10.md",
-    "5.0 Programming/5.1 Programming Languages/SQL.md",
-    "0.0 Cyber, Technology and More/Notes/Course/Week 07/20240805 - Day 030.md",
-    "0.0 Cyber, Technology and More/Notes/Course/Week 07/20240806 - Day 031.md",
-    "3.0 Software/3.1 Operating Systems/3.1.1 Desktops & Laptops/3.1.1.2 Linux & Unix.md",
     "4.0 Networking/Protocols/Protocols.md",
     "1.0 Types of Attacks & Defense/Methodologes and TTPs.md",
     "8.0 Databases/SQLite.md",
-    "8.0 Databases/MySQL.md",
-    "8.0 Databases/SQL.md",
-    "4.0 Networking/BurpSuite.md",
-    "4.0 Networking/Protocols/MySQL - Structured Query Language).md",
-    "4.0 Networking/Protocols/SMTP - Simple Mail Transfer Protocol (Port 25 normally).md",
     "99.99 Images Used/TutorialsPointProcThrComparison.png",
     "99.99 Images Used/RiskMatrixSchema.png",
     "99.99 Images Used/Reddit_csharp_HandlesDef.png",
     "99.99 Images Used/Clones_20240702.png",
     "99.99 Images Used/Pasted image 20240804134321.png",
-    "4.0 Networking/Protocols/NFS - Network File System (and NFS Protocol).md",
-    "4.0 Networking/LANs/LANs.md",
     "2.0 Hardware/2.5 Network",
     "0.0 Cyber, Technology and More/Notes/Course",
     "0.0 Cyber, Technology and More/Notes/Course/Week 07",
