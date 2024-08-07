@@ -9,12 +9,12 @@
         "dimension": 47.2808701215611,
         "children": [
           {
-            "id": "02a55c9a58bc4c2f",
+            "id": "e1075669d698efaa",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "0.0 Cyber, Technology and More/Notes/Course/Week 07/20240805 - Day 030.md",
+                "file": "0.0 Cyber, Technology and More/Commands.md",
                 "mode": "source",
                 "source": false
               }
@@ -40,18 +40,6 @@
             }
           },
           {
-            "id": "e1075669d698efaa",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "0.0 Cyber, Technology and More/Commands.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
             "id": "b7e32b6e67f3cfb3",
             "type": "leaf",
             "state": {
@@ -63,8 +51,7 @@
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -130,7 +117,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "1.0 Types of Attacks & Defense/1.1 Attacks/1.1.1 Types of Attacks.md",
+                "file": "0.0 Cyber, Technology and More/Notes/Course/Week 07/20240807 - Day 032.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -147,7 +134,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "1.0 Types of Attacks & Defense/1.1 Attacks/1.1.1 Types of Attacks.md",
+                "file": "0.0 Cyber, Technology and More/Notes/Course/Week 07/20240807 - Day 032.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -182,7 +169,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "1.0 Types of Attacks & Defense/1.1 Attacks/1.1.1 Types of Attacks.md"
+                "file": "0.0 Cyber, Technology and More/Notes/Course/Week 07/20240807 - Day 032.md"
               }
             }
           }
@@ -239,6 +226,38 @@
                     "source": false
                   }
                 }
+              }
+            ],
+            "currentTab": 1
+          }
+        ],
+        "direction": "vertical",
+        "x": 2880,
+        "y": 0,
+        "width": 960,
+        "height": 1032,
+        "maximize": false,
+        "zoom": 0
+      },
+      {
+        "id": "4b0dc2cd5a42599c",
+        "type": "window",
+        "children": [
+          {
+            "id": "aa2ab40680193aa6",
+            "type": "tabs",
+            "children": [
+              {
+                "id": "02a55c9a58bc4c2f",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "0.0 Cyber, Technology and More/Notes/Course/Week 07/20240807 - Day 032.md",
+                    "mode": "source",
+                    "source": false
+                  }
+                }
               },
               {
                 "id": "6e7aaf7ec646b7a4",
@@ -266,14 +285,14 @@
       }
     ]
   },
-  "active": "35a9a4cb14bf8640",
+  "active": "02a55c9a58bc4c2f",
   "lastOpenFiles": [
-    "0.0 Cyber, Technology and More/Terminologies.md",
     "1.0 Types of Attacks & Defense/1.1 Attacks/1.1.1 Types of Attacks.md",
+    "0.0 Cyber, Technology and More/Notes/Course/Week 07/20240807 - Day 032.md",
     "0.0 Cyber, Technology and More/Notes/Course/Week 07/20240806 - Day 031.md",
     "0.0 Cyber, Technology and More/Commands.md",
     "0.0 Cyber, Technology and More/Notes/Course/Week 07/20240805 - Day 030.md",
-    "0.0 Cyber, Technology and More/Notes/Course/Week 07/20240807 - Day 032.md",
+    "0.0 Cyber, Technology and More/Terminologies.md",
     "4.0 Networking/Networking.md",
     "5.0 Programming/5.1 Programming Languages/C.md",
     "4.0 Networking/Network Administration/Web Servers.md",

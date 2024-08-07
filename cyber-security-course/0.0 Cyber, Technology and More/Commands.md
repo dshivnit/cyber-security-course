@@ -139,3 +139,9 @@ zsh (z Shell) (/bin/zsh (providing it's there) will change $SHELL on the fly, zs
 		- Background the shell with CTRL+Z (backgrounds the Remote Shell) THEN stty raw -echo; fg (turns off our own terminal echo (which gives us access to commands like tab autocompletions, arrows, CTRL+C then bring the Remote Shell back into the Foreground)
 				- reset
 					- Re-enable terminal echo (from when the 'stty raw -echo' command was issued -- otherwise the Terminal will be pretty shiddy)
+- Linux
+	- CTRL+U
+		- delete text to the left
+	- CTRL+K
+		- delete text to the right
+- 

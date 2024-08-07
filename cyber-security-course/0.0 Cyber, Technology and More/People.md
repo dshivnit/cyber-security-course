@@ -57,3 +57,6 @@
 - Kevin Mitnick
 - Robert Griesemer
 	- Designed the Go programming language
+- Michael Kerrisk
+	- NZ born baby! 1961
+	- The Linux Programming Interface publication!!!

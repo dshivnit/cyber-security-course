@@ -446,4 +446,6 @@
 	- Virtual Host
 	- name-based Virtual Hosting
 - RCE - Remote Code Execution
-- 
+- Bastion Server
+	- Used to manage access to an internal or private network from an external network
+		- Jump host
