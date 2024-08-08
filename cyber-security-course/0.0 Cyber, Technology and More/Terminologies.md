@@ -449,3 +449,11 @@
 - Bastion Server
 	- Used to manage access to an internal or private network from an external network
 		- Jump host
+- ASLR
+	- Address Space Layout Randomization
+	- Memory-protection process for OSs that guards against buffer-overflow
+	- Technique in preventing exploitation of memory corruption vulnerabilities
+- ELF
+	- Executable and Linkable Format
+	- Common standard file format for exec files, object code, shared libraries and core dumps
+- 

@@ -14,7 +14,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "0.0 Cyber, Technology and More/Commands.md",
+                "file": "5.0 Programming/5.1 Programming Languages/Python.md",
                 "mode": "source",
                 "source": false
               }
@@ -33,7 +33,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "5.0 Programming/5.1 Programming Languages/C.md",
+                "file": "5.0 Programming/5.1 Programming Languages/URScript.md",
                 "mode": "source",
                 "source": false
               }
@@ -117,7 +117,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "0.0 Cyber, Technology and More/Notes/Course/Week 07/20240807 - Day 032.md",
+                "file": "0.0 Cyber, Technology and More/Terminologies.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -134,7 +134,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "0.0 Cyber, Technology and More/Notes/Course/Week 07/20240807 - Day 032.md",
+                "file": "0.0 Cyber, Technology and More/Terminologies.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -169,7 +169,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "0.0 Cyber, Technology and More/Notes/Course/Week 07/20240807 - Day 032.md"
+                "file": "0.0 Cyber, Technology and More/Terminologies.md"
               }
             }
           }
@@ -227,8 +227,7 @@
                   }
                 }
               }
-            ],
-            "currentTab": 1
+            ]
           }
         ],
         "direction": "vertical",
@@ -276,7 +275,7 @@
           }
         ],
         "direction": "vertical",
-        "x": 1920,
+        "x": 2880,
         "y": 0,
         "width": 960,
         "height": 1032,
@@ -285,16 +284,20 @@
       }
     ]
   },
-  "active": "02a55c9a58bc4c2f",
+  "active": "6e7aaf7ec646b7a4",
   "lastOpenFiles": [
-    "1.0 Types of Attacks & Defense/1.1 Attacks/1.1.1 Types of Attacks.md",
     "0.0 Cyber, Technology and More/Notes/Course/Week 07/20240807 - Day 032.md",
+    "5.0 Programming/5.1 Programming Languages/Python.md",
+    "5.0 Programming/5.1 Programming Languages/URScript.md",
     "0.0 Cyber, Technology and More/Notes/Course/Week 07/20240806 - Day 031.md",
-    "0.0 Cyber, Technology and More/Commands.md",
     "0.0 Cyber, Technology and More/Notes/Course/Week 07/20240805 - Day 030.md",
+    "5.0 Programming/5.1 Programming Languages/C.md",
+    "5.0 Programming/Programming Terminologies & Concepts.md",
+    "5.0 Programming/Programming.md",
+    "0.0 Cyber, Technology and More/Commands.md",
+    "1.0 Types of Attacks & Defense/1.1 Attacks/1.1.1 Types of Attacks.md",
     "0.0 Cyber, Technology and More/Terminologies.md",
     "4.0 Networking/Networking.md",
-    "5.0 Programming/5.1 Programming Languages/C.md",
     "4.0 Networking/Network Administration/Web Servers.md",
     "3.0 Software/3.1 Operating Systems/3.1.1 Desktops & Laptops/3.1.1.2 Linux & Unix.md",
     "0.0 Cyber, Technology and More/Tools.md",
@@ -308,11 +311,7 @@
     "5.0 Programming/5.1 Programming Languages/SQL.md",
     "3.0 Software/3.1 Operating Systems/Operating Systems.md",
     "3.0 Software/3.1 Operating Systems/3.1.1 Desktops & Laptops/3.1.1.0 Operating Systems (Desktops & Laptops).md",
-    "5.0 Programming/5.1 Programming Languages/Python.md",
     "5.0 Programming/5.1 Programming Languages/ASM - Assembly Language.md",
-    "1.0 Types of Attacks & Defense/1.1 Attacks/OWASP Top 10.md",
-    "4.0 Networking/Protocols/Protocols.md",
-    "1.0 Types of Attacks & Defense/Methodologes and TTPs.md",
     "99.99 Images Used/TutorialsPointProcThrComparison.png",
     "99.99 Images Used/RiskMatrixSchema.png",
     "99.99 Images Used/Reddit_csharp_HandlesDef.png",
