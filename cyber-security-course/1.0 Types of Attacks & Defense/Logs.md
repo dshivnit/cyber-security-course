@@ -1,0 +1,130 @@
+*not logs from trees... SO bad.*
+
+- Records of events within a system
+	- User logins
+	- File accesses
+	- System errors
+	- Network connections
+	- Changes to data and or system configs
+- Details:
+	- Timestamp of the event
+	- Name of the system or application that generated the log entry 
+	- The type of event that occurred
+	- Additional details (IP addresses, Usernames who initiated events etc)
+- The W's
+	- What happened?
+	- When did it happen?
+	- Where did it happen?
+	- Who is responsible?
+	- Were there actions successful?
+	- What was the result of the action?
+
+- Common Log Types
+	- Application Logs
+	- Audit Logs
+		- Related to operational procedures crucial for regulatory compliance
+	- Security Logs
+		- Logins, perm changes, firewall activity, file access, etc
+	- Server Logs
+		- System, event, error and access logs, Server-side related events
+	- System Logs
+		- Kernel activities, system errors, boot sequences, hardware states, etc
+	- Network Logs
+		- Traffic, connections, Network-related events
+	- Database Logs
+		- Activities within a database system, queries, updates, etc
+	- Web Server Logs
+		- Requests processed by a Web Server, URLs, response codes etc
+
+- Log Formats
+	- Semi-structured
+		- Syslog Message Format
+		- Windows Event Log (EVTX) Format
+	- Structured
+		- Field Delimited Formats
+			- CSVs and TSVs (tab separated values)
+		- JavaScript Object Notation (JSON)
+		- W3C Extended Log Foramt (ELF)
+			- Web Server logging
+			- IIS Servers use this
+		- eXtensible Markup Language
+	- Unstructured
+		- NCSA Common Log Format (CLF)
+			- Web Server log format for Client requests
+			- Used by Apache
+		- NCSA Combined Log Format (Combined)
+			- Adding fields like Referrer and User Agent
+			- Used by Nginx by default
+- Log Standards
+	- A set of guidelines or specs that define how logs should be created, transmitted and kept
+	- Common Event Expression (CEE)
+		- Developed by MITRE
+		- Common structure for log data
+		- Making it easier to create, transmit, store and analyse logs
+	- OWASP Logging Cheat Sheet
+		- A guide for devs on building application logging mechanisms, in mainly focusing on security logging
+	- Syslog Protocol
+		- Standard for message logging, allowing the separation of the software that generates messages from the system that stores them and the software that reports and analyses them
+	- NIST Special Publication 800-82
+		- Guides computer security log management
+	- Azure Monitor Logs
+		- Log monitoring on Azure guidelines
+	- Google Cloud Logging
+		- Guidelines for logging on the GCP - Google Cloud Platform
+	- Oracle Cloud Infrastructure Logging
+		- Guidelines for logging on the Oracle Cloud Infrastructure (OCI)
+	- Virginia Tech - Standard for Information Technology Logging
+		- Sample log review and compliance guideline
+
+- Log Collection
+	- Essential in log analysis
+	- Involves the aggregation of logs from diverse sources such as Servers, Network Devices, Software, and Databases
+	- NTP - Network Time Protocol is crucial in maintaining the system's time accuracy when generating logs
+	- To ensure the integrity of the timeline of stored event(s), logs
+	- Having a comprehensive data set to review, steps in being able to do so:
+		- Identify sources
+			- All potential log sources of an "event"
+				- From all servers, databases, applications, devices involved
+			- Choose a Log Collector
+				- Choose a suitable log collector tool, or software that aligns with the infrastructure of the system
+			- Configure Collection Parameters
+				- Ensure that time-sync is enabled through NTP to maintain accurate timelines
+				- Adjust settings to determine which events to log at what intervals and prioritise based on importance
+			- Test Collection
+				- Once configured, run a test to ensure logs are appropriately collected from all sources involved
+
+- Log Management
+	- Secure storage
+	- Organised systematically 
+	- Ready for swift/efficient access
+	- Steps:
+		- Storage
+			- Retention period
+			- Accessibility
+		- Organisation
+			- Classify logs based on their source, type or other criteria for easy access later
+		- Backup
+			- Regularly back up your logs to prevent data loss
+		- Review
+			- Periodically review logs to ensure they are stored and categorised correctly
+
+- Log Centralisation
+	- Important for 
+		- Efficient log access
+		- In-depth Analyssis
+		- Rapid incident response
+	- Real-time detection
+	- Automatic notifications
+	- Seamless integration
+	- Incident management systems
+	- Can consider the following:
+		- Choose a Centralised System
+			- Elastic Stack
+			- Splunk
+		- Integrate Sources
+			- Connect all log sources into one centralised system
+		- Set up Monitoring
+			- Utilise tools that provide real-time monitoring and alerts for specific events
+		- Integration with Incident Management
+			- Ensure that the centralised system can integrate seamlessly with any incident management tools or protocols the infrastructure has in place
+	- 
