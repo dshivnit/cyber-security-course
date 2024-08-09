@@ -314,6 +314,11 @@ ie Windows applications/software, Other OS applications/software, PowerShell too
 - Socat
 	- A static compiled library
 	- Refer to the other section on this
+- xfreerdp
+	- A free remote desktop protocol implementation
+	- ie - `xfreerdp /dynamic-resolution +clipboard /cert:ignore /v:1.1.1.1 /u:Username /p:'MyPowerfulPassword'`
+- expect
+	- Programmed dialogue with interactive programs
 ------------------
 
 - IDEs (Integrated Development Environment)
