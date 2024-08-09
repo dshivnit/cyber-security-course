@@ -460,4 +460,5 @@
 	- The processes of controlling the size of log files
 	- Compressing, moving, renaming and/or deleting the log files if they have become too large in size or too old
 	- Keeping with compliance (both business/company and legal)
-- 
+- PCI DSS
+	- Payment Card Industry Data Security Standard

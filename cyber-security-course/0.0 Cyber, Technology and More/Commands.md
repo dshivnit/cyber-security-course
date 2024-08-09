@@ -8,7 +8,7 @@ Covered/covering so far:
 PowerShell
 - wsl (Windows Subsystem for Linux)
 
-Bash
+Bash (pipe to the pipe pipe ;) )
 - Reference: https://github.com/RehanSaeed/Bash-Cheat-Sheet
 - arch
 - whoami
@@ -16,6 +16,34 @@ Bash
 - uname -a
 - pwd
 	- presents the working directory
+- cut
+	- Example:
+		- Log entry:
+			`145.76.33.201 - - [31/Jul/2023:12:34:20 +0000] "GET /login.php HTTP/1.1" 200 5678 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.90 Safari/537.36"`
+		- Cut command to select what we want to see from the log above
+			```cut -d ' ' -f 1,4,7,9 apache.log | tail -n 4`
+		- Will give us this :)
+			```
+			104.76.29.88 [31/Jul/2023:12:34:23 /index.php 200
+			128.45.76.66 [31/Jul/2023:12:34:22 /contact.php 404
+			76.89.54.221 [31/Jul/2023:12:34:21 /about.php 200
+			145.76.33.201 [31/Jul/2023:12:34:20 /login.php 200
+			```
+- sort
+	- Sorts entries in a file chronologically or alphabetically
+	- Either in ascending or descending order
+		- Based on criteria given
+	- Example:
+		- `cut -d ' ' -f 1,4,7,9 apache.log | sort -n | tail -n 4`
+		- Gives us
+	```		
+			203.64.78.90 [31/Jul/2023:12:35:01 /about.php 404
+			203.78.122.88 [31/Jul/2023:12:35:10 /contact.php 404
+			211.87.186.35 [31/Jul/2023:12:35:01 /contact.php 200
+			221.90.64.76 [31/Jul/2023:12:35:08 /login.php 200```
+ - 
+- uniq
+	- 
 - redis-cli
 	- Connecting to a Redis server in bash
 	- keys *

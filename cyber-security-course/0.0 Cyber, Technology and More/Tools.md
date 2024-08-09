@@ -319,6 +319,15 @@ ie Windows applications/software, Other OS applications/software, PowerShell too
 	- ie - `xfreerdp /dynamic-resolution +clipboard /cert:ignore /v:1.1.1.1 /u:Username /p:'MyPowerfulPassword'`
 - expect
 	- Programmed dialogue with interactive programs
+- Log Viewer
+- Plaso (Python Log2Timeline)
+- ThreatFox
+	- Shares Indicators of Compromise (IOCs) associated with malware with the infosec community, AV vendors and threat intelligence providers
+- Splunk
+- UBA 
+	- User Behaviour Analysis/Analytics
+- XPLG
+- SolarWinds Loggly
 ------------------
 
 - IDEs (Integrated Development Environment)
