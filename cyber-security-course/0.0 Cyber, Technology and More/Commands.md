@@ -31,7 +31,7 @@ Bash (pipe to the pipe pipe ;) )
 			```
 - sort
 	- Sorts entries in a file chronologically or alphabetically
-	- Either in ascending or descending order
+	- Either in ascending or descending order (`-r` reverse)
 		- Based on criteria given
 	- Example:
 		- `cut -d ' ' -f 1,4,7,9 apache.log | sort -n | tail -n 4`
@@ -43,7 +43,66 @@ Bash (pipe to the pipe pipe ;) )
 			221.90.64.76 [31/Jul/2023:12:35:08 /login.php 200```
  - 
 - uniq
-	- 
+	- Identifies and removes adjacent duplicate lines from sorted input
+	- Usually combined with the sort command and piped after running `sort` 
+	- Example:
+		- `cut -d ' ' -f 1 apache.log | sort -n | uniq -c`
+	- Will give us something like
+		- ```6 76.89.54.221
+	      1 77.188.103.244
+	      1 99.76.122.65
+	      6 104.76.29.88
+	      1 108.76.122.35 ```
+	- Here you can see the amount of times that one particular IP address has been picked up in the file `apache.log` 
+	- Useful for seeing how many times any specific IP Address is making requests or is referenced in this particular log file
+- sed
+	- Text processing tool 
+	- For example - to replace `31/Jul/2023` with `July 31, 2023` we can:
+		- `sed 's/31\/Jul\/2023/July 31, 2023/g' apache.log`
+	- Which will give us:
+		- `176.145.201.99 - - [July 31, 2023:12:34:24 +0000] "GET /login.php HTTP/1.1" 200 1234 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.90 Safari/537.36"`
+	- Original would have read like this:
+		- `76.145.201.99 - - [31/Jul/2023:12:34:24 +0000] "GET /login.php HTTP/1.1" 200 1234 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.90 Safari/537.36"`
+	- The backslash character `\` is needed to escape the forward slash in our pattern and tell `sed` to treat the forward slash `/` as a literal character
+	- the `-i` parameter can be used to overwrite the file that is being analysed (be careful with this and make sure you have a backup!)
+- awk
+	- Conditional actions based on specific fields in the file being analysed
+	- ie from the example that we've been working with above, printing out HTTP Responses which are 400 (remember that these signify an error has been thrown by the Web Server) or higher
+		- `awk '$9 >= 400' apache.log` | tail -n 1
+		  Remember that it's the space `' '` between characters that signify the field (in the example above) - hence why this is $9 - ie, the ninth field
+	- Will give us:
+		- ```
+		  128.45.76.66 - - [31/Jul/2023:12:34:29 +0000] "GET /about.php HTTP/1.1" 404 4321 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.210 Safari/537.36"
+			203.64.78.90 - - [31/Jul/2023:12:34:25 +0000] "GET /about.php HTTP/1.1" 404 4321 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.81 Safari/537.36"
+			128.45.76.66 - - [31/Jul/2023:12:34:22 +0000] "GET /contact.php HTTP/1.1" 404 5678 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.54 Safari/537.36" ```
+- grep
+	- `grep "admin" apache.log`
+		- Will return any references to the word "admin" in the apache.log file
+	- `grep -c "admin" apache.log'`
+		- Will return how many times the word 'admin' was referenced in the apache.log file
+	- `grep -n "admin" apache.log`
+		- Will return what line numbers the word "admin" is in the file apache.log
+	- `grep -v "/index.php" apache.log | grep "203.64.78.90"`
+		- Will list entries that have 203.64.78.90 but doesn't have any references to index.php in the apache.log file
+
+	- Different log - this one has the below entries in a file called `apache-ex2.log`
+		-```
+			203.0.113.1 - - [02/Aug/2023:10:15:23 +0000] "GET /blog.php?post=12 HTTP/1.1" 200 - "Mozilla/5.0"
+			87.45.189.243 - - [02/Aug/2023:12:45:32 +0000] "GET /blog.php?post=7 HTTP/1.1" 200 - "Mozilla/5.0"
+			132.56.98.71 - - [02/Aug/2023:15:30:18 +0000] "GET /index.php HTTP/1.1" 200 - "Mozilla/5.0"
+			59.234.76.18 - - [02/Aug/2023:17:58:45 +0000] "GET /blog.php?post=5 HTTP/1.1" 200 - "Mozilla/5.0"
+			115.68.210.87 - - [02/Aug/2023:19:27:10 +0000] "GET /admin/settings.php HTTP/1.1" 200 - "Mozilla/5.0"
+			78.22.183.98 - - [02/Aug/2023:21:15:01 +0000] "GET /products.php HTTP/1.1" 200 - "Mozilla/5.0"
+			210.77.55.132 - - [02/Aug/2023:23:40:12 +0000] "GET /login.php HTTP/1.1" 200 - "Mozilla/5.0"
+			45.78.231.101 - - [03/Aug/2023:02:10:05 +0000] "GET /contact.php HTTP/1.1" 200 - "Mozilla/5.0"
+			66.78.92.112 - - [03/Aug/2023:05:21:55 +0000] "GET /blog.php?post=26 HTTP/1.1" 200 - "Mozilla/5.0"
+			87.67.101.77 - - [03/Aug/2023:08:55:30 +0000] "GET /login.php HTTP/1.1" 200 - "Mozilla/5.0"
+			
+		- Say we wanted to only show a pattern where the post has an ID between 22 and 26
+			- `grep -E 'post=2[2-6]' apache-ex2.log`
+			
+		- Will list only those ID's, between 22 and 26 (notice how the first 2 is outside of the square brackets - identify the pattern there ;) )
+	
 - redis-cli
 	- Connecting to a Redis server in bash
 	- keys *

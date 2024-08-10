@@ -444,7 +444,76 @@ Tools
 		- wc
 		- cut
 		- sort
-		- 
+		- uniq
+		- sed
+		- awk
+		- grep
+
+- Log Analysis Tool : Regular Expressions (Regex)
+	-  A method of defining patterns for searching, matching and manipulating text data. 
+	- Constructed using a combination of special characters that represent matching rules and are supported in many languages, text editors and software
+	- Used in extracting relevant information, filtering data, identifying patterns and process logs before they are forwarded to a centralised system like a SIEM. 
+	- Possible to use Regular Expressions with the `grep` command. 
+	- Very powerful method or way to search for patterns in log files
+ 
+	- RegExr (https://regexr.com/)
+		- Log that is going to be the example to base off:
+			```126.47.40.189 - - [28/Jul/2023:15:30:45 +0000] "GET /admin.php HTTP/1.1" 200 1275 "" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.9999.999 Safari/537.36"```
+		-   We want to yoink just the following into a SIEM for visualisation:
+			- IP Addy
+			- Timestamp
+			- HTTP Method (POST, GET or PUT)
+			- The URL
+			- The User-Agent
+		- We're going to use RegExr for this - it's an online tool, link's above :) 
+		- First grab that log example and paste it into the Text Field (just under where it says 'Text | Tests')
+		- Considering just the IP Address - it's the log's first part, always consisting of four octets with full-stops (`.`) inbetween. We'll use this pattern:
+				`\b([0-9]{1,3}\.){3}[0-9]{1,3}\b`
+			- Put this into the Expression Field and you will see the IP Address come highlighted in the Text Field
+			- Let's break it down
+				- `[0-9]{1-3}`
+					- Matches ONE to THREE digits to match numbers from 0 - 999.
+					- While IP Addresses octets won't exceed 255, this pattern will work
+				- `\.`
+					- Escapes the above and puts a *literal* full-stop (`.`) character in place
+				- `{3}`
+					- States that the previous capture group (above, `[0-9]{1-3}\.` needs to repeat THREE TIMES)
+				- We finish off with the fourth octect
+					- `[0-9]{1,3}` 
+		- Remember that we have now extracted the IP (v4) address in this example, which can be processed into a custom field before sending out to a SIEM.
+	
+	- Logstash and Grok
+		- Grok is a Logstash plugin
+		- Allows to parse unstructured log data into something structured and searchable
+		- Commonly used for any kind of log format written for humans to read rather than for computers
+		- It works by combining text patterns with the %{SYNTAX:SEMANTIC} pattern syntax
+		- Logstash lacks the built-in pattern we need. 
+			- In these situations, custom patterns can be defined using the `Oniguruma Syntax` and take advantage of regular expressions
+			- Read up on documentations
+
+	- CyberChef
+		- Encoding and decoding data
+		- Encryption and hashing algorithms
+		- Data analysis
+			- Parsing log files 
+			- Extracting data
+		- Heaps more
+
+	- Sigma
+		- Open-source tool
+		- Describes log events in a structured format
+		- Used to:
+			- Detect events in logs
+			- Create SIEM searches
+			- Identify threats
+		- Uses YAML syntax for its rules
+
+	- Yara
+		- Pattern-matching tool
+		- Formatted in YAML
+		- Identifies information based on binary, and textual patterns (like hex and strings)
+		- Normally used in malware analysis although highly effective in log analysis as well
+	
 
 	- Tools
 		- SIEMs

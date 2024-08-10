@@ -328,6 +328,31 @@ ie Windows applications/software, Other OS applications/software, PowerShell too
 	- User Behaviour Analysis/Analytics
 - XPLG
 - SolarWinds Loggly
+- RegExr
+	- Online tool to help teach, build and test Regular Expression (RegEx) patterns
+	- https://regexr.com/
+	- Log analyser that humanises logs
+	- (refer to the Logs page in section 1.0)
+- CyberChef
+	- Has over 300 operations one can utilise
+	- Some:
+		- Encoding and decoding data
+		- Encryption and hashing algorithms
+		- Data analysis, such as parsing log files and extracting data
+		- Heaps more
+- Sigma
+	- Open-source
+	- Describes log events in a structured format
+	- Used for:
+		- Detecting events in logs
+		- Creating SIEM searches
+		- Identify threats
+	- YAML syntax used
+- Yara
+	- Pattern-matching tool
+	- YAML formatted
+	- Identifies information based on binary and textual patterns (such as hex and strings)
+	- Usually used in malware analysis, also very effective in log analysis
 ------------------
 
 - IDEs (Integrated Development Environment)

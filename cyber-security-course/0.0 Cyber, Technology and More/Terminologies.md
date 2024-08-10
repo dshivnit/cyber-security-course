@@ -462,3 +462,9 @@
 	- Keeping with compliance (both business/company and legal)
 - PCI DSS
 	- Payment Card Industry Data Security Standard
+- YAML
+	- Human-readable data serialisation language
+	- Commonly used for configuration files and in applications where data are being stored or transmitted
+- SIEM
+	- Security Information and Event Management
+- 
