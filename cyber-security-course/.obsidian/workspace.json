@@ -26,7 +26,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "0.0 Cyber, Technology and More/Notes/Course/Week 07/20240809 - Day 034.md",
+                "file": "0.0 Cyber, Technology and More/Notes/Course/Week 07/20240807 - Day 032.md",
                 "mode": "source",
                 "source": false
               }
@@ -51,21 +51,8 @@
                 "source": false
               }
             }
-          },
-          {
-            "id": "b7e32b6e67f3cfb3",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "1.0 Types of Attacks & Defense/1.1 Attacks/Path Traversal.md",
-                "mode": "source",
-                "source": false
-              }
-            }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -131,7 +118,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "1.0 Types of Attacks & Defense/1.1 Attacks/Path Traversal.md",
+                "file": "0.0 Cyber, Technology and More/Tools.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -148,7 +135,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "1.0 Types of Attacks & Defense/1.1 Attacks/Path Traversal.md",
+                "file": "0.0 Cyber, Technology and More/Tools.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -183,7 +170,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "1.0 Types of Attacks & Defense/1.1 Attacks/Path Traversal.md"
+                "file": "0.0 Cyber, Technology and More/Tools.md"
               }
             }
           }
@@ -205,14 +192,82 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "b7e32b6e67f3cfb3",
+  "floating": {
+    "id": "1e5503933f576ae1",
+    "type": "floating",
+    "children": [
+      {
+        "id": "a8d1e8aabdf39ee0",
+        "type": "window",
+        "children": [
+          {
+            "id": "b7e04d16ccb6e663",
+            "type": "tabs",
+            "children": [
+              {
+                "id": "d222e971a671ca67",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "1.0 Types of Attacks & Defense/1.1 Attacks/1.1.1 Types of Attacks.md",
+                    "mode": "source",
+                    "source": false
+                  }
+                }
+              },
+              {
+                "id": "b7e32b6e67f3cfb3",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "1.0 Types of Attacks & Defense/Types of Attacks & Defense.md",
+                    "mode": "source",
+                    "source": false
+                  }
+                }
+              },
+              {
+                "id": "f382f66022f5887e",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "0.0 Cyber, Technology and More/Tools.md",
+                    "mode": "source",
+                    "source": false
+                  }
+                }
+              }
+            ],
+            "currentTab": 2
+          }
+        ],
+        "direction": "vertical",
+        "x": 2880,
+        "y": 0,
+        "width": 960,
+        "height": 1032,
+        "maximize": false,
+        "zoom": 0
+      }
+    ]
+  },
+  "active": "f382f66022f5887e",
   "lastOpenFiles": [
+    "1.0 Types of Attacks & Defense/Types of Attacks & Defense.md",
+    "1.0 Types of Attacks & Defense/1.1 Attacks/1.1.1 Types of Attacks.md",
     "0.0 Cyber, Technology and More/Tools.md",
+    "0.0 Cyber, Technology and More/Notes/Course/Week 07/20240807 - Day 032.md",
     "1.0 Types of Attacks & Defense/1.1 Attacks/Path Traversal.md",
+    "0.0 Cyber, Technology and More/Notes/Course/Week 07/20240806 - Day 031.md",
+    "0.0 Cyber, Technology and More/Notes/Course/Week 07/20240805 - Day 030.md",
+    "0.0 Cyber, Technology and More/Notes/Course/Week 07/20240808 - Day 033.md",
+    "0.0 Cyber, Technology and More/Notes/Course/Week 07/20240809 - Day 034.md",
     "1.0 Types of Attacks & Defense/Logs.md",
     "0.0 Cyber, Technology and More/Terminologies.md",
     "0.0 Cyber, Technology and More/Commands.md",
-    "0.0 Cyber, Technology and More/Notes/Course/Week 07/20240809 - Day 034.md",
     "Untitled.md",
     "1.0 Types of Attacks & Defense/1.1 Attacks/SQL Injections.md",
     "1.0 Types of Attacks & Defense/1.1 Attacks/OWASP Top 10.md",
@@ -220,19 +275,13 @@
     "4.0 Networking/Networking.md",
     "calenda.md",
     "5.0 Programming/5.1 Programming Languages/Go.md",
-    "1.0 Types of Attacks & Defense/1.1 Attacks/1.1.1 Types of Attacks.md",
-    "0.0 Cyber, Technology and More/Notes/Course/Week 07/20240807 - Day 032.md",
     "5.0 Programming/5.1 Programming Languages/URScript.md",
-    "0.0 Cyber, Technology and More/Notes/Course/Week 07/20240806 - Day 031.md",
     "5.0 Programming/5.1 Programming Languages/Python.md",
-    "0.0 Cyber, Technology and More/Notes/Course/Week 07/20240805 - Day 030.md",
     "5.0 Programming/5.1 Programming Languages/C.md",
     "5.0 Programming/Programming Terminologies & Concepts.md",
     "5.0 Programming/Programming.md",
     "4.0 Networking/Network Administration/Web Servers.md",
     "3.0 Software/3.1 Operating Systems/3.1.1 Desktops & Laptops/3.1.1.2 Linux & Unix.md",
-    "8.0 Databases/MariaDB.md",
-    "8.0 Databases/8.2 Traditional Database (DBMS - Database Management Systems).md",
     "99.99 Images Used/TutorialsPointProcThrComparison.png",
     "99.99 Images Used/RiskMatrixSchema.png",
     "99.99 Images Used/Reddit_csharp_HandlesDef.png",

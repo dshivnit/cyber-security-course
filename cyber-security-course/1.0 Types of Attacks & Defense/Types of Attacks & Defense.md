@@ -66,6 +66,17 @@
 		- However, other sources say that it is OffSec who maintain it and are seen as the author of the DB
 	- Version Disclosure
 		- When one version of an application has exploits that have been identified perhaps sometimes released for public information
+- Web Enumeration
+	- Gobuster
+	- WPScan
+	- 
+- Upload Vulnerabilities
+	- Possible Risks:
+		- Overwriting existing files on a Server
+		- Uploading and executing shells on a Server
+		- Bypassing Client-side filtering
+		- Bypassing various kinds of Server-side filtering
+		- Fooling content type validation checks
 - Penetration Testing
 	- An Authorised audit of a computer system's security and defenses as agreed by the owners of the system(s)
 	- NCSC 

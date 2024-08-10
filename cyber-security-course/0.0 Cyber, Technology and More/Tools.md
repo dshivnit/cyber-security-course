@@ -353,6 +353,96 @@ ie Windows applications/software, Other OS applications/software, PowerShell too
 	- YAML formatted
 	- Identifies information based on binary and textual patterns (such as hex and strings)
 	- Usually used in malware analysis, also very effective in log analysis
+
+- Gobuster
+	- Some toggles:
+		- -t
+			- Number of concurrent threads (defaulted to 10; usually pretty good to change this to 64 or something)
+		- -v 
+		- -z
+			- Don't display progress
+		- -q
+			- Don't print banner and other noise
+		- -o
+			- Write to an output file
+		- -u
+			- the URL
+		- -w
+			- Wordlist to be used
+		- -c
+			- Cookes
+		- -x
+			- Extensions!
+			- `-x.php,.html,.js,.txt,.conf`
+		- -H
+			- Headers
+		- -k
+			- no TLS validation
+				- Skips the TLS certificate verification
+		- -n
+			- Don't print status codess
+		- -s
+			- Positive status codes
+		- -b
+			- Negative status codes
+		- -U
+			- Uname for basic auth
+		- -P
+			- Password for basic auth
+	- Modes:
+		- dir
+			- Enumerate directories
+			- `gobuster dir -u http://10.169.169.169 -w /usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt`
+			- Note: the protocol will need to be identified in the URL call, hence why stated a URL and not an IP :) 
+		- dns
+			- Will scan for sub-domains
+			- Same syntax as dir
+			- Different wordlist
+				- Toggles:
+					- -c
+						- Show CNAME records (can't be used with -i)
+					- -i
+						- Show IP Addy's
+					- -r
+						- Use a custom DNS Server (format 'server.com' or 'server.com:port')
+			- vhost
+				- Will do a Virtual Host scan
+				- Same syntax, just vhost
+				- Same toggles as dir
+				- Wordlist something like - subdomains-top1million
+			- Wordlists:
+				- Common:
+					- directory-list-*
+					- big.txt
+					- common.txt
+					- small.txt
+					- extensions_common.txt
+					- Just get SecLists lol
+		- WPScan
+			- `http://whateverwarser.com/wp-admin` 
+				- Usually will identify a WP site
+			- Enumerating and researching a security vulnerability categories present in WordPress sites - including some:
+				- Sensitive Information disclosure
+					- Plugin and Theme installation versions for disclosed vulnerabilities or CVEs
+				- Path Discovery
+					- Looking for misconfigured file permissions (ie, wp-config.php)
+				- Weak Password Policies
+					- (pword brueforcing)
+				- Presence of Default Installation
+					- (searching for default files)
+				- Testing Web Application Firewalls
+					- Common WAF plugins
+			- `wpscan --url http://whatever.com/ -- enumerate t`
+				- Will normally search known locations and advise to you what theme is being used by said WP system
+			- `wpscan --url http://whatever.com/ -- enumerate p
+				- For plugins
+			- `wpscan --url http://whatever.com/ -- enumerate u`
+				- For Users
+				- aka Authors
+			- the `v` flag will use WPVulnDB to cross-reference for vulnerabilities on the WP System
+				- ie `vp` will look for vulnerable plugins
+			- `aggressive` an aggressive profile for WPScan to use
+			- `passive` another profile that can be used (similar to aggressive, just the opposite so as to not raise any flags)
 ------------------
 
 - IDEs (Integrated Development Environment)
