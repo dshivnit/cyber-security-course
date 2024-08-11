@@ -194,4 +194,80 @@
 - Active Reconnaissance
 	- Direct engagement with the mark/target
 	- ^ 
-- 
+-  Upload Vulnerabilities
+	- Some impacts:
+		- Overwriting existing files on a server
+		- Uploading and executing shells on a server
+		- Bypassing Client-side filtering
+		- Bypassing various kinds of Server-side filtering
+		- Fooling content type validation checks
+	
+	- Files that are uploaded on to a Server should be checked essentially
+		- Change the name of the file when it's uploaded on to the Server
+			- Either to a random name, or add some things to the original file name (to the front to the back, etc)
+			- Check to see if the filename already exists on the Server
+			- File permissions should also be considered when a request has been made to replace a file
+				- Does that User have sufficient perms? 
+				- Get a perm?
+				- Web pages for example should never be allowed to be written by any User from the outside - there should be a clear and secured process for these types of updates
+	- Shells
+		- Web Shells
+			- PHP
+			- `<?php echo system($_GET["cmd"]) ?>`
+		- Reverse Shells
+		- Bind Shells
+
+	- Filters
+		- Client-side Filters
+			- Running on the User's Web-browser as opposed to on the Server
+			- Javascript for example
+		- Server-side Filters
+			- Running on the Server-side..
+			- PHP
+			- ASP
+			- C#, Node.js
+			- Python
+			- Ruby
+			- others
+		- Extension Validation
+		- File Type Filtering
+			- MIME Validation
+				- Multipurpose Internet Mail Extension
+					- Used as an identifier for files
+						- Originally when transferred as attachments in an email
+						- But now when these types of files are being transferred over HTTP/S, the MIME file type for an uploaded file is attached to the header of the request
+						- `Content-Type: image/jpeg` for example
+							- Format: `<type> | <subtype>`
+					- Can be checked both Server-side and Client-side
+					- Note MIME is based on the extension of the file, so this is relatively straight forward to bypass
+		- Magic Number Validation:
+			- The more accurate method of determining the contents of a file
+			- A string of bytes at the very beginning of the file content which identify the content
+			- In example, a .PNG file would have these bytes at the very top of the file:
+				- `89 50 4E 47 0D 0A 1A 0A`
+			- Unix systems use magic numbers for identifying files
+			- More effective than checking just the extension of a file
+		- File Length Filtering
+			- To prevent huge files from being uploaded to the Server via an upload form
+			- If the system is only expecting a small file to be uploaded then there may be a length filter in place to ensure that the file length requirement is adhered to
+				- ie 2Kb
+		- File Name Filtering
+			- File names should sanitised before being uploaded so as to remove any characters ('bad characters') which could potentially cause harm to the file system when uploaded
+				- For example: null bytes or forward slashes in Linux, semi-colons and potentially unicode characters
+		- File Content Filtering
+			- To be covered later
+		- Normally these filters will be used in conjunction with each other as opposed to simply just by themselves
+		- PHP payloads in PNGs (injecting bad PHP into exif data of an otherwise legitimate image file)
+	- Client-side Bypass
+		- Intercepting a request coming back from a Web-site wherein Javascript code can be altered prior to receiving it
+			- Through the use of tools such as Burp
+			- Adjusting Intercept rules os that `^js$|` will be picked up
+			- Then perhaps adjusting what kind of files can be uploaded if there is a File Type Filter set in place by removing that Javascript script from the intercepted response from the Web-system 
+			- Then perhaps uploading whatever one wanted on to the System
+			- Then running it providing that one knew where those files were going on the System
+			- And so on
+	- Server-side Bypass
+		- Sincere testing needs to be done to see what rules are set in place
+		- PHP is used quite a bit
+			- Are there other extension types for PHP files as opposed to just `.php` ? What else?
+		- 

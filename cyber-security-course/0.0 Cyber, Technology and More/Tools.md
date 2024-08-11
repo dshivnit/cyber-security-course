@@ -469,7 +469,8 @@ ie Windows applications/software, Other OS applications/software, PowerShell too
 			- In example: `-o report.html` 
 		- Text files
 		- HTML reports
-	- 
+	- Hexeditor
+	- Wappalyzer
 ------------------
 
 - IDEs (Integrated Development Environment)

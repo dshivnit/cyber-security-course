@@ -142,6 +142,9 @@
 - LM Studio
   https://lmstudio.ai/
 
+- List of File Signatures
+  https://en.wikipedia.org/wiki/List_of_file_signatures
+
 - 
 
 
