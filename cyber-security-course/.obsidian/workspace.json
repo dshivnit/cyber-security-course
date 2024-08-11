@@ -14,26 +14,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "0.0 Cyber, Technology and More/Commands.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "50f8f31e85242f52",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "0.0 Cyber, Technology and More/Resources.md",
+                "file": "1.0 Types of Attacks & Defense/Risk Management.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       },
       {
         "id": "2fb0e64401067da2",
@@ -118,7 +105,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "0.0 Cyber, Technology and More/Resources.md",
+                "file": "1.0 Types of Attacks & Defense/Risk Management.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -135,7 +122,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "0.0 Cyber, Technology and More/Resources.md",
+                "file": "1.0 Types of Attacks & Defense/Risk Management.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -170,7 +157,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "0.0 Cyber, Technology and More/Resources.md"
+                "file": "1.0 Types of Attacks & Defense/Risk Management.md"
               }
             }
           }
@@ -192,14 +179,72 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "50f8f31e85242f52",
+  "floating": {
+    "id": "48ecb3272239d60f",
+    "type": "floating",
+    "children": [
+      {
+        "id": "6c98a50496674b4f",
+        "type": "window",
+        "children": [
+          {
+            "id": "20eb84b7abd9a545",
+            "type": "tabs",
+            "children": [
+              {
+                "id": "d3f8cb1b91e61d59",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "5.0 Programming/5.1 Programming Languages/Python.md",
+                    "mode": "source",
+                    "source": false
+                  }
+                }
+              },
+              {
+                "id": "50f8f31e85242f52",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "5.0 Programming/5.1 Programming Languages/Shells/Bash.md",
+                    "mode": "source",
+                    "source": false
+                  }
+                }
+              }
+            ],
+            "currentTab": 1
+          }
+        ],
+        "direction": "vertical",
+        "x": 2880,
+        "y": 0,
+        "width": 960,
+        "height": 1032,
+        "maximize": false,
+        "zoom": 0
+      }
+    ]
+  },
+  "active": "0de34a8b75c684f2",
   "lastOpenFiles": [
+    "1.0 Types of Attacks & Defense/Risk Assessment.md",
+    "1.0 Types of Attacks & Defense/Risk Management.md",
+    "14.0 Project Methodologies/Methodologies.md",
+    "1.0 Types of Attacks & Defense/1.2 Defense/SOC - Security Operations Centre.md",
+    "0.0 Cyber, Technology and More/Notes/Course/Week 08/20240812 - Day 035.md",
+    "5.0 Programming/5.1 Programming Languages/Shells/Bash.md",
+    "5.0 Programming/5.1 Programming Languages/Python.md",
+    "0.0 Cyber, Technology and More/Notes/Course/Week 03/20240708-20240712  - Day 010-Day 014.md",
+    "0.0 Cyber, Technology and More/Notes/Course/Week 02/20240702 - Day 006.md",
+    "5.0 Programming/5.1 Programming Languages/Shells",
+    "0.0 Cyber, Technology and More/Resources.md",
     "0.0 Cyber, Technology and More/Tools.md",
     "1.0 Types of Attacks & Defense/Types of Attacks & Defense.md",
-    "0.0 Cyber, Technology and More/Resources.md",
-    "0.0 Cyber, Technology and More/Notes/Course/Week 08/20240811 - Day 035.md",
     "1.0 Types of Attacks & Defense/1.1 Attacks/1.1.1 Types of Attacks.md",
-    "1.0 Types of Attacks & Defense/Cyber Security - Risk Assessments.md",
     "1.0 Types of Attacks & Defense/Vulnerabilities.md",
     "0.0 Cyber, Technology and More/Notes/Course/Week 08",
     "5.0 Programming/5.1 Programming Languages/URScript.md",
@@ -214,13 +259,6 @@
     "0.0 Cyber, Technology and More/Commands.md",
     "Untitled.md",
     "1.0 Types of Attacks & Defense/1.1 Attacks/SQL Injections.md",
-    "1.0 Types of Attacks & Defense/1.1 Attacks/OWASP Top 10.md",
-    "1.0 Types of Attacks & Defense/1.1 Attacks/Cross-Site Scripting (XSS).md",
-    "4.0 Networking/Networking.md",
-    "calenda.md",
-    "5.0 Programming/5.1 Programming Languages/Go.md",
-    "5.0 Programming/5.1 Programming Languages/Python.md",
-    "5.0 Programming/5.1 Programming Languages/C.md",
     "99.99 Images Used/TutorialsPointProcThrComparison.png",
     "99.99 Images Used/RiskMatrixSchema.png",
     "99.99 Images Used/Reddit_csharp_HandlesDef.png",
@@ -234,7 +272,6 @@
     "0.0 Cyber, Technology and More/Notes/Course/Week 06",
     "4.0 Networking/The Stacks",
     "3.0 Software/3.3 Application Testing",
-    "0.0 Cyber, Technology and More/Notes/Course/Week 05",
     "Untitled.canvas",
     "Untitled 1.canvas",
     "99.99 Images Used/Pasted image 20240702214553.png",

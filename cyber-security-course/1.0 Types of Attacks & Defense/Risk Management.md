@@ -1,0 +1,29 @@
+- Defining Risk
+	- The likelihood of a threat actor taking advantage of a vulnerability by using a threat against an IT asset
+- Assets
+	- Data
+	- Equipment
+		- Servers, Printers, Computer etc
+	- People
+	- Services
+- Likelihood
+	- The probability of an event occurring over time
+- Threat Actors
+	- Hackers
+	- Hacktivists
+	- Script Kiddies
+	- Insiders
+	- Competitors
+	- Shadow IT
+	- Criminal Syndicates
+	- Advanced Persistent Threat (APTs)
+		- Long-term hacking of a system to gain information over time (extended)
+- Vulnerabilities
+	- Weakness inhered in the protection of an asset
+- Threat
+	- An action (exploit) by a Threat Actor that they can use against a Vulnerability to cause harm to an Asset
+- Remediation
+	- What Risk Management is ALL ABOUT! :D 
+	- What do we do to to prevent the dangerous stuff above (Assets shouldn't be dangerous - unless you tie people and insiders together, then goodbad=bad)
+
+- 

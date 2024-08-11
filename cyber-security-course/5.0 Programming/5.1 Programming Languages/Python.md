@@ -93,7 +93,7 @@ Resources
 	- This example will print numbers from 0 to 4
 	- Take note that Python like most other programming languages consider 0 to be the 'starting number'
 	
-- Functions
+- Functions (called SUBROUTINES in Python!)
 	- Some of your code may start to get repetitive, this is where Functions come into play
 	- A block of code that can be called at different places in your program
 	- You could have a function to work out a calculation such as a distance between two points on a map or output formatted text based on certain conditions. 
@@ -153,7 +153,6 @@ Resources
 				import datetime
 				current_time = datetime.datetime.now()
 				print(current_time)
-			- 
 - import
 	- random
 	- getpass
@@ -175,6 +174,8 @@ Resources
 		- print(i, end="\\v")
 			- I have no idea how to describe this... 
 	- sep=
+		- By default is set to a `" "` space character
+		- But you can set this to any string, character, or integer to format the output as needed
 - f-strings (format)
 	- Format
 	- Method to combine variables and text together
@@ -201,8 +202,6 @@ Resources
 		 - ^ centre
 			 - print(f"Counting from {i: <2} of {var}")
 			 - and so on
-		 - 
-	 - 
 - chr()
 	- convert an Integer in ASCII to a character/letter
 - ord()
@@ -253,4 +252,3 @@ Resources
 			- Self-Inverse:
 				- Something XOR'd with itself results in 0
 				- A ^ A = 0
-		- 
