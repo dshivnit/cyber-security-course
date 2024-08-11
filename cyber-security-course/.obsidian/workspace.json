@@ -21,12 +21,12 @@
             }
           },
           {
-            "id": "1169b0a035fe6510",
+            "id": "50f8f31e85242f52",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "0.0 Cyber, Technology and More/Notes/Course/Week 07/20240807 - Day 032.md",
+                "file": "0.0 Cyber, Technology and More/Notes/Course/Week 08/20240811 - Day 035.md",
                 "mode": "source",
                 "source": false
               }
@@ -41,12 +41,12 @@
         "dimension": 52.7191298784389,
         "children": [
           {
-            "id": "72947e727b026a19",
+            "id": "1169b0a035fe6510",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "5.0 Programming/5.1 Programming Languages/URScript.md",
+                "file": "0.0 Cyber, Technology and More/Notes/Course/Week 07/20240807 - Day 032.md",
                 "mode": "source",
                 "source": false
               }
@@ -118,7 +118,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "0.0 Cyber, Technology and More/Tools.md",
+                "file": "1.0 Types of Attacks & Defense/1.1 Attacks/1.1.1 Types of Attacks.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -135,7 +135,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "0.0 Cyber, Technology and More/Tools.md",
+                "file": "1.0 Types of Attacks & Defense/1.1 Attacks/1.1.1 Types of Attacks.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -170,7 +170,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "0.0 Cyber, Technology and More/Tools.md"
+                "file": "1.0 Types of Attacks & Defense/1.1 Attacks/1.1.1 Types of Attacks.md"
               }
             }
           }
@@ -240,8 +240,7 @@
                   }
                 }
               }
-            ],
-            "currentTab": 2
+            ]
           }
         ],
         "direction": "vertical",
@@ -254,11 +253,16 @@
       }
     ]
   },
-  "active": "f382f66022f5887e",
+  "active": "d222e971a671ca67",
   "lastOpenFiles": [
-    "1.0 Types of Attacks & Defense/Types of Attacks & Defense.md",
-    "1.0 Types of Attacks & Defense/1.1 Attacks/1.1.1 Types of Attacks.md",
     "0.0 Cyber, Technology and More/Tools.md",
+    "0.0 Cyber, Technology and More/Notes/Course/Week 08/20240811 - Day 035.md",
+    "1.0 Types of Attacks & Defense/Vulnerabilities.md",
+    "1.0 Types of Attacks & Defense/1.1 Attacks/1.1.1 Types of Attacks.md",
+    "1.0 Types of Attacks & Defense/Types of Attacks & Defense.md",
+    "0.0 Cyber, Technology and More/Notes/Course/Week 08",
+    "5.0 Programming/5.1 Programming Languages/URScript.md",
+    "0.0 Cyber, Technology and More/Terminologies.md",
     "0.0 Cyber, Technology and More/Notes/Course/Week 07/20240807 - Day 032.md",
     "1.0 Types of Attacks & Defense/1.1 Attacks/Path Traversal.md",
     "0.0 Cyber, Technology and More/Notes/Course/Week 07/20240806 - Day 031.md",
@@ -266,7 +270,6 @@
     "0.0 Cyber, Technology and More/Notes/Course/Week 07/20240808 - Day 033.md",
     "0.0 Cyber, Technology and More/Notes/Course/Week 07/20240809 - Day 034.md",
     "1.0 Types of Attacks & Defense/Logs.md",
-    "0.0 Cyber, Technology and More/Terminologies.md",
     "0.0 Cyber, Technology and More/Commands.md",
     "Untitled.md",
     "1.0 Types of Attacks & Defense/1.1 Attacks/SQL Injections.md",
@@ -275,13 +278,10 @@
     "4.0 Networking/Networking.md",
     "calenda.md",
     "5.0 Programming/5.1 Programming Languages/Go.md",
-    "5.0 Programming/5.1 Programming Languages/URScript.md",
     "5.0 Programming/5.1 Programming Languages/Python.md",
     "5.0 Programming/5.1 Programming Languages/C.md",
     "5.0 Programming/Programming Terminologies & Concepts.md",
     "5.0 Programming/Programming.md",
-    "4.0 Networking/Network Administration/Web Servers.md",
-    "3.0 Software/3.1 Operating Systems/3.1.1 Desktops & Laptops/3.1.1.2 Linux & Unix.md",
     "99.99 Images Used/TutorialsPointProcThrComparison.png",
     "99.99 Images Used/RiskMatrixSchema.png",
     "99.99 Images Used/Reddit_csharp_HandlesDef.png",
@@ -296,7 +296,6 @@
     "4.0 Networking/The Stacks",
     "3.0 Software/3.3 Application Testing",
     "0.0 Cyber, Technology and More/Notes/Course/Week 05",
-    "0.0 Cyber Security Course/Notes/Week 04/Untitled",
     "Untitled.canvas",
     "Untitled 1.canvas",
     "99.99 Images Used/Pasted image 20240702214553.png",

@@ -443,6 +443,33 @@ ie Windows applications/software, Other OS applications/software, PowerShell too
 				- ie `vp` will look for vulnerable plugins
 			- `aggressive` an aggressive profile for WPScan to use
 			- `passive` another profile that can be used (similar to aggressive, just the opposite so as to not raise any flags)
+- Nikto
+	- Can be used to discover vulns, some including:
+		- Sensitive files
+		- Outdated servers and programs
+		- Common server and software misconfigs (directory indexing, cgi scrips, xss protections)
+	- Some examples of the information it can provide:
+		- What HTTP methods a Web-system will accept
+			- ie GET, HEAD, POST, PUT, DELETE, OPTIONS
+	- Has various plugins that can be used:
+		- `nikto --list-plugins`
+			- Will show you a list of plugins
+		- Example: `nikto -h 10.69.69.69 -Plugin apacheuser`
+	- Verbosity
+		- With the use of the `-Display` flag
+		- Arguments
+			- `1` - Show any redirects that are given
+			- `2` - Show any Cookies that may have been received
+			- `3` - Output any errors
+	- Vulnerability Tuning...
+		- `-Tuning` flag
+		- Have a look in the MAN page for Nikto
+	- Outputting to files:
+		- `-o` (short for `-Output`)
+			- In example: `-o report.html` 
+		- Text files
+		- HTML reports
+	- 
 ------------------
 
 - IDEs (Integrated Development Environment)

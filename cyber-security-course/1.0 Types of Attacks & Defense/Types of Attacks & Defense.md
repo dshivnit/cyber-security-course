@@ -69,7 +69,7 @@
 - Web Enumeration
 	- Gobuster
 	- WPScan
-	- 
+	- Nikto
 - Upload Vulnerabilities
 	- Possible Risks:
 		- Overwriting existing files on a Server
