@@ -256,7 +256,7 @@
           }
         ],
         "direction": "vertical",
-        "x": 1920,
+        "x": 960,
         "y": 0,
         "width": 960,
         "height": 1032,
@@ -267,12 +267,12 @@
   },
   "active": "410f7ba85eb52746",
   "lastOpenFiles": [
-    "0.0 Cyber, Technology and More/Notes/Course/Week 08/20240812 - Day 035.md",
+    "4.0 Networking/Binary.md",
     "4.0 Networking/Networking.md",
+    "0.0 Cyber, Technology and More/Notes/Course/Week 08/20240812 - Day 035.md",
     "0.0 Cyber, Technology and More/Terminologies.md",
     "4.0 Networking/The Stacks/Open Systems Interconnect (OSI) Stack (Model -- I call it a stack alright! =P).md",
     "4.0 Networking/Subnetting.md",
-    "4.0 Networking/Binary.md",
     "6.0 Cryptography/Diffie-Hellman Key Exchange.md",
     "0.0 Cyber, Technology and More/Resources.md",
     "0.0 Cyber, Technology and More/Tools.md",
