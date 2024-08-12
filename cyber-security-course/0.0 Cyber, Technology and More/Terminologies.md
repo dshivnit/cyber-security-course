@@ -493,4 +493,7 @@
 	- International Electrotechnical Commission
 - SSAE SOC 2
 	- Statement on Standards for Attestation Engagements System and Organisation Controls
-- 
+- ZTA
+	- Zero Trust Architecture
+	- aka Zero Trust Security Model
+	- Describes an approach to the strategy, design and implementation of IT systems

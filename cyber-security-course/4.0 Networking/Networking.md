@@ -153,7 +153,7 @@
 		- Reserved (for private use and are non-routed)
 			- 10.0.0.0 - 10.255.255.255
 			- 172.16.0.0 - 172.31.255.255
-			- 192.16.0.0 - 192.168.255.255
+			- 192.168.0.0 - 192.168.255.255
 		- Other Reserved:
 			- 127.0.0.0 (for loopback and IPC on the localhost)
 			- 224.0.0.0 - 239.255.255.255 (for multicast addresses)
@@ -164,6 +164,41 @@
 		- Only certain, designated receivers will receive the transmission. (orhanergun.net)
 	- Broadcast
 		- All devices connected to the network will receive the transmission. (orhanergun.net)
+	- Subnetting:
+		- Logical Operations:
+			- AND
+			- OR
+			- NOT
+			- These are used to calculate and manipulate IP addresses and Subnet Masks
+		- AND:
+			- Used to determine the Network Address from an IP Address and a Subnet Mask
+			- You do this by performing what is called a bitwise AND between the IP Addy and the Subnet Mask (convert them to binary first)
+			- Both bits **have** to be 1
+			- Example:
+				- IP Address:        11000000.10101000.00000001.00001010
+								192.168.1.10
+				- Subnet Mask:    11111111.11111111.11111111.00000000
+								255.255.255.0
+				- Network Add:    11000000.10101000.00000001.00000000
+								192.168.1.0
+		- OR:
+			- Used to calculate the Broadcast Address of a Subnet
+			- Involves performing a bitwise OR between the Network Address and the Inverted Subnet Mask (where all the Host Bits are converted to 1)
+			- **At least one** of the bits in the comparison have to be a 1
+			- Example:
+				- Network Add:    11000000.10101000.00000001.00000000
+							   192.168.1.0
+				- Inv Sub Mask:    00000000.00000000.00000000.11111111
+							   0.0.0.255
+				- Broadcast Add:  11000000.10101000.00000001.11111111
+							   192.168.1.255
+		- NOT:
+			- Used to invert the bits of the Subnet Mask to find the Host portion
+			- You find the Host portion (how many possible hosts) by inverting the Subnet Mask (like in the above example)
+			- 
+
+
+
 
 Classful Subnets:
 

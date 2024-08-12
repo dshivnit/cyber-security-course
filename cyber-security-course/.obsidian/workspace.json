@@ -19,21 +19,8 @@
                 "source": false
               }
             }
-          },
-          {
-            "id": "410f7ba85eb52746",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "4.0 Networking/Subnetting.md",
-                "mode": "source",
-                "source": false
-              }
-            }
           }
-        ],
-        "currentTab": 1
+        ]
       },
       {
         "id": "cd7ca7eefeb0dbf6",
@@ -118,7 +105,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "0.0 Cyber, Technology and More/Notes/Course/Week 08/20240812 - Day 035.md",
+                "file": "4.0 Networking/Networking.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -135,7 +122,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "0.0 Cyber, Technology and More/Notes/Course/Week 08/20240812 - Day 035.md",
+                "file": "4.0 Networking/Networking.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -170,7 +157,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "0.0 Cyber, Technology and More/Notes/Course/Week 08/20240812 - Day 035.md"
+                "file": "4.0 Networking/Networking.md"
               }
             }
           }
@@ -204,18 +191,6 @@
             "id": "20eb84b7abd9a545",
             "type": "tabs",
             "children": [
-              {
-                "id": "1169b0a035fe6510",
-                "type": "leaf",
-                "state": {
-                  "type": "markdown",
-                  "state": {
-                    "file": "0.0 Cyber, Technology and More/Notes/Course/Week 08/20240812 - Day 035.md",
-                    "mode": "source",
-                    "source": false
-                  }
-                }
-              },
               {
                 "id": "d3f8cb1b91e61d59",
                 "type": "leaf",
@@ -251,74 +226,37 @@
                     "source": false
                   }
                 }
-              }
-            ]
-          }
-        ],
-        "direction": "vertical",
-        "x": 0,
-        "y": 0,
-        "width": 960,
-        "height": 1032,
-        "maximize": false,
-        "zoom": 0
-      },
-      {
-        "id": "7bca63efadef3bed",
-        "type": "window",
-        "children": [
-          {
-            "id": "8542ba2f94bcdd17",
-            "type": "tabs",
-            "children": [
+              },
               {
-                "id": "be1ba6b7971db49e",
+                "id": "1169b0a035fe6510",
                 "type": "leaf",
                 "state": {
                   "type": "markdown",
                   "state": {
-                    "file": "0.0 Cyber, Technology and More/Terminologies.md",
+                    "file": "0.0 Cyber, Technology and More/Notes/Course/Week 08/20240812 - Day 035.md",
+                    "mode": "source",
+                    "source": false
+                  }
+                }
+              },
+              {
+                "id": "410f7ba85eb52746",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "4.0 Networking/Networking.md",
                     "mode": "source",
                     "source": false
                   }
                 }
               }
-            ]
+            ],
+            "currentTab": 4
           }
         ],
         "direction": "vertical",
-        "x": 2880,
-        "y": 0,
-        "width": 960,
-        "height": 1032,
-        "maximize": false,
-        "zoom": 0
-      },
-      {
-        "id": "d0fdd69162290600",
-        "type": "window",
-        "children": [
-          {
-            "id": "ca3b345810ee57d6",
-            "type": "tabs",
-            "children": [
-              {
-                "id": "b511e46be353d0b4",
-                "type": "leaf",
-                "state": {
-                  "type": "markdown",
-                  "state": {
-                    "file": "4.0 Networking/The Stacks/Open Systems Interconnect (OSI) Stack (Model -- I call it a stack alright! =P).md",
-                    "mode": "source",
-                    "source": false
-                  }
-                }
-              }
-            ]
-          }
-        ],
-        "direction": "vertical",
-        "x": 960,
+        "x": 1920,
         "y": 0,
         "width": 960,
         "height": 1032,
@@ -327,19 +265,19 @@
       }
     ]
   },
-  "active": "1169b0a035fe6510",
+  "active": "410f7ba85eb52746",
   "lastOpenFiles": [
-    "4.0 Networking/Subnetting.md",
     "0.0 Cyber, Technology and More/Notes/Course/Week 08/20240812 - Day 035.md",
+    "4.0 Networking/Networking.md",
+    "0.0 Cyber, Technology and More/Terminologies.md",
     "4.0 Networking/The Stacks/Open Systems Interconnect (OSI) Stack (Model -- I call it a stack alright! =P).md",
+    "4.0 Networking/Subnetting.md",
     "4.0 Networking/Binary.md",
     "6.0 Cryptography/Diffie-Hellman Key Exchange.md",
-    "4.0 Networking/Networking.md",
     "0.0 Cyber, Technology and More/Resources.md",
     "0.0 Cyber, Technology and More/Tools.md",
     "1.0 Types of Attacks & Defense/Risk Management.md",
     "0.0 Cyber, Technology and More/Notes/Course/Week 07/20240807 - Day 032.md",
-    "0.0 Cyber, Technology and More/Terminologies.md",
     "5.0 Programming/5.1 Programming Languages/Shells/Bash.md",
     "1.0 Types of Attacks & Defense/Risk Assessment.md",
     "14.0 Project Methodologies/Methodologies.md",
