@@ -1,23 +1,26 @@
 - Defining Risk
 	- The likelihood of a threat actor taking advantage of a vulnerability by using a threat against an IT asset
 - Assets
-	- Data
-	- Equipment
-		- Servers, Printers, Computer etc
-	- People
-	- Services
+	- Any part of an IT infrastructure that has value
+		- Data
+		- Equipment
+			- Servers, Printers, Computer etc
+		- People
+		- Services
 - Likelihood
+	- The probability of assets being damaged over time
 	- The probability of an event occurring over time
 - Threat Actors
-	- Hackers
-	- Hacktivists
-	- Script Kiddies
-	- Insiders
-	- Competitors
-	- Shadow IT
-	- Criminal Syndicates
-	- Advanced Persistent Threat (APTs)
-		- Long-term hacking of a system to gain information over time (extended)
+	- Anyone or anything with the motive and resources to attack another's IT Infrastructure
+		- Hackers
+		- Hacktivists
+		- Script Kiddies
+		- Insiders
+		- Competitors
+		- Shadow IT
+		- Criminal Syndicates
+		- Advanced Persistent Threat (APTs)
+			- Long-term hacking of a system to gain information over time (extended)
 - Vulnerabilities
 	- Weakness inhered in the protection of an asset
 - Threat
@@ -26,4 +29,104 @@
 	- What Risk Management is ALL ABOUT! :D 
 	- What do we do to to prevent the dangerous stuff above (Assets shouldn't be dangerous - unless you tie people and insiders together, then goodbad=bad)
 
-- 
+- CIA Triad
+	- Confidentiality\
+		- Usually comes with forms of encryption
+	- Integrity
+		- Usually comes with the forms of hashing
+	- Availability\
+		- Making sure that systems are available when we need them
+
+- Attack Vectors
+	- Pathways to gain access to infrastructure
+		- Weak configs
+		- Open firewall ports
+		- Lack of User security awareness
+		- Lack of MFA
+		- Missing patches
+		- Infected USB thumbdrives
+	- Supply-chain Attacks
+		- Manufacturers
+		- Contractorts
+		- Implementers
+		- Outsourced software development
+			- Right-to-audit clause
+			- To make sure that those developers/applications are compliant with regulations and security standards
+
+- Threat Intelligence
+	- Explain the different Threat Actors, Vectors and Intelligence Sources
+	- Facilitate Risk Management
+	- Hardening can reduce incident response time
+	- Provide Cybersecurity insight:
+		- Adversary TTPs (Tactics, Techniques and Procedures)
+	- Threat Maps
+		- Geographical representation of Malware Attacks
+			- https://threatmap.checkpoint.com/
+	- Threat Intelligence Sources
+		- Closed/Proprietary
+			- Signup Services
+			- Paid-for Services
+		- OSINT (Open-Source Intelligence)
+			- Government Reports
+			- Media Reports
+			- Academic Reports
+			- Google Open-source Hacking DB
+			- File/Code Repositories
+				- GitHub
+			- Vulnerability Databases
+				- OpenCVE
+				- Mitre CVE
+				- etc
+		- Dark Web/Net
+			- Tor Network
+			- Encrypted Anonymous Connections
+			- Not indexed
+				- Journalists
+				- Law
+				- Government
+
+- Threat Intelligence Sharing 
+	- Automated Indicator Sharing (AIS)
+		- Exchange of Cybersecurity Intelligence (CI) between entities
+	- Structured Threat Information eXpression (STIX)
+		- A form of AIS
+		- Data exchange format for Cybersecurity Intelligence
+	- Trusted Automated eXchange of Intelligence Information (TAXII)
+		- Liks an RSS feed, but for threats
+		- Consists of TAXII Servers and Clients
+		- Real-time Cyber Intelligence feeds
+
+- Risk Management Concepts
+	- Risk Vectors
+		- Mission-critical IT Systems
+			- Payment processing
+			- Human resources
+			- Emergency systems
+		- Sensitive Data
+			- Do we know what we have and where it is?
+		- Third-party Access
+			- Components
+			- Entities
+				- Contractors, externals etc
+	- Physical Risk Vectors
+		- Access Control Vestibules
+			- Mantraps
+				- Getting into a facility (physically)
+			- Locked rooms
+				- Server rooms
+				- Racks 
+			- Limited use of Removable MEdia (ie USBs)
+	- Risk Management Frameworks (RMFs)
+		- Centre for Internet Security (CIS)
+		- National Institute of Standards and Technology (NIST - in the USA)
+		- NIST RMF 
+			- Also known as the Cybersecurity Framework (or CSF)
+		- International Organisation for Standardisation/International Electrotechnical Commission (ISO/IEC)
+		- Statement on Standards for Attestation Engagements System and Organisation Controls (SSAE SOC 2)
+			- Financial statement integrity
+			- Internal controls
+			- Type I and Type II
+			- Look at different methods to control access to Processes and resulting Financial Documents within an organisation  
+		- NIST Special Publication SP 800-30 Rev 1
+			- The guide for conducting Risk Assessments
+		- 

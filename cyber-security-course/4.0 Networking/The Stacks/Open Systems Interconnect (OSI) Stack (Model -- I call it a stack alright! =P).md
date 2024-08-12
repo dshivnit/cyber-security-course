@@ -23,6 +23,8 @@ It is also useful to note that you can identify technical issues and which layer
 	- The receiving computer will also understand data sent to a computer in one format destined for another format
 	- You may send an email with Outlook, however, the person receiving it may be using Thunderbird. 
 		- Either way the content will still need to be presented in the same way
+	- Radius / Kerberos Authentication
+	- 
 - Session - 5th
 	- The Fifth Layer
 	- Will begin to create a connection to the computer that the data from the previous, Sixth Layer, is meant for.
@@ -98,6 +100,12 @@ It is also useful to note that you can identify technical issues and which layer
 			- Destination Port
 			- Data	
 - Network - 3rd
+	- IP Addresses (v4 and v6)
+	- ICMP
+	- IPsec
+	- IGMP
+	- IPX
+	- IS-IS
 	- Routing
 	- Re-assembly of data
 	- Determines the optimal path that packets should travel

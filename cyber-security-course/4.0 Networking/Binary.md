@@ -1,0 +1,11 @@
+- NOT
+- OR
+	- Comparing these two, A and B Bytes:
+		- A 
+			- 0 1 0 1 1 1 0 0 
+		- B
+			- 1 1 0 0 1 0 0 0 
+			- OR will equal (is there at least one 1 bit in A and B? ):
+				- 1 1 0 1 1 1 0 0 
+			- AND will equal (A and B both have to be 1's):
+				- 0 1 0 0 1 0 0 0 

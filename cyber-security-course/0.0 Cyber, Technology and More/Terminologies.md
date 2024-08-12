@@ -467,4 +467,30 @@
 	- Commonly used for configuration files and in applications where data are being stored or transmitted
 - SIEM
 	- Security Information and Event Management
+- CI
+	- Cybersecurity Intelligence
+- AIS
+	- Automated Indicator Sharing
+	- Exchange of CI (Cybersecurity Intelligence) between entities
+- STIX
+	- Structured Threat Information eXchange
+	- A form of AIS
+	- Data exchange format for CI
+- TAXII
+	- Trusted Automated eXchange of Intelligence Information (TAXII)
+	- Consists of TAXII Servers and Clients
+	- Real-time Cyber Intelligence feeds
+- RMF
+	- Risk Management Framework
+- CIS
+	- Centre for Information Security
+- NIST
+	- National Institute of Standards and Technology
+	- NIST RMF
+	- or CSF - Cyber Security Framework
+- ISO/IEC
+	- International Standards Organisation
+	- International Electrotechnical Commission
+- SSAE SOC 2
+	- Statement on Standards for Attestation Engagements System and Organisation Controls
 - 

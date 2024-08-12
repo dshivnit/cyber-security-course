@@ -1,0 +1,56 @@
+Subnetting:
+- Decrease Network Chatter that can happen across Network(s)
+- Network Architects/Engineers need to be able to identify how many IP addresses will be needed for any given subnet depending on the scope of what will be involved, requirements etc
+- Subnet Mask determines whether a packet that is sent goes local, or straight to the Router/Gateway to go somewhere else
+- Numbers to remember
+	- 128
+	- 192
+	- 224
+	- 240
+	- 248
+	- 252
+	- 254
+	- 255
+- Binary
+	- NOT
+	- OR
+		- Comparing these two, A and B Bytes:
+			- A 
+				- 0 1 0 1 1 1 0 0 
+			- B
+				- 1 1 0 0 1 0 0 0 
+				- OR will equal (is there at least one 1 bit in A and B? ):
+					- 1 1 0 1 1 1 0 0 
+				- AND will equal (A and B both have to be 1's):
+					- 0 1 0 0 1 0 0 0 
+	- AND
+		- Taking the IP Address against the Subnet Mask will give you the NETWORK ADDRESS
+- Network Address
+	- IP AND Subnet Mask
+	- The Address that will define the entire Network
+- Broadcast Address
+	- The NOT of either the IP Address or the NOT of the Subnet Mask
+		- in example:
+			- 192.168.1.164
+				- in Binary:
+					- 11000000.10101000.00000001.10100100
+			- 255.255.255.0
+				- in Binary:
+					- 11111111.11111111.11111111.00000000
+			- AND will be:
+				- in Binary:
+					- 11000000.10101000.00000001.00000000
+				- 192.168.1.0
+			- NOT will be:
+				- In Binary:
+					- 00000000.00000000.00000000.11111111
+				- 0.0.0.255
+			- OR will be:
+				- In Binary:
+					- 11000000.10101000.00000001.11111111
+				- 192.168.1.255
+			- Network:
+				- 192.168.1.0
+			- Broadcast:
+				- 192.168.1.255
+- Subnets have the Whack (`/`) and subnet mask after - ie `/24`

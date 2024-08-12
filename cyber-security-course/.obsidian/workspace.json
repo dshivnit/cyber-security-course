@@ -4,36 +4,49 @@
     "type": "split",
     "children": [
       {
-        "id": "438c1a7e8461736c",
+        "id": "1188d9e536677113",
         "type": "tabs",
-        "dimension": 47.2808701215611,
+        "dimension": 50,
         "children": [
           {
-            "id": "0de34a8b75c684f2",
+            "id": "73a5b6c3c68dc1ba",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "1.0 Types of Attacks & Defense/Risk Management.md",
+                "file": "4.0 Networking/Binary.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "410f7ba85eb52746",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "4.0 Networking/Subnetting.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       },
       {
-        "id": "2fb0e64401067da2",
+        "id": "cd7ca7eefeb0dbf6",
         "type": "tabs",
-        "dimension": 52.7191298784389,
+        "dimension": 50,
         "children": [
           {
-            "id": "1169b0a035fe6510",
+            "id": "2fe6d1f246ede1f6",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "0.0 Cyber, Technology and More/Notes/Course/Week 07/20240807 - Day 032.md",
+                "file": "0.0 Cyber, Technology and More/Notes/Course/Week 08/20240812 - Day 035.md",
                 "mode": "source",
                 "source": false
               }
@@ -105,7 +118,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "1.0 Types of Attacks & Defense/Risk Management.md",
+                "file": "0.0 Cyber, Technology and More/Notes/Course/Week 08/20240812 - Day 035.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -122,7 +135,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "1.0 Types of Attacks & Defense/Risk Management.md",
+                "file": "0.0 Cyber, Technology and More/Notes/Course/Week 08/20240812 - Day 035.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -157,7 +170,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "1.0 Types of Attacks & Defense/Risk Management.md"
+                "file": "0.0 Cyber, Technology and More/Notes/Course/Week 08/20240812 - Day 035.md"
               }
             }
           }
@@ -192,6 +205,18 @@
             "type": "tabs",
             "children": [
               {
+                "id": "1169b0a035fe6510",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "0.0 Cyber, Technology and More/Notes/Course/Week 08/20240812 - Day 035.md",
+                    "mode": "source",
+                    "source": false
+                  }
+                }
+              },
+              {
                 "id": "d3f8cb1b91e61d59",
                 "type": "leaf",
                 "state": {
@@ -214,9 +239,51 @@
                     "source": false
                   }
                 }
+              },
+              {
+                "id": "0de34a8b75c684f2",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "1.0 Types of Attacks & Defense/Risk Management.md",
+                    "mode": "source",
+                    "source": false
+                  }
+                }
               }
-            ],
-            "currentTab": 1
+            ]
+          }
+        ],
+        "direction": "vertical",
+        "x": 0,
+        "y": 0,
+        "width": 960,
+        "height": 1032,
+        "maximize": false,
+        "zoom": 0
+      },
+      {
+        "id": "7bca63efadef3bed",
+        "type": "window",
+        "children": [
+          {
+            "id": "8542ba2f94bcdd17",
+            "type": "tabs",
+            "children": [
+              {
+                "id": "be1ba6b7971db49e",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "0.0 Cyber, Technology and More/Terminologies.md",
+                    "mode": "source",
+                    "source": false
+                  }
+                }
+              }
+            ]
           }
         ],
         "direction": "vertical",
@@ -226,39 +293,70 @@
         "height": 1032,
         "maximize": false,
         "zoom": 0
+      },
+      {
+        "id": "d0fdd69162290600",
+        "type": "window",
+        "children": [
+          {
+            "id": "ca3b345810ee57d6",
+            "type": "tabs",
+            "children": [
+              {
+                "id": "b511e46be353d0b4",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "4.0 Networking/The Stacks/Open Systems Interconnect (OSI) Stack (Model -- I call it a stack alright! =P).md",
+                    "mode": "source",
+                    "source": false
+                  }
+                }
+              }
+            ]
+          }
+        ],
+        "direction": "vertical",
+        "x": 960,
+        "y": 0,
+        "width": 960,
+        "height": 1032,
+        "maximize": false,
+        "zoom": 0
       }
     ]
   },
-  "active": "0de34a8b75c684f2",
+  "active": "1169b0a035fe6510",
   "lastOpenFiles": [
-    "1.0 Types of Attacks & Defense/Risk Assessment.md",
+    "4.0 Networking/The Stacks/Open Systems Interconnect (OSI) Stack (Model -- I call it a stack alright! =P).md",
+    "0.0 Cyber, Technology and More/Notes/Course/Week 08/20240812 - Day 035.md",
+    "4.0 Networking/Subnetting.md",
+    "4.0 Networking/Binary.md",
+    "6.0 Cryptography/Diffie-Hellman Key Exchange.md",
+    "4.0 Networking/Networking.md",
+    "0.0 Cyber, Technology and More/Resources.md",
+    "0.0 Cyber, Technology and More/Tools.md",
     "1.0 Types of Attacks & Defense/Risk Management.md",
+    "0.0 Cyber, Technology and More/Notes/Course/Week 07/20240807 - Day 032.md",
+    "0.0 Cyber, Technology and More/Terminologies.md",
+    "5.0 Programming/5.1 Programming Languages/Shells/Bash.md",
+    "1.0 Types of Attacks & Defense/Risk Assessment.md",
     "14.0 Project Methodologies/Methodologies.md",
     "1.0 Types of Attacks & Defense/1.2 Defense/SOC - Security Operations Centre.md",
-    "0.0 Cyber, Technology and More/Notes/Course/Week 08/20240812 - Day 035.md",
-    "5.0 Programming/5.1 Programming Languages/Shells/Bash.md",
     "5.0 Programming/5.1 Programming Languages/Python.md",
     "0.0 Cyber, Technology and More/Notes/Course/Week 03/20240708-20240712  - Day 010-Day 014.md",
     "0.0 Cyber, Technology and More/Notes/Course/Week 02/20240702 - Day 006.md",
     "5.0 Programming/5.1 Programming Languages/Shells",
-    "0.0 Cyber, Technology and More/Resources.md",
-    "0.0 Cyber, Technology and More/Tools.md",
     "1.0 Types of Attacks & Defense/Types of Attacks & Defense.md",
     "1.0 Types of Attacks & Defense/1.1 Attacks/1.1.1 Types of Attacks.md",
     "1.0 Types of Attacks & Defense/Vulnerabilities.md",
     "0.0 Cyber, Technology and More/Notes/Course/Week 08",
     "5.0 Programming/5.1 Programming Languages/URScript.md",
-    "0.0 Cyber, Technology and More/Terminologies.md",
-    "0.0 Cyber, Technology and More/Notes/Course/Week 07/20240807 - Day 032.md",
     "1.0 Types of Attacks & Defense/1.1 Attacks/Path Traversal.md",
     "0.0 Cyber, Technology and More/Notes/Course/Week 07/20240806 - Day 031.md",
     "0.0 Cyber, Technology and More/Notes/Course/Week 07/20240805 - Day 030.md",
     "0.0 Cyber, Technology and More/Notes/Course/Week 07/20240808 - Day 033.md",
-    "0.0 Cyber, Technology and More/Notes/Course/Week 07/20240809 - Day 034.md",
-    "1.0 Types of Attacks & Defense/Logs.md",
-    "0.0 Cyber, Technology and More/Commands.md",
-    "Untitled.md",
-    "1.0 Types of Attacks & Defense/1.1 Attacks/SQL Injections.md",
     "99.99 Images Used/TutorialsPointProcThrComparison.png",
     "99.99 Images Used/RiskMatrixSchema.png",
     "99.99 Images Used/Reddit_csharp_HandlesDef.png",
