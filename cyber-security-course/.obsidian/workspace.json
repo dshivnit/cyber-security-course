@@ -28,18 +28,31 @@
         "dimension": 50,
         "children": [
           {
-            "id": "dcf9a6ccbb5bb503",
+            "id": "742bec95c324a29f",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "5.0 Programming/5.1 Programming Languages/ASM - Assembly Language.md",
+                "file": "1.0 Types of Attacks & Defense/1.1 Attacks/1.1.1 Types of Attacks.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "f5b8d8fc07938c1d",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "0.0 Cyber, Technology and More/Tools.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -105,7 +118,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "5.0 Programming/5.1 Programming Languages/Shells/Bash.md",
+                "file": "1.0 Types of Attacks & Defense/Risk Management.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -122,7 +135,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "5.0 Programming/5.1 Programming Languages/Shells/Bash.md",
+                "file": "1.0 Types of Attacks & Defense/Risk Management.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -157,7 +170,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "5.0 Programming/5.1 Programming Languages/Shells/Bash.md"
+                "file": "1.0 Types of Attacks & Defense/Risk Management.md"
               }
             }
           }
@@ -226,9 +239,52 @@
                     "source": false
                   }
                 }
+              },
+              {
+                "id": "dcf9a6ccbb5bb503",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "1.0 Types of Attacks & Defense/Risk Management.md",
+                    "mode": "source",
+                    "source": false
+                  }
+                }
               }
             ],
-            "currentTab": 2
+            "currentTab": 3
+          }
+        ],
+        "direction": "vertical",
+        "x": 1920,
+        "y": 0,
+        "width": 960,
+        "height": 1032,
+        "maximize": false,
+        "zoom": 0
+      },
+      {
+        "id": "adc54bf27eb14589",
+        "type": "window",
+        "children": [
+          {
+            "id": "b6f2d3c01b2acbd7",
+            "type": "tabs",
+            "children": [
+              {
+                "id": "46c4ff4b3bab9b63",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "0.0 Cyber, Technology and More/Terminologies.md",
+                    "mode": "source",
+                    "source": false
+                  }
+                }
+              }
+            ]
           }
         ],
         "direction": "vertical",
@@ -241,26 +297,26 @@
       }
     ]
   },
-  "active": "73a5b6c3c68dc1ba",
+  "active": "dcf9a6ccbb5bb503",
   "lastOpenFiles": [
-    "5.0 Programming/5.1 Programming Languages/Python.md",
+    "0.0 Cyber, Technology and More/Terminologies.md",
+    "1.0 Types of Attacks & Defense/Risk Management.md",
+    "0.0 Cyber, Technology and More/Tools.md",
+    "1.0 Types of Attacks & Defense/1.1 Attacks/1.1.1 Types of Attacks.md",
     "5.0 Programming/5.1 Programming Languages/Shells/Bash.md",
+    "5.0 Programming/5.1 Programming Languages/Python.md",
     "5.0 Programming/5.1 Programming Languages/ASM - Assembly Language.md",
     "0.0 Cyber, Technology and More/Notes/Course/Week 08/20240812 - Day 035.md",
     "0.0 Cyber, Technology and More/Notes/Course/Week 07/20240805 - Day 030.md",
     "0.0 Cyber, Technology and More/Notes/Course/Week 08/20240813 - Day 036.md",
     "1.0 Types of Attacks & Defense/Types of Attacks & Defense.md",
     "6.0 Cryptography/Hashing.md",
-    "1.0 Types of Attacks & Defense/1.1 Attacks/1.1.1 Types of Attacks.md",
     "4.0 Networking/Networking.md",
-    "0.0 Cyber, Technology and More/Tools.md",
     "4.0 Networking/Binary.md",
-    "0.0 Cyber, Technology and More/Terminologies.md",
     "4.0 Networking/The Stacks/Open Systems Interconnect (OSI) Stack (Model -- I call it a stack alright! =P).md",
     "4.0 Networking/Subnetting.md",
     "6.0 Cryptography/Diffie-Hellman Key Exchange.md",
     "0.0 Cyber, Technology and More/Resources.md",
-    "1.0 Types of Attacks & Defense/Risk Management.md",
     "0.0 Cyber, Technology and More/Notes/Course/Week 07/20240807 - Day 032.md",
     "1.0 Types of Attacks & Defense/Risk Assessment.md",
     "14.0 Project Methodologies/Methodologies.md",

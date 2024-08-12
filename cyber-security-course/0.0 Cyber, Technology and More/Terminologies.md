@@ -497,3 +497,50 @@
 	- Zero Trust Architecture
 	- aka Zero Trust Security Model
 	- Describes an approach to the strategy, design and implementation of IT systems
+- GDPR
+	- General Data Protection Regulation
+- HIPAA
+	- Health Insurance Portability and Accountability Act
+- PCI DSS
+	- Payment Card Industry Data Security Standard
+	- Protects cardholder information
+- AUPs
+	- Acceptable Use Policies
+- CSA
+	- Cloud Security Alliance
+- AV
+	- Asset Value
+- EF
+	- Exposure Factor
+- SLE
+	- Single Loss Expectancy
+	- How much loss is experienced during one negative incident
+	- Multiply the AV by the EF
+- ARO
+	- Annual Rate of Occurrence
+- ALE
+	- Annual Loss Expectancy
+		- ALE = SLE x ARO
+- MTBF
+	- Mean Time Between Failures
+- MTTF
+	- Mean Time To Failure
+- MTTR
+	- Mean Time To Repair
+- PTA
+	- Privacy Threshold Assessment
+- PIA
+	- Privacy Impact Assessment
+- RPO 
+	- Recovery Point Objective
+	- The maximum tolerable data loss
+	- Frequent backups
+	- If we can tolerate one hour of data loss, then we should be having backups every one hour
+- RTO
+	- Recovery Time Objective
+	- How much downtime can we tolerate of the asset
+	- Return the asset back into a usable state within the RTO
+- BIA
+	- Business Impact Analysis
+	- Identifies how negative incidents will impact business processes and sensitive data
+	- 
