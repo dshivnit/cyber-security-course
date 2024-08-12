@@ -1,0 +1,17 @@
+- Plaintext
+	- Data before any encryption or hashing
+	- Often text, but not always as it could be a photograph, a file, or something else
+- Encoding
+	- This isn't encryption
+	- Just a form of data representation like base64 or hexadecimal
+	- Completely reversible
+- Hash
+	- The output of a hash function
+	- To produce the hash value of some data
+	- "to hash"
+	- You can make a potato into hash browns, but you can't make hash browns back into a potato
+- Brute Force
+	- Attacking cryptography by trying every different password or different key
+- Cryptoanalysis
+	- Attacking cryptography by finding a weakness in the underlying truths
+- 

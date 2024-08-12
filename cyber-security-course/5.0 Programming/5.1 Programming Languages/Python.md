@@ -124,6 +124,17 @@ Resources
 		print(" You have spent " + str(initSpend )) # this will print 25.99
 - ALWAYS KEEP AN NOTE ON INDENTS!
 
+- Lists (known as Arrays in other languages, sometimes)
+	- Dynamic Lists
+		- Using a blank list and adding or removing items to it along the way
+		- `newList = []`
+			- That there is a new blank list 
+		- `.append()` will add stuff, items into the list
+		- `.remove()` to obviously do what it states, from a list
+		- `if item in myList:`
+			- Check to see if the item is even in the list and treat it accordingly in an if statement - which probably otherwise is also within its own respective loop, like `while True:`
+		- 
+
 - Data Structures
 	- Graph
 	- 
