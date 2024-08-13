@@ -10,6 +10,7 @@
 	- while
 		- do
 		- done
+	- wc
 	- 
 
 - Variables

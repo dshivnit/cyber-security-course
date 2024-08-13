@@ -543,4 +543,7 @@
 - BIA
 	- Business Impact Analysis
 	- Identifies how negative incidents will impact business processes and sensitive data
-	- 
+- Brute Force
+	- Attacking cryptography by trying every different password or different key
+- Cryptoanalysis
+	- Attacking cryptography by finding a weakness in the underlying truths
