@@ -4,36 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "1188d9e536677113",
-        "type": "tabs",
-        "dimension": 50,
-        "children": [
-          {
-            "id": "57657ec9528ae3ae",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "5.0 Programming/5.1 Programming Languages/CSS (Cascading Style-Sheets).md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          }
-        ]
-      },
-      {
         "id": "cd7ca7eefeb0dbf6",
         "type": "tabs",
-        "dimension": 50,
         "children": [
           {
-            "id": "742bec95c324a29f",
+            "id": "647e7e92efb9035e",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "1.0 Types of Attacks & Defense/1.1 Attacks/1.1.1 Types of Attacks.md",
+                "file": "0.0 Cyber, Technology and More/Resources.md",
                 "mode": "source",
                 "source": false
               }
@@ -105,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "5.0 Programming/5.1 Programming Languages/CSS (Cascading Style-Sheets).md",
+                "file": "4.0 Networking/Sockets.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -122,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "5.0 Programming/5.1 Programming Languages/CSS (Cascading Style-Sheets).md",
+                "file": "4.0 Networking/Sockets.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -157,7 +137,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "5.0 Programming/5.1 Programming Languages/CSS (Cascading Style-Sheets).md"
+                "file": "4.0 Networking/Sockets.md"
               }
             }
           }
@@ -179,34 +159,120 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "57657ec9528ae3ae",
+  "floating": {
+    "id": "4107a1833ba090b4",
+    "type": "floating",
+    "children": [
+      {
+        "id": "dc17428dfba372a8",
+        "type": "window",
+        "children": [
+          {
+            "id": "cb6f5265b94f4b3e",
+            "type": "tabs",
+            "children": [
+              {
+                "id": "d31b692ea2f09a86",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "5.0 Programming/5.1 Programming Languages/Python.md",
+                    "mode": "source",
+                    "source": false
+                  }
+                }
+              },
+              {
+                "id": "45b0df866683393f",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "0.0 Cyber, Technology and More/Terminologies.md",
+                    "mode": "source",
+                    "source": false
+                  }
+                }
+              },
+              {
+                "id": "d6cffbe5693921f2",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "0.0 Cyber, Technology and More/Notes/Course/Week 08/20240813 - Day 036.md",
+                    "mode": "source",
+                    "source": false
+                  }
+                }
+              },
+              {
+                "id": "57657ec9528ae3ae",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "4.0 Networking/Networking.md",
+                    "mode": "source",
+                    "source": false
+                  }
+                }
+              },
+              {
+                "id": "742bec95c324a29f",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "4.0 Networking/Sockets.md",
+                    "mode": "source",
+                    "source": false
+                  }
+                }
+              }
+            ],
+            "currentTab": 4
+          }
+        ],
+        "direction": "vertical",
+        "x": 960,
+        "y": 0,
+        "width": 960,
+        "height": 1032,
+        "maximize": false,
+        "zoom": 0
+      }
+    ]
+  },
+  "active": "742bec95c324a29f",
   "lastOpenFiles": [
+    "0.0 Cyber, Technology and More/Resources.md",
+    "4.0 Networking/Sockets.md",
+    "0.0 Cyber, Technology and More/Cyber, Technology and More.md",
+    "1.0 Types of Attacks & Defense/Risk Management.md",
+    "0.0 Cyber, Technology and More/Terminologies.md",
+    "1.0 Types of Attacks & Defense/1.1 Attacks/1.1.1 Types of Attacks.md",
+    "5.0 Programming/5.1 Programming Languages/Python.md",
     "0.0 Cyber, Technology and More/Notes/Course/Week 08/20240813 - Day 036.md",
     "4.0 Networking/Networking.md",
-    "0.0 Cyber, Technology and More/Terminologies.md",
     "5.0 Programming/5.1 Programming Languages/CSS (Cascading Style-Sheets).md",
-    "5.0 Programming/5.1 Programming Languages/Python.md",
+    "0.0 Cyber, Technology and More/Notes/Course/Week 08/20240814 - Day 037.md",
+    "6.0 Cryptography/Hashing.md",
     "0.0 Cyber, Technology and More/Tools.md",
     "0.0 Cyber, Technology and More/Notes/Course/Week 07/20240809 - Day 034.md",
     "0.0 Cyber, Technology and More/Notes/Course/Week 08/20240812 - Day 035.md",
-    "1.0 Types of Attacks & Defense/1.1 Attacks/1.1.1 Types of Attacks.md",
-    "1.0 Types of Attacks & Defense/Risk Management.md",
     "5.0 Programming/5.1 Programming Languages/Shells/Bash.md",
     "5.0 Programming/5.1 Programming Languages/ASM - Assembly Language.md",
     "0.0 Cyber, Technology and More/Notes/Course/Week 07/20240805 - Day 030.md",
     "1.0 Types of Attacks & Defense/Types of Attacks & Defense.md",
-    "6.0 Cryptography/Hashing.md",
     "4.0 Networking/Binary.md",
     "4.0 Networking/The Stacks/Open Systems Interconnect (OSI) Stack (Model -- I call it a stack alright! =P).md",
     "4.0 Networking/Subnetting.md",
     "6.0 Cryptography/Diffie-Hellman Key Exchange.md",
-    "0.0 Cyber, Technology and More/Resources.md",
     "0.0 Cyber, Technology and More/Notes/Course/Week 07/20240807 - Day 032.md",
     "1.0 Types of Attacks & Defense/Risk Assessment.md",
     "14.0 Project Methodologies/Methodologies.md",
-    "1.0 Types of Attacks & Defense/1.2 Defense/SOC - Security Operations Centre.md",
-    "0.0 Cyber, Technology and More/Notes/Course/Week 03/20240708-20240712  - Day 010-Day 014.md",
-    "0.0 Cyber, Technology and More/Notes/Course/Week 02/20240702 - Day 006.md",
     "5.0 Programming/5.1 Programming Languages/Shells",
     "0.0 Cyber, Technology and More/Notes/Course/Week 08",
     "99.99 Images Used/TutorialsPointProcThrComparison.png",

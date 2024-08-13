@@ -15,6 +15,12 @@
 - Good and efficient hashing algorithms will be relatively fast to compute, and slow to reverse.
 - The smallest change in the input data should cause a large change in the overall output of what is in the output (the hash)
 - The output of a hash function is normally in raw bytes, which are then encoded (common encoding schemes are base64 or hex)
+- You can use hashing to check to see if files have or haven't been modified in transfer (if they have been downloaded, sent over the Internet and so on)
+- Can be used to find duplicate files as well
+
+- HMAC - a method wherein a cryptographic hashing function is used to verify the authenticity and integrity of data
+	- With the use of a secret key and a hashing algorithm to produce the hash
+	- Can be used to verify a person, and also to ensure that a message hasn't been modified or corrupted (integrity)
 
 - Used in passwords
 	- Online

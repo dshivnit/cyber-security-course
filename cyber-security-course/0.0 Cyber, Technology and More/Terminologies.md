@@ -551,4 +551,17 @@
 	- Cyclic Redundancy Check
 - NTLM
 	- New Technology LAN Manager
-- 
+- REPL
+	- Read Evaluate Print and Loop
+	- Top-level interactive shell
+	- Takes single user inputs, executes them, and returns the results to the User
+- MQTT
+	- Message Queue Telemetry Transport
+	- Application-level protocol used for devices with limited processing power and battery life
+	- Operating in unreliable network conditions (ie gas sensors on a mining site)
+	- A standard messaging protocol used in IoT
+- IPC sockets
+	- Inter Process Communication
+	- IPC sockets are meant to transfer data between processes that are running on the same machine
+	- Network sockets otherwise do the same but across the network
+- Unix Sockets 

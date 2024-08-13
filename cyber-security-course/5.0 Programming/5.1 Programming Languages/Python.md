@@ -3,7 +3,10 @@ Resources
 - https://tryhackme.com/r/room/pythonbasics
 
 - pip - Package Installer Python 
-
+- REPLs
+	- Read, Evaluate, Print and Loop
+		- bpython
+		- ptpython
 - Data Types
 	- String
 		- Used for combinations of characters, such as letters or symbols
@@ -238,7 +241,6 @@ Resources
 		- ord('$') will return 36
 - bin()
 	- Convert an integer number to binary string prefixed with "0b". 
-
 - xor()
 	- bitwise operator which returns0 if the bits are identical, and a 1 if not. Mainly identified by the ^ character
 		- 0 0 = 0 
@@ -263,3 +265,5 @@ Resources
 			- Self-Inverse:
 				- Something XOR'd with itself results in 0
 				- A ^ A = 0
+- Python Web-socket
+	- 

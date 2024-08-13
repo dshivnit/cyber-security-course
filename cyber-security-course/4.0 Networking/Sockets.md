@@ -1,0 +1,37 @@
+IPC sockets
+	- Inter Process Communication
+	- IPC sockets are meant to transfer data between processes that are running on the same machine
+	- Network sockets otherwise do the same but across the network
+- Unix Sockets 
+	- A form of IPC sockets
+	- Just files on the filesystem
+	- Not identified by an IP Address and Port but rather by the file path on the filesystem
+- Network Sockets as IPC Sockets
+	- You can use network sockets for IPCs if both the server and receiver are sitting on the same machine (the local host - there's no place like 127.0.0.1!)
+	- This can add additional latency however, due to the overhead associated with processing your data by the network stack 
+	- Although, this also allows us to not worry about the underlying OS, as the network sockets are present and working on all systems as opposed to IPC sockets which are specific to a given OS or OS family. 
+
+Pocket Socket Library
+- Use of the official built-in Python socket library
+- Which costs of functions, constants, and classes that will be used to create, manage and work with sockets. 
+- Common functions, constants and classes:
+	- `socket()`
+		- Creates a new socket
+	- `bind()`
+		- Associates the socket to a specific address and port
+	- `listen()`
+		- Starts listening for incoming connections on the socket
+	- `accept()`
+		- Accepts a connection from a client and returns a new socket for communication 
+	- `connect()`
+		- Establishes a connection to a server
+	- `send()`
+		- Sends data through the socket
+	- `recv()`
+		- Receives data from the socket
+	- `close()`
+		- Closes the socket connection
+- Don't forget to IMPORT the socket library :) 
+- Thanks to Serhill Orlivskyl for the initial base for training and the tutorial which can be found [here](https://www.datacamp.com/tutorial/a-complete-guide-to-socket-programming-in-python)
+	- nb: *I was going to upload the script I had made - although I think I will do this at a later stage along with other scripts/programs I have created. Again, this is a WIP this repository and taking the time to go through editing/proofreading and making it into a more viewable book/thing(!) isn't a big focus for me right now :) (I've got heaps of stuff in my Linux box and wot not, the idea is to go through them all when I do have some time and make this a better read for everyone who might take intersest :thumbsup:*
+- 

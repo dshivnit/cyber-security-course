@@ -9,6 +9,8 @@
 - WAN (Wide Area Network)
 - LAN (Local Area Network)
 	- WLAN (Wireless LAN)
+- PAN (Personal Area Network)
+- MAN (Metropolitan Area Network)
 - SAN (Storage Area Network)
   
 - Protocols
