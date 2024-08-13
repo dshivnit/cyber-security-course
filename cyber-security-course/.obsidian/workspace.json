@@ -105,7 +105,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "0.0 Cyber, Technology and More/Notes/Course/Week 08/20240813 - Day 036.md",
+                "file": "5.0 Programming/5.1 Programming Languages/CSS (Cascading Style-Sheets).md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -122,7 +122,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "0.0 Cyber, Technology and More/Notes/Course/Week 08/20240813 - Day 036.md",
+                "file": "5.0 Programming/5.1 Programming Languages/CSS (Cascading Style-Sheets).md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -157,7 +157,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "0.0 Cyber, Technology and More/Notes/Course/Week 08/20240813 - Day 036.md"
+                "file": "5.0 Programming/5.1 Programming Languages/CSS (Cascading Style-Sheets).md"
               }
             }
           }
@@ -179,127 +179,10 @@
       "command-palette:Open command palette": false
     }
   },
-  "floating": {
-    "id": "28e0638cdab3dc65",
-    "type": "floating",
-    "children": [
-      {
-        "id": "adc54bf27eb14589",
-        "type": "window",
-        "children": [
-          {
-            "id": "b6f2d3c01b2acbd7",
-            "type": "tabs",
-            "children": [
-              {
-                "id": "46c4ff4b3bab9b63",
-                "type": "leaf",
-                "state": {
-                  "type": "markdown",
-                  "state": {
-                    "file": "0.0 Cyber, Technology and More/Terminologies.md",
-                    "mode": "source",
-                    "source": false
-                  }
-                }
-              },
-              {
-                "id": "938b777748420ef9",
-                "type": "leaf",
-                "state": {
-                  "type": "markdown",
-                  "state": {
-                    "file": "5.0 Programming/5.1 Programming Languages/Python.md",
-                    "mode": "source",
-                    "source": false
-                  }
-                }
-              },
-              {
-                "id": "b2a7cabf9a71b747",
-                "type": "leaf",
-                "state": {
-                  "type": "markdown",
-                  "state": {
-                    "file": "0.0 Cyber, Technology and More/Notes/Course/Week 08/20240813 - Day 036.md",
-                    "mode": "source",
-                    "source": false
-                  }
-                }
-              }
-            ],
-            "currentTab": 2
-          }
-        ],
-        "direction": "vertical",
-        "x": 3046,
-        "y": 25,
-        "width": 794,
-        "height": 992,
-        "maximize": false,
-        "zoom": 0
-      },
-      {
-        "id": "744e4cf6a27a2a7d",
-        "type": "window",
-        "children": [
-          {
-            "id": "f9970915f63576e3",
-            "type": "tabs",
-            "children": [
-              {
-                "id": "aec4f79ed0060618",
-                "type": "leaf",
-                "state": {
-                  "type": "markdown",
-                  "state": {
-                    "file": "0.0 Cyber, Technology and More/Notes/Course/Week 08/20240813 - Day 036.md",
-                    "mode": "source",
-                    "source": false
-                  }
-                }
-              },
-              {
-                "id": "f5b8d8fc07938c1d",
-                "type": "leaf",
-                "state": {
-                  "type": "markdown",
-                  "state": {
-                    "file": "4.0 Networking/Networking.md",
-                    "mode": "source",
-                    "source": false
-                  }
-                }
-              },
-              {
-                "id": "2fe6d1f246ede1f6",
-                "type": "leaf",
-                "state": {
-                  "type": "markdown",
-                  "state": {
-                    "file": "0.0 Cyber, Technology and More/Notes/Course/Week 08/20240812 - Day 035.md",
-                    "mode": "source",
-                    "source": false
-                  }
-                }
-              }
-            ]
-          }
-        ],
-        "direction": "vertical",
-        "x": 1920,
-        "y": 0,
-        "width": 960,
-        "height": 1032,
-        "maximize": false,
-        "zoom": 0
-      }
-    ]
-  },
-  "active": "aec4f79ed0060618",
+  "active": "57657ec9528ae3ae",
   "lastOpenFiles": [
-    "4.0 Networking/Networking.md",
     "0.0 Cyber, Technology and More/Notes/Course/Week 08/20240813 - Day 036.md",
+    "4.0 Networking/Networking.md",
     "0.0 Cyber, Technology and More/Terminologies.md",
     "5.0 Programming/5.1 Programming Languages/CSS (Cascading Style-Sheets).md",
     "5.0 Programming/5.1 Programming Languages/Python.md",

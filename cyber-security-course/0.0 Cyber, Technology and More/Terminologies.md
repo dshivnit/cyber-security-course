@@ -547,3 +547,8 @@
 	- Attacking cryptography by trying every different password or different key
 - Cryptoanalysis
 	- Attacking cryptography by finding a weakness in the underlying truths
+- CRC
+	- Cyclic Redundancy Check
+- NTLM
+	- New Technology LAN Manager
+- 

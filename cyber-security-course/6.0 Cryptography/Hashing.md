@@ -55,16 +55,38 @@
 	- Hash functions like BCRYPT and SHA512crypt do this automatically 
 	- Salts don't need to be kept private
 
-- HMAC
-	- Hash-based Message Authentication Code
-	- Cryptographic authentication technique that uses a hash function and a secret key
-- CTPH
-	- Context Triggered Piecewise Hash
-- SSDeep
-	- Fuzzy hash
-	- Type of CTPH
-- Streebog
-	- Hash function defined in the Russian national standard
+- Web Applications
+	- Normally likely to be MD5 than NTLM
+	- Automated hashing tools can get this mixed up...
+
+- Unix Style Password Hashes
+	- Normally easy to recognise as they have a prefix
+	- Standard format:
+		- `$format$rounds$salt$hash`
+	- Passwords are stored in `/etc/shadow`
+	- They used to be stored in `/etc/passwd` and were readable by everyone.. lol
+	- Some prefixes:
+		- `$1$`
+			- Algorithm:
+				- md5crypt - used in Cisco stuff and older Linux/Unix systems
+		- `$2$,$2a$,$2b$,$2x$,$2y$`
+			- Algorithm:
+				- Bcrypt - Common for Web-applications
+		- `$6$`
+			- Algorithm:
+				- sha512crypt (default for most Linux and Unix systems)
+
+- Windows Passwords
+	- Use NTLM
+	- A variant of MD4
+	- Visually identical to MD4 and MD5 hashes
+	- Password hashes are stored in the SAM
+	- Hashes found in the SAM are split into NT hashes and LM hashes
+
+- Use context to work out the hash type
+
+- Check  https://hashcat.net/wiki/doku.php?id=example_hashes for a more comprehensive list
+
 
 
 ---
