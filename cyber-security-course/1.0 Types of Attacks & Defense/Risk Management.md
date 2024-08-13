@@ -342,4 +342,178 @@
 		-  Return systems and data to usable state within the RTO
 
 - Data Types and Roles
+	- Data Classification 
+	-  Classify data, and then identify who will be responsible for it
+	- Government
+		- Top secret
+		- Secret
+		- Confidential
+	- Standard
+		- PII
+			- Personally Identifiable Information
+		- PHI
+			- Protected Health Information
+		- Proprietary
+		- Public/private
+		- Critical
+		- Financial
+	- Data Privacy Standards
+		- Ensure data privacy and breach notifications
+		- Levy fines
+		- HIPAA for example
+			- Health Insurance Portability and Accountability Act
+		- PCI DSS
+			- Payment Card Industry Data Security Standard
+		- GDPR
+			- General Data Protection Regulation
+	- Data Classification Tools
+		- Any method of applying metadata to resources
+			- ie cloud resource tagging
+				- Storage location 
+				- Webapp
+				- VMs
+		- Then you can classify those resources, via the metadata
+		- There should be organisational standards that will outline what the meta-tagging process will be
+			- Otherwise people may add metatags left right and centre, doing willy nilly things
+	- Data Roles and Responsibilities
+		- Legal data owner
+			- Set policies on how data will be managed
+		- Controller
+			- Ensures that the data will comply with applicable regulations, compliance
+		- Processor
+			- Processes related data, whilst keeping to compliance and regulations
+		- Custodian/Steward
+			- Responsible for managing the data
+			- Assigning file permissions 
+			- Backups for sensitive data
+		- It will be the DATA OWNER who defines the rules for the various roles and responsibilities for those roles in data management
+		- Data Privacy Officer
+			- Ensures data privacy regulation compliance against standards like the GDPR
+
+- Security and the Information Life Cycle
+	- Security involved in each phase
+	- Gaining consent to gather data in the first place, data collection
+	- Data Collection
+		- Consent
+		- Implementation depends on regulations/standards
+	- Life Cycle Phases
+		- Collection
+		- Storage
+		- Processing
+		- Sharing
+		- Archiving/Deleting
+	- Privacy Enhancing Technologies
+		- Anonymisation 
+			- Removing PII bits away from a collection of data, but retaining some for the sake of statistical purposes
+				- so removing names, addresses, etc, that would dox someone fully.
+		- Anonymised data has little market value
+		- Pseudo-anonymisation
+			- Replacing PII with fake identifiers
+			- Take for example blood types of people in any particular research being carried out
+			- Backgrounds of those people
+		- Data minimisation
+			- Limit stored/retained sensitive data
+		- Tokenisation
+			- A digital token authorises access instead of using the original credentials
+		- Data Masking
+			- Hide sensitive data from unauthorised users
+			- ie masking out credit card numbers in transaction receipts
+		- Data Sovereignty
+		- Where is the data located?  Physically.
+			- WHERE?!
+			- Laws, regulations may detail and require for this to be documented and will ask for it
+			- Cloud providers such as MS Azure can tell you the physical location of where the Cloud Storage is located - globally
+
+- Data Destruction
+	- Also consider paper, film, magnetic tape
+		- Shredded PULVERIZED!
+		- Burnt
+		- Made into pulp
+		- to mention some
+	- Consider failed or decommissioned storage devices
+	- End-of-life policies 
+		- Are they reused
+		- Are they donated
+		- Are they destroyed
+		- Update the Asset Inventory accordingly
+	- Digital Media Sanitisation
+		- Data is still recoverable
+			- Deleted 
+			- Repartitioned
+			- Reformatted drive(s)
+		- Disk wiping tools
+			- You want to do multiple overwrites on every storage sector on the said drive/disk
+			- Degaussing
+				- Applying a strong magnetic field against the disk platters in a HDD
+		- Ensure that any Storage Device is well scrubbed before passing it on (recycling)
+		- Cryptographic erasure
+			- An encryption key is used
+			- Where a decryption key is required to gain access to the contents of the drive
+			- DESTROY the DECRYPTION KEY
+			- Then the data on that drive won't be usable. GG
+			- Also for self-encrypting drives
+
+- Personnel Risk and Policies
+	- Standard Operating Procedures (SOPs)
+		- Formal guidelines as to how staff members of an organisation are to follow processes 
+	- Mandatory vacation, job rotation
+		- Can help identify anomalies in peoples absence
+	- Separation of duties
+		- Multi-person control
+		- Reduces the likelihood of fraud
+		- Does not prevent collusion in the event/situation where more than one person is involved in fraudulent and/or malicious internal activity
+	- Employee Contractor Hiring
+		- Social Media Analysis
+		- Web Search
+		- Background checks
+			- Criminal records
+			- Unpaid fines
+			- Credit checks
+			- Interviews with known connections
+				- Depending on the nature of the role
+	- User Onboarding
+		- Signing of an NDA if required
+			- Trade secrets
+			- Access to PII/PHI is involved
+			- Case-by-case
+		- Security Policy Awareness
+			- User sign-off
+		- User Account and Resource Access
+		- Security Badge, and Fob Key / Smart Card
+	- User Habits
+		- Clean desk policies
+		- Physical and digital document shredding
+			- Mitigates dumpster diving
+			- Data recovery by other people, external entities
+				- Think of that Lord of War scene lel that's the first thing that came into my mind, but there are many examples
+		- Personally-owned Devices
+			- MDM should be utilised (this being Mobile Device Management)
+			- BYOD
+				- Bring Your Own Device
+				- These aren't managed, how are they handled if and when they are on the network/system?
+	- User Training
+		- Ongoing, role-based
+		- CBT
+			- Computer-based Training
+		- Gamification 
+			- Liven things up!
+		- Phishing campaigns and simulations
+			- Meaning, training end-users what to look out for
+			- Also testing to see how aware are end-users in an organisation
+			- Run secret campaigns if required
+	- Offboarding
+		- There should be a termination/resignation letter
+		- Exit interview if possible
+		- Return of equipment
+		- Security access cards etc
+		- Knowledge transfer to the remaining team
+		- Account deletion and any related access to various systems and/or hardware
+			- Buildings and physical areas too
+
+- 
+
+	- Tools
+		- AWS
+			- Amazon Macie
+				- Data security service that uses ML (Machine Learning) and pattern matching to discover and help protect your sensitive data
 	- 
