@@ -565,3 +565,23 @@
 	- IPC sockets are meant to transfer data between processes that are running on the same machine
 	- Network sockets otherwise do the same but across the network
 - Unix Sockets 
+- UTF-8
+	- Unicode Transfer Format (UTF)
+	- A variable-length character encoding standard used for electronic communication
+	- Defined by the Unicode standard
+	- Capable of encoding all 1,112,064 valid Unicode code points using one to four one-byte code units
+- P
+	- Mathematics
+	- Polynomial Time
+	- Class P
+	- Problems where the solutions can be found in polynomial time
+	- Consider the sorting of a list
+		- The longer the list, the longer it would take to sort
+		- The increase in time is not exponential
+- NP 
+	- Mathematics
+	- Non-deterministic Polynomial Time
+	- Class NP
+	- Problems of which a given solution can be *checked* quickly
+	- Finding the solution itself might be hard
+	- We don't know if there's a fast algorithm to find the solution from the get go 
