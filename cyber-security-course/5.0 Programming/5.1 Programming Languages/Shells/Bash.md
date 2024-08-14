@@ -64,4 +64,35 @@
 - Scripts
 	- Normally the `.sh` extension is used, however, not required
 	- Will start with a `!#/bin/bash`
-	- 
+
+
+- The `dd` command - to wipe a disk
+	- `sudo fdisk -l`
+		- You will then see a list of the drives that are connected to the system
+		- `/dev/sda
+			- Now this is the drive itself
+			- You may then have other listings associated with sda, ie
+				`/dev/sda1`
+				`/dev/sda2`
+				so on
+		- `/dev/sdb`
+		- and so on
+	- `sudo fdisk /dev/sdb`
+		- Some questions will be asked
+			- `n` for a new partition
+			- default default
+			- `w` to commit the write partition
+	- Format it
+		- `sudo mkfs -t ext4 /dev/sdb1`
+			- We're making a filesystem here referenced by sdb1 with a filesystem type of ext4
+			- Now there's a usable filesystem
+	- Now let's make a directory somewhere in the system that will mount this drive
+	- `sudo mount /dev/sdb1 /datavol`
+		- (make sure you created that datavol directory first :) )
+	- Put some stuff in there
+	- Now let's wipe it
+	- `sudo dd if=/dev/urandom of=/dev/sdb1`
+	- Now let's unmount that filesystem
+	- `sudo umount /dev/sdb1`
+	- Chur (means cheers, good stuff, have a good one, - in NZ :) )
+- 

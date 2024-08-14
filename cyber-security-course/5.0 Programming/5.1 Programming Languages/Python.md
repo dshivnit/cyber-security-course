@@ -136,7 +136,13 @@ Resources
 		- `.remove()` to obviously do what it states, from a list
 		- `if item in myList:`
 			- Check to see if the item is even in the list and treat it accordingly in an if statement - which probably otherwise is also within its own respective loop, like `while True:`
-		- 
+- Tuple Unpacking (also referred to as Tuple Pairing)
+	- `mylist = [1, 2, 3]`
+	- `x, y, z = mylist`
+	- `print(x)`
+	- 1
+	- `print(z)`
+	- 3
 
 - Data Structures
 	- Graph
@@ -265,5 +271,9 @@ Resources
 			- Self-Inverse:
 				- Something XOR'd with itself results in 0
 				- A ^ A = 0
+- Multithreading in Python
+	- Multithreading in Python is limited
+	- CPython - standard Python implementation cannot run threads *truly* in parallel (datacamp.com)
+	- Only a single thread is allowed to execute at a time due to the global interpreter lock (GIL)
 - Python Web-socket
 	- 

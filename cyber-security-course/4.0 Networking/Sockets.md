@@ -32,6 +32,6 @@ Pocket Socket Library
 	- `close()`
 		- Closes the socket connection
 - Don't forget to IMPORT the socket library :) 
-- Thanks to Serhill Orlivskyl for the initial base for training and the tutorial which can be found [here](https://www.datacamp.com/tutorial/a-complete-guide-to-socket-programming-in-python)
+- Thanks to Serhiii Orlivskyi for the initial base for training and the tutorial which can be found [here](https://www.datacamp.com/tutorial/a-complete-guide-to-socket-programming-in-python)
 	- nb: *I was going to upload the script I had made - although I think I will do this at a later stage along with other scripts/programs I have created. Again, this is a WIP this repository and taking the time to go through editing/proofreading and making it into a more viewable book/thing(!) isn't a big focus for me right now :) (I've got heaps of stuff in my Linux box and wot not, the idea is to go through them all when I do have some time and make this a better read for everyone who might take interest :thumbsup:*
 - 

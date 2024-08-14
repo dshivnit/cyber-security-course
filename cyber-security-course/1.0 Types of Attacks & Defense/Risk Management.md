@@ -16,7 +16,7 @@
 		- Hacktivists
 		- Script Kiddies
 		- Insiders
-		- Competitors
+		- Competitors 
 		- Shadow IT
 		- Criminal Syndicates
 		- Advanced Persistent Threat (APTs)
@@ -510,7 +510,59 @@
 		- Account deletion and any related access to various systems and/or hardware
 			- Buildings and physical areas too
 
-- 
+- Third-party Risk Management
+	- Sometimes outsourcing is needed..
+	- These entities need to be managed effectively 
+	- Measurement Systems Analysis (MSA)
+	- Supply Chain Security Risks
+		- Hardware and Software vendors
+			- Unstable or insecure hardware, software
+			- EOL
+				- What happens next? 
+		- Contractors or suppliers not meeting security standards
+		- Cloud service providers security compliance
+			- Sensitive data stored in the public cloud presents a third-party risk
+		- Contractors
+			- Data privacy notices
+		- Company mergers and system linking
+		- Software developers using third-party components when writing code
+			- Who are these third-party's
+			- Trusted
+			- etc
+	- Data Loss Prevention (DLP)
+		- The intentional or unintentional disclosure of sensitive data can be controlled with DLP
+			- Creating policies that may stipulate standards for document creation say for example
+			- And other kinds of standardisations before IP products are released without proper branding for example
+		- Mechanisms to protect data from exfiltration
+
+- Agreement Types
+	- Interconnection Security Agreement (ISA)
+		- Can be legally binding
+			- Legal reviews if so
+		- The interconnection between two networks are connected in such a way that the connection and interaction is compliant with regulations
+			- ie Encrypted VPN connections
+		- Linking companies, partners, agencies etc
+		- Mandatory training/certifications for the engineers involved and managing these connections
+		- Input from IT security professionals
+	- SLA - Service Level Agreement
+		- Contractual document between Service Providers and their Customers
+		- The purpose is to guarantee the time for a service
+		- The consequences if the Provider is unable to meet these requirements
+		- To guarantee a service reliability
+	- Memorandum of Understanding (between two parties)
+		- The broad terms that are provided in the MOU
+	- Memorandum of Agreement (between two parties)
+		- More details on the agreement between the two parties
+	- Business Partnership Agreement
+		- Legal document
+		- Binding
+		- Obligations to each other
+		- Stipulates what responsibilities are assumed by either parties
+		- Decision making powers and where they lay
+		- Investment
+	- NDA Non Disclosure Agreement
+		- Sensitive information involved and an agreement outlining what may be disclosed to external parties and what may not
+	- 
 
 	- Tools
 		- AWS
