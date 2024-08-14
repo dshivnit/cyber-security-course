@@ -11,11 +11,9 @@
             "id": "87459ab679b4f50c",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "image",
               "state": {
-                "file": "0.0 Cyber, Technology and More/Notes/Course/Week 08/20240813 - Day 036.md",
-                "mode": "source",
-                "source": false
+                "file": "99.99 Images Used/HEX_Table.png"
               }
             }
           }
@@ -85,7 +83,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "0.0 Cyber, Technology and More/Notes/Course/Week 08/20240814 - Day 037.md",
+                "file": "99.99 Images Used/HEX_Table.png",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +100,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "0.0 Cyber, Technology and More/Notes/Course/Week 08/20240814 - Day 037.md",
+                "file": "99.99 Images Used/HEX_Table.png",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -137,7 +135,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "0.0 Cyber, Technology and More/Notes/Course/Week 08/20240814 - Day 037.md"
+                "file": "99.99 Images Used/HEX_Table.png"
               }
             }
           }
@@ -159,49 +157,12 @@
       "command-palette:Open command palette": false
     }
   },
-  "floating": {
-    "id": "4107a1833ba090b4",
-    "type": "floating",
-    "children": [
-      {
-        "id": "6d2a250871ee7340",
-        "type": "window",
-        "children": [
-          {
-            "id": "91b713da7af22223",
-            "type": "tabs",
-            "children": [
-              {
-                "id": "7a33a0d03d3523f3",
-                "type": "leaf",
-                "state": {
-                  "type": "markdown",
-                  "state": {
-                    "file": "0.0 Cyber, Technology and More/Notes/Course/Week 08/20240814 - Day 037.md",
-                    "mode": "source",
-                    "source": false
-                  }
-                }
-              }
-            ]
-          }
-        ],
-        "direction": "vertical",
-        "x": 3125,
-        "y": 0,
-        "width": 715,
-        "height": 1032,
-        "maximize": false,
-        "zoom": 0
-      }
-    ]
-  },
-  "active": "7a33a0d03d3523f3",
+  "active": "87459ab679b4f50c",
   "lastOpenFiles": [
-    "99.99 Images Used/Pasted image 20240814104026.png",
+    "0.0 Cyber, Technology and More/Notes/Course/Week 08/20240814 - Day 037.md",
+    "99.99 Images Used/HEX_Table.png",
     "0.0 Cyber, Technology and More/Notes/Course/Week 08/20240813 - Day 036.md",
     "13.0 Cloud Services/MS Azure.md",
-    "0.0 Cyber, Technology and More/Notes/Course/Week 08/20240814 - Day 037.md",
     "1.0 Types of Attacks & Defense/Risk Management.md",
     "13.0 Cloud Services/Cloud Services.md",
     "13.0 Cloud Services/AWS.md",
