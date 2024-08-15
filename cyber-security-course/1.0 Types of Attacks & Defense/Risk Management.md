@@ -537,6 +537,7 @@
 
 - Agreement Types
 	- Interconnection Security Agreement (ISA)
+		- Defines how to secure communications when linking organisations, sites, or government agencies together
 		- Can be legally binding
 			- Legal reviews if so
 		- The interconnection between two networks are connected in such a way that the connection and interaction is compliant with regulations
