@@ -603,4 +603,16 @@
 	- Platform as a Service
 - SaaS
 	- Software as a Service
-- 
+- Microkernel
+	- Device Drivers have to be installed manually
+- Monolithic Kernel
+	- Linux where in drivers are already a part of the base system
+- Boffin
+	- Someone who knows their shid, something real good
+- FLOPS
+	- Floating Operations Per Second
+- ASLR
+	- Address Space Layout Randomisation
+	- Moves references to where data is held in physical memory to various locations 
+		- In relation to virtual memory
+	- 

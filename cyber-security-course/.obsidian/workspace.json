@@ -14,7 +14,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "0.0 Cyber, Technology and More/Notes/Course/Week 07/20240808 - Day 033.md",
+                "file": "0.0 Cyber, Technology and More/Notes/Course/Week 07/20240809 - Day 034.md",
                 "mode": "source",
                 "source": false
               }
@@ -52,7 +52,19 @@
             }
           },
           {
-            "id": "4e52ae3097348be1",
+            "id": "9a4d5f0cb24f82bd",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "5.0 Programming/5.1 Programming Languages/Python.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "c7b88c85da2e814c",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -62,9 +74,21 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "4e52ae3097348be1",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "2.0 Hardware/2.3 Storage/Storage.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
         ],
-        "currentTab": 2
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -130,7 +154,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "0.0 Cyber, Technology and More/Notes/Course/Week 07/20240808 - Day 033.md",
+                "file": "3.0 Software/3.1 Operating Systems/3.1.1 Desktops & Laptops/3.1.1.2 Linux & Unix.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -147,7 +171,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "0.0 Cyber, Technology and More/Notes/Course/Week 07/20240808 - Day 033.md",
+                "file": "3.0 Software/3.1 Operating Systems/3.1.1 Desktops & Laptops/3.1.1.2 Linux & Unix.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -182,7 +206,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "0.0 Cyber, Technology and More/Notes/Course/Week 07/20240808 - Day 033.md"
+                "file": "3.0 Software/3.1 Operating Systems/3.1.1 Desktops & Laptops/3.1.1.2 Linux & Unix.md"
               }
             }
           }
@@ -204,15 +228,24 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "e2632a8e2b2d7e0c",
+  "active": "c7b88c85da2e814c",
   "lastOpenFiles": [
+    "0.0 Cyber, Technology and More/Notes/Course/Week 07/20240809 - Day 034.md",
+    "0.0 Cyber, Technology and More/Notes/Course/Week 08/20240812 - Day 035.md",
+    "0.0 Cyber, Technology and More/Notes/Course/Week 08/20240816 - Day 039.md",
+    "0.0 Cyber, Technology and More/People.md",
+    "0.0 Cyber, Technology and More/Terminologies.md",
+    "0.0 Cyber, Technology and More/Notes/Course/Week 08/20240815 - Day 038.md",
     "3.0 Software/3.1 Operating Systems/3.1.1 Desktops & Laptops/3.1.1.2 Linux & Unix.md",
+    "5.0 Programming/5.1 Programming Languages/Python.md",
+    "0.0 Cyber, Technology and More/Notes/Course/Week 08/20240814 - Day 037.md",
+    "0.0 Cyber, Technology and More/Notes/Course/Week 08/20240813 - Day 036.md",
+    "2.0 Hardware/2.3 Storage/Storage.md",
     "0.0 Cyber, Technology and More/Notes/Course/Week 07/20240808 - Day 033.md",
     "0.0 Cyber, Technology and More/Notes/Course/Week 07/20240807 - Day 032.md",
-    "0.0 Cyber, Technology and More/Terminologies.md",
-    "0.0 Cyber, Technology and More/People.md",
-    "0.0 Cyber, Technology and More/Notes/Course/Week 07/20240806 - Day 031.md",
     "0.0 Cyber, Technology and More/Notes/Course/Week 07/20240805 - Day 030.md",
+    "2.0 Hardware/Hardware.md",
+    "0.0 Cyber, Technology and More/Notes/Course/Week 07/20240806 - Day 031.md",
     "0.0 Cyber, Technology and More/Notes/Course/Week 06/20240802 - Day 029.md",
     "0.0 Cyber, Technology and More/Notes/Course/Week 06/20240801 - Day 028.md",
     "0.0 Cyber, Technology and More/Notes/Course/Week 06/20240731 - Day 027.md",
@@ -220,18 +253,9 @@
     "0.0 Cyber, Technology and More/Notes/Course/Week 06/20240729 - Day 025.md",
     "6.0 Cryptography/Cryptography.md",
     "4.0 Networking/Subnetting.md",
-    "0.0 Cyber, Technology and More/Notes/Course/Week 08/20240816 - Day 039.md",
-    "5.0 Programming/5.1 Programming Languages/Python.md",
     "4.0 Networking/Networking.md",
-    "0.0 Cyber, Technology and More/Notes/Course/Week 08/20240813 - Day 036.md",
-    "0.0 Cyber, Technology and More/Notes/Course/Week 08/20240815 - Day 038.md",
     "5.0 Programming/5.1 Programming Languages/Shells/Bash.md",
     "0.0 Cyber, Technology and More/Resources.md",
-    "0.0 Cyber, Technology and More/Notes/Course/Week 08/20240814 - Day 037.md",
-    "0.0 Cyber, Technology and More/Notes/Course/Week 08/20240812 - Day 035.md",
-    "1.0 Types of Attacks & Defense/Risk Management.md",
-    "4.0 Networking/Sockets.md",
-    "5.0 Programming/5.1 Programming Languages/Programming Languages.md",
     "99.99 Images Used/HEX_Table.png",
     "14.0 Cloud Systems",
     "0.0 Cyber, Technology and More/Untitled",

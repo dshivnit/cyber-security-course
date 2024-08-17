@@ -281,5 +281,20 @@ Resources
 	- `python -m venv myvenv`
 	- Activate it
 	- `source myvenv/bin/activate`
+- Tuple Unpacking (also referred to as Tuple Pairing)
+	- `my_list = [1, 2, 3]`
+	- `x, y, z = my_list`
+	- `print(y)`
+		- 2
+	- and so on.
+- SYS.ARGV
+	- `import sys`
+	- `print(sys.argv)`
+		- sys.argv is a list in Python that contains all the command-line arguments passed to the script
+		- sys.argv is a list
+		- will start with 0 
+		- will print the default the file name that the function is being called from (the script from where it is being called if it is in one) 
+	- The sys module/library provides functions and variables that are used to manipulate different parts of the Python runtime environment
+	- 
 - Python Web-socket
 	- 

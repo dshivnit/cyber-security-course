@@ -90,4 +90,13 @@
 - Michael Kerrisk
 	- Maintainer of the Linux man-ages project
 	- Born 1961
+- Brian Krebs
+	- American journalist and investigative reporter
+	- krebsonsecurity.com
+- Alfred Aho
+	- developer of awk
+- Peter Weinberger
+	- developer of awk
+- Brian Kernighan
+	- developer of awk
 - 
