@@ -39,7 +39,7 @@
 - Troy Hunt
 	- Created the "Have I Been Pwned" website
 - Ronald Rivest
-	- Created MD5 (Message Digest version 5) hash algorithm in 1991
+	- Created MD5 (Message Digest version 5) hash algorithm in 1991 (or 1992)
 - Ray Tomlinson
 	- Invented the concept of emails
 	- Dates to the 1970s for Arpanet
@@ -60,3 +60,34 @@
 - Michael Kerrisk
 	- NZ born baby! 1961
 	- The Linux Programming Interface publication!!!
+- Dennis Ritchie
+	- Was an American computer scientist
+	- Created the C programming language!
+	- Created the Unix OS and B language with Ken Thompson
+	- 9 Sept 1941 - 12 October 2011
+- Ken Thompson
+	- With Dennis Ritchie created the Unix OS
+	- Born 4th Feb 1943
+- Bjarne Stroustrup
+	- Danish computer scientist
+	- Known for developing of the C++ programming language
+- Greg Kroah-Hartman
+	- Major Linux kernel developer
+	- Maintains a series of systems
+- Nancy Pelosi
+	- lol
+- Jan Gullberg
+	- Known as the "Author of Mathematics"
+	- From the Birth of Numbers (book)
+- Tony Hoare (Sir Charles Antony Hoare)
+	- The Billion Dollar Mistake
+- Mark Russinovich
+	- Cofounder Winternals before MS acquired it in 2006
+- Hans Reiser
+	- Namesys company
+	- Supported Linux systems
+	- Killed his wife..
+- Michael Kerrisk
+	- Maintainer of the Linux man-ages project
+	- Born 1961
+- 

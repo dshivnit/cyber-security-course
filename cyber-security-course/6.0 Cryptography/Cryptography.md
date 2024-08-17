@@ -120,3 +120,433 @@ The process of hiding or coding information so that only the person a message wa
 	- Mathematical method of securely exchanging crypto keys over a public channel and was one of the first public key protocols
 	- Producer: Ralph Merke
 		- Named after Whitfield Diffie and Martin Hellman
+
+- Cryptography Basics
+	- Obfuscation
+		- Take something that looks like it makes sense, and then hide it, so that it doesn't make sense to external things (lol thanks Mike)
+		- Blurring something
+		- To make something clear/visible/less obvious
+	- One of the oldest forms of cryptography is the Caesar Cipher
+	- Substittion
+		- Taking one value and substituting it for another
+		- ROT13 say for example
+			- Rotating the characters 13 times in the alphabet in any given direction
+	- Cryptanalysis
+		- Breaking encrypted codes
+	- Vigenere Cipher
+		- However, this is only useful for letters of the English alphabet
+	- What about pictures, databases, what about files? Remember that Binary only deals with 1s and 0s. 
+	- Exclusive OR - XOR
+			0 0 = 0
+			0 1 = 1
+			1 0 = 1
+			1 1 = 0
+	- As long as you don't understand what the key is to an encryption 
+
+- Data Protection
+	- Data at Rest
+		- Stored somewhere
+		- Holds information about things
+		- Isn't moving around (sitting on a database for the most part somewhere or in some form of storage)
+	- Data in Use/Computation
+		- When data is sitting in RAM and is being accessed, used
+		- Normally  unencrypted as it's being operated on, or being worked with
+	- Data in Transit
+		- When data is being transmitted
+		- Say for example when a User supplies login information to an external server
+			- That is data that is in transit 
+		- Perhaps when there is a file transfer, or data transfer taking place - that actually is a series of said data, in transit
+		- Wherever data is being transferred on whatever kind of media (physical, or wireless)
+	- Sniffing
+		- Anytime data between two systems can be tapped into
+		- Person in the middle situations
+			- Someone is trying to hack into the data
+			- decrypt it
+			- perhaps exfiltrating it, stealing it
+
+- Cryptographic Methods
+	-  Symmetric encryption
+		- Plaintext encrypted with a key
+		- decrypted with the same key
+		- Transferring this key
+			- In-band
+				- Keys are exchanged directly within the communication band/medium
+			- Out-of-band
+				- Keys are exchanged outside of the communication band/medium
+			- Ephemeral key
+				- Just a temporary key
+				- Perfect forward secrecy 
+			- ECDH
+				- Eliptic Curve Diffie Hellman
+			- ECDHE
+				- ECDH Epehemeral key
+			- Some examples are DES (56-bit keys) and AES (128 or 256 bit keys)
+	- Asymmetric encryption
+		- Uses a key pair
+			- Public key
+			- Private key
+		- Public key is only used to encrypt
+		- Private key is the one doing the decrypting
+		- Requires:
+			- Key generations
+			- Transfer of keys
+			- Slow
+		- Some examples are RSA  (2048 to 4096 bit keys) and Elliptic Curve Cryptography
+	- Cryptosystem
+		- Defined piece of cryptography wherein programmers can utilise it to get things done
+		- Cryptosystems define key properties, communication requirements for the key exchange, and the actions taken through the encryption and decryption process
+
+- Symmetric Cryptosystems
+	- The same key is used to encrypt and decrypt
+	- Symmetric block algorithms encrypt data in discrete chunks
+	- Streaming symmetric algorithms encrypt data one bit at a time
+	- Block algorithms (or ciphers) include the outdated DES, 3DES, and Blowfish as well as the currently used AES
+	- The most used streaming symmetric cipher is RC4
+	- Block
+		- Encrypts data in chunks
+		- Symmetric block algorithm
+		- Data Encryption Standard (DES) 
+	- DES - Data Encryption Standard
+		- Grab a 64-bit chunk of plaintext
+		- Initial permutation
+			- A stirring of the data
+		- Look at the key
+			- Drop the last 8-bits of the  key
+			- Split the key into two 28 bit chunks
+			- Grab the first 24-bits of each half
+			- Then you have a sub-key which is 48-bits
+		- Data:
+			- Feistel function
+			- Take the 64-bits and split it into two 32-bit halves
+			- Set one of the halves aside
+			- Expand the first half into a 48-bit chunk of data using an expansion function
+			- Then XOR function it using the sub-key that was generated earlier
+			- Then use S Boxes
+				- Take in 64-bits and output 4-bit outputs
+				- 8 different 4-bit S Box
+				- Apply the 8 S boxes to the data which creates a 32-bit output
+			- Final permutation
+				- The two 32-bit chunks back together, but backwards
+	- Other types:
+		- DES
+			- Block cipher
+			- 64-bit Block size
+			- 16 rounds
+			- Key size is 56 bits
+		- Blowfish
+			- 64-bit Block size
+			- 16 rounds
+			- Key size - 32 -148 bits (variable)
+		- Triple DES (3DES)
+			- Block cipher
+			- 64-bit Block size
+			- 16 rounds
+			- Repeated the DES process, three times
+			- 168-bit key
+	- Defined by:
+		- Key length
+		- Block size
+		- Number of rounds (of stirring things up)
+- AES
+	- Block Cipher
+	- 128-bit Block size
+	- Key size
+		- 128, 192, 256-bits
+	- Rounds:
+		- 10, 12, or 14
+	- Both sides will have to agree upon what kind of standard will be used for encryption
+	-  and decryption
+- Cipher
+	- Streaming
+		- Encrypt one bit at a time (as opposed to blocks)
+		- Used to be popular in wireless networking
+		- But now, not so common if at all
+	- RC4
+		- A streaming type of encryption
+		- It also is one bit at a time
+		- 1 round (due to 1 bit at a time)
+		- Key size 40, up to 2048 bits
+- *Some terms to recap (I'll have to go through and organise all of these, one day is all I can say right now - the idea is to have it all looking nice, well presented and properly collated. Sheesh that's a fair bit - so definitely a WIP for a long time reader xo :) )
+	- *This next little random segment is thanks to NinjaJc01 from THM*
+- Some Terms:
+	- Ciphertext
+		- The result of encrypted plaintext
+	- Cipher
+		- A method of encrypting or decrypting data
+		- Modern day ciphers are cryptographic, but there are many non cryptographic ciphers like Caesar
+	- Plaintext
+		- Just as it reads, however, not just text, this is data as a whole before any encryption has taken place (it can be a photograph, a media/audio/video file, and so on)
+	- Encryption
+		- Transforming data into ciphertext, using a cipher
+	- Encoding
+		- This is NOT a form of encryption, just a form of representing data like base64. Completely and immediately reversible
+	- Key
+		- Some information that is needed to correctly decrypt the ciphertext and obtain its plaintext
+	- Passphrase
+		- Separate to the key, similar to a password and used to protect a key
+	- Asymmetric Encryption
+		- Different keys used to encrypt and decrypt
+	- Symmetric Encryption
+		- Uses the same key to encrypt and also decrypt
+	- Brute Force
+		- Attacking cryptography by trying every different password or every different key
+	- Cryptanalysis
+		- Attacking cryptography by finding a weakness in the underlying maths
+	- Alice and Bob
+		- Used to represent two people who generally want to communicate. They're named Alice and Bob because this gives them the initials A and B
+
+- Cryptography is used to protect confidentiality, ensure that integrity of data is kept or checked, and also to ensure authenticity. 
+	- Logins to sensitive systems
+	- Connections between systems to transfer, view, access data
+	- Verifying the checksum of downloaded data
+	- and so on
+- PCI-DSS
+	- Payment Card Information - Data Security Standard
+	- Standard which states that data should be kept encrypted both at rest and when in transit
+	- If a system is handling payment card information then this standard has to be complied with
+	- Same thing with Medical Data
+- DO NOT encrypt passwords
+	- Unless you're doing/using something like a password manager
+	- Never keep passwords in plaintext either.
+
+- CRUCIAL CRYPTO MATHS
+	- The modulo (%) operator
+		- X & Y is the remainder when X is divided by Y
+
+- RSA
+	- Rivest Shamir Adleman
+	- https://en.wikipedia.org/wiki/RSA_(cryptosystem)
+	- https://muirlandoracle.co.uk/2020/01/29/rsa-encryption/
+	- Four steps:
+		- Key generation
+		- Key distribution
+		- Encryption
+		- Decryption
+	- For CTFs
+		- Need to know the following variables
+			- p, q, m, n, e, d and c
+			- p and q are large prime numbers
+				- n is the product of p and q
+			- The public key is n and e
+			- the private key is n and d
+			- m is the message in plaintext
+			- c is the ciphertext from the plaintext
+
+- Establishing Keys Using Asymmetric Key Cryptography
+	- A very common use of asymmetric cryptography is the actual exchanging of keys used for symmetric encryption - who would've thought lol
+	- HTTPS (SSL/TLS) 
+		- First initiates an asymmetric negotiation, from which the key used for what will be a symmetric transfer will take place (between the Server and the Client)
+		- https://robertheaton.com/2014/03/27/how-does-https-actually-work/
+
+- Digital Signature
+	- A way to prove the authenticity of files
+		- To prove who had created or modified them
+	- A signature is produced with a private key and it gets verified with the related public key
+	- As only one entity should have access to the said private key, it proves that it is they who had signed the data (as it will only be the related public key that will be able to access it by decrypting it)
+- Certificates prove who you are
+	- Certificate Authority (CA)
+	- How does a Web-browser know that the website that it is accessing, is the real website that it is trying to get to?
+		- Certificates
+	- Root CAs are auto trusted by devices
+	- Long chain of trusts
+	- https://robertheaton.com/2014/03/27/how-does-https-actually-work/ (decent read)
+	- The Certificate Authority, CA, signs off on the Server claiming to be who they say they are by signing off on a Certificate of Authenticity should you say, with their own private key (their digital signature) - thus decrypted with their public key. 
+		- "yes, this is google.com" or whatever
+	- Take note of UNRECOGNISED by the CA self-signed certificates, and also NOTE that all certificates are fundamentally self-signed
+	- Web-browsers will throw a warning when they see a self-signed cert from a Web-system
+
+- Symmetric Block Modes
+- Takes blocks/chunks of bits (up to 64bits for AES) and encrypts it with the related key
+	- There are then put into what is called Electronic Code Book (ECB)
+	- However, issue is that patterns can appear from time to time
+	- And lead to similar to what is the plaintext but ciphertext appear as a result
+	- So we don't use ECB mode with symmetric encryption
+	- BLOCK MODES are used to obfuscate the data better
+	- Blocks are usually broken into 16, 64, or 128-bit plaintext blocks
+	- Modes:
+		- Cipher Block Chaining (CBC)
+			- Similar to the ECB process, but we use what is called an Initialisation Vector (IV) 
+				- XOR to each chunk/block of data/bits is carried out
+			- So we don't get the exact same data as we're changing it every time
+		- Cipher Feedback (CFB)
+			- We take the IV Initialisation Vector as above, but we encrypt it, then we take the output of that encryption and XOR it to the first block that is processed 
+			- Then the results of the first pass XOR result is used in the second block and so on
+		- Output Feedback (OFB)
+			- We take one IV Initialisation Vector, encrypt it, XOR it to the first block, and we use the same IV all the way through - as opposed to using the results and recycling them like in Cipher Feedback (CFB)
+		- Counter (CTR)
+			- A nonce value is used and a counter value is used
+			- nonce and counter are taken together, then encrypted, and XOR'd to the data that is coming in for encryption
+			- The counter is increased with each block that is encrypted
+
+- Asymmetric Cryptosystems
+	- Public keys ONLY encrypt stuff
+		- All good whoever has it :) 
+	- It's the Private Key that decrypts that ciphertext that's been encrypted with it's associated Public Key
+	- And who has the Private Key? Nachomumma! (no offense intended here, I'm just weird)
+	- RSA is popular
+	- Rivest, Shamir, and Adleman - le creators
+		- Factoring is considered
+		- consider the number 12, what can be multiplied together to make 12? 
+			- ie 1 x 12, 2 x 6, 3 x 4, 4 x 3
+		- But some numbers can only be factored by themselves, Prime Numbers
+			- like 11 :) 
+		- Semi-prime Number
+			- Two prime numbers multiplied by each other result in a semi-prime num
+		- Up to 4096-bits long (the keys)
+		- Easy to do one way, damn near impossible to do the other way 
+			- The cornerstone of how RSA works
+		- AUTHENTICATION 
+			- To ensure that a perpetrator or impersonator doesn't come in-between
+			- A little bit of data is encrypted with the PRIVATE KEY and is sent along with the Public Key
+				- Can assist in verifying who is holding on to the private key, legitimately 
+				- DIGITAL SIGNATURE
+		- Big Keys
+			- Overhead
+			- Time
+			- Performance issues
+	- Elliptic Curve Cryptography or ECC
+		- Provides good security, but with much smaller keys
+		- 4096-bit RSA key could be replaced with a 256-bit ECC key
+		- Based on .... An elliptic curve!
+		- You draw a line to intercept the curve in two different spots
+			- IF you have "the FORMULA", AND one of the values of where the line intercepts the curve, then you can calculate where the other point of interception is on that curve
+				- But GLHF doing that if you don't have the two to start with above (the formula and one of the values of point of interception)
+		- (oh yeah just a reminder, Digital Signatures use the private key to encrypt a small bit of data for the sake of authentication ;) - but that's a rare moment for the private key to be doing such things, such things like encrypting as opposed to decrypting ;) ) 
+
+- Diffie-Hellman
+	- Asymmetric algorithm
+	- Provides a methodology for two parties to come up with the same session key - to carry out Symmetric Encryption
+	- It uses asymmetric algorithm, but doesn't really use a public and private key setup
+	- It uses, colour instead :) 
+	- Example:
+		- Both Alice (A) and Bob (B) have a public key (yellow for example)
+		- Each Alice and Bob generate their own private value/key
+			- Alice will have red
+			- Bob will have blue
+		- They will then mix their colours/keys with the public key 
+		- Alice and Bob exchange their mix
+		- They then add their own private colours to this mix and it creates the exact same value
+			- say Brown
+		- Now symmetric encryption can take place for ciphertext exchange
+	- Diffie-Hellman Groups
+		- The use of elliptic curve has been introduced to help prevent cracking
+	- Note that Diffie-Helman can have very large keys
+
+- Hashing
+	- Confidentiality
+		- Basically encryption
+	- Integrity
+		- Hashing
+	- Creating a hash value out of data that can be used to verify at both ends that the data that has been transferred has kept its integrity
+		- The Message Digest
+	- MD5
+		- Message digest
+		- Created in 1992
+		- By Ron Rivest
+		- 128-bit hash
+	- SHA
+		- Secure Hash Algorithm
+		- Developed by the National Institute of Standards (NIS)
+		- SHA-1
+			- 160-bit hash
+			- Both MD5 and SHA-1 have the ability to provide collision
+				- When two separate bits of data create the same hash
+		- Nor SHA-1 or MD5 are used much these days due to the collision issue
+		- SHA-2
+			- SHA-256
+			- SHA-512
+				- No collisions made just yet
+		- RIPEMD
+			- Race Integrity Primitives Evaluation Message Digest
+			- Not common
+			- 128, 160, 256, and 320-bit versions
+	- Hashing is very common to be used with passwords
+
+- Digital Certificates
+	- Problems
+		- How do you know that the public key was sent from the legitimate source?
+			- Spoofing
+		- Is this actually 'whatever.com'??
+	- ONE UNIQUE situation
+		- When a public key is initially sent to its recipient - a hash is sent as well, a DIGITAL SIGNATURE, that is sent with the public key 
+		- Which the recipient can verify by decrypting the hash with the public key
+			- So you know that sender has the relevant private key to negotiate with
+		- BUT
+			- That's all good, but is that sender actually bona fide and the actual Web-system that we're trying to make a connection with?
+				- Or are they a bogus one acting like the Web-system that we want to deal with?
+			- The Sender will need to be vetted for by a third-party
+				- In this case it will be what is called a Certificate Authority (CA)
+			- These verification comes in the form of what is called a DIGITAL CERTIFICATE
+				- Which has the digital signatures of both the Sender and the Verification-body that sign's off on authenticity of the Sender
+		- Keep note that some certificates are SELF-SIGNED
+			- Good for in-house solutions/services
+			- Where public access isn't needed
+			- Say for Organisations and their internal systems
+				- Outside parties don't need to be involved
+		- For external systems a third-party signature should be coinsidered
+			- for the sake of global authenticity
+
+- Trust Models
+	- Trust NO BODY
+		- Self-signed Certificates
+	- Web of Trust:
+		- One party trusting another, then that party trusting another, kind of like three degrees of separation and so on
+		- Not so good. 
+		- Got some traction in the world of encrypted emails many a year ago
+	- RSA's PKI
+		- Public Key Infrsatructure
+		- Hiearchy
+			- At the top is the Certificate Authority (CA) - aka the Root CA
+				- Issues Certificates
+				- Verisign
+				- Thawte
+				- Big companies
+			- Intermediate CA's
+				- To assist with the load that the CA handles
+	- Public Key Infrastrucure (more on)
+		- PKI isn't a standard as such
+			- More of an idea as to how things could and do work
+		- X.509 standard
+			- Allows systems to query other systems
+				- For Certificates for example
+			- Also includes standards for constructing digital certificates
+		- Public key Cryptography Standards (PKCS)
+			- How keys are created, format etc
+		- Registration Authority
+			- Every Web-system has to have a Digital Certificate
+			- Security, and so on
+			- RAs simply handle the registration for new certificates
+				- So that the Web-systems can get online
+		- Certificate Chaining
+			- Intermediate CA to other Intermediate CAs and so on
+	- Remember, Self-Signed Certificates should not be used for systems that will be exposed or accessed outside of an Internal Network (public-facing systems should have a Digital Certificate that has been signed and verified by a CA or one of its intermediary CAs/RAs)
+
+- Certificate Types
+	- Domain Validation Certificates
+	- Wildcard SSL Certificate
+		- Subdomains
+		- Risk
+			- A Threat Actor penetrating the domain and creating a sub-domain that will service malicious actions to Users
+			- This compromised and new sub-domain will be certified by the general public and to unaware audiences .. 
+	- Extended Validation (EV) Certificates
+		- More checks taken against the system by the Authority system 
+		- Also some insurance given if anyone were to compromise the Digital Certificate
+	- Subject Alternative Name (SAN) Certificate
+		- SAN is like a wildcard cert, however you can pick which subdomains, email servers and specific systems to certify
+	- Email Certificates
+	- Code-signing Certificates
+		- A certificate that comes with an installer for an application/program
+		- Software signed off with a Certificate
+		- Also hardware
+			- Device drivers
+				- .cat files, catalog files
+	- User Certificates
+		- For logins
+			- Where each User has a certificate associated with the account
+	- Wireless Networks
+		- Certificates on WAPs
+		- And every device that connects to the WAP(s)
+			- Bit of a pain, so not really done, but an example
+	- Get a Certificate for any kind of service/solution that is being provided - whether it is software, an actual service, or hardware that is being used 
+		- Certify it.
+	- 

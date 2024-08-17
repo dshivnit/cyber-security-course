@@ -275,6 +275,7 @@ Resources
 	- Multithreading in Python is limited
 	- CPython - standard Python implementation cannot run threads *truly* in parallel (datacamp.com)
 	- Only a single thread is allowed to execute at a time due to the global interpreter lock (GIL)
+	- Look into asynchronous programming
 - Creating a Virtual Environment via python
 	- create a directory for the VE
 	- `python -m venv myvenv`

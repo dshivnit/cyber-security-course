@@ -585,3 +585,22 @@
 	- Problems of which a given solution can be *checked* quickly
 	- Finding the solution itself might be hard
 	- We don't know if there's a fast algorithm to find the solution from the get go 
+
+- KYC
+	- Know Your Customer
+- PII 
+	- Personally Identifiable Information
+- CoW
+	- Copy on Write
+- EBS
+	- Elastic Block Store
+- sshd
+	- SSH Daemon
+- Bastion Server... (or Jump Host)
+- IaaS
+	- Infrastructure as a Service
+- PaaS
+	- Platform as a Service
+- SaaS
+	- Software as a Service
+- 
