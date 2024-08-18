@@ -222,6 +222,16 @@ Resources
 		 - ^ centre
 			 - print(f"Counting from {i: <2} of {var}")
 			 - and so on
+ - `string.name.lower()`
+ - `string.name.upper()` 
+	 - Makes all letters upper-case
+ - `string.name.title()`
+	 - Capital letter for the first letter of every word
+ - `string.name.capitalize()`
+	 - Capital letter for the first letter of the first word only
+ - `string.name.lower().strip()`
+	 - Strip will remove any spaces on either side of the variable
+ - 
 - chr()
 	- convert an Integer in ASCII to a character/letter
 - ord()

@@ -471,6 +471,50 @@ ie Windows applications/software, Other OS applications/software, PowerShell too
 		- HTML reports
 	- Hexeditor
 	- Wappalyzer
+
+- JohnTheRipper
+	- Multiple versions of John, that extend the feature from the original distro
+		- One popular one is JUMBO John
+	- Wordlists needed as dictionaries
+	- Basic Syntax:
+		- `john [options] [path_to_file]`
+		- `john --wordlist=[path_to_wordlist_file] [path_to_file]`
+		- `john --format=[format]` alongside with the parameters above
+	- SAM database for NT 
+	- Tools like mimikatz, NTDS.dit
+	- unshadow
+		- `unshadow [path to passwd] [path to shadow]`
+		- The two have to be combined for John to make a proper assessment as to wtf is going on 
+		- Doesn't necessarily have to be the whole file(s) - it can be the string from each that needs to be analysed
+			- NOTE: they will need to be in files as opposed to loosely entered in the command as parameters
+		- May need to specify the format which would be
+			- `--foramt=sha512crypt`
+	- Single-crack mode
+		- Technique: Mangling
+		- Gecos
+			- ie the passwd file and the shadow file have colons :'s that seperate variables
+			- These fields are split into what are called Gecos fields
+		- `john --single --format=raw-sha256 [file_hash]`
+		- adding the `username:` at the start of the hash if needed
+	- Rules
+		- `/etc/john/john.conf`
+	- Protected ZIP files
+		- `zip2john`
+		- `zip2john [options] [ZIP_file] > output.txt` 
+		- `john --wordlist=[path_to_wordlist_file] [output.txt]`
+			- Options may not be needed
+	- Protected RAR files
+		- `rar2john`
+		- `rar2john [rar_file] > [output_file]`
+		- `john --wordlist=[path_to_wordlist_file] [output_file]`
+		- Have some ice cream
+	- SSH Keys
+		- `ssh2john`
+		- `ssh2john [id_rsa private key file] > [output file]`
+		- `john --wordlist=[path_to_wordlist_file] [output_file]`
+	- GPG
+		- `gpg2john`
+		- 
 ------------------
 
 - IDEs (Integrated Development Environment)

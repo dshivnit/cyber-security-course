@@ -1,0 +1,52 @@
+- Windows Domain
+	- A group of Users and Computers under the administration of a given business
+	- Active Directory:
+		- The main idea behind WinDomains are to centralise the administration of common components of a Windows Computer Network in a single repository called, AD (or Active Directory)
+	- Domain Controller:
+		- The Server that runs the AD services is known as the DC - or Domain Controller
+
+- Centralised Identity management:
+	- All Users across the network can be configured from within AD and with minimum effort
+		- Meaning you don't have to go through to each machine to configure a local profile, there will be the use of what are called Domain Profiles (or well Windows Domain Profiles) which Users will log into on Computers that are in the Windows Domain as well
+	- Managing Security Policies
+		- Security/Group Policies can be configured directly from within Active Directory and can be applied to Users and Computers across the Domain/Network as required
+
+- Active Directory Domain Service(AD DS)
+	- Acts as a catalogue that holds information related to all of the *objects* that are in the on the network
+		- Users
+			- Security principals
+				- They can be auth'd by the domain and assigned privileges over resources (files printers etc)
+			- People
+			- Services
+				- IIS
+				- MySQL
+				- Services will require a User object to run them - so in these instances, the object won't represent a person as such, but a system/service account
+		- Groups
+		- Machines
+			- Security principals
+		- Printers
+		- Network Shares
+		- And more
+	- Security Groups
+		- Define access levels to various resources on the network/system (Domain)
+		- Domain Admins
+		- Server Operators
+		- Backup Operators
+		- Account Operators
+		- Domain users
+		- Domain Computers
+		- Domain Controllers
+	
+	- Organisational Units
+		- The hierarchy of and containers of 
+			- Users
+			- Computers
+			- Groups
+		- Handy for applying policies to User and Computers
+
+- Computers Container
+	- Good practice to segregate devices defining what purpose they are serving 
+		- Workstations
+		- Servers
+		- Domain Controllers
+		- 

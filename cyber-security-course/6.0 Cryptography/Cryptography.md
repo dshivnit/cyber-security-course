@@ -549,4 +549,59 @@ The process of hiding or coding information so that only the person a message wa
 			- Bit of a pain, so not really done, but an example
 	- Get a Certificate for any kind of service/solution that is being provided - whether it is software, an actual service, or hardware that is being used 
 		- Certify it.
-	- 
+
+- PGP
+	- Pretty Good Privacy
+	- Software that implements encryption for encrypting files, performing digital signing and more
+- GPG
+	- GnuPG
+- PGP and GPG private keys can be protected with passphrases in ways similar to SSH keys
+- AES
+	- Advanced Encryption Standard
+
+- Certificates are stored on devices to speed up the processes of authentication
+	- When related software/applications/hardware is updated - the certs get updated too
+- Certificates Stores:
+	- Import/Export
+- Certificate Revocation List (CRL)
+	- Expired certificates are included in this CA's list
+- P7B files include the certificate and chain certificates, NO PRIVATE KEY
+- P12 files include the certificate, chain certificates AND the PRIVATE KEY
+
+- Cryptographic Attacks
+	- Cryptanalysis 
+		- Breaking Cryptography
+	- Attack the Algorithm
+	- Attacking the Implementation
+	- Attack the Key
+	- Cryptosystems
+		- The blending of various encryption methods
+			- ie asymmetric, with symmetric, and hashing so on
+	- WEP
+		- Used/uses RC4
+		- Key were small
+		- Implemented RC4 poorly
+
+- Password Cracking
+	- Dictionary attack
+	- Rainbow tables
+		- Passwords in plaintext
+		- Hash equivalent
+		- Reduction functions
+			- To make it a lot easier to search
+			- Searches through the hash values
+	- Salting
+	- PBKDF2
+		- Password-Based Key Derivation Function 2
+		- Takes a key
+		- then might add the SSID
+		- then hashes it 4096 times (for example)
+		- Common in wireless networks
+
+- EFS
+	- Encrypted File System
+		- Tied to the Users account (not the machine)
+- HSM
+	- Hardware Security Module
+		- Tamper-resistant device used for cryptographic operations and the storage of encryption keys
+		- 

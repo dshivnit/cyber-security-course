@@ -6,7 +6,6 @@
       {
         "id": "b400f6a68797dcfa",
         "type": "tabs",
-        "dimension": 48.742138364779876,
         "children": [
           {
             "id": "e2632a8e2b2d7e0c",
@@ -14,45 +13,14 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "0.0 Cyber, Technology and More/Notes/Course/Week 07/20240809 - Day 034.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          }
-        ]
-      },
-      {
-        "id": "b78888128d0a5473",
-        "type": "tabs",
-        "dimension": 51.257861635220124,
-        "children": [
-          {
-            "id": "9a6012ca3825af32",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "0.0 Cyber, Technology and More/People.md",
+                "file": "0.0 Cyber, Technology and More/Tools.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "cbdfc581db0a48bb",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "0.0 Cyber, Technology and More/Terminologies.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "9a4d5f0cb24f82bd",
+            "id": "201cdaf8a45a82cc",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -62,33 +30,9 @@
                 "source": false
               }
             }
-          },
-          {
-            "id": "c7b88c85da2e814c",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "3.0 Software/3.1 Operating Systems/3.1.1 Desktops & Laptops/3.1.1.2 Linux & Unix.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "4e52ae3097348be1",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "2.0 Hardware/2.3 Storage/Storage.md",
-                "mode": "source",
-                "source": false
-              }
-            }
           }
         ],
-        "currentTab": 3
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -154,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "3.0 Software/3.1 Operating Systems/3.1.1 Desktops & Laptops/3.1.1.2 Linux & Unix.md",
+                "file": "5.0 Programming/5.1 Programming Languages/Python.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -171,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "3.0 Software/3.1 Operating Systems/3.1.1 Desktops & Laptops/3.1.1.2 Linux & Unix.md",
+                "file": "5.0 Programming/5.1 Programming Languages/Python.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -206,7 +150,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "3.0 Software/3.1 Operating Systems/3.1.1 Desktops & Laptops/3.1.1.2 Linux & Unix.md"
+                "file": "5.0 Programming/5.1 Programming Languages/Python.md"
               }
             }
           }
@@ -228,16 +172,21 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "c7b88c85da2e814c",
+  "active": "201cdaf8a45a82cc",
   "lastOpenFiles": [
+    "3.0 Software/Windows Domains.md",
+    "0.0 Cyber, Technology and More/Notes/Course/Week 09/20240818 - Day 040.md",
+    "6.0 Cryptography/Cryptography.md",
+    "0.0 Cyber, Technology and More/Notes/Course/Week 09",
+    "0.0 Cyber, Technology and More/Tools.md",
     "0.0 Cyber, Technology and More/Notes/Course/Week 07/20240809 - Day 034.md",
-    "0.0 Cyber, Technology and More/Notes/Course/Week 08/20240812 - Day 035.md",
-    "0.0 Cyber, Technology and More/Notes/Course/Week 08/20240816 - Day 039.md",
     "0.0 Cyber, Technology and More/People.md",
     "0.0 Cyber, Technology and More/Terminologies.md",
-    "0.0 Cyber, Technology and More/Notes/Course/Week 08/20240815 - Day 038.md",
-    "3.0 Software/3.1 Operating Systems/3.1.1 Desktops & Laptops/3.1.1.2 Linux & Unix.md",
     "5.0 Programming/5.1 Programming Languages/Python.md",
+    "3.0 Software/3.1 Operating Systems/3.1.1 Desktops & Laptops/3.1.1.2 Linux & Unix.md",
+    "0.0 Cyber, Technology and More/Notes/Course/Week 08/20240812 - Day 035.md",
+    "0.0 Cyber, Technology and More/Notes/Course/Week 08/20240816 - Day 039.md",
+    "0.0 Cyber, Technology and More/Notes/Course/Week 08/20240815 - Day 038.md",
     "0.0 Cyber, Technology and More/Notes/Course/Week 08/20240814 - Day 037.md",
     "0.0 Cyber, Technology and More/Notes/Course/Week 08/20240813 - Day 036.md",
     "2.0 Hardware/2.3 Storage/Storage.md",
@@ -251,11 +200,7 @@
     "0.0 Cyber, Technology and More/Notes/Course/Week 06/20240731 - Day 027.md",
     "0.0 Cyber, Technology and More/Notes/Course/Week 06/20240730 - Day 026.md",
     "0.0 Cyber, Technology and More/Notes/Course/Week 06/20240729 - Day 025.md",
-    "6.0 Cryptography/Cryptography.md",
     "4.0 Networking/Subnetting.md",
-    "4.0 Networking/Networking.md",
-    "5.0 Programming/5.1 Programming Languages/Shells/Bash.md",
-    "0.0 Cyber, Technology and More/Resources.md",
     "99.99 Images Used/HEX_Table.png",
     "14.0 Cloud Systems",
     "0.0 Cyber, Technology and More/Untitled",
@@ -271,7 +216,6 @@
     "0.0 Cyber, Technology and More/Notes/Course/Week 07",
     "14.0 Project Methodologies",
     "4.0 Networking/LANs",
-    "0.0 Cyber, Technology and More/Notes/Course/Week 06",
     "Untitled.canvas",
     "Untitled 1.canvas",
     "99.99 Images Used/Pasted image 20240702214553.png",
