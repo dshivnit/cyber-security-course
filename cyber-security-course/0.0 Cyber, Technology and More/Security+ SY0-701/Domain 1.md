@@ -1,0 +1,220 @@
+*Compliments to Inside Cloud Security YouTube  https://www.youtube.com/watch?v=SmzTNZwJnIw
+1.1 Security Controls
+1.2 Security Concepts
+1.3 Change Management
+1.4 Cryptographic Solutions
+
+1.1 Security Controls
+- Security measures for countering and minimising loss or unavailability of services or apps due to vulnerabilities 
+- Safeguards and countermeasures
+		- Safeguards are proactive
+		- Countermeasures are reactive (reduce impact after occurrence)
+- Categories
+- These categories will overlap into multiple Security Control Types
+	- Technical
+		- The implementation of the hardware and software, the technology
+		- Hardware or software mechanisms used to manage access to resources and systems and provide protection for those resources and systems
+			- Encryption
+			- Smart cards
+			- Passwords
+			- Biometrics
+			- ACLs
+			- Firewalls, routers
+			- IDS/IPS
+		- The technology used
+	- Managerial
+		- Policies and procedures
+		- The processes documented
+		- Administrative controls defined by an organisations security policy
+		- Uses planning and assessment methods to review the organisations ability to reduce and manage risk
+			- Policies
+			- Procedures
+			- Hiring processes
+			- Background checks
+			- Data classification 
+			- Security training
+			- Risk assessments
+			- Vulnerability assessments
+		- All these practices laid out in policies and procedures that the organisation will outline
+	- Operational
+		- People doing stuff
+		- Helps to ensure that the day-to-day operations of an organisation comply with their overall security. 
+		- Primarily implemented and executed by people instead of systems
+		- People, enforcing the managerial controls supporting physical security and using the technology we've implemented through technical control to ensure we comply with our overall security strategy 
+			- Awareness training
+			- Configuration management
+			- Media protection
+		- The doing.
+	- Physical
+		- Tangible, touchable
+		- Security mechanisms focused on providing protection to the facility and real-world objects.
+			- Guards
+			- Fences
+			- Lights
+			- Motion detectors
+			- Guard dogs
+			- Video cameras
+			- Alarms
+			- Laptop locks
+		- Protecting what we can touch
+
+- Control Types (know two examples of each)
+- For example, a security camera is both a deterrent and a detective type
+- CONTEXT matters
+- There will be overlaps here
+	- Preventive
+		- To thwart or stop unwanted or unauth'd activity from occuring
+		- Fences, locks, physical things, job rotation, data classification, penetrating testing, access control methods
+	- Deterrent
+		- Deployed to discourage violation of security policies
+		- Same as above, more physical, security awareness training, security policies, separation of duties
+	- Detective
+		- Deployed to discover or detect unwanted activity
+		- Security guards, dogs, motion detectors, job rotation, mandatory vacations, audit trails, IDS's, violation reports, honey pots, incident investigations
+	- Corrective
+		- Modifies the environment to return systems to normal after an unwanted or unauthorised activity has occurred
+		- Backups and restores, patching, antivirus/antimalware, forensic analysis, disciplinary action
+	- Compensating
+		- Provides options to other existing controls to aid in enforcement of security policies
+		- Security policy, personnel supervision, monitoring and work task procedures
+	- Directive
+		- Direct, confine, or control the actions of subjects to force or encourage compliance with security policies 
+		- Policies, procedures, standards, guidelines, contracts/agreements
+
+1.2 Summarise Fundamental Security Concepts
+
+- CIA triad
+	- Confidentiality
+		- Access controls help ensure that only authorised subjects can access objects
+	- Integrity
+		- Ensures that data or system configurations are not modified without proper authorisation 
+		- That the file sent, matches exactly the file received
+		- That the system files on an operating system are not modified without authorissation
+			- This kind of thing
+	- Availability
+		- Authorised requests for objects must be granted to subjects within a reasonable amount of time
+	
+- Non-repudiation
+	- The ability to defeat/counter a false rejection or refusal of an obligation with irrefutable evidence
+	- Guarantees that no one can deny a transaction
+	- Methods:
+		- Digital Signatures
+			- Prove that a digital message or document was not modified - intentionally or unintentionally - from the time it was signed. 
+			- Based on asymmetric cryptography
+			- The digital equivalent of a handwritten signature or stamped seal
+			- Provides non-repudiation in a publicly verifiable manner
+	- REMEMBER:
+		- Shared accounts/identities prevent non-repudiation
+	
+- AAA
+	- Several protocols provide authentication, authorisation, and accounting services
+	- Authentication
+		- User/service proves identity with some type of credentials
+	- Authorisation
+		- Authenticated users are granted access to resources based on the permissions granted to them
+	- Accounting
+		- Methods that track user activity and record these activity in logs
+		- As part of the audit trail (user activity and resource access)
+		- Authenticating people
+		- Authenticating systems
+		- Authorisation models
+	- Identification and Authentication
+		- Identification
+			- Claims an identity, and identification can be as simple as a username for a User, an AD account
+		- Authentication
+			- Subjects prove their identity by providing authentication credentials such as the matching password for a Username
+		- Authorisation
+			- Systems can authorise access to objects based on their proven identity
+			- Non-discretionary Access Control
+				- Enables the enforcement of system-wide restrictions that override object-specific access control
+				- Role-Based Access Control (RBAC) is an example
+			- Discretionary Access Control (DAC)
+				- Use-based and User-centric
+				- A key characteristic of the DAC is that every object has an owner, and the owner can grant or deny access to any other object in its DAC
+			- RBAC - Role Based Access Control
+				- Use of roles or groups. Instead of assigning permissions directly to Users, User Accounts are placed in roles and administrators assign privileges to the roles
+					- Typically mapped to job roles
+			- Rule-Based Access Control
+				- Applies to global rules that apply to all subjects. Rules within this model are sometimes referred to as restrictions or filters
+				- ie
+					- A firewall, that applies rules to all Users equally
+			- Mandatory Access Control (MAC)
+				- Every object and every subject has one or more labels. 
+				- These labels are predefined and the system determines access based on assigned labels
+			- Attribute-Based Access Control
+				- Based on attribute(s) on the account, such as the department, location or functional desgination
+		- Accountability
+			- Auditing logs and audit trails record events including the identity of the subject that performed an action 
+			- Maintained for individual subjects using auditing
+			- Logs record user activities and users can be held accountable for their logged actions
+			- Directly promotes good User behaviour and compliance with the organisations security policy
+			- Provides an audit trail for investigation if needed
+			- Machines have identities too
+	- Subjects
+		- A user, group or service accessing resources, known as objects
+	- Objects, 
+		- Resources, such as files, folders shares and printers, accessed by subjects
+	
+- Gap Analysis
+	- Common task performed on a recurring basis, and often in preparation for external audits
+		- A gap analysis
+	- Auditors will follow a standard (often ISO 27001) and then compare standard requirements to the organisation's current operations
+	- Deficiencies versus the standard will be captured in the audit report as gaps, sometimes called control gaps
+	- Control Gap
+		- A discrepancy between the security measures an organisation should have in place versus controls actually in place
+	- Attestation
+		- The outcome of an audit
+		- A formal statement made by the auditor on controls and processes in place
+	- Both internal and external auditors should have independence in the process. External carry more weight as they aren't directly employed by the organisation
+
+- Zero Trust
+	- An approach to security architecture in which no entity is trusted by default
+	- Based on three principles:
+		- Assume breach
+		- Verify explicitly
+		- Least privilege access
+	- Supports Defense in depth, that advises a layered approach to security
+	- Treats identity as the control plane
+	- Control plane (this drives the policy-based decision logic for zero trust)
+		- Adaptive identity
+		- Threat scope reduction
+		- Policy-driven access control
+		- Policy administrator
+		- Policy engine
+	- Data plane (Enforces the decisions defined in the control plane) 
+		- Implicit trust zones
+		- Subject/System
+		- Policy Enforcement Point
+	- Verify Identity
+	- Manage Devices
+	- Manage Apps
+	- Protect Data
+	- Access Policy Enforcement
+		- Policy Enforcement Point
+			- Responsible for enabling, monitoring and terminating connections between a subject (such as a user or device) and an enterprise resource
+			- Acts as the gateway that enforces access control policies
+		- The PEP evaluates requests against predefined policies and applies the necessary controls
+		- For example:
+			- PEP might enforce MFA for access requests from unexpected locations
+				- Dynamic based on conditions/context
+		- Policy Decision Point
+			- Where access decisions are made based on various factors such as user identity, device health, and risk assessment 
+			- Evaluates the context of an access request and decides whether it should be allowed, denied or subjected to additional controls
+			- Considers the 5 W's (WHO, WHAT, WHERE, WHEN, WHY)
+		- The PEP enforces policies at the connection level
+		- The PDP makes access decisions based on contextual information
+	
+- Physical Security
+	- Bollards
+	- Access control vestibules
+	- Fencing
+	- Video surveillance
+	- Security guard
+	- Access Badge
+	- Lighting
+	- Sensors
+		- Infrared
+		- Pressure
+		- Microwave
+		- Ultrasonic
+- Deception and Disruption Technology
