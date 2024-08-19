@@ -49,4 +49,18 @@
 		- Workstations
 		- Servers
 		- Domain Controllers
+
+- GPOs (or Group Policy Objects)
+	- A collection of settings that can be applied to OUs (Organisational Units) 
+	- Can contain policies aimed at either Users or Computers, allowing you to set a baseline on specific machines and identities. 
+	- Group Policy Management tool
+		- Note that these types of Windows Domain Tools are installed (if chosen as services to install) on a Windows Server distribution such as Windows Server 2019
+	- Active Directory (Users and Computers)
+	- etc
+	- GPOs are distributed to the network via a network share called `SYSVOL` which is stored in the DC 
+		- All Users in the Domain should normally have access to this share over the network to sync their GPOs periodically. 
+		- The SYSVOL share points by default to the `C:\Windows\SYSVOL\sysvol\` directory on each of the DCs in the network (replication)
+		- Once any changes are made to any GPOs, it can take up to two hours for computers to catch up. 
+		- You can force a computer to sync its GPOs by forcing a gpupdate
+			- `gpupdate /force`
 		- 

@@ -615,4 +615,7 @@
 	- Address Space Layout Randomisation
 	- Moves references to where data is held in physical memory to various locations 
 		- In relation to virtual memory
-	- 
+- DSL
+	- Domain Specific Language
+- Bicep
+	- A domain-specific language that uses declarative syntax to deploy Azure resources. 

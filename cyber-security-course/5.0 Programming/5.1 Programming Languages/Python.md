@@ -231,6 +231,15 @@ Resources
 	 - Capital letter for the first letter of the first word only
  - `string.name.lower().strip()`
 	 - Strip will remove any spaces on either side of the variable
+ - String Slicing
+	 - `print(variable[0:10]`
+		 - Will print the first 10 characters
+	 - `print(variable[0:10:2])`
+		 - will process the first 10 characters but jump two characters in whatever is given (missing one say for example in this example)
+	 - `print(variable[::-1])
+		 - Will print the whole string but backwards, lol kinda cool
+ - SPLITTING a String (into it's own list)
+	 - `print(variable.split())`
  - 
 - chr()
 	- convert an Integer in ASCII to a character/letter
