@@ -627,4 +627,57 @@
 	- Ticket Granting Service
 - SPN
 	- Service Principal Name
-- 
+- IAM
+	- Identity and Access Management
+- HSM
+	- Hardware Security Module
+	- A tamper-resistant device used for cryptographic operations and the storage of encryption keys
+- EFS
+	- Encrypting File System
+	- Tied to a user's account, not tied to the machine
+- TPM
+	- Trusted Platform Module
+	- A chip in a computer that is used to secure the integrity of the machine boot process and to store disk volume encryption keys
+- OTP
+	- One-Time Password
+- TOTP
+	- Time-based OTPs
+- HMAC
+	- Hash-based Message Authentication Code
+- HOTP
+	- HMAC OTP
+	- Hash-based Message Authentication Code One-Time Password
+- PIV
+	- Personal Identity Verification
+		- Used with Smart Cards
+- CAC
+	- Common Access Cards
+- PAM
+	- Privileged Access Management
+- ABACK
+	- Attribute-Based Access Control
+	- Looks at the attributes of a user or a device to determine what permissions they have to a resource
+		- DOBs for example for a drivers license
+		- Device type if it's a mobile running iOS, then we'll allow access to Apple-based services
+- RBAC
+	- Role-Based Access Control
+	- Defining roles from where the system can determine access to resources
+	- Security groups perhaps, or the role in a compnay
+- Rule-Based Access Control (not RBAC okay)
+	- Based on conditions to be met before access can be determined
+	- Say for example:
+		- A login must have used MFA and have come from an Android device from within the Wellington, New Zealand geolocation
+- MAC
+	- Mandatory Access Control
+	- Assign labels or identifiers to resources
+		- Devices, files, databases, network ports and so on
+	- Permission assignments are based on resource labels and security clearance
+- Discretionary Access Control
+	- DAC
+	- The custodian of the data/service/system sets the permissions to it - at their discretion
+- Physical Access Control
+	- Limited facility access
+	- Physical access to buildings
+	- Access control vestibules
+		- door locks, proximity cards, key fob and so on
+	- 

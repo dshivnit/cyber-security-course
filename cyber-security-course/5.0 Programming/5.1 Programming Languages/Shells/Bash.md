@@ -1,3 +1,19 @@
+*(This will be messy for a while until I go through and edit stuff and make things tidier - bear that in mind please, danke! :) )*
+- CHMOD Octals (not sure if octals is the right term but I'm going with it for now)
+	- - r
+		- 4
+	- w
+		- 2
+	- x
+		- 1
+	- rwx
+		- 7
+	- rw
+		- 6
+	- rx
+		- 5
+	- wx
+		- 3
 - Some Commands:
 	- date
 	- pwd
@@ -95,4 +111,31 @@
 	- Now let's unmount that filesystem
 	- `sudo umount /dev/sdb1`
 	- Chur (means cheers, good stuff, have a good one, - in NZ :) )
-- 
+
+- If statements in Bash
+``` bash
+	if [condition];
+	then
+		statement
+	elif [condition]; then
+		statement
+	else
+		do this by default
+	fi
+```
+``` bash
+	num=123
+	if [ $num -gt 100 ]; then
+		echo "$num is higher than 100"
+	elif [ $num -lt 100 ]; then
+		echo "$num is lower than 100"
+	else
+		echo "Toodles"
+	fi
+```
+- AND, OR, GREATER THAN, LESS THAN
+	- AND `-a`
+	- OR `-o`
+	- Greater than `-gt`
+	- Less than `-lt`
+	- 

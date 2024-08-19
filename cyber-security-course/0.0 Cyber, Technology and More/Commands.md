@@ -1,5 +1,11 @@
 *Some of these commands will be in relation to tools that are described in the Tools section - rationalisation will be required here*
 
+``` zsh
+sudo apt install sl
+sl
+# Thanks for this Cam =]
+```
+
 Covered/covering so far:
 - Powershell
 - Bash
