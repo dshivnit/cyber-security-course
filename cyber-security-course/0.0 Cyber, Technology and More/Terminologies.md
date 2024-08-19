@@ -619,3 +619,12 @@
 	- Domain Specific Language
 - Bicep
 	- A domain-specific language that uses declarative syntax to deploy Azure resources. 
+- KDC
+	- Key Distribution Centre
+- TGT 
+	- Ticket Granting Ticket
+- TGS
+	- Ticket Granting Service
+- SPN
+	- Service Principal Name
+- 

@@ -63,4 +63,44 @@
 		- Once any changes are made to any GPOs, it can take up to two hours for computers to catch up. 
 		- You can force a computer to sync its GPOs by forcing a gpupdate
 			- `gpupdate /force`
-		- 
+
+- Credentials are stored in the DCs
+- When a subject tries to authenticate to a service, the service will ask the DC to verify 
+- Two protocols are used for Network Authentication:
+	- Kerberos
+		- Used by any recent version of Windows - the DEFAULT protocol
+	- NetNTLM
+		- Legacy protocol kept for compatibility 
+
+- KERBEROS! Authentication
+	- Users who log into a service using Kerberos will be assigned tickets
+		- A proof of a previous authentication
+	- This happens:
+		- User sends their uname and a timestamp encrypted using a key derived from their password to the KDC - Key Distribution Centre
+			- KDC - A service usually installed on the DC in charge of creating Kerberos tickets on the network/domain
+		- The KDC will create and send back a TGT (Ticket Granting Ticket) which will allow the User to request additional tickets to be able to access specific services. 
+			- Pretty much Tickets needed to get more Tickets
+		- It allows Users to request for Service Tickets without passing their credentials every time they want to connect to a service
+		- A Session Key is given to the User, which they will need to generate requests
+	- The TGT is encrypted using KRBTGT hash
+		- A User can't access its contents
+		- The TGT also has a copy of the Session Key as part of its contents
+	- The KDC doesn't need to store the Session Key, it can decrypt it if it needs to 
+	- TGS
+		- Ticket Granting Service
+	- Users will send their Uname, Timestamp, Session Key, and TGT, TGT and an SPN (Service Principal Name) (SPN indicates the service and the server name that is intending to be accessed)
+	- The KDC will send the TGS along with a SERVICE SESSION KEY which will need to authenticate to the service that is wanting to be accessed
+	- The TGS is encrypted with a key derived from the Service Owner Hash
+	- The TGS can then be sent to the desired service to authenticate and establish a connection
+	- The Service will use its configured account's password hash to decrypt the TGS and validate the Service Session Key
+
+- NetNTLM Authentication
+	- The Client sends an authentication request to the Server they want to access
+	- The Server generates a random number and sends it as a challenge to the Client
+	- The Client combines their NTLM password hash with the challenge (and other known data) to generate a response to the challenge and sends it back to the Server for verification. 
+	- The Server forwards the challenge and the response to the DC for verification
+	- The DC uses the challenge to recalculate the response and compares it to the original response sent by the Client
+	- If they both match then the Client is authenticated and whatever the result is will be sent back to the Server
+	- The Server forwards the authentication result to the Client
+	- The User's password (or hash) is never sent through the network
+	- 
