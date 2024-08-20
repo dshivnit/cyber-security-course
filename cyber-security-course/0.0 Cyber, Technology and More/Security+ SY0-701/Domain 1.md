@@ -177,14 +177,29 @@
 	- Treats identity as the control plane
 	- Control plane (this drives the policy-based decision logic for zero trust)
 		- Adaptive identity
+			- Changes the way that the system asks a user to authenticate based on context of the request
+				- Elements like location, device health, app, any risk associated with the user? 
 		- Threat scope reduction
+			- An end goal of ZTNA (Zero Trust Network Architecture)
+			- Which is to decrease risks to the organisation
 		- Policy-driven access control
+			- Controls based on a users identity rather than their systems location
+			- ie Conditional access in MS's Entra ID
 		- Policy administrator
+			- Responsible for communicating the decisions made by the policy engine
+			- Element of the system, not a human person
 		- Policy engine
+			- Decides whether to grant access to a resource to a given subject
+				- ie Entra ID
+		- Policy Administrator + Policy Engine = make up the Policy Decision Point
 	- Data plane (Enforces the decisions defined in the control plane) 
 		- Implicit trust zones
+			- Part of traditional security approaches like firewalls, and other devices formed in a perimeter
 		- Subject/System
+			- Subject is a user who is wanting to access a resource
+			- System is a non-human entity, often a device used by the user to access the resource also on a system
 		- Policy Enforcement Point
+			- When a user or system requests access to a resource, the policy enforcement point evaluates it against predefined policies and applies the necessary controls 
 	- Verify Identity
 	- Manage Devices
 	- Manage Apps
@@ -205,16 +220,70 @@
 		- The PDP makes access decisions based on contextual information
 	
 - Physical Security
+	- There is no security without physical security
+	- Without control over the physical environment, no amount of admin or technological/logical access controls can provide adequate security
+	- That first outer later of protection
+	- If a malicious person can gain physical access to your facility or equipment, they can do just about anything they want, from destruction to disclosure and alteration. 
+	
 	- Bollards
+	- Preventive
+		- Fixed barriers to protect entranceways from vehicles being able to ram raid the building
 	- Access control vestibules
+		- Preventive
+		- Two interlocking doors in most cases
+		- Designed to strictly control access to highly secure areas
+		- To help prevent tail-gating
 	- Fencing
+		- Preventive
+		- Not the form of sword fighting
+		- A physical barrier securing the perimeter around a structure and or protected area
+		- Efficacy comes down to their height
+		- Barbed wire? 
+		- PIDAS
+			- Detective and preventive
+			- Perimeter Intrusion Detection and Assessment System
+				- Will detect someone attempting to climb a fence
 	- Video surveillance
+		- Detective
+		- CCTV
+		- Reliable proof of a person's identity and activity
+		- Motion and object detection capabilities
 	- Security guard
+		- Preventive
+		- Can prevent unauth'd people
+		- Can recognise people
 	- Access Badge
+		- Preventive
+		- Can electronically unlock a door and help prevent unauth'd access to a secure area
 	- Lighting
+		- Preventative
+		- Think about location, efficiency and protection
+		- Entrances
+		- Automation, light dimmers and motion sensors can save on electricity costs
+		- Protect the lights. If the lights can be taken down somehow, taking the lightbulb, or turning off a switch - then there goes this preventative mech. 
 	- Sensors
 		- Infrared
+			- Detects heat signatures
+			- Integrated into cameras and alarm systems to improve detection capabilities
 		- Pressure
+			- Detects changes in pressure on a surface or in a specific area
 		- Microwave
+			- Used to detect movement in a specific area
 		- Ultrasonic
+			- Emits high-frequency sound waves and measures the time it takes for the sound waves to bounce back after hitting a surface
 - Deception and Disruption Technology
+	- The Honey Pot
+		- Lure bad to doing bad things. Just for observation
+		- Not to entice or entrap!
+			- Don't let these bad's break the law
+		- Used to distract from real assets and isolate in a padded cell until they can be tracked down
+	- Honey Net
+		- A group of honey pots
+	- Honeyfile
+		- A decoy file
+		- Deceptively named so it becomes attractive
+	- Honeytoken
+		- A fake record inserted into a database to detect data theft
+
+- Explain the importance of Change Management Processes and the Impact to Security
+	- 

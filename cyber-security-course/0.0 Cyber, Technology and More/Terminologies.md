@@ -680,4 +680,7 @@
 	- Physical access to buildings
 	- Access control vestibules
 		- door locks, proximity cards, key fob and so on
-	- 
+- ZTNA
+	- Zero Trust Network Architecture
+- PIDAS
+	- Perimeter Intrusion, Detection and Assessment System
