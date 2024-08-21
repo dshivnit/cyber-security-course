@@ -13,7 +13,31 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "0.0 Cyber, Technology and More/Security+ SY0-701/Fundamentals of Security.md",
+                "file": "0.0 Cyber, Technology and More/Security+ SY0-701/Domain 1.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "5e349a8b6d04e7d9",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "6.0 Cryptography/Hashing.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "64daf3a5bbf3be3a",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "6.0 Cryptography/Cryptography.md",
                 "mode": "source",
                 "source": false
               }
@@ -37,7 +61,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "0.0 Cyber, Technology and More/Terminologies.md",
+                "file": "0.0 Cyber, Technology and More/Notes/Course/Week 09/20240822 - Day 043.md",
                 "mode": "source",
                 "source": false
               }
@@ -49,14 +73,14 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "0.0 Cyber, Technology and More/Notes/Course/Week 09/20240821 - Day042.md",
+                "file": "0.0 Cyber, Technology and More/Notes/Course/Week 09/20240821 - Day 042.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
         ],
-        "currentTab": 3
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -122,7 +146,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "0.0 Cyber, Technology and More/Notes/Course/Week 09/20240821 - Day042.md",
+                "file": "6.0 Cryptography/Cryptography.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -139,7 +163,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "0.0 Cyber, Technology and More/Notes/Course/Week 09/20240821 - Day042.md",
+                "file": "6.0 Cryptography/Cryptography.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -174,7 +198,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "0.0 Cyber, Technology and More/Notes/Course/Week 09/20240821 - Day042.md"
+                "file": "6.0 Cryptography/Cryptography.md"
               }
             }
           }
@@ -196,19 +220,21 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "73335fdfdf5f7b4f",
+  "active": "64daf3a5bbf3be3a",
   "lastOpenFiles": [
+    "6.0 Cryptography/Hashing.md",
+    "0.0 Cyber, Technology and More/Security+ SY0-701/Domain 1.md",
+    "0.0 Cyber, Technology and More/Security+ SY0-701/Fundamentals of Security.md",
+    "0.0 Cyber, Technology and More/Notes/Course/Week 09/20240822 - Day 043.md",
+    "0.0 Cyber, Technology and More/Notes/Course/Week 09/20240821 - Day 042.md",
+    "0.0 Cyber, Technology and More/Notes/Course/Week 09/20240820 - Day 041.md",
     "0.0 Cyber, Technology and More/Terminologies.md",
     "0.0 Cyber, Technology and More/Tools.md",
-    "0.0 Cyber, Technology and More/Security+ SY0-701/Fundamentals of Security.md",
-    "0.0 Cyber, Technology and More/Security+ SY0-701/Domain 1.md",
-    "0.0 Cyber, Technology and More/Notes/Course/Week 09/20240821 - Day042.md",
     "3.0 Software/Windows Domains.md",
     "4.0 Networking/Networking.md",
     "4.0 Networking/Sockets.md",
     "4.0 Networking/Subnetting.md",
     "1.0 Types of Attacks & Defense/1.2 Defense/Identity and Account Management.md",
-    "0.0 Cyber, Technology and More/Notes/Course/Week 09/20240820 - Day 041.md",
     "0.0 Cyber, Technology and More/Notes/Course/Week 09/20240819 - Day 040.md",
     "0.0 Cyber, Technology and More/Commands.md",
     "0.0 Cyber, Technology and More/Notes/Course/Week 07/20240807 - Day 032.md",
@@ -222,8 +248,6 @@
     "5.0 Programming/5.1 Programming Languages/Shells/Bash.md",
     "0.0 Cyber, Technology and More/Notes/Course/Week 07/20240805 - Day 030.md",
     "0.0 Cyber, Technology and More/Notes/Course/Week 07/20240806 - Day 031.md",
-    "0.0 Cyber, Technology and More/Notes/Course/Week 06/20240730 - Day 026.md",
-    "5.0 Programming/5.1 Programming Languages/Python.md",
     "0.0 Cyber, Technology and More/Security+ SY0-701",
     "0.0 Cyber, Technology and More/Notes/Course/Week 09",
     "99.99 Images Used/HEX_Table.png",

@@ -95,13 +95,45 @@
 	- Physical Security Measures
 	- Training and Awareness
 
-- Integrity
-	- Hashing
+- Integrity (HASHING!)
 	- Ensure information and data remain accurate and unchanged from their original state unless intentionally modified by an authorised individual
 	- Hashing 
 		- Hash digest
 		- Digital fingerprint
 	- Digital Signatures
+		- Use encryption to both ensure integrity and authenticity
 	- Checksums
+		- Verify the integrity of data during data transmission 
 	- Access Controls
+		- Only authorised individuals can modify data, and reduce the risk of unintentional or malicious alterations
 	- Regular Audits
+		- Involve systematically reviewing logs and operations to ensure that only authorised changes have been made to states of the system and any discrepancies have been addressed
+
+- Availability (REDUNDANCY!)
+	- Used to ensure that information, systems and resources are accessible and operational when needed by authorised users
+	- Three nines:
+		- 99.9% uptime
+		- 3.5 days of downtime per year..
+	- Five nines:
+		- 99.999% ! Gold standard
+		- 5.26 minutes of downtime per year......
+	- Ensuring Business Continuity
+		- Every minute of downtime can cost a business/client substantial amounts of money, or consider a hospital - this would relate to lives being lost
+	- Maintaining Customer Trust
+		- Downtimes can also lead to lowered trust levels from customers
+	- Upholding an Organisation's Reputation
+		- Company reputation can be tarnished if there are continuous or repeated downtimes
+	- Using redundancy in designs is beneficial to ensure availability
+		- Server redundancy
+			- Using multiple servers in a load balance so that if one is overloaded or fails, the other servers can take over the load to continue supporting end users
+		- Data 
+			- Involves storing data in multiple places
+			- Locally using RAIDs
+			- or a hybrid of cloud-based and on-prem systems
+		- Network
+			- If one network path fails, then there is an alternative route for the network connection to take
+			- Say for example a mobile 4G/5G backup 
+		- Power
+			- UPS
+			- Generators
+			- A power back up essentially that kicks in when the power goes out
