@@ -240,7 +240,16 @@ Resources
 		 - Will print the whole string but backwards, lol kinda cool
  - SPLITTING a String (into it's own list)
 	 - `print(variable.split())`
- - 
+
+- Dictionaries
+	``` python
+	item1 = {"NAME": "Potato", "SKU": "SKU1234", "PRICE": 69.99}
+	print(f"{item1['NAME']}: ${item1['PRICE']}")
+	#Potato: $69.99
+	```
+	- You can add these to a list too and reference them as needed. 
+	- Pretty cool
+
 - chr()
 	- convert an Integer in ASCII to a character/letter
 - ord()
