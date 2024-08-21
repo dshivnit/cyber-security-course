@@ -103,4 +103,31 @@
 	- If they both match then the Client is authenticated and whatever the result is will be sent back to the Server
 	- The Server forwards the authentication result to the Client
 	- The User's password (or hash) is never sent through the network
-	- 
+
+- Trees
+	- Needed when a company expands, especially into different regions wherein different IT teams could be looking after the system/domains
+	- Also to comply with different local regulations (ie different countries, etc)
+	- One solution is to have a massive OU - but this can get complicated and prone to errors (human ones)
+	- What you can do is integrate multiple domains so that you can partition the network into two units that can be managed independently 
+	- If you have two domains that share the same namespace (ie `learning.local`) - they can be joined by what is called a Tree
+		- say for example `country1.learning.local` and `country2.learning.local`
+		- Each of them will have their own computers and users within
+	- These two DCs will then connect to the main DC
+	- Either of the branched DCs will not be able to manage each other (keep that in mind) 
+		- Goes the same for the GPOs within each 
+	- Enterprise Admins - these users will have admin privileges over all domains in the tree/forest
+
+- Forests
+	- This is what a domain with different namespaces connected is called
+	- Two completely different enterprise domains with different names
+		- ie `company1.local` and `company2.local` 
+
+- Trust Relationships
+	- Between the sub-domains, and different domains 
+		- (not sure if the terminology I've used just now is accurate, but I hope you get what I mean )
+	- One-way Trust Relationship
+		- Speaks for itself
+		- Admins from one domain can access resources on the other domain, but not the other way around
+	- Two-way Trust Relationship
+		- What can be accessed can be configured
+
