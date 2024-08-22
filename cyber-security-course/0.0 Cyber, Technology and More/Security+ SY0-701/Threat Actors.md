@@ -153,4 +153,64 @@
 		- and use sophisticated skills and techniques
 		- Custom made malware
 		- APT groups
-- 
+
+- Shadow IT
+	- The use of information technology systems, devices, software, applications, and services without explicit organisational approval
+	- ie - requesting for a new monitor at work but end up buying a random one from the shop because the process in the office would normally take around 45 days (LOL) for the request to be approved, monitor to be ordered, and for it to be installed....
+	- That monitor is considered, Shadow IT
+		- No one knows where it came from
+		- The security posture of the device? Unknown
+		- Lifespan of the device? 
+		- Potential risks?!
+			- USB ports
+			- Is there a drive in it
+					- so on
+	- Can be software, plugins, extensions, applications
+	- So on
+	- Any entity that hasn't been sanctioned or granted
+
+- Threat Vectors and Attack Surfaces
+	- Threat Vector (the how)
+		- The means or pathway by which an attacker can gain unauthorised access to a computer or network to deliver a malicious payload, or carry out an unwanted action
+			- Messages
+			- Images
+			- Files
+			- Voice Calls
+			- Removable Devices
+			- Unsecure Networks
+	- Attack Surface (the where)
+		- Encompasses all the various points where an unauthorised user can try to enter data or to extract data from an environment
+	- Restricting Access
+	- Removing Unnecessary Software
+	- Disabling Unused Protocols
+
+- Outsmarting Threat Actors
+	- TTP
+		- Specific methods and patterns of activities or behaviours associated with a particular threat actor or group of threat actors
+	- Deception and Disruption Technologies
+		- To mislead, confuse, and divert attackers from critical assets while simultaneously detecting and neutralising threats
+		- Honeypots
+			- Decoy system or network set up to attract potential hackers
+			- Can be used against insider threats to detect internal fraud, snooping and malpractice
+			- Log everything
+		- Honeynets
+			- A network of honeypots to create a more complex system
+			- To mimic an entire network of systems
+				- Servers, routers, switches and so on
+			- Log everything
+		- Honeyfiles
+			- Decoy file placed within a system to lure in potential attackers
+			- Some files have hidden code that can start to enumerate the attackers own network
+		- Honeytokens
+			- Piece of data or resource that has no legit value or use but is monitored for access or use
+			- Useful for detecting insider threats
+		- Bogus DNS entries
+			- Fake DNS entries introduced into a system's DNS server
+		- Decoy directories
+			- Fake folders and files placed within a system's storage
+		- Dynamic Page Generation
+			- Used in website to present ever-changing content to web crawlers to confuse and slow down the threat actor
+		- Port Triggering
+			- Security mechanism where specific services or ports on a network or device remain closed until a specific outbound traffic pattern is detected
+		- Spoofing fake telemetry data
+			-  System can respond to an attackers network scan attempt by sending out fake telemetry or network data

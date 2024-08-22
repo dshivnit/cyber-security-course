@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "1.0 Types of Attacks & Defense/1.1 Attacks/SQL Injections.md",
+                "file": "0.0 Cyber, Technology and More/Notes/Course/Week 09/20240823 - Day 044.md",
                 "mode": "source",
                 "source": false
               }
@@ -98,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "1.0 Types of Attacks & Defense/1.1 Attacks/SQL Injections.md",
+                "file": "0.0 Cyber, Technology and More/Notes/Course/Week 09/20240823 - Day 044.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "1.0 Types of Attacks & Defense/1.1 Attacks/SQL Injections.md",
+                "file": "0.0 Cyber, Technology and More/Notes/Course/Week 09/20240823 - Day 044.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -150,7 +150,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "1.0 Types of Attacks & Defense/1.1 Attacks/SQL Injections.md"
+                "file": "0.0 Cyber, Technology and More/Notes/Course/Week 09/20240823 - Day 044.md"
               }
             }
           }
@@ -174,18 +174,20 @@
   },
   "active": "6c746ded1fb99a86",
   "lastOpenFiles": [
-    "0.0 Cyber, Technology and More/Terminologies.md",
+    "0.0 Cyber, Technology and More/Security+ SY0-701/Physical Security.md",
+    "0.0 Cyber, Technology and More/Notes/Course/Week 09/20240823 - Day 044.md",
     "0.0 Cyber, Technology and More/Security+ SY0-701/Threat Actors.md",
+    "5.0 Programming/5.1 Programming Languages/Python.md",
+    "1.0 Types of Attacks & Defense/1.1 Attacks/SQL Injections.md",
+    "0.0 Cyber, Technology and More/Terminologies.md",
     "0.0 Cyber, Technology and More/Security+ SY0-701/Fundamentals of Security.md",
     "Untitled.canvas",
     "0.0 Cyber, Technology and More/Notes/Course/Week 09/20240822 - Day 043.md",
     "1.0 Types of Attacks & Defense/1.1 Attacks/Path Traversal.md",
-    "1.0 Types of Attacks & Defense/1.1 Attacks/SQL Injections.md",
     "0.0 Cyber, Technology and More/Tools/Tools.md",
     "2024-08-22.md",
     "0.0 Cyber, Technology and More/Commands.md",
     "5.0 Programming/5.1 Programming Languages/Shells/Bash.md",
-    "5.0 Programming/5.1 Programming Languages/Python.md",
     "0.0 Cyber, Technology and More/Tools/Metasploit.md",
     "1.0 Types of Attacks & Defense/1.1 Attacks/1.1.1 Types of Attacks.md",
     "0.0 Cyber, Technology and More/Tools",
@@ -200,8 +202,6 @@
     "4.0 Networking/Subnetting.md",
     "1.0 Types of Attacks & Defense/1.2 Defense/Identity and Account Management.md",
     "0.0 Cyber, Technology and More/Notes/Course/Week 09/20240819 - Day 040.md",
-    "0.0 Cyber, Technology and More/Notes/Course/Week 07/20240807 - Day 032.md",
-    "0.0 Cyber, Technology and More/Notes/Course/Week 08/20240816 - Day 039.md",
     "0.0 Cyber, Technology and More/Security+ SY0-701",
     "0.0 Cyber, Technology and More/Notes/Course/Week 09",
     "99.99 Images Used/HEX_Table.png",
