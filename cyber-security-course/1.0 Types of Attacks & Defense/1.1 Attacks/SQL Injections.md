@@ -1,3 +1,8 @@
+
+https://portswigger.net/web-security/sql-injection/cheat-sheet
+
+- 
+
 Examples:
 - The below is from a sql log file:
 - ...`[GET /products.php?q=books' UNION SELECT null, null, username, password, null FROM users--` ...

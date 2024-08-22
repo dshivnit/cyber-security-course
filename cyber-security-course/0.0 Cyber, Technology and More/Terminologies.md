@@ -686,4 +686,10 @@
 	- Perimeter Intrusion, Detection and Assessment System
 - POA&M
 	- Plan Of Action and Milestones
+- ASG
+	- Application Security Group
+- NSG
+	- Network Security Group
+- FQDN
+	- Fully-Qualified Domain Name
 - 

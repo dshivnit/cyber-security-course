@@ -1,0 +1,156 @@
+- An individual or entity responsible for incidents that impact security and data protection
+
+- Data Exfiltration
+- Blackmail
+- Espionage
+- Service Disruption
+- Financial Gain
+- Philosophical or Political Beliefs
+- Ethical Reasons
+- Revenge
+- Disruption or Chaos
+- War
+
+- APTs
+	- Advanced Persistent Threat
+	- APTs is a prolonged and targeted cyberattack from where an intruder gains unauthorised access to a network/system and remains undetected for an extended period of time
+	- While trying to steal data, and to monitor activities rather than cause immediate damage
+
+- Unskilled Attackers
+	- Individuals with limited technical expertise who use readily available tools like downloaded scripts or exploits to carry out attacks
+	- Skids
+	- Can still cause significant damage
+	- Defacing websites
+	- Spreading malware
+	- DDoS attacks
+	- IoN cannon
+- Hacktivists
+	- Cyber attackers who carry out their activities driven by political, social, or environmental ideologies who often want to draw attention to a specific cause
+- Organised Crime
+	- Well-structured groups that execute cyberattacks for financial gain, usually through methods like ransomware, identity theft, or credit card fraud
+		- Carbanak  
+	- APT
+- Nation-state Actors
+	- Highly skilled attackers that are sponsored by governments to carry out cyber espionage, sabotage, or cyber warfare against other nation states or specific targets in a variety of industries
+		- False Flag Attacks
+			- Orchestrated in such a way that it seems to originate from a different source or group than from the actual perpetrators
+			- Attribute the attack to someone else
+	- APT
+- Insider Threats
+	- Security threats that originate from within the organisation
+
+- Shadow IT
+	- IT systems, devices, software, applications, and services that are managed and utilised without explicit organisational approval
+
+- Threat Vectors and Attack Surfaces
+	- Message-based
+	- Image-based
+	- File-based
+	- Voice Calls
+	- Removable Devices
+	- Use of Unsecured Networks
+
+- Deception and Disruption Technologies for Defense
+	- Honeypots
+		- Decoy systems or servers designed to attract and deceive potential attackers, simulating real-world IT assets to study their techniques
+	- Honeynets
+		- Create an entire of decoy systems to observe complex, multi-stage attacks
+	- Honeyfiles
+		- Decoy files placed within systems to detect unauthorised access or data breaches
+	- Honeytokens
+		- Fake pieces of data, like credentials, inserted into databases or systems to alert administrators whenever they are accessed or used
+
+- It is important to remember that there is a difference between the intent behind an attack and the motivation that fuels that attack
+
+- Motivations of Threat Actors
+	- - Data Exfiltration
+		- The unauthorised transfer of data from a computer
+		- For example, if an attacker logs into a computer and steals client contact information - they have successfully exfiltrated information that is sensitive
+		- IP
+		- PII
+		- Trade secrets
+		- Being sold on the Dark Web
+		- Leveraging it for competitive advantage
+		- Using it for identity theft
+	- Financial Gain
+		- One of the most common motivations for cybercriminals
+		- Ransomware attacks
+		- Banking trojans
+	- Blackmail
+		- The attacker obtains sensitive or compromising information about an individual or an organisation and threatens to release this information to the public unless certain demands are met
+		- Normally financial transactions in encrypted currencies like Bitcoin
+		- Ransomware
+		- Doxxing
+		- Sextortion
+	- Service Disruption
+		- Often achieved by conducting a Distributed Denial of Service (DDoS) attack to overwhelm a network, service, or server with excessive amounts of traffic so that it becomes unavailable to its normal users
+		- Financial and reputational damage
+	- Philosophical or Political Beliefs
+		- Individuals or groups using hacking to promote a political agenda, social change, or to protest against organisations they perceive as unethical 
+		- Hacktivism 
+		- Website defacement
+		- Data leaks
+	- Ethical Reasons
+		- Authorised hackers, are motivated by a desire to improve security
+		- Pentesters
+		- Bounty hunters
+		- To improve an organisations security
+		- Focus on identifying vulnerabilities
+			- on Systems and Networks
+	- Revenge
+		- An employee who is disgruntled for example
+			- Recently fired or laid off
+		- Data breaches
+		- Disrupting services
+		- or leaking sensitive information
+	- Disruption or Chaos
+		- Motivated by the desire for chaos
+		- Unauthorised hackers
+		- Engage in malicious activities for the thrill of it, to challenge their skills, or to simply cause harm ...
+		- "Some men just want to watch the world burn"
+	- Espionage
+		- Spying on individuals, organisations, or nations to gather sensitive or classified information
+		- Can be motivated by national security interests, when conducted by a nation state
+		- Gaining competitive business intelligence when conducted by a rival 
+		- Gaining a political advantage 
+	- War
+		- Cyberattacks have increasingly become a tool for nations to attack each other both on and off the battlefield
+		- Economic damage
+		- Geopolitical objectives
+
+- In Cybersecurity, it is important to understand the motivations behind different types of threat actor attacks to help formulate an effective defense against them 
+
+- Threat Actor Attributes
+	- Internal vs External
+	- Resources and Funding
+	- Level of sophistication and capability
+- Internal TA's
+	- Speaks for itself
+	- People/entities who have access to internal systems
+	- Employees
+	- Contractors
+	- Who have legitimate access to resources but using that access in an illegitimate way 
+	- Revenge, financial gain, or coercion by external entities
+- External TAs
+	- Speaks for itself
+	- Cybercrims
+	- Hacktivisits
+	- Competitors
+	- State sponsored actors
+	- Don't have authorised access to system resources
+	- Malware, social engineering
+- Resources and Funding
+	- Refers to the tools, skills and personnel at the actor groups disposal 
+- Level of sophistication and capability
+	- Refers to their technical skill, the complexity of the tools and techniques they use, and their ability to evade detection and countermeasures
+
+- Threat Actors are scored on a scale from low to high
+	- Actors with a low rating
+		- Use widely available tools and techniques, such as common malware or phishing attacks
+		- Skids
+	- High levels
+		- Advanced technical skills
+		- and use sophisticated skills and techniques
+		- Custom made malware
+		- APT groups
+- 
