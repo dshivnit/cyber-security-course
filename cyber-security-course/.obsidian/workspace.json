@@ -8,55 +8,18 @@
         "type": "tabs",
         "children": [
           {
-            "id": "810b4a40dc8d6809",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "0.0 Cyber, Technology and More/Notes/Course/Week 09/20240822 - Day 043.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "30c488f4af997da7",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "0.0 Cyber, Technology and More/Terminologies.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
             "id": "4ac3e23ae17ca551",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "0.0 Cyber, Technology and More/Tools/Tools.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "26b60b28ea6f2fe3",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "5.0 Programming/5.1 Programming Languages/Python.md",
+                "file": "0.0 Cyber, Technology and More/Security+ SY0-701/Fundamentals of Security.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ],
-        "currentTab": 3
+        ]
       }
     ],
     "direction": "vertical"
@@ -122,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "5.0 Programming/5.1 Programming Languages/Python.md",
+                "file": "0.0 Cyber, Technology and More/Security+ SY0-701/Fundamentals of Security.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -139,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "5.0 Programming/5.1 Programming Languages/Python.md",
+                "file": "0.0 Cyber, Technology and More/Security+ SY0-701/Fundamentals of Security.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -174,7 +137,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "5.0 Programming/5.1 Programming Languages/Python.md"
+                "file": "0.0 Cyber, Technology and More/Security+ SY0-701/Fundamentals of Security.md"
               }
             }
           }
@@ -196,19 +159,25 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "26b60b28ea6f2fe3",
+  "active": "4ac3e23ae17ca551",
   "lastOpenFiles": [
-    "0.0 Cyber, Technology and More/Terminologies.md",
+    "Untitled.canvas",
+    "0.0 Cyber, Technology and More/Security+ SY0-701/Fundamentals of Security.md",
     "0.0 Cyber, Technology and More/Notes/Course/Week 09/20240822 - Day 043.md",
+    "1.0 Types of Attacks & Defense/1.1 Attacks/Path Traversal.md",
+    "1.0 Types of Attacks & Defense/1.1 Attacks/SQL Injections.md",
     "0.0 Cyber, Technology and More/Tools/Tools.md",
+    "2024-08-22.md",
+    "0.0 Cyber, Technology and More/Commands.md",
+    "0.0 Cyber, Technology and More/Terminologies.md",
+    "5.0 Programming/5.1 Programming Languages/Shells/Bash.md",
+    "5.0 Programming/5.1 Programming Languages/Python.md",
     "0.0 Cyber, Technology and More/Tools/Metasploit.md",
     "1.0 Types of Attacks & Defense/1.1 Attacks/1.1.1 Types of Attacks.md",
-    "0.0 Cyber, Technology and More/Commands.md",
     "0.0 Cyber, Technology and More/Tools",
     "6.0 Cryptography/Cryptography.md",
     "6.0 Cryptography/Hashing.md",
     "0.0 Cyber, Technology and More/Security+ SY0-701/Domain 1.md",
-    "0.0 Cyber, Technology and More/Security+ SY0-701/Fundamentals of Security.md",
     "0.0 Cyber, Technology and More/Notes/Course/Week 09/20240821 - Day 042.md",
     "0.0 Cyber, Technology and More/Notes/Course/Week 09/20240820 - Day 041.md",
     "3.0 Software/Windows Domains.md",
@@ -219,12 +188,6 @@
     "0.0 Cyber, Technology and More/Notes/Course/Week 09/20240819 - Day 040.md",
     "0.0 Cyber, Technology and More/Notes/Course/Week 07/20240807 - Day 032.md",
     "0.0 Cyber, Technology and More/Notes/Course/Week 08/20240816 - Day 039.md",
-    "0.0 Cyber, Technology and More/Notes/Course/Week 08/20240812 - Day 035.md",
-    "0.0 Cyber, Technology and More/Notes/Course/Week 08/20240813 - Day 036.md",
-    "0.0 Cyber, Technology and More/Notes/Course/Week 08/20240814 - Day 037.md",
-    "0.0 Cyber, Technology and More/Notes/Course/Week 08/20240815 - Day 038.md",
-    "1.0 Types of Attacks & Defense/Risk Assessment.md",
-    "1.0 Types of Attacks & Defense/Risk Management.md",
     "0.0 Cyber, Technology and More/Security+ SY0-701",
     "0.0 Cyber, Technology and More/Notes/Course/Week 09",
     "99.99 Images Used/HEX_Table.png",
@@ -240,7 +203,6 @@
     "0.0 Cyber, Technology and More/Notes/Course",
     "0.0 Cyber, Technology and More/Notes/Course/Week 07",
     "14.0 Project Methodologies",
-    "Untitled.canvas",
     "Untitled 1.canvas",
     "99.99 Images Used/Pasted image 20240702214553.png",
     "Pasted image 20240702104549.png",
