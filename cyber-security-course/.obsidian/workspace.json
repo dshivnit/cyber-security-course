@@ -20,7 +20,55 @@
             }
           },
           {
+            "id": "2b22baf92e7cb935",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "5.0 Programming/5.1 Programming Languages/Python.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "9a2d9df4a02598fd",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "0.0 Cyber, Technology and More/Tools/Tools.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "aef2e69d42cce520",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "0.0 Cyber, Technology and More/Terminologies.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
             "id": "6c746ded1fb99a86",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "6.0 Cryptography/Cryptography.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "d753473cd5c8e649",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -32,7 +80,7 @@
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 5
       }
     ],
     "direction": "vertical"
@@ -172,26 +220,26 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "6c746ded1fb99a86",
+  "active": "d753473cd5c8e649",
   "lastOpenFiles": [
-    "0.0 Cyber, Technology and More/Security+ SY0-701/Physical Security.md",
+    "6.0 Cryptography/Cryptography.md",
     "0.0 Cyber, Technology and More/Notes/Course/Week 09/20240823 - Day 044.md",
     "0.0 Cyber, Technology and More/Security+ SY0-701/Threat Actors.md",
-    "5.0 Programming/5.1 Programming Languages/Python.md",
-    "1.0 Types of Attacks & Defense/1.1 Attacks/SQL Injections.md",
     "0.0 Cyber, Technology and More/Terminologies.md",
+    "0.0 Cyber, Technology and More/Tools/Tools.md",
+    "5.0 Programming/5.1 Programming Languages/Python.md",
+    "0.0 Cyber, Technology and More/Security+ SY0-701/Physical Security.md",
+    "1.0 Types of Attacks & Defense/1.1 Attacks/SQL Injections.md",
     "0.0 Cyber, Technology and More/Security+ SY0-701/Fundamentals of Security.md",
     "Untitled.canvas",
     "0.0 Cyber, Technology and More/Notes/Course/Week 09/20240822 - Day 043.md",
     "1.0 Types of Attacks & Defense/1.1 Attacks/Path Traversal.md",
-    "0.0 Cyber, Technology and More/Tools/Tools.md",
     "2024-08-22.md",
     "0.0 Cyber, Technology and More/Commands.md",
     "5.0 Programming/5.1 Programming Languages/Shells/Bash.md",
     "0.0 Cyber, Technology and More/Tools/Metasploit.md",
     "1.0 Types of Attacks & Defense/1.1 Attacks/1.1.1 Types of Attacks.md",
     "0.0 Cyber, Technology and More/Tools",
-    "6.0 Cryptography/Cryptography.md",
     "6.0 Cryptography/Hashing.md",
     "0.0 Cyber, Technology and More/Security+ SY0-701/Domain 1.md",
     "0.0 Cyber, Technology and More/Notes/Course/Week 09/20240821 - Day 042.md",

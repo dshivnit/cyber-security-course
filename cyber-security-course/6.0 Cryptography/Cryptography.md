@@ -176,10 +176,13 @@ The process of hiding or coding information so that only the person a message wa
 			- Ephemeral key
 				- Just a temporary key
 				- Perfect forward secrecy 
+			- ECDSA
+				- Elliptic Curve Digital Signature Algorithm
 			- ECDH
-				- Eliptic Curve Diffie Hellman
+				- Elliptic Curve Diffie Hellman
 			- ECDHE
-				- ECDH Epehemeral key
+				- ECDH Ephemeral key
+				- Ephemeral means that it lasts for a very short time
 			- Some examples are DES (56-bit keys) and AES (128 or 256 bit keys)
 	- Asymmetric encryption
 		- Uses a key pair
@@ -363,20 +366,22 @@ The process of hiding or coding information so that only the person a message wa
 	- So we don't use ECB mode with symmetric encryption
 	- BLOCK MODES are used to obfuscate the data better
 	- Blocks are usually broken into 16, 64, or 128-bit plaintext blocks
-	- Modes:
-		- Cipher Block Chaining (CBC)
-			- Similar to the ECB process, but we use what is called an Initialisation Vector (IV) 
-				- XOR to each chunk/block of data/bits is carried out
-			- So we don't get the exact same data as we're changing it every time
-		- Cipher Feedback (CFB)
-			- We take the IV Initialisation Vector as above, but we encrypt it, then we take the output of that encryption and XOR it to the first block that is processed 
-			- Then the results of the first pass XOR result is used in the second block and so on
-		- Output Feedback (OFB)
-			- We take one IV Initialisation Vector, encrypt it, XOR it to the first block, and we use the same IV all the way through - as opposed to using the results and recycling them like in Cipher Feedback (CFB)
-		- Counter (CTR)
-			- A nonce value is used and a counter value is used
-			- nonce and counter are taken together, then encrypted, and XOR'd to the data that is coming in for encryption
-			- The counter is increased with each block that is encrypted
+- Modes:
+	- Cipher Block Chaining (CBC)
+		- Similar to the ECB process, but we use what is called an Initialisation Vector (IV) 
+			- XOR to each chunk/block of data/bits is carried out
+		- So we don't get the exact same data as we're changing it every time
+	- Cipher Feedback (CFB)
+		- We take the IV (Initialisation Vector) as above, but we encrypt it, then we take the output of that encryption and XOR it to the first block that is processed 
+		- Then the results of the first pass XOR result is used in the second block and so on
+	- Output Feedback (OFB)
+		- We take one IV Initialisation Vector, encrypt it, XOR it to the first block, and we use the same IV all the way through - as opposed to using the results and recycling them like in Cipher Feedback (CFB)
+	- Counter (CTR)
+		- A nonce value is used and a counter value is used
+		- nonce and counter are taken together, then encrypted, and XOR'd to the data that is coming in for encryption
+		- The counter is increased with each block that is encrypted
+	- Galois/Counter (GCM)
+		- Takes an IV (Initialisation Vector)
 
 - Asymmetric Cryptosystems
 	- Public keys ONLY encrypt stuff
@@ -517,9 +522,9 @@ The process of hiding or coding information so that only the person a message wa
 			- Security, and so on
 			- RAs simply handle the registration for new certificates
 				- So that the Web-systems can get online
-		- Certificate Chaining
-			- Intermediate CA to other Intermediate CAs and so on
-	- Remember, Self-Signed Certificates should not be used for systems that will be exposed or accessed outside of an Internal Network (public-facing systems should have a Digital Certificate that has been signed and verified by a CA or one of its intermediary CAs/RAs)
+		- Certificate Chaining (Chain of Trust)
+			- Intermediate CA to other Intermediate/Subsidiary CAs and so on
+	- Remember, Self-Signed Certificates should not be used for systems that will be exposed or accessed outside of an Internal Network (public-facing systems should have a Digital Certificate that has been signed and verified by a CA or one of its intermediary CAs/RAs) - Chain of Trust
 
 - Certificate Types
 	- Domain Validation Certificates

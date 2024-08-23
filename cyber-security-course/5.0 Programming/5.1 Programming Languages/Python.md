@@ -256,7 +256,8 @@ for name, value in dict1.items():
 	print(f"{name}: {value})
 	# The items() call will allow you to be able to pick up the keyname as well as the value of the key to be able to work with them
 ```
-
+- Files
+	- 
 - chr()
 	- convert an Integer in ASCII to a character/letter
 - ord()
