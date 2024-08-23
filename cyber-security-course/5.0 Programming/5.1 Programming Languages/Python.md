@@ -331,6 +331,5 @@ for name, value in dict1.items():
 		- will start with 0 
 		- will print the default the file name that the function is being called from (the script from where it is being called if it is in one) 
 	- The sys module/library provides functions and variables that are used to manipulate different parts of the Python runtime environment
-	- 
 - Python Web-socket
 	- 

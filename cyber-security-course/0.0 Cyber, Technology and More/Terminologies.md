@@ -692,4 +692,8 @@
 	- Network Security Group
 - FQDN
 	- Fully-Qualified Domain Name
+- RFID
+	- Radio Frequency Identification
+- NFC
+	- Near Field Communication
 - 
