@@ -119,4 +119,57 @@ IAM - Identity and Access Management
 		- Admin/root
 		- Privileged
 		- Guest
-	- 
+	- Account Policies
+		- Employee Onboarding
+		- Password Policies
+			- Complexity
+			- Password History
+			- Reuse
+		- Account Lockouts
+		- Time-based Policies
+			- Enforce login/logout times
+		- Geolocation Policies
+			- Where is the login coming from
+			- Where is the device located
+		- Geofencing
+			- User geolocation determines resource access
+		- Geotagging
+			- Adding location metadata to files and social media posts
+		- Impossible travel time
+		- Risky login
+			- Time of login (abnormal time?)
+		- Baselining User Activities
+			- The common norm
+	- Different types of user accounts can have different account policies applied
+	- Each user should have their own account with only the permissions required to perform job tasks
+	- Password policies control password complexity, history, and expiration
+	- Assigning permissions to groups is scalable
+	- Geofencing uses the device's physical location to determine resource access
+
+- Network Authentication
+	- PAP - Password Authentication Password
+		- Don't use this, it's legacy
+		- It sends cleartext transmissions of passwords
+	- MS-CHAPv2
+		- Microsoft Challenge Authentication Protocol
+	- NTLM
+		- New Technology LAN Manager
+		- NTLMv2 uses salting
+	- Kerberos
+		- MS AD authentication
+		- KDC
+			- Kerberos Key Distribution Centre
+		- AS
+			- Authentication Service
+		- TGS
+			- Ticket Granting Service
+		- TGT
+			- Ticket Granting Ticket
+	- Kerberos is used for Active Directory
+	- NTLMv2 is used for Local Workgroup Computers
+	- Extensible Authentication Protocol (EAP)
+		- used in Windows environments
+		- used in VPN environments
+		- Using PKI certificates, smart cards
+		- EAP uses TLS as a transport mechanism
+		- 

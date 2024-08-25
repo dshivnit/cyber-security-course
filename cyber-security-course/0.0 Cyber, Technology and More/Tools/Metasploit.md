@@ -59,4 +59,61 @@
 	- Used in the final stage of the test
 	- `tree -L 1 /usr/share/metasploit-framework/modules/post`
 
-- 
+- Scanning
+- Database Feature
+- Vuln Scan
+- Exploit Vulns
+- `msfvenom`
+
+- Scanning
+	- use auxiliary/scanner/ (and whatever you find in here)
+	- search
+	- always use info to find out more about how the module works
+	- options as well 
+		- smb/smb_version || smb_enumusers || smb_enumshares
+		- 
+	- You can also run nmap when not within a module in msf
+	- You can also do a udp scan
+		- `use auxiliary/scanner/discovery/udp_sweep`
+			- pretty neat
+
+- Database Feature
+	- Useful for when considering multiple devices so as to keep project management simplified and avoid possible confusion when setting parameters
+	- Requires the use of `postgresql`
+		- `systemctl start postgresql`
+			- Make sure that the service has started and is running
+		- `msfdb init`
+			- Initialise the Metasploit Database
+		- `db_status`
+			- Check the status of the DB when inside the MSF Console
+	- Workspaces
+		- Workspaces can be created to isolate different projects
+		- `help workspace`
+			- works
+			- Will list you the various options that you can use when wanting to work with workspace(s)
+	- `db_nmap`
+		- Report and findings will be saved to the database/workspace that is currently being worked in 
+	- `hosts`
+		- will list hosts that have been picked up and stored in the database
+		- `-h` for more options
+		- Once host information has been stored in the DB, you can use hosts -R to add variables to the RHOST parameter
+	- `services`
+		- Will list the services respective to each host running them that have been picked up 
+		- `-h` for more options
+		- `-S` will allow you to search the DB for services in the environment (that have been scanned and added to the DB)
+
+- Vulnerability Scanners
+
+- Exploits
+	- Run `show payloads` when within an exploit module to show compatible payloads that can go with it
+	- Take note that payloads may have additional requirements/parameters that may need to be set so also don't forget to run the `options` (or `show options`) command to see what may be needed
+	- Backgrounding jobs
+		- Works in MSF as well
+		- `ctrl+z` to background a job
+	- Sessions
+		- `sessions` 
+			- Will list all active sessions
+
+- MSFVENOM
+	- `msfvenom`
+		- 

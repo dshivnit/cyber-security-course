@@ -696,4 +696,8 @@
 	- Radio Frequency Identification
 - NFC
 	- Near Field Communication
+- MS-CHAPv2
+	- Microsoft Challenge Authentication Protocol
+- EAP
+	- Extensible Authentication Protocol
 - 
