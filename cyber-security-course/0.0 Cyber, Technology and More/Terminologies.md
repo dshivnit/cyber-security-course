@@ -702,4 +702,8 @@
 	- Extensible Authentication Protocol
 - UPS
 	- Uninterrupted Power Supply
+- PAM
+	- Pluggable Authentication Modules
+- EIP
+	- Extended Instruction Pointer
 - 

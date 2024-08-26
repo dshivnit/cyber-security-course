@@ -137,3 +137,22 @@
 	- 3. Using writing tools, transfer the extracted data into a blank RFID or NFC card
 	- 4. Utilise cloned and freshly written card
 	- Flipper Zero. Lol.
+	- MFA can still be used with Access-Badge security
+		- Ultimate way to mitigate the potential risks from the cloning of said Access Badges.
+	- Ways to mitigate cloning risks/threats:
+		- Implement advanced encryption in card-based authentication systems
+			- Identifies on the cards sometimes aren't encrypted at all
+		- Implement MFA
+			- Second form of auth
+				- A PIN
+				- A Password
+				- A form of biometric input
+		- Regularly update the security protocols
+			- Updating encryption keys and auth mechanisms being used, means that cloned badges will only have so long to be valid.
+		- Educate the Users
+			- Raising awareness
+			- Perhaps they don't even know that badges can be cloned..
+		- Implement shielded wallets or sleeves to house RFID badges
+		- Monitor and audit access logs
+			- If an entry has been granted in one location, then how is it that same identity is logging in at another completely different geolocation? wtf alarms should be raised
+		- 
