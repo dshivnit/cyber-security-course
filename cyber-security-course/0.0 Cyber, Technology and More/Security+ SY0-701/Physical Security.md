@@ -8,12 +8,132 @@
 - Access Badges - RFID, NFC based
 
 - Fencing and Bollards
-- Fencing
-	- Provides a visual deterrent by defining a boundary that shouldn't be violated by unauthorised personnel
-	- Establishing a physical barrier against unauthorised entry
-	- Delays intruders, which helps provide security personnel with a larger window of time to react
-- Bollards
-	- Create a physical barrier that shields pedestrians, structures, and other assets from potential vehicular collisions
-	- Secondary purpose as a visual reminder as to where not to enter (for unauthorised people or outsiders) 
-- Brute Force attacks (against Fencing and Bollards)
-	- 
+	- Fencing
+		- Provides a visual deterrent by defining a boundary that shouldn't be violated by unauthorised personnel
+		- Establishing a physical barrier against unauthorised entry
+		- Delays intruders, which helps provide security personnel with a larger window of time to react
+	- Bollards
+		- Create a physical barrier that shields pedestrians, structures, and other assets from potential vehicular collisions
+		- Secondary purpose as a visual reminder as to where not to enter (for unauthorised people or outsiders) 
+	- Brute Force attacks (against Fencing and Bollards)
+			- Ram raid it.
+
+- Surveillance Systems
+	- Maintain the security and safety of facilities, including business, home or commonly used public areas
+	- From traditional security guards and high-tech sensors, both aim to monitor for suspicious or harmful activities
+	- Organised strategy or setup designed to observe and report activities in a given area
+	- Video Surveillance
+		- Motion detection
+		- Night vision
+		- Facial recognition
+		- Remote access
+		- Benefit of having the ability to provide real-time visual feedback and the capability to review the recorded footage after an incident
+		- Monitoring:
+			- Data Centre
+			- Telecommunications Closets
+			- Entrance or Exit Areas
+		- The recording of video/camera feeds
+		- Policies around storage times, locations
+	- Security Guards
+		- Flexible and adaptable forms of surveillance that organisations use
+		- Provide visual deterrents for potential actors
+	- Lighting
+		- Proper lighting is crucial for conducting effective surveillance using both video and security guards
+		- Well-lit areas help deter criminals
+			- Eliminate shadow spots
+		- Illuminating areas when movement is detected can be handy too
+	- Sensors
+		- Devices that detect and respond to external changes in the environment and convert the information into readable signals or data
+		- Infrared sensors
+			- Used to detect changes in infrared radiation which are emitted by warm bodies
+		- Pressure sensors
+			- Whenever a specified amount of weight is applied to a sensor that is embedded on the floor or in a mat
+		- Microwave sensors
+			- Used to detect movement in an area by emitting microwave pulses and measuring their reflection off moving objects
+			- Prone to false alarms due to high sensitivity rates (in some configs)
+		- Ultrasonic sensors
+			- Measure the reflection of ultrasonic waves off moving objects
+	- Surveillance systems often combine various tools and techniques to monitor, detect, and respond to potential threats or unusual activities
+	- Bypassing Surveillance Systems
+		- Visual obstruction
+			- Block the camera's line of sight..
+			- Spraypaint
+			- Stickers
+			- Kaka poo poo
+		- Blinding sensors and cameras
+			- Overwhelming the sensor or camera with a sudden burst of light rendering it ineffective for a limited period of time
+		- Acoustic interference 
+			- Jamming or playing loud music to disrupt the microphone's functionality
+		- Electromagnetic interference
+			- EMI
+			- Jamming signals that surveillance systems rely on to monitor the environment
+		- Physical environment attack
+			- Exploit the environment around the surveillance equipment to compromise its functionality
+		- Physical tampering, like cutting wires or physically disabling devices, is an effective strategy to bypass surveillance systems
+		- Tamper alarms
+		- Backup power supplies/UPS
+		- Encrypt Hopping Frequencies
+			- To prevent packet sniffing
+			- Prevent jamming
+			- Prevent eavesdropping
+
+- Access Control Vestibule
+	- Double-door system that is designed with two doors that are electronically controlled to ensure that only one door can be opened at a given time
+	- Combined with access badges and security personnel amongst other physical defenses for best practices
+	- Imagine an air-lock setup, locking wannabe access requestors within ... oo
+	- Helps with piggybacking and tailgating
+		- Piggybacking is when two or more people are working together
+		- Wherein one has legitimate access
+		- Tailgating is when someone follows immediately behind someone who has legit access through a access control vestibule to gain access to the secured area
+	- Access Badges
+		- Logging actions (when used, where used, who?)
+		- Assigned to individuals
+		- Restricted access to various sections/locations/departments/places of a building area etc
+	- Security Guards
+		- Visual deterrent
+		- Can provide assistance when and were needed
+		- Can become familiar with usual faces
+		- Can check identity
+		- Immediate response capability
+
+- Door Locks
+	- Physical security control that is designed to secure entryways by restricting and regulating access to a particular space or property
+	- Lockpicking
+	- Biometrics
+		- Something that makes a person 
+	- Digital accessed locks
+	- NFCs
+	- Smartphones
+- Biometrics
+	- False Acceptance Rate (FAR)
+		- The rate that the system authenticates as the user as valid, when it shouldn't have
+		- We want to get this down to zero..(0)
+		- By increasing the sensitivity of the scanners
+	- False Rejection Rate (FRR)
+		- Just as big a problem as FAR
+		- When a user gets denied access when s/he should have been granted access can cause a waste of time - thus leading to a loss in productivity or other issues
+	- Equal Error Rate (ERR)
+		- More commonly called the Crossover Error Rate (CER), which uses a measure of of the effectiveness of a given biometrics system to achieve a balance
+	- The lower the CER, the better the lock is going to be
+	- Cipher Lock
+		- Provides protection using a mechanical locking mechanism with push buttons that are numbered and require a person to enter the correct combination in order to open that door
+
+- Access Badge Cloning
+	- Refers to copying the data from an RFID or NFC card or badge on to another card or device
+	- RFID
+		- 2 - 10 inches
+		- for cloning
+	- NFCs
+		-  1-2 inches
+		- for cloning
+	- Technologies that are used for contactless authentication in various applications
+	- One of the most prevalent vulns you need to be aware of in terms of the RFID and NFC technologies is the ability to easily conduct access badge cloning to bypass your authentication systems
+	- Scanning
+	- Data Extraction 
+	- Writing to a new card 
+	- Using a cloned access badge
+	-  1. Scan and clone the card
+	- 2. Extract relevant auth information from the card
+	- 3. Using writing tools, transfer the extracted data into a blank RFID or NFC card
+	- 4. Utilise cloned and freshly written card
+	- Flipper Zero. Lol.

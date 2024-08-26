@@ -700,4 +700,6 @@
 	- Microsoft Challenge Authentication Protocol
 - EAP
 	- Extensible Authentication Protocol
+- UPS
+	- Uninterrupted Power Supply
 - 
