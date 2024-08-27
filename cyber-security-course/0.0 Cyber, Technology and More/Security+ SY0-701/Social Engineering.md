@@ -102,4 +102,85 @@
 	- These motivations can be overlapped together to achieve an effective social engineering campaign
 	- Social engineers manipulate users with motivational triggers to execute malicious actions
 
-- 
+- Impersonation
+	- Impersonation
+	- Brand Impersonation
+	- Typosquatting
+	- Watering Hole Attacks
+- Impersonation
+	- Adversary assumes the identity of another person to gain unauthorised access to resources or steal sensitive data
+	- The attacker must first collect information about the organisation so they can more easily earn the trust of their targeted users
+	- Providing details helps to make the lies and the attacker's impersonation more believable to a potential victim
+	- Unauthorised access
+	- Disruption of services
+	- Complete system takeover
+- Brand Impersonation
+	- Specific form of impersonation where an attacker pretends to represent a legitimate company or brand
+	- Attackers use the brand's logos, language, and info to create deceptive communications or websites
+- Typosquatting
+	- URL Squatting
+	- Domain Squatting
+	- A type of attack where an attacker registers a domain name that is similar to a popular website but contains some kind of common typographical errors 
+		- ie gnail.com
+	- By registering a hijacked subdomain using the primary domain of a trusted cloud provider, such as azure.com
+	- Organisations will often register common misspellings of their own domain names and conduct user security awareness training
+- Watering Hole Attacks
+	- Targeted form of cyber attack where attackers compromise a specific website or service that their target is known to use
+	- Targeting third party websites or services 
+	- "Watering hole" is a metaphor for a naturally occurring phenomenon
+	- The "watering hole" the attacker chooses to utilise will usually be a trusted website or online service
+
+- Pretexting
+	- Example
+		- Calling up as a third-party vendor and immediately getting into "business" 
+			- Like a printer company or toner supplier stating urgency around finalising an order and shipment then asking the person at the other end to look into what model of the printer is that they have
+
+- Phishing Attacks
+	- Phishing
+	- Vishing
+	- Smishing
+	- Whaling
+	- Spear Phishing
+	- Business Email Compromise
+	- Phishing
+		- "Spray and pray"
+		- To a bunch of randos
+		- Fraudulent attack using deceptive emails from trusted sources to trick individuals into disclosing personal information like passwords and credit card numbers 
+	- Spear Phishing
+		- "Target users"
+		- Used by cybercriminals who are more tightly focused on a specific group of individuals or organisations
+		- Spear phishing is a more targeted method with a higher success rate at deceiving recipients into believing emails are authentic
+	- Whaling
+		- Form of spear phishing that targets high-profile individuals, like CEOs or CFOs
+		- Whaling is often an initial step to compromise an executive's account for subsequent attacks within their organisation
+	- Business Email Compromise
+		- Advanced phishing attack that leverages internal email accounts within a company to manipulate employees into carrying out malicious actions for the attacker
+	- Vishing
+		- Phone-based attack in which the attacker deceives victims into divulging personal or financial information
+	- Smishing
+		- Attack that uses text messages to deceive individuals into sharing their personal information
+
+- Preventing Phishing Attacks
+	- Security Awareness Training
+	- Anti-phishing Campaign
+		- Viral tool for educating individuals about phishing risks and how to recognise potential phishing attempts in user security awareness training
+	- Organisations should regularly provide user security awareness training that covers various phishing techniques
+	- Generic Greetings
+	- Spelling and Grammar Mistakes
+	- Spoofed Email Addresses
+	- In anti-phishing campaigns, offer remedial training for users who fell victim to simulated phishing emails
+	- Common used key indicators
+		- Urgency
+			- Prompting users to act immediately
+		- Unusual requests
+			- When requests for sensitive information are made, proceed with caution
+		- Mismatched URLs
+			- HTML-based emails text is the display-text, however, the underlying URLs of web links can be set to whatever the composer chooses it to be
+		- Strange email addresses
+			- Always check the senders email 
+			- Hover over the display email address, or double-click the email address to see what the actual email address is
+		- Poor spelling and grammar
+	- Conducting training
+	- Recognise phishing attempts
+	- Report suspicious messages
+

@@ -230,7 +230,7 @@
 	- *expand on these*
 - LLMNR (Link Local Multicast Name Resolution)
 	- *expand on this*
-- SAM - Security Accounts Manager
+- SAM - Security Account Manager
 	- A database file in the mS Windows OS that contains usernames and passwords
 - Hash Function
 	- One-way function that takes any amount of data and returns a fixed sized value. 
@@ -706,4 +706,5 @@
 	- Pluggable Authentication Modules
 - EIP
 	- Extended Instruction Pointer
-- 
+- C-Suite Team
+	- The 'C'hief's of a company

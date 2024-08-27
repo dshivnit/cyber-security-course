@@ -131,4 +131,23 @@
 		- To receive returned (reversed) shells
 
 - Meterpreter
+	- Staged Payloads
+		- Sent in two steps
+			- Initial part is called the Stager and requests the rest of the payload
+			- Allows for a smaller initial payload size
+	- Inline Payloads (unstaged)
+		- Sent in a single step
+
+- Viewing Meterpreter Payloads
+		`msfvenom --list payloads | grep meterpreter`
+
+- Consider
+	- The OS of the system you are focusing on
+		- ie  Android, Windows, OSX, Linux
+	- Components that are running on it
+	- Network Connection types that are available
+
+- When in Console, don't forget about the `show payloads` command when within a module
+	- Can be helpful
+
 - 
