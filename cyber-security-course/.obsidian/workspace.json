@@ -8,31 +8,19 @@
         "type": "tabs",
         "children": [
           {
-            "id": "3bf4d03d2739ec30",
+            "id": "8f3e6641b299f179",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "0.0 Cyber, Technology and More/Security+ SY0-701/Social Engineering.md",
+                "file": "0.0 Cyber, Technology and More/Tools/Tools.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "d0ceb5e810f6d3c2",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "0.0 Cyber, Technology and More/Tools/Metasploit.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "77c0fd496e971f25",
+            "id": "49d9b60c3375d7f2",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -44,7 +32,19 @@
             }
           },
           {
-            "id": "c8d845fd965c8679",
+            "id": "f4a7590271071863",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "0.0 Cyber, Technology and More/Notes/Course/Week 10/20240829 - Day 048.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "499b67e7b7ff5e59",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -56,18 +56,19 @@
             }
           },
           {
-            "id": "a1fb86d708604881",
+            "id": "919fce665b07d960",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "0.0 Cyber, Technology and More/Tools/Tools.md",
+                "file": "0.0 Cyber, Technology and More/Security+ SY0-701/Social Engineering.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ]
+        ],
+        "currentTab": 4
       }
     ],
     "direction": "vertical"
@@ -207,28 +208,30 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "3bf4d03d2739ec30",
+  "active": "919fce665b07d960",
   "lastOpenFiles": [
-    "0.0 Cyber, Technology and More/Tools/Tools.md",
     "0.0 Cyber, Technology and More/Tools/Metasploit.md",
+    "0.0 Cyber, Technology and More/Security+ SY0-701/Physical Security.md",
+    "0.0 Cyber, Technology and More/Notes/MuckingAroundPage.md",
     "0.0 Cyber, Technology and More/Terminologies.md",
+    "0.0 Cyber, Technology and More/Tools/Tools.md",
+    "0.0 Cyber, Technology and More/Notes/Course/Week 10/20240829 - Day 048.md",
+    "0.0 Cyber, Technology and More/Security+ SY0-701/Fundamentals of Security.md",
     "0.0 Cyber, Technology and More/Notes/Course/Week 10/20240828 - Day 047.md",
+    "0.0 Cyber, Technology and More/Notes/Course/Week 10/20240827 - Day 046.md",
+    "6.0 Cryptography/Cryptography.md",
+    "1.0 Types of Attacks & Defense/1.1 Attacks/1.1.1 Types of Attacks.md",
+    "0.0 Cyber, Technology and More/Security+ SY0-701/Social Engineering.md",
     "1.0 Types of Attacks & Defense/Risk Management.md",
     "0.0 Cyber, Technology and More/Security+ SY0-701/Domain 1.md",
-    "1.0 Types of Attacks & Defense/1.1 Attacks/1.1.1 Types of Attacks.md",
-    "0.0 Cyber, Technology and More/Notes/Course/Week 10/20240827 - Day 046.md",
-    "0.0 Cyber, Technology and More/Security+ SY0-701/Social Engineering.md",
-    "0.0 Cyber, Technology and More/Security+ SY0-701/Physical Security.md",
     "Untitled.canvas",
     "0.0 Cyber, Technology and More/Security+ SY0-701/Threat Actors.md",
-    "0.0 Cyber, Technology and More/Security+ SY0-701/Fundamentals of Security.md",
     "0.0 Cyber, Technology and More/Notes/Course/Week 10/20240826 - Day 045.md",
     "0.0 Cyber, Technology and More/Notes/Notes.md",
     "0.0 Cyber, Technology and More/Notes/Course/Week 09/20240823 - Day 044.md",
     "0.0 Cyber, Technology and More/Notes/Course/Week 10",
     "1.0 Types of Attacks & Defense/1.2 Defense/Identity and Account Management.md",
     "5.0 Programming/5.1 Programming Languages/Python.md",
-    "6.0 Cryptography/Cryptography.md",
     "1.0 Types of Attacks & Defense/1.1 Attacks/SQL Injections.md",
     "0.0 Cyber, Technology and More/Notes/Course/Week 09/20240822 - Day 043.md",
     "1.0 Types of Attacks & Defense/1.1 Attacks/Path Traversal.md",
@@ -236,8 +239,6 @@
     "0.0 Cyber, Technology and More/Commands.md",
     "5.0 Programming/5.1 Programming Languages/Shells/Bash.md",
     "0.0 Cyber, Technology and More/Tools",
-    "6.0 Cryptography/Hashing.md",
-    "0.0 Cyber, Technology and More/Notes/Course/Week 09/20240821 - Day 042.md",
     "0.0 Cyber, Technology and More/Security+ SY0-701",
     "0.0 Cyber, Technology and More/Notes/Course/Week 09",
     "99.99 Images Used/HEX_Table.png",

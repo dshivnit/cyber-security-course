@@ -184,3 +184,48 @@
 	- Recognise phishing attempts
 	- Report suspicious messages
 
+- Conducting an Anti-Phishing Campaign
+	- Trend Micro has a tool that can be used
+	- PHISH INSIGHT
+	- Very automated
+	- You can also set up a schedule to keep testing the team(s) that you want to conduct testing on 
+	- Further remedial training on team-members who fell victim to the phishing testing
+
+- Fraud and Scams
+	- Fraud
+		- The wrongful or criminal deception intended to result in financial or personal gain
+	- Identity Fraud
+		- The use by one person of another person's personal information, without authorisation, to commit a crime or to deceive or defraud that other person or a third person 
+		-  Identity Fraud
+			- Example
+				- Attacker takes the victim's credit card number and makes charges
+		- Identity Theft
+			- Attacker tries to fully assume the identity of their victim
+	- Scam
+		- A fraudulent or deceptive act or operation
+		- Invoice Scam (common one)
+			- A scam in which a person is tricked into paying for a fake invoice or a service or product they did not order
+				- An employee being derp'd within a company
+	- Low-tech social engineering techniques
+
+- Influence Campaigns
+	- Influence campaigns are a powerful tool for shaping public opinion and behaviour
+	- Influence campaigns can foster misinformation and disinformation
+	- Influence campaigns are coordinated efforts to affect public perception or behaviour towards a particular cause, individual, or group
+	- In Cybersecurity, the main focus is on malicious influence campaigns by high-level actors such as nation-states and hacktivists
+	- Misinformation
+		- Inaccurate information shared unintentionally
+	- Disinformation
+		- Intentional spread of false information to deceive or mislead
+
+- Other Social Engineering Attacks
+	- Diversion Theft
+	- Hoaxes
+	- Shoulder Surfing
+	- Dumpster Diving
+	- Eavesdropping
+	- Baiting
+	- Piggybacking or Tailgating
+	- Diversion Theft
+		- Manipulating a situation or creating a distraction to steal valuable items or information
+	-  
