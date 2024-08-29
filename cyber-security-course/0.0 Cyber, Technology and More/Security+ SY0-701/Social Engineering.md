@@ -220,12 +220,42 @@
 
 - Other Social Engineering Attacks
 	- Diversion Theft
+		- Manipulating a situation or creating a distraction to steal valuable items or information
+			- Diverting Internet traffic to websites, that can steal data
+			- DNS spoofing attack
+				- The attacker manipulates the DNS server settings, so when a user types in a legit URL or email, they are redirected to a fake website created by the attacker
+				- Relies on a brand impersonation, to impersonate a real site
+				- The user might be prompted to enter sensitive information like uname/pword combos, credit card information, etc
 	- Hoaxes
+		- Malicious deception that is often spread through social media, email, or other communication channels
+		- Can cause disruption and panic
+		- Sometimes used to spread malware or phishing attacks
+		- Related to impersonation attacks, and phishing attacks
 	- Shoulder Surfing
+		- Looking over someone's shoulder to gather personal information
+			- PINs at ATMs
+			- Passwords on computers
+			- Financial information 
+			- anything really
+			- Cameras prying
+			- 
 	- Dumpster Diving
+		- Searching through trash to find valuable information
+		- Shred (literally) any documents or sensitive material before sending to waste
+		- Virtual/digital dumpster diving
+			- Looking through deleted files on the system
 	- Eavesdropping
+		- The process of secretly listening to private conversations
+		- Intercepting communication between two parties without their knowledge
+		- Use secured, encrypted communication channels
+		- Regularly update, and patch systems
 	- Baiting
+		- Planting a malware-infected device for a victim to find and unintentionally introduce malware to their organisation's system
 	- Piggybacking or Tailgating
+		- Both involved unauthorised persons following an authorised person into a secured area
+		- Piggybacking is with consent of the auth'd person
+		- Tailgating is not
+		- Insider threats often use piggybacking
+			- So as to not use someone's access badge for any given malicious reason
 	- Diversion Theft
 		- Manipulating a situation or creating a distraction to steal valuable items or information
-	-  
