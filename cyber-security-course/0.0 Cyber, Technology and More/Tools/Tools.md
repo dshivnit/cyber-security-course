@@ -317,6 +317,9 @@ ie Windows applications/software, Other OS applications/software, PowerShell too
 - xfreerdp
 	- A free remote desktop protocol implementation
 	- ie - `xfreerdp /dynamic-resolution +clipboard /cert:ignore /v:1.1.1.1 /u:Username /p:'MyPowerfulPassword'`
+- Remmina
+	- Another RDP tool I apt installed
+	- on the fly GUI
 - expect
 	- Programmed dialogue with interactive programs
 - Log Viewer
