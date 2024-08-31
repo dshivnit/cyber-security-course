@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "1.0 Types of Attacks & Defense/1.1 Attacks/1.1.1 Types of Attacks.md",
+                "file": "0.0 Cyber, Technology and More/Notes/MuckingAroundPage.md",
                 "mode": "source",
                 "source": false
               }
@@ -118,7 +118,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 297.5
+    "width": 295.5
   },
   "right": {
     "id": "ef67db9403793248",
@@ -134,7 +134,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "1.0 Types of Attacks & Defense/1.1 Attacks/1.1.1 Types of Attacks.md",
+                "file": "0.0 Cyber, Technology and More/Notes/MuckingAroundPage.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -151,7 +151,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "1.0 Types of Attacks & Defense/1.1 Attacks/1.1.1 Types of Attacks.md",
+                "file": "0.0 Cyber, Technology and More/Notes/MuckingAroundPage.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -186,7 +186,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "1.0 Types of Attacks & Defense/1.1 Attacks/1.1.1 Types of Attacks.md"
+                "file": "0.0 Cyber, Technology and More/Notes/MuckingAroundPage.md"
               }
             }
           }
@@ -210,9 +210,9 @@
   },
   "active": "f71566b5c9ed6718",
   "lastOpenFiles": [
+    "1.0 Types of Attacks & Defense/1.1 Attacks/1.1.1 Types of Attacks.md",
     "0.0 Cyber, Technology and More/Notes/MuckingAroundPage.md",
     "5.0 Programming/5.1 Programming Languages/Shells/Bash.md",
-    "1.0 Types of Attacks & Defense/1.1 Attacks/1.1.1 Types of Attacks.md",
     "3.0 Software/3.1 Operating Systems/3.1.1 Desktops & Laptops/3.1.1.2 Linux & Unix.md",
     "0.0 Cyber, Technology and More/Security+ SY0-701/Malware.md",
     "0.0 Cyber, Technology and More/Notes/Course/Week 10/20240830 - Day 049.md",
