@@ -32,6 +32,30 @@
             }
           },
           {
+            "id": "85c14279e7e910d6",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "0.0 Cyber, Technology and More/Notes/MuckingAroundPage.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "9a7f92bd4eb0ccf5",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "0.0 Cyber, Technology and More/Security+ SY0-701/Malware.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
             "id": "5185890186136cdb",
             "type": "leaf",
             "state": {
@@ -186,11 +210,14 @@
   },
   "active": "f71566b5c9ed6718",
   "lastOpenFiles": [
-    "0.0 Cyber, Technology and More/Security+ SY0-701/Malware.md",
+    "0.0 Cyber, Technology and More/Notes/MuckingAroundPage.md",
+    "5.0 Programming/5.1 Programming Languages/Shells/Bash.md",
     "1.0 Types of Attacks & Defense/1.1 Attacks/1.1.1 Types of Attacks.md",
-    "3.0 Software/3.1 Operating Systems/3.1.1 Desktops & Laptops/3.1.1.1 Windows (10 & 11).md",
-    "0.0 Cyber, Technology and More/Tools/Tools.md",
+    "3.0 Software/3.1 Operating Systems/3.1.1 Desktops & Laptops/3.1.1.2 Linux & Unix.md",
+    "0.0 Cyber, Technology and More/Security+ SY0-701/Malware.md",
     "0.0 Cyber, Technology and More/Notes/Course/Week 10/20240830 - Day 049.md",
+    "0.0 Cyber, Technology and More/Tools/Tools.md",
+    "3.0 Software/3.1 Operating Systems/3.1.1 Desktops & Laptops/3.1.1.1 Windows (10 & 11).md",
     "1.0 Types of Attacks & Defense/1.1 Attacks/OWASP Top 10.md",
     "0.0 Cyber, Technology and More/Security+ SY0-701/Social Engineering.md",
     "0.0 Cyber, Technology and More/Notes/Course/Week 10/20240827 - Day 046.md",
@@ -198,10 +225,8 @@
     "0.0 Cyber, Technology and More/Tools/Metasploit.md",
     "0.0 Cyber, Technology and More/Terminologies.md",
     "0.0 Cyber, Technology and More/Notes/Clones Made.md",
-    "5.0 Programming/5.1 Programming Languages/Shells/Bash.md",
     "0.0 Cyber, Technology and More/Notes/Course/Week 10/20240828 - Day 047.md",
     "0.0 Cyber, Technology and More/Security+ SY0-701/Physical Security.md",
-    "0.0 Cyber, Technology and More/Notes/MuckingAroundPage.md",
     "0.0 Cyber, Technology and More/Security+ SY0-701/Fundamentals of Security.md",
     "6.0 Cryptography/Cryptography.md",
     "1.0 Types of Attacks & Defense/Risk Management.md",
@@ -213,7 +238,6 @@
     "0.0 Cyber, Technology and More/Notes/Course/Week 09/20240823 - Day 044.md",
     "0.0 Cyber, Technology and More/Notes/Course/Week 10",
     "1.0 Types of Attacks & Defense/1.2 Defense/Identity and Account Management.md",
-    "5.0 Programming/5.1 Programming Languages/Python.md",
     "0.0 Cyber, Technology and More/Tools",
     "0.0 Cyber, Technology and More/Security+ SY0-701",
     "0.0 Cyber, Technology and More/Notes/Course/Week 09",
