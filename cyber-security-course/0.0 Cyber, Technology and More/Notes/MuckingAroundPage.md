@@ -4,7 +4,7 @@ This page will be for mucking around and the like:
 
 `c:\Windows\System32\config\`
 
-	- - r
+	- r
 		- 4
 	- w
 		- 2
