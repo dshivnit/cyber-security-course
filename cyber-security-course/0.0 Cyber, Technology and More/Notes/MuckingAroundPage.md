@@ -18,3 +18,8 @@ This page will be for mucking around and the like:
 		- 5
 	- wx
 		- 3
+
+- If you get a "No matching host key found. Their offer: ssh-rsa,ssh-dss" thrown at you when trying to connect via ssh, try something like:
+	- `-oHostKeyAlgorithms=+ssh-rsa` in your command
+	- Reason-being here is that OpenSSH have deprecated rsa ssh-rsa
+- 

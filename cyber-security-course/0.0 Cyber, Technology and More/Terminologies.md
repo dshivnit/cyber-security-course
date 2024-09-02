@@ -708,3 +708,6 @@
 	- Extended Instruction Pointer
 - C-Suite Team
 	- The 'C'hief's of a company
+- DLL
+	- Dynamic Link Library
+- 
