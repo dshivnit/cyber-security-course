@@ -80,7 +80,7 @@
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -146,7 +146,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "0.0 Cyber, Technology and More/Security+ SY0-701/Malware.md",
+                "file": "3.0 Software/3.1 Operating Systems/3.1.1 Desktops & Laptops/3.1.1.2 Linux & Unix.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -163,7 +163,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "0.0 Cyber, Technology and More/Security+ SY0-701/Malware.md",
+                "file": "3.0 Software/3.1 Operating Systems/3.1.1 Desktops & Laptops/3.1.1.2 Linux & Unix.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -198,7 +198,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "0.0 Cyber, Technology and More/Security+ SY0-701/Malware.md"
+                "file": "3.0 Software/3.1 Operating Systems/3.1.1 Desktops & Laptops/3.1.1.2 Linux & Unix.md"
               }
             }
           }
@@ -220,12 +220,16 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "b93f92c92d6031b1",
+  "active": "53359710142abdc2",
   "lastOpenFiles": [
-    "0.0 Cyber, Technology and More/Terminologies.md",
-    "0.0 Cyber, Technology and More/Security+ SY0-701/Malware.md",
-    "3.0 Software/3.1 Operating Systems/3.1.1 Desktops & Laptops/3.1.1.2 Linux & Unix.md",
     "1.0 Types of Attacks & Defense/1.1 Attacks/1.1.1 Types of Attacks.md",
+    "3.0 Software/3.1 Operating Systems/3.1.1 Desktops & Laptops/3.1.1.2 Linux & Unix.md",
+    "0.0 Cyber, Technology and More/Security+ SY0-701/Malware.md",
+    "0.0 Cyber, Technology and More/Notes/Course/Week 10/20240826 - Day 045.md",
+    "0.0 Cyber, Technology and More/Notes/Course/Week 11/20240902-20240906 - Day 050-Day 054.md",
+    "0.0 Cyber, Technology and More/Notes/Course/Week 11",
+    "0.0 Cyber, Technology and More/Notes/Course/Week 10/Wee",
+    "0.0 Cyber, Technology and More/Terminologies.md",
     "0.0 Cyber, Technology and More/Tools/Metasploit.md",
     "0.0 Cyber, Technology and More/Notes/MuckingAroundPage.md",
     "3.0 Software/3.1 Operating Systems/3.1.1 Desktops & Laptops/3.1.1.1 Windows (10 & 11).md",
@@ -245,11 +249,9 @@
     "0.0 Cyber, Technology and More/Security+ SY0-701/Domain 1.md",
     "Untitled.canvas",
     "0.0 Cyber, Technology and More/Security+ SY0-701/Threat Actors.md",
-    "0.0 Cyber, Technology and More/Notes/Course/Week 10/20240826 - Day 045.md",
     "0.0 Cyber, Technology and More/Notes/Notes.md",
     "0.0 Cyber, Technology and More/Notes/Course/Week 09/20240823 - Day 044.md",
     "0.0 Cyber, Technology and More/Notes/Course/Week 10",
-    "1.0 Types of Attacks & Defense/1.2 Defense/Identity and Account Management.md",
     "0.0 Cyber, Technology and More/Tools",
     "0.0 Cyber, Technology and More/Security+ SY0-701",
     "0.0 Cyber, Technology and More/Notes/Course/Week 09",
@@ -263,8 +265,6 @@
     "99.99 Images Used/Clones_20240702.png",
     "99.99 Images Used/Pasted image 20240804134321.png",
     "2.0 Hardware/2.5 Network",
-    "0.0 Cyber, Technology and More/Notes/Course",
-    "0.0 Cyber, Technology and More/Notes/Course/Week 07",
     "Untitled 1.canvas",
     "99.99 Images Used/Pasted image 20240702214553.png",
     "Pasted image 20240702104549.png",
