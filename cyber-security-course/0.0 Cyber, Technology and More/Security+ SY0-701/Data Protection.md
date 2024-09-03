@@ -1,0 +1,332 @@
+- Process of safeguarding important information from corruption, compromise, or loss
+- Domain 1, 3, 4 and 5
+
+- Domain 1.4 General Security Concepts - Explain the importance of using appropriate cryptographic solutions
+	- Public Key Infrastructure
+		- Public Key
+		- Private Key
+		- Key Escrow
+	- Encryption
+		- Level
+			- Full-disk
+			- Partition
+			- File
+			- VOlume
+			- Database
+			- Record
+		- Transport/communication
+		- Asymmetric
+		- Symmetric
+		- Key exchange
+		- Algorithms
+		- Key length
+	- Tools
+		- Trusted Platform Module (TPM)
+		- Hardware Security Module (HSM)
+		- Key management system
+		- Secure enclave
+	- Obfuscation
+		- Steganography
+		- Tokenization
+		- Data masking
+	- Hashing
+	- Salting
+	- Digital signatures
+	- Key stretching
+	- Blockchain
+	- Open public ledger
+	- Certificates
+		- Certificate Authorities
+		- Certificate Revocation Lists (CRLs)
+		- Online Certificate Status Protocol (OCSP)
+		- Self-signed
+		- Third-party
+		- Root of trust
+		- Certificate Signing Request (CSR) generation
+		- Wildcard
+- Domain 3.3 - Security Architecture - Compare and contrast concepts and strategies to protect data
+	- Data types
+		- Regulated
+		- Trade secret
+		- Intellectual property
+		- Legal information
+		- Financial information
+		- Human and non-human readable
+	- Data Classifications
+		- Sensitive
+		- Confidential
+		- Public
+		- Restricted
+		- Private
+		- Critical
+	- General data considerations
+		- Data states
+			- Data at rest
+			- Data in transit
+			- Data in use
+		- Data sovereignty
+		- Geolocation
+	- Methods to secure data
+		- Geographic restrictions
+		- Encryption
+		- Hashing
+		- Masking
+		- Tokenization
+		- Obfuscation
+		- Segmentation
+		- Permission restrictions
+- Domain 4.2 - Security Operations - Explain the security implications of proper hardware, software, and data asset management
+	- Acquisition/procurement process
+	- Assignment/accounting
+		- Ownership
+		- Classification
+	- Monitoring/asset tracking
+		- Inventory
+		- Enumeration
+	- Disposal/decommissioning 
+		- Sanitisation
+		- Destruction
+		- Certification
+		- Data retention
+- Domain 4.4 - Security Operations - Explains security alerting and monitoring concepts and tools
+	- Monitoring computing resources
+		- Systems
+		- Applications
+		- Infrastructure
+	- Activities
+		- Log aggregation
+		- Alerting
+		- Scanning
+		- Reporting
+		- Archiving
+		- Alert response and remediation/validation
+			- Quarantine
+			- Alert tuning
+	- Tools
+		- Security Content Automation Protocol (SCAP)
+		- Benchmarks
+		- Agents/agentless
+		- Security Information and Event Management (SIEM)
+		- Antivirus
+		- Data Loss Prevention (DLP)
+		- Simple Network Management Protocol (SNMP) traps
+		- NetFlow
+		- Vulnerability scanners
+- Domain 5.1 - Security Program Management and Oversight - Summarize elements of effective security governance
+	- Guidelines
+	- Policies
+		- Acceptable Use Policy (AUP)
+		- Information security policies
+		- Business continuity
+		- Disaster recovery
+		- Incident response
+		- Software Development Lifecycle (SDLC)
+		- Change management
+	- Standards
+		- Password
+		- Access control
+		- Physical security
+		- Encryption
+	- Procedures
+		- Change management
+		- Onboarding/offboarding
+		- Playbooks
+	- External considerations
+		- Regulatory
+		- Legal
+		- Industry
+		- Local/regional
+		- National
+		- Global
+	- Monitoring and revision
+	- Types of governance structures
+		- Boards
+		- Committees
+		- Government entities
+		- Centralised/decentralised
+	- Roles and responsibilities for systems and data
+		- Owners
+		- Controllers
+		- Processors
+		- Custodians/stewards
+
+- Data Classifications
+	- Category based on the organisations value and the sensitivity of the information if it were to be disclosed
+	- Level of classification is decided by the Data Owner
+	- Sensitive
+		- Any information that can result in a loss of security or a loss of advantage to a company if accessed by an unauthorised person
+		- Anything sensitive we want protection around
+		- Higher classification will need more protection and more resources spent against them
+		- Overclassifying data leads to protecting all data at a high level
+		- Two different classification schemes used by organisation, mainly:
+			- Commercial Business
+				- One of four levels:
+					- Public
+						- No impact on the company if released
+						- Usually information that is posted on the open-source environment, like the company website or other platforms
+					- Sensitive
+						- Has minimal impact if released (organisations financial data)
+					- Private
+						- Contains data that should only be used within the organisation
+						- Salary information
+						- Employee information
+						- Private data is information that relates to an individual entity
+					- Confidential
+						- Contain items such as trade secrets, intellectual property data, source code that affect the business if disclosed
+						- Can only be approved by approved personnel, or third parties under an NDA
+					- Critical
+						- Contains valuable information
+						- Entrusted to a few individuals
+						- Example - credit card information
+			- Governmental
+				- Unclassified
+					- Data that can be released to the public or under the Freedom of Information Act (USA..)
+				- Sensitive but Unclassified
+					- Data that would not hurt national security if released but could impact those whose data was being used 
+				- Confidential
+					- Data that could seriously affect the government if unauthorised disclosures happen
+				- Secret
+					- Data that could seriously damage national security if disclosed
+				- Top Secret
+					- Data that would damage national security if disclosed
+					- ie blueprints for a new weapon..
+	- Lifecycle of the Data as you:
+		- Collect it
+		- Retain it
+		- Dispose of it
+	- Data should not be stored forever
+		- There should be policies that dictate:
+			- How data is being stored
+			- When it will be stored
+			- How long will it be stored
+	- The life cycle of data should be defined in policies
+	- Follow the local, state, and government laws, and regulations for data retention time requirements 
+
+- Data Ownership
+	- Process of identifying the person responsible for the confidentiality, integrity, availability and privacy of the information assets
+	- Data Owners
+		- Senior executive role that has the responsibility for maintaining the confidentiality, integrity and availability of the information asset
+		- Labelling the asset, ensuring that it is protected with the appropriate controls
+	- Data Controllers
+		- The entity that holds responsibility for deciding the purposes and methods of data storage, collection, and usage, and for guaranteeing the legality of processes
+	- Data Processors
+		- Group or individual hired by the data controller to help with tasks like collecting, storing, or analysing data
+	- Data Stewards
+		- Focused on the quality of the data and the associated metadata
+		- Working for the Data Owner
+		- Involved in making sure that thee data is appropriately labelled and classified
+	- Data Custodians
+		- Responsible for handling the management of the system on which the data assets are stored
+		- ie a System Administrator
+		- Responsible for enforcing the access-control, encryption, the backup, recovery measures of said data
+			- Requirements set forth by the Data Owner
+	- Data Privacy Officer
+		- Responsible for the oversight of any privacy related data
+		- Like PII, SPI, PHI
+	- Who should own the data?
+		- Usually the CIO or the IT department
+		- BUT
+			- IT should more be the Data Custodian
+		- Data Owners should be someone from the business-side
+		- People who are creating this information
+		- Data Owners should be someone inside each department, specialising in with what the data is for, does, represents
+	- IT should not be the data owners, but rather those who know more about the data based on the content of the company
+	- Someone who knows what the data is about
+	- (IT Generally won't..)
+
+- Data States
+	- Data at rest
+		- Refers to any data stored in DBs, file systems or other storage systems
+		- Not actively moving through the network or processes
+		- Data at rest is a prime target for threat actors
+		- Encryption could be utilised
+			- Full disk encryption
+				- Encrypts the entire hard drive
+				- when the system is off, the data is encrypted
+				- When it's turned on, decrypted (after unlocking it)
+			- Partition encryption
+				- Encrypts specific partitions of a hard drive, leaving other partitions unencrypted
+			- File encryption
+				- Encrypts individual files
+			- Volume encryption
+				- Encrypts a set of selected files or directories
+			- Database encryption 
+				- Encrypts data stored in a database
+			- Record encryption
+				- Encrypts specific fields within a database record
+	- Data in transit
+		- Refers to data actively moving, from one location to another, such as across the Internet or through a private network
+		- Vulnerable to interception through this journey
+		- Some solutions to encrypt:
+			- SSL/TLS
+				- Cryptographic protocols designed to provide secure communication over a computer network
+			- VPNs
+				- Creates a secure connection over a less secure network (like the Internet)
+			- IPSec 
+				- Protocol suite used to secure IP Communications by authenticating and encrypting each IP packet in a data stream
+	- Data in use
+		- Refers to data in the process of being created, retrieved, updated, or deleted
+		- Just as vulnerable as the other states
+		- Challenging as the data needs to be decrypted in order to be used
+		- Can be protected with encryption at the Application Level
+		- Application Level
+		- Access Controls
+		- Secure Enclaves
+		- Intel Software Guard
+
+- Data Types
+	- Regulated
+		- PII PHI
+		- Information controlled by laws, regulation or industry standards
+		- Organisations that handle regulated data much comply with legislations that outline how the data should be handled
+		- PII
+			- Any information that can be used to identify an individual
+				- Names
+				- Addresses
+				- etc
+		- PHI 
+			- Protected Health Information
+	- Trade secrets
+		-   Type of confidential business information that provides a company with a competitive edge
+	- Intellectual property
+		- Creations of the mind, such as inventions, literary and artistic works, designs and symbols
+		- Unauthorised use of intellectual property can lead to legal action
+	- Legal information
+		- Includes any data related to legal proceedings, contracts or regulatory compliance
+	- Financial information
+		- Includes data related to an organisations financial transactions - sales records, invoices, tax documents, and bank statements
+		- PCI DSS
+			- Regulation
+	- Human Readable and non human-readable data
+		- Binary
+		- Machine-code language
+
+- Data Sovereignty
+	- A concept where information is subject to the laws and governance structures within the nation where it is collected
+	- A company must manage, store and process the data it holds in compliance with the laws of the country it is in
+	- Must consider where the data is being held as well - through various parts of the world (with Cloud Computing for example)
+	- Geographical Considerations
+		- Location of storage and processing can significantly impact businesses
+		- ie GDPR - General Data Protection Regulation
+			- Has stringent rules for data protection and grants individuals strong rights over their personal data
+			- If you're dealing with data of EU citizens, regardless of its location - must comply with this regulation
+		- ie China and Russia
+			- Have strict data sovereignty laws that require companies to store and process data within their national borders
+	- Knowing the physical location of data centres
+	- Ensure that information is not illegally transferred
+		- Without consent
+
+- Securing Data
+	- Geographic Restrictions
+	- Encryption
+	- Hashing
+	- Masking
+	- Tokenisation
+	- Obfuscation 
+	- Segmentation
+	- Permission Restriction
+
+- Data Loss Prevention (DLP)
+	- Strategy for ensuring sensitive or critical information does not leave an organisation
+	- Either intentionally or unintentionally
+	  

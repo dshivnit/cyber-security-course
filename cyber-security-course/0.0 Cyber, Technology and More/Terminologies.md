@@ -710,4 +710,10 @@
 	- The 'C'hief's of a company
 - DLL
 	- Dynamic Link Library
+- SCAP
+	- Security Content Automation Protocol
+- DLP
+	- Data Loss Prevention
+- AUP
+	- Acceptable Use Policy
 - 
