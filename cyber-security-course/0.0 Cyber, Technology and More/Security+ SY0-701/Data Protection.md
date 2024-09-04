@@ -317,16 +317,61 @@
 		- Without consent
 
 - Securing Data
-	- Geographic Restrictions
+	- Geographic Restrictions (Geofencing)
+		- Involves setting up virtual boundaries to restrict data access based on geographic location
 	- Encryption
+		- Fundamental data security method that transforms readable data (plaintext) into unreadable data (ciphertext) using an algorithm and an encryption key
+		- Crucial for protecting data at rest and data in transit
 	- Hashing
+		- Technique that converts data into a fixed size of numerical or alphanumeric characters, known as a hash value
+		- Often used to store sensitive data, like passwords
+		- Also used to check the integrity of files
 	- Masking
+		- Involves replacing some or all of the data in a field with a placeholder, such as "x", to conceal the original content
+		- Once masked - it's one way process, it can't be reversed
+		- Making it a method of de-identification
 	- Tokenisation
+		- Replaces sensitive data with non-sensitive substitutes known as token
+		- The original data is stored securely in a different database
+		- Used in payment processing systems to protect card information for example
 	- Obfuscation 
+		- Making data unclear, or unintelligible
+		- Making it different for users to understand
+		- Encryption, data masking and the use of pseudonyms
 	- Segmentation
+		- Involves dividing the network into separate segments, each with its own security controls
 	- Permission Restriction
+		- Involve defining who has access to specific data and what they can do with it
+		- ACLs
+		- Role-Based Access Control (RBAC)
+	- Securing data can be a tedious but rewarding process
 
 - Data Loss Prevention (DLP)
+	- Set up to monitor the data of a system while it's in use, in transit, or at rest in order to detect any attempts to steal the data
 	- Strategy for ensuring sensitive or critical information does not leave an organisation
 	- Either intentionally or unintentionally
-	  
+	- Consider working remotely - data sitting in the laptop
+		- What happens when the laptop gets stolen
+	- Also with external HDDs, thumbdrives, services like Google Drive
+	- Huge problem for businesses
+		- Data, Intellectual Property - is what the currency of businesses can be these days
+	- DLPs
+		- Software
+		- Hardware
+		- Endpoint DLP
+			- A piece of software that's installed on a workstation or a laptop, and it's going to monitor the data that's in use on that computer
+			- Can be set to 
+				- Detection mode
+				- Prevention mode
+		- Network DLP system
+			- A piece of software or hardware that's a solution placed at the perimeter of the network to detect data in transit
+		- Storage DLP
+			- Software that is installed on a server in the data centre and inspects the data while it's at rest on the server
+			- Usually because it's been encrypted or watermarked 
+			- Want to make sure that no one is accessing the data at times when they shouldn't be
+				- ie at a strange time in the day
+		- Cloud-based DLP
+			- Usually offered as software-as-a-service, and it's part of the cloud service and storage needs
+	- Can block/filter content from being uploaded on to the cloud
+		- Using OCR (optical character recognition)
+	- Google Workspace say for example
