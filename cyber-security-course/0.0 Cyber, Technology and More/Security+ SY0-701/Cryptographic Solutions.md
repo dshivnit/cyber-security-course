@@ -1,0 +1,141 @@
+- Practice and study of writing and solving codes to hide the true meaning of the information
+- Encryption - the process of converting ordinary information (plaintext) into an unintelligible form (ciphertext)
+- Encryption is to provide protection in:
+	- Data at rest
+	- Data in transit
+		- Data that moves across the network, sits inside RAM, or moves to and from the CPU
+	- Data in use
+		- Data that is undergoing a current constant state of change
+- Cipher - An algorithm that performs the encryption or decryption
+- Encryption strength comes from the key, not the algorithm
+- Encryption algorithms are open, meaning that the mathematical equations that take place are privy to the public
+	- Again, it is the key that is generated that forms the strength of each encryption algorithm
+- Key - essential piece of information that determines the output of a cipher
+- User larger key lengths, and rotate the keys frequently 
+- The length of a key is proportional to the level of security it provides
+- Regularly changing cryptographic keys is a best practice
+- Most encryption algorithms are open-source and publicly accessible
+- Protect the keys!
+	- Store in secure hardware modules
+	- Encrypt keys when at rest
+	- Transmit keys securely when used
+- Limit key access to regular audits and monitoring
+
+Domain 1.0
+	1.4 Explain the importance of using appropriate cryptographic solutions
+Domain 2.0
+	2.3 Explain various types of vulnerabilities
+	2.4 Given a scenario, analyze indicators of malicious activity
+
+- Steganography
+	- The practice of hiding secret data within ordinary, non-secret files or messages to avoid detection 
+- Tokenization
+	- Substitutes sensitive data elements with non-sensitive equivalents called tokens
+- Data Masking / Data Obfuscation
+	- Process of disguising original data to protect sensitive information while its maintaining its authenticity and usability 
+
+- Symmetric vs Asymmetric Encryption
+	- Symmetric Encryption
+		- Single Key
+		- Symmetric Algorithm (Private Key)
+			- Encryption algorithm in which both the sender and the receiver must know the same shared secret using a privately held key
+		- Shared secret key
+		- Can't be assured of non-repudiation
+			- Multiple handlers of the same private key
+		- One main issue is the distribution of the private key
+		- Tend to be a 100 to a 1000 times faster than asymmetric algorithms
+	- Asymmetric Encryption
+		- Two different keys
+		- Asymmetric Algorithms (Public Key)
+		- One key to encrypt the data, the other to decrypt the data
+		- For example:
+			- Diffie-Hellman
+			- RSA (Ron Rivest, Adi Shamir, and Leonard Adleman)
+			- Elliptic Curve Cryptography (ECC)
+		- Overcomes the challenge of having to distribute a private key (such as in symmetric algorithms) securely
+	- Hybrid implementations
+		- Utilises asymmetric encryption to securely transfer a private key that can then be used with symmetric encryption
+	- Stream cipher
+		- Utilises a keystream generator to encrypt data bit by bit (or byte by byte) using a mathematically XOR function to create the ciphertext
+	- Block Cipher
+		- Breaks the input into fixed-length blocks of data and performs the encryption on each block
+		- Encrypts data in fixed-size blocks, typically of 64, 128, or 256 bits, rather than one bit at a time
+
+- Symmetric Algorithms
+	- Method of encryption where the same key is used for both encryption and decryption of data
+	- DES and 3DES
+		- Data Encryption Standard (DES)
+			- Encryption algorithm which breaks the input into 64-bit block and uses transposition and substitution to create ciphertext using an effective key strength of only 56-bits
+		- Triple DES (3DES)
+			- Because of DES's weakness and its key size
+			- Encryption algorithm which uses three separate symmetric keys to encrypt, decrypt, then encrypt the plaintext into ciphertext in order to increase the strength of DES
+	- International Data Encryption Algorithm (IDEA)
+		- Symmetric block cipher, which uses 64-bit blocks to encrypt plaintext into ciphertext
+		- Was really used a lot in the PGP suite of tools
+		- DES and 3DES was not strong enough
+	- Advanced Encryption Standard (AES)
+		- Symmetric block cipher that uses 128-bit, 192-bit, or 256-bit blocks and a matching encryption key size to encrypt plaintext into ciphertext
+	- Blowfish
+		- Block cipher that uses a 32-bit to 448-bit encryption key to encrypt 64-bit blocks and a variable length encryption key to encrypt plaintext into cipher text
+		- Replacement for DES but not widely utilised
+	- Twofish
+		- Provides the ability to use 128-bit blocks in its encryption algorithm and uses 128-bit, 192-bit or 256-bit encryption keys
+	- RC Cipher Suite
+		- Created by Ron Rivest
+		- A cryptographer who's created six algorithms under the name RC which stands for the Rivest Cipher
+		- RC4
+			- Stream cipher
+			- Using a variable key size from 4-bits to 2048-bits that is used in SSL and WEP
+		- RC5
+			- Block cipher that uses key sizes up to 2048-bits
+		- RC6
+			- Based on RC5
+			- Stronger version of it
+	- DES and 3DES
+	- IDEA
+	- AES
+	- Blowfish
+	- Twofish
+	- Rivest Ciphers (RC4, RC5, RC6)
+
+- Asymmetric Encryption
+	- Does not require a shared secret key, often referred to as public key cryptography since their key is considered to be freely and openly available to the public
+	- Provides confidentiality, integrity, authentication and non-repudiation 
+	- Two different keys - one for encryption, and one for decryption
+	- Digital Signature
+		- A hash digest - encrypted with the senders private key
+		- A hash digest of a message encrypted with the sender's private key to let the recipient know the document was created and sent by the person claiming to have sent it
+		- Hash digest is sent with the original message
+			- To provide non-repudiation
+			- Encrypted with the senders private key
+		- Encrypt the original message with the receivers public key
+		- Non-repudiation, integrity (with the hash digest), confidentiality attained
+	-  Diffie-Helman (DH)
+		- Used to conduct key exchanges and secure key distribution over an unsecure network
+		- Susceptible to man-in-the-middle attacks
+		- Used for the key exchange inside of creating a VPN tunnel establishment as part of IPSec
+	- RSA (Rivest, Shamir, Adleman)
+		- Asymmetric algorithm that relies on the mathematical difficulty of factoring large prime numbers
+		- Can support key sizes between 1024 - 4096bits
+	- ECC - Elliptic Curve Cryptography
+		- Heavily used in mobile devices and it's based on the algebraic structure of elliptical curves over finite fields to define its keys
+		- ECC with a 256-bit key is just as secure as a RSA with a 2048-bit key
+		- Tablets, smartphones, and other mobile based implementation
+		- Takes much less processing power
+		- ECDH
+			- EC Diffie-Helman
+			- ECC version of the DH key-exchange protocol
+		- ECDHE
+			- ECDH Ephemeral
+			- Uses a different key for each portion of the key establishment process inside the DH key exchange
+		- ECDSA 
+			- EC Digital Signature Algorithm
+			- Used as a public key encryption algorithm by the US Government in their digital signatures
+		- ECC is most commonly used for mobile devices and low-power computing devices
+		- Less processing power required to encrypt and decrypt data
+	- Diffie-Helman
+	- Rivest-Shamir-Adleman (RSA)
+	- Elliptic Curve Cryptography (ECC)
+
+- Hashing
+	- 

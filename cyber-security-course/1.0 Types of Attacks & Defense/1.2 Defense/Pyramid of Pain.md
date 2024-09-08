@@ -58,7 +58,7 @@
 		- https://tdm.socprime.com/
 	- ssdeep
 		- https://ssdeep-project.github.io/ssdeep/index.html
-		- Fuzzy hashing
+		- Fuzzy hashing (Context Triggered Piecewise Hashes - CTPH)
 		- Helps perform similarity analysis of hashes
 		- Match two files with minor differences based on the fuzzy hash values
 

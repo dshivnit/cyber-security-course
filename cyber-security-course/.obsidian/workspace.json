@@ -8,18 +8,6 @@
         "type": "tabs",
         "children": [
           {
-            "id": "727bc6c5cba15093",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "1.0 Types of Attacks & Defense/1.2 Defense/Pyramid of Pain.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
             "id": "edd671a7c662de9e",
             "type": "leaf",
             "state": {
@@ -30,8 +18,21 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "2453afe148a94e5b",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "0.0 Cyber, Technology and More/Security+ SY0-701/Cryptographic Solutions.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -97,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "1.0 Types of Attacks & Defense/1.2 Defense/Pyramid of Pain.md",
+                "file": "0.0 Cyber, Technology and More/Security+ SY0-701/Cryptographic Solutions.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -114,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "1.0 Types of Attacks & Defense/1.2 Defense/Pyramid of Pain.md",
+                "file": "0.0 Cyber, Technology and More/Security+ SY0-701/Cryptographic Solutions.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -149,7 +150,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "1.0 Types of Attacks & Defense/1.2 Defense/Pyramid of Pain.md"
+                "file": "0.0 Cyber, Technology and More/Security+ SY0-701/Cryptographic Solutions.md"
               }
             }
           }
@@ -171,10 +172,12 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "727bc6c5cba15093",
+  "active": "2453afe148a94e5b",
   "lastOpenFiles": [
-    "0.0 Cyber, Technology and More/Terminologies.md",
     "1.0 Types of Attacks & Defense/1.2 Defense/Pyramid of Pain.md",
+    "0.0 Cyber, Technology and More/Terminologies.md",
+    "0.0 Cyber, Technology and More/Notes/Course/Week 01/20240624 - Day 001.md",
+    "1.0 Types of Attacks & Defense/1.2 Defense/SOC - Security Operations Centre.md",
     "5.0 Programming/5.1 Programming Languages/Shells/PowerShell.md",
     "0.0 Cyber, Technology and More/Tools/Tools.md",
     "1.0 Types of Attacks & Defense/1.1 Attacks/1.1.1 Types of Attacks.md",
@@ -200,8 +203,6 @@
     "0.0 Cyber, Technology and More/Notes/Course/Week 10/20240829 - Day 048.md",
     "0.0 Cyber, Technology and More/Notes/Clones Made.md",
     "0.0 Cyber, Technology and More/Notes/Course/Week 10/20240828 - Day 047.md",
-    "0.0 Cyber, Technology and More/Security+ SY0-701/Physical Security.md",
-    "0.0 Cyber, Technology and More/Security+ SY0-701/Fundamentals of Security.md",
     "Untitled.canvas",
     "0.0 Cyber, Technology and More/Notes/Course/Week 10",
     "0.0 Cyber, Technology and More/Tools",
