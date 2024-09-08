@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "0.0 Cyber, Technology and More/Security+ SY0-701/Data Protection.md",
+                "file": "1.0 Types of Attacks & Defense/1.2 Defense/Pyramid of Pain.md",
                 "mode": "source",
                 "source": false
               }
@@ -109,7 +109,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "0.0 Cyber, Technology and More/Security+ SY0-701/Data Protection.md",
+                "file": "1.0 Types of Attacks & Defense/1.2 Defense/Pyramid of Pain.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -126,7 +126,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "0.0 Cyber, Technology and More/Security+ SY0-701/Data Protection.md",
+                "file": "1.0 Types of Attacks & Defense/1.2 Defense/Pyramid of Pain.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -161,7 +161,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "0.0 Cyber, Technology and More/Security+ SY0-701/Data Protection.md"
+                "file": "1.0 Types of Attacks & Defense/1.2 Defense/Pyramid of Pain.md"
               }
             }
           }
@@ -185,21 +185,27 @@
   },
   "active": "727bc6c5cba15093",
   "lastOpenFiles": [
+    "5.0 Programming/5.1 Programming Languages/Shells/PowerShell.md",
+    "1.0 Types of Attacks & Defense/1.2 Defense/Pyramid of Pain.md",
+    "0.0 Cyber, Technology and More/Tools/Tools.md",
     "1.0 Types of Attacks & Defense/1.1 Attacks/1.1.1 Types of Attacks.md",
-    "3.0 Software/3.1 Operating Systems/3.1.1 Desktops & Laptops/3.1.1.2 Linux & Unix.md",
-    "0.0 Cyber, Technology and More/Security+ SY0-701/Data Protection.md",
-    "0.0 Cyber, Technology and More/Terminologies.md",
+    "1.0 Types of Attacks & Defense/1.2 Defense/1.2.1 Types of Defense.md",
     "0.0 Cyber, Technology and More/Notes/MuckingAroundPage.md",
+    "0.0 Cyber, Technology and More/Tools/Metasploit.md",
+    "0.0 Cyber, Technology and More/Notes/Course/Week 12/20240909 - Day 055.md",
+    "0.0 Cyber, Technology and More/Notes/Course/Week 11/20240902-20240906 - Day 050-Day 054.md",
+    "0.0 Cyber, Technology and More/Security+ SY0-701/Cryptographic Solutions.md",
+    "0.0 Cyber, Technology and More/Notes/Course/Week 12",
+    "0.0 Cyber, Technology and More/Security+ SY0-701/Data Protection.md",
+    "3.0 Software/3.1 Operating Systems/3.1.1 Desktops & Laptops/3.1.1.2 Linux & Unix.md",
+    "0.0 Cyber, Technology and More/Terminologies.md",
     "0.0 Cyber, Technology and More/Security+ SY0-701/Malware.md",
     "0.0 Cyber, Technology and More/Notes/Course/Week 10/20240826 - Day 045.md",
-    "0.0 Cyber, Technology and More/Notes/Course/Week 11/20240902-20240906 - Day 050-Day 054.md",
     "0.0 Cyber, Technology and More/Notes/Course/Week 11",
     "0.0 Cyber, Technology and More/Notes/Course/Week 10/Wee",
-    "0.0 Cyber, Technology and More/Tools/Metasploit.md",
     "3.0 Software/3.1 Operating Systems/3.1.1 Desktops & Laptops/3.1.1.1 Windows (10 & 11).md",
     "5.0 Programming/5.1 Programming Languages/Shells/Bash.md",
     "0.0 Cyber, Technology and More/Notes/Course/Week 10/20240830 - Day 049.md",
-    "0.0 Cyber, Technology and More/Tools/Tools.md",
     "1.0 Types of Attacks & Defense/1.1 Attacks/OWASP Top 10.md",
     "0.0 Cyber, Technology and More/Security+ SY0-701/Social Engineering.md",
     "0.0 Cyber, Technology and More/Notes/Course/Week 10/20240827 - Day 046.md",
@@ -208,12 +214,7 @@
     "0.0 Cyber, Technology and More/Notes/Course/Week 10/20240828 - Day 047.md",
     "0.0 Cyber, Technology and More/Security+ SY0-701/Physical Security.md",
     "0.0 Cyber, Technology and More/Security+ SY0-701/Fundamentals of Security.md",
-    "6.0 Cryptography/Cryptography.md",
-    "1.0 Types of Attacks & Defense/Risk Management.md",
-    "0.0 Cyber, Technology and More/Security+ SY0-701/Domain 1.md",
     "Untitled.canvas",
-    "0.0 Cyber, Technology and More/Security+ SY0-701/Threat Actors.md",
-    "0.0 Cyber, Technology and More/Notes/Notes.md",
     "0.0 Cyber, Technology and More/Notes/Course/Week 10",
     "0.0 Cyber, Technology and More/Tools",
     "0.0 Cyber, Technology and More/Security+ SY0-701",
@@ -227,7 +228,6 @@
     "99.99 Images Used/Reddit_csharp_HandlesDef.png",
     "99.99 Images Used/Clones_20240702.png",
     "99.99 Images Used/Pasted image 20240804134321.png",
-    "2.0 Hardware/2.5 Network",
     "Untitled 1.canvas",
     "99.99 Images Used/Pasted image 20240702214553.png",
     "Pasted image 20240702104549.png",

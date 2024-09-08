@@ -1,0 +1,7 @@
+- `powershell -c Get-Service`
+	- Will get you a list of the services on the machine and their states (running, stopped)
+- `Restart-Service -Name "ServiceName"`
+	- Will restart the given service
+- `Stop-Service -Name "ServiceName`
+	- Will stop the given service
+- 

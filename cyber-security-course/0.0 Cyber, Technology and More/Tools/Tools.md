@@ -21,6 +21,9 @@ ie Windows applications/software, Other OS applications/software, PowerShell too
 	  https://www.putty.org/
 - Have I Been Pwned?
 	  https://haveibeenpwned.com/
+- searchsploit
+	- `searchsploit 'programName' 'versionNumber'`
+	- Pretty much a command line search tool for exploit-db.com
 - nmap
 	- NSE - NMap Scripting Engine
 		- Written in the Lua programming language
@@ -36,6 +39,8 @@ ie Windows applications/software, Other OS applications/software, PowerShell too
 				- brute - attempt to bf creds for running services
 				- discovery - query running services for further info on the network
 		- --script=< script_name > (can use commas to run multiple scripts at za same time)
+			`nmap -p 445 --script=smb-enum-shares.nse,smb-enum-users.nse 10.123.123.123`
+			
 		- /usr/share/nmap/scripts
 			- alluvdem
 			- script.db (for details of the list)
@@ -517,7 +522,23 @@ ie Windows applications/software, Other OS applications/software, PowerShell too
 		- `john --wordlist=[path_to_wordlist_file] [output_file]`
 	- GPG
 		- `gpg2john`
-		- 
+
+- enum4linux
+	- enum4linux 
+		`enum4linux -a -A 10.123.123.123`
+	- Have a read
+
+- Hydra
+	- Brute Forcer to various services running on a machine
+		- ssh
+		- ftp
+		- smb
+		- so on
+	- Basic command syntax:
+		`hyrda -L 'logins.txt' -P 'pws.txt' 10.123.123.123 ssh`
+
+- 
+		
 ------------------
 
 - IDEs (Integrated Development Environment)

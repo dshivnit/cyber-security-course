@@ -150,4 +150,5 @@
 - When in Console, don't forget about the `show payloads` command when within a module
 	- Can be helpful
 
+- SMB
 - 
