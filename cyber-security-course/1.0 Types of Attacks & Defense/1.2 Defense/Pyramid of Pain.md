@@ -22,6 +22,9 @@
 	- Domain Fluxing
 		- Technique in which domain names of the server involved with malicious activities is changed constantly - thus obscuring threat actors operations
 	- In a single-flux network, the authoritative name server of a fast-flux domain name continuously permutes DNS records with short TTL values - usually between 180 and 600 seconds
+	- Any.run (and similar tools)
+		- Running malicious software against tools like any.run will allow cyber defense analysts to analyse for open connections and requests to both IP addresses and Domain Names 
+		- Analysts will then be able to determine whether these connections are valid or not and will be able to look into the backgrounds of said domains and IP addresses further
 
 - Domain Names
 	- Some (a lot) of DNS providers have loose standards and provide APIs to make it easy for *people* to change the domain
