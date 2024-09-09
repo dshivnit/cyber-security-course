@@ -138,4 +138,239 @@ Domain 2.0
 	- Elliptic Curve Cryptography (ECC)
 
 - Hashing
-	- 
+	- Integrity is usually provided through the use of a hashing function
+	- One-way cryptographic function that takes an input and produces a unique message digest as its output
+	- Another unique thing about a hash digest is that they always going to be the same length (regardless of how many words, characters were hashed)
+	- Few main algorithms:
+		- MD5
+			- Creates a 128-bit hash value that is unique to the input file
+			- Unfortunately, due to the small bit size, it can only create a limited amount of unique hash values
+			- Which can lead to two files having the same hash digest, ie a hash collision
+		- SHA Family
+			- Secure Hash Algorithm
+			- SHA-1
+				- 160-bit hash digest
+				- Which reduces the number of collisions that can occur when compared to MD5
+			- SHA-2
+				- SHA-224
+				- SHA-256
+				- SHA-384
+				- SHA-512
+				- Each version of SHA performs a different number of rounds of mathematical computations to create the hash digest
+				- 64-80 rounds
+			- SHA-3
+				- Newer
+				- Between 224-bits and 512-bits
+				- It has a major increase in security as it uses a 120 rounds of computations to create its message digest 
+		- RipeMD
+			- RACE Integrity Primitive Evaluation Message Digest
+			- 160-bit, 256-bit, 320-bit versions
+			- RIPEMD-160
+				- Open-source 
+				- Created as a competitor to the SHA family
+				- Hasn't gained the same level of popularity
+		- HMAC
+			- Hash-based Message Authentication Code
+			- Used to check the integrity of a message and provides some level of assurance that its authenticity is real 
+			- HMAC-MD5
+			- HMAC-SHA1
+			- HMAC-SHA256
+			- Depending on the underlying hash that will be used with HMAC
+	- Used in Digital Signatures
+		- Created by hashing a file and then taking that resulting hash digest and encrypting it with a private key
+		- The public key on the receiving end can be used to decrypt it to verify the authenticity of the message
+			- Non-repudiation
+		- To practically use Digital Signatures, you need to use an algorithm for that, some:
+			- Digital Security Algorithm (DSA)
+			- Rivest-Shamir-Adleman cipher (RSA)
+			- Elliptic Curve Cryptography version of either DSA or SHA
+		- Digital Security Standard (DSS)
+			- Relies upon a 160-bit message digest created by the Digital Security Algorithm
+		- Code signing of files relies upon the digital signature of a program file
+			- Code Signing
+				- Installer files being digitally signed
+			- Developers being assigned a Private Key by a provider such as Google, or Apple
+			- To verify the integrity of app installations on the mobile market stores
+	- Hashing is a one-way cryptographic function that takes an input and produces a unique message digest as its output
+
+- Increasing Hash Security
+	- Common attacks:
+		- Pass the Hash
+			- Hacking technique that allows the attacker to authenticate to a remote server or service by using the underlying hash of a user's password instead of requiring the associated plaintext password
+			- Difficult to defend against due to many possible exploits in Windows OS and the apps that run on top of it
+			- Hash harvesting - to then be able to used harvested hashes in later attacks
+			- Pen Tools:
+				- Mimikatz
+					- Provides the ability to automate the process of harvesting the hashes and conducting the attack
+			- Ensure only trusted OS's can connect to servers
+			- Windows Domains have trusts set up properly
+			- Workstations are patched and updated
+			- Making sure that MFA is being used properly in the network
+			- And user accounts have been set up to use the concept of LEAST PRIVILEGED
+		- Birthday
+			- Occurs when an attacker is able to send two different messages through a hash algorithm and it results in the same identical hash digest, referred to as a collision
+			- Trying to create collisions
+			- Gets its name from the "Birthday Paradox"
+				- "If you have a random group of people, the chances are you are going to have two people in that group with the same birthday"
+			- If an attacker can find two identical messages with the same hash, they could use this to attack the system
+	- Key Stretching
+		- Technique that is used to mitigate a weaker key by increasing the time needed to crack it
+		- When you stretch a weaker key, it is run through an algorithm to create a longer more secure key than would normally be used
+		- Increases security provided
+			- WPA (Wifi Protected Access)
+			- WPA2
+			- PGP
+			- Decrypt
+			- and others
+		- To mitigate a shorter keys weakness
+	- Salting
+		- Adding random data into a one-way cryptographic hash to help protect against password cracking techniques
+	- Nonce
+		- "Number Used Once"
+		- Unique, often random number that is added to password-based authentication process
+	- Having failed login attempts kept low (like three attempts then account is locked)
+
+Public Key Infrastructure (PKI)
+- An entire system of hardware, software, policies, procedures, and people that is based on asymmetric encryption
+- PKI can be used to create a symmetric connection such as SSL/TLS
+- PKI and Public Key cryptography are not the same thing
+- PKI
+	- System that creates the asymmetrical key pairs that consist of those public and private keys that are used in the encryption and decryption process
+- Public Key Cryptography
+	- We are talking just about the encryption and decryption process that is one small part of the entire PKI architecture
+- Trusted Third-Parties
+	- Certificate Authority
+		- Issues digital certificates and keeps the level of trust between all of the certificate authorities around the world
+- Key Escrow
+	- Process where cryptographic keys are stored in a secure, third-party location, which is effectively an "escrow"
+	- In the event that an organisation or an individual loses access to their encryption keys, or in case there is a legal investigation, these keys can be retrieved from that escrow account
+	- Controversies:
+		- Security
+			- What if a threat actor gains access to this escrow's contents
+			- Access should be strongly regulated
+- PKI
+	- Framework for managing digital keys and certificates that facilitate secure data transfer, authentication, and encrypted communications over networks
+
+- Digital Certificates
+	- Digitally signed electronic document that binds a public key with a user's identity
+	- Can be a person, a server, a workstation or device
+	- X.509 Protocol Standard inside of PKI
+	- Contain the owner, users information, name, organisation, public key, all the information about the CA too
+	- Types:
+		- Wildcard
+		- Single-sided
+		- Dual-sided
+		- Self-signed
+		- Third-party
+		- Root of Trust
+		- Certificate Authority (CA)
+	- Wildcards Subdomains
+		- Wildcard Certs
+		- Allows all of the subdomains to use the same public key certificate and have it displayed as valid
+		- One certificate, save some money, can make life a bit easier as there is only one cert to manage
+		- Disadvantages
+			- If the server is compromised or the cert has to be revoked, then all subdomains would be affected as well
+		- Subject Alternate Name SAN Field
+			- Certificate that specifies what additional domains and IP addresses are going to be supported
+	- Single-sided
+		- Only requires the server to be validated
+		- Only one side of authentication happening
+	- Dual-side
+		- requires both the server and the user to be validated
+		- Better for security
+		- Requires more processing power
+		- Used in high-security environments
+	- Self-Signed Certificates
+		- Signed by the same entity whose identity it certifies
+		- The identity is claiming its own identity and is vouching for itself
+		- There is no external verification of the users identity
+		- Used in testing environments, closed systems, and non-production systems where trust is already established
+	- Third-Party Certificates
+		- Issued and signed by a CA (Certificate Authority)
+		- Root Certificates embedded into web-browsers, or OSes
+		- Higher-degree of trust and level of security
+		- Preferred choice for any public facing systems
+	- Root of Trust
+		- Each certificate is validated using the concept of a root of trust or the chain of trust
+		- Goes from the bottom to the top
+		- Consider it like a family-tree
+		- Certification path
+	- Certificate Authority
+		- Trusted third party who is going to issue these digital certificates
+	- Registration Authority
+		- Requests identifying information from the user and forwards that certificate request up to the CA to create the digital certificate
+	- CAs maintain a publicly visible record of public keys of registered/certified digital certificates
+	- Certificate Signing Request
+		- Block of encoded text that contains information about the entity requesting the certificate
+		- Including, organisation name, domain name, locality and country 
+		- CSR's include the entity's public key
+	- Private Key is always kept with the requestor (maintains confidentiality, integrity and so on)
+	- Certificate Revocation List (CRL)
+		- Serves as an online list of digital certificates that the certificate authority has already revoked
+	- OCSP
+		- Online Certificate Status Protocol
+		- Allows to determine the revocation status of any digital certificate using its serial number
+	- OCSP Stapling
+		- Allows the certificate holder to get the OCSP record from the server at regular intervals
+		- Includes it as part of the SSL/TLS handshake
+		- Speeds up the tunnel creation process
+	- Public Key Pinning
+		- Allows an HTTPS website to resist impersonation attacks from users who are trying to present fraudulent certificates
+	- Key Escrow Agents
+		- Occurs when a secure copy of a user's private key is being held
+		- Recommended to have two separate administrators present (if not more) when a key request is made from the escrow
+		- Helps to implement the concept of separation of duties as well
+	- Key Recovery Agent
+		- Specialised type of software that allows the restoration of a lost or corrupted key to be performed
+		- Consider it as a backup of all the CAs keys incase a major incident or disaster occurs
+
+Blockchain
+- A shared immutable ledger for recording transactions, tracking assets, and building trusts
+- A really long series of information with each block containing information
+- Each block also contains the hash for the block before it
+- Public ledger
+	- A record-keeping system that maintains participants' identities in a secure and anonymous format
+- p2p network
+- A series of hashes are used to ensure the system is recorded properly, and nobody can change it without proper permission - that way everything is authenticated and stored throughout the related blockchain
+- Smart Contracts
+	- Self-executing contracts where the terms of agreement or conditions are written directly into lines of code
+	- The decentralised and transparent nature of the blockchain ensures that once a smart contract is deployed, it cannot be altered, making the agreement tamper-proof and trustworthy
+- Potential to automate complex processes, and operations - from business transactions up to governance systems
+- Reduce the risk of fraud
+- Offers transparency
+- Reduces the cost of traditional contractual processes
+- Every executed contract action is also recorded on the blockchain
+	- So there is a clear and indisputable record of all the transactions that reinforces the concept of trust inside of our digital dealings
+- Commercial uses:
+	- IBM is focused on getting the blockchain into the use inside of the commercial environment
+	- Permissioned Blockchain
+		- Used for business transactions and it promotes new levels of trust and transparency using this immutable public ledger
+		- Use within the supply chain
+			- To know exactly when and where a particular product item comes from say for example (ie food - from the source, through to the grocery store)
+		- Because it's inside the immutable public ledger, nobody can modify it and we all know exactly where everything has been located and what has been done to it
+- Not just limited to the financial sector or cyptocurrencies
+	- Its applications and potential span a wide array of industries
+- Examples:
+	- Supply Chain Management
+	- Voting Systems
+	- Intellectual Property Protection
+	- Property Transfers
+	- Many more
+
+- Encryption Tools
+	- TPM
+		- Trusted Platform Module
+		- Dedicated microcontroller designed to secure hardware through integrated cryptographic keys
+		- Offer hardware level security that ensures digital secrets remain confidential and unaltered
+		- Kind of like a personal vault that information remains encrypted and safeguarded from being tampered with or unauthorised access
+		- One common use is with BitLocker Drive Encryption feature on a MS Windows system
+			- Securing cryptographic keys inside the isolated hardware, we add an additional layer of security against software-based attacks
+	- HSM
+		- Hardware Security module
+		- Physical device that safeguards and manages digital keys, primarily used for mission-critical situations like financial transactions
+		- Like a high-security bank vault
+		- Physical device that safeguards and manages digital keys, primarily used for mission-critical situations like financial transactions
+		- HSM will perform encryption operations within a tamper proof environment, makes it a reliable choice for sensitive operations
+		- Securely generates crypto keys also provides accelerated cryptographic operations
+	- Key Management Systems
+	- Secure Enclave

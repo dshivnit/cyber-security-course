@@ -13,19 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "1.0 Types of Attacks & Defense/1.1 Attacks/1.1.1 Types of Attacks.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "6b4577a419e98cda",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "1.0 Types of Attacks & Defense/Cyber Kill Chain.md",
+                "file": "0.0 Cyber, Technology and More/Security+ SY0-701/Cryptographic Solutions.md",
                 "mode": "source",
                 "source": false
               }
@@ -43,8 +31,7 @@
               }
             }
           }
-        ],
-        "currentTab": 2
+        ]
       }
     ],
     "direction": "vertical"
@@ -110,7 +97,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "5.0 Programming/5.1 Programming Languages/Shells/PowerShell.md",
+                "file": "0.0 Cyber, Technology and More/Security+ SY0-701/Cryptographic Solutions.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -127,7 +114,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "5.0 Programming/5.1 Programming Languages/Shells/PowerShell.md",
+                "file": "0.0 Cyber, Technology and More/Security+ SY0-701/Cryptographic Solutions.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -162,7 +149,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "5.0 Programming/5.1 Programming Languages/Shells/PowerShell.md"
+                "file": "0.0 Cyber, Technology and More/Security+ SY0-701/Cryptographic Solutions.md"
               }
             }
           },
@@ -196,13 +183,13 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "cb655deb2529a8ed",
+  "active": "9172282462f51e67",
   "lastOpenFiles": [
-    "0.0 Cyber, Technology and More/Notes/Course/Week 12/20240909 - Day 055.md",
-    "5.0 Programming/5.1 Programming Languages/Shells/PowerShell.md",
-    "1.0 Types of Attacks & Defense/Cyber Kill Chain.md",
-    "0.0 Cyber, Technology and More/Notes/Course/Week 12/20240910 - Day 056.md",
     "1.0 Types of Attacks & Defense/1.1 Attacks/1.1.1 Types of Attacks.md",
+    "1.0 Types of Attacks & Defense/Cyber Kill Chain.md",
+    "5.0 Programming/5.1 Programming Languages/Shells/PowerShell.md",
+    "0.0 Cyber, Technology and More/Notes/Course/Week 12/20240909 - Day 055.md",
+    "0.0 Cyber, Technology and More/Notes/Course/Week 12/20240910 - Day 056.md",
     "1.0 Types of Attacks & Defense/1.2 Defense/Pyramid of Pain.md",
     "0.0 Cyber, Technology and More/Terminologies.md",
     "0.0 Cyber, Technology and More/Security+ SY0-701/Cryptographic Solutions.md",
