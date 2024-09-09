@@ -115,6 +115,9 @@ What is PowerShell?
 - Searching for a file
 	- `$filename = filename.txt`
 	- `Get-ChildItem -Path C:\ -Filter $filename -Recurse | % {$_.FullName}`
+	- `Get-ChildItem -Path C:\ -Recurse "*filename*"`
+- Searching for content within a file
+	- `Get-ChildItem -Path 'C:\directory name' -Recurse | Select-String "STRING_TO_FIND"`
 
 - Enumeration
 	- Users
@@ -129,9 +132,33 @@ What is PowerShell?
 			- Will show you ports
 		- Example:
 			- `Get-NetTCPConnection | Where-Object -Property State -EQ Listen`
+			- `Get-NetTCPConnection -State Listen`
 	- File permissions
+		- Finding out who the owner of a file/directory is:
+			- `Get-ChildItem | Get-Acl`
 	- Registry permissions
 	- Scheduled and running tasks
+		- `Get-ScheduledTask`
+			- Will list scheduled tasks on the machine
+		- Get-Scheduled 
 	- Insecure files
 	- Patches installed
 		- `Get-Hotfix`
+	- List running Processes
+		- `Get-Process`
+
+- Basic Scripting
+	- https://learnxinyminutes.com/docs/powershell/
+	- Tool: Powershell ISE
+	```PowerShell
+	$system_ports = Get-NetTCPConnection -State Listen
+	$text_port = Get-Content -Path C:\Users\User1\Desktop\ports.txt
+	foreach($port in $text_port){
+		if($port -in $system_ports.LocalPort){
+			echo $port
+			}
+	}
+	```
+	- Sometimes tools like NMAP or Python may not be available
+	- Tasks such as determining IP ranges to scan, port ranges to scan, type of scan to be run will need to be carried out manually
+	- 
