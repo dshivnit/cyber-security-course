@@ -371,6 +371,38 @@ Blockchain
 		- Like a high-security bank vault
 		- Physical device that safeguards and manages digital keys, primarily used for mission-critical situations like financial transactions
 		- HSM will perform encryption operations within a tamper proof environment, makes it a reliable choice for sensitive operations
+		- Can securely create cryptographic keys, and also accelerate cryptographic operations - all within a tamper-proof device
 		- Securely generates crypto keys also provides accelerated cryptographic operations
-	- Key Management Systems
+		- Companies will often rely on Hardware Security Modules to meet regulatory standards when dealing with sensitive data
+		- Example:
+			- An online retailer needing to ensure that each transaction is encrypted using keys generated and stored within their HSM, this could ensure that if the retailers system and databases were breached - the financial details about each transaction would remain safely encrypted, due to the individual keys that are used by that Hardware Security Module when encrypting that data that were protecting using the systems encryption processes 
+	- Key Management Systems (KMS)
+		- Integrated approach for generating, distributing and managing cryptographic keys for devices and applications
+		- Centralised mechanism that controls the entire lifecycle of these cryptographic keys, from inception/creation to their eventual retirement/destruction
+		- Example:
+			- If you're working for a digital media company with a requirement for a vast amount of cloud storage, that needs to store all their multimedia content, project files, contracts and more - you want to ensure that each of those files are encrypted for security
+			- Imagine if you need to manage unique encryption keys for each of these files manually would be more than arduous
+			- With the Key Management System - you can ensure that the system automatically manages those keys and refreshes them periodically to enhance security, and to ensure that old ones are retired when new ones are introduced into the system
 	- Secure Enclave
+		- Coprocessor that is integrated into the main processor of some devices 
+		- With the sole purpose of ensuring data protection
+		- Its architecture is such that it is separated from the main processor and provides a shielded location for safe processing and storing of your sensitive data
+		- It's like a fortress inside your device
+		- Safeguards fingerprints, payment information
+		- By keeping this data separate even if the device gets compromised, the data within the Secure Enclave remain untouched 
+- TPM (Trusted Platform Module)
+- HSM (Hardware Security Module)
+- KSM (Key Management System)
+- Secure Enclave
+
+- Obfuscation
+	- Obscuring information can be sometimes as crucial as encrypting it
+	- Steganography
+	- Data Masking
+	- Tokenization
+	- Steganography
+		- Derived from Greek words meaning "covered writing," and it is all about concealing a message within another so that the very existence of the message is hidden
+		- Concealing a message within another message, so the very existence of that very message, is unknown
+		- Primary goal - to prevent the suspicion that there is any hidden data at all
+		- Frequently used alongside encryption for an extra layer of security as well
+		- 
