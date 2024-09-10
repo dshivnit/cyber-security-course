@@ -399,7 +399,25 @@ Blockchain
 	- Obscuring information can be sometimes as crucial as encrypting it
 	- Steganography
 	- Data Masking
+		- Also known as data obfuscation
+		- Used to protect data by ensuring that it remains recognisable but does not actually include sensitive information
+		- Also known as data obfuscation
+		- Process of disguising original data to protect sensitive information while maintaining data authenticity and usability
+		- Example:
+			- Let's pretend that you're working for a software company that wants to test new features
+			- Dev's need realistic data to work with, but working with live data can be risky
+			- Using Data Masking to replace customer names, addresses with alterations or made up details - so they don't point to actual/factual values
+			- Doesn't expose any genuine information
+			- By creating a sanitised version of datasets, businesses are able to reduce the risk of a data breach in non-production environments
+		- Data masking is also really prevalent in industries that handle vast amounts of personal data
+		- Hiding sensitive details from company's own employees
+			- ie, not having the full credit card number showing up when authorising an account - as it's usually only the last four digits that would be visible to employee operators
 	- Tokenization
+		- Transformative technique in data protection that involves substituting sensitive data elements with non-sensitive equivalents, called tokens, which have no meaningful value
+		- Example:
+			- Using a credit card at a store, the actual credit card details aren't stored, but a tokenized version of the credit card number/details is - replaced with a random string of numbers, called a token. 
+			- This token can be used for internal processes, without exposing the actual credit card number
+			- If a breach occurs, threat actors will only find that useless token, not the actual numbers, because the actual numbers remain safe in a separate secured vault
 	- Steganography
 		- Derived from Greek words meaning "covered writing," and it is all about concealing a message within another so that the very existence of the message is hidden
 		- Concealing a message within another message, so the very existence of that very message, is unknown
