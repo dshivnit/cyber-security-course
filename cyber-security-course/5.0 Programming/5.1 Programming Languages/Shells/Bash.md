@@ -138,4 +138,17 @@
 	- OR `-o`
 	- Greater than `-gt`
 	- Less than `-lt`
-- 
+
+- `sed`
+	- `echo $SOMETHINGNEW="A quick brown fox jumps over the lazy dog"
+	- `echo $SOMETHINGNEW | sed 's/ //g'`
+		Aquickbrownfoxjumpsoverthelazydog
+	- /`what to find to replace`/`replace what is found with this`/
+	- The forward slashes can be whatever character, just used slashes in this example
+	- the s above I think is for separator
+	- the g is for global
+	- if you don't have the 'g' then only the first character character to replace will be replaced
+
+- `jq`
+	- tool for parsing and manipulating JSON data in Linux
+	- Allows you to extract, filter, map and transform JSON data, making 
