@@ -325,6 +325,8 @@ ie Windows applications/software, Other OS applications/software, PowerShell too
 - Remmina
 	- Another RDP tool I apt installed
 	- on the fly GUI
+- evil-winrm
+	- 
 - expect
 	- Programmed dialogue with interactive programs
 - Log Viewer
