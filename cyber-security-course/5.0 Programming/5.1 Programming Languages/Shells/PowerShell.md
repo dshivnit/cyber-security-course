@@ -146,6 +146,10 @@ What is PowerShell?
 		- `Get-Hotfix`
 	- List running Processes
 		- `Get-Process`
+	- `Test-NetConnection`
+		- `Test-NetConnection localhost -Port 1`
+		- Could write a script that loops between two ranges and prints out the results from above, or adds the findings to a list
+		- Test and see what is output'd from the above and see how to pull that into a separate txt file or something
 
 - Basic Scripting
 	- https://learnxinyminutes.com/docs/powershell/
@@ -161,4 +165,24 @@ What is PowerShell?
 	```
 	- Sometimes tools like NMAP or Python may not be available
 	- Tasks such as determining IP ranges to scan, port ranges to scan, type of scan to be run will need to be carried out manually
-	- 
+
+- Port Scanner Script Example (kudos to Rich - however I would do this differently, or this can be done differently)
+```Powershell
+	$ErrorActionPreference -eq "SilentlyContinue"
+	$Target -eq "localhost"
+	$LowEnd = 1
+	$HighEnd = 65535
+	$X = 0
+	Do
+	{
+	    $CurrentPort = $LowEnd + $X
+	    if((Test-NetConnection -ErrorAction SilentlyContinue $Target -Port $CurrentPort).PingSucceeded -or (Test-NetConnection -ErrorAction SilentlyContinue $Target -Port $CurrentPort).TcpTestSucceeded)
+	    {
+	        $CurrentPort | Out-File .\OpenPorts.txt -Append
+	    }
+	    $X = $X + 1
+	}
+	While($CurrentPort -lt $HighEnd)
+	
+	(Get-Content .\OpenPorts.txt).Count
+```
