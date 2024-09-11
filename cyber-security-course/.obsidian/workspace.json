@@ -49,14 +49,14 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "0.0 Cyber, Technology and More/Notes/Course/Week 12/20240911 - Day 057.md",
+                "file": "0.0 Cyber, Technology and More/Notes/Course/Week 12/20240912 - Day 058.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
         ],
-        "currentTab": 3
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -122,7 +122,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "0.0 Cyber, Technology and More/Notes/Course/Week 12/20240911 - Day 057.md",
+                "file": "5.0 Programming/Regex.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -139,7 +139,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "0.0 Cyber, Technology and More/Notes/Course/Week 12/20240911 - Day 057.md",
+                "file": "5.0 Programming/Regex.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -174,7 +174,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "0.0 Cyber, Technology and More/Notes/Course/Week 12/20240911 - Day 057.md"
+                "file": "5.0 Programming/Regex.md"
               }
             }
           },
@@ -208,12 +208,14 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "4e6b3c12010cd34d",
+  "active": "91b8793c64e532f7",
   "lastOpenFiles": [
-    "5.0 Programming/Regex.md",
-    "0.0 Cyber, Technology and More/Notes/Course/Week 12/20240911 - Day 057.md",
-    "0.0 Cyber, Technology and More/Notes/MuckingAroundPage.md",
+    "0.0 Cyber, Technology and More/Notes/Course/Week 12/20240912 - Day 058.md",
     "0.0 Cyber, Technology and More/Security+ SY0-701/Cryptographic Solutions.md",
+    "0.0 Cyber, Technology and More/Security+ SY0-701/Data Protection.md",
+    "0.0 Cyber, Technology and More/Notes/Course/Week 12/20240911 - Day 057.md",
+    "5.0 Programming/Regex.md",
+    "0.0 Cyber, Technology and More/Notes/MuckingAroundPage.md",
     "1.0 Types of Attacks & Defense/1.1 Attacks/1.1.1 Types of Attacks.md",
     "0.0 Cyber, Technology and More/Tools/Tools.md",
     "0.0 Cyber, Technology and More/Terminologies.md",
@@ -235,8 +237,6 @@
     "0.0 Cyber, Technology and More/Tools/Metasploit.md",
     "0.0 Cyber, Technology and More/Notes/Course/Week 11/20240902-20240906 - Day 050-Day 054.md",
     "0.0 Cyber, Technology and More/Notes/Course/Week 12",
-    "0.0 Cyber, Technology and More/Security+ SY0-701/Data Protection.md",
-    "3.0 Software/3.1 Operating Systems/3.1.1 Desktops & Laptops/3.1.1.2 Linux & Unix.md",
     "0.0 Cyber, Technology and More/Notes/Course/Week 11",
     "0.0 Cyber, Technology and More/Notes/Course/Week 10/Wee",
     "Untitled.canvas",

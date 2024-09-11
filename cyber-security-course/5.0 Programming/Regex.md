@@ -73,16 +73,41 @@
 	- Regex101
 	- Essential for experimenting with regex patterns in a supportive environment.
 	  - Building and testing patterns to ensure desired criteria is matched
+---
 
+*(below taken from THM - thanks `concatenate`!)*
+`\d` matches a digit, like `9`  
+`\D` matches a non-digit, like `A` or `@`  
+`\w` matches an alphanumeric character, like `a` or `3`  
+`\W` matches a non-alphanumeric character, like `!` or `#`  
+`\s` matches a whitespace character (spaces, tabs, and line breaks)  
+`\S` matches everything else (alphanumeric characters and symbols)
+
+Note: Underscores `_` are included in the `\w` metacharacter and not in `\W`. That means that `\w` will match every single character in `test_file`.
+
+Often we want a pattern that matches many characters of a single type in a row, and we can do that with repetitions. For example, `{2}` is used to match the preceding character (or metacharacter, or charset) two times in a row. That means that `z{2}` will match exactly `zz`.
+
+Here's a reference for each repetition along with how many times it matches the preceding pattern:
+
+`{12}` - **exactly 12** times.  
+`{1,5}` - **1 to 5** times.  
+`{2,}` - **2 or more** times.  
+`*` - **0 or more** times.  
+`+` - **1 or more** times.
+
+---
 Examples:
 - `[A-Z]+[0-9]*`
 	- 1 or more A-Z characters (emphasis on at least **1** here!)
 	- 0 or more numbers (emphasis on **0** here!)
-- 
-
-
+- Check this site out for more practice, knowledge around how regex works
+	- https://regexlearn.com/
+- This site has various formats (Python, PHP, MySQL, Javascript etc) and is a useful quick-reference:
+	- https://regexlearn.com/
 
 References:
 - https://quickref.me/regex
 - https://www.sitepoint.com/learn-regex/
 - https://regex101.com/
+- https://regexlearn.com/
+- https://tryhackme.com/r/room/catregex
