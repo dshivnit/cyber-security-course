@@ -20,6 +20,30 @@
             }
           },
           {
+            "id": "51469d7c756a8131",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "0.0 Cyber, Technology and More/Notes/MuckingAroundPage.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "91b8793c64e532f7",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "5.0 Programming/Regex.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
             "id": "4e6b3c12010cd34d",
             "type": "leaf",
             "state": {
@@ -31,7 +55,8 @@
               }
             }
           }
-        ]
+        ],
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -97,7 +122,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "0.0 Cyber, Technology and More/Security+ SY0-701/Cryptographic Solutions.md",
+                "file": "0.0 Cyber, Technology and More/Notes/Course/Week 12/20240911 - Day 057.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -114,7 +139,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "0.0 Cyber, Technology and More/Security+ SY0-701/Cryptographic Solutions.md",
+                "file": "0.0 Cyber, Technology and More/Notes/Course/Week 12/20240911 - Day 057.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -149,7 +174,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "0.0 Cyber, Technology and More/Security+ SY0-701/Cryptographic Solutions.md"
+                "file": "0.0 Cyber, Technology and More/Notes/Course/Week 12/20240911 - Day 057.md"
               }
             }
           },
@@ -183,13 +208,14 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "dd5d6cdc4193fad6",
+  "active": "4e6b3c12010cd34d",
   "lastOpenFiles": [
+    "5.0 Programming/Regex.md",
     "0.0 Cyber, Technology and More/Notes/Course/Week 12/20240911 - Day 057.md",
+    "0.0 Cyber, Technology and More/Notes/MuckingAroundPage.md",
+    "0.0 Cyber, Technology and More/Security+ SY0-701/Cryptographic Solutions.md",
     "1.0 Types of Attacks & Defense/1.1 Attacks/1.1.1 Types of Attacks.md",
     "0.0 Cyber, Technology and More/Tools/Tools.md",
-    "5.0 Programming/Regex.md",
-    "0.0 Cyber, Technology and More/Security+ SY0-701/Cryptographic Solutions.md",
     "0.0 Cyber, Technology and More/Terminologies.md",
     "1.0 Types of Attacks & Defense/Logs.md",
     "3.0 Software/3.1 Operating Systems/3.1.1 Desktops & Laptops/3.1.1.1 Windows (10 & 11).md",
@@ -206,7 +232,6 @@
     "0.0 Cyber, Technology and More/Notes/Course/Week 01/20240624 - Day 001.md",
     "1.0 Types of Attacks & Defense/1.2 Defense/SOC - Security Operations Centre.md",
     "1.0 Types of Attacks & Defense/1.2 Defense/1.2.1 Types of Defense.md",
-    "0.0 Cyber, Technology and More/Notes/MuckingAroundPage.md",
     "0.0 Cyber, Technology and More/Tools/Metasploit.md",
     "0.0 Cyber, Technology and More/Notes/Course/Week 11/20240902-20240906 - Day 050-Day 054.md",
     "0.0 Cyber, Technology and More/Notes/Course/Week 12",

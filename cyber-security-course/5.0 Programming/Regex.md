@@ -7,6 +7,13 @@
 - Basics:
 	- Expressions start and end with a `/`
 		- The below examples may not include these .. 
+	- `^` Start of string, or start of line in multi-line pattern
+	- `$` End of string, or end of line in multi-line pattern
+	- `\` escape character - put this in-front of a special character so that the character's specialness doesn't engage..
+	- Quantifiers
+		- `*` - 0 or more
+		- `+` - 1 or more
+		- `?` - 0 or 1
 	- Metacharacters
 	- Character sets
 		- `[bcf]at` - would mean that the characters within the square brackets would be included when searching strings for `*at` 
@@ -48,7 +55,6 @@
 	- Expressions start with `/` and end with `/` 
 	- Flags would go at the end of an expression
 	- ie `/word/g`
-	- 
 - Practical applications of Regex:
 	- Form input validation
 	- Web scraping
@@ -62,13 +68,21 @@
 	- symbol
 	- space
 	- character
+	- 
 - Tools:
 	- Regex101
 	- Essential for experimenting with regex patterns in a supportive environment.
 	  - Building and testing patterns to ensure desired criteria is matched
 
+Examples:
+- `[A-Z]+[0-9]*`
+	- 1 or more A-Z characters (emphasis on at least **1** here!)
+	- 0 or more numbers (emphasis on **0** here!)
+- 
+
 
 
 References:
+- https://quickref.me/regex
 - https://www.sitepoint.com/learn-regex/
 - https://regex101.com/
