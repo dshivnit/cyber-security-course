@@ -726,4 +726,5 @@
 	- Acceptable Use Policy
 - SAM
 	- Security Account Manager
-- 
+- LSASS
+	- Local Security Authority Subsystem Service
