@@ -13,49 +13,26 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "1.0 Types of Attacks & Defense/1.1 Attacks/1.1.1 Types of Attacks.md",
+                "file": "0.0 Cyber, Technology and More/Notes/Course/Week 12/20240913 - Day 059.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "e84ab9c971c45032",
+            "id": "8c471e6cd0d10a51",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "0.0 Cyber, Technology and More/Terminologies.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "7db3d62807b1b84c",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "3.0 Software/3.1 Operating Systems/3.1.1 Desktops & Laptops/3.1.1.1 Windows (10 & 11).md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "af45984e33a88e5f",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "0.0 Cyber, Technology and More/Tools/Tools.md",
+                "file": "0.0 Cyber, Technology and More/Security+ SY0-701/Risk Management.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -121,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "1.0 Types of Attacks & Defense/1.1 Attacks/1.1.1 Types of Attacks.md",
+                "file": "0.0 Cyber, Technology and More/Security+ SY0-701/Risk Management.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -138,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "1.0 Types of Attacks & Defense/1.1 Attacks/1.1.1 Types of Attacks.md",
+                "file": "0.0 Cyber, Technology and More/Security+ SY0-701/Risk Management.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -173,7 +150,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "1.0 Types of Attacks & Defense/1.1 Attacks/1.1.1 Types of Attacks.md"
+                "file": "0.0 Cyber, Technology and More/Security+ SY0-701/Risk Management.md"
               }
             }
           },
@@ -207,18 +184,19 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "4e6b3c12010cd34d",
+  "active": "8c471e6cd0d10a51",
   "lastOpenFiles": [
+    "0.0 Cyber, Technology and More/Security+ SY0-701/Cryptographic Solutions.md",
+    "0.0 Cyber, Technology and More/Security+ SY0-701/Risk Management.md",
+    "0.0 Cyber, Technology and More/Notes/Course/Week 12/20240913 - Day 059.md",
+    "1.0 Types of Attacks & Defense/1.1 Attacks/1.1.1 Types of Attacks.md",
     "0.0 Cyber, Technology and More/Terminologies.md",
     "3.0 Software/3.1 Operating Systems/3.1.1 Desktops & Laptops/3.1.1.1 Windows (10 & 11).md",
-    "1.0 Types of Attacks & Defense/1.1 Attacks/1.1.1 Types of Attacks.md",
     "3.0 Software/Windows Domains.md",
     "5.0 Programming/5.1 Programming Languages/Shells/PowerShell.md",
     "0.0 Cyber, Technology and More/Tools/Tools.md",
-    "0.0 Cyber, Technology and More/Notes/Course/Week 12/20240913 - Day 059.md",
     "0.0 Cyber, Technology and More/Notes/Course/Week 12/20240912 - Day 058.md",
     "5.0 Programming/Regex.md",
-    "0.0 Cyber, Technology and More/Security+ SY0-701/Cryptographic Solutions.md",
     "0.0 Cyber, Technology and More/Security+ SY0-701/Data Protection.md",
     "0.0 Cyber, Technology and More/Notes/Course/Week 12/20240911 - Day 057.md",
     "0.0 Cyber, Technology and More/Notes/MuckingAroundPage.md",
@@ -234,7 +212,6 @@
     "1.0 Types of Attacks & Defense/1.2 Defense/Pyramid of Pain.md",
     "0.0 Cyber, Technology and More/Notes/Course/Week 01/20240624 - Day 001.md",
     "1.0 Types of Attacks & Defense/1.2 Defense/SOC - Security Operations Centre.md",
-    "1.0 Types of Attacks & Defense/1.2 Defense/1.2.1 Types of Defense.md",
     "0.0 Cyber, Technology and More/Notes/Course/Week 12",
     "0.0 Cyber, Technology and More/Notes/Course/Week 11",
     "0.0 Cyber, Technology and More/Notes/Course/Week 10/Wee",

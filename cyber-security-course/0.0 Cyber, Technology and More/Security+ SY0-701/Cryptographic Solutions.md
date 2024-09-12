@@ -423,4 +423,54 @@ Blockchain
 		- Concealing a message within another message, so the very existence of that very message, is unknown
 		- Primary goal - to prevent the suspicion that there is any hidden data at all
 		- Frequently used alongside encryption for an extra layer of security as well
+	- All the above under the principle of hiding information, either by embedding it within something else, replacing it with tokens, or altering it to protect the genuine data
+
+- Cryptographic Attacks
+	-  Techniques and strategies that adversaries employ to exploit vulnerabilities in cryptographic systems with the intent to compromise the confidentiality, integrity, or authenticity of data
+	- Downgrade Attacks
+		- Aims to force a system into using a weaker or older cryptographic standard or protocol than what it's currently utilising
+		- The idea is to rollback to outdated versions, to exploit known vulns or weaknesses in those older protocols
+		- One example was the POODLE attack, also known as Padding Oracle On Downgraded Legacy Encryption, which targeted SSL version 3.0
+			- Many systems had still supported SSL 3.0 for backward compatibility 
+			- Allows attackers to extract sensitive data from these communications
+		- These downgraded attacks are dangerous because they turn the very nature of evolving security, such as the development of stronger, more robust cryptographic protocols, against itself
+		- In trying to be more inclusive and comprehensive, in trying to be more inclusive and comprehensive, systems that maintain backwards compatibility with older standards, are leaving themselves open to these types of downgrade attacks
+		- Many systems have phased out support for legacy protocols that are known to be insecure, even if it means sacrificing backward compatibility 
+	- Collision Attacks
+		- Aims to find two different inputs that produce the same hash output
+		- Example: When downloading a file from the Internet, the website may provide a hash value for that file. 
+			- Then you can compare with what is received to what is listed on the website
+		- If an attacker can create a malicious file with the same hash value by exploiting a collision
+			- The user may be tricked into thinking it has a legit file when actually they don't
+		- These collisions undermine the trust and reliability placed on cryptographic tools, and they can potentially allow malicious actors to impersonate trusted entities, forge digital signatures, or distribute tampered data while appearing genuine
+		- Birthday Paradox, Birthday Attack
+			- The paradox itself posits that in a group of just 23 people, there's a better than even chance that two of them share the same birthday
+			- The probability that two distinct inputs, when processed through a hashing function, will produce the same output, or a collision
+	- Quantum Computing
+		-  A computer that uses quantum mechanics to generate and manipulate quantum bits (qubits) in order to access enormous processing powers
+		- Quantum computing uses quantum bits or qubits
+			- As opposed to bits (1/0s)
+		- Quantum Communication
+			- A comms network that relies on qubits made of photons (light) to send multiple combinations of ones and zeros simultaneously which results in tamper resistant and extremely fast communications
+		- Qubit
+			- A quantum bit composed of electrons or photons that can represent numerous combinations of ones and zeros at the same time through superposition
+		- It's designed for very specific use cases, as as very complex math problems, or trying to do something like the modeling of an atom or some kind of atomic structure
+		- Cryptography is used to secure communications and data by relying on how difficult a math problem is to compute with traditional computers, that's what gives the strength in cryptography
+		- Key exchanges using asymmetric communication
+			- Quantum computing can make real quick work of the math problems related to creating the cryptographic keys in the pubic key infrastructure
+				- Essentially becoming easy
+		- Post-Quantum Cryptography
+			- A new kind of cryptographic algorithm that can be implemented using today's classical computers but is also impervious to attacks from future quantum computers
+			- Two methods:
+				- Increase the key size
+					- To increase the number of permutations that are needed to be brute-forced
+				- Working on other approaches
+					- Post-quantum resistant algorithms
+					- Lattice-based cryptography
+					- Super singular isogeny key exchange
+		- NIST recommends for general encryption, use the CRYSTALS-Kyber (or Cyber) algorithm
+			- Digital signatures:
+				- Crystals-Dilithium
+				- FALCON
+				- SHINCS+
 		- 
