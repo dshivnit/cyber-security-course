@@ -8,42 +8,6 @@
         "type": "tabs",
         "children": [
           {
-            "id": "dd5d6cdc4193fad6",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "0.0 Cyber, Technology and More/Security+ SY0-701/Cryptographic Solutions.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "51469d7c756a8131",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "0.0 Cyber, Technology and More/Notes/MuckingAroundPage.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "91b8793c64e532f7",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "5.0 Programming/Regex.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
             "id": "4e6b3c12010cd34d",
             "type": "leaf",
             "state": {
@@ -55,8 +19,7 @@
               }
             }
           }
-        ],
-        "currentTab": 2
+        ]
       }
     ],
     "direction": "vertical"
@@ -122,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "5.0 Programming/Regex.md",
+                "file": "0.0 Cyber, Technology and More/Notes/Course/Week 12/20240912 - Day 058.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -139,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "5.0 Programming/Regex.md",
+                "file": "0.0 Cyber, Technology and More/Notes/Course/Week 12/20240912 - Day 058.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -174,7 +137,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "5.0 Programming/Regex.md"
+                "file": "0.0 Cyber, Technology and More/Notes/Course/Week 12/20240912 - Day 058.md"
               }
             }
           },
@@ -208,13 +171,13 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "91b8793c64e532f7",
+  "active": "4e6b3c12010cd34d",
   "lastOpenFiles": [
+    "5.0 Programming/Regex.md",
     "0.0 Cyber, Technology and More/Notes/Course/Week 12/20240912 - Day 058.md",
     "0.0 Cyber, Technology and More/Security+ SY0-701/Cryptographic Solutions.md",
     "0.0 Cyber, Technology and More/Security+ SY0-701/Data Protection.md",
     "0.0 Cyber, Technology and More/Notes/Course/Week 12/20240911 - Day 057.md",
-    "5.0 Programming/Regex.md",
     "0.0 Cyber, Technology and More/Notes/MuckingAroundPage.md",
     "1.0 Types of Attacks & Defense/1.1 Attacks/1.1.1 Types of Attacks.md",
     "0.0 Cyber, Technology and More/Tools/Tools.md",
