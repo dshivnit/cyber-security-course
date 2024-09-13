@@ -24,3 +24,5 @@ This page will be for mucking around and the like:
 	- Reason-being here is that OpenSSH have deprecated rsa ssh-rsa
 
 - `export PATH=$PATH:/'dir'`
+
+- 
