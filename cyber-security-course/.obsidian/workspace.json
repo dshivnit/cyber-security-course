@@ -42,21 +42,9 @@
                 "source": false
               }
             }
-          },
-          {
-            "id": "a337a4636a487567",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "5.0 Programming/Globbing.md",
-                "mode": "source",
-                "source": false
-              }
-            }
           }
         ],
-        "currentTab": 3
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -122,7 +110,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "5.0 Programming/Globbing.md",
+                "file": "1.0 Types of Attacks & Defense/1.1 Attacks/1.1.1 Types of Attacks.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -139,7 +127,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "5.0 Programming/Globbing.md",
+                "file": "1.0 Types of Attacks & Defense/1.1 Attacks/1.1.1 Types of Attacks.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -174,7 +162,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "5.0 Programming/Globbing.md"
+                "file": "1.0 Types of Attacks & Defense/1.1 Attacks/1.1.1 Types of Attacks.md"
               }
             }
           },
@@ -208,13 +196,14 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "a337a4636a487567",
+  "active": "2ef7610851996219",
   "lastOpenFiles": [
-    "5.0 Programming/Regex.md",
+    "0.0 Cyber, Technology and More/Security+ SY0-701/Fundamentals of Security.md",
+    "1.0 Types of Attacks & Defense/1.1 Attacks/1.1.1 Types of Attacks.md",
     "5.0 Programming/Globbing.md",
+    "5.0 Programming/Regex.md",
     "5.0 Programming/5.1 Programming Languages/Programming Languages.md",
     "5.0 Programming/5.1 Programming Languages/Shells/Bash.md",
-    "1.0 Types of Attacks & Defense/1.1 Attacks/1.1.1 Types of Attacks.md",
     "0.0 Cyber, Technology and More/Security+ SY0-701/Risk Management.md",
     "1.0 Types of Attacks & Defense/Risk Assessment.md",
     "1.0 Types of Attacks & Defense/Risk Management.md",
@@ -236,7 +225,6 @@
     "13.0 Cloud Services/MS Azure.md",
     "0.0 Cyber, Technology and More/Notes/Course/Week 12/20240909 - Day 055.md",
     "13.0 Cloud Services/AWS.md",
-    "13.0 Cloud Services/Cloud Services.md",
     "0.0 Cyber, Technology and More/Notes/Course/Week 12",
     "0.0 Cyber, Technology and More/Notes/Course/Week 11",
     "0.0 Cyber, Technology and More/Notes/Course/Week 10/Wee",
