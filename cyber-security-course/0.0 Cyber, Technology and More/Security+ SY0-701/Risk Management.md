@@ -173,4 +173,115 @@
 - Risk Register
 	- Risk Management
 		- Crucial for projects and businesses, involving the identification and assessment of uncertainties that may impact objectives
+	- The risk register is a key tool in risk management, featuring key risk indicators, risk owners, and risk thresholds 
+	- Risk Register
+		- A document detailing identified risks, including their description, impact likelihood, and mitigation strategies
+		- May resemble the heat map risk matrix
+		- Should be shared between shareholders so that they can better understand the work they manage
+	- Risk Description
+		- Entails identifying and providing a detailed description of the risk
+		- Should be clear and concise 
+	- Risk Impact
+		- Potential consequences if the risk materialises 
+	- Risk Likelihood/Probability
+		- Chance of a particular risk occurring
+	- Risk Outcome
+		- Result of a risk, linked to its impact and likelihood
+	- Risk Appetite
+		- Signifies an organisation's willingness to embrace or retain specific types and levels of risk to fulfill its strategic goals
+		- Reflects the org's approach to risk taking
+		- Types:
+			- Expansionary
+				- Organisation is open to taking more risk in the hopes of achieving greater returns
+				- Aggressive growth oriented businesses
+			- Conservative
+				- Implies that an organisation favours less risk, even if it leads to lower returns
+				- Businesses that prioritise stability and long-term sustainability
+			- Neutral
+				- Signifies a balance between a risk and return
+	- Risk Tolerance/Risk Acceptance
+		- Refers to an organisation or individual's willingness to deal with uncertainty in pursuit of their goals
+		- Maximum amount of risk that the company/org is willing to accept
+		- No countermeasures are defined because the level of risk does not justify the cost, or because there will be unavoidable delays before countermeasures are deployed
+		- Simply, the organisation chooses to not do anything about the risk.
+	- Risk Level
+		- Determined by combining the impact and likelihood
+	- Cost
+		- Pertains to its financial impact on the project, including potential expenses if it occurs or the cost of risk mitigation
+	- By identifying the tolerance level and risk appetite upfront, organisations can effectively categorise and prioritise risks
+	- This helps them to align their risk management efforts with their overall strategic objectives and to ensure that their resources are utilised effectively
+	- Key Risk Indicators
+		- KRIs
+		- Predictive metrics used by an organisations to signal rising risk levels in different parts of the enterprise
+		- Provide an early signal of increasing risk exposure in various areas of the enterprise
+		- Serve as a barometer, a risk or safety level, providing a forward looking view of potential risks and are often associated with the organisations risk appetite
+		- KRIs are used to measure the potential impact of a risk, allowing the organisation to take proactive steps to mitigate the risk
+		- Key Risk Indicators help organisations evaluate the impact and likelihood of risks, allowing proactive management to prevent their escalation
+		- Example:
+			- Banking institution - a KRI could be the number of loan defaults in a given period
+			- A sudden increase in this KRI may indicate a higher risk of credit defaults, which can prompt the bank to investigate and take action to mitigate this risk
+	- Risk Owner
+		- Person or group responsible for managing the risk
+		- Monitoring the risk, implementing mitigation action, and updating the risk register as registry
+		- Could be a project manager in a construction company - would be responsible for identifying potential risk (delays due to weather, costs fluctuating in building materials - perhaps locking in material prices early)
+
+- Qualitative Risk Analysis 
+	- Subjective and high-level view of risks
+	- A method of assessing risks based on their potential impact and the likelihood of their occurrence 
+	- It involves categorising risks as, High, Medium, or Low based on the potential effect of the project objectives
+	- This method is subjective and relies on the expertise and experience of the project team and stakeholders
+	- Avoids the complexity of the quantitative approach
+	-  Likelihood and probability refer to the chance of a particular risk occurring
+	- Usually expressed as Low, Medium or High
+	- Likelihood of a risk is determined based on past experiences, statistical analysis or expert judgement
+	- Impact refer to the potential consequences if the risk materialises, also rated low medium or high
+	- Impact of a risk is based on the potential damage it could cause if the risk should arise
+	- The project manager, using Qualitative Risk Analysis, might prioritise this risk and develop mitigation strategies 
+	- A method of assessing risks based on their potential impact and the likelihood of their occurrence
+
+- Quantitative Risk Analysis
+	- Objective and numerical evaluation of risks
+	- Single Loss Expectancy (SLE)
+	- Annualised Rate of Occurrence (ARO)
+	- Annualised Loss Expectancy (ALE)
+	- Exposure Factor (EF)
+	- Quantitative Risk Analysis
+		- Method of evaluating risk that uses numerical measurements
+		- It provides a probabilistic analysis of potential future events and is typically used for financial, safety and scheduling decisions. 
+		- This method allows for more precise understanding of potential impacts and the effectiveness of proposed solutions. 
+	- The aim here is to assign concrete values to each of the risk factors we want to use in the analysis
+	- Exposure Factor (EF)
+		- Is the proportion of an asset that is lost in an event
+		- Expressed as a percentage between zero, no loss, and 100%
+		- So if we determine that in a catastrophic event of a flooding hitting our HQ, we'll lose 70% of our assets
+			- That would mean that our EF (Exposure Factor) is 70%
+	- Single Loss Expectancy (SLE)
+		- The monetary value expected to be lost in a single event. it's calculated by multiplying the value of the asset by the exposure factor. 
+		- So if our assets are worth $100,000 and the exposure factor is 70%
+			- That means we have an SLE (Single Loss Expectancy) of $70,000
+	- Annualised Rate of Occurrence (ARO)
+		- The estimated frequency with which a threat is expected to occur within a year
+	- Annualised Loss Expectancy (ALE)
+		- Expected annual loss from a risk
+		- Calculated by multiplying the Single Loss Expectancy (SLE) and the ARO (Annual Rate of Occurrence) 
+	- Example:
+		- A company has a server worth $10,000
+		- The EF (Exposure Factor) for the server to crash is estimated to be 50% and the server crashes once every two years
+		- The Single Loss Expectancy (SLE):
+			- Asset Value ($10000) x Exposure Factor (50% ) = $5000
+		- Annual Rate of Occurrence (ARO)
+			- Server crashes once every two years
+			- 1 / 2 = 0.5
+		- Annual Loss Expectancy
+			- SLE x ARO
+			- 5000 x 0.5 = 2500
+		- So the company could expect to lose roughly $2,500 per year due to a server crash
+	- Different mitigation options can now be considered to see if they are worth pursuing
+		- For example a vendor trying to sell us a new server with a higher redundancy rating so that it only fails once every 10 years instead of once every two years
+		- That would reduce the ALE from 2,500 to 500 but if that new server costs 50,000 instead of 10,000 and it only has a three-year useful life. 
+			- Then it won't be worth spending the extra 40,000 to purchase this better server just to save 2000 per year for three years
+	- Quantitative risk analysis is a powerful tool in risk management, providing a numerical and objective evaluation of risk
+	- Organisations can make informed decisions about risk mitigation strategies and resource allocation
+
+- Risk Management Strategies
 	- 
