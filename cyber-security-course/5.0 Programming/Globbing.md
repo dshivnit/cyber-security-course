@@ -1,0 +1,28 @@
+- The asterisk `*` 
+	- Treated as a wildcard
+	- Example:
+		- `touch {file_a,file_b,file_c}`
+		- `echo something: file*`
+		- something: file_a file_b file_c
+	- `echo */temp`
+		- socat/temp THM/temp
+		- Essentially listening any directories that have a folder named temp in it
+- The question mark `?`
+	- Like the wildcard, but only matches one character
+	- `cd Deskto?`
+		- ~/Desktop
+	- `cd ?esk?op`
+		- ~/Desktop
+- The square brackets `[ ]`
+	- A limited form of `?` 
+	- a subset of potential characters which are specified within the brackets
+	- Example:
+		- `cd [DQWE]esk[tpoinm]op`
+		- ~/Desktop
+	- `touch {file_a,file_b,file_c}`
+	- `echo randomness: file_[ab]`
+	- randomness: file_a file_b
+- The exclamation `!` or the carrot/hat `^`
+	- `echo lookie: file_[^ab]`
+	- file_c
+	- The exclamation seems to have removed everything after it in the command (for me) 

@@ -152,3 +152,14 @@
 - `jq`
 	- tool for parsing and manipulating JSON data in Linux
 	- Allows you to extract, filter, map and transform JSON data, making 
+
+- Shell Expansions
+- https://www.gnu.org/software/bash/manual/html_node/Shell-Expansions.html
+	- Brace Expansion
+		- `echo a{d,c,b}e` - ade ace abe
+		- `mkdir {old,new,dist,bugs}
+			- Creates all four directories simultaneously
+		- `mv {1,3} bugs`
+			- Will move files 1 and 3 into the bugs folder
+	- Shell Parameter Expansion
+		- 
