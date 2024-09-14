@@ -1,0 +1,176 @@
+- Fundamental process that involves identifying, analysing, treating, monitoring, and reporting risks
+	- To ensure that an org's objectives are achieved in a manner that is consistent with its risk appetite
+- Identifying and addressing uncertainty is a huge part of decision making regardless of an org's size or vector
+
+- Risk Identification
+	- Recognising the potential risks that could negatively affect an org's ability to operate or achieve its objectives
+	- A proactive process with a goal of creating a comprehensive list of risks based on those events that might prevent the org from achieving its objectives
+- Risk Analysis
+	- Involves identifying the likelihood and eventual impact of an identified risk
+	- Qualitative
+		- Categories and scales to rate risks
+	- Quantitative
+		- Using a numerical value
+	- Outcome is to prioritise a list of risks based on their potential severity which can then be used to guide the risk treatment process
+- Risk Treatment
+	- Involves developing strategies to manage identified risks
+	- Risk Avoidance
+	- Risk Reduction
+	- Risk Sharing
+	- Risk Acceptance
+	- Choice or strategy depends on the risk potentials impact and the org's risk tolerance
+	- Goal:
+		- To reduce the potential impact of risks to an acceptable level
+- Risk Monitoring
+	- Ongoing process of tracking identified risks
+	- Monitoring residual risks
+	- Identifying new risks
+	- Reviewing the effectiveness of the risk process
+	- Tracking
+	- Monitoring
+	- Identifying
+	- Reviewing
+	- This process is a crucial step because it ensures that the risk management process is dynamic and responsive to the changes in an org's internal, and external environments
+- Risk Reporting
+	- Involves communicating information about risks and the effectives of the risk management process to relevant stakeholders
+	- Forms:
+		- Dashboards
+		- Heat Maps
+		- Detailed Reports
+- Sec+ Domains Covered
+	- 5.2 - Explain elements of the risk management process
+
+- Risk Assessment Frequency
+	- Refers to how often the risk assessment process is conducted within an organisation
+	- Can vary on the nature of the org and the type of risk involved
+	- Types:
+		- Ad-Hoc
+		- Recurring
+		- One-Time
+		- Continuous
+- Risk Identification
+	- How a business will identify potential risks
+	- How a business impact analysis must be performed
+	- Concepts:
+		- Recovery Time Objective
+		- Recovery Point Objective
+		- Mean Time to Repair
+		- Mean Time Before Failure
+- Qualitative Risk Analysis
+	- Involves assessing risks and prioritising risks based on the likelihood of occurrence and potential impact, using descriptive or categorical scales
+- Quantitative Risk Analysis
+	- Involves numerically estimating the probability of each risk and its potential impact on project objectives
+	- Using numerical data and statistical techniques to calculate these levels
+- Risk Management Techniques
+	- Risk Transfer
+	- Risk Acceptance
+	- Risk Avoidance
+	- Risk Mitigation
+- Risk Monitoring and Reporting
+
+- Risk Assessment Frequency
+	- The regularity with which risk assessments are conducted within an organisation
+		- The nature of the organisations
+		- The type of risks involved
+		- And changes in the internal and external environments
+	- Ad-hoc Risk Assessments
+		- Specific events or situations and may be repeated
+		- Conducted as and when needed, often in response to a specific event or situation that has the potential to introduce new risks or change the nature of existing risks
+		- Example:
+			- Running an ad-hoc risk assessment when launching a new product
+			- Entering a new market
+			- Responding to a significant event such as a natural disaster, or a major change in regulations
+	- Recurring Risk Assessments
+		- Conducted at regular intervals
+			- Annually
+			- Quarterly
+			- Monthly
+			- etc
+		- Typically part of an orgs standard operating procedures
+		- Example:
+			- A financial institution may conduct a recurring risk assessment to monitor a credit risk, market risk and operational risk
+			- Tech company might conduct recurring penetration testing where ethical hackers attempt to breach their systems to identify vulnerabilities
+			- These assessments are scheduled regularly to ensure that any new vulns that may have emerged since the since the last assessment are identified and addressed
+	- One-time Risk Assessment
+		- Associated with a specific project or initiative and are not repeated
+		- Conducted for a specific purpose and are not repeated
+		- Often associated with a particular product or initiative
+		- Example:
+			- When implementing a new IT system
+			- Undertaking a construction project
+			- Organisational change
+	- Continuous Risk Assessments
+		- Ongoing monitoring and evaluation of risks
+		- Example:
+			- A cybersecurity team might use a continuous risk assessment to monitor threats and vulnerabilities enabling them to respond quickly to any potential issue
+	- Risk assessment frequency varies based on the organisations needs and types of risks involved
+
+- Risk Identification
+	- Recognising potential risks that could negatively impact an organisations ability to operate or achieve its objectives
+	- Essential to plan and prepare for potential disruptions
+	- Once conducted, a Business Impact Analysis is usually conducted:
+		- Identifying Key Metrics, like:
+			- RTO - Recovery Time Objectives
+			- RPO - Recovery Point Objective
+			- MTTR - Mean Time To Repair
+			- MTBF - Mean Time Between Failures
+	- Proactive process that identifies potential threats, vulnerabilities that can affect overall company objectives
+	- Techniques:
+		- Brainstorming
+		- Checklists
+		- Interviews
+		- Scenario Analysis
+	- Goal - A comprehensive list of risks based on those events that might prevent the business from achieving objectives
+	- The organisation should consider a wide range of risks, including, operational, financial, strategic, and reputational risks
+		- Risks
+			- Operational
+			- Financial
+			- Strategic
+			- Reputational
+	- Once potential risks have been identified, document and analyse them, based on their possible impact and probability
+	- This will help the company prioritise their risk management effort and develop effective strategies to address these risks
+	- Business Impact Analysis (BIA)
+		- Process that involves evaluating the potential effects of disruption to an organisation's business functions and processes
+	- Few terms:
+		- RTO Recovery Time Objective
+		- RPO Recovery Point Objective
+		- MTTR Mean Time To Repair
+		- MTBF Mean Time Between Failures
+	- Recovery Time Objectives (RTO)
+		- Critical metric
+		- It represents the maximum acceptable length of time that can elapse before the lack of a business function severely impacts the organisation
+		- Target time in which a business process must be restored, after a disruption to avoid unacceptable consequences
+		- Example:
+			- Suppose an e-commerce website goes down due to a service failure
+			- The company determines that it can tolerate a max of two hours of downtime before the impact of sales and customer satisfaction becomes severe
+			- The Recovery Time Objective in this case, would be two hours
+	- Recovery Point Objective (RPO)
+		- Crucial metric
+		- Represents the maximum acceptable amount of data loss measured in time
+		- The point in time in which  data must be restored to resume data operations
+		- Example:
+			- If a business has a Recovery Point Objective of four hours, it means the business can tolerate a data loss of up to four hours
+			- If a financial institution that performs transactions continuously, determined that they can afford to lose a maximum of 15 minutes of transactional data in the event of a system failure. 
+			- Their RPO is 15 minutes
+	- Mean Time To Repair (Mean Time To Repair)
+		- It represents the average time required to repair a failed component or system
+		- Basic measure of the maintainability of repairable items
+		- A lower mean time to repair is an indicator of a system that can be repaired quickly, minimising downtime and disruption
+		- Example:
+			- Machine manufacturing company
+			- In the last year the machine has broken down five times
+			- Each time it took an average of four hours to repair
+			- In this case the MTTR is four hours
+	- Mean Time Between Failures (MTBF)
+		- It represents the average time between failures
+		- A higher mean time between failures indicates a system that fails less frequently
+		- Example:
+			- From the last example
+			- Five times a year of breakdowns
+			- A Mean Time Between Failures of 2.4 months or roughly 72 days
+	- Risk identification is a critical first step in the risk management process
+
+- Risk Register
+	- Risk Management
+		- Crucial for projects and businesses, involving the identification and assessment of uncertainties that may impact objectives
+	- 
