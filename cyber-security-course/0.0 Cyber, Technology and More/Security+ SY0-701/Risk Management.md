@@ -284,4 +284,66 @@
 	- Organisations can make informed decisions about risk mitigation strategies and resource allocation
 
 - Risk Management Strategies
-	- 
+	- Transfer / Risk Transference / Risk Sharing
+		- Shifting the risk from the organisation to another party
+		- Insurance is a common form of risk sharing
+		- Contract Indemnity Clause
+			-   A contractual agreement where one party agrees to cover the other's harm, liability, or loss stemming from the contract
+		- Risk transference seeks to move the financial burden of a potential loss from one party to another
+		- Doesn't eliminate the risk entirely - it shifts the responsibility of dealing with the risk's financial consequence
+		- While the material risk may shift, the risk to the original party's reputation still remains
+	- Risk Acceptance
+		- A method for conducting risk acceptance
+		- Recognising a risk and choosing to address it when it arises
+		- Acknowledges that a risk exists, and decides to accept it without taking any measures to mitigate it
+		- This strategy is often used, when the cost of preventing the risk is greater than the potential loss, or when the potential gain outweighs the potential loss
+		- Exemption
+			- Provision that grants an exception from a specific rule or requirement
+			- This means that the party is not subject to the rule or requirement and therefore does not bear the risk associated with not complying
+		- Exception
+			- A method for conducting risk acceptance
+			- Provision that permits a party to bypass a rule or requirement in certain situations
+			- This means that the party is generally subject to the rule or requirement but under certain conditions they can avoid this associated risk
+		- The party is assuming risk either by operating without the safeguards of a rule (exemption) or by operating in a way that lets them evade the risk (exemption)
+	-  Risk Avoidance
+		- Strategy of altering plans or approaches to completely eliminate a specific risk
+		- Usually a chosen strategy when the risk is too great to accept or transferring
+		- For example, a company may choose to not launch a product in a specific market due to potential law suits that could arise from it, but decide to launch the product in a different market where those regulations aren't apparent
+	- Risk Mitigation
+		- Implementing measures to decrease the likelihood or impact of a risk
+		- This is the most common risk strategy
+	- Risk Transference
+		- Transferring the risk to another party
+	- Risk Acceptance
+		- Recognising and embracing a risk without implementing measures to reduce or avoid it
+	- Risk Avoidance
+		- Entails taking actions to entirely steer clear of a particular risk
+	- Risk Mitigation
+		- Taking steps to reduce the potential impact or likelihood of a risk
+
+- Risk Monitoring and Reporting
+	- The final step of risk management process
+	- Risk Monitoring
+		- Involves continuously tracking identified risks, assessing new risks, executing response plans, and evaluating their effectiveness during a project's lifecycle
+	- For example:
+		-  A software development company might monitor risks related to a project deadline
+			- Software bugs or changes in market demand
+			- Might use project management software to track these risks
+			- Regularly reviewing the software to identify any changes in the risk landscape
+	- Residual Risk
+		- Likelihood and impact after implementing mitigation, transference, or acceptance measures on the initial risk
+	- Control Risk
+		- Assessment of how a security measure has lost its effectiveness over time
+	- Risk Reporting
+		- The process of communicating information about risk management activities including the results of risk identification, assessment, response and monitoring to the stakeholders of the project or business
+	- Risk monitoring and reporting is essential for many reasons - some being:
+		- Informed decision-making
+			- Offer insights for informed decisions on resource allocation, project timelines, and strategic planning
+		- Risk mitigation
+			- Recognise when a risk is escalating to mitigate it before becoming an issue
+			- By continuously monitoring risks, business can identify when a risk is becoming more likely, or when a potential impact is increasing
+			- This allows the business to be able to take actions to be able to mitigate the risks before it becomes a problem
+		- Stakeholder communication
+			- Assist in setting expectations and showing effective risk management
+		- Regulatory Compliance
+			- Demonstrate compliance with regulations
