@@ -728,3 +728,7 @@
 	- Security Account Manager
 - LSASS
 	- Local Security Authority Subsystem Service
+- SCM
+	- Service Configuration Manager
+	- Process in charge of managing the state of services as needed, checking the current status of any given service and generally providing a way to configure services
+- 

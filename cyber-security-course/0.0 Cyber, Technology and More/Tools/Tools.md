@@ -6,6 +6,8 @@ ie Windows applications/software, Other OS applications/software, PowerShell too
 	- Pretty neat, kind of like Finder in MacOS, real fast to search for stuff when compared to your usual File Explorer in Windows
 	- voidtools.com
 	- Quick filename indexing
+- Process Hacker
+	- https://processhacker.sourceforge.io/
 - Burp Suite
 	- Software security application used for penetration testing of web applications
 	- Well-known use cases involve scanning for many types of vulnerabilities.
