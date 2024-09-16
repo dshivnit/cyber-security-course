@@ -66,7 +66,16 @@
 		- Will pass whatever the result of the `ls` command is into a file called files.txt
 		- Take note of the `>` and the `>>`'s 
 	- 
-
+- Symbolic Links (Symlinks)
+	- Soft / Symbolic link - contains the original file name. When you access it, Linux will realise that it is a symbolic link and read the original file name, then automatically access that file
+	- `ln -s /path/to/file_or_directory path/to/symlink`
+		- Creates a symlink
+	- `ln -sf /path/to/new_file path/to/symlink`
+		- Overwrites an existing symlink to point to a different file
+- Hardlink
+	- An alternate address that indexes that data -- accesses to the hard link and accesses to the original file are completely identical, in that they immediately yield the necessary data 
+	  `ln /path/to/file path/to/hardlink`
+	  
 - `read`
 	- Can read from a file
 		```
