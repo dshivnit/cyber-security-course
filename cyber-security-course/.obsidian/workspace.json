@@ -13,26 +13,14 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "0.0 Cyber, Technology and More/Security+ SY0-701/Risk Management.md",
+                "file": "0.0 Cyber, Technology and More/Notes/Course/Week 13/20240918 - Day 062.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "588dbbb6f3234294",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "0.0 Cyber, Technology and More/Tools/Tools.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "9f5f23d38ef1db9c",
+            "id": "1ed53b80641c5650",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -42,45 +30,9 @@
                 "source": false
               }
             }
-          },
-          {
-            "id": "b2206262a10bb070",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "0.0 Cyber, Technology and More/Notes/Course/Week 12/20240913 - Day 059.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "0a5b3d1e4dfc47c1",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "0.0 Cyber, Technology and More/Notes/Course/Week 13/20240916 - Day 060.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "dc2947336ca3892b",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "0.0 Cyber, Technology and More/Notes/Course/Week 13/20240917 - Day 061.md",
-                "mode": "source",
-                "source": false
-              }
-            }
           }
         ],
-        "currentTab": 5
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -146,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "0.0 Cyber, Technology and More/Notes/Course/Week 13/20240917 - Day 061.md",
+                "file": "1.0 Types of Attacks & Defense/1.1 Attacks/1.1.1 Types of Attacks.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -163,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "0.0 Cyber, Technology and More/Notes/Course/Week 13/20240917 - Day 061.md",
+                "file": "1.0 Types of Attacks & Defense/1.1 Attacks/1.1.1 Types of Attacks.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -198,7 +150,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "0.0 Cyber, Technology and More/Notes/Course/Week 13/20240917 - Day 061.md"
+                "file": "1.0 Types of Attacks & Defense/1.1 Attacks/1.1.1 Types of Attacks.md"
               }
             }
           },
@@ -232,14 +184,16 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "dc2947336ca3892b",
+  "active": "1ed53b80641c5650",
   "lastOpenFiles": [
-    "0.0 Cyber, Technology and More/Notes/Course/Week 13/20240916 - Day 060.md",
-    "0.0 Cyber, Technology and More/Notes/Course/Week 13/20240917 - Day 061.md",
-    "0.0 Cyber, Technology and More/Notes/Course/Week 12/20240913 - Day 059.md",
+    "0.0 Cyber, Technology and More/Tools/Metasploit.md",
     "1.0 Types of Attacks & Defense/1.1 Attacks/1.1.1 Types of Attacks.md",
-    "0.0 Cyber, Technology and More/Tools/Tools.md",
+    "0.0 Cyber, Technology and More/Notes/Course/Week 13/20240918 - Day 062.md",
     "0.0 Cyber, Technology and More/Security+ SY0-701/Risk Management.md",
+    "0.0 Cyber, Technology and More/Notes/Course/Week 13/20240917 - Day 061.md",
+    "0.0 Cyber, Technology and More/Notes/Course/Week 13/20240916 - Day 060.md",
+    "0.0 Cyber, Technology and More/Notes/Course/Week 12/20240913 - Day 059.md",
+    "0.0 Cyber, Technology and More/Tools/Tools.md",
     "5.0 Programming/5.1 Programming Languages/Shells/Bash.md",
     "3.0 Software/3.1 Operating Systems/3.1.1 Desktops & Laptops/3.1.1.1 Windows (10 & 11).md",
     "0.0 Cyber, Technology and More/Terminologies.md",
@@ -259,8 +213,6 @@
     "3.0 Software/Windows Domains.md",
     "0.0 Cyber, Technology and More/Security+ SY0-701/Data Protection.md",
     "1.0 Types of Attacks & Defense/Logs.md",
-    "13.0 Cloud Services/MS Azure.md",
-    "0.0 Cyber, Technology and More/Notes/Course/Week 12/20240909 - Day 055.md",
     "0.0 Cyber, Technology and More/Notes/Course/Week 12",
     "0.0 Cyber, Technology and More/Notes/Course/Week 11",
     "0.0 Cyber, Technology and More/Notes/Course/Week 10/Wee",

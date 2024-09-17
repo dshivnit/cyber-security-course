@@ -4,7 +4,9 @@
 - You can find where your msf directory is by:
 	- `which msfconsole` 
 	- Cat the `msfconsole` file and that will show you were the metasploit-framework directory lives in your system
-	
+
+`post/multi/recon/local_exploit_suggester`
+
 - Auxiliary
 	- Any supporting module, such as scanners, crawlers and fuzzers can be found in this directory
 		- `tree -L 1 /usr/share/metasploit-framework/module`
