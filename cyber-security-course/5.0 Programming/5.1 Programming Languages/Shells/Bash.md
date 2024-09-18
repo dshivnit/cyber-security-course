@@ -29,6 +29,9 @@
 	- wc
 	- 
 
+- `man`
+	- `/usr/share/man`
+	- 
 - Variables
 	- There are no Data Types in Bash
 	- Variables can store numeric values, individual characters, or strings of characters
