@@ -20,12 +20,36 @@
             }
           },
           {
+            "id": "778d40385a391c04",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "0.0 Cyber, Technology and More/Security+ SY0-701/Third-Party Vendor Risks.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "2afb2a42660cdf81",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "1.0 Types of Attacks & Defense/Cyber Kill Chain.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
             "id": "8c471e6cd0d10a51",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "0.0 Cyber, Technology and More/Notes/Course/Week 13/20240919 - Day 063.md",
+                "file": "0.0 Cyber, Technology and More/Notes/Course/Week 13/20240920 - Day 064.md",
                 "mode": "source",
                 "source": false
               }
@@ -110,7 +134,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "0.0 Cyber, Technology and More/Notes/Course/Week 13/20240919 - Day 063.md",
+                "file": "0.0 Cyber, Technology and More/Security+ SY0-701/Third-Party Vendor Risks.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -127,7 +151,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "0.0 Cyber, Technology and More/Notes/Course/Week 13/20240919 - Day 063.md",
+                "file": "0.0 Cyber, Technology and More/Security+ SY0-701/Third-Party Vendor Risks.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -162,7 +186,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "0.0 Cyber, Technology and More/Notes/Course/Week 13/20240919 - Day 063.md"
+                "file": "0.0 Cyber, Technology and More/Security+ SY0-701/Third-Party Vendor Risks.md"
               }
             }
           },
@@ -196,20 +220,25 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "8c471e6cd0d10a51",
+  "active": "778d40385a391c04",
   "lastOpenFiles": [
+    "1.0 Types of Attacks & Defense/Principles of Security.md",
+    "1.0 Types of Attacks & Defense/Unified Kill Chain.md",
+    "1.0 Types of Attacks & Defense/Cyber Kill Chain.md",
     "1.0 Types of Attacks & Defense/1.1 Attacks/1.1.1 Types of Attacks.md",
-    "0.0 Cyber, Technology and More/Security+ SY0-701/Cryptographic Solutions.md",
+    "0.0 Cyber, Technology and More/Notes/Course/Week 13/20240920 - Day 064.md",
+    "0.0 Cyber, Technology and More/Notes/Course/Week 12/20240913 - Day 059.md",
+    "0.0 Cyber, Technology and More/Notes/Course/Week 13/20240916 - Day 060.md",
+    "0.0 Cyber, Technology and More/Notes/Course/Week 13/20240917 - Day 061.md",
+    "0.0 Cyber, Technology and More/Notes/Course/Week 12/20240912 - Day 058.md",
+    "0.0 Cyber, Technology and More/Security+ SY0-701/Third-Party Vendor Risks.md",
     "0.0 Cyber, Technology and More/Notes/Course/Week 13/20240919 - Day 063.md",
+    "0.0 Cyber, Technology and More/Security+ SY0-701/Cryptographic Solutions.md",
     "6.0 Cryptography/Cryptography.md",
     "5.0 Programming/5.1 Programming Languages/Shells/Bash.md",
-    "1.0 Types of Attacks & Defense/Cyber Kill Chain.md",
     "0.0 Cyber, Technology and More/Notes/Course/Week 13/20240918 - Day 062.md",
     "0.0 Cyber, Technology and More/Tools/Metasploit.md",
     "0.0 Cyber, Technology and More/Security+ SY0-701/Risk Management.md",
-    "0.0 Cyber, Technology and More/Notes/Course/Week 13/20240917 - Day 061.md",
-    "0.0 Cyber, Technology and More/Notes/Course/Week 13/20240916 - Day 060.md",
-    "0.0 Cyber, Technology and More/Notes/Course/Week 12/20240913 - Day 059.md",
     "0.0 Cyber, Technology and More/Tools/Tools.md",
     "3.0 Software/3.1 Operating Systems/3.1.1 Desktops & Laptops/3.1.1.1 Windows (10 & 11).md",
     "0.0 Cyber, Technology and More/Terminologies.md",
@@ -219,12 +248,7 @@
     "5.0 Programming/5.1 Programming Languages/Programming Languages.md",
     "1.0 Types of Attacks & Defense/Risk Assessment.md",
     "1.0 Types of Attacks & Defense/Risk Management.md",
-    "5.0 Programming/5.1 Programming Languages/Shells/PowerShell.md",
     "0.0 Cyber, Technology and More/Notes/Course/Week 13",
-    "0.0 Cyber, Technology and More/Notes/MuckingAroundPage.md",
-    "1.0 Types of Attacks & Defense/1.1 Attacks/Cross-Site Scripting (XSS).md",
-    "0.0 Cyber, Technology and More/Notes/Course/Week 12/20240912 - Day 058.md",
-    "0.0 Cyber, Technology and More/Notes/Course/Week 12/20240911 - Day 057.md",
     "0.0 Cyber, Technology and More/Notes/Course/Week 12",
     "0.0 Cyber, Technology and More/Notes/Course/Week 11",
     "0.0 Cyber, Technology and More/Notes/Course/Week 10/Wee",

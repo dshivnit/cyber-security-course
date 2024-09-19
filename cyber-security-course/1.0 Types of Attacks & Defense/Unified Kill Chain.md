@@ -1,0 +1,25 @@
+- Establishing a good cybersecurity posture
+- Understanding an attacker's motivation, methodologies and tactics
+- Phases of the Unified Kill Chain
+- A framework that is used to complement other frameworks such as MITRE
+
+- Kill Chain
+	- A methodology/path that attackers use to approach and intrude a target
+- Objective is to understand an attacker's "Kill Chain" so that defensive measures can be put in place to either pre-emptively protect a system, or disrupt an attacker's attempt. 
+
+- Threat Modelling
+	- A series of steps to ultimately improve the security of a system.
+	- Identifying risk, and essentially boils down to:
+		- Identifying what systems and applications need to be secured and what function they serve in the environment
+		- ie - is the system critical to normal operations, and  is a system holding sensitive information related to PCI or PII
+	- Assessing what vulnerabilities and weaknesses these systems and applications may have and how they could be potentially exploited
+	- Creating a plan of action to secure these systems and applications from the vulnerabilities highlighted
+	- Putting in policies to prevent these vulnerabilities from occurring again where possible 
+	- Threat modelling is an important procedure in reducing the risk within a system or application
+	- It creates a high-level overview of an organisation's IT assets and the procedures to resolve vulnerabilities
+	- Can help identify potential attack surfaces and how these systems may be exploited
+	- Some frameworks used in Threat Modelling:
+		- STRIDE
+		- DREAD
+		- CVSS
+	- 
