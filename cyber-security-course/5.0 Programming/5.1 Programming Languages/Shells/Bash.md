@@ -31,6 +31,10 @@
 
 - `man`
 	- `/usr/share/man`
+	- `/` search forward
+	- `?` to search backwards
+	- `n` go to the next result
+	- `N` go to the previous result
 	- 
 - Variables
 	- There are no Data Types in Bash

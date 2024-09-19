@@ -32,19 +32,19 @@
             }
           },
           {
-            "id": "4adfef7ff4fd7f4c",
+            "id": "7376088991fee441",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "5.0 Programming/5.1 Programming Languages/Shells/Bash.md",
+                "file": "0.0 Cyber, Technology and More/Security+ SY0-701/Cryptographic Solutions.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -110,7 +110,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "5.0 Programming/5.1 Programming Languages/Shells/Bash.md",
+                "file": "0.0 Cyber, Technology and More/Notes/Course/Week 13/20240919 - Day 063.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -127,7 +127,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "5.0 Programming/5.1 Programming Languages/Shells/Bash.md",
+                "file": "0.0 Cyber, Technology and More/Notes/Course/Week 13/20240919 - Day 063.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -162,7 +162,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "5.0 Programming/5.1 Programming Languages/Shells/Bash.md"
+                "file": "0.0 Cyber, Technology and More/Notes/Course/Week 13/20240919 - Day 063.md"
               }
             }
           },
@@ -196,19 +196,21 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "4adfef7ff4fd7f4c",
+  "active": "8c471e6cd0d10a51",
   "lastOpenFiles": [
+    "1.0 Types of Attacks & Defense/1.1 Attacks/1.1.1 Types of Attacks.md",
+    "0.0 Cyber, Technology and More/Security+ SY0-701/Cryptographic Solutions.md",
     "0.0 Cyber, Technology and More/Notes/Course/Week 13/20240919 - Day 063.md",
+    "6.0 Cryptography/Cryptography.md",
+    "5.0 Programming/5.1 Programming Languages/Shells/Bash.md",
     "1.0 Types of Attacks & Defense/Cyber Kill Chain.md",
     "0.0 Cyber, Technology and More/Notes/Course/Week 13/20240918 - Day 062.md",
-    "1.0 Types of Attacks & Defense/1.1 Attacks/1.1.1 Types of Attacks.md",
     "0.0 Cyber, Technology and More/Tools/Metasploit.md",
     "0.0 Cyber, Technology and More/Security+ SY0-701/Risk Management.md",
     "0.0 Cyber, Technology and More/Notes/Course/Week 13/20240917 - Day 061.md",
     "0.0 Cyber, Technology and More/Notes/Course/Week 13/20240916 - Day 060.md",
     "0.0 Cyber, Technology and More/Notes/Course/Week 12/20240913 - Day 059.md",
     "0.0 Cyber, Technology and More/Tools/Tools.md",
-    "5.0 Programming/5.1 Programming Languages/Shells/Bash.md",
     "3.0 Software/3.1 Operating Systems/3.1.1 Desktops & Laptops/3.1.1.1 Windows (10 & 11).md",
     "0.0 Cyber, Technology and More/Terminologies.md",
     "0.0 Cyber, Technology and More/Security+ SY0-701/Fundamentals of Security.md",
@@ -223,8 +225,6 @@
     "1.0 Types of Attacks & Defense/1.1 Attacks/Cross-Site Scripting (XSS).md",
     "0.0 Cyber, Technology and More/Notes/Course/Week 12/20240912 - Day 058.md",
     "0.0 Cyber, Technology and More/Notes/Course/Week 12/20240911 - Day 057.md",
-    "0.0 Cyber, Technology and More/Security+ SY0-701/Cryptographic Solutions.md",
-    "3.0 Software/Windows Domains.md",
     "0.0 Cyber, Technology and More/Notes/Course/Week 12",
     "0.0 Cyber, Technology and More/Notes/Course/Week 11",
     "0.0 Cyber, Technology and More/Notes/Course/Week 10/Wee",
