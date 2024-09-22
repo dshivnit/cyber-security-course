@@ -39,18 +39,33 @@
 		- Delivery
 			- Techniques resulting in the transmission of a weaponised object to the targeted environment
 		- Social Engineering
+		- Techniques aimed at the manipulation of people to perform unsafe actions
 		- Exploitation
+			- Techniques to exploit vulnerabilities in systems that may, amongst others, result in code execution
 		- Persistence
+			- Any access, action or change to a system that gives an attacker persistent presence on the system
 		- Defense Evasion
+			- Techniques an attacker may specifically use for evading detection or avoiding other defenses
 		- Command and Control
+			- Techniques that allow attackers to communicate with controlled systems within a target network
 		- Pivoting
+			- Tunneling traffic through a controlled system to other systems that are not directly accessible
 		- Discovery
+			- Techniques that allow an attacker to gain knowledge about a system and its environment
 		- Privilege Escalation
+			- The result of techniques that provide an attacker with higher permissions on a system or network
 		- Execution 
+			- Techniques that result in execution of attacker-controlled code on a local or remote system
 		- Credential Access
+			- Techniques resulting in the access of, or control over, system, service or domain credentials
 		- Lateral Movement
+			- Techniques that enable an adversary to horizontally access and control other remote systems
 		- Collection
+			- Techniques used to identify and gather data from a target network prior to exfiltration
 		- Exfiltration
+			- Techniques that result or aid an attacker removing data from a target network
 		- Impact
+			- Techniques aimed at manipulating, interrupting, or destroying the target system or data
 		- Objectives
+			- Socio-technical objectives of an attack that are intended to achieve a strategic goal
 	- 

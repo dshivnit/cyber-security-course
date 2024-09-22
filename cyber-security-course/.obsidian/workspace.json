@@ -80,7 +80,7 @@
             }
           }
         ],
-        "currentTab": 5
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -146,7 +146,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "0.0 Cyber, Technology and More/Security+ SY0-701/Third-Party Vendor Risks.md",
+                "file": "1.0 Types of Attacks & Defense/Unified Kill Chain.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -163,7 +163,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "0.0 Cyber, Technology and More/Security+ SY0-701/Third-Party Vendor Risks.md",
+                "file": "1.0 Types of Attacks & Defense/Unified Kill Chain.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -198,7 +198,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "0.0 Cyber, Technology and More/Security+ SY0-701/Third-Party Vendor Risks.md"
+                "file": "1.0 Types of Attacks & Defense/Unified Kill Chain.md"
               }
             }
           },
@@ -232,10 +232,10 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "49b49c1832185498",
+  "active": "414f15841d0607c8",
   "lastOpenFiles": [
-    "0.0 Cyber, Technology and More/Notes/Notes.md",
     "0.0 Cyber, Technology and More/Security+ SY0-701/Third-Party Vendor Risks.md",
+    "0.0 Cyber, Technology and More/Notes/Notes.md",
     "0.0 Cyber, Technology and More/Notes/Course/Week 14/20240923 - Day 065.md",
     "1.0 Types of Attacks & Defense/Unified Kill Chain.md",
     "1.0 Types of Attacks & Defense/Cyber Kill Chain.md",
