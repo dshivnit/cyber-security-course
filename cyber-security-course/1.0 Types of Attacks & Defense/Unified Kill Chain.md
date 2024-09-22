@@ -1,3 +1,5 @@
+- Created by Paul Pols' in 2017
+- Aims to complement, NOT compete, with other cybersecurity kill chain frameworks, such as the Lockheed Martin's one (Cyber Kill Chain) and MITRE's ATT&CK
 - Establishing a good cybersecurity posture
 - Understanding an attacker's motivation, methodologies and tactics
 - Phases of the Unified Kill Chain
@@ -11,7 +13,7 @@
 	- A series of steps to ultimately improve the security of a system.
 	- Identifying risk, and essentially boils down to:
 		- Identifying what systems and applications need to be secured and what function they serve in the environment
-		- ie - is the system critical to normal operations, and  is a system holding sensitive information related to PCI or PII
+		- ie - is the system critical to normal operations, and is a system holding sensitive information related to PCI or PII
 	- Assessing what vulnerabilities and weaknesses these systems and applications may have and how they could be potentially exploited
 	- Creating a plan of action to secure these systems and applications from the vulnerabilities highlighted
 	- Putting in policies to prevent these vulnerabilities from occurring again where possible 
@@ -20,6 +22,32 @@
 	- Can help identify potential attack surfaces and how these systems may be exploited
 	- Some frameworks used in Threat Modelling:
 		- STRIDE
+			- Spoofing, Tampering, Repudiation, Information disclosure, Denial of service, Elevation of privilege
 		- DREAD
+			- Risk Assessment model
+			- Quantitative method of calculating the severity of a threat using a scaled grading system so that high severity concerns can be addressed first
+		- PASTA
+			- Process for Attack Simulation and Threat Analysis
 		- CVSS
+			- Common Vulnerability Scoring System
+			- Public framework for rating the severity and characteristics of security vulnerabilities in information systems
+	- 18 Phases:
+		- Reconnaissance
+		- Weaponisation
+		- Delivery
+		- Social Engineering
+		- Exploitation
+		- Persistence
+		- Defense Evasion
+		- Command and Control
+		- Pivoting
+		- Discovery
+		- Privilege Escalation
+		- Execution 
+		- Credential Access
+		- Lateral Movement
+		- Collection
+		- Exfiltration
+		- Impact
+		- Objectives
 	- 

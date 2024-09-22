@@ -31,4 +31,102 @@ Defense in Depth
 			- Implementing well-versed security protocols to protect technology and services from attack
 
 - Principles of Privileges
-	- 
+	- Access given to entities are usually based upon two things:
+		- The entity's role/function within the organisation
+		- The sensitivity of the information being stored on the system
+	- PIM
+		- Privileged Identity Management
+		- Used to translate a user's role within an organisation into an access role on a system
+	- PAM
+		- Privileged Access Management
+		- The management of the privileges a system's access role has (along with other things)
+		- Contains enforcing security policies such as password management, auditing policies and reducing the attack surface a system faces
+	- Principle of least privilege
+		- Users should be given the minimum amount of privileges
+		- And only granted those that are absolutely necessary for them to carry out their duties
+		- Other people should be able to 'trust' what people write to 
+
+- Security Models
+	- Bell-La Padula Model
+		- Used to achieve confidentiality
+		- Has few assumptions
+		- Organisations hierarchical structure it is used in, where everyone's responsibilities/roles are well-defined
+		- Uses the rule, "No write down, no read up" 
+		- Policies in this model can be replicated to real-life organisation hierarchies and vice versa
+		- Simple to implement and understand, and has been proven to be successful
+		- Notes:
+			- Even though a user may not have access to a file, they would however know about its existence - thus not really outlining confidentiality
+			- Relies on a large amount of trust within the organisation
+		- Popular with organisations such as the government and the military 
+			- Due to members having gone a 'vetting' process
+		- Applicants who are successfully vetted are 'assumed' to be trustworthy
+	- Biba Model
+		- No write up, no read down
+			- Meaning that entities can create or write content to objects at or below their level but can only read the contents above the subjects level 
+		- Addresses the CIA Triad
+			- Confidentiality and Data Integrity 
+		- Simple to implement
+		- There will, however, be many levels of access and objects. Things can be overlooked when applying security controls
+		- Often results in delays within a business, for example - a doctor would not be able to read the notes made by a nurse in a hospital with this model
+		- Used in organisations or situations where integrity is more important than confidentiality
+		- Example:
+			- In software development, devs may only have access to the code that is necessary for them to do their job
+			- They may not need access to critical pieces of information such as databases and so on
+
+- Threat Modelling and Incident Response
+	- Threat modelling is the process of reviewing, improving and testing the security protocols in place in an organisation's information technology infrastructure and services
+	- Critical stage of the threat modelling process is identifying likely threats that an application or system may face, the vulnerabilities a system or application may be vulnerable to
+	- Similar to risk assessment made in workplaces for employees and customers - the principles return to:
+		- Preparation
+		- Identification
+		- Mitigations
+		- Review
+	- A complex process that needs constant review and discussion with a dedicated team. An effective threat model includes:
+		- Threat Intelligence
+		- Asset Identification
+		- Mitigation Capabilities
+		- Risk Assessment
+	- To assist with this process of Threat Modelling - there are various frameworks that are available - such as:
+		- STRIDE (authored by two MS security researchers - still very relevant today)
+			- Spoofing Identity
+				- Requires one to authenticate requests and users accessing a system
+				- Involves a malicious party falsely identifying itself as another
+				- Access keys (like API keys) or signatures via encryption helps remediate this threat
+			- Tampering
+				- Providing anti-tampering measures to a system or application, helps provide integrity to data
+				- Data that is accessed must be kept integral and accurate
+				- Example - a seal of freshness in a product signifying that the product hasn't been opened, or tampered with
+			- Repudiation
+				- Dictates the use of services such as logging activity for a system or application to track
+			- Information disclosure
+				- Applications or services that handle information of multiple users need to be appropriately configured to only show information relevant to the owner
+			- Denial of service
+				- Applications and services use up system resources, these two things should have measures in place so that abuse of the application/service won't result in bringing the whole system down
+			- Elevation of privileges
+				- This is the worst-case scenario for an application or service. It means that a user was able to escalate their authorisation to that of a higher level - like an administrator. 
+				- This scenario often leads to further exploitation or information disclosure
+		- PRIDE
+			- Process for Attack Simulation and Threat Analysis
+	- A breach of security is known as an incident
+	- Despite all rigorous threat models and secure system designs, incidents to happen
+	- Actions taken to resolve and remediate the threat are known as Incident Response (IR) and are a whole career path in cybersecurity
+	- Incidents are classified using a rating of urgency and impact
+	- Urgency will be determined by the type of attack faced, where the impact will be determined by the affected system and what impact that has on business operations
+	- CSIRT Team (Computer Security Incident Response Team)
+		- The team that responds to incidents
+		- This team will have members that have technical knowledge about the systems and/or current incident
+	- To successfully solve an incident, the following steps are often referred to as the six phases of Incident Response that take place
+	- Steps to Incident Response:
+		- Preparation
+			- "Do we have the resources and plans in place to deal with the security incident?"
+		- Identification
+			- Has the threat and the threat actor been correctly identified in order for us to respond to? 
+		- Containment
+			- Can the threat/security incident be contained to prevent other systems or users from being impacted? 
+		- Eradication
+			- Remove the active threat
+		- Recovery
+			- Perform a full review of the impacted systems to return to business as usual operations
+		- Lessons Learned
+			- What can be learned from the incident?
+			- If it was due to a phishing email, employees should be trained better to detect phishing emails 

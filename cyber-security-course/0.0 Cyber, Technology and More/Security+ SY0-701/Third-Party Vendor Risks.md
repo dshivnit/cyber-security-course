@@ -1,2 +1,13 @@
 - Third-party Vendor Risks
+	- Potential security and operational challenges introduced by external entities (vendors, suppliers, or service providers)
+	- When we integrate external partners into our operational ecosystem, we open up the avenues to potential threats and vulnerabilities 
+		- That could affect our company's integrity, data security and overall business continuity
+	- Some of what it could be:
+		- a hardware provider who's components have vulnerabilities
+		- A software supplier who's application has a hidden backdoor
+		- Or a service provider, like a MSP, that has access to sensitive data - but lacks rigorous cyber security protocols
+	
+	- Domain 2.2 - Explain common threat vectors and attack surfaces
+	- Domain 2.3 - Explain various types of vulnerabilities
+	- Domain 5.3 - Explain the processes associated with third-party risk assessment and management
 	- 
