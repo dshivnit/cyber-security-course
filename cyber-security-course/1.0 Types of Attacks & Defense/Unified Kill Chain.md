@@ -33,8 +33,11 @@
 			- Public framework for rating the severity and characteristics of security vulnerabilities in information systems
 	- 18 Phases:
 		- Reconnaissance
+			- Researching, identifying and selecting targets using active or passive reconnaissance
 		- Weaponisation
+			- Preparatory activities aimed at setting up the infrastructure required for the attack
 		- Delivery
+			- Techniques resulting in the transmission of a weaponised object to the targeted environment
 		- Social Engineering
 		- Exploitation
 		- Persistence

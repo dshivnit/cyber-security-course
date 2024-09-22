@@ -10,4 +10,103 @@
 	- Domain 2.2 - Explain common threat vectors and attack surfaces
 	- Domain 2.3 - Explain various types of vulnerabilities
 	- Domain 5.3 - Explain the processes associated with third-party risk assessment and management
-	- 
+
+- Supply Chain Risks
+	- Understanding and mitigating supply chain risks is a really big consideration for cyber security professionals
+	- Potential vulnerabilities
+		- Hardware manufacturers
+		- Software developers
+		- Service providers
+	- Hardware Manufacturers
+		- Consider a router or a switch
+			- It becomes apparent that they are composed of hundreds of distinct little components
+			- Each of these components are sourced from various suppliers 
+			- Each can be a potential vulnerability if they are tampered with
+			- Or if sourced from untrustworthy vendors
+		- Conduct rigorous supply chain assessments to trace the origins of our hardware, and to verify the integrity of the components in our enterprise networks
+		- The origin of the components in our network infrastructure, can also define the trustworthiness of the entire device that we are looking at
+		- Consider the DOD (Department of Defense)
+			- Measures like the Trusted Foundry Programme
+				- Ensure that all the hardware installed on their networks have undergone a strict check that they are authentic, and that the microprocessor in them have been manufactured securely to perform only their designated functions, without any deviations from their known good baseline
+		- Purchase of additional hardware from secondary or aftermarket sources
+			- Devices could have been tampered with, or could contain malware/trojans that could gain access to enterprise networks or cause operational failures
+	- Software Developers/Providers
+		- Often the risk to networks come from the software that has been installed on that network
+		- Software devs are integral cogs in supply chains
+		- Check if the software is properly licensed
+		- Authentic, and free from any known vulnerabilities or bugs
+		- Checked with anti-malware or anti-virus solution
+			- To ensure it's free of any malicious code
+		- Easier to conduct the checks if the source code is open-source, that way you can review the entire source-code if you need to
+	- Managed Service Providers (MSPs)
+		- Organisations that provide a range of technology services and support to businesses and other clients
+		- Evaluate data security measures
+		- Ensure confidentiality and integrity
+		- Assess cyber security protocols
+		- Can they have a solid response to a security breach
+			- A full-scale incident response or a forensic investigation
+	- A supply chain audit and inspection
+	- Vendor selection is one of those important items that, and it's not just a matter of cost efficiency - have to consider, factor in due diligence, historical performance, and commitment to security when considering service provider
+	- In the realm of supply chain risks by your organisations security posture - you are only as strong as your weakest link in that supply chain
+
+- Supply Chain Attacks
+	- Supply chain networks can become more vast and intertwined
+	- Supply chain attack - attack that involves targeting a weaker link in the supply chain to gain access to a primary target
+	- Instead of attacking a well fortified entity directly, attackers may focus their attack to vulnerabilities inside of their suppliers and service providers to pave their way into the companies and often larger and more complex systems
+	- Chip washing
+		- Repackaging the contents of a microchip with a less expensive one, or one with embedded with malware
+		- Consider routers, switches, well branded devices such as with Cisco
+	- Deliberate embedded of root kits within devices by your overseas suppliers
+		- Can provide backdoor access to networks once the device is active
+	- Conducting a good vendor assessment is important
+	- Hardware, software, service providers
+	- CHIPS Act
+		- 2022
+		- US federal statute that provides roughly $280 billion in new funding to boost research and manufacturing of semiconductors inside the United States
+		- Chips and Science Act (aka)
+	- Semiconductors
+		- Essential components in a wide range of products, from smartphones and cars to medical devices and defense systems
+	- Global semiconductor supply chain is really complex and interconnected, and disruptions to the supply chain can have significant economic and security implications
+	- Safeguarding against supply chain attacks:
+		- Vendor due diligence
+		- Regular monitoring and audits
+		- Education and collaboration
+		- Incorporating contractual safeguards
+	- Vendor Due Diligence
+		- Organisations must practice rigorous due diligence when onboarding their vendors, especially those with access to critical systems or data
+		- Involves understanding the vendor cybersecurity posture, but also their own supply chain management and security practices
+	- Regular monitoring and audits
+		- Continuous monitoring and periodic audits of your supply chain are considered essential
+		- Helps have an early detection mechanism for any suspicious activities or vulnerabilities that may be exploited by an attacker
+	- Education and collaboration
+		- Keeping the broader ecosystem informed about the latest security threats, vulnerabilities and best practices, we can ensure that our industry - as a whole - remains better protected
+		- Collaborating with other organisations and industry groups can really provide you with a more holistic view and a joint defense strategy against these kinds of supply chain attacks and threats
+	- Incorporating contractual safeguards
+		- Engaging with suppliers or service providers, using a contract and that contract shouldn't beg clauses related to cybersecurity within them. 
+		- This type of contract language can help to ensure that vendors adhere to stipulated security standards and that there are legal repercussions if they don't meet your standards or requirements as outlined inside of that contract. 
+	- The expanding web of global supply chains exposes organisations to an array of new challenges every single day. 
+	- A single vulnerability in a seemingly insignificant component could have massive ripple effects
+	- Causing worldwide disruptions on a massive scale
+	- Securing supply chains isn't just about the information technology of the cybersecurity department anymore
+	- It is really everyone's business inside of our organisation, because it is at the heart of our very survival and integrity of our organisations, and our nations. 
+
+- Vendor Assessment
+	- Process that organisations implement to evaluate the security, reliability, and performance of external entities
+	- A weak link in one vendor can have reverberations across multiple businesses and lead to widespread vulnerabilities and potential data breaches. 
+	- Primary entities:
+		- Vendors
+		- Suppliers
+		- MSPs
+	- Vendors:
+		- Typically businesses or individuals, that provide goods or services to an organisation
+		- Software providers like MS or Oracle
+		- The organisation relies on these vendors for an enterprise solution
+	- Suppliers:
+		- Typically going to be involved in the production and delivery of products or parts of products.
+		- A computer manufacturer might have multiple suppliers
+			- One providing processors
+			- Another memory
+			- Another hard drives
+			- And so on
+		- MSPs (Managed Service Providers)
+			- 
