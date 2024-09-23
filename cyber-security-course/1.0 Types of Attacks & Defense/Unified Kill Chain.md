@@ -39,7 +39,7 @@
 		- Delivery
 			- Techniques resulting in the transmission of a weaponised object to the targeted environment
 		- Social Engineering
-		- Techniques aimed at the manipulation of people to perform unsafe actions
+			- Techniques aimed at the manipulation of people to perform unsafe actions
 		- Exploitation
 			- Techniques to exploit vulnerabilities in systems that may, amongst others, result in code execution
 		- Persistence
