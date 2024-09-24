@@ -109,4 +109,41 @@
 			- Another hard drives
 			- And so on
 		- MSPs (Managed Service Providers)
-			- 
+			- Hired by a company to manage IT services on behalf of the company
+			- Like a Cloud Service Provider (AWS or Google Cloud) and they're going to be used to manage vast data infrastructures so your organisation can instead focus on their core competencies
+	- One vital aspect of the Vendor Assessment Process is penetration testing of your suppliers. 
+		- Essentially a simulated cyberattack against your supplier systems to check for exploitable vulnerabilities.
+		- Imagine a company that sources its software from a third-party developer
+			- Penetration testing the software would mean attempting to find and exploit vulnerabilities
+			- Just like an actual cyber attacker would
+			- In an order to attempt to attempt their own attacks against your network
+		- If a vulnerability is found, this would be an indiciation that the software could be a risk to your organisation's cybersecurity posture. 
+		- The goal with conducting a penetration test is really to validate that our service provider, or vendor, is taking their own cybersecurity posture seriously - since their risks become your risk once you install their software on your network
+	- When conducting your vendor assessments, one part of that is to review your contract with the vendor or service provider
+		- When reviewing the contract, you should verify that you have a right to audit clause included inside of that contract
+		- This Right To Audit Clause is going to grant your organisation the right to evaluate the vendor's internal processes and ensure that they're in compliance with the agreed upon standards. 
+	-  Inside of cybersecurity, we always to want to trust, but verify
+	- Another element that instills confidence in vendor security is evidence of internal audits being conducted.
+		- An internal audit refers to a vendor's self assessment, where they would evaluate their own practices against industry standards or organisational requirements.
+		- ie
+			- A cloud service provider might regularly audit its data protection measures to ensure that encryption protocols are up-to-date and effectively implemented
+		- When a vendor can present evidence of consistent and comprehensive internal audits, this does serve as a testament to their commitment to security and quality
+		- Internal audits may sometimes be insufficient, especially if one is lacking the rigor involved with them
+	- Independent assessments are evaluations conducted by third-party entities who have no stake in the organisation or vendor's operations
+		- A neutral party who's going to be coming in to make sure the vendor is adhering to the security and/or performance standards that you have both agreed to. 
+		- Consider
+			- A data centre that houses critical information for multiple organisations. 
+			- A third-party, independent organisation, like the ISO (International Standards Organisation) might assess the data centre's practices against its global standards to ensure they're meeting or surpassing the benchmarks. 
+		- This third-party validation is going to be invaluable for organisations who aim to minimise their exposure to risk
+	- Supply Chain Analysis
+		- Used to dive deep into a vendor's entire supply chain and assess the security and reliability of each link
+		- Acknowledging that the vendor's security is not just about their practices, but also encompasses their entire supply chain's integrity. 
+	- The security and reliability of our vendors will directly impact our organisation's own wellbeing and security
+	- While trusting our partners is important, actively ensuring their adherence to top-notch standards is also equally as important as we need to ensure that we conduct
+		- a vendor assessment
+		- a contract review
+		- a penetration test
+		- and other internal or external audits to validate that our suppliers and vendors are remaining in compliance with the security requirements that are contained with the service contracts
+
+- Vendor Selection and Monitoring
+	- 
