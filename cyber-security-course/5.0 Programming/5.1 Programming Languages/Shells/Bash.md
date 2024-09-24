@@ -35,6 +35,34 @@
 	- `?` to search backwards
 	- `n` go to the next result
 	- `N` go to the previous result
+- File Descriptors
+	- A number that describes communication channel in Linux
+		- `FD 0` - Standard Input
+		- `FD 1` - Standard Output
+		- `FD 2` - Standard Error
+		- ie - `/path/script-to-run 2> error.log`
+			- will return any errors reported by `script-to-run` to a file called `error.log` that is in the current working directory
+		- another ie - `find -name file_a -type f > some_test_file.txt 2> some_test_file_errors.txt`
+			- Will print non-error results to the `some_test_file.txt` file and all errors into the `some_test_file_errors.txt` file
+- Redirecting input
+	- using the lesser-than symbol
+	- `<`
+	- `rev < text.file` will output whatever is in the text_file file in reverse
+- Redirecting File Descriptors to each other
+	- `2>& 1`
+		- Redirects stderr (standard error) to stdout (standard output)
+	- You can pipe a grep command to this combined stderr stdout if needed 
+		- `2>& 1 | grep 'something'`
+- `tee` command
+	- Read from standard input and write to standard output and files
+	- `cat text3.txt > text4.txt | tee`
+	- Will show what is being written from text3.txt to text4.txt
+	- `find / -name file_a -type f > some_test_file.txt 2> some_test_file_errors.txt | tee`
+		- Will show you the output of findings to some_test_file.txt via stdout, stderr will still be put into the `*errors.txt` file
+	- `command_1 | tee >(command_2) >(command_3)`
+	- `echo HELLO | tee >(rev)`
+		- `HELLO`
+		- `OLLEH`
 	- 
 - Variables
 	- There are no Data Types in Bash
@@ -51,6 +79,19 @@
 		- underscores
 		- no spaces
 	- They are case-sensitive
+	- Variables are local to each shell that they are created/live in
+		- Meaning that variables that are defined in the BASH shell will live in there, ones created in the zsh shell will live in there, sh, and so on
+	- Exporting Variables
+		- Variables are passed into the environment variables of child processes when exporting them
+		- ie `TEST=test`
+			- `export TEST`
+			- `sh`
+			- `echo $TEST` 
+			- test
+	- Printing exported variables
+		- `env`
+	- Command Substitution
+		- 
 
 - Command-line Arguments
 	- `$1` denotes the initial argument passed

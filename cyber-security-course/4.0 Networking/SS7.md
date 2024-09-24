@@ -1,0 +1,4 @@
+- GTs
+	- Global Title's 
+	- Similar to IP addresses in the Internet
+- 
