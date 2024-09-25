@@ -63,8 +63,19 @@
 	- `echo HELLO | tee >(rev)`
 		- `HELLO`
 		- `OLLEH`
-	- 
+- `read`
+	- Reads input from the command line
+	- Reads input from a file into a variable as well
+		- `read VARNAME < file-name.txt`
+		- `echo $VARNAME`
 - Variables
+	- Storing a command into a variable
+		- `VARIABLENAME=$(cat ~/filename.txt)`
+		- `echo $VARIABLENAME`
+			- backticks work to replace the `$()` as well
+			- But this isn't so functional if wanting to do nest command substitutions and so on
+				- Like `$(cat $(find / -name file.txt))`
+		- Make sure to have the path where the file resides preceding the command
 	- There are no Data Types in Bash
 	- Variables can store numeric values, individual characters, or strings of characters
 	- Some example Variable assignments:

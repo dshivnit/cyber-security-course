@@ -1,0 +1,134 @@
+DevOps
+- Waterfall Model
+	- The name given to how project management was approached back in the 1970s
+	- Relied on a hierarchy
+	- Every member had a specific responsibility
+	- System admins worked to keep everything running smoothly and afloat
+	- Developers build and add as many features as possible, and finally, QA (Quality Assurance) engineers test the system's functionality  - ensuring that everything works as expected
+	- Responsibilities and tasks would end up being an accumulative, giant mess. 
+	- Bugs and security flaws were backlogged, plenty of these unresolved, and more releases scheduled - which would not be scalable and messy. 
+	- Excessive noise and pressure led to distrust, communication gaps, and friction between teams. 
+
+- Agile Model
+	- With the challenges that teams were facing with the waterfall model - businesses started to develop ways that would allow more flexibility and adaptability. 
+	- The Agile Methodology was introduced somewhere in the 2000s. 
+	- Agile Manifesto - four values for Agile Development:
+		- Individuals and interactions over processes and tools
+		- Working software over comprehensive documentation
+		- Customer collaboration over contract negotiation
+		- Responding to change vs following a plan
+	- Companies now value team collaboration and rely on self organised/organising teams - focusing on clients and plenty of room for change and flexibility. 
+	- Phases:
+		- Analyse
+		- Plan
+		- Design
+		- Build
+		- Test
+		- Review
+		- Launch
+
+- DevOps
+	- 2008 - a conversation between an Andrew Clay and Patrick Deboi
+	- Focuses on driving 'cultural change' to increase efficiency. 
+		- By uniting all teams working on a project, using integration and automation. 
+	- You get a cross-integration across all departments:
+		- QAs
+		- System Administrators
+		- Developers
+	- Ensuring developers can now be involved in deployment and sysadmins can now write scripts. QAs can figure out how to fix flaws as opposed to constantly testing for functionality
+	- These engineers can now have the same visibility at all times and interact accordingly. 
+	- DevOps builds a philosophy that emphasises building trust and better liaising between developers and other teams. Helps the organisation align technological projects to business requirements
+	- Increasing the impact and value to the business as projects become more efficient and prioritising accordingly
+	- Changes that roll out are normally small and reversible - allowing all teams to be involved
+	- Ensures better contribution and communication that helps with the pace and an increased competency when delivering work
+- Today's development infrastructure is fully automated and operates on a self-service basis
+	- Developers can provide resources to public clouds without depending on IT to provision infrastructure, which in the past led to months of delays
+	- Continuous Integration and Deployment (CI/CD) 
+		- CI/CD processes automatically set up testing, staging, and production environments in the cloud or on-prem
+		- These can be decommissioned, scaled or reconfigured as needed
+	- Infrastructure as Code (IaC)
+		- Widely used to deploy environments declaratively, using tools like Terraform and vagrant
+			- The declarative approach requires users to specify the end state of the infrastructure
+				- For example, deploying machines in a running state directly into an environment, automating the configuration choices throughout the workflow
+				- The software builds it, and releases it with no human interaction
+	- Organisations can now provision containerised workloads dynamically using automated, adaptive processes
+- The imperative/procedural approach takes action to configure systems in a series of actionable steps. 
+	- You might declare to deploy a new version of software, and automate a series of steps to get to a deployment-ready state. 
+	- You choose when to actually apply those changes at the end by adding a gate
+	- The gate could be a button to release the changes - after all automated checks and new configurations pass
+- Even a tiny problem could cause a mess
+- As the number of new releases increases, the whole project could turn into a shidstorm
+- Infinite Loop
+	- Plan > Code > Build > Test > Deploy > Operate > Monitor > release/plan > LOOP << >> 
+- Tools and Processes
+	- CI/CD
+		- Deals with the frequent merging of code and adding testing in an automated manner to perform checks as new code is pushed and merged
+		- Code can be tested as it is pushed and merged thanks to a new dynamic and routine in deployment
+			- Which takes the form of minor code changes systematically and routinely
+		- Thanks to this change in dynamic, CI/CD helps to detect bugs early and decreases the effort of maintaining modular code massively - which introduces reliable rollbacks of versions/code
+	- IaC
+		- A way to manage and provision infrastructure through code and automation
+		- Code can be reused to deploy infrastructure
+		- Which helps inconsistent resource creation and management
+		- Terraform, Vagrant, and others
+	- Configuration Management
+		- Where the state of infrastructure is managed constantly and applying changes efficiently - more maintainability
+		- Time is saved, more visibility into how infrastructure is configured is granted
+		- IaC can be used for configuration management
+	- Orchestration
+		- The automation of workflows
+		- Helps achieve stability
+			- Automating the planning of resources, fast responses whenever a problem arises (ie health checks failing) - this can be achieved due to monitoring
+	- Monitoring
+		- Collecting data about the performance and stability of services and infrastructure
+		- Enables faster recovery, helps with cross-team visibility - provides more data to analyse for better root-cause analysis and generates an automated response
+	- Microservices
+		- An architecture that breaks an application into many small services
+		- Provides flexibility if the need to scale arises
+		- Reduced complexity 
+		- More options for choosing technology across microservices
+- Security can now be, easily, integrated because of the visibility and flexibility that DevOps introduces. 
+- The concept of "Shifting Left."
+	- means that DevOps teams focus on instilling security from the early stages of the SDLC and introducing a more collaborative culture between development and security
+	- Risks are reduced quite significantly
+		- Through the integration of code analysis tools and automated tests earlier in the SDLC
+	- Implementing security measures though all stages of the SDLC (shifting left) can assist in ensuring the software is designed with security best practices built in. 
+	- Reducing remediation costs, and usually there would be no need to roll back changes as they are being addressed in real-time
+	- Reduces costs, builds trust, and improves the security and quality of the product
+
+DevSecOps
+- Instilling security in the beginning and adapting security testing to become flexible and adapted to the development lifecycle increases the chances of addressing things promptly. 
+- Integrating code analysis tools and automated tests earlier in the process can lead to better identification and elimination of security loopholes. 
+- Security is not an add-on
+	- But a must-have design feature
+- Blending security in DevOps would enhance the impact of DevOps and eliminate a lot of other bottlenecks that could arise otherwise
+- An approach that relies heavily on automation and platform design that integrates security as a shared responsibility.
+- Culture-driven development, that normalises security as a day-to-day operation
+- Helps to:
+	- Bring down vulnerabilities
+	- Maximise test coverage
+	- Intensify the automation of security frameworks
+- Reduces risk massively, assisting organisations in preventing brand reputation damage, economic losses due to security flaw incidents, and making life easier for auditing and monitoring
+- Culture is key
+	- Does not work without open communication and trust
+	- Only works with collective effort
+- DevSecOps should bridge to the security knowledge gaps between teams - so that everyone thinks and is accountable for security
+
+DevSecOps Challenges
+- Security Silos
+	- It is common for many security teams to be left out of DevOps processes and portray security as a separate entity
+		- Where it's only specialised people that can maintain and lead security practices
+	- Not scalable or flexible if this is to be the case
+	- Security should be a supportive function to help other teams scale and build security, without security teams being a blocker but a ramp to promote secure solutions and decisions
+	- The best practice would be to share these responsibilities across all team members instead of having a specialised security engineer
+- Lack of Visibility and Prioritisation
+	- Creating a culture where security and other essential application components treat security as a regular aspect of the application
+	- Developers can then focus on the development of their application with confidence about security instead of security departments playing police and the blame game. 
+- Stringent Processes
+	- Developers need environments to test new software without common security limitations
+		- These environments are known as SandBox - temporarily isolated environments
+		- They have no connection to internal networks and have no customer data
+
+DevSecOps Culture
+- Promote Autonomy of Teams
+	- 

@@ -99,4 +99,6 @@
 	- developer of awk
 - Brian Kernighan
 	- developer of awk
+- Andrew Clay
+- Patrick Deboi
 - 

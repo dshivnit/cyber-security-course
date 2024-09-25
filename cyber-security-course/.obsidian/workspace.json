@@ -13,7 +13,19 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "0.0 Cyber, Technology and More/Notes/Course/Week 14/20240925 - Day 067.md",
+                "file": "0.0 Cyber, Technology and More/Notes/Course/Week 14/20240926 - Day 068.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "e040bba0f00ae63c",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "5.0 Programming/5.1 Programming Languages/Shells/Bash.md",
                 "mode": "source",
                 "source": false
               }
@@ -97,7 +109,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "0.0 Cyber, Technology and More/Notes/Course/Week 14/20240925 - Day 067.md",
+                "file": "0.0 Cyber, Technology and More/Notes/Course/Week 14/20240926 - Day 068.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -114,7 +126,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "0.0 Cyber, Technology and More/Notes/Course/Week 14/20240925 - Day 067.md",
+                "file": "0.0 Cyber, Technology and More/Notes/Course/Week 14/20240926 - Day 068.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -149,7 +161,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "0.0 Cyber, Technology and More/Notes/Course/Week 14/20240925 - Day 067.md"
+                "file": "0.0 Cyber, Technology and More/Notes/Course/Week 14/20240926 - Day 068.md"
               }
             }
           },
@@ -183,15 +195,57 @@
       "command-palette:Open command palette": false
     }
   },
+  "floating": {
+    "id": "04040de5f5c40981",
+    "type": "floating",
+    "children": [
+      {
+        "id": "840a6b67776b7213",
+        "type": "window",
+        "children": [
+          {
+            "id": "11ea1460d171d6d5",
+            "type": "tabs",
+            "children": [
+              {
+                "id": "510a5998b687c441",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "0.0 Cyber, Technology and More/People.md",
+                    "mode": "source",
+                    "source": false
+                  }
+                }
+              }
+            ]
+          }
+        ],
+        "direction": "vertical",
+        "x": 2880,
+        "y": 0,
+        "width": 960,
+        "height": 1032,
+        "maximize": false,
+        "zoom": 0
+      }
+    ]
+  },
   "active": "0d6b0abec73501d6",
   "lastOpenFiles": [
-    "0.0 Cyber, Technology and More/Security+ SY0-701/Third-Party Vendor Risks.md",
+    "1.0 Types of Attacks & Defense/DevSecOps/DevSecOps.md",
+    "0.0 Cyber, Technology and More/Notes/Course/Week 14/20240926 - Day 068.md",
+    "5.0 Programming/5.1 Programming Languages/Shells/Bash.md",
+    "0.0 Cyber, Technology and More/People.md",
+    "0.0 Cyber, Technology and More/Terminologies.md",
     "0.0 Cyber, Technology and More/Notes/Course/Week 14/20240925 - Day 067.md",
+    "1.0 Types of Attacks & Defense/DevSecOps",
+    "0.0 Cyber, Technology and More/Security+ SY0-701/Third-Party Vendor Risks.md",
     "0.0 Cyber, Technology and More/Notes/Course/Week 14/20240924 - Day 066.md",
     "0.0 Cyber, Technology and More/Security+ SY0-701/Social Engineering.md",
     "0.0 Cyber, Technology and More/Tools/Tools.md",
     "4.0 Networking/SS7.md",
-    "5.0 Programming/5.1 Programming Languages/Shells/Bash.md",
     "0.0 Cyber, Technology and More/Notes/Course/Week 14/20240923 - Day 065.md",
     "1.0 Types of Attacks & Defense/Cyber Kill Chain.md",
     "1.0 Types of Attacks & Defense/Unified Kill Chain.md",
@@ -208,10 +262,6 @@
     "0.0 Cyber, Technology and More/Notes/Course/Week 13/20240917 - Day 061.md",
     "0.0 Cyber, Technology and More/Notes/Course/Week 12/20240912 - Day 058.md",
     "0.0 Cyber, Technology and More/Notes/Course/Week 13/20240919 - Day 063.md",
-    "6.0 Cryptography/Cryptography.md",
-    "0.0 Cyber, Technology and More/Notes/Course/Week 13/20240918 - Day 062.md",
-    "0.0 Cyber, Technology and More/Tools/Metasploit.md",
-    "0.0 Cyber, Technology and More/Security+ SY0-701/Risk Management.md",
     "0.0 Cyber, Technology and More/Notes/Course/Week 13",
     "0.0 Cyber, Technology and More/Notes/Course/Week 12",
     "0.0 Cyber, Technology and More/Notes/Course/Week 11",
@@ -222,7 +272,6 @@
     "0.0 Cyber, Technology and More/Security+ SY0-701",
     "0.0 Cyber, Technology and More/Notes/Course/Week 09",
     "99.99 Images Used/HEX_Table.png",
-    "14.0 Cloud Systems",
     "99.99 Images Used/TutorialsPointProcThrComparison.png",
     "99.99 Images Used/RiskMatrixSchema.png",
     "99.99 Images Used/Reddit_csharp_HandlesDef.png",
