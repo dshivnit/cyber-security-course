@@ -103,7 +103,22 @@
 		- `env`
 	- Command Substitution
 		- 
-
+- Processes
+	- `init` - Initializer process
+		- which launches a series of other processes which lead to the launching of even more processes (lol)
+		- All the way through to the CLI (which too, is a process)
+		- The shell, in turn, launches processes in response to the commands that are entered into it
+	- `ps`
+		- List running processes
+		- Process Snapshot, Process Status
+		- PID - Process ID
+		- TTY
+			- The terminal that the process is running on 
+		- `e` every process
+		- `f` full format
+		- `a` list processes for ALL users
+		- `x` list processes that aren't running in a terminal
+		- `u` list for a user-readable output
 - Command-line Arguments
 	- `$1` denotes the initial argument passed
 	- `$2` denotes the second argument passed, and so on
