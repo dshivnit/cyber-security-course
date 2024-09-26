@@ -131,4 +131,15 @@ DevSecOps Challenges
 
 DevSecOps Culture
 - Promote Autonomy of Teams
-	- 
+	- Automating processes that fit seamlessly with the development pipeline until security tests become just another type of test, like unit testing of the actual application itself
+	- Leading by example and promoting education like creating playbooks / runbooks to spot these flaws and fix them, understand their risk and build confidence in engineers to make the secure decision independently. 
+	- Security should act as a supporting function that focuses on building trust and creating as much overlap in knowledge between teams as possible
+- Visibility and Transparency
+	- Keeping dashboards that visualise the number of security flaws by the criticality of the service can help keep the visibility of known security issues across all the teams involved - and also promotes transparency to other teams as well
+	- This can also help prioritising work efforts, so that tasks that involve dealing with security issues/flaws don't get lost in a backlog or in the stir of various things going on in the project
+- Understanding and Empathy
+- There is no magic solution or process for Teams - it is essential to understand how the developers and engineers work, what they know to be a risk, and what they prioritise. 
+- If their perspective can be understood - then it would be easier to build a process that finds common ground and has a higher chance to work vs adding another tool that creates more noise and stress for everyone. 
+- This type of understanding builds perspective, which can lead to empathy for how others in the business, other teams, work and build a process that will then account for flexibility. 
+- Every situation might be different, deadlines might differ, and bandwidth can change over time
+- 

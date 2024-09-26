@@ -1,0 +1,163 @@
+
+- Defines the tasks to perform at each software development stage
+- Aims to improve the quality of the software and the development process to:
+	- exceed customer/client expectations
+	- Meet deadlines
+		- and cost estimates
+- Provides a way to measure and improve the development process by providing insights and analysing each stage, maximising efficiency and reducing costs 
+
+- Phases:
+	- Planning
+		- Encompasses all aspects of project and product management
+		- Includes resource allocation, project scheduling, cost estimation and so on
+	- Define Requirements
+		- Considered to be a part of the planning phase
+		- Involves determining what the application is supposed to do and what its requirements will be
+	- Design and Prototyping
+		- Establishing how the software will work
+		- What programming language(s) it will use
+		- Methods to communicate with each other
+		- Architecture of the system
+		- and so on
+	- Software Development
+		- Building the application, writing code, and documenting it
+	- Testing
+		- Ensure components work and can interact with each other
+	- Deployment
+		- Application/Software is launched into production
+		- Users start using it
+	- Operations and Maintenance
+		- Issue and incident management of the application
+		- Bugs, flaws reported by users 
+		- Sometimes additional features in future releases are planned
+
+- Standardising tasks within each phase increases the efficiency of the development process
+- Each phase divides into granular tasks that can be measured and tracked
+- Introduces the capability of monitoring to ensure projects stay on track
+- Aim is to establish repeatable processes and predictable outcomes from which future projects can benefit
+
+- The phases can sometimes be rearranged by splitting them or merging them
+- The testing phase with the development phase can be unified from where security can be introduced in every step involved/outlined in the Development phase
+
+- Planning Phase (aka Feasibility Stage)
+	- Determining the scope and the purpose of the application
+	- Planning software development
+	- Assists in keeping the project focused and on its original purpose while setting clear boundaries (scope)
+	- Requirements for the upcoming design can be determined
+	- Devising an effective outline for the development cycle can enable issues to be caught before they have a negative effect on the process
+	- Help identify resources that will be needed
+	- Crucial if there are timely deadlines to meet
+- Requirements Definition
+	- Defining the prototype ideas and gathering all the necessary details
+		- Making a list of all the requirements for the prototype system
+		- Prototypes should be evaluated against alternatives
+		- Identify the end users needs through research and analysis
+	- Might be common for devs to create a document known as an SRS - Software Requirement Specification
+- Design and Prototyping
+	- Outlining details for the overall application, its attributes - like:
+		- Interfaces for users
+		- Interfaces between systems
+		- Requirements for networks
+		- Instances of databases
+	- SRS documents are usually converted into logical structures which are implemented in programming languages
+	- Plans for operating, training and maintaining the system will be drawn up to ensure that developers know what they need to be doing throughout the Life Cycle
+	- Architecture Design Review (ARD)
+		- Created by engineers and developers to ensure that all teams working in different areas are on the same page
+	- Application Security measures may include SSL traffic encryption, password protection, and secure user credentials storage
+- Software Development
+	- Code is written
+	- An application is developed based on specifications outlined in earlier design documents
+	- Playbooks and guides for the application can be documented as part of the documentation process
+	- Developers will use compilers, debuggers and interpreters to adhere to coding guidelines established by the organisation 
+	- Promoting secure coding would be by incorporating code hygiene, coding best practices, and security in playbooks
+- Testing
+	- Developers will normally use automated tools, like source code scanners
+	- Testing normally would go through its own SDLC phases
+	- There are teams dedicated to testing
+		- Quality Team with QA (Quality Analysis, Assurance) engineers
+	- Test Case Design and Development
+		- Testers can begin writing and creating detailed test cases
+		- QA team flesh out details of the structured tests they want to run
+			- Ensuring that requirements are met which are stated in previous SDLC phases
+		- The tester's goal should be to validate functionality within the given time and scope - especially on application core functionality
+		- Test cases should be simple, understood by any team member, and unique from each other (other test cases)
+		- Must be identifiable, repeatable, as new functionality will be added to the application over time
+			- Meaning that tests will be required to run again
+		- Test environments won't be changed for future tests
+			- Especially when a configuration is being validated
+		- Test cases may also need to have maintenance or updates over time to validate both new and existing functionality 
+	- Test Environment Setup
+		- Provides where the actual testing occurs, the environment
+		- Testers must be able to access bug reporting capabilities and application architecture to support the product
+		- Testers establish the test environments parameters, including hardware, software, test data, frameworks, configurations and the network
+	- Test Execution
+		- All test cases are executed/run
+		- QA engineers and scripts run several functional and non-functional tests
+		- The identification and reports detailing bugs from these test cases
+		- Logging the system's performance compared to what is required
+		- Regression testing
+		- Developers make fixes to ensure new flaws don't get into production
+		- Developer velocity
+			- A metric that allows for the understanding and estimation of how much development the team can perform in a given time frame
+	- Deployment
+		- Different modules or configs are integrated into the primary source code
+		- Application is ready for market and provided to end-users
+		- The use of Software Deployment Tools
+			- For release management
+		- Automating software rollouts so that teams can deploy new applications on all machines or just selected ones
+		- Important if the new package requires actions to deploy correctly (a reboot of a machine per say)
+		- Automating the deployment can also allow the capability to rollback a deployment
+			- Making it easier to go back if there are any unforeseen issues/bugs, or circumstances that may arise
+	- Operations and Maintenance
+		- Practicing any activities required to handle issues reported by end-users
+		- Developers are responsible for implementing changes the software might need after deployment
+		- Users will report bugs 
+		- Handling residual bugs that could not be patched before launch
+		- Resolving new issues raised by users
+		- More focus on stability and uptime than developer velocity
+		- Operations Teams have a stake in developer velocity and their traditional role of maintaining uptime
+			- Enabling self-service for developers to promote developer veolocity
+				- Where developers seek their solutions
+			- Operations Teams work closely with developers to provide on-demand access to secure, compliant tooling and environments
+			- Standardising tooling and processes across the business
+			- Standardising tooling is usually the best way to enable a sustainable self-service model and to empower teams to work autonomously
+			- Extensible automation to traditional operation tasks
+			- DevOps teams focus on empowering other teams through self-service and collaboration
+			- DevOps can track and monitor metrics thanks to consistency and automation of tasks 
+			- Examples:
+				- Automating the creation of Virtual Machines in the cloud
+					- Log activity for the creation and accessing of VMs is allowed
+					- Alerts for how the service accounts/roles are used to develop infrastructure from a security and compliance perspective
+			- The code controlling operations systems  must be stored, versioned, secured and maintained
+
+- CALMS
+	- Culture
+	- Automation
+	- Lean
+	- Measurement
+	- A framework that assesses a company's ability to adopt DevOps processes. 
+	- Culture
+		- Culture change
+		- For any DevOps adoption to be successful, an organisation will have to make a culture shift (to the left)
+		- Teams will have to adopt new strategies to break projects into smaller tasks that can be completed and then presented in a series of sprints
+		- Required for all employees, not only the development teams but QA, product management and operations
+	- Automation
+		- Manually integrating the smaller components into the final solution would be inefficient
+		- It is better to spend some time creating automated processes that can ensure new feature integrations can occur in a reliable and repeatable manner
+		- Configuration as Code
+			- The configuration of the application itself is defined in code
+			- Alters build instructions depending on the environment that the application is being built for
+			- Streamlines the process of building production-ready code
+			- Configuration parameters could be used to reduce the verbosity of errors and remove developer bypasses before the code is built for the production environment
+	- Lean
+		- Making sure that tasks are broken down as small as possible
+		- Allows teams to create initial version of applications sooner
+		- Common principle
+			- Constantly improving software, more valuable to get a version of the application in the hands of users earlier than having to wait years until the product is fully perfected 
+		- Lean first version that is constantly improved with time
+		- Also allows our user base to provide feedback and a wishlist of features for the application
+	- Measurement
+		- Measurement of effectiveness
+	- Sharing
+		- Shared responsibility for the overall application between all teams - including Development and Operations
+		- 
