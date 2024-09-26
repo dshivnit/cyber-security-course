@@ -7,6 +7,8 @@
 - IoC - Indicator of Compromise
 - CDN - Content Delivery Network
 - WAF - Web Application Firewall
+- ISMS
+	- Information Security Management System
 - PATH:
 	- An environment variable on Unix, DOS, OS/2, and MS Windows, specifying a set of directories where executable programs are located. 
 	- Each User Session has its own PATH settings

@@ -160,4 +160,34 @@
 		- Measurement of effectiveness
 	- Sharing
 		- Shared responsibility for the overall application between all teams - including Development and Operations
-		- 
+
+- MTTP 
+	- Mean Time To Production
+	- Length of time between when a code change is committed and when it is actually deployed
+	- Pre-release test is passed when all code requirements have been met
+	- Test automation and working in small batches are goodw ays to improve MTTP time
+	- Devs can receive fast feedback on the code they commit and by following these practices, identifying flaws, and fixing them as quickly as possible
+- Failure Rate
+	- Does not measure failures caught during testing but failures in production
+	- A certain percentage of code changes require hot fixes and/or other remediation measures
+	- The same practices that enable shorter MTTP times correlate with reducing change failure rates
+	- ALL of these practices make bugs much easier to identify and remediate
+	- Tracking and reporting failure rates are essential for ensuring new code releases meet security requirements
+- Deployment Frequency
+	- Understanding how often new code is deployed into production is critical to DevOps' success
+	- Measures when it is released into pre-production staging environment and reserves deployment to refer to code changes released into production
+	- Teams can deploy changes on-demand and often many times a day
+	- The ability to deploy on-demand requires a deployment pipeline that incorporates automated testing and feedback mechanisms
+	- Minimising the need for human intervention
+- MTTR
+	- Mean Time To Recovery
+	- Fixes must be deployed as soonest as possible when failures occur
+		- Or rollbacks
+	- Involves monitoring system health continuously and alerting operations in the event of a failure
+	- The ops team have the necessary processes, tools and permissions to resolve incidents
+- Communicating Risks
+	- You can demonstrate improvement over time by measuring any of these
+	- Risk means very different things across different teams
+	- For DevSecOps - it means the likelihood of a vulnerability being exploited and its impact on systems
+	- DevOps would see a significant risk as high rates of production failure 
+	- By understanding other teams' definitions or perceptions of risk, a DevSecOps engineer can find common ground and better build a perception of security risk for other teams
