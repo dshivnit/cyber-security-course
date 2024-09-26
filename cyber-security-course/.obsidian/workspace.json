@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "0.0 Cyber, Technology and More/Security+ SY0-701/Third-Party Vendor Risks.md",
+                "file": "5.0 Programming/SSDLC - Secure Software Development Lifecycle.md",
                 "mode": "source",
                 "source": false
               }
@@ -110,7 +110,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "0.0 Cyber, Technology and More/Security+ SY0-701/Third-Party Vendor Risks.md",
+                "file": "5.0 Programming/SSDLC - Secure Software Development Lifecycle.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -127,7 +127,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "0.0 Cyber, Technology and More/Security+ SY0-701/Third-Party Vendor Risks.md",
+                "file": "5.0 Programming/SSDLC - Secure Software Development Lifecycle.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -162,7 +162,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "0.0 Cyber, Technology and More/Security+ SY0-701/Third-Party Vendor Risks.md"
+                "file": "5.0 Programming/SSDLC - Secure Software Development Lifecycle.md"
               }
             }
           },
@@ -235,9 +235,11 @@
   },
   "active": "9bc15be136f2ae28",
   "lastOpenFiles": [
-    "5.0 Programming/5.1 Programming Languages/Shells/Bash.md",
-    "0.0 Cyber, Technology and More/People.md",
+    "5.0 Programming/SDLC - Software Development Life Cycle.md",
+    "5.0 Programming/SSDLC - Secure Software Development Lifecycle.md",
     "0.0 Cyber, Technology and More/Security+ SY0-701/Third-Party Vendor Risks.md",
+    "0.0 Cyber, Technology and More/People.md",
+    "5.0 Programming/5.1 Programming Languages/Shells/Bash.md",
     "0.0 Cyber, Technology and More/Notes/Course/Week 14/20240926 - Day 068.md",
     "1.0 Types of Attacks & Defense/DevSecOps/DevSecOps.md",
     "0.0 Cyber, Technology and More/Terminologies.md",
@@ -261,8 +263,6 @@
     "0.0 Cyber, Technology and More/Notes/Course/Week 12/20240913 - Day 059.md",
     "0.0 Cyber, Technology and More/Notes/Course/Week 13/20240916 - Day 060.md",
     "0.0 Cyber, Technology and More/Notes/Course/Week 13/20240917 - Day 061.md",
-    "0.0 Cyber, Technology and More/Notes/Course/Week 12/20240912 - Day 058.md",
-    "0.0 Cyber, Technology and More/Notes/Course/Week 13/20240919 - Day 063.md",
     "0.0 Cyber, Technology and More/Notes/Course/Week 13",
     "0.0 Cyber, Technology and More/Notes/Course/Week 12",
     "0.0 Cyber, Technology and More/Notes/Course/Week 11",
