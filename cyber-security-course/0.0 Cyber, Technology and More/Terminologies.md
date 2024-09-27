@@ -7,6 +7,7 @@
 - IoC - Indicator of Compromise
 - CDN - Content Delivery Network
 - WAF - Web Application Firewall
+- IPP - Internet Printing Protocol
 - ISMS
 	- Information Security Management System
 - PATH:

@@ -119,6 +119,21 @@
 		- `a` list processes for ALL users
 		- `x` list processes that aren't running in a terminal
 		- `u` list for a user-readable output
+- Killing Processes
+	- `kill`
+		- do a `ps -aux` first to see what the pids are, or `ps` whatever argument to get more information
+- Interrupting Processes
+	- `ctrl+c` 
+- Suspending Processes
+	- `ctrl+z`
+	- Processes will come up with a `T` status when listing processes in `ps` commands
+- Resuming Processes
+	- `fg`
+- Background Processes
+	- `bg`
+	- Processes will come up with a `S` status when listing processes in `ps` commands
+- 
+
 - Command-line Arguments
 	- `$1` denotes the initial argument passed
 	- `$2` denotes the second argument passed, and so on
