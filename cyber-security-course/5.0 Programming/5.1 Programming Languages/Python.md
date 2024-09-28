@@ -251,11 +251,13 @@ Resources
 	- Pretty cool
 - Dictionaries and Loops
 ```python
-dict1 = {"Name": "Raistlin", "Class": "Wizard"}
-for name, value in dict1.items():
-	print(f"{name}: {value})
-	# The items() call will allow you to be able to pick up the keyname as well as the value of the key to be able to work with them
+	dict1 = {"Name": "Raistlin", "Class": "Wizard"}
+	for name, value in dict1.items():
+		print(f"{name}: {value})
+		# The items() call will allow you to be able to pick up the keyname as well as the value of the key to be able to work with them
 ```
+	(now imagine making a 2D dictionary - same stuff, just an embedded Dictionary in another.)
+	
 - Files
 	- 
 - chr()

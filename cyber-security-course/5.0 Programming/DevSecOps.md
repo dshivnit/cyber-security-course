@@ -142,4 +142,44 @@ DevSecOps Culture
 - If their perspective can be understood - then it would be easier to build a process that finds common ground and has a higher chance to work vs adding another tool that creates more noise and stress for everyone. 
 - This type of understanding builds perspective, which can lead to empathy for how others in the business, other teams, work and build a process that will then account for flexibility. 
 - Every situation might be different, deadlines might differ, and bandwidth can change over time
-- 
+
+- Risk Assessment
+	- Risk refers to the likelihood of a vulnerability being exploited - which would then have a negative impact on the entity that it affects
+	- Risk assessments are carried out to determine the level of potential threats/risks
+	- Risks can be reduced or eliminated by applying appropriate controls during the risk mitigation process
+	- Risk assessment is usually followed by Threat Modelling
+	- Performing a Risk Assessment
+		- Assume the software will be attacked and consider the factors that would motivate a potential threat actor
+			- List the factors:
+				- Data value of the program
+				- Security level of companies that provide resources that the code will rely upon
+				- Clients purchasing the software
+				- How big is the software that will be distributed
+					- Will it be for a single user
+					- A small workgroup
+					- Worldwide?
+			- Write down the acceptable level of risk
+				- Example - data loss may cause a company millions, however, eliminating all potential security bugs in the code may cost $40k. 
+				- The company and related stakeholders would have to decide whether it is worth it or not
+				- It is important to communicate these tradeoffs so that everyone has an understanding of the risks involved and their implications
+				- Brand reputation can cost the company more in the long run than fixing code
+		- Risk Evaluation
+			- Include factors like the worst-case scenario if an attack is successful against the software
+			- Demonstrate this scenario to executives and seniors by simulating it (ie like a ransomware attack)
+			- Determine the value of the data that can be stolen, like PII, Credentials to the system/network/application, Data or Assets)
+			- Consider the difficulty of mounting a successful attack - its complexity
+				- ie access being compromised to a tool that is used for giving feedback to colleagues or running meetings to the access to a production environment's monitoring and alerts system being compromised
+			- High levels of risk should not be acceptable and should be mitigated
+				- Example - a vulnerability can be exploited by anyone running prewritten attack scripts or using botnets to spread the scripts to compromise computers and networks.
+		- Users affected is a critical factor
+			- Some attacks may affect only a select few users, but a DOS attack will multiple, thousands of users, more potentially if a server is attacked. 
+			- Computers in turn may be affected 
+		- Accessibility of the target
+			- Determine whether the target accepts requests across a network or only local access
+			- Whether authentication would be needed for establishing a connection
+				- Or if anyone can send requests
+			- More impact if a production environment is accessed than a sandbox or test environment 
+	- Types of Risk Assessments
+		- Qualitative Risk Assessment
+			- 
+		- Quantitative Risk Assessment

@@ -13,50 +13,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "5.0 Programming/SSDLC - Secure Software Development Lifecycle.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "e040bba0f00ae63c",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "5.0 Programming/5.1 Programming Languages/Shells/Bash.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "a1ac70ea2f40c0d3",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "0.0 Cyber, Technology and More/Terminologies.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "d95820719e896d95",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "0.0 Cyber, Technology and More/Notes/Course/Week 14/20240926 - Day 069.md",
+                "file": "5.0 Programming/DevSecOps.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ],
-        "currentTab": 3
+        ]
       }
     ],
     "direction": "vertical"
@@ -122,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "0.0 Cyber, Technology and More/Notes/Course/Week 14/20240926 - Day 069.md",
+                "file": "5.0 Programming/DevSecOps.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -139,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "0.0 Cyber, Technology and More/Notes/Course/Week 14/20240926 - Day 069.md",
+                "file": "5.0 Programming/DevSecOps.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -174,7 +137,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "0.0 Cyber, Technology and More/Notes/Course/Week 14/20240926 - Day 069.md"
+                "file": "5.0 Programming/DevSecOps.md"
               }
             }
           },
@@ -208,9 +171,12 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "d95820719e896d95",
+  "active": "9bc15be136f2ae28",
   "lastOpenFiles": [
+    "1.0 Types of Attacks & Defense/1.2 Defense/Pyramid of Pain.md",
+    "1.0 Types of Attacks & Defense/Types of Attacks & Defense.md",
     "5.0 Programming/SSDLC - Secure Software Development Lifecycle.md",
+    "5.0 Programming/5.1 Programming Languages/Python.md",
     "0.0 Cyber, Technology and More/Notes/Course/Week 14/20240926 - Day 069.md",
     "0.0 Cyber, Technology and More/Terminologies.md",
     "5.0 Programming/5.1 Programming Languages/Shells/Bash.md",
@@ -235,9 +201,6 @@
     "0.0 Cyber, Technology and More/Notes/Course/Week 14",
     "1.0 Types of Attacks & Defense/1.1 Attacks/OWASP Top 10.md",
     "0.0 Cyber, Technology and More/Notes/Course/Week 13/20240920 - Day 064.md",
-    "0.0 Cyber, Technology and More/Security+ SY0-701/Cryptographic Solutions.md",
-    "0.0 Cyber, Technology and More/Notes/Course/Week 12/20240913 - Day 059.md",
-    "0.0 Cyber, Technology and More/Notes/Course/Week 13/20240916 - Day 060.md",
     "0.0 Cyber, Technology and More/Notes/Course/Week 13",
     "0.0 Cyber, Technology and More/Notes/Course/Week 12",
     "0.0 Cyber, Technology and More/Notes/Course/Week 11",
