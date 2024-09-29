@@ -399,6 +399,57 @@
 		- `git push <branch-name>`
 			- Update the remote repository with the changes made locally
 			- It's the final command to upload the changes from your local repository to the remote repo
-			- You can also pass `origin` 
+			- `origin` - You can also pass `origin` 
 				- Refers to the repo from which a project was initially cloned.
+	- `os.getenv`
+		- Function used to get environment variables
+		- GitLabs for example has its own Management Secrets Feature which you can call to with the above
+		- `username = os.Getenv("GITLAB_USERNAME")`
+			- for example ^
+	- `.gitlab-ci.yml` 
+
+- Fundamentals of CI/CD
+	- A single source repository
+		- Source code management should be used to store all the necessary files and scripts required to build the application
+	- Frequent check-ins to the main branch
+		- Code updates should be kept smaller and performed more frequently to ensure integrations occur as efficiently as possible
+	- Automated builds
+		- Build should be automated and executed as updates are being pushed to the branches of the source code storage solution
+	- Self-Testing Builds
+		- As builds are automated, there should be steps introduced where the outcome of the build is automatically tested for integrity, quality and security compliance
+	- Frequent Iterations
+		- By making frequent commits, conflicts occur less frequently. Hence commits should be kept smaller, and made regularly
+	- Stable Testing Environments
+		- Code should be tested in an environment that mimics production as closely as possible
+	- Maximum Visibility
+		- Each developer should have access to the latest builds, and code to understand and see the changes that have been made
+	- Predictable deployments anytime
+		- The pipeline should be streamlined to ensure that deployments can be made at any time with almost no risk to production stability
+- A Typical CI/CD Pipeline
+	- Developer Workstations
+		- Where the coding happens
+		- Developers will craft and build code
+	- Source Code Storage Solution
+		- Central placeholder to store and track different code versions
+	- Build Orchestrator
+		- Coordinates and manages the automation of the build and deployment environments
+	- Build Agents
+		- These machines build, test and package the code
+	- Environments
+		- Typically environments for development, testing (staging) and production (live code). 
+		- The code is built and validated through the stages. 
+- Implement Isolation and Segmentation Techniques
+	- By separating different stages of the build process and employing strict access controls, you can mitigate the risk of a single compromised component compromising the entire system. 
+	- Isolation can be achieved through containerisation or virtualisation technologies
+		- Creating secure sandboxes to execute build processes without exposing the entire environment
+- Set up Appropriate Access Controls and Permissions
+	- Principle of least privilege
+		- Grant access only to individuals or groups who require it to perform their specific tasks
+	- Implement robust authentication mechanisms such as MFA and enforce strong password policies
+	- Regularly review and update access controls to ensure that access privileges align with the principle of least privilege
+	- Limiting the number of individuals with admin access
+	- Implementing strict monitoring and auditing mechanisms
+- Network Security
+	- Implement secure communication channels for software updates and ensure that any third-party components or dependencies are obtained from trusted sources
+	- Regularly monitor and assess the security of your software suppliers to identify and address potential risks or vulnerabilities
 	- 

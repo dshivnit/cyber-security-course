@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "5.0 Programming/DevSecOps.md",
+                "file": "0.0 Cyber, Technology and More/Notes/Course/Week 15/20240930 - Day 070.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "5.0 Programming/DevSecOps.md",
+                "file": "0.0 Cyber, Technology and More/Notes/Course/Week 15/20240930 - Day 070.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "5.0 Programming/DevSecOps.md",
+                "file": "0.0 Cyber, Technology and More/Notes/Course/Week 15/20240930 - Day 070.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -137,7 +137,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "5.0 Programming/DevSecOps.md"
+                "file": "0.0 Cyber, Technology and More/Notes/Course/Week 15/20240930 - Day 070.md"
               }
             }
           },
@@ -171,45 +171,11 @@
       "command-palette:Open command palette": false
     }
   },
-  "floating": {
-    "id": "b367802d80c6c389",
-    "type": "floating",
-    "children": [
-      {
-        "id": "e74317495832c6a8",
-        "type": "window",
-        "children": [
-          {
-            "id": "e20341373fdc872e",
-            "type": "tabs",
-            "children": [
-              {
-                "id": "16bc02bb7f02bf00",
-                "type": "leaf",
-                "state": {
-                  "type": "markdown",
-                  "state": {
-                    "file": "1.0 Types of Attacks & Defense/Risk Management.md",
-                    "mode": "source",
-                    "source": false
-                  }
-                }
-              }
-            ]
-          }
-        ],
-        "direction": "vertical",
-        "x": 2880,
-        "y": 0,
-        "width": 960,
-        "height": 1032,
-        "maximize": false,
-        "zoom": 0
-      }
-    ]
-  },
   "active": "9bc15be136f2ae28",
   "lastOpenFiles": [
+    "5.0 Programming/DevSecOps/Security of the Pipeline.md",
+    "0.0 Cyber, Technology and More/Notes/Course/Week 15/20240930 - Day 070.md",
+    "0.0 Cyber, Technology and More/Notes/Course/Week 15",
     "1.0 Types of Attacks & Defense/Risk Management.md",
     "5.0 Programming/DevSecOps.md",
     "1.0 Types of Attacks & Defense/Risk Assessment.md",
@@ -235,8 +201,6 @@
     "1.0 Types of Attacks & Defense/Cyber Kill Chain.md",
     "1.0 Types of Attacks & Defense/Unified Kill Chain.md",
     "1.0 Types of Attacks & Defense/Principles of Security.md",
-    "0.0 Cyber, Technology and More/Notes/Notes.md",
-    "1.0 Types of Attacks & Defense/1.1 Attacks/1.1.1 Types of Attacks.md",
     "0.0 Cyber, Technology and More/Notes/Course/Week 14",
     "0.0 Cyber, Technology and More/Notes/Course/Week 13",
     "0.0 Cyber, Technology and More/Notes/Course/Week 12",
@@ -246,7 +210,6 @@
     "0.0 Cyber, Technology and More/Notes/Course/Week 10",
     "0.0 Cyber, Technology and More/Tools",
     "0.0 Cyber, Technology and More/Security+ SY0-701",
-    "0.0 Cyber, Technology and More/Notes/Course/Week 09",
     "99.99 Images Used/HEX_Table.png",
     "99.99 Images Used/TutorialsPointProcThrComparison.png",
     "99.99 Images Used/RiskMatrixSchema.png",
