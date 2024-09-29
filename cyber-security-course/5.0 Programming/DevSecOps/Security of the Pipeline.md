@@ -1,0 +1,61 @@
+- Automation is heavily ingrained in the SDLC and DevOps processes
+- While this is good for production by allowing for faster development and deployment - it does introduce new security risks.
+- When these processes are manual, an attacker would have to focus their efforts to compromise the credentials or workstation of the individual that performed the related process
+- With Automation - an attacker can instead go for the pipeline itself
+
+- DevOps Pipelines
+	- Source Code Storage and Version Control
+		- Dependency Management
+	- Continuous Integration
+		- Automated Testing
+	- Environments
+
+- Source Code and Version Control
+	- Several considerations when deciding on where to store code:
+		- How can access control to source code be performed
+		- How can we ensure that changes made are tracked
+		- Can the source code storage system be integrated with the use of our development tools
+		- Can multiple different versions of the source code be stored and actively used
+		- Should the source code be hosted internally, or via the use of an external third-party's services/systems
+	- Version Control
+		- Version Control is needed for two main reasons:
+			- New features are often being integrated in the software
+				- Development methodologies like Agile would normally depict that the code is constantly being updated
+				- To ensure that all these updates are kept organised, and in-check, version control is needed
+			- Normally it would be a team working on the application/code, not just a single person
+				- To ensure that that different versions created by different parts of the greater team (multiple teams), version control would be needed
+		- Version Control allows for multiple versions of the code to be kept
+	- Common Tools
+		- Git
+			- Distributed source control tool
+			- Each contributor will have their own copy of the source code
+		- SubVersion
+			- SVN is a centralised source control tool
+			- The control of the repository is managed centrally
+		- GitHub 
+			- is the largest provider of Internet hosting for software development and version control using Git
+		- Gitlab 
+			- You can also host your own Git server using software such as Gitlab
+		- SubVersion (SVN)
+			- TortoiseSVN
+			- Apache SVN
+		- Gitlab (and others) provide much more than just storage and version control features - these tools can be used for almost the entire pipeline
+	- Security Considerations
+		- Ensuring that source code is not exposed
+		- Authentication and access control for the source code is important
+		- Ensuring that changes and updates are adequately tracked
+			- Allowing us to go back to previous versions if something happens like a bubu
+		- Note - taking care as to what is stored as part of the source code
+			- Sometimes can't be fully secret as developers will need access to it
+		- Do NOT confuse Source Code Storage with Secret Management
+		- ENSURE to NOT to store secrets, like database connection strings and credentials, in our source code
+		- Since all versions of the source code is kept - even if secrets are removed in a newer version, they will still be exposed in previous versions..
+	- GIT NEVER FORGETS
+		- NEVER STORE SECRETS IN ANY SOURCE CODE.
+			- Any user with access to the repository can look at historical commits and changes that were made
+		- GITTYLEAKS
+			- An attacker can use tools like Gittyleaks if they somehow got access to the repository
+			- Which would can through the commits for sensitive information
+
+- Dependency Management
+	- 

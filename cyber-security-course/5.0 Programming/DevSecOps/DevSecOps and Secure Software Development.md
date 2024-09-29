@@ -549,4 +549,3 @@ DevSecOps Culture
 		- A study of real-world software security initiatives and reflects the current state of software security
 		- BSIMM can be described as a 'measuring stick' to understand your security posture by providing a comparison of other companies security states
 		- It doesn't tell you what you should do, but what you are doing wrong
-		- 
