@@ -257,14 +257,14 @@
 				- = $3000NZ (SLE)
 				- This is how much that downtime would cost, the SLE
 		- This is important in Quantitative Risk Assessments
-		- Annualised Rate of Occurrence (ARO)
-			- Expected n umber of yearly occurrences
-				- say, 2-3 times a year
-		- Annualised Loss Expectancy (ALE)
-			- ALE = SLE x ARO
-			- In the example above that would be 3000 x 3 = 9000NZD p/year
-		- You then want to compare how much that loss is, compared to how much would be invested/spent on setting up and placing Security Controls into effect
-			- So it'd make sense to spend $6000 or less, to protect that Web-system Asset
+	- Annualised Rate of Occurrence (ARO)
+		- Expected n umber of yearly occurrences
+			- say, 2-3 times a year
+	- Annualised Loss Expectancy (ALE)
+		- ALE = SLE x ARO
+		- In the example above that would be 3000 x 3 = 9000NZD p/year
+	- You then want to compare how much that loss is, compared to how much would be invested/spent on setting up and placing Security Controls into effect
+		- So it'd make sense to spend $6000 or less, to protect that Web-system Asset
 
 - Qualitative Risk Assessments
 	- Summarise risk management processes and concepts

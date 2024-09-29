@@ -181,5 +181,372 @@ DevSecOps Culture
 			- More impact if a production environment is accessed than a sandbox or test environment 
 	- Types of Risk Assessments
 		- Qualitative Risk Assessment
-			- 
+			- Most common type of Risk Assessment
+			- Goal is to assess and classify risk into thresholds like "Low," "Medium," "High."
+			- Systematically examines what can cause harm and what decisions should be made to define or improve adequate control measures. 
+			- Typical formula:
+				- Risk = Severity * Likelihood
+				- Severity is the impact of a consequence
+				- Likelihood is the probability of it happening
+				- The risk assessor will be the judge of these circumstances
 		- Quantitative Risk Assessment
+			- Used to measure risk with numerical values
+			- Instead of the generic three levels in the Qualitative alternative, risk is measured with numbers that represent those bands
+			- Tools are used to determine Severity and Likelihood - or a custom series of calculations based on the company's processes
+			- Consider services that are critical to a businesses function - a business-critical service (like an authentication service, a payment infrastructure) will be given five points (or whatever the schema dictates) 
+			- Measuring risk and priority with an endemic equation to a company's services will have great results
+			- Example
+				- Severity:
+					- 1 - Insignificant
+					- 2 - Minor
+					- 3 - Moderate
+					- 4 - Major
+					- 5 - Death (lol)
+				- Likelihood
+					- 1 - Rare
+					- 2 - Unlikely
+					- 3 - Possible
+					- 4 - Likely
+					- 5 - Certain
+			- There are other elements that would also take part in the Quantitative Risk Assessment, such as defining the below which will relate to the priority's that could be given above:
+			- AV - Asset Value
+			- EF - Exposure Factor
+			- SLE - Single Loss Expectancy
+			- ARO - Annualised Rate of Occurrence
+			- ALE - Annualised Loss Expectancy
+		- Risk Assessments are better performed at the beginning of the SLDC (during the Planning and Requirement phases)
+		- Example:
+			- A customer can sue us for 20,000 if their data gets leaked
+			- There are 100 customers
+			- The ARO (Annual Rate of Occurrence) is 0.001
+			- ALE (Annual Loss Expectancy) is 20000 * 100 * 0.001 = 2000
+			- Meaning, that as long as our compensating control is less than 2000, we are not overspending on security
+
+- Threat Modelling
+	- Best to integrate Threat Modelling into the early stages of the SDLC - such as the Design Phase. 
+	- Threat Modelling is a structured process of identifying potential security threats and prioritising techniques to mitigate attacks so that data or assets that have been classified as valuable or of higher risk during risk assessments - like confidential data - are protected. 
+	- When Threat Modelling is carried out early it can bring a great advantage, as potential issues can be identified early and tended to - leaving to the saving of costs later down the line
+	- Methodologies (some are more customer-focused, where some are more focused on risk or privacy concerns, and so on)
+		- STRIDE (Spoofing, Tampering, Repudiation, Information Disclosure, Denial of Service, Escalation of Privileges)
+			- Spoofing
+				- Act of impersonating a User by a malicious actor which would violate authentication principles from the perspective of the CIA triad
+				- Common methods:
+					- ARP
+					- IP
+					- DNS spoofing
+			- Tampering
+				- Modification of information by an unauthorised user
+				- Violation of the integrity principle of the CIA Triad
+			- Repudiation
+				- Not taking responsibility for events where actions are not attributed to the attacker
+				- Violates the principle of non-repudiation 
+				- ie - an attacker cleaning up all the logs that could lead to leaving traces
+			- Information Disclosure
+				- Act of violation of confidentiality of the CIA triad
+				- ie - a data breach
+			- Denial of Service
+				- When an authorised user can not access services, assets, or the system due to an exhaustion of the system's resources
+				- A violation of the availability principle of the CIA Triad
+			- Elevation/Escalation of Privileges
+				- Escalating privileges to gain unauthorised access, a classic example of a violation of the authorisation principle of the CIA Triad
+			- Developed by Microsoft
+			- Evaluates the system's design in a more detailed view
+		- DREAD (Damage Potential, Reproducibility, Exploitability, Affected Users, Discoverability)
+			- Damage Potential
+				- The possible damage a threat could cause to the existing infrastructure or assets
+				- Based on a scale of 0-10
+					- 0 - no harm
+					- 5 - Information Disclosure
+					- 8 - User Data is Compromised
+					- 9 - Internal or Admin Data is Compromised
+					- 10 - Unavailability of a Service
+			- Reproducibility
+				- Measures the complexity of the attack
+				- How easily can an attacker replicate a threat
+					- 0 - Nearly impossible
+					- 5 - Being complex, but possible
+					- 7.5 - authenticated user (thinking reproducible as an authenticated user)
+					- 10 - The attacker can reproduce very quickly without authentication
+			- Exploitability
+				- Attacks sophistication, or how easy it would be to launch the attack
+					- 2.5 - Would require advanced skill of networking and programming
+					- 5 - Exploited with available tools
+					- 9 - Would need a simple web application proxy tool
+					- 10 - Can be exploited through a web browser
+			- Affected Users
+				- Describes the number of users affected by the successful exploitation of a vulnerability
+					- 0 - There would be no affected users
+					- 2.5 - An individual user
+					- 6 - Mean a small group of users
+					- 9 - Significant users like administrative users 
+					- 10 - Imply all users are affected
+			- Discoverability
+				- Process of discovering the vulnerable points in the system
+				- Threat would be easily found in case of a compromise
+					- 0 - Challenging to discover it
+					- 5 - The threat can be discovered by analysis of HTTP requests
+					- 8 - Can be easily found as it's public-facing
+					- 10 - Visible in the browser address bar
+			- Also created by Microsoft
+			- Can be considered an add-on to the STRIDE model
+			- Ranks threats by assigning threats according to their severity and priority
+			- Creates a rating system that is scored based on risk probability
+			- Can be used in assessing, analysing and finding the risk probability by threat rating
+		- PASTA
+			- Process for Attack Simulation and Threat Analysis
+			- Risk-centric threat modelling framework
+			- Focus is to align technical requirements with business objectives
+			- Involves the threat modelling process from analysing threats to finding ways to mitigate them, but on a more strategic level and from an attackers perspective
+			- Seven Stages:
+				- Define Objectives
+					- Noting the structure and defining objectives
+					- Makes the end goal clearer and well defined and ensures that relevant assets are threat modelled by defining an asset scope
+				- Define Technical Scope
+					- Architectural diagrams are defined - both logical and the physical infrastructure
+					- Helpful in mapping the attack surfaces and dependencies from the environment
+				- Decomposition and Analysis
+					- Each asset will have a defined trust boundary that encompasses all its components and data in this stage
+					- Mapping threat vectors for a payment service and evaluating which components underlying the service can be leveraged for an attack - components can be libraries, dependencies, modules or underlying services and so on 
+				- Threat Analysis
+					- Refers to the extracted information obtained from threat intelligence
+					- Useful to identify which applications are vulnerable to specific vectors
+					- A customer/public-facing application can be susceptible to DDOS, unauthorised data alteration and so on
+				- Vulnerabilities and Weaknesses Analysis
+					- Analyses the vulnerabilities of web application security controls. 
+					- Identifies security flaws in the application and enumerates vulnerabilities
+					- Highly recommended to add mitigation to the identified threat in this stage
+					- Describing a past incident involving an exploit of a mail server, lessons learned or mitigation - lack of thorough testing before implementation and hardening the server
+				- Attack/Exploit Enumeration and Modelling
+					- Map out the possible threat landscape and the entire attack surface of our web application
+					- Then map all the potential attack vectors to the different nodes
+						- Identifying exploits, and attack paths
+					- This stage simulates all the enumerated information extracted from all of the previous steps, this helps security professionals determine the extent and probability of successfully launching the identified vulnerabilities
+				- Risk Impact Analysis
+					- Based on the collective data from the previous stages
+					- All scoped assets that have been affected are analysed and finally, based upon the risk analysis, recommended steps to mitigate the risks and eliminate all of the residual risks are documented
+
+- Secure Coding
+	- Secure Code Review & Analysis
+		- Implementing a secure code review in the phase of an SDLC, especially during the implementation phase, will increase the resilience and security of the product without bearing any additional cost for future patches. 
+		- Secure code review, is defined as a measure where the code itself is verified and validated to ensure vulnerabilities that are found can be mitigated and removed to avoid vulnerabilities and flaws. 
+		- Having developers be aware and proactive in reviewing the code during development can result in faster mitigation responses and fewer unattended threats.
+		- Code Reviews
+			- Manual or automated
+			- Manual code reviews are where an expert will analyse and check the source code by going line by line to identify vulnerabilities
+			- A high-quality manual code review requires an expert to communicate with the software developers to get hold of the purpose and functionalities of the application. 
+			- The analysis output, will then be reported to the developers if there is a need for bug fixing or anything that needs attention.
+	- Code Analysis\
+		- Static analyses examine source code without executing the program
+		- Dynamic analyses looks at the source code while the program is running
+		- SAST - Static Application Security Testing
+			- A white box testing method that directly analyses the source code
+			- Many developers tend to develop an application that could automate or execute processes quickly and improve performance and user experience
+			- Thereby forgetting the negative impact an application that lacks security could cause
+			- Static Application Security Testing (SAST) can help detect vulnerabilities in your application before the code is merged, or integrated into the software if added as part of the SDLC development phase
+			- Once a vulnerability is detected, the next course of action should be to check the code, and patch the code, before the code is compiled and deployed into live production.
+			- White box testing is an approach that testers use to test software's inner structure and see how it integrates with the external systems.
+		- SCA - Software Composition Analysis 
+			- Used to scan dependencies for security vulnerabilities, helping development teams track and analyse any open-source component brought into a project.
+			- Essential pillar in security testing, for in the case for when open-source code is utilised
+			- One of the biggest challenges developer teams have are to ensure their codebase is secure as most applications can be assembled from different building blocks
+		- DAST - Dynamic Application Security Testing
+			- A black-box testing method that finds vulnerabilities at runtime
+			- A tool to scan any web application to find security vulnerabilities
+			- This tool is used to detect vulnerabilities inside a web application that has been deployed to production
+			- DAST tools will always send alerts to the security team assigned for immediate remediation
+			- Dynamic Application Security Testing simulates automated attacks on an application, mimicking a malicious attacker
+			- The goal is to find unexpected outcomes or results that attackers could use to compromise an application
+			- Since Dynamic Application Security Testing tools don't have internal information about the application or the source code (black box testing), they attack just as an outside attacker would. 
+			- Typically used in the Testing Phase of the SDLC
+		- IAST - Interactive Application Security Testing
+			- Designed for web and mobile applications to detect and report issues even while running
+			- Grey-Box testing methodology
+			- Developed to stop all limitations in both SAST and DAST
+			- Testing occurs in real-time
+			- Identifies the code causing security issues in real-time and alerts the developer(s) for immediate remediation. 
+			- Checks source-code (like Static AST) but at the post-build stage
+			- Interactive Application Security Testing (IAST) agents are normally deployed on the application servers. 
+				- The agent studies every pattern that a data transfer inside the application follows, regardless of whether it's dangerous
+				- For example - data coming from a user and the user who wants to perform a SQLi on the application by appending a SQL query to a request - the request will be flagged as dangerous
+		- RASP - Runtime Application Self Protection
+			- Runtime Application Self Protection is a runtime application that is integrated into an application to analyse inward and outward traffic along with end-user behavioural patterns to prevent security attacks
+			- Used after product release
+			- Making it a more security-focused tool when compared to the others that are known for testing
+			- Once an issue is found, Runtime Application Self Protection agent will alert the Security Team and immediately block access to the individual making a request. 
+			- It will secure the whole application against different attacks
+			- It does not wait to try to rely on specific signatures of known vulnerabilities
+			- Complete solution that observes every detail of different attacks on your application and knows your application behaviour
+	- The above tools complement each other 
+	- DAST can expose weaknesses that weren't discoverable or aren't discoverable when an application isn't running
+	- SAST is useful for identifying vulnerabilities as code is being written
+	- AST (Application Security Testing) enables DevSecOps and supports continuous testing, monitoring, assessment and validation in real-time. 
+	- The security experts always support using two or more of these tools to ensure better coverage - which will lower the risk of vulnerabilities in production
+	- Fit these tools to the way engineers push code and interact with the pipeline
+	- Watch out for integrations and focus on providing support and education vs being a blocker
+	- Timeline
+		- Development
+			- Static Application Security Testing (SAST)
+			- Software Composition Analysis (SCA)
+		- Integration
+			- Software Composition Analysis (SCA)
+		- Acceptance Stage
+			- SAST
+			- Dynamic Application Security Testing (DAST)
+		- Pre-Production Stage
+			- SAST
+			- DAST
+			- Interactive Application Security Testing (IAST)
+		- Production
+			- Runtime Application Self Protection (RASP)
+
+- Security Assessment
+	- Normally carried out in the Operations and Maintenance Phase
+	- Plays a primary role in achieving security in SDLC and should be implemented in all phases where possible
+	- Assess a system, software or web application for vulnerabilities and other attack vectors. 
+	- There are two types of assessments:
+		- Penetration Testing
+		- Vulnerability Assessment
+	- Usually a company will employ and authorise an external security testing company to attempt to break into a company's network and systems legally
+	- Vulnerability Assessment
+		- Focus on finding vulnerabilities 
+		- Do not validate them or simulate the findings to prove if they are exploitable in reality
+		- Normally automated tools that run against an organisation's network and systems
+		- Examples of these tools:
+			- OpenVAS
+			- Nessus (Tenable)
+			- ISS Scanner
+		- These scanners probe ports and services on systems across various systems and IP addresses
+		- They also check service versions against a database of vulnerabilities affecting said version
+		- The result is a report with a list of vulnerabilities usually found
+			- With an automated threat level severity classification
+				- High
+				- Medium
+				- Low
+				- CVSS score
+		- Pros
+			- Suitable for quickly identifying potential vulnerabilities
+			- Part of the Penetration Test
+			- Better for budget, cheaper than PenTests
+		- Cons
+			- Can produce a large number of reports
+			- Quality depends on the tool(s) being used
+			- Real-life scenarios for vulnerabilities are not considered (it could be behind a proxy or only exploitable with social engineering/credentials)
+			- The low-risk vulnerability may be used as part of a more powerful attack
+	- Penetration Testing
+		- Includes Vulnerability Testing - but more in-depth
+		- Extended by testing/validating of vulnerabilities, quantifying risks and attempting to penetrate systems
+		- Trying to escalate privileges after a vulnerability is found
+		- Some vulnerabilities can be a lower risk, but can be used as leverage to cause more damage
+		- The tester would provide a thorough report with suggested countermeasures to mitigate the vulnerabilities
+		- Makes it easier to understand the threats by demonstrating the actual risk
+		- Pros
+			- Tester shows organisations what an attacker could do
+			- How any vulnerabilities could be used against it by attackers - the real risk
+			- Can be shown to the customer
+		- Cons
+			- Very expensive
+			- Requires extensive planning and time to carry out the tests
+
+- SSDLC (Secure Software Development Life Cycle) Methodologies
+	- Microsoft's SDL (Security Development Lifecycle)
+		- Secure by Design
+			- Security is a built-in quality attribute affecting the whole software lifecycle
+		- Security be Default
+			- Software systems are constructed to minimise potential harm caused by attackers (software is deployed with the least necessary privilege)
+		- Secure in Deployment
+			- Software deployment is accompanied by tools and guidance supporting users and administrators
+		- Communications
+			- Software developers are prepared for occurring threats by communicating openly and timely with users and administrators
+		- Secure Development Lifecycle (SDL) can be implemented by these practices:
+			- Provide Training
+				- Engineers, program and product managers (to name  some) must understand security basics and know how to build security into software and services to make products more secure while still addressing business needs and delivering user value
+			- Define Security Requirements
+				- Continuously update security requirements to reflect changes in required functionality and changes to the threat landscape
+			- Define Metrics and Compliance Reporting
+				- Essential to define the minimal acceptable levels of security quality and hold engineering teams accountable for meeting those criteria 
+				- Helps to teams to understand the potential risks associated with security issues, to identify and fix security defects during development and to apply the standards throughout the entire project
+			- Perform Threat Modeling
+				- This practice allows development teams to consider, document, and to discuss the security implications of designs in their planned operational environment and in a structured fashion. 
+				- Applying a structured approach to threat scenarios helps a team more effectively and less expensively identify security vulnerabilities, determine risks from those threats, make security feature selections and establish appropriate mitigations
+			- Establish Design Requirements
+				- The SDL (Security Development Lifecycle) usually comprises of assurance activities that help engineers implement "secure features" - and that those features are well engineered concerning security
+					- Cryptography
+					- Authentication
+					- Logging
+				- The implementation of security features has proven to be so complicated that design or implementation choices are likely to result in vulnerabilities
+			- Define and Use Cryptography Standards
+				- Important to ensure that all data, security-sensitive information and management and control data, is protected from unintended disclosure or alteration when transmitted or stored. 
+				- Encryption
+				- Ensure encryption libraries are industry-standard and are implemented so that they can be easily replaced if needed
+			- Manage the Security Risk of Using Third-Party Components
+				- Understand the impact of a security vulnerability on the security of the more extensive system into which they are integrated
+				- Having an accurate inventory of third-party components and a plan to respond when new vulnerabilities are discovered will go a long way toward mitigating this risk
+			- Use Approved Tools
+				- Define and publish a list of approved tools and their associated security checks
+			- Perform Security Testing
+				- SAST - Static Application Security Test
+				- DAST - Dynamic Application Security Test
+				- IAST - Interactive Application Security Test
+			- Perform Security Assessments
+				- Vulnerability Assessment
+				- Penetration Testing
+			- Establish a Standard Incident Response Process
+				- Helps to address new threats that can emerge over time
+				- Should include whom to contact in case of a security emergency
+				- Should establish the protocol for security servicing, including methods for code inherited from other groups within the organisation, and third-party code.
+	- OWASPs SSDLC
+		- A collection of mandatory security activities grouped by the traditional software development lifecycle phases
+		- Data is collected to assess training effectiveness
+		- In-process metrics are used to confirm process compliance
+		- Post-release metrics are used to guide future changes
+		- SDL places heavy emphasis on understanding the cause and effect of security vulnerabilities 
+		- A development team must complete the sixteen mandatory security activities to comply with the Microsoft SDL process
+		- The process:
+			- Project Definition
+				- GATE 1
+				- Agreement Concept / Priority
+				- Risk-based Security Testing Plan
+				- High-Level Security Risk Analysis
+			- Preliminary Design
+				- GATE 2
+				- Agreement Project Definition
+				- Controls Selection
+			- Detailed Design & Development
+				- GATE 3
+				- Agreement Preliminary Design
+				- Source Code Review
+				- Security Design Review
+			- Deployment
+				- GATE 4
+				- Agreement Approve Build
+				- Third-Party Assessment
+				- Penetration Testing
+		- OWASPS SSDLC aim is to build "security quality gates"
+			- Toi support quality and secure software made throughout the pipeline
+			- Agile Security approach - where sprints are dedicated to security:
+			- Sprints:
+				- Code Reviews
+				- Authentication
+				- Authorisation
+				- Input Validation
+				- Assessing technical risks like code injections
+				- Above are just examples
+		- Heavily based on a Maturity Model approach
+			- OWASP SAMM
+				- SAMM (Software Assurance Maturity Model)
+				- An open framework to help organisations formulate and implement a software security strategy tailored to the organisation's specific risks
+				- Helps to evaluate an organisations existing software security practices
+				- Build software security assurance programmes
+				- Demonstrate improvements to that programme
+				- And define and measure security activities for an organisation
+			- SAMM (Software Assurance Maturity Model) helps explain objectives, actions, results, success metrics, costs etc
+			- Example:
+				- A security scorecard for a gap analysis - for an area like endpoint detection
+			- It aims to answer:
+				- "How well are we doing and where do we want to get to?"
+			- https://owasp.org/www-project-samm/
+	- BSIMM - Building Security in Maturity Model
+		- A study of real-world software security initiatives and reflects the current state of software security
+		- BSIMM can be described as a 'measuring stick' to understand your security posture by providing a comparison of other companies security states
+		- It doesn't tell you what you should do, but what you are doing wrong
+		- 
