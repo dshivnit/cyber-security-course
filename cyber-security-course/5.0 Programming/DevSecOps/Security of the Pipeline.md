@@ -58,4 +58,347 @@
 			- Which would can through the commits for sensitive information
 
 - Dependency Management
+	- A lot of code when writing code has already been developed - LIBRARIES, SDKs (Software Development Kits), Variables (String) and so on
+	- The management of these dependencies is vital in the pipeline
+	- External vs Internal Dependencies
+		- External
+			- Publicly available SDKs and Libraries
+			- Hosted on external dependency managers
+				- PyPi for Python
+				- NuGet for .NET
+				- Gems for Ruby
+			- Not having full control over the dependency, companies would have to perform due diligence to ensure that the library is secure
+			- Supply Chain Attacks could arise, wherein an external Package Manager or CDN (Content Delivery Network) is compromised
+			- External libraries can be researched by attackers to discover 0day vulnerabilities
+				- If such a vulnerability is found, it could lead to the compromise of several companies at the same time (who would be using said external libraries)
+		- Internal
+			- Libraries and SDKs that an organisation develops and maintains internally
+				- Like an Authentication Library for example
+				- This Library could then be used for all applications developed by the organisation where authentication would be required
+			- Libraries can often become legacy software since they don't receive updates, or the original developer has left
+			- Security of the package manager is the responsibility of the organisation who made it for the internal library/libraries
+			- Vulnerability in an internal library could affect several of our applications since it is used in all of them
+	- Common Tools
+		- Dependency Manager (Package Manager)
+			- Required to manage libraries and SDKs
+			- For Internal Dependencies
+				- JFrog Artifactory
+				- Azure Artifacts
+				- (just some examples)
+	- Security Considerations
+		- Primary security concern - external dependencies are code that are outside of our/the-company's control 
+
+- Automated Testing
+	- Unit Testing
+		- The first type of testing that most developers and software engineers are familiar with
+		- A test case for a small part of the application or service
+		- Idea is to test the application in smaller parts to ensure that all the functionality works as it should
+		- Test cases can be integrated into the CI/CD (Continuous Integration and Continuous Deployment) part of the pipeline
+			- Where the build will be stopped from progressing if these test cases fail
+		- Unit testing is usually focused on functionality, and not security
+	- Integration Testing
+		- Unit tests focus on small parts of the application, INTEGRATION TESTING focuses on how these small parts work together
+		- Testing is performed for each of the integrations and can also be integrated into the CI/CD part of the pipeline
+		- A subset of Integration Testing is Regression Testing
+			- Regression Testing
+				- Aims to ensure that new features do not adversely impact existing features and functionality 
+		- Not usually performed for security purposes
+	- Security Testing
+		- SAST - Static Application Security Testing
+			- Reviews the source code of the application or service to identify sources of vulnerabilities
+			- Tools can be used to scan the source code for vulns
+			- Can be integrated into the development process to already highlight potential issues to developers as they are writing code
+			- Can be integrated into the CI/CD process
+			- Preventing the pipeline from continuing if the SAST tool detects vulnerabilities that have not been flagged as false positives
+		- DAST - Dynamic Application Security Testing
+			- Performs dynamic testing by executing the code
+			- DAST tools can detect additional vulnerabilities that would not be possible with just a source code review
+				- One method DAST tools use to find additional vulnerabilities (like XSS - Cross Site Scripting) is by creating sources and sinks
+				- When the tool provides input to a field in the application - it marks it as a SOURCE
+				- When data is returned by the application - the tool looks for this specific parameter again, and if it finds it, will mark it as a SINK
+				- It can then send potentially malicious data to the source, and depending on what is displayed at the sink, will determine if there is a vulnerability like XSS
+			- Can also be integrated, like SAST, in the CI/CD pipeline as security gates
+		- Penetrating Testing
+			- SAST and DAST can not replace (fully) manual testing - such as penetration testing
+				- There have been developments such as Interactive AST (IAST) and RASP (Runtime Application Self Protection) 
+				- However these tools don't perform well against contextual vulnerabilities
+			- Such as the credit card validation step in a payment process in an web application or payment system application
+	- Common Tools
+		- GitHub and Gitlab have built in SAST
+		- Sunk and Sonarqube for SAST and DAST
+	- Consideration points as SAST and DAST tools are just placed into the pipeline (also for PoC's (Proof of Concepts)):
+		- Performance costs
+			- With an approach to agile in software development
+				- Most repos receive several hundred commits, daily
+				- If a new security gate is introduced, even for a PoC - that would scan each merge request for vulnerabilities before approval, can have a massive performance cost on the infrastructure and the speed at which developers can perform merge requests
+		- Integration points
+		- Calibration of results
+		- Quality of security gate implementation
+	- The first and last of the above should be carefully considered - as they can be costly if ignored
+	- Careful consideration should also be given to how a PoC should be performed to ensure that no disruptions are caused but to ensure that the PoC is representative of how the tooling will interact when it's finally integrated
+
+- Continuous Integration and Delivery
+	- Since new features are constantly being built for the system or service, we would need to ensure that those features will work with the current application
+		- Instead of waiting until the end of the development cycle to integrate all these features - they can now be continuously integrated and tested as they are being developed
+	- CI/CD Pipeline
+		- These pipelines normally have the following elements:
+			- Starting Trigger
+				- The action that will kick off the pipeline process
+					- For example - a push request is made to a specific branch
+			- Building Actions
+				- Actions taken to build both the project and the new feature
+			- Testing Actions
+				- Actions that will test the project to ensure the new feature will not interfere with any of the current features of the application
+			- Deployment Actions
+				- Should a pipeline succeed - deployment actions will detail what should happen with the build
+				- For example - it should then be pushed to the Testing Environment
+			- Delivery Actions
+				- As CI/CD processes have evolved - the focus is no longer just on the deployment itself, but all aspects of the delivery of the solution 
+				- This includes actions such as monitoring the deployed solution
+		- CI/CD pipelines require build-infrastructure  to execute the actions of the above elements
+			- These are normally referred to as build orchestrators and agents
+			- Build Orchestrator
+				- directs various agents to perform the actions of the CI/CD pipeline as required
+		- CI/CD pipelines are usually where the largest amount of automation can be found
+		- Usually the largest attack surface and the biggest chance for misconfigurations to creep in
+	- Common Tools
+		- GitHub and GitLab provide CI/CD pipeline capabilities
+		- GitHub provides build agents
+		- GitLab provides GitLab runner application that can be installed on a host to make it a build agent
+		- Jenkins
+			- Build Orchestrator
+		- Build Orchestrator controls all builds
+	- Common Misconfiguration
+		- Using the SAME build agents for both DEV and PROD builds
+			- Creates an interesting problem since most developers will have access to the starting trigger for a DEV build but not a PROD build
+			- If one of these developers were compromised, an attacker could leverage their access to cause a malicious DEV build that would compromise the Build Agent. 
+			- This would not be a big issue if the build agent was used only for DEV builds
+				- But if it is used for PROD as well, then GG
+				- An attacker could just persist on the compromised Build Agent until a PROD build is actioned to inject their malicious code into the main Prod Build - which would allow them to compromise the production build of the application
+
+- Environments
+	- DEV (Development)
+		- Playground for developers
+		- Most unstable as developers are continuously pushing new code and testing it
+		- Has the weakest security from a security perspective
+		- Access Control is usually more relaxed
+		- Developers often have direct access to the infrastructure itself
+		- Compromise likeliness is high
+		- The impact of a compromise would be low if proper segregation of the environment is in place
+		- Does not contain customer data
+	- UAT (User Acceptance Testing)
+		- Used to test the application and also to select features before they are pushed into production
+		- Includes Unit Testing to ensure developed features behave as expected
+		- SHOULD also include Security Tests
+		- More stable than DEV, but fairly unstable
+		- Not as hardened as PreProd or PROD
+		- No customer data is held
+		- Second weakest from a security point of view
+	- PreProd (Pre-Production)
+		- Used to mimic production without actual customer and/or user data
+		- Kept stable and used to perform final tests before the new feature is pushed to production
+		- Security should mirror that of PROD env
+		- Doesn't use live customer/user data
+		- Second strongest in terms of security
+	- PROD (Production)
+		- The most sensitive
+		- Current active environment that serves users or customers
+		- Environment should always be kept stable so as to ensure the best user experience
+		- No updates should be performed here without proper change management
+		- Security of this env is the strongest
+		- Only select few employees or services will have the ability to make changes here
+		- Since we may have "malicious" users, security has to be hardened to prevent outside threats as well
+		- DOES use customer data
+		- Strongest in terms of a security
+	- DR/HA (Disaster Recovery or High Availability)
+		- Depending on the criticality of the system - there might be this type of env in play
+		- High Availability (HA) env if the switchover is instantaneous from PROD
+			- Often used for critical applications such as Online Banking
+		- Disaster Recovery (DR) if a small amount of downtime is allowed
+			- Meant to be used to recover from a disaster in production
+		- Both should be exact mirrors of PROD in both stability and security
+	- Some other ENVs when talking about DevOps
+		- Green and Blue Environments
+			- Instead of having a single PROD instance, there are two 
+			- The BLUE Env is running the current application version
+			- The GREEN Env is running the newer version
+			- Using a router or a proxy - all traffic can be switched to the Green Env when the teams are ready
+				- Blue Env would be kept for some time - in the event that there are any unforeseen issues that may arise
+				- Then traffic can be diverted back to the Blue Env if needed, and promptly
+			- Can be considered HA (High-Availability) backups of PROD during a new deployment to be used as a roll-back in the event of an unexpected circumstance
+		- CANARY Environments
+			- Similar to Green and Blue envs
+			- The goal of a CANARY Env is to smooth the PROD deployment process
+			- Two ENVs are created, and users are gradually moved to the new environment
+				- Starting at 10% of users to be migrated
+				- And rolling them through gradually
+	- Common Tools
+		- Virtualisation and Containerisation
+			- Vagrant, Terraform
+		- Kubernetes
+			- Pods
+		- IaC - Infrastructure as Code
+			- Can create and manage these environments
+	- Security Considerations
+		- Underlying infrastructure of an application also forms part of the attack surface of the actual application
+		- Any vulnerabilities in this infrastructure could allow an attacker to take control of the host, as well as with the application
+		- The infrastructure must be hardened against attacks
+			- Removing unnecessary services
+			- Updating the host and applications
+			- Using a firewall to block unused ports
+		- Often things that should stay in the DEV Env, don't.
+		- Developer bypasses are common in DEV Environments
+			- MFA
+			- CAPTCHAs
+			- Passwords (resets)
+			- Login Portals
+			- These bypasses are common to make the developers life easier when creating the code - to bypass time consuming MFA prompts for example
+			- or OTP requests, unnecessary time spent when just wanting to code
+			- Inadequate sanitisation of these bypasses before the application is moved to the next environment will lead to trouble. 
+		- Developer bypasses (and others) are the reasons why environments should be segregated from each other
+			- Similar to quality gates
+				- Security Gates must be implemented to ensure a clean application is moved to the next environment
+
+- Source Code Security
+	- One of the critical tools in Source Code Management is Version Control
+		- Allows teams to collaborate, track changes, and maintain a history of their codebase
+	- Git and Linus
+		- Linus Torvalds started working on Git in 2005 and released the first version in April, 2005. 
+		- This was to replace the former BitKeeper program that Linux was using - which is/was a Distributed Version Control System (DVCS)  
+			- Due to a falling out with BitKeepers creator Larry McVoy in 2005
+		- He designed Git so that developers could work on a project from anywhere and easily merge changes made by multiple contributors
+			- Large-scale
+			- Distributed development
+		- He drew inspiration from other Version Control Systems like BitKeeper, Subversion and Monotone
+	- Benefits of Git
+		- Open-source
+		- Performance is better than any other VCS since it focuses solely on the contents of files rather than their names
+		- Protects code and changes made through hashing
+		- Many organisations use Git as their primary version control system
+
+- Version Control Concepts
+	- Version Control - essential tool for managing source code security
+	- Version Control use a repository
+		- Like a database of changes and a working copy where developers can make changes/edits
+	- The working copy, known as a checkout, is a personal copy of the project files
+		- Developers can make arbitrary changes without affecting their teammates
+	- When satisfied with the changes made and their improvements, developers can commit them to the repository
+- Distributed and Centralised Version Control
+	- Centralised Version Control
+		- A single repository
+		- Updates are immediately visible to others upon committing
+	- Distributed Version Control
+		- Each user has their repository and have to push changes to a central repository for others to see
+	- Most popular Version Control Systems:
+		- Git - Distributed
+		- Mercurial - Distributed
+		- SubVersion - Centralised
+	- Distributed more OP
+
+- Cloud Based Version Control
+	- Codebase and version history are stored in the 'cloud.'
+	- GitHub - cloud-based
+	- CI/CD with GitHub Actions
+		- CI/CD Pipeline
+			- Automation and continuous monitoring of:
+				- Integration phases to Delivery and Deployment
+		- Actions was launched in 2018
+			- Comprises 'workflows'
+			- Where you can declare how to build the code through the development pipeline
+			- Activities like
+				- Push
+				- Issue creation
+				- New release
+	- GitLab
+		- Founded in 2014
+		- Eliminates the need for third-party integration as it includes CI/CD tools by default
+		- A convenient all-in-one solution for software development
+	- CI/CD with GitLab
+		- Users "runners" 
+			- Agents that execute jobs
+			- To enable continuous integration and continuous deployment
+		- Developers can create custom workflows, define stages, specify jobs to be executed in parallel (or sequentially)
+		- Enables teams to achieve high efficient and reliable automation of their development and deployment processes
+		- Built-in container registry
+		- Built-in continuous deployment to Kubernetes
+		- GitLab Pages for hosting static websites
+		- Allows for creating multiple stable branches beyond the main branch 
+			- Providing a better version control and release management
+		- GitLab's CI/CD capabilities focus on reliability, and all-in-one DevOps platform
+			- Makes it a robust software development and deployment solution
+
+- Insufficient Credential Hygiene
+	- Various systems, services and individuals within the engineering ecosystem use credentials - such as secrets and tokens, to be able to deploy and access resources and other highly privileged actions. 
+	- Securely managing credentials can be challenging due to the different contexts in which they are used and stored. 
+	- Following examples can lead to security breaches:
+		- Insecurely storing credentials in code repositories
+		- Improper usage in build and deployment processes
+		- Leaving credentials in container image layers
+		- Printing credentials to console output
+		- Neglecting to rotate credentials
+- Risk Impact
+	- Human error and knowledge gaps in credential management can increase the risk of credential exposure and compromise of critical resources
+	- Recommendations:
+		- Ensure that credentials follow the principle of least privilege from code to deployment
+		- Avoid sharing the same credentials across multiple contexts to maintain accountability and simplify privilege management
+		- Use temporary credentials whenever possible
+			- Establish procedures to rotate static credentials and detect stale credentials periodically
+		- Ensure credentials are only used under predefined conditions, such as limiting usage to a specific IP address or identity
+		- Detect secrets pushed to and stored in code repositories using 
+			- Integrated Development Environment (IDE) plugins
+			- Automatic scanning
+			- Periodic repository commit scans
+		- Use built-in vendor options, or third-party tools to prevent secrets from being printed to console outputs during builds and ensure existing outputs do not contain secrets
+		- Verify that secrets are removed from artifacts, such as container image layers and binaries
+- Environment Variables and Best Practices:
+	- Environment variables when implemented is an excellent method of promoting credential hygiene
+	- Environment Variables are commonly used to store and manage configuration information
+	- They store sensitive information, such as API keys, passwords, and other credentials
+	- You can manage environment variables securely by following these best practices:
+		- Avoid hardcoding sensitive information in code, use environment variables instead
+		- Regularly review and rotate credentials stored in environment variables
+		- Limit access to environment variables to authorised personnel only
+		- Environment variables should be set according to the principle of least privilege
+		- Implement monitoring and auditing mechanisms to track changes to environment variables
+		- If implementing a secrets manager solution, review its encryption mechanisms and if it's a good fit for your development environments
+	- Follow best practices when implementing Environment Variables
+
+- Git
+	- `git clone <repository_url>`
+		- Fetches a project from GitLab (or wherever)
+		- used to copy/clone an existing repository at another location into a new directory (repository)
+		- Local file systems or remote machines accessible by supported protocols can host the original repository. 
+		- Working copies of Git repositories have their history, manage their files, and are ISOLATED from their source repositories 
+	- `git clone -branch`
+		- `-branch` allows you to specify a branch to clone instead of the default branch the remote is pointing to
+	- `git clone -branch name_of_branch <repository_url>`
+		- Will clone the name of the branch from the remote Git repo
+	- Branching
+		- Allows you to diverge from the main development line and work on changes without affecting the main line
+		- Git branches are lightweight, making branching operations fast and switching between branches quick. 
+		- Git encourages for frequent branching and merging - even multiple times daily - which is critical to efficient project development
+		- When you make a commit in Git, it creates a commit object that includes a pointer to the snapshot of the content
+			- Along with information like author details, commit message, and parent commit(s) pointer(s)
+		- Comparing differences between local and remote branches can be helpful.
+			- `git fetch`
+				- Update remote-tracking branches in the terminal
+			- `git branch -a`
+				- List both local and remote branches
+				- Will show the branches with an asterisk indicated the currently checked-out branch
+			- `git branch -r`
+				- Specifically list remote branches
+	- Adding Code
+		- `git add <filename>`
+			- Add changes made to a file in the staging area
+			- Tells Git to include the changes made to the file in the next commit
+		- `git commit -m "commit message"`
+			- Commit saves changes to the staging area
+			- Creates a new commit in the Git history with the changes made
+			- The message tag `-m` adds the description of the changes that are mentioned in the message
+			- Important in tracking progress
+		- `git push <branch-name>`
+			- Update the remote repository with the changes made locally
+			- It's the final command to upload the changes from your local repository to the remote repo
+			- You can also pass `origin` 
+				- Refers to the repo from which a project was initially cloned.
 	- 
