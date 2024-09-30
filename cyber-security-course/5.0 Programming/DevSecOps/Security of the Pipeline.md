@@ -452,4 +452,26 @@
 - Network Security
 	- Implement secure communication channels for software updates and ensure that any third-party components or dependencies are obtained from trusted sources
 	- Regularly monitor and assess the security of your software suppliers to identify and address potential risks or vulnerabilities
-	- 
+
+- Understanding CI/CD Configuration
+	- `.gitlab-ci.yml` - the file where project automation is defined
+	- GitLab CI allows you to define various jobs
+		- Jobs are executed under the `script:` section
+	- Three stages usually
+		- `build-job:`
+			- `stage: build:`
+			- `script:`
+					- `echo "Hello, $GITLAB_USERNAME"`
+			- `//stage: test:`
+			- `//stage: deploy:`
+		- The first line is the name of the job, `build-job` 
+		- Jobs in each stage are executed in parallel
+		- Meaning that all build-jobs will execute simultaneously
+		- As will all Test Jobs, and all Deploy Jobs
+		- If a job fails, later stages WILL NOT START
+		- If a job does not specify a stage, it will automatically be assigned to the test stage
+		- If the job order has to be changed, the `needs` section can define the names of the jobs that have to be completed before the next job can be executed
+		- The `script` portion details the commands that will execute as part of the given job
+		- Build stages usually involve loading all dependencies and compiling code
+	- Tests
+		- 
