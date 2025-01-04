@@ -1,0 +1,76 @@
+Commands:
+- `set`
+	- To check your PATH
+- `ver`
+	- To check the OS version
+- `systeminfo`
+	- Lists information about the system
+		- OS information
+		- System information
+		- Processor
+		- Memory
+		- Others
+- `more`
+	- Can be piped if the output is too long
+	- `q` to exit
+- `driverquery`
+	- Pretty much speaks for itself - will show you various drivers that are installed on the system
+	- Module Name, Display Name, Driver Type, Link Date
+- `help`
+	- `help 'command-name'`
+	- Will display the help information around the command-name given
+- `cls`
+	- Clears the screen
+- `ipconfig`
+	- Shows basic network configuration
+	- `ipconfig /?` for more information around using parameters with the command
+- `ping`
+	- Inspired by ping pong! 
+	- Sends an ICMP packet and will wait for a response
+	- Will show you how long it took for that signal to send and return
+	- Basic, ping pong!
+- `tracert`
+	- Trace Route
+	- Will trace the route taken to reach the destination
+	- Will essentially show you how many hops it takes to reach where you're trying to connect to - useful for troubleshooting
+- `nslookup`
+	- Can look up a host or domain and return IP address details around it
+	- `nslookup /?` for more usage details
+- `netstat`
+	- Displays current network connections, their ports and the protocol they are using
+	- `-abon` is a useful group of parameters to use
+	- `/?` for more information around what these parameters do
+- `cd`
+	- Change directory
+- `dir`
+	- View contents/child directories within your working directory
+	- `dir /a` - will show hidden and system files as well
+	- `dir /s` - will display all files in the current directory as well as the files in all subdirectories (don't forget, you can pipe `more`)
+- `tree`
+	- Will give you a tree-like representation of child directories and subdirectories from your current working directory
+- `mkdir`
+	- Make a directory 
+- `rmdir`
+	- Remove a directory
+- `type`
+	- View text files
+	- It'll print contents of the text file on to the terminal
+- `copy`
+	- Copy files from one location to another
+- `move`
+	- Speaks for itself
+- `del` or `erase`
+	- Delete a file
+- `*` 
+	- wild card to refer to multiple files
+	- consider `*.txt` 
+	- `copy *.txt ..`
+- `tasklist`
+	- Lists the processes running on the system
+	- `tasklist /FI "imagename eq sshd.exe`
+		- Will show all sshd.exe processes that are running on the system
+	- `tasklist /?` for more options and syntax
+- `taskkill /PID 'pid-number`
+	- Kill a PID (process ID)
+- `chkdsk`
+- `sfc /scannow`

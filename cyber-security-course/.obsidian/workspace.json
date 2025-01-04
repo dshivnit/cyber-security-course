@@ -41,12 +41,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "5.0 Programming/5.1 Programming Languages/Shells/Bash.md",
+                "file": "5.0 Programming/5.1 Programming Languages/Shells/cmd.exe.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Bash"
+              "title": "cmd.exe"
             }
           }
         ],
@@ -222,14 +222,16 @@
   },
   "active": "08f8d063ce13fac4",
   "lastOpenFiles": [
+    "5.0 Programming/5.1 Programming Languages/Shells/PowerShell.md",
+    "5.0 Programming/5.1 Programming Languages/Shells/cmd.exe.md",
+    "5.0 Programming/5.1 Programming Languages/Shells/Bash.md",
+    "3.0 Software/3.1 Operating Systems/3.1.1 Desktops & Laptops/3.1.1.1 Windows (10 & 11).md",
     "3.0 Software/3.1 Operating Systems/3.1.1 Desktops & Laptops/3.1.1.2 Linux & Unix.md",
     "0.0 Cyber, Technology and More/Notes/Miscellaneous/Basic Search Engines (and similar).md",
     "0.0 Cyber, Technology and More/Notes/Notes.md",
     "0.0 Cyber, Technology and More/Notes/Miscellaneous",
     "0.0 Cyber, Technology and More/Notes/MuckingAroundPage.md",
     "0.0 Cyber, Technology and More/Commands.md",
-    "5.0 Programming/5.1 Programming Languages/Shells/Bash.md",
-    "5.0 Programming/5.1 Programming Languages/Shells/PowerShell.md",
     "0.0 Cyber, Technology and More/Notes/Course/Week 13/20240916 - Day 060.md",
     "0.0 Cyber, Technology and More/Notes/Course/Week 14/20240923 - Day 065.md",
     "0.0 Cyber, Technology and More/Notes/Course/Week 14/20240925 - Day 067.md",
@@ -248,8 +250,6 @@
     "5.0 Programming/SSDLC - Secure Software Development Lifecycle.md",
     "5.0 Programming/5.1 Programming Languages/Python.md",
     "0.0 Cyber, Technology and More/Notes/Course/Week 14/20240926 - Day 069.md",
-    "0.0 Cyber, Technology and More/Terminologies.md",
-    "0.0 Cyber, Technology and More/People.md",
     "1.0 Types of Attacks & Defense/DevSecOps",
     "0.0 Cyber, Technology and More/Notes/Course/Week 14",
     "0.0 Cyber, Technology and More/Notes/Course/Week 13",

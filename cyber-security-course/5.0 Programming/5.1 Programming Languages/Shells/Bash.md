@@ -2,21 +2,51 @@
 - 
 - Permissions
 	- CHMOD Octals (not sure if octals is the right term but I'm going with it for now)
-		- - r
+		- r
 			- 4
+			- user/group/other - ability to read the file (or list files in the directory)
 		- w
 			- 2
+			- user/group/other - ability to modify the file (or create/delete files that are in the directory)
 		- x
 			- 1
+			- user/group/other - ability to execute the file, ie run it (or be able to enter the directory, change to it `cd`)
 		- rwx
 			- 7
+			- user/group/other
 		- rw
 			- 6
+			- user/group/other
 		- rx
 			- 5
+			- user/group/other
 		- wx
 			- 3
-	- If you're lazy (but please don't be - good to know these numbers in moving forward):
+			- user/group/other
+		- CHMOD Characters (not sure if characters is the right term, but I'm going with it for now)
+			- Examples:
+				- `chmod u+rwx 'file-name'`
+				- `chmod g+rx 'file-name'`
+				- `chmod o-rwx 'file-name'`
+				- `chmod go-rwx 'file-name`
+					- toggling for both Group and Other to not have any permissions to said file-name
+				- `chmod u=rw 'file-name'`
+					- Note the `=` as opposed to `+` or `-` 
+					- This overwrites any current permissions of the file for the user owner of it
+				- `chmod a=rwx 'file-name'``
+					- `a` denoting all, user, group and other :) 
+				- `chmod u=rwx,g=r,o=- 'file-name'` 
+					- You can statically set permissions for all three user types, note the `o=-`, this meaning that other users will have no permissions
+					- Note the commas `,`'s that are used
+				- `chmod a=r,u=rw 'file-name'`
+					- Set permissions for all user types to have read, then state the user owner to have read and write permissions
+		- *So you can see that you can use both letter characters as well as with the octal solution. Depends on your style and what you're doing and what would be more efficient :)* 
+			- `u` - denotes the user owners permissions of the file
+			- `g` - denotes the group owners permissions of the file
+			- `o` - denotes any other users permissions of the file
+			- the `rwx` denotes the permission settings as above
+			- See if you can find some tutorials online that cover this. **pwn.college** (https://pwn.college) is a great place to run through various tutorials and challenges :) 
+	- If you're lazy (but please don't be - it's good to know these numbers in moving forward):
 		- https://chmod-calculator.com/
 	- Permissions are denoted into three characters representing the following:
 		- Owner
@@ -97,7 +127,9 @@
 		- Directory
 	- `-`
 		- Normal file
-	- 
+	- `c`
+		- Character device
+		- Interacting with these types often result in changes to the display output
 
 
 - Some Commands:
@@ -113,7 +145,9 @@
 		- do
 		- done
 	- wc
-	- 
+	- id
+	- chown
+	- chgrp
 
 - `man`
 	- `/usr/share/man`
