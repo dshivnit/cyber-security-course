@@ -1,19 +1,105 @@
 *(This will be messy for a while until I go through and edit stuff and make things tidier - bear that in mind please, danke! :) )*
-- CHMOD Octals (not sure if octals is the right term but I'm going with it for now)
-	- - r
-		- 4
-	- w
-		- 2
-	- x
-		- 1
-	- rwx
-		- 7
-	- rw
-		- 6
-	- rx
-		- 5
-	- wx
-		- 3
+- 
+- Permissions
+	- CHMOD Octals (not sure if octals is the right term but I'm going with it for now)
+		- - r
+			- 4
+		- w
+			- 2
+		- x
+			- 1
+		- rwx
+			- 7
+		- rw
+			- 6
+		- rx
+			- 5
+		- wx
+			- 3
+	- If you're lazy (but please don't be - good to know these numbers in moving forward):
+		- https://chmod-calculator.com/
+	- Permissions are denoted into three characters representing the following:
+		- Owner
+			- The owner that owns the file
+		- Group
+			- The group that owns the file
+		- Other
+			- (other users, other groups)
+	- Example:
+		- `drwxrwxr-x  2 dshivnit dshivnit`
+		- Take note of the first d
+			- This denotes that the respective file is in fact, a directory
+			- The next three characters depict what kind of access the Owner has
+			- The next three after depict what kind of access the Group to the directory has (in this case, yours respectfully, also dshivnit)
+			- The next depict all other users and/or groups
+			- In this Case both owner and group owners of the directory have all access to it (being read, write and execute permissions)
+			- The last others only has read and execute
+	- The `chmod` command will allow you to toggle these permissions, providing that you have the permission to be able to do so!
+		- Example:
+			- `chmod 777 'file-name'`
+				- Will grant the Owner, Group, and Other all access to the file-name file (read, write and execute)
+				- Don't do this.. lol
+				- You can figure out the rest
+	- SUID
+		- if an `s` is in place where an `x` or a `-` would normally be under the Owners permissions for a file (or command/directory) - then any user will be able to run that file/command/directory with the same permissions as the Owner of it
+		- Example:
+			- `-rwsr-xr-x 1 root root 118168 Dec  7 01:51 /usr/bin/passwd`
+			- See how there's an `s` there? That identifies that the passwd command can be run by any user (however, the way the passwd command is written only allows any given user to change only their own password, no one elses)
+		- Handy article to read:
+			- https://linuxhandbook.com/suid-sgid-sticky-bit/
+		- `chmod u+s 'file-name'`
+			- Will set SUID to the given file-name
+		- `chmod u-s 'file-name'`
+			- Will remove SUID from the given file-name
+			OR
+		- `chmod 4766 'file-name'` 
+			- the number 4 as the prepended digit to the usual 3-digits will always represent SUID
+			- The octal 4 always represent SUID
+		- `chmod 0766 'file-name'`
+			- Will remove SUID from the given file-name
+	- In the case of a capital S as opposed to a small one for SUID
+		- This means that there wasn't an executable permission to said file in the first place
+		- a capital S would mean that there is an error that would normally need to be looked into
+	- In essence, the owner of the file would need to have had executable permissions to the related file to begin with prior to SUID access being configured - otherwise, it's just pointless. 
+	- Finding all files with SUID
+		- `find / -perm /4000 2> /dev/null`
+- SGID
+	- Pretty much the same as SUID - but for Group permissions to be allowed by any user
+	- Same rules apply as SUID just syntax is slightly different
+	- Benefit here is normally when an SGID is applied to a directory, all the sub-directories of said directory, and the files contained within them, get the same group ownership as the main directory
+	- A practical example would be Samba Server being used to share files on a local network
+		- It would be guaranteed that any new file created will not lost permissions desired, regardless of 'who' created it
+	- `chmod g+s 'directory-name'`
+		OR
+	- `chmod 2775 'directory-name'`
+		- TAKE NOTE:
+			- Executable permissions - ie the number 7 (or a permission with executable permissions) MUST be used otherwise it's pointless
+			- The octal number is alwayd 2 for SGID
+	- Removing SGID
+		- `chmod g-s 'folder-name'`
+		- `chmod 0775 'folder-name'`
+	- Finding SGIDs:
+		- `find / -perm /2000 2> /dev/null`
+- STICKY BIT
+	- Works on directories
+	- All files in the directory can only be deleted or renamed by the file owners only, or root.
+	- Normally used in the `/tmp` directory 
+	- `chmod +t 'directory-name'`
+	- `chmod 1775 'directory-name'`
+		- The octal 1 will always be used for Sticky Bits
+	- `chmod -t 'directory-name'`
+	- `chmod 0755 'directory-name'`
+	- Finding Sticky Bits
+		- `find / -perm /1000 2> /dev/null`
+	- 
+- File Types
+	- `d`
+		- Directory
+	- `-`
+		- Normal file
+	- 
+
+
 - Some Commands:
 	- date
 	- pwd
@@ -260,6 +346,12 @@
 		- `mv {1,3} bugs`
 			- Will move files 1 and 3 into the bugs folder
 	- Shell Parameter Expansion
+
+- Error Codes
+	- Running `echo $?` after a command has been run can determine whether the previous command that was run was completed successfully or not
+	- a `0` will return if the command or process had completed successfully
+	- If an error occurs, there will normally be a return of the value of `1` 
+	- Sometimes there may be other numbers that can signify particular error codes (which represent an actual error that occurred, ie something specific)
 
 
 ---
