@@ -56,7 +56,7 @@
 - `tee` command
 	- Read from standard input and write to standard output and files
 	- `cat text3.txt > text4.txt | tee`
-	- Will show what is being written from text3.txt to text4.txt
+		- Will show what is being written from text3.txt to text4.txt
 	- `find / -name file_a -type f > some_test_file.txt 2> some_test_file_errors.txt | tee`
 		- Will show you the output of findings to some_test_file.txt via stdout, stderr will still be put into the `*errors.txt` file
 	- `command_1 | tee >(command_2) >(command_3)`

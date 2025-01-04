@@ -8,31 +8,49 @@
         "type": "tabs",
         "children": [
           {
-            "id": "9bc15be136f2ae28",
+            "id": "fad9587246be245d",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "0.0 Cyber, Technology and More/Notes/Course/Week 15/20241001 - Day 071.md",
+                "file": "0.0 Cyber, Technology and More/Commands.md",
                 "mode": "source",
                 "source": false
-              }
+              },
+              "icon": "lucide-file",
+              "title": "Commands"
             }
           },
           {
-            "id": "5fa200a66da94efb",
+            "id": "b8c2f651efa91f17",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "5.0 Programming/DevSecOps/Security of the Pipeline.md",
+                "file": "0.0 Cyber, Technology and More/Notes/Notes.md",
                 "mode": "source",
                 "source": false
-              }
+              },
+              "icon": "lucide-file",
+              "title": "Notes"
+            }
+          },
+          {
+            "id": "08f8d063ce13fac4",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "0.0 Cyber, Technology and More/Notes/Miscellaneous/Basic Search Engines (and similar).md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Basic Search Engines (and similar)"
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -52,7 +70,9 @@
               "type": "file-explorer",
               "state": {
                 "sortOrder": "alphabetical"
-              }
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
             }
           },
           {
@@ -67,7 +87,9 @@
                 "collapseAll": true,
                 "extraContext": true,
                 "sortOrder": "alphabetical"
-              }
+              },
+              "icon": "lucide-search",
+              "title": "Search"
             }
           },
           {
@@ -75,7 +97,9 @@
             "type": "leaf",
             "state": {
               "type": "bookmarks",
-              "state": {}
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
             }
           }
         ]
@@ -98,7 +122,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "5.0 Programming/DevSecOps/Security of the Pipeline.md",
+                "file": "5.0 Programming/5.1 Programming Languages/Shells/Bash.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -106,7 +130,9 @@
                 "searchQuery": "",
                 "backlinkCollapsed": false,
                 "unlinkedCollapsed": true
-              }
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks for Bash"
             }
           },
           {
@@ -115,10 +141,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "5.0 Programming/DevSecOps/Security of the Pipeline.md",
+                "file": "5.0 Programming/5.1 Programming Languages/Shells/Bash.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
-              }
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links from Bash"
             }
           },
           {
@@ -129,7 +157,9 @@
               "state": {
                 "sortOrder": "frequency",
                 "useHierarchy": true
-              }
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
             }
           },
           {
@@ -141,7 +171,9 @@
                 "file": "0.0 Cyber, Technology and More/Terminologies.md",
                 "mode": "source",
                 "source": false
-              }
+              },
+              "icon": "lucide-file",
+              "title": "Terminologies"
             }
           },
           {
@@ -150,8 +182,10 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "5.0 Programming/DevSecOps/Security of the Pipeline.md"
-              }
+                "file": "5.0 Programming/5.1 Programming Languages/Shells/Bash.md"
+              },
+              "icon": "lucide-list",
+              "title": "Outline of Bash"
             }
           },
           {
@@ -163,7 +197,9 @@
                 "file": "0.0 Cyber, Technology and More/Terminologies.md",
                 "mode": "source",
                 "source": false
-              }
+              },
+              "icon": "lucide-file",
+              "title": "Terminologies"
             }
           }
         ],
@@ -184,8 +220,22 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "5fa200a66da94efb",
+  "active": "08f8d063ce13fac4",
   "lastOpenFiles": [
+    "0.0 Cyber, Technology and More/Notes/Notes.md",
+    "0.0 Cyber, Technology and More/Notes/Miscellaneous/Basic Search Engines (and similar).md",
+    "0.0 Cyber, Technology and More/Notes/Miscellaneous",
+    "0.0 Cyber, Technology and More/Notes/MuckingAroundPage.md",
+    "0.0 Cyber, Technology and More/Commands.md",
+    "5.0 Programming/5.1 Programming Languages/Shells/Bash.md",
+    "5.0 Programming/5.1 Programming Languages/Shells/PowerShell.md",
+    "3.0 Software/3.1 Operating Systems/3.1.1 Desktops & Laptops/3.1.1.2 Linux & Unix.md",
+    "0.0 Cyber, Technology and More/Notes/Course/Week 13/20240916 - Day 060.md",
+    "0.0 Cyber, Technology and More/Notes/Course/Week 14/20240923 - Day 065.md",
+    "0.0 Cyber, Technology and More/Notes/Course/Week 14/20240925 - Day 067.md",
+    "1.0 Types of Attacks & Defense/Cyber Kill Chain.md",
+    "0.0 Cyber, Technology and More/Notes/Course/Week 15/20241003 - Day 073.md",
+    "0.0 Cyber, Technology and More/Notes/Course/Week 15/20241002 - Day 072.md",
     "0.0 Cyber, Technology and More/Notes/Course/Week 15/20241001 - Day 071.md",
     "0.0 Cyber, Technology and More/Notes/Course/Week 15/20240930 - Day 070.md",
     "5.0 Programming/DevSecOps/Security of the Pipeline.md",
@@ -199,21 +249,8 @@
     "5.0 Programming/5.1 Programming Languages/Python.md",
     "0.0 Cyber, Technology and More/Notes/Course/Week 14/20240926 - Day 069.md",
     "0.0 Cyber, Technology and More/Terminologies.md",
-    "5.0 Programming/5.1 Programming Languages/Shells/Bash.md",
     "0.0 Cyber, Technology and More/People.md",
-    "0.0 Cyber, Technology and More/Notes/Course/Week 14/20240926 - Day 068.md",
-    "5.0 Programming/SDLC - Software Development Life Cycle.md",
-    "0.0 Cyber, Technology and More/Security+ SY0-701/Third-Party Vendor Risks.md",
-    "1.0 Types of Attacks & Defense/DevSecOps/DevSecOps.md",
-    "0.0 Cyber, Technology and More/Notes/Course/Week 14/20240925 - Day 067.md",
     "1.0 Types of Attacks & Defense/DevSecOps",
-    "0.0 Cyber, Technology and More/Notes/Course/Week 14/20240924 - Day 066.md",
-    "0.0 Cyber, Technology and More/Security+ SY0-701/Social Engineering.md",
-    "0.0 Cyber, Technology and More/Tools/Tools.md",
-    "4.0 Networking/SS7.md",
-    "0.0 Cyber, Technology and More/Notes/Course/Week 14/20240923 - Day 065.md",
-    "1.0 Types of Attacks & Defense/Cyber Kill Chain.md",
-    "1.0 Types of Attacks & Defense/Unified Kill Chain.md",
     "0.0 Cyber, Technology and More/Notes/Course/Week 14",
     "0.0 Cyber, Technology and More/Notes/Course/Week 13",
     "0.0 Cyber, Technology and More/Notes/Course/Week 12",
@@ -222,7 +259,6 @@
     "Untitled.canvas",
     "0.0 Cyber, Technology and More/Notes/Course/Week 10",
     "0.0 Cyber, Technology and More/Tools",
-    "0.0 Cyber, Technology and More/Security+ SY0-701",
     "99.99 Images Used/HEX_Table.png",
     "99.99 Images Used/TutorialsPointProcThrComparison.png",
     "99.99 Images Used/RiskMatrixSchema.png",
