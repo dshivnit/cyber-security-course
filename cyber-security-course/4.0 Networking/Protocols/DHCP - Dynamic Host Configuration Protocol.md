@@ -1,0 +1,14 @@
+- Application-Level (Layer 7) protocol that relies on UDP 
+- Server listens on UDP port 67
+- Client sends from UDP port 68
+- DORA
+	- Discover
+		- Client broadcasts a DHCPDISCOVER message seeking a DHCP server if one exists
+	- Offer
+		- Server responds with a DHCPOFFER message with an IP Address available for the client to accept
+	- Request
+		- Client responds with a DHCPREQUEST message advising that it will accept the offered IP
+	- Acknowledge
+		- Server responds with a DHCPACK message confirming that the IP address offered has now been assigned to the respective client.
+- The initial Discover and Request messages are sent via the 0.0.0.0 IP address, broadcasting to the Network (on 255.255.255.255) - this being the client broadcasting as it doesn't have a local IP assigned to it yet. And is reliant upon its MAC address. 
+- Remember, MAC stands for Media Access Control

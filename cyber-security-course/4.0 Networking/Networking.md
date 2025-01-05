@@ -1,6 +1,6 @@
 *Bruh - rationalise/organise this page..*
 
-[[Protocols]]
+[[4.0 Networking/Protocols/Protocols]]
 
 [[DNS (Domain Name System)]]
 
@@ -216,11 +216,11 @@
 		- (192 x 256^3) + (168 x 256^2) + (123 x 256^1) + (152 x 256^0)
 
 Private Networks
-- Private Class A Network
+- Private Class A Network (10/8)
 	- 10.0.0.0 - 10.255.255.255
-- Private Class B Network
+- Private Class B Network (172.16/12)
 	- 172.16.0.0 - 172.31.255.255
-- Private Class C Network
+- Private Class C Network (192.168/16)
 	- 192.168.0.0 - 192.168.255.255
 
 

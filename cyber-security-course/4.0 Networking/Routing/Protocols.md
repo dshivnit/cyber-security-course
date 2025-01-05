@@ -1,0 +1,20 @@
+- OSPF - Open Shortest Path First
+	- Allows routers to share information about the network topology
+	- Calculates the most efficient path for data to transmit
+	- Does so by routers exchanging updates about the state of their connected links and networks with each other
+	- Each router then has a complete map of the network and can identify what would be the most efficient route for a pack to go from its source through to its destination
+- EIGRP - Enhanced Interior Gateway Routing Protocol
+	- Cisco proprietary protocol
+	- Combines different routing algorithms
+	- Allows routers to share information about the networks that they are connected with and the cost (bandwidth and delay) in getting to those networks
+	- Routers can then determine, based on this information, to choose the most cost-effective path to transmit data
+- BGP - Border Gateway Protocol
+	- Primary protocol used over the wider Internet
+	- Allows different networks (ISPs say for example) to exchange routing information and establish paths for data to travel between various networks
+	- Helps to ensure that data can be routed efficiently across the Internet
+- RIP - Routing Information Protocol
+	- Used in small networks
+	- Routers share information regarding the networks they can reach and the number of hops it would take to get to them
+	- Each router builds a RIP table based on this shared information
+	- Routers then choose the routes with the fewest hops to transmit data from source to destination
+- 
