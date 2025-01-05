@@ -3,10 +3,15 @@ What is PowerShell?
 - Allows PS to execute .NET functions directly from its shell
 - Most PS commands, called cmdlets, are written in .NET
 - Unlike other scripting languages and shell environments, the output of these cmdlets are objects - making PS somewhat object-oriented
+- Objects having:
+	- Properties/Data
+		- ie Colour, Model, Year (if the object was a car)
+	- Methods/Functions
+		- ie Drive(), Refuel() (if the object was a car)
 - This means that running cmdlets allows you to perform actions on the output object (which makes it convenient to pass output from one cmdlet to another). The normal format of a cmdlet is represented using Verb-Noun
 	- ie `Get-Command` 
 		- Will list commands
-- Common verts to use include:
+- Common verbs to use include:
 	- `Get`
 	- `Start`
 	- `Stop`
@@ -32,6 +37,7 @@ What is PowerShell?
 	- https://learn.microsoft.com/en-us/powershell/scripting/developer/cmdlet/approved-verbs-for-windows-powershell-commands?view=powershell-7.4&viewFallbackFrom=powershell-7
 
 - Basic PowerShell Commands:
+	- Cmdlets follow a `verb-noun` naming convention. 
 	- `Get-Command`
 		- You can use wildcards
 			- `Get-Command Verb-*`
@@ -40,12 +46,26 @@ What is PowerShell?
 	- `Get-Help`
 	- `Get-Help Command-Name`
 	- `Get-Help Get-Command -Examples`
+	- `Get-Alias` 
+		- Will show you a list of alias's that are available to use (ie `cd` is an alias for `Set-Location`, `dir` is an alias for `Get-ChildItem` and so on..)
 	- `powershell -c Get-Service`
 		- Will get you a list of the services on the machine and their states (running, stopped)
 	- `Restart-Service -Name "ServiceName"`
 		- Will restart the given service
 	- `Stop-Service -Name "ServiceName`
 		- Will stop the given service
+- Creating a Directory
+	- `New-Item -Path ".\something-folder\something-folder-new" -ItemType "Directory"`
+- Creating a File
+	- `New-Item -Path ".\something-folder\something-folder-new\something-new-in-folder.txt" -ItemType "File"`
+- Removing an Item (whether it is a file, or a directory)
+	- `Remove-Item -Path ".\something-folder\something-folder-new\something-new-in-folder.txt"`
+	- `Remove-Item -Path ".\something-folder\something-folder-new"`
+- Copying an Item
+	- `Copy-Item -Path .\something-new-infolder.txt -Destination .\something-new-infolder2.txt`
+- Moving an item
+	- `Move-Item` (same as Copy-Item syntax)
+- `Get-Alias` is your friend, remember that :) 
 
 - Object Manipulation
 	- If we want to manipulate the output - we'd need to figure out a few things:
@@ -61,7 +81,7 @@ What is PowerShell?
 		- ie `Get-Service | Get-Member`
 			- Will list all the methods, properties and other "MemberTypes" that categorise the Get-Service cmdlet
 
-- Creating Objects from Previous cmdlets
+- Creating Objects from Previous cmdlets (**piping**)
 	- One way of manipulating objects is pulling out the properties from the output of a cmdlet and creating a new object
 	- This is done using the `Select-Object` cmdlet
 	- ie `Get-ChildItem | Select-Object -Property Mode, Name`
@@ -79,6 +99,8 @@ What is PowerShell?
 			- `-Contains`
 			- `-EQ`
 			- `-GT`
+		- `Get-ChildItem | Where-Object -Property "Extension" -eq ".txt"`
+		- `Get-ChildItem | Sort-Object Length -Descending | Select-Object -First 1`
 			- There are more, list here:
 				- https://learn.microsoft.com/en-us/powershell/module/microsoft.powershell.core/where-object?view=powershell-7.4&viewFallbackFrom=powershell-6
 	- Example: 
@@ -119,6 +141,16 @@ What is PowerShell?
 - Searching for content within a file
 	- `Get-ChildItem -Path 'C:\directory name' -Recurse | Select-String "STRING_TO_FIND"`
 
+- Searching for text within a file
+	- `Select-String` (kind of like grep)
+	- `Select-String -Path ".\sometextfile.txt" -Pattern "something in the file!"`
+		- Will return which line in the file that bit of text was found, if found
+	- Fully supports regex
+
+- Getting System and Network Information 
+	- `Get-ComputerInfo`
+		- Returns a very comprehensive list of system information
+		- Remember this gets pulled as an object - so you'd be able to filter whatever you'd needed relatively quickly if you knew wtf you were doing
 - Enumeration
 	- Users
 		- `Get-LocalUser`
@@ -127,6 +159,7 @@ What is PowerShell?
 		- `Get-LocalGroup`
 		- Needing to find out how to see if passwords are disabled for users or not
 	- Basic networking information
+		- `Get-NetIPConfiguration`
 		- `Get-NetIPAddress`
 		- `Get-NetTCPConnection`
 			- Will show you ports
@@ -146,12 +179,29 @@ What is PowerShell?
 		- `Get-Hotfix`
 	- List running Processes
 		- `Get-Process`
+	- List Services
+		- Get-Service
 	- `Test-NetConnection`
 		- `Test-NetConnection localhost -Port 1`
 		- Could write a script that loops between two ranges and prints out the results from above, or adds the findings to a list
 		- Test and see what is output'd from the above and see how to pull that into a separate txt file or something
 
 - Basic Scripting
+	- Scripting would allow for the automation of various tasks, essentially allowing for efficiency
+	- Log analysis, anomaly detection, pulling Indicators of Compromise (IoCs)
+	- Can also be used to reverse-engineer malware or to automate the scanning of systems for any unwanted access aka intrusion
+	- Scripts can also allow for system enumeration if pentesting, executing remote commands, crafting obfuscated scripts to bypass regular system defenses
+	- With PowerShell and the multi-OS world we live in, and PowerShell's ability to speak with those various OSes, scripting with PowerShell can be real powerful
+	- PS Scripts can be used to:
+		- Enforce security policies
+		- Monitor system(s) health
+		- Automatic response to incidents
+		- And more
+	- The `Invoke-Command`
+		- Used for running/executing commands on remote systems
+		- Remote management
+		- Automation of tasks across multiple devices
+		- Can be used to execute payloads or commands on remote systems
 	- https://learnxinyminutes.com/docs/powershell/
 	- Tool: Powershell ISE
 	```PowerShell
