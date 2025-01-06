@@ -8,6 +8,13 @@
 	- If undeliverable, the Server will send it back to the Sender
 - Each of these Mail Servers will have their own configuration
 
+- Basic Commands:
+	- HELO or EHLO - creates/initiates an SMTP session
+	- MAIL FROM - identifies the sender's email address
+	- RCPT TO - identifies the recipients email address
+	- DATA - indicates that the client will begin sending the content of the email 
+	- . - is sent on a line by itself to indicate the end of the connection/transmission
+
 - Simple break-down of the process:
 	- Mail Client connects to the SMTP Server of a Domain
 	- Handshake initiates

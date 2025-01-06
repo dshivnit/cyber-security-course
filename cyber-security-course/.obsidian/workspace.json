@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "4.0 Networking/Protocols/FTP - File Transfer Protocol.md",
+                "file": "4.0 Networking/Protocols/IMAP - Internet Message Access Protocol.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "FTP - File Transfer Protocol"
+              "title": "IMAP - Internet Message Access Protocol"
             }
           }
         ],
@@ -208,6 +208,9 @@
   },
   "active": "db755cf09fc928f3",
   "lastOpenFiles": [
+    "4.0 Networking/Protocols/SMTP - Simple Mail Transfer Protocol (Port 25 normally).md",
+    "4.0 Networking/Protocols/IMAP - Internet Message Access Protocol.md",
+    "4.0 Networking/Protocols/FTP - File Transfer Protocol.md",
     "4.0 Networking/DNS (Domain Name System)/DNS (Domain Name System).md",
     "5.0 Programming/5.1 Programming Languages/Shells/Bash.md",
     "4.0 Networking/Protocols/DHCP - Dynamic Host Configuration Protocol.md",
@@ -234,10 +237,7 @@
     "0.0 Cyber, Technology and More/Notes/Course/Week 15/20241003 - Day 073.md",
     "0.0 Cyber, Technology and More/Notes/Course/Week 15/20241002 - Day 072.md",
     "0.0 Cyber, Technology and More/Notes/Course/Week 15/20241001 - Day 071.md",
-    "0.0 Cyber, Technology and More/Notes/Course/Week 15/20240930 - Day 070.md",
-    "5.0 Programming/DevSecOps/Security of the Pipeline.md",
     "0.0 Cyber, Technology and More/Notes/Course/Week 15",
-    "1.0 Types of Attacks & Defense/Risk Management.md",
     "1.0 Types of Attacks & Defense/DevSecOps",
     "0.0 Cyber, Technology and More/Notes/Course/Week 14",
     "0.0 Cyber, Technology and More/Notes/Course/Week 13",
