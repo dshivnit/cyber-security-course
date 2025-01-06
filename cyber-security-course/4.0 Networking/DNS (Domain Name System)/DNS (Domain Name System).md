@@ -1,4 +1,8 @@
  *Expand with more topics here as there is plenty from Day004 and on the topic in general..*
+
+- Operates on the 7th Layer (Application Layer)
+- Uses UDP Port 54 by default
+- TCP Port 53 as a default fallback
  
 - DNS
 	- Domain Name System
@@ -63,6 +67,7 @@
   *just note taking for the most part here, these sections will be revised at a later date so as to reduce redundancy, I understand that these types/elements have been discussed just above*
 	- A Record
 		- Resolve a "name" to an IP address on the Internet (the human-readable website name pointing to an IP address on the Internet)
+		- Maps a hostname to one if not more IPv4 addresses
 	- AAAA Record
 		- Similar to above but relating to the direction to IPv6 addresses as opposed to IPv4
 	- CNAME Record

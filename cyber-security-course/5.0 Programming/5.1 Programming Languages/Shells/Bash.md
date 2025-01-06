@@ -131,6 +131,10 @@
 		- Character device
 		- Interacting with these types often result in changes to the display output
 
+- Chaining with Semicolons
+	- `$ echo TESTING WHAT UP > prac.txt; cat prac.txt`
+		`TESTING WHAT UP`
+	- 
 
 - Some Commands:
 	- date
@@ -188,6 +192,14 @@
 	- Reads input from a file into a variable as well
 		- `read VARNAME < file-name.txt`
 		- `echo $VARNAME`
+- REDIRECTION SUMMARY
+	- `>` - for stdout
+	- `2>` - for stderr
+	- `<` - for stdin
+	- `>>` and `2>>` for append-mode redirection
+	- `>&` for redirecting to other file descriptors (0,1,2)
+	- `|` - piping to another command
+
 - Variables
 	- Storing a command into a variable
 		- `VARIABLENAME=$(cat ~/filename.txt)`

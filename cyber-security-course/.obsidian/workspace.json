@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "5.0 Programming/5.1 Programming Languages/Shells/Bash.md",
+                "file": "4.0 Networking/Protocols/FTP - File Transfer Protocol.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Bash"
+              "title": "FTP - File Transfer Protocol"
             }
           }
         ],
@@ -208,6 +208,8 @@
   },
   "active": "db755cf09fc928f3",
   "lastOpenFiles": [
+    "4.0 Networking/DNS (Domain Name System)/DNS (Domain Name System).md",
+    "5.0 Programming/5.1 Programming Languages/Shells/Bash.md",
     "4.0 Networking/Protocols/DHCP - Dynamic Host Configuration Protocol.md",
     "4.0 Networking/Routing/Protocols.md",
     "4.0 Networking/Protocols/ICMP - Internet Control Message Protocl.md",
@@ -216,7 +218,6 @@
     "4.0 Networking/Subnetting.md",
     "4.0 Networking/The Stacks/Open Systems Interconnect (OSI) Stack (Model -- I call it a stack alright! =P).md",
     "99.99 Images Used/Pasted image 20250106071646.png",
-    "5.0 Programming/5.1 Programming Languages/Shells/Bash.md",
     "5.0 Programming/5.1 Programming Languages/Shells/PowerShell.md",
     "0.0 Cyber, Technology and More/Commands.md",
     "5.0 Programming/5.1 Programming Languages/Shells/cmd.exe.md",
@@ -237,7 +238,6 @@
     "5.0 Programming/DevSecOps/Security of the Pipeline.md",
     "0.0 Cyber, Technology and More/Notes/Course/Week 15",
     "1.0 Types of Attacks & Defense/Risk Management.md",
-    "5.0 Programming/DevSecOps.md",
     "1.0 Types of Attacks & Defense/DevSecOps",
     "0.0 Cyber, Technology and More/Notes/Course/Week 14",
     "0.0 Cyber, Technology and More/Notes/Course/Week 13",
