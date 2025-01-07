@@ -3,6 +3,8 @@ https://pwn.college/computing-101/your-first-program/
 
 All roads lead to the CPU:
 
+- Not mandatory, although `.s` is the usual extension used for assembly files (ie `first-assembly.s`)
+
 - Source Code
 	- Python, Javascript, Java
 - Intermediate Language Bytecode
@@ -146,6 +148,13 @@ Extending Data (NEED TO TOUCH ON THIS MUCH MORE)
 		- So you can still work with both the positive full number of the value, and its negative representation as well
 - The registers have different sizes
 
+- mov example
+	- `mov rax, 1337`
+	- `mov` - operator, or, instruction(s)
+	- `rax` - operands, which represent additional data (in this case, the specification of `rax` as a destination)
+	- `1337`
+		- the value we want to store there, also known as the source?
+
 - Some Register Arithmetic
 - https://github.com/yrp604/rappel
 	- Most instructions, the first specified register stores the result
@@ -185,4 +194,90 @@ Special Registers
 
 - Normally - there are between 10 and 20 'general purpose' registers that code can use for any reason, and up to a few dozen other ones that are used for special purposes
 
-- 
+
+FAULTS
+- Segmentation Fault
+
+
+Syscall (System Call) Instruction
+- Programs interact with the OS via the CPU (some things here will be basic, but I'm covering all grounds as I go along :) )
+- Linux has around 330 different syscalls
+- Programs invoke a specific syscall by moving its syscall number in to the `rax` register and invoking the `syscall` instruction
+- ie
+	`mov rax, 60`
+	`syscall`
+	Exits the program cleanly. 60 is moved into rax, then syscall is invoked
+- You can pass parameters into the syscall through registers as well - say for example if you wanted the program to exit with an exit code of 42
+	- The first parameter to a syscall is passed via the `rdi` register. 
+	- If you want a program to exit with an exit code of 42 for example:
+		`mov rdi, 42`
+		`mov rax, 60`
+		`syscall`
+	- You will, however, need an executable (referencing 42 as the exit code) in order to be able to this
+
+Building an Executable
+- One will need to:
+	- write the assembly in a file (either in an `.S` or `.s` syntax)
+	- Assemble the binary into an executable *object file* (using the `as` command)
+	- Link one or more executable object files into a final executable binary (using the `ld` command)
+- One will need to prepend a directive at the beginning of the assembly code, say for example if we're using the Intel Assembly Syntax:
+```asm.s
+.intel_syntax noprefix
+mov rdi, 42
+mov rax, 60
+syscall
+```
+- `.intel_syntax noprefix` will tell the assembler that you will be using the Intel Assembly Syntax, specifically the variant where you don't have to add extra prefixes to every instruction (more on this later) 
+- Assemble the code using the `as` assembler (if the instructions working with are in a file called `asm.s`)
+	- `as -o asm.o asm.s`
+	- The source code in `asm.s` is assembled into binary code, and an object filed named `asm.o` is created (outputted)
+	- Albeit that the object file has assembled binary code in it, it isn't ready to be run yet. 
+	- It needs to be linked first.
+
+Linking Executables
+- In usual production, there will be source code that is compiled and assembled into object files, however, there are normally numerous amounts of these object files. 
+- Source code files in a program are compiled into their own object files. They are then linked together, into a single executable file. 
+- Even if there is only one object file, we still need to link it to create the final executable, `exe` file. 
+- This is done with the `ld` (from the term **l**ink e**d**itor) command:
+- `ld -o exe asm.o`
+- an exe is created!
+- Now, for the time being we're only testing exit codes, so if you run this `./exe` nothing will happen
+- But if you check for exit/error codes
+	- `echo $?`
+	- 42 is returned :) (which is the exit code we set the program to use when exiting earlier)
+
+\_start
+- This snippet of code indicates where in your program should begin from when ELF is executed.  (ELF - Executable and Linkable Format)
+- Continuing to work with the code from above - this can be added as below:
+```asm.s
+.intel_syntax noprefix
+.global _start
+_start:
+mov rdi, 42
+mov rax, 60
+syscall
+```
+- Assemble using the assembler (`as`)
+- Link to an executable with the Link Editor (`ld`)
+- The `.global_start` will direct the assembler (`as`) to make the `_start` label 'globally visible' at the 'linker level,' instead of just locally visible at the object file level 
+- Since the Link Editor (`ld`) is the linker this particular directive (`.global _start`) is needed for the `_start:` label to be seen.
+- (remember, I referenced a gem at the start of this page. **pwn.college** - check 'em out, amazing stuff on there :) )
+
+Tracing Syscalls and Debugging
+- Syscal Tracer - `strace`
+- `strace` once given a program to run, will use Linux functionality to introspect and record every system call the program invokes, and the results of those syscalls
+- `strace ./exe`
+- the `execve` syscall is one that starts a new program
+- the `exit` syscall is just that
+- the `alarm` syscall (syscall number 37) will set a timer in the OS, and when that timer hits 0, the OS will terminate the program
+	- The point of `alarm` is to kill the program when it is frozen.
+
+Moving Between Registers
+- `rsi`
+	- Like `rdi`, `rsi` is a register where data can be parked, example:
+		- `mov rsi, 42`
+		- `mov rdi, rsi`
+	- `mov` here is actually setting the data
+	- Here, both `rdi` and `rsi` will be set to 42
+	- Don't worry about the naming conventions - lel..
+	- 
