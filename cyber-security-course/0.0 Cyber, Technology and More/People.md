@@ -108,3 +108,6 @@
 		- Electrical Engineer
 	- John Von Neumann
 		- Mathematician 
+- Kathleen Booth
+	- Invented Assembly (1940s/1950s)
+- 
