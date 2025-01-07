@@ -47,6 +47,7 @@ It is also useful to note that you can identify technical issues and which layer
 		- Requires a reliable connection
 		- A slow connection can bottleneck one device
 		- Slower than UDP because there is more processing that is involved
+		- SSL/TLS run on this layer
 		- Used for:
 			- File sharing
 			- Web browsing

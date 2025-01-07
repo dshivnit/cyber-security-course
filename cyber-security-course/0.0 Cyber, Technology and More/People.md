@@ -101,4 +101,10 @@
 	- developer of awk
 - Andrew Clay
 - Patrick Deboi
-- 
+- CPU Architecture
+	- John Mauchly
+		- Physicist
+	- John Presper Eckert
+		- Electrical Engineer
+	- John Von Neumann
+		- Mathematician 

@@ -1,3 +1,17 @@
+ - Email delivery over the Internet requires these:
+	 - MSA - Mail Submission Agent
+		 - MUA's connect to these to send their emails
+		 - MSA's will check incoming messages for any errors before transferring it to the MTA (the MSA and MTA are usually on the same server)
+	 - MTA - Mail Transfer Agent
+		 - Will transmit the message to the MTA of the receiving party
+		 - SMTP is used to communicate with MTA servers
+		 - (do note, normal SMTP transfers data in plaintext, you want to use the TLS version of SMTP, SMTPS which is the standard now. Should be.)
+	 - MDA - Mail Delivery Agent
+		 - Receiving MUA will receive its message from an MDA
+		 - POP3 or IMAP (TLS/SSL versions) are used 
+	 - MUA - Mail User Agent
+		 - An email client
+ 
  - Protocols:
 	 - SMTP - Simple Mail Transfer Protocol
 		- Utilised to handle the sending of emails

@@ -9,6 +9,7 @@
 - Passive Connection
 	- Server opens a port and listens
 	- Client connects to it
+**NOTE - the above two could be incorrect, I want to test this due to conflicting information given re Active/Passive FTP connections** 
 - Separation of channels allows for commands to be sent whilst waiting for current data transfers to complete
 	- More efficient
 - unencrypted (note, this is not sFTP but just FTP)

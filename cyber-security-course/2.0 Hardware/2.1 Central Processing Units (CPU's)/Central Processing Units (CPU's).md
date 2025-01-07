@@ -1,5 +1,15 @@
 [[2.1.1.0 AMD CPUs]]
 
+- Registers
+- CU
+	- Control Unit
+- ALU
+	- Arithmetic Logic Unit 
+- Cache
+	- L1
+	- L2
+	- L3
+
 - AMD
 - Intel
 - Qualcomm
@@ -14,7 +24,6 @@
 	- Energy-saving Cores
 	- Page Files
 	
-
 - Hyperthreading
 	- Hyperthreading is a technology that enables a single processor to handle multiple tasks simultaneously, thereby improving performance.
 	- Intel introduced it in 2002, becoming a standard feature in most of its processors
