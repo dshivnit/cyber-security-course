@@ -1,0 +1,7 @@
+- To ensure that clients don't receive illegitimate responses from rogue 'dns' servers, as clients will accept any response given
+- DNSSEC requires two things:
+	- The DNS Zone Owner should sign all DNS records using their private key
+		- Showing the authenticity of the response given by the said DNS server
+	- The DNZ zone publishes its public key so that users can check the validity of the DNS record signatures
+		- Again, to double-check and ensure the authenticity of the given certs and responses
+- The data in the DNS query is signed to ensure integrity, and authenticity are kept intact
