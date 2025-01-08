@@ -1,0 +1,4 @@
+- text-based
+- good for efficient, quick, command-line based analysis - usually on remote systems
+- `man pcap-filter`
+- 
