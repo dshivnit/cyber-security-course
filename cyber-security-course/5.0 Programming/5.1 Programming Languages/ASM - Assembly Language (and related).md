@@ -280,3 +280,122 @@ Moving Between Registers
 	- `mov` here is actually setting the data
 	- Here, both `rdi` and `rsi` will be set to 42
 	- Don't worry about the naming conventions - lel..
+
+- Memory (RAM)
+	- Address linearly
+		- From: 0x10000 (for security reasons..)
+		- To: 0x7fffffffffff (for architecture / OS purposes)
+			- *Will need to refine this at some stage as learning progresses*
+	- Each memory address references one-byte in memory
+	- This means, 127 terabytes of addressable RAM..?
+		- Virtually, not physically
+		- 
+	- There is too much memory to name every location (like we do with registers) 
+		- They are referenced as numbers (numerical identifiers)
+	- The Stack
+		- A region of memory, that when a process starts up - a space in memory is created called the stack
+		- You push things on to the stack, then you pop them off the stack
+			```asm
+			mov rax, 0xc001ca75
+			push rax
+			push 0xb0bacafe
+			push rax
+			```
+		- (like mov, push leaves the value in the src register intact)
+		```asm
+		pop rbx # sets rbx to 0xc001ca75
+		pop rcx # sets rcx to 0xb0bacafe
+		```
+		- Popped off in reverse order from how they were pushed
+			- It logically pops the data that is sitting in the stack 'off' - but the actual data remains should you wanted to get back and access them...
+			- Above we are popping whatever was pushed last into the stack, firstly into rbx (`0xc001ca75`) and then (`0xb0bacafe`) into rcx
+				- But logically off the stack
+		- Each entry is 64-bits
+		- When you push onto the stack, the rsp decrease by 8
+		- Pops add 8 to rsp
+		- Temporary Data Storage
+		- You can move data between registers and memory with `mov`
+		- Registers point to a place in memory
+			- `mov rax, 0x133337`
+			- `mov [rax], rbx`
+		- Equivalent to `push rcx`:
+			- `sub rsp, 8 # subtracting 8 from rsp` 
+			- `mov [rsp], rcx`
+		- Each addressed memory location contains one byte:
+			- An 8-byte write at address `0x133337` will write to addresses `0x133337` through to `0x13333f`
+- Controlling Write Sizes
+	- You can use partials to store/load fewer bits
+	- Load 64 bits from addr `0x12345` and store the lower 32 bits to addr `0x133337`
+		```asm
+		mov rax, 0x12345
+		mov rbx, [rax]
+		mov rax, 0x133337
+		mov [rax], ebx
+		```
+	- Store 8 bits from addr `0x12345` to `bh`
+		```asm
+		mov rax, 0x12345
+		mov bh, [rax]
+		```
+- Memory Endianess
+	- Data on most modern systems is stored backwards, bitewise, in little endian
+	- Will have to watch this again (https://www.youtube.com/watch?v=HahXfnOsSUU), and again, and again.
+	- `mov eax, 0xc001ca75 # sets rax to` 
+		- c0 | 01 | ca (`ah`) | 75 (`al`)
+	- `mov rcx, 0x10000` 
+	- `mov [rcx], eax # stores data as`
+		- 75 (`0x10000`) | ca (`0x10001`) | 01 (`0x10002`) | c0 (`0x10003`)
+	- `mov bh, [rcx] # reads 0x75 first, and so on, backwards`
+	- See how the data was stored backwards, coolcats (`c001ca75`) into `eax`? 
+		- Essentially flipping it around
+	- This happens for historical reasons.. 
+		- Intel created the 8008 for a company called Datapoint in 1972
+		- Datapoint used little endian for easier implementation of carry in arithmetic
+		- Intel used little endian in 8008 for compatibility with Datapoint's processes
+		- Every step in the evolution between 8008 and modern x86 maintained some level of binary compatibility with its processor 
+	- Bytes are only shuffled for multi-byte stores and loads of registers to memory
+	- Individual bytes never have their bits shuffled
+		- Yes, writes to the stack behave just like any other write to memory
+		- *Remember, this is a course from pwn.college - I'm note taking for the time being :) *
+- Address Calculation
+	- You can do some limited calculation for memory addresses
+	- Use `rax` as an offset off some base address (in this case, the stack)
+	```asm
+	mov rax, 0
+	mov rbx, [rsp+rax*8] # read a qword right at the stack pointer
+	inc rax
+	mov rcx, [rsp+rax*8] # read a qword to the right of the previous one
+	```
+	- You can get the calculated address with Load Effective Address (`lea`)
+	```asm
+	mov rax, 1
+	pop rcx
+	lea rbx, [rsp+rax*8] # rbx now holds the computed address for double-checking
+	mov rbx, [rbx]
+	```
+	- Address calculation has limits
+		- **reg+reg*(2 or 4 or 8)+value** is as good as it gets
+- RIP - Relative Addressing
+	- `lea` is one of the few instructions that can directly access the rip register
+	```asm
+	lea rax, [rip] # load the address of the next instruction into rax
+	lea rax, [rip+8] # the address of the next instruction, plus 8 bytes
+	```
+	- You can also use `mov` to read directly from those locations
+		- `mov rax, [rip] # load 8 bytes from the location pointed to by the address of the next instruction`
+	- Or write there
+		- `mov [rip], rax # write 8 bytes over the next instruction (CAVEATS APPLY)`
+	- This is useful for working with data embedded near your code
+	- This is what makes certain security features on modern machines possible
+- Writing Immediate Values
+	- You can also write immediate values
+	- You must, however, specify their size:
+		- This writes a 32-bit 0x1337 (padded with 0 bits) to address 0x133337
+			```asm
+			mov rax, 0x133337
+			mov DWORD PTR [rax], 0x1337
+			```
+		- Depending on your assembler, it might expect DWORD instead of DWORD PTR
+- Other Memory Regions
+	- *to describe later..*
+	- 

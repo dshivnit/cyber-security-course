@@ -1,3 +1,8 @@
+"Cryptography can be defined as the practice and study of techniques for secure communication and data protection where we expect the presence of adversaries and third parties." (THM - Cryptography Basics)
+
+- Asymmetric encryption is normally used to generate a secure/encrypted connection to allow parties to exchange a symmetric private key
+	- As asymmetric encryption is slower when compared to symmetric encryption for data transfers
+
 The process of hiding or coding information so that only the person a message was intended for can read it. The art of cryptography has been used to code messages for thousands of years and continues to be used in bank cards, computer passwords, and ecommerce. (Fortinet)
 *please take note that some of the content here will not be encryption - I'll place whatever those entries are in their own section at some stage .. Maybe :) 
 

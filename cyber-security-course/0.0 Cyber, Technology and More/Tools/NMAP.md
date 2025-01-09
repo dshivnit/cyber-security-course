@@ -1,0 +1,120 @@
+- Scanning the network for nodes
+	- IP range using a hyphen (`-`)
+		- `192.168.0.1-10`
+	- Subnet using a forward slash (`/`)
+		- `192.168.0.1/24`
+			- Same as `192.168.0.0-255`
+	- By hostname
+		- `whatever.biz`
+	- `nmap -sn 192.168.0.0/24`
+		- `-sn` is used to discover live hosts without attempting to look at any services/ports that are active/running on them
+		- Doesn't make *too* much noise..
+	- Nmap sends ARP requests to bring in local network device information
+	- You can scan networks that are one hop away - however, layer 2 details such as MAC addresses won't be pulled as we can't arp to that network
+		- It does bring in IP addresses however by sending ICMP (ping) requests
+			- Two of them one to port 443, and one to 80
+		- `-PS[portlist]`, `-PA[portlist]`, `-PU[portlist]` 
+			- for TCP SYN, TCP ACK, and UDP 
+			- *to touch on this later*
+	- `nmap -sL 192.168.0.1/24`
+		- `-sL` will list the 256 (256? Or perhaps 254) targets that will be scanned
+			- It actually will scan 256 nodes, from 0-255.
+		- Assists in confirming the targets before running the scan
+
+- Scanning TCP Ports
+	- Connect Scan
+		- `-sT`
+			- Completes a full three-way handshake (TCP) and if successful Nmap drops the connection straight away (with a RST, ACK)
+			- Loud.
+	- SYN Scan (Stealth)
+		- `-sS`
+		- Only sends the first SYN packet
+		- If a SYN, ACK is received, Nmap then sends only a RST packet
+			- Thus not completing the three-way handshake, so a connection is never truly established but Nmap knows that something had responded, so must be alive. 
+
+- Scanning UDP Ports
+	- DNS, DHCP, NTP, SNMP, VoIP protocols use UDP
+	- `-sU`
+		- The port will either respond or it won't to the UDP packet
+		- A Destination Unreachable response is given (port unreachable) if the port is closed
+
+- Limiting Target Ports
+	- Nmap by default will scan the first common 1000 ports
+	- `-F`
+		- Fast mode
+		- Scans the most 100 commonly used ports as opposed to 1000
+	- `-p[range]`
+		- `-p10-2500` 
+			- Will scan ports 10 to 2500
+	- `-p-`
+		- Will scan all ports, ie `-p1-65535` 
+		- `-p-25`
+			- Will scan ports 1-25
+
+- OS Detection
+	- -O
+		- Enables OS detection
+		- Only indicative
+- Port Service and Version Detection 
+	- `-sV`
+		- Enables version detection
+	- `-A`
+		- Incorporates OS detection, version scanning, traceroute and other detects
+
+- Forcing a Scan
+	- `-Pn`
+	- Say for example if the host that is being scanned doesn't respond to ICMP requests
+		- Nmap will then consider that host to be offline/down, and thus won't run a scan against it
+			- This is a false negative
+	- Nmap can be asked to treat all hosts as online and scan every port on every host, even the ones that didn't reply when we were scanning the network discovering hosts on it
+	- `-Pn`
+
+- Controlling Scan Speed/Timing
+	- `-T[template-number]`
+	- Normal scan speeds may trigger alerts on the receiving end's network/host (IDSs, and so on)
+	- Nmap has six templates that can be used
+		- 0 - paranoid
+		- 1 - sneaky
+		- 2 - polite
+		- 3 - normal
+		- 4 - aggressive
+		- 5 - insane
+- Parallel Probe Control
+	- `--min-parallelism [num-of-probes]` and `--max-parallelism [num-of-probes]`
+	- Controls the number of simultaneous probes against a host/host-group
+	- Nmap will control this by default if not statically defined
+		- if network performance is poor, it will drop the number of simultaneous probes will drop
+		- If network performance is optimal - Nmap will increase the number of simultaneous probes
+	- Simultaneous probes can reach several of hundreds
+	- `--min-rate [number]` and `--max-rate [number]` 
+		- Controls the min and max rates that Nmap will send packets
+			- Based on packets per second
+		- Specified based on the whole scan, not to a single host
+	- `--host-timeout [time]`
+		- Specifies the max time you are willing to wait
+		- Suitable for slow hosts, or hosts with slow network connections
+
+- Controlling Output (what is seen)
+	- Verbosity and Debugging
+		- `-v`
+			- Will show how Nmap is progressing through when scanning one protocol to the next, and so on
+		- `-vv`
+			- Even more verbose/informative
+		- `-vvvv`
+			- And even more.
+		- You can also use options like `-v2`, `-v4` etc
+	- You can also press `v` whilst an active scan is in place to increase verbosity
+	- `-d`
+		- debugging level output
+		- Max level is `-d9`
+
+- Saving Scans
+	- `-oN 'filename'`
+		- Normal output to a file
+	- `-oX 'filename'`
+		- XML output
+	- `-oG 'filename'`
+		- `grep` able output (also useful for `awk`)
+	- `-oA 'filename'`
+		- Outputs in all formats
+	- 
