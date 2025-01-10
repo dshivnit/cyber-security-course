@@ -47,5 +47,62 @@
 - Cookies
 	- Can be used for many purposes but most commonly for Website Authentication. 
 	- Won't usually be a clear plaintext string where you can see the password, but a token
-	- Clear these upon browser-exit everytime please whoever is reading this :) 
-- 
+	- Clear these upon browser-exit every time please whoever is reading this :) 
+
+- Security Headers
+	- Help improve the overall security of a web application by providing mitigations against attacks like XSS, Clickjacking and others.
+	- Some headers:
+		- CSP - Content-Security-Policy
+		- HSTS - Strict-Transport Security
+		- X-content-Type-Options
+		- Referrer-Policy
+- [https://securityheaders.io/](https://securityheaders.io/)
+	- A good tool to check the security headers of any website
+- Content-Security-Policy (CSP)
+	- A CSP Header is an additional layer of security that can assist in mitigating common attacks like XSS (cross-site scripting). 
+	- Malicious code could reside in a different website or domain, and injected into a vulnerable website.
+	- CSPs provide a way for admins to set which domains or sources are considered to be safe and provides a layer of mitigation to such attacks.
+	- Various properties can be defined which give options to define what levels of granularity, domains/sites are allowed for with what type of content.
+	- Example header:
+		- `Content-Security-Policy: default-src 'self'; script-src 'self https://cdn.somethingname.com; style-src 'self'` 
+			- `default-src`
+				- Specifies the default policy of self, which means 'only the current website'
+			- `script-src`
+				- Specifies the policy for where scripts can be loaded from, which is self along withs scripts hosted on the given site afterwards
+			- `style-src`
+				- Specifies the policy for where CSS style sheets can be loaded from
+- Strict-Transport-Security (HSTS)
+	- This header ensures that web-browsers can only connect over HTTPS
+	- Example:
+		- `Strict-Transport-Security: max-age=63000000; includeSubDomains; preload`
+			- `max-age`
+				- Expiry time in seconds for this 'setting'
+			- `includeSubDomains`
+				- Optional
+				- A setting that instructs the browser to apply this setting to all subdomains of a website
+			- `preload`
+				- Optional
+				- Allows the website to be included in 'preload lists'
+				- Browsers can use preload lists to enforce HSTS before even having their first visit to a website that has this enabled
+- X-Content-Type-Options
+	- This header can be used to instruct browsers to NOT guess the MIME type of a resource, but only use the `Content-Type` header. 
+	- Example:
+		- `X-Content-Type-Options: nosniff`
+			- `nosniff`
+				- Tells the browser to not sniff, or guess the MIME type..
+- Referrer-Policy
+	- This header controls the amount of information sent to the destination web server when a user is redirected from a source web server
+		- Say for example when they click a hyperlink
+	- Allows a web-admin to control what information is shared
+	- Examples:
+		- `Referrer-Policy: no-referrer`
+			- Completely disables any information sent about the referrer
+		- `Referrer-Policy: same-origin`
+			- Will only send referrer information when the destination is a part of the same 'origin'
+			- Helpful when you want referrer information passed when hyperlinks are within the same website, but not to external/outside web-systems
+		- `Referrer-Policy: strict-origin`
+			- This policy only sends the referrer as the origin when the protocol stays the same
+				- ie, the referrer is sent when a HTTPS connection goes to another HTTPS connection
+		- `Referrer-Policy: strict-origin-when-cross-origin`
+			- Similar to `strict-origin`, where it sends the full URL path in the origin header
+		- 

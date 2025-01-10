@@ -734,4 +734,21 @@
 - SCM
 	- Service Configuration Manager
 	- Process in charge of managing the state of services as needed, checking the current status of any given service and generally providing a way to configure services
-- 
+- YARA Rule
+	- Yet Another Recursive Acronym
+	- A set of instructions that define the characteristics of a specific type of malware or threat. 
+	- Used for:
+		- Detecting and classifying malicious software
+		- Identifying digital artifacts, such as files and hex sequences
+		- Scanning backups for health and recoverability
+		- Defending against malware
+		- Hunting for bad guys (lel)
+	- Text-based descriptions of patterns that can be used to match against files and processes, they are made up of:
+		- A rule identifier
+		- A description with three sections:
+			- The meta
+			- The strings
+			- The condition
+		- Sets of strings, regular expressions, and condition logic
+		- A syntax that starts with the word "rule"
+	- Highly customisable and can be tailored to meet the requirements of an organisation
