@@ -1,0 +1,25 @@
+- A quick system login password hacking/cracking tool
+- Can brute force some auth services
+- Similar to John
+- https://github.com/vanhauser-thc/thc-hydra
+- https://en.kali.tools/?p=220
+
+- Options that are passed into hydra will depend on which protocol we're focusing on
+- `hydra -l user -P passwordlist.txt ftp://123.123.123.123`
+	- Brute forcing an FTP login with the given username (`-l`) or login name
+	- Using a passwordlist `passwordlist.txt`
+	- and the FTP server
+- `-t`
+	- Set the number of threads to run
+- `hydra -l <username> -P <wordlist-file> <host-ip> <request-type> "<path>:<form-parametres>:<condition string>"
+- Example:
+	- `hydra -l bob -P /usr/share/wordlists/rockyou.txt 123.123.123.123 http-post-form "/login:username=^USER^&password=^PASS^:F=Your username or password is incorrect." -V`
+		- Here are making a POST request via a login form at `http://123.123.123.123/login`
+		- The form fields for:
+			- Username field in the form is named `username`
+			- Password field in the form is named `password`
+			- The `^USER^` and `^PASS^` variables outline the username and password that hydra will use in it's processing
+			- The `F=Your username or password is incorrect.` bit outlines the error message that the web-system gives upon a unsuccessful login attempt
+			- The `-V` here enables each login+pass to be described in every attempt
+- https://en.kali.tools/?p=220
+- 
