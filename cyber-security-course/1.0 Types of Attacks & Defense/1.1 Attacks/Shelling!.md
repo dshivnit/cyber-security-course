@@ -50,6 +50,7 @@ Reverse Shell (aka Connect Back Shell)
 				- That's an example of a reverse shell payload
 
 Bind Shell
+- Connection initiates from the attackers machine to the target machine
 - The bind shell will bind a port on the target system and listen for a connection
 - When the connection comes in, it will expose the shell session so that the attacker can run their commands remotely
 - This alternative to the Remote Shell can be used when the target computer/system doesn't allow outbound connections - but it tends to be less popular since it needs to remain active and listen for connections, which can lead to detection. 

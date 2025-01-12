@@ -752,3 +752,9 @@
 		- Sets of strings, regular expressions, and condition logic
 		- A syntax that starts with the word "rule"
 	- Highly customisable and can be tailored to meet the requirements of an organisation
+- Differential Sync
+	- This has to do with cloud storage, or remote storage
+	- When the app only syncs modified parts of a file that is already in/on online storage, not the entire file. 
+	- Significantly reduces synchronization time, especially when working with large files
+	- Also saves on bandwidth when on metered connections as well.
+- 

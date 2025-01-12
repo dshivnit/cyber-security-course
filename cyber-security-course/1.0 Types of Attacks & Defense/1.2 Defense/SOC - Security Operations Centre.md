@@ -1,4 +1,9 @@
+https://tryhackme.com/r/room/socfundamentals
+And other related labs in TryHackMe
+Also from speaking with people in conversation and general note-taking while perusing the Inter-webs.
+
 24h 7d Operation.
+- The main focus of the SOC Team is to keep **Detection** and **Response** intact. 
 
 - Find vulnerabilities on a network
 	- Outdated systems needing to be patched
@@ -20,11 +25,11 @@ Main Data Sources Used:
 - Server Logs
 	- Always consider the various types of Servers there are in commission 
 	- Logs will detail various, almost every action item that happens on a server, a common one would be numerous incorrect logins which would raise flags
-	- Grep is your friend ^ _ ^ as is le pipe | (not other kinds of pipe, ye twat)
+	- Grep is your friend ^ _ ^ as is pipe | (not other kinds of pipe, ye twat)
 - DNS Activity
 	- Mainly inspecting internal DNS requests
 - Firewall Logs
-	- Logs here can reveal a mass amount of information in regards to what packs are being passed to and from respective networks
+	- Logs here can reveal a mass amount of information in regards to what packets are being passed to and from respective networks
 	- Ability to pick up anomalies and relevant patterns
 - DHCP Logs
 	- In particular new devices that have joined the network (unmanaged devices I'd say)
@@ -63,3 +68,134 @@ Proactive Services
 	- Learning about APTs and potential adversaries, their TTPs
 	- Developing a threat-informed defense
 	- Knowledge is also good. Which is why I'm putting all this stuff together, and sharing - because why not :) (if you're reading, cool (=  ))
+
+- Detect Vulnerabilities
+	- Vulnerabilities aren't necessarily the SOCs responsibility, although, unfixed vulnerabilities affect the security level of the entire company/system. 
+		- For example, unpatched Windows Systems that need to be patched due to a vulnerability that Microsoft has addressed in a new update
+- Detect Unauthorised Activity
+	- Say for example an adversary has been able to get an employees login details
+	- It is imperative for the SOC to be able to pick up this unauthorised access
+		- Analysis into geographic location, device being used, activity/processing that the 'user' is carrying out can assist in finding anomalies
+- Detect Security Policy Violations
+	- A Security Policy is a set of rules and procedures created to help protect a company against security threats and ensure compliance
+		- For example, visiting inappropriate websites, the sending of company confidential data/information to external entities, and so on
+- Detect Intrusions
+	- Refer to the unauthorised access to systems and networks
+
+- Support with Incident Response
+	- When an incident is detected, certain steps are taken to respond to it
+	- Some including:
+		- Minimising the incidents impact on the system(s)
+		- Performing root cause analysis of the incident
+	- The SOC team usually assists the Incident Response Team to carry out these steps
+
+- The Three Pillars of a SOC:
+	- People
+		- Are better able to identify false positives and actual positive alerts
+		- If we were to only rely on the security solutions that are available - we could end up wasting resources on what would otherwise not even be a threat but a somewhat false alarm
+		- CISO >
+			- SOC Manager > 
+			- THE SOC Manager manages the processes the SOC Team will follow and provides suport
+			- Remains in contact with the organisation's CISO to provide him/her/them with updates on the SOC team's current security posture and efforts
+				- SOC Analyst (1)
+					- Anything that is detected by the security solution(s) would pass through this team first
+					- Basic alert triage to determine if a specific detection is harmful, or not
+					- Then the detections/alerts get channeled through to the appropriate team(s)
+				- SOC Analyst (2)
+					- Some detections identified by the L1 team may need deeper investigation
+					- L2 Analysts help to dive deeper into the investigations and correlate data from multiple data sources to perform a proper analysis
+				- SOC Analyst (3)
+					- Experienced pros, who will proactively look for any threat indicators and support in the incident response activities
+					- The critical severity detection reported by L1 and L2 are often security incidents that need detailed responses, including containment, eradication and recovery. 
+					- This is where L3 analysts' experience come in
+				- Security Engineer
+					- All analysts work on security solutions
+					- These solutions will need deployment and configuration
+					- Security Engineers deploy and configure these security solutions to ensure their smooth operation
+				- Detection Engineer
+					- Security rules are the logic built behind security solutions to detect harmful activities
+					- L2 and L3 analysts often create these rules
+					- SOC team(s) can sometimes also utilise the Detection Engineer role independently for this responsibility
+	- Process
+		- Alert Triage
+			- The first response to any alert is to preform triage
+				- Analysing the specific alert
+				- Determining the severity of the alert and to prioritise it
+				- Alert Triage is all about the 5 W's:
+					- What
+					- Where
+					- When
+					- Why
+					- Who
+				- 
+	- Technology
+		- The technological security solutions that a SOC will employ, will massively minimise the SOC Teams' effort in detecting and responding to threats - thus making their output more efficient.
+		- Systems can become vast, with many devices, applications, and people. 
+		- Technological security solutions centralise all the information of the devices and applications present in the network/system and automate the detection and response capabilities
+		- Some solutions:
+			- SIEM - Security Information and Event Management system/tool
+				- Used in almost every SOC.
+				- Collects logs from various network devices, called 'log sources'
+				- Detection rules are configured in the SIEM solution, which contain logic to identify suspicious activity
+				- SIEM solutions provide teams' the detections after correlating them with multiple log sources and alerts the team(s) in case of a math with any of the rules that they have set up. 
+				- Modern SIEMs can provide user behaviour analytics and threat intelligence capabilities. 
+				- Machine learning algorithms support this to enhance the detection capabilities
+				- NOTE: The SIEM solution only provides the **detection** capabilities in a SOC environment
+			- EDR - Endpoint Detection and Response Tool
+				- Provides the Team with detailed -real-time and historical visibility of the devices' activities. 
+				- Operation on the endpoint level and can carry out automated responses
+				- EDR has extensive detection capabilities for endpoints, allowing you to investigate them in detail and respond with a few clicks. 
+			- Firewall
+				- Functions purely for network security and acts like as a barrier between your internal network and external networks
+				- Monitors incoming and outgoing network traffic
+					- Filters any unauthorised traffic
+				- Has some detection rules deployed, which assist in identifying and blocking suspicious traffic before it can reach the internal network
+				- Don't forget about traffic as well - say for example if there was a Reverse Shell set in place by a perpetrator
+			- EPP- Endpoint Protection Platform
+				- Combines multiple security technologies into one platform to prevent and detect threats to endpoint devices
+					- Antivirus
+					- Data Encryption
+					- Data Loss Prevention
+					- Firewall
+					- Intrusion Detection and Prevention
+					- Machine Learning
+					- Behavioural Analysis
+					- Threat Intelligence
+				- Often cloud-managed
+			- IDS/IPS - Intrusion Detection System and Intrusion Prevention System
+				- Security measures that monitor and protect networks from potential attacks:
+				- IDS:
+					- Detects attacks and techniques, but doesn't take action on its own
+					- Often deployed at thee endpoints of a network
+					- Keep records of activity
+					- IDS use signature-based detection, user anomaly, and reputation-based detection
+				- IPS
+					- Stops detected incidents and can take action on its own based on predetermined threat types
+					- IPS are deployed inline, directly between the source and destination
+					- IPS use statistical-based anomaly detection and stateful protocol analysis detection
+			- XDR - Extended Detection and Response
+				- Technology that helps detect and responds to cyber threats
+				- Correlates data from multiple tools, like endpoints, firewalls, emails, servers, and cloud workloads
+				- Uses machine learning and other AI capabilities to analyse the data and correlate alerts into incidents
+			- SOAR - Security Orchestration, Automation and Response
+				- Set of tools and technologies that help organisations manage and respond to cyber threats
+				- Can automate tasks, centralise information, prioritise incidents, integrate security tools, define response procedures..
+				- Examples:
+					- Block communication to a server
+					- Access C&C servers to a quarantined network
+					- Orchestrate changes to firewall rules
+					- Block malicious IOCs
+					- Update blacklists
+- With these pillars, a SOC Team can become mature and efficiently detect and respond to different incidents
+- A team of professional individuals working on state-of-the-art security tools in the presence of proper processes is what makes a SOC environment.
+
+- Reporting
+	- The harmful alerts that would be detected would normally need to be escalated to higher-level analysts for a timely response and resolution.
+	- They would normally be escalated as Tickets and assigned to the relevant people.
+	- The Report should cover the 5-Ws along with a thorough analysis (screenshots, and so on to document)
+
+- Incident Response and Forensics
+	- The reported detections, at times, can point to highly malicious activities that are critical.
+	- High-level Teams will, in these instances, initiate an Incident Response. 
+	- Sometimes, a detailed forensics activity also needs to be performed. 
+	- The forensic activity will aim to determine the incident's root cause by analysing the artifacts from a system or network
