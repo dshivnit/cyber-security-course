@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "1.0 Types of Attacks & Defense/1.2 Defense/Digital Forensics.md",
+                "file": "1.0 Types of Attacks & Defense/1.2 Defense/Firewalls.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Digital Forensics"
+              "title": "Firewalls"
             }
           },
           {
@@ -207,8 +207,15 @@
   },
   "active": "fad9587246be245d",
   "lastOpenFiles": [
-    "1.0 Types of Attacks & Defense/1.2 Defense/SOC - Security Operations Centre.md",
+    "1.0 Types of Attacks & Defense/1.2 Defense/SIEM - Security Information and Events Management (systems).md",
+    "1.0 Types of Attacks & Defense/1.2 Defense/Firewalls.md",
+    "4.0 Networking/Networking.md",
+    "1.0 Types of Attacks & Defense/1.2 Defense/SIEMs (Security Information and Events Management).md",
+    "4.0 Networking/Subnetting.md",
+    "1.0 Types of Attacks & Defense/Logs.md",
+    "1.0 Types of Attacks & Defense/1.2 Defense/Incident Response.md",
     "1.0 Types of Attacks & Defense/1.2 Defense/Digital Forensics.md",
+    "1.0 Types of Attacks & Defense/1.2 Defense/SOC - Security Operations Centre.md",
     "1.0 Types of Attacks & Defense/1.1 Attacks/Shelling!.md",
     "1.0 Types of Attacks & Defense/1.2 Defense/SOC Fundamentals.md",
     "0.0 Cyber, Technology and More/Terminologies.md",
@@ -226,13 +233,6 @@
     "5.0 Programming/5.1 Programming Languages/HTML (Hyper-Text Markup Language).md",
     "5.0 Programming/5.1 Programming Languages/ASM - Assembly Language (and related).md",
     "6.0 Cryptography/Hashing.md",
-    "2025-01-09.md",
-    "0.0 Cyber, Technology and More/Notes/MuckingAroundPage.md",
-    "0.0 Cyber, Technology and More/Notes/Notes.md",
-    "6.0 Cryptography/Cryptography.md",
-    "0.0 Cyber, Technology and More/Tools/NMAP.md",
-    "4.0 Networking/Subnetting.md",
-    "4.0 Networking/Network Administration/tcpdump.md",
     "4.0 Networking/Routing",
     "99.99 Images Used/Pasted image 20250106071646.png",
     "0.0 Cyber, Technology and More/Notes/Miscellaneous",
