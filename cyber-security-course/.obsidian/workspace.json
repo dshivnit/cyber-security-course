@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "1.0 Types of Attacks & Defense/1.2 Defense/Firewalls.md",
+                "file": "1.0 Types of Attacks & Defense/MITRE.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Firewalls"
+              "title": "MITRE"
             }
           },
           {
@@ -207,8 +207,16 @@
   },
   "active": "fad9587246be245d",
   "lastOpenFiles": [
-    "1.0 Types of Attacks & Defense/1.2 Defense/SIEM - Security Information and Events Management (systems).md",
+    "0.0 Cyber, Technology and More/Terminologies.md",
+    "1.0 Types of Attacks & Defense/MITRE.md",
+    "0.0 Cyber, Technology and More/Tools/CAPA.md",
+    "0.0 Cyber, Technology and More/Tools/CyberChef.md",
+    "0.0 Cyber, Technology and More/Tools/Tools.md",
+    "1.0 Types of Attacks & Defense/1.2 Defense/Vulnerability Scanning.md",
+    "1.0 Types of Attacks & Defense/1.2 Defense/IDS - Intrusion Detection System.md",
+    "1.0 Types of Attacks & Defense/1.2 Defense/Untitled.md",
     "1.0 Types of Attacks & Defense/1.2 Defense/Firewalls.md",
+    "1.0 Types of Attacks & Defense/1.2 Defense/SIEM - Security Information and Events Management (systems).md",
     "4.0 Networking/Networking.md",
     "1.0 Types of Attacks & Defense/1.2 Defense/SIEMs (Security Information and Events Management).md",
     "4.0 Networking/Subnetting.md",
@@ -218,21 +226,13 @@
     "1.0 Types of Attacks & Defense/1.2 Defense/SOC - Security Operations Centre.md",
     "1.0 Types of Attacks & Defense/1.1 Attacks/Shelling!.md",
     "1.0 Types of Attacks & Defense/1.2 Defense/SOC Fundamentals.md",
-    "0.0 Cyber, Technology and More/Terminologies.md",
     "1.0 Types of Attacks & Defense/1.1 Attacks/SQL Injections.md",
     "5.0 Programming/5.1 Programming Languages/SQL - Structured Query Language.md",
     "0.0 Cyber, Technology and More/Tools/GoBuster.md",
-    "0.0 Cyber, Technology and More/Tools/Tools.md",
     "1.0 Types of Attacks & Defense/1.1 Attacks/1.1.1 Types of Attacks.md",
     "0.0 Cyber, Technology and More/Commands.md",
     "1.0 Types of Attacks & Defense/Types of Attacks & Defense.md",
     "5.0 Programming/5.1 Programming Languages/Shells/Bash.md",
-    "0.0 Cyber, Technology and More/Tools/Hydra.md",
-    "5.0 Programming/5.1 Programming Languages/JavaScript (JS).md",
-    "4.0 Networking/Protocols/HTTP (Hyper-Text Transfer Protocol).md",
-    "5.0 Programming/5.1 Programming Languages/HTML (Hyper-Text Markup Language).md",
-    "5.0 Programming/5.1 Programming Languages/ASM - Assembly Language (and related).md",
-    "6.0 Cryptography/Hashing.md",
     "4.0 Networking/Routing",
     "99.99 Images Used/Pasted image 20250106071646.png",
     "0.0 Cyber, Technology and More/Notes/Miscellaneous",
