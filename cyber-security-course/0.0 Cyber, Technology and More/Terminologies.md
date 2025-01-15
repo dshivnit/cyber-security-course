@@ -757,4 +757,18 @@
 	- When the app only syncs modified parts of a file that is already in/on online storage, not the entire file. 
 	- Significantly reduces synchronization time, especially when working with large files
 	- Also saves on bandwidth when on metered connections as well.
+- MAEC - Malware Attribute Enumeration and Characterisation
+	- A structured language for attribute-based malware characterisation
+		- For encoding and communicating high-fidelity information about malware based upon attributes such as:
+			- behaviours
+			- artifacts
+			- attack patterns
+- MBC  - Malware Behaviour Catalogue
+- OLE - Object Linking and Embedding
+	- Contains objects from multiple applications
+	- A technology that allows users to share data between applications
+	- OLE file
+- OLE2 - OLE Compound Document Format, Compound Binary Format, Compound Document File Format, Structured Storage, Compound File Binary Format
+	- A Microsoft file format that stores multiple files in a single container
+		- Multiple data types, documents, spreadsheets, presentations - within a single file
 - 

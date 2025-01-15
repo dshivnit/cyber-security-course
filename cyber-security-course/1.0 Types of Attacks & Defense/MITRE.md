@@ -88,4 +88,3 @@ Threat Intelligence (TI) and Cyber Threat Intelligence (CTI)
 - The information and TTPs attributed to an APT
 - We can make better decisions regarding the defensive strategy via the use of TI
 - The goal of threat intelligence is to make the information actionable
-- 
