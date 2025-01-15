@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "0.0 Cyber, Technology and More/Tools/REMnux VM.md",
+                "file": "0.0 Cyber, Technology and More/Tools/FlareVM - Forensics, Logic Analysis, and Reverse Engineering (Arsenal of Tools).md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "REMnux VM"
+              "title": "FlareVM - Forensics, Logic Analysis, and Reverse Engineering (Arsenal of Tools)"
             }
           },
           {
@@ -221,8 +221,9 @@
   },
   "active": "fad9587246be245d",
   "lastOpenFiles": [
-    "0.0 Cyber, Technology and More/Tools/Volatility.md",
     "0.0 Cyber, Technology and More/Tools/REMnux VM.md",
+    "0.0 Cyber, Technology and More/Tools/FlareVM - Forensics, Logic Analysis, and Reverse Engineering (Arsenal of Tools).md",
+    "0.0 Cyber, Technology and More/Tools/Volatility.md",
     "0.0 Cyber, Technology and More/Tools/Bloodhound.md",
     "5.0 Programming/5.1 Programming Languages/Shells/PowerShell.md",
     "4.0 Networking/Networking.md",
@@ -246,7 +247,6 @@
     "1.0 Types of Attacks & Defense/1.2 Defense/Digital Forensics.md",
     "1.0 Types of Attacks & Defense/1.2 Defense/SOC - Security Operations Centre.md",
     "1.0 Types of Attacks & Defense/1.1 Attacks/Shelling!.md",
-    "1.0 Types of Attacks & Defense/1.2 Defense/SOC Fundamentals.md",
     "4.0 Networking/Routing",
     "99.99 Images Used/Pasted image 20250106071646.png",
     "0.0 Cyber, Technology and More/Notes/Miscellaneous",
