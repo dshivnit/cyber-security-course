@@ -1,6 +1,11 @@
 https://github.com/mandiant/flare-vm
 https://tryhackme.com/r/room/flarevmarsenaloftools
 
+- Packed and obfuscation
+	- Obfuscated programs are ones whose execution the malware author has attempted to hide
+	- Packed programs are a subset of obfuscated programs in which the malicious program is compressed and cannot be analysed
+		- (oreilly.com)
+
 - Flare-VM should ONLY be installed on a VM
 - A collection of software installation scripts for Windows systems that allow you to setup (with ease) and maintain a reverse engineering environment on a VM
 - Relies on two technologies (mainly):
@@ -29,6 +34,11 @@ Reverse Engineering and Debugging
 			- A tool for disassembling and decompiling binaries
 		- PEiD
 			- Packer, cryptor, and compiler detection tool
+		- IDA Pro
+			- Interactive Disassembler Professional
+			- Translates Machine Code into Assembly Language
+			- Creates maps of how software executes, showing the binary instructions used by the processor
+			- Can analyse a wide range of executable formats
 
 Disassemblers and Decompilers
 - Crucial tools in malware analysis
@@ -40,6 +50,11 @@ Disassemblers and Decompilers
 		- A debugger, disassembler, and decompiler
 	- RetDec
 		- Open-source decompiler for machine code
+	- IDA Pro
+		- Interactive Disassembler Professional
+		- Translates Machine Code into Assembly Language
+		- Creates maps of how software executes, showing the binary instructions used by the processor
+		- Can analyse a wide range of executable formats
 
 Static and Dynamic Analysis
 - Two crucial methods in cyber security for examining malware
@@ -73,6 +88,7 @@ Network Analysis
 - Some tools:
 	- Wireshark
 		- Network protocol analyser for traffic recording and examination
+		- `ip.addr==10.10.10.10` in the filter field will list any packet that has a reference to IP address 10.10.10.10
 	- Nmap
 		- Vulnerability detection and network mapping tool
 	- Netcat
@@ -104,4 +120,72 @@ SysInternals Suite
 		- Provides information about running processes
 	- Process Monitor
 		- Monitors and logs real-time process/thread activity
-- 
+
+Commonly Used Tools for Investigative Purposes (some):
+- ProcMon - Process Monitor (in Windows)
+	- You can record issues with your systems applications
+	- You can:
+		- see
+		- record
+		- keep track of system and Windows file activity in real-time
+	- Useful for tracking system activity, especially regarding malware research, troubleshooting, and forensic investigations
+	- Keeps real-time tabs on the file system, registry, and thread/process activity
+	- Mimikatz and other tools frequently try to access LSASS memory to try and get credentials if they are held within 
+	- Watching processes like LSASS (Local Security Authority Subsystem Service) and identify any odd patterns or processes reading or writing to lsass.exe
+- ProcExp - Process Explorer (in Windows)
+	- Offers in-depth insights into active processes running on the computer
+	- Allows one to delve into the inner workings of the system, providing a comprehensive list of currently running processes and their linked user accounts
+	- If you've ever been curious about which program is accessing  a specific file or folder, ProcExp can show that information
+- HxD
+	- Quick and flexible hex editor for editing files, memory and drives of any capacity
+	- Can be applied to forensic investigations, data recovery, debugging, and exact manipulation of binary data
+	- Features include, viewing file and memory contents, editing, searching and comparing hex data
+- CFF Explorer
+	- Thanks to CFF Explorer's comprehensive file information, investigators can generate file hashes for integrity verification, authenticate the source of system files, and validate their validity (by perhaps looking for unusual alterations). 
+	- Important to know when analysing malware, as dangerous code may be hidden in altered system files. 
+- Wireshark
+	- Investigators may use Wireshark to hunt down dubious connections, examine protocols, and spot possible assaults or data exfiltration.
+	- Encrypted data - such as those that run in TLS (443) can sometimes be masking harmful activities, or safeguarding normal/legitimate traffic
+- PEStudio
+	- Static analysis
+		- Studying the executable file properties without running the actual code/files
+		- This can be done with PEStudio
+	- Offers a variety of information about a file without putting users in danger of execution, which aids in identifying executables that seem suspect or harmful
+	- Packing and encryption is typical of *dangerous software*
+- FLOSS - FLARE Obfuscated String Solver
+	- Uses advanced static analysis techniques
+	- Automatically extracts and de-obfuscates all strings from malware programs
+	- Like strings.exe, it can enhance the basic static analysis of unkown binaries
+	- FLOSS includes more Python scripts in the script's directory, which can be used to load the script's output into other programs like IDA Pro, or Binary Ninja
+
+Analysing Malicious Files
+- Initial approach
+	- Perform a static analysis on a potentially malicious file
+		- To get information from the binary of it
+	- PEStudio would be a tool to use :) 
+		- Take note that when opening files, allow PEStudio to load the various elements - like Functions, Strings etc
+	- Check the hashes of the file against tools like Virustotal
+	- Also have a look at the comments in PEStudio
+	- The absence of a **rich-header** indicate that the file is potentially packed or obfuscated to avoid detection by static analysis tools. 
+		- Typical behaviour of sophisticated malware that tries to evade detection by altering critical sections of its PE file
+	- The Functions tab list API calls that the file has imported
+		- Also known as the IAT (Import Address Table)
+		- Sort by all Functions by the **blacklist** tab to see which API calls have been flagged
+		- Enables us to understand how malware may behave once it compromises a host
+		- Also look at the names of the API calls that have been made - are there any dodgy ones or ones that seem out of the ordinary??
+	- FLOSS is another tool
+		- Flare Obfuscated String Solver
+		- in PS Console
+			- `FLOSS .\filename.exe > filename.txt`
+			- Examine the contents
+			- Any links of the functions that were seen in PEStudio?
+	- Analysing with ProcExp and ProcMon
+		- ProcExp
+			- Checking to see if executables or files are making any network connections (properties > TCP/IP) via ProcExp
+		- ProcMon
+			- Then use ProcMon to analyse the same file
+			- (rerun it)
+			- If you were able to identify that the process/file was making an outbound connection or inbound - a network connection to another entity in the previous analysis with ProcExp - then you should be able to see that same operation happening when you run the file and analyse it with ProcMon
+				- Thus giving more reliance on the findings you are coming across
+				- (note, a program can run thousands of operations within a second)
+			- 

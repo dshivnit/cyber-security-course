@@ -771,4 +771,37 @@
 - OLE2 - OLE Compound Document Format, Compound Binary Format, Compound Document File Format, Structured Storage, Compound File Binary Format
 	- A Microsoft file format that stores multiple files in a single container
 		- Multiple data types, documents, spreadsheets, presentations - within a single file
+- LSASS
+	- Local Security Authority Subsystem Service
+	- Handles authentication and frequently communicates with crucial system files such as lsasrv.dll
+- LSASRV
+	- Local Security Authority Server Service
+- Big-endian and Little-Endian
+	- Two ways of storing bytes in computer memory
+	- Endianness - refers to the order in which bytes are stored
+	- Big-Endian
+		- The most significant byte is stored at the lowest memory address
+		- Used in network communications and file storage
+	- Little-Endian
+		- The least significant byte is stored at the lowest memory address
+		- Used in SMB protocol
+	- Endianness is important when transferring data between systems or processing data on systems with different endianness
+	- Also important when using Unicode characters, which require a Byte Order Mark (BOM) to indicate the endian order of the incoming stream
+- BOM - Byte Order Mark
+	- A sequence of bytes that indicates how a text file is encoded
+	- It's placed at the beginning of a text file or stream
+	- Tells the reader how to decode the text into characters
+	- Identifies the encoding scheme used
+	- Indicates the byte order of the text
+	- Commonly used in XML files
+	- Optional for UTF-8
+	- Required for UTF-16 and UTF-32
+- Packed and obfuscation
+	- Obfuscated programs are ones whose execution the malware author has attempted to hide
+	- Packed programs are a subset of obfuscated programs in which the malicious program is compressed and cannot be analysed
+		- (oreilly.com)
+- IAT
+	- Import Address Table
+	- A file that has imported a number of API calls
+	- When doing a static analysis of a file to investigate for malicious intent/processing/things
 - 
