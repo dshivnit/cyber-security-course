@@ -1,0 +1,11 @@
+- Aims to achieve the confidentiality pillar by specifying these rules:
+	- Simple Security Property
+		- Referred to as "no read up" 
+		- States that a subject at a lower security level cannot read an object at a higher security level 
+		- Prevents access to sensitive information above the authorised level
+	- Star Security Property
+		- Referred to as "no write down"
+		- States that a subject at a higher security level cannot write to an object at a lower security level
+		- Prevents the disclosure of sensitive information to a subject of lower security level
+	- Discretionary-Security Property
+		- Uses an access matrix to allow read and write operations

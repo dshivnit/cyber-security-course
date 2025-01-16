@@ -804,4 +804,7 @@
 	- Import Address Table
 	- A file that has imported a number of API calls
 	- When doing a static analysis of a file to investigate for malicious intent/processing/things
-- 
+- CTEM
+	- Continuous Threat Exposure Management
+- PTaaS
+	- Penetration Testing as a Service

@@ -1,0 +1,2 @@
+- A computer security model that outlines how to securely create, delete, and assign access rights to objects and subjects. 
+- Primarily used in access control mechanisms for distributed systems
