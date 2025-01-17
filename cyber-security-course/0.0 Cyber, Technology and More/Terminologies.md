@@ -808,3 +808,13 @@
 	- Continuous Threat Exposure Management
 - PTaaS
 	- Penetration Testing as a Service
+- LSA
+	- Local Security Authority
+- LSA Protection
+	- Local Security Authority Protection
+	- A Windows security feature that protects sensitive information like passwords and credentials from theft
+	- It does this by preventing untrusted code from being injected into the LSA process and by blocking process memory dumping
+- Data Egress
+	- Refers to data leaving a system or network
+- Data Ingress
+	- Refers to data entering a system or network

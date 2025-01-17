@@ -3,6 +3,14 @@
 - Applied to cybersecurity solutions like Cisco Security, SentinelOne and SOCRadar to improve the effectiveness of Cyber Threat Intelligence (CTI)
 - David Blanco - "the amount of pain you cause an adversary depends on the types of indicators you are capable to make use of."
 
+From the bottom-up, the pyramid:
+- Hash Values - Trivial
+- IP Addresses - Easy
+- Domain Names - Simple
+- Network/Host Artifacts - Annoying
+- Tools - Challenging
+- TTPs - Tough!
+
 - Hash Values
 	- Easily manipulated by adjusting the hash
 		- ie adding some text to the end of the file (regardless if it's an executable)

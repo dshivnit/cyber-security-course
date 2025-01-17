@@ -1,0 +1,186 @@
+https://tryhackme.com/r/room/unifiedkillchain
+
+- Created by Paul Pols' in 2017
+- Aims to complement, NOT compete, with other cybersecurity kill chain frameworks, such as the Lockheed Martin's one (Cyber Kill Chain) and MITRE's ATT&CK
+- Establishing a good cybersecurity posture
+- Understanding an attacker's motivation, methodologies and tactics
+- Phases of the Unified Kill Chain
+- A framework that is used to complement other frameworks such as MITRE
+- Modern and extremely detailed
+
+- Kill Chain
+	- A methodology/path that attackers use to approach and intrude a target
+- Objective is to understand an attacker's "Kill Chain" so that defensive measures can be put in place to either pre-emptively protect a system, or disrupt an attacker's attempt. 
+
+- Threat Modelling
+	- A series of steps to ultimately improve the security of a system.
+	- Identifying risk, and essentially boils down to:
+		- Identifying what systems and applications need to be secured and what function they serve in the environment
+		- ie - is the system critical to normal operations, and is a system holding sensitive information related to PCI or PII
+	- Assessing what vulnerabilities and weaknesses these systems and applications may have and how they could be potentially exploited
+	- Creating a plan of action to secure these systems and applications from the vulnerabilities highlighted
+	- Putting in policies to prevent these vulnerabilities from occurring again where possible 
+	- Threat modelling is an important procedure in reducing the risk within a system or application
+	- It creates a high-level overview of an organisation's IT assets and the procedures to resolve vulnerabilities
+	- Can help identify potential attack surfaces and how these systems may be exploited
+	- Some frameworks used in Threat Modelling:
+		- STRIDE
+			- Spoofing, Tampering, Repudiation, Information disclosure, Denial of service, Elevation of privilege
+		- DREAD
+			- Risk Assessment model
+			- Quantitative method of calculating the severity of a threat using a scaled grading system so that high severity concerns can be addressed first
+		- PASTA
+			- Process for Attack Simulation and Threat Analysis
+		- CVSS
+			- Common Vulnerability Scoring System
+			- Public framework for rating the severity and characteristics of security vulnerabilities in information systems
+	- 18 Phases:
+		- Reconnaissance
+			- Researching, identifying and selecting targets using active or passive reconnaissance
+		- Weaponisation
+			- Preparatory activities aimed at setting up the infrastructure required for the attack
+		- Delivery
+			- Techniques resulting in the transmission of a weaponised object to the targeted environment
+		- Social Engineering
+			- Techniques aimed at the manipulation of people to perform unsafe actions
+		- Exploitation
+			- Techniques to exploit vulnerabilities in systems that may, amongst others, result in code execution
+		- Persistence
+			- Any access, action or change to a system that gives an attacker persistent presence on the system
+		- Defense Evasion
+			- Techniques an attacker may specifically use for evading detection or avoiding other defenses
+		- Command and Control
+			- Techniques that allow attackers to communicate with controlled systems within a target network
+		- Pivoting
+			- Tunneling traffic through a controlled system to other systems that are not directly accessible
+		- Discovery
+			- Techniques that allow an attacker to gain knowledge about a system and its environment
+		- Privilege Escalation
+			- The result of techniques that provide an attacker with higher permissions on a system or network
+		- Execution 
+			- Techniques that result in execution of attacker-controlled code on a local or remote system
+		- Credential Access
+			- Techniques resulting in the access of, or control over, system, service or domain credentials
+		- Lateral Movement
+			- Techniques that enable an adversary to horizontally access and control other remote systems
+		- Collection
+			- Techniques used to identify and gather data from a target network prior to exfiltration
+		- Exfiltration
+			- Techniques that result or aid an attacker removing data from a target network
+		- Impact
+			- Techniques aimed at manipulating, interrupting, or destroying the target system or data
+		- Objectives
+			- Socio-technical objectives of an attack that are intended to achieve a strategic goal
+
+Phase: In (Initial Foothold)
+- Main focus for these phases is for an attacker to gain access to a system or networked environment
+- Will employ multiple practice to investigate the system for potential vulnerabilities that can be exploited to gain a foothold in the system
+	- ie the use of reconnaissance against a system to discover potential attack vectors (such as appliances and services)
+- These series of phases also accommodate for the attacker to create a form of persistence
+- Will often use a combination of the tactics/phases here
+- Phases:
+	- Reconnaissance
+		- MITRE Tactic TA0043
+		- Techniques that an adversary employs to gather information relating to their target
+		- Can be achieved through means of passive and active reconnaissance
+		- Information gathered here will be used throughout later stages and through the UKC (pretty much the initial grasp/foothold that will lay the structure of the things to come)
+	- Weaponisation
+		- MITRE Tactic TA0001
+		- Describes the adversary setting up the necessary infrastructure to perform the attack
+		- Could be setting up a C2 server, or a system capable of catching reverse shells and delivering payloads to the system
+	- Delivery
+	- Social Engineering
+		- MITRE Tactic TA0001
+		- Describes techniques that an adverary can employ to manipulate employees to perform actions that will aid in the attack
+			- Getting a user to open malware
+			- Impersonating a web page and having the user enter their credentials, phishing
+			- Calling or visiting the target and impersonating a user or worker
+	- Exploitation
+		- MITRE Tactic TA0002
+		- Describes how an attacker can take advantage of weaknesses or vulnerabilities present in a system
+		- Abuse of vulnerabilities to perform code execution (UKC definition)
+			- Uploading and executing a revshell to a web application
+			- Interfering with an automated script on the system to execute code
+			- Abusing a web application vulnerability to execute code on the system it is running on
+	- Persistence
+		- MITRE Tactic TA0003
+		- Describes techniques to maintain access to a system that the attacker has been able to get access to (maintain that access for later days/times)
+			- Creating a service on the target system that will allow access to be regained later
+			- Adding the target system to a C2 server where commands can be executed at any time
+			- Leaving backdoors that execute when a certain action occurs on the system (like a revshell being initiated when a user logs in)
+	- Defense Evasion
+		- MITRE Tactic TA0005
+		- Understanding the techniques an adversary uses to evade defensive measures 
+			- WAF
+			- Network Firewalls
+			- Anti-virus systems on devices
+			- IDSs
+	- Command and Control
+		- Combines the efforts of an attacker made during the 'weaponisation' phase to establish communications between the adversary and the target system
+			- Execute commands (from the C2 server)
+			- Steal data, credentials and other information
+			- Use the C2 server to pivot to other systems on the focused network
+	- Pivoting
+		- MITRE tactic TA0008
+		- A technique that an adversary will use to reach other systems within a network that are not otherwise accessible
+			- Like ones that are not exposed to the Internet for example!
+
+Phase: Through (Network Propagation)
+- Follows a successful foothold being established on a target network
+- An adversary would seek to gain additional access and privileges to systems and data to fulfill their goals
+- The attacker would set up a base on one of the systems to act as their pivot point, and use it to gather information about the internal network
+- Phases:
+	- Pivoting
+		- Mitre Tactic TA0008
+		- Once access has been gained, an attacker will use it as their staging ground and a tunnel between their command operations and the victim's network
+		- The system will be used as the distribution point for all malware and backdoors at later stages
+	- Discovery
+		- MITRE Tactic TA0007)
+		- Would uncover information about the system and the network it is connected to
+		- A knowledge base would be created from the active user accounts, the permissions they have, applications and software that is in use, web browser activity, files, directories and network shares, along with system configurations. 
+			- And anything else that can describe the target system and its entities
+	- Privilege Escalation
+		- MITRE Tactic TA0004
+		- Using the knowledge gained, the attackers would try to gain more prominent permissions within the pivot system
+		- They will attempt to leverage the information on the accounts present with vulnerabilities and misconfigurations found to elevate their access to one of the following elevations:
+			- SYSTEM/ROOT
+				- aka GOD
+			- Local Administrator
+			- A user account with Admin-like access
+			- A user account with specific access and/or functions
+	- Execution
+		- MITRE Tactic TA0002
+		- This is where malicious code is deployed using the pivot system as the host
+		- Remote trojans, C2 scripts, malicious links and scheduled tasks are deployed and created to facilitate a recurring presence on the system and uphold their persistence
+	- Credential Access
+		- MITRE Tactic TA0006
+		- Working hand in hand with the Privilege Escalation stage, adversaries will attempt to steal account names and passwords through various methods, including key logging and credential dumping
+		- Makes it harder for defense teams/systems to detect because the attacker is logged in using legitimate credentials
+	- Lateral Movement
+		- MITRE Tactic TA0008
+		- With the credentials and elevated privileges gained, attackers will seek to move through the network and hop on to other targeted systems to achieve their primary objective
+		- The stealthier the technique used, the better
+
+Phase: Out (Action on Objectives)
+- Wraps up the adversary's attack journey
+- They now have critical access and can carry out their attack goals
+- These goals are usually towards compromising the confidentiality, the integrity, and/or the availability of the system(s)
+- Tactics:
+	- Collection
+		- MITRE Tactic (TA0009)
+		- Attackers will be wanting to gather all the valuable data of interest
+		- Compromises the confidentiality of the data
+		- Once gathered, it would be time to exfiltrate that data/information
+	- Exfiltration
+		- MITRE Tactic TA0010
+		- The gathered data/information could be packaged and perhaps encrypted so as to avoid any detection
+		- Using C2 channels and tunnels deployed in earlier phases, could perhaps be used to exfiltrate the information gathered
+	- Impact
+		- MITRE Tactic T0040
+		- If the attackers want to compromise the integrity and availability of data assets, they would then manipulate, interrupt or destroy those assets
+		- The goal would then be to disrupt business and operational processes and may involve removing account access, disk wipes, data encryption, defacement and DoS attacks
+	- Objectives
+		- Attackers, with all the access and pull gained on the system, will then carry out their desired intentions/objectives
+		- Examples:
+			- Financial motivation - seek to encrypt files and ask for payment for the files/data to be decrypted so that the company can access them again
+			- Reputation damage - seek to release private and confidential information to the public. Perhaps take down services that the company provide to the public so that their service reputation is jarred to the face of the public, thus leading to loss of business/sales and so on

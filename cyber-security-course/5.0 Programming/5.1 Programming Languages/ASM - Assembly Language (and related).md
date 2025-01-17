@@ -1,5 +1,6 @@
 References:
 https://pwn.college/computing-101/your-first-program/
+https://pwn.college/computing-101/hello-hackers/
 
 All roads lead to the CPU:
 
@@ -398,4 +399,9 @@ Moving Between Registers
 		- Depending on your assembler, it might expect DWORD instead of DWORD PTR
 - Other Memory Regions
 	- *to describe later..*
-	- 
+
+The `write` system call
+- Writes output to the command-line terminal
+- Writing to the raw x86 assembly that the CPU directly understands..
+- Triggering system calls directly
+- 
