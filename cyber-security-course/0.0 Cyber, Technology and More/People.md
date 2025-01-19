@@ -113,4 +113,5 @@
 - Ada Lovelace
 - Thomas Edison
 - Grace Hopper
+- Florian Roth
 - 
