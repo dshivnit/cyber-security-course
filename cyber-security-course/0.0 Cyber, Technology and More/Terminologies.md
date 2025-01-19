@@ -848,4 +848,10 @@
 		- (foresite.com)
 - RTSP
 	- Real-Time Streaming Protocol
-- 
+- Signed (numbers)
+	- Can represent both positive and negative numbers
+- Unsigned (numbers)
+	- Represents only non-negative numbers
+- ELF
+	- An elf file is
+		- an executable and linkable format file

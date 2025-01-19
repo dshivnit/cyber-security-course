@@ -110,4 +110,7 @@
 		- Mathematician 
 - Kathleen Booth
 	- Invented Assembly (1940s/1950s)
+- Ada Lovelace
+- Thomas Edison
+- Grace Hopper
 - 

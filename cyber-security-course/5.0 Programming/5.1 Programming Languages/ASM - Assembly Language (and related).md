@@ -534,4 +534,263 @@ Writing Output
 		- Third **parameter** via the `rdx` register
 			- `rdi` (the register holding the first parameter) has such a similar name to `rdx` that it's really easy to mix up, and the naming is this way for historic reasons .
 		- And the `write` syscall index into `rax` itself: `1` 
-		- 
+
+Control Flow (making decisions)
+	https://www.youtube.com/watch?v=0a8NlF7z7Ro
+	https://en.wikibooks.org/wiki/X86_Assembly/Control_Flow
+- Assembly instructions are direct translations of binary code
+	- The binary code lives in memory when the program is loaded
+	- And is then passed directly into the CPU
+- Example:
+	- Program Binary Code | 0x400800 `pop rax` | `pop rbx` | `add rax, rbx` | `push rax` 
+- The above in Hex would look like:
+	- Program Binary Code | 0x400800 `58` | 0x400801 `5b` | 0x400802 `48 01 d8` | 0x400805 `50` 
+- As you can see above, Assembly is a **direct translation** of Binary Code!
+- x86 is what is called a Variable-Width architecture
+	- (whereas ARM is a Fixed-Width architecture)
+
+Control Flow - Jumps
+- CPUs execute instructions in sequence until told not to 
+- One way to interrupt the sequence is with a `jmp` instruction:
+	```asm
+		mov cx, 1337
+		jmp STAY_LEET
+		mov cx, 0
+	STAY_LEET:
+		push rcx
+	```
+- Would look like, firstly:
+	- Program Binary Code | 0x400800 `mov cx, 1337` | `jmp STAY_LEET` | `mov cx, 0` | STAY_LEET `push rcx`
+- Translated into Binary would look like:
+	- Program Binary Code | 0x400800 `66 b9 37 13` (notice the little endian 37 13 for 1337) | 0x400804 `eb 04` (**skip 4 bytes** - hence the 04) | 0x400806 `66 b9 00 00` | STAY_LEET 0x40080a `51` 
+- `jmp` skips X bytes and then resumes execution. 
+	- `eb` is for the `jmp` instruction
+	- `eb fe` will jump back to the start of the instruction (like `-2`)
+		- `eb fe` is an infinite loop in x86
+- `jmp` is useful for embedding data in the code
+
+Control Flow - Conditional Jump
+- Jumps can rely on conditions
+	```asm
+	mov cx, 1337
+	jnz STAY_LEET
+	mov cx; 0
+	STAY_LEET:
+	push rcx
+	```
+- The above would look like, firstly:
+	- Program Binary Code | 0x400800 `mov cx, 0x1337` | `jmp STAY_LEET` | `mov cx, 0` | STAY_LEET `push_rcx`
+- In Binary:
+	- Program Binary Code | 0x400800 `66 b9 37 13` | 0x400804 `75 04` | 0x400806 `66 b9 00 00` | STAY_LEET 0x40080a `51`
+- `jnz` - But jump if **what** is not zero...? 
+	- What we checked last for equality
+	- First check things, and then you take actions on the checked things
+	- (*will continue this after the list of `jmp` conditions below*)
+- Jump Conditions:
+	- `je` - jump if equal
+	- `jne` - jump if not equal
+	- `jg` - jump if greater
+	- `jl` - jump if less
+	- `jle` - jump if less than or equal
+	- `jge` - jump if greater than or equal
+	- `ja` - jump if above (unsigned)
+	- `jb` - jump if below (unsigned)
+	- `jae` - jump if above or equal (unsigned)
+	- `jbe` - jump if below or equal (unsigned)
+	- `js` - jump if signed
+	- `jns` - jump if not signed
+	- `jo` - jump if overflow
+	- `jno` - jump if not overflow
+	- `jz`- jump if zero
+	- `jnz` - jump if not zero
+
+Control Flow - Conditions
+- Conditional jumps check Conditions stored in the "flags" register: `rflags`
+	- https://en.wikipedia.org/wiki/FLAGS_register
+	- `rflags` hold a bunch of bits representing condition flags
+- Flags are updated by:
+	- Most arithmetic instructions
+	- Comparison instruction `cmp` (**sub**, but discards result)
+	- Comparison instruction `test` (**and**, but discards result)
+- Main conditional flags:
+	- **Carry Flag** CF: 
+		- was the 65th bit 1 (the extra bit)?
+		- "in this last 64-bit, 32-bit (or 8-bit) operation, was the extra bit, 1? Was the carry bit, 1?"
+	- **Zero Flag** ZF: 
+		- was the result 0? 
+	- **Overflow Flag** OF: 
+		- did the result "wrap" between positive to negative? 
+	- **Signed Flag** SF: 
+		- was the result's signed bit set (ie was it negative)?
+- Common patterns:
+	```asm
+	cmp rax, rbx: ja STAY_LEET # unsigned rax > rbx. 0xffffffff >= 0
+	cmp rax, rbx; jle STAY_LEET # signed rax <= rbx. 0xffffffff = -1 < 0
+	test rax, rax; jnz STAY_LEET  # rax != 0
+	cmp rax, rbx; je STAY_LEET # rax == rbx
+	```
+	- **Thanks to Two's Complement, only the *jumps themselves* have to be signedness-aware**
+- Jump Conditions with `rflags` (same as above with an additional column)
+	- `je` - ZF=1
+	- `jne` - ZF=0
+	- `jg` - ZF=0 and SF=OF
+	- `jl` - SF!=OF
+	- `jle` - ZF=1 or SF!=OF
+	- `jge` - SF=OF
+	- `ja` - CF=0 and ZF=0
+	- `jb` - CF=1
+	- `jae` - CF=0
+	- `jbe` - CF=1 or ZF=1
+	- `js` - SF=1
+	- `jns` SF=0
+	- `jo` - OF=1
+	- `jno` - OF=0
+	- `jz` - ZF=1
+	- `jnz` ZF=0
+- We don't tend to normally deal with the `rflags`  directly but use the semantic jump conditions more (as previously stated above prior to the addition of the `rflags` column)
+
+Looping
+- With our conditional jumps, we can implement a loop (think of the usual for, while etc)
+- Example (this counts to 10):
+	```asm
+	mov rax, 0
+	LOOP_HEADER:
+	inc rax
+	cmp rax, 10
+	jb LOOP_HEADER # if rax is less than 10, jump back to LOOP_HEADER
+	# now rax is 10
+	```
+- With looping and conditional control flow, we have almost everything we need to write anything we want
+
+Control Flow - Function Calls
+- Assembly code is split into functions with `call` and `ret`. 
+- `call` - pushes `rip` (address of the next instruction after the call) and jumps away
+- `ret` - pops `rip` and jumps to it
+- Using a function that takes an **authenticated** value and returns **leetness**:
+	```asm
+	mov rdi, 0
+	call FUNC_CHECK_LEET # pushing the value of rdi (0) on to FUNC_CHECK_LEET (below)
+	mov rdi, 1
+	call FUNC_CHECK_LEET # pushing the value of rdi (1) on to FUNC_CHECK_LEET (below)
+	call EXIT
+
+	FUNC_CHECK_LEET:
+		test rdi, rdi
+		jnz LEET # jump if rdi is not zero, call LEET (below)
+		mov ax, 0  
+		ret # otherwise return 0 and pop rip
+		LEET:
+		mov ax, 1337 
+		ret # return 1337 and pop rip  
+
+	FUNC_EXIT:
+		???
+	```
+- In code:
+	```C
+	int check_leet(int authed) {
+		if (authed) return 1337;
+		else return 0;
+	}
+int main() {
+	check_leet(0);
+	check_leet(1);
+	exit()
+}
+	```
+
+Calling Conventions
+- Calle and caller functions must agree on argument passing.
+	- **Linux x86**
+		- push arguments (in reverse order), then call (which pushes return addresses), return value in `eax` 
+	- **Linux amd64**
+		- `rdi`, `rsi`, `rdx`, `rcx`, `r8`, `r9`, return value in `rax`
+	- **Linux arm**
+		- `r0`, `r1`, `r2`, `r3` return value in `r0`
+- Registers are *shared* between functions, so calling conventions should agree on what registers are **protected**. 
+- **Linux amd64**
+	- `rbx`, `rbp`, `r12`, `r13`, `r14`, `r15` are "**callee-saved**"
+		- (the function you call keeps their values safe on the stack)
+			- It will return these registers back in the same way that the function found them on the stack
+				- After modifying them
+				- Before returning these registers it will pop them off
+		- Other registers are up for grabs
+			- (within reason; eg - `rsp` must be maintained - temporary storage of things). 
+			- Save their values (on the stack)
+	- If you don't want `rcx` to be destroyed by function calls, then save it, on to the stack - push it, then pop it after you call the function
+		- This is called caller-save registers
+
+Building Programs
+https://www.youtube.com/watch?v=IITocH-WGH4
+- From Assembly to Binary
+	```asm
+	# .intel_syntax tells the assembler that we are using Intel assembly syntax
+	# noprefix tells it that we will not prefix all register names with "%" (cause that looks silly, lol Yan)
+	.intel_syntax noprefix
+	.global _start
+	start_:
+	mov rdi, 42 # our program's return code (eg for bash scripts)
+	mov rax, 60 # system call number of exit()
+	syscall # do the system call
+	```
+- Assembly is named after the Assembler. Let's use the Assembler (but using the whole package this time, not just `as`)
+	- `gcc -nostdlib -o filetocompile filetocompile.s`
+		- `nostdlib` - this is NOT a C that uses C libraries
+	- `file filetocompile`
+	- You truncate one step here compared to the other way of compiling that was described earlier above (or way up above ...) that being having to use the Link Editor command `ld -o exe asm.o` for example
+- Reading Assembly
+	- **Disassemble** the program!
+	- `objdump -M intel -d filetodisassemble`
+- Extracting the Binary Code
+	- gcc builds your Assembly into a full ELF (executable and linkable format) program
+	- You can extract *just* your binary code:
+		- `objcopy --dump-section .text=file-to-extract_binary_code file-to-extract`
+		- This will then produce a file called 'file-to-extract_binary_code' 
+		- You can read its contents by:
+			- `hd file-to-extract_binary_code`
+			- Which will then get you your binary code
+			- `hd` here is HEX DUMP
+
+Bugs in the Program
+- Your program might have errors
+- This has been prophesised for centuries (lol)
+	- *"... an analysing process must equally have been performed in order to furnish the Analytical Engine with the necessary operative data; and that herein may also lie a possible source of error.* 
+	  *Granted that the actual mechanism is unerring in its process, the cards may give it wrong orders"*
+		  Ada Lovelace - Notes on the Analytical Engine (1843)
+- Debugging bugs through the ages
+	- The term "bug" to mean "fault" dates back a long time:
+		- "*... difficulties arise-this thing gives out and \[it is\] then that "Bugs" - as such little faults and difficulties are called - show themselves*"
+			  Thomas Edison - letter (1878)
+- Popularly attributed to Grace Hopper for finding a moth in a computer - lol an actual bug... 
+- To remove bugs, you need to debug them (thanks Yan)
+- Debugging
+	- Debugging is done with debuggers, such as `gdb`
+	- Debuggers use (among other methods), a special debug instruction:
+		```asm
+		mov rdi, 42 // our program's return code (ie for bash scripts)
+		mov rax, 60 // system call number for exit()
+		int3 // trigger the debugger with a breakpoint
+		syscall // do the system call
+		```
+	- When the `int3` breakpoint instruction executes, the debugged program is interrupted and you can inspect its state
+	- Of course, the debugger itself can set breakpoints:
+		- Overwrites the instruction at the breakpoint address with `int3`
+		- Emulates its effects when the breakpoint is executed instead
+	- (pwn.college Assembly Crash Course has an automatic debugger that has been provided for us/you/me - putting in an `int3` is the way to use it.)
+	- Note: `int3` or interrupter 3 - will need to have an associated debugger attached. Otherwise the process is going to die
+
+Other Resources
+- `gdb` - the go-to debugging experience
+- `strace` - lets you figure out how your program is interacting with the OS
+	- A good first stop for debugging
+- `Rappel` - lets you explore the effects of instructions
+	- https://github.com/yrp604/rappel
+	- Installable via https://github.com/zardus/ctf-tools
+- Documentation of x86
+	- Opcode listing by byte value:
+		- http://ref.x86asm.net/coder64.html
+	- Instruction documentation:
+		- https://www.felixcloutier.com/x86/
+	- Intel's x86_64 architecture manual:
+		- http://www.intel.com/content/dam/www/public/us/en/documents/manuals/64-ia-32-architectures-software-developer-instruction-set-reference-manual-325383.pdf
+	- 
