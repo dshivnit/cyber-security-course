@@ -1,3 +1,6 @@
+- 42
+	- Forty-two is the ASCII code for the symbol * also known as the asterisk. This symbol is often thought to translate to anything or everything. In this instance, 42 = **everything, the meaning of life**.
+
 *Rationalise/organise these ...*
 - CERT NZ (Computer Emergency Response Team)
 - PIP - Preferred Installer Program (heck I thought this was the Python installer program..)
@@ -818,3 +821,31 @@
 	- Refers to data leaving a system or network
 - Data Ingress
 	- Refers to data entering a system or network
+- TAXII
+	- Trusted Automated eXchange of Indicator Compromise
+	- https://oasis-open.github.io/cti-documentation/taxii/intro
+- DOM
+	- Document Object Model
+- YARA
+	- Yet Another Recursive Acronym
+	- Set of instructions that help identify and classify malware
+- JA3 fingerprint
+	- A unique identifier for a client's TLS configuration
+	- a 32-character hash that's created from the TLS Client Hello packet of an incoming request
+- MISP Event
+	- A structured unit of threat intelligence that groups related information together. 
+	- Events are the main way that users interact with data in the MISP threat sharing platform
+- ASN
+	- Autonomous System Number
+	- A unique number that identifies a group of IP Networks (or an Autonomous System)
+	- ASNs are used to exchange routing information between ASs and ISPs (Internet Service Providers)
+- AS
+	- Autonomous System
+- NSM
+	- Network Security Monitoring
+	- Critical component of an organisations cybersecurity strategy
+	- Involves the use of various tools and processes to continuously monitor and analyse network traffic and activities for the detection and response to security threats
+		- (foresite.com)
+- RTSP
+	- Real-Time Streaming Protocol
+- 

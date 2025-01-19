@@ -400,8 +400,138 @@ Moving Between Registers
 - Other Memory Regions
 	- *to describe later..*
 
-The `write` system call
-- Writes output to the command-line terminal
-- Writing to the raw x86 assembly that the CPU directly understands..
-- Triggering system calls directly
-- 
+System Calls
+https://blog.rchapman.org/posts/Linux_System_Call_Table_for_x86_64/
+- An instruction that makes a call to the OS
+- `syscall` triggers the system call specified by the value in `rax`
+- Arguments in `rdi`, `rsi`, `rdx`, `r10`, `r8`, and `r9` retun value in `rax`
+- Reading 100 bytes from stdin to the stack:
+- `n = read(0, buf, 100);`
+	```asm
+	mov rdi, 0 # the stdin file descriptor
+	mov rsi, rsp # read the data onto the stack
+	mov rdx, 100 # the number of bytes to read
+	mov rax, 0 # system call number of read()
+	syscall # do the system call
+	```
+- `read` returns the number of bytes read via `rax`, so we can easily `write` them out:
+- `write(1, buf, n);`
+	```asm
+	mov rdi, 1 # the stdout file descriptor
+	mov rsi, rsp # write the data from the stack
+	mov rdx, rax # the number of bytes to write (same as what we read in)
+	mov rax, 1 # system call number of write()
+	syscall # do the system call
+	```
+- System calls have  very well-defined interfaces that very rarely change
+- There are over 300 syscalls in Linux, here are some examples:
+- `int open(const char *pathname, int flags)`
+	- Returns a file new descriptor of the open file (also shows up in /proc/self/fd!)
+- `ssize_t read (int fd, void *buf, size_t count)` 
+	- Reads data from the file descriptor
+- `ssize_t write(int fd, void *buf, size_t count)`
+	- Writes data to the file descriptor
+- `pid_t fork()`
+	- Forks off an identical child process.
+	- Returns 0 if you're the child and the PID of the child if you're the parent
+- `int execve(const char *filename, char **argv, char **envp)`
+	- Replaces your process
+- `pid_t wait(int *wstatus)`
+	- Wait child termination, returns its PID, write its status into `*wstatus`
+
+"String" Arguments
+- ASCII bytes
+- Syscalls take "string" arguments (for example, file paths)
+- A string is a bunch of contiguous bytes in memory, followed by a `0` byte
+- Building a file path for `open()` on the stack:
+	```asm
+	mov BYTE PTR [rsp+0], '/' # write the **ASCII** value of '/' onto the stack
+	mov BYTE PTR [rsp+1], 'f'
+	mov BYTE PTR [rsp+2], 'l'
+	mov BYTE PTR [rsp+3], 'a'
+	mov BYTE PTR [rsp+4], 'g'
+	mov BYTE PTR [rsp+5], 0 # write the 0 byte that will terminate our string
+	```
+	- The stack would then somewhat look like this (remember this is in **ASCII**):
+	- `rsp = 2f (/)` | `rsp+1 = 66 (f)` | `rsp+2 = 6c (l)` | `rsp+3 = 61 (a)` | `rsp+4 = 67 (g)` | `rsp+5 = 00 (\0)`
+- Now we can `open()` the `/flag` file:
+	```asm
+	mov rdi, rsp # read the data on to the stack
+	mov rsi, 0 # open the file read only (more on this later)
+	mov rax, 2 # system call number of open()
+	syscall # do the system call
+	```
+	- `open()` returns the file descriptor number in `rax`
+
+Constant Arguments
+- Some system calls require archaic "constants". 
+- The argument flags must include one of the following access modes:
+	- O_RDONLY
+	- O_WRONLY
+	- O_RDWR
+	- These request opening the file read-only, write-only, or read/write respectively (the naming convention pretty much speaks for itself)
+- Example:
+	- `open()` has a flags argument to determine how the file will be opened. 
+	- We can figure out the values of these arguments in C:
+		```C
+		#include <stdio.h>
+		#include <fcntl.h>
+		int main() {
+			printf("O_RDONLY is: %d\n", O_RDONLY);
+		}
+		```
+	- Returns:
+		```bash
+		./print_rdonly
+		O_RDONLY is: 0
+		```
+
+And then Quit (the program :P ):
+- As so:
+	```asm
+	mov rdi, 42 # our program's return code (eg, for bash scripts)
+	mov rax, 60 # the system call number for exit()
+	syscall # do the system call!
+	```
+
+Writing Output
+- `write` syscall is `1`
+- The `write` syscall needs to specify, via its parameters, what data to write and where to write it to.
+- File Descriptors
+	- Each process starts out with three FDs
+		- FD 0 - Standard Input
+			- The channel through which the process takes input
+				- Your shell uses Standard Input (FD 0) to read the commands that you input
+		- FD 1 - Standard Output
+			- The channel through which processes output normal data, such as when you run a `cat` command on a file to read its contents, or use the `ls` command to list contents of a directory
+		- FD 2 - Standard Error
+			- The channel through which processes output error details
+				- If you mistype a command, the shell will output over Standard Error - `this command does not exist` or something like that
+- `write` system calls specify where to write the data to
+	- ie, to which File Descriptor
+- Example:
+	- The first command to an `exit` system call could be the exit code (that we described before) - `mov rdi, 42` 
+	- The first (but not only) parameter to `write` is the File Descriptor
+- If you want to write to Standard Output (FD 1) you would set `rdi` to 1
+- If you want to write to Standard Error (FD 2) you would set `rdi` to 2
+- What to write
+	- Registers don't fit a tonne of data, and to write a long story one would need to invoke the `write` system call multiple times. 
+	- Relatively speaking, that would have a high performance cost
+	- The CPU needs to switch from executing the instructions of your program to executing the instructions of Linux itself - do a bunch of housekeeping computation - interact with your hardware to get the actual pixels to show up on your screen - and then switch back....
+		- This is slow. 
+	- So we try to MINIMISE the number of times we invoke system calls
+	- The solution to this would be to write multiple characters at the same time
+	- The `write` system call does this by taking **two** parameters for the "**what**": a **where** (in memory) to start writing from and a **how many** characters to write. 
+	- These parameters are passed as the second and third parameter to `write`. In the kind of C-syntax that we learned from `strace`(system call tracer.)- this could be:
+		- `write(file_descriptor, memory_address, number_of_characters_to_write)`
+	- Example:
+		- If you wanted to write 10 characters from memory address `1337000` to Standard Output (FD 1), it would be:
+		- `write(1, 1337000, 10)`
+	- Specifying these parameters. Example continued:
+		- Pass the **first** parameter of a system call, as we reviewed above, in the `rdi` register
+		- **Second** parameter via the `rsi` register
+			- The agreed-upon convention in Linux is that `rsi` is used as the second parameter to system calls
+		- Third **parameter** via the `rdx` register
+			- `rdi` (the register holding the first parameter) has such a similar name to `rdx` that it's really easy to mix up, and the naming is this way for historic reasons .
+		- And the `write` syscall index into `rax` itself: `1` 
+		- 
