@@ -1,6 +1,8 @@
 References:
 https://pwn.college/computing-101/your-first-program/
 https://pwn.college/computing-101/hello-hackers/
+https://open.umn.edu/opentextbooks/textbooks/733 
+https://cs.brown.edu/courses/cs033/docs/guides/x64_cheatsheet.pdf
 
 All roads lead to the CPU:
 
@@ -125,6 +127,10 @@ Registers (short notes, please excuse the style of note taking here - will fix t
 	- eax, ecx, edx, ebs, **esp, ebp**, esi, edi
 - 64bit Registers (amd64)
 	- rax, rcx, rdx, rbx, **rsp, rbp**, rsi, rdi, r8, r9, 10, r11, r12, r13, r14, 15
+	- The lower 32 bits of `rax` can be accessed using `eax`
+		- The lower 16-bits using `ax`
+		- And the lower 8-bits using `al` 
+	- Lower register bytes access is applicable to *almost all* registers.
 - arm Registers
 	- r0, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, **r13, r14**
 - Address for the next instruction for the CPU is kept in:
@@ -161,7 +167,46 @@ Extending Data (NEED TO TOUCH ON THIS MUCH MORE)
 	- Most instructions, the first specified register stores the result
 	- add
 	- sub
+	- mul
+		- unsigned multiply
 	- imul
+		- signed multiply
+	- div
+		- 10/3 = 3 (rounded down)
+		- special instruction that can divide 128-bit dividend by a 64-bit divisor while storing both the quotient and the remainder - using only one register as an operand
+			- `rax = rdx:rax / reg`
+			- `rdx = remainder`
+				- `rdx:rax` means that `rdx` will be the upper 64-bits of the 128-bit dividend and `rax` will be the lower 64-bits of the 128-bit dividend
+			- You must be careful about what is in `rdx` and `rax` before you call `div` 
+				```asm
+				; 64-bit division example (I had to claude.ai this... Makes sense though!)
+				mov rax, 1000000 ; Dividend 
+				xor rdx, rdx ; Clear rdx 
+				mov rcx, 42 ; Divisor 
+				div rcx ; Divides rdx:rax by rcx 
+				;Result: rax = quotient, rdx = remainder
+				```
+			- Note that `rdx` here is the remainder, aka, the modulo (`%`) result. And `rax` would be the result of the division that took place (rounded down!)
+			- MODULO continued (examples with a faster operation method - apparently using `div` is slow)
+				- "if we have `x & y`, and `y` is a power of 2, such as `2^n`, the result will be the lower `n` bits of `x`."
+				- "Therefore, we can use the lower register byte access to efficiently implement modulo"
+					- For example, if we had to solve this:
+						```asm
+						rax = rdi % 256
+						rbx = rsi % 65536
+						```
+					- 2 ^ 8 = 256, so the lowest byte (8-bit). Which for `rdi` would be `dil`
+					- 2 ^ 16 = 65536, so the lowest 16-bit of `rsi` would be `si` 
+						```asm
+						.intel_syntax noprefix
+						.global _start
+						_start:
+						mov rax, 0
+						mov rbx, 0 # I did this just to clear both registers.. Probably not needed?
+						mov al, dil # moving the lowest 8-bit of rdi into the lowest 8-bit of rax
+						mov bx, si
+						```
+					- And that's that!
 	- inc
 	- dec
 	- neg
@@ -793,4 +838,4 @@ Other Resources
 		- https://www.felixcloutier.com/x86/
 	- Intel's x86_64 architecture manual:
 		- http://www.intel.com/content/dam/www/public/us/en/documents/manuals/64-ia-32-architectures-software-developer-instruction-set-reference-manual-325383.pdf
-	- 
+
