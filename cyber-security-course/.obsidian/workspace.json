@@ -13,6 +13,20 @@
             "state": {
               "type": "markdown",
               "state": {
+                "file": "1.0 Types of Attacks & Defense/1.2 Defense/MISP - Malware Information Sharing Platform.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "MISP - Malware Information Sharing Platform"
+            }
+          },
+          {
+            "id": "0d1d48b24bbbde59",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
                 "file": "5.0 Programming/5.1 Programming Languages/ASM - Assembly Language (and related).md",
                 "mode": "source",
                 "source": false
@@ -49,7 +63,8 @@
               "title": "Terminologies"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -219,8 +234,11 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "6d707002a0cddad6",
+  "active": "0d1d48b24bbbde59",
   "lastOpenFiles": [
+    "5.0 Programming/5.1 Programming Languages/ASM - Assembly Language (and related).md",
+    "1.0 Types of Attacks & Defense/1.2 Defense/MISP - Malware Information Sharing Platform.md",
+    "1.0 Types of Attacks & Defense/1.2 Defense/The Hive.md",
     "0.0 Cyber, Technology and More/Notes/Course/Week 15/20241003 - Day 073.md",
     "0.0 Cyber, Technology and More/Notes/Course/Week 15/20241002 - Day 072.md",
     "0.0 Cyber, Technology and More/Notes/Course/Week 15/20241001 - Day 071.md",
@@ -244,9 +262,6 @@
     "0.0 Cyber, Technology and More/Notes/Course/Week 08/20240812 - Day 035.md",
     "0.0 Cyber, Technology and More/Notes/Course/Week 07/20240809 - Day 034.md",
     "0.0 Cyber, Technology and More/Notes/Course/Week 07/20240808 - Day 033.md",
-    "0.0 Cyber, Technology and More/Notes/Course/Week 07/20240807 - Day 032.md",
-    "0.0 Cyber, Technology and More/Notes/Course/Week 07/20240806 - Day 031.md",
-    "0.0 Cyber, Technology and More/Notes/Course/Week 07/20240805 - Day 030.md",
     "1.0 Types of Attacks & Defense/Frameworks",
     "4.0 Networking/Routing",
     "99.99 Images Used/Pasted image 20250106071646.png",

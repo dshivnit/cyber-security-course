@@ -3,6 +3,7 @@ https://pwn.college/computing-101/your-first-program/
 https://pwn.college/computing-101/hello-hackers/
 https://open.umn.edu/opentextbooks/textbooks/733 
 https://cs.brown.edu/courses/cs033/docs/guides/x64_cheatsheet.pdf
+https://en.wikibooks.org/wiki/X86_Assembly/X86_Architecture
 
 All roads lead to the CPU:
 
@@ -212,6 +213,11 @@ Extending Data (NEED TO TOUCH ON THIS MUCH MORE)
 	- neg
 	- not
 	- and
+		- You can find out if a register is holding an odd or even number! By:
+			- `and reg-name, 1`
+				- This will test the LSb (least-signifcant bit, the rightmost bit in the 64-bit register, position 0)
+					- If it returns a one with the above instruction, then the  number is odd
+					- *But for checking even/odd, we only care about that single rightmost bit of the entire number, since a number is odd if and only if its least significant bit is 1, regardless of all other bits.*
 	- or
 	- xor
 	- shl
@@ -824,6 +830,68 @@ Bugs in the Program
 	- (pwn.college Assembly Crash Course has an automatic debugger that has been provided for us/you/me - putting in an `int3` is the way to use it.)
 	- Note: `int3` or interrupter 3 - will need to have an associated debugger attached. Otherwise the process is going to die
 
+Memory
+- Remember that memory is linear
+- It goes from `0` to `0xffffffffffffffff` (massive)
+- Dereferencing:
+	- `mov rax, [some-memory-address]`
+		- We can access the "thing" at a memory location 
+- Also works with registers
+	- `mov rax, [rdi]`
+- In x86_64 you can access each of the word sizes when dereferencing an address - just like using bigger or smaller register accesses:
+	- `mov al, [mem-address]` -- moves the least significant **byte** from the `mem-address` to `rax`
+	- `mov ax, [mem-address]` -- moves the least significant **word** from `mem-address` to `rax`
+	- `mov eax, [mem-address]` -- moves the least significant **double-word** from `mem-address` to `rax`
+	- `mov rax, [mem-address]` -- moves the full **quad-word** from `mem-address` to `rax`
+	- **REMEMBER, moving into `al` does not fully clear the upper bytes**
+	- Also remember:
+		- byte - 1-byte - 8-bits
+		- word - 2-bytes -16-bits
+		- double-word - 4-bytes - 32bits
+		- quad-word - 8-bytes - 64 bits
+- Little Endian
+	- Recalling that memory is stored linearly
+	- If we wanted to access the quad word at `0x1337`
+		- `[0x1337] = 0x00000000deadbeef`
+	- It would be laid out in memory like this - by little endian:
+		- `[0x1337] = 0xef`
+		- `[0x1337 + 1] = 0xbe`
+		- `[0x1337 + 2] = 0xad`
+		- `[0x1337 + 3] = 0xde]`
+		- `[0x1337 + 7] = 0x00`
+	- This means that we can access things next to each other using offsets
+	- Say if you want the 5th byte from an address, you can access it like so:
+		- `mov al, [mem-address+4]`
+	- Offsets always start at 0, woo
+
+The Stack
+- The stack is a region of memory that can store values for later
+- To store a value on the stack, we use the `push` instruction
+- To retrieve a value from the stack, we use the `pop` instruction
+- **The stack works on a LIFO (Last In, First Out) memory structure**
+	- Meaning that the last value pushed, is the first value that is popped
+	- Think about a stack of plates, one would take the top most plate first when wanting to use a plate. Same thing here with the stack when using `pop` 
+- The `push` instruction will take the value in a register and push it onto the top of the stack
+	- `pop rax` - will take the top (last pushed) value from the stack and put it into `rax`
+	- `sub rax, rdi` - will subtract `rdi` from the value that is in `rax` (which in this case will be what was last in the stack)
+	- `push rax` - will push the new value back into the stack
+- `rsp` (The Registry Stack Pointer)
+	- on x86, the `rsp` always stores the memory address of the top of the stack
+		- ie - the memory address of the last value pushed
+	- One can use `[rsp]` to access the value at the memory address in `rsp` 
+	- For example
+		```asm
+		mov r8, [rsp]
+		mov r9, [rsp+0x8]
+		mov r10, [rsp+0x10]
+		mov r11, [rsp+0x18]
+		```
+		- `[rsp]` - is the TOP of the stack!
+		- `[rsp+0x8]` - 8 bytes up
+		- `[rsp+0x10]` - 16 bytes up
+		- `[rsp+0x18]` - 24 bytes up
+		- These will be bytes, as we are working with QWORDS! 
+			- (Quad-words = 64bits, or 8 bytes)
 Other Resources
 - `gdb` - the go-to debugging experience
 - `strace` - lets you figure out how your program is interacting with the OS
