@@ -855,3 +855,8 @@
 - ELF
 	- An elf file is
 		- an executable and linkable format file
+- STIX(2)
+	- Structured Threat Information Expression
+		- A language and serialization format used to exchange Cyber Threat Intelligence (CTI)
+		- STIX is open source and free allowing those interested to contribute and ask questions freely
+		- https://oasis-open.github.io/cti-documentation/stix/intro

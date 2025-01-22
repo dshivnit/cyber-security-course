@@ -1,0 +1,86 @@
+https://tryhackme.com/r/room/trafficanalysisessentials
+
+- Network security is a set of operations for protecting data, applications, devices and systems connected to a network.
+	- It is accepted as one of the significant subdomains of cyber security.
+- Focuses on:
+	- System design
+	- Operation
+	- and Management of the architecture/infrastructure to provide network:
+		- accessibility
+		- integrity
+		- continuity
+		- reliability
+- The essential concern of Network Security focuses on two core concepts;
+	- Authentication
+	- Authorisation
+
+Traffic Analysis
+- A subdomain of Network Security
+- Primary focus on investigating the network data to identify problems and anomalies
+- Network security operations contain three base control levels to ensure the maximum available security management:
+	- Physical Controls
+		- Prevent unauthorised physical access to networking devices, cable boards, locks, and linked components
+	- Technical Controls
+		- Data security controls prevent unauthorised access to network data, like installing tunnels and implementing security layers
+	- Administrative Controls
+		- Provide consistency in security operations like creating policies, access levels and authentication processes
+- There are two main approaches and multiple elements under these control levels. The most common elements used in network security operations are:
+	- Access Control
+		- The starting point of Network Security
+		- It is a set of controls to ensure authentication and authorisation
+			- Key Elements:
+				- Firewall Protection
+				- NAC - Network Access Control
+					- Controls the devices' suitability before access to the network
+					- Designed to verify device specifications and conditions are compliant with the predetermined profile before connecting to the network
+				- IAM - Identity and Access Management
+				- Load Balancing
+					- Controls the resource usage to distribute (based on metrics) tasks over a set of resources and improve overall data processing flow
+				- Network Segmentation
+				- VPN - Virtual Private Networks
+				- Zero Trust Model
+					- Never trust, always verify
+	- Threat Control
+		- Detecting and preventing anomalous/malicious activities on the network
+		- Contains both internal (trusted) and external traffic data probes
+			- Key Elements:
+				- IDS/IPS - Intrusion Detection System / Intrusion Prevention Systems
+			- DLP - Data Loss Prevention
+			- Endpoint Protection
+			- Cloud Security
+			- SIEM - Security Information and Event Management
+			- SOAR - Security Orchestration Automation and Response
+				- Technology that helps coordinate and automates tasks between various people, tools, and data within a single platform to identify anomalies, threats, and vulnerabilities
+				- I also supports vulnerability management, incident response, and security operations
+			- Network Traffic Analysis & Network Detection and Response
+
+MSSPs - Managed Security Service Providers
+- To keep a company's costs down, or to fill knowledge/skill gaps in their teams, company's may employ the services of an MSSP
+	- Network Penetration Testing
+	- Vulnerability Assessment
+	- Incident Response
+	- Behavioural Analysis
+		- Organised approach to addressing system and user behaviours
+		- Creating baselines and traffic profiles for specific patterns to detect anomalies, threats, vulnerabilities, and attacks
+
+Traffic Analysis / Network Traffic Analysis
+- A method of intercepting, recording/monitoring, and analysing network data and communication patterns to detect and respond to system health issues, network anomalies, and threats. 
+	- Network Sniffing and Packet Analysis
+	- Network monitoring
+	- Intrusion Detection and Prevention
+	- Network Forensics
+	- Threat Hunting
+- Flow Analysis
+	- Collecting data/evidence from networking devices. This type of analysis aims to provide statistical results through the data summary without applying in-depth packet-level investigation
+		- Advantage
+			- Easy to collect and analyse
+		- Challenge
+			- Doesn't provide full packet details to get the root cause of a case
+- Packet Analysis
+	- Collecting all available network data. 
+	- Applying in-depth packet-level investigation (often called Deep Packet Inspection - DPI) to detect and block anomalous and malicious packets
+		- Advantage
+			- Provides full packet details to get the root cause of a case
+		- Challenge
+			- Requires time and skillset to analyse
+	- 
