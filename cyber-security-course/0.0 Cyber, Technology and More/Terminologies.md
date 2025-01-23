@@ -860,3 +860,11 @@
 		- A language and serialization format used to exchange Cyber Threat Intelligence (CTI)
 		- STIX is open source and free allowing those interested to contribute and ask questions freely
 		- https://oasis-open.github.io/cti-documentation/stix/intro
+- BPF 
+	- Berkley Packet Filter
+	- A network tap and packet filter which permits computer network packets to be captured and filtered at the operating system level (wikipedia)
+	- It provides raw interface to data link layers, permitting raw link-layer packets to be sent and received.
+	- Allows a userspace process to supply a filter program that specifies what packets it wants to receive. 
+- IPC$
+	- Inter-Process Communication 
+	- The $ symbol often signifies a shared resource or a specific access point within that IPC mechanism, usually on a network or within a system environment

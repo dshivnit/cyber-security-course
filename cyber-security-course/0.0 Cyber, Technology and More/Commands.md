@@ -90,6 +90,12 @@ Bash (pipe to the pipe pipe ;) )
 		- Will return what line numbers the word "admin" is in the file apache.log
 	- `grep -v "/index.php" apache.log | grep "203.64.78.90"`
 		- Will list entries that have 203.64.78.90 but doesn't have any references to index.php in the apache.log file
+	- `grep -C 5 "something"` 
+		- Will return 5 lines before and after any line that has the word "something" in it 
+	- `grep -A 5 "something"`
+		- Will return 5 lines after any lines containing the word "something"
+	- `grep -B 5 "something"`
+		- Will return 5 lines before any lines containing the word "something"`
 
 	- Different log - this one has the below entries in a file called `apache-ex2.log`
 		-```

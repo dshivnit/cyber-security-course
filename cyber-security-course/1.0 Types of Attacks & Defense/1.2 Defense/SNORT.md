@@ -178,7 +178,7 @@ Reading PCAP files
 - PCAP mode parameters:
 	- `-r / --pcap-single=` 
 		- Read a single pcap file
-		- `sudo snort -c /etc/conf/snort/conf -q -r test.pcap -A console`
+		- `sudo snort -c /etc/conf/snort.conf -q -r test.pcap -A console`
 	- `--pcap-list=""`
 		- Read pcaps provided in command (**SPACE separated** `" "` )
 		- `sudo snort -c /etc/snort/snort.conf -q --pcap-list="test1.pcap test2.pcap test3.pcap" -A console`
@@ -286,7 +286,7 @@ General Rule Options
 			- Rules came with the build
 		- `>=1,000,000`
 			- Rules created by user/teams
-	- Rules we create should have a SID that is higher than 100,000,000. SID should never overlap and each id must be unique
+	- Rules we create should have a SID that is higher than 1,000,000. SID should never overlap and each id must be unique
 - `Reference`
 	- Each rule can have additional information or references to explain the purpose of the rule or threat pattern
 	- That could be a CVE identifier, or external information
@@ -311,6 +311,7 @@ Payload Detection Rule Options
 			- `...(msg: "GET Request Found"; content:"GET"; sid: 100001; rev:1;)`
 		- HEX mode
 			- `...(msg:GET Request Found"; content:"|47 45 54|";sid: 100001;rev1;)`
+		- **DO NOT FORGET ABOUT FILE SIGNATURES IF YOU WANT TO CREATE CUSTOM RULES! https://en.wikipedia.org/wiki/List_of_file_signatures**
 - Nocase
 	- Disabling case sensitivity. Used for enhancing the content searches
 	- `alert tcp any any <> any 80 (msg: "GET Request Found"; content:"GET"; nocase; sid:100001; rev:1;)`

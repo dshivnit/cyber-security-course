@@ -857,7 +857,7 @@ Memory
 		- `[0x1337] = 0xef`
 		- `[0x1337 + 1] = 0xbe`
 		- `[0x1337 + 2] = 0xad`
-		- `[0x1337 + 3] = 0xde]`
+		- `[0x1337 + 3] = 0xde`
 		- `[0x1337 + 7] = 0x00`
 	- This means that we can access things next to each other using offsets
 	- Say if you want the 5th byte from an address, you can access it like so:
@@ -892,6 +892,141 @@ The Stack
 		- `[rsp+0x18]` - 24 bytes up
 		- These will be bytes, as we are working with QWORDS! 
 			- (Quad-words = 64bits, or 8 bytes)
+
+Two major ways to manipulate Control Flow:
+- Through a jump
+	- Two kinds of jumps
+		- Unconditional Jump
+			- Always trigger and are not based on the results of earlier instructions
+		- Conditional Jump
+			- Like in high-level if-else statements, example:
+				```asm
+				; assume rdi = x, rax is output
+				; rdx = rdi mod 2
+				mov rax, rdi
+				mov rsi, 2
+				div rsi
+				; remainder is 0 if EVEN
+				cmp rdx, 0
+				; jump to not_even label if it's not 0
+				jne not_even
+				; proceed to even code
+				mov rbx, 1
+				jmp done
+				not_even:
+				mov rbx 0
+				done:
+				mov rax, rbx
+				; more code/instructions here
+				```
+	- For all jumps, there are three types:
+		- Relative jumps
+			- jump + or - the next instruction
+			- A relative jump specifies how many bytes forward or backward to jump from the current instruction pointer
+			- The offset is calculated from the next instruction after the jump
+			- Example: 
+				- Make a relative jump to `0x51` from the current position
+				- At the code location where the relative jump will redirect control flow, set `rax` to `0x1`.
+				```asm
+				jmp target
+				.rept 0x51
+				     nop
+				.endr
+				target:
+				     mov rax, 0x1
+				```
+				- The first instruction here is the `jmp` instruction to the target label which is where `rip` will end up
+				- We are then going to repeat the `nop` instruction `0x51` times (so that is where we are going to jump to)
+				- Once there, we are going to set `rax` with `0x1` 
+		- Absolute jumps
+			- Jump to a specific address
+				- First put the target address in a register
+				- then `jmp reg` - example:
+					```asm
+					mov rdi, 0x403000
+					jmp rdi
+					```
+		- Indirect jumps
+			- jump to the memory address specified in a register
+			- Often used for switch statements in the real world
+			- Switch statements are a special case of if-statements that use only numbers to determine where the control flow will go
+				```
+				switch(number):
+					0: jmp do_thing_0
+					1: jmp do_thing_1
+					2: jmp do_thing_2
+					default: jmp do_default_thing
+				```
+			- The switch in this example works on `number` - which can be 0, 1, or 2. 
+			- If `number` is not one of those numbers, the default triggers
+			- You can consider this a reduced else-if type structure
+			- A jump table is a contiguous section of memory that holds addresses of places to jump
+			- The above example could look like this:
+				```asm
+				[0x1337] - address of do_thing_0
+				[0x1337+0x8] - address of do_thing_1
+				[0x1337+0x10] - address of do_thing_2
+				[0x1337+0x18] - address of do_thing_3
+				```
+			- Reduces the amount of `cmps` we do considerably
+			- All we need to do in this instance would be to check if the `number` is greater than 2. If it is then always do
+				- `jmp [0x1337+0x18]`
+			- also known as:
+				- `jmp [jump_table_address + number * 8]`
+			- If `rsi` had the jump table base address in it
+			  If `rdi` was given as the number to 'switch' with
+			  Example:
+				```asm
+				cmp rdi, 4
+				ja default
+				jmp [rsi + rdi * 8]
+				default:
+				jmp [rsi + 4 * 8]
+				```
+- Through a call
+
+Average-Loop
+```asm
+; calculating averages of consecutive quad words
+; considering that rsi holds the counter of how many times to loop
+; considering that rdi holds the memory address of the first quad word
+xor rax, rax
+mov rcx, rsi
+loop:
+mov rax, [rdi]
+mov rdi, 8
+dec rcx
+jnz loop
+jmp finish
+finish:
+div rsi
+```
+
+While-loop example
+- You should be able to put two and two together :) (well, one and one)
+- Please note this is preceding with `.intel_syntax noprefix`:
+```asm
+xor rax, rax
+test rdi, rdi ; Check to see if rdi is zero
+jz finito
+looper:
+cmp byte ptr [rdi], 0 ; Checking to see if the byte at [rdi] is 0
+je finito
+inc rax
+inc rdi
+jmp looper
+finito:
+```
+
+- `nop` instruction
+	- An instruction that does nothing
+	- Does not change the state of any registers or status flags except `rip`
+	- It does not access any memory
+	- It's 1 byte long and very predicable
+
+Directives
+https://ftp.gnu.org/old-gnu/Manuals/gas-2.9.1/html_chapter/as_7.html
+
 Other Resources
 - `gdb` - the go-to debugging experience
 - `strace` - lets you figure out how your program is interacting with the OS
