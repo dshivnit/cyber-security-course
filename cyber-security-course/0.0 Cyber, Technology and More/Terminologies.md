@@ -868,3 +868,9 @@
 - IPC$
 	- Inter-Process Communication 
 	- The $ symbol often signifies a shared resource or a specific access point within that IPC mechanism, usually on a network or within a system environment
+- NFAT
+	- Network Forensics Analysis Tool
+	- https://www.netresec.com/?page=NetworkMiner
+- NTA
+	- Network Traffic Analysis
+- 
