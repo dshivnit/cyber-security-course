@@ -243,4 +243,60 @@ zsh (z Shell) (/bin/zsh (providing it's there) will change $SHELL on the fly, zs
 		- delete text to the left
 	- CTRL+K
 		- delete text to the right
-- 
+
+- Some handy commands:
+	- `history`
+	- `!10`
+		- Execute the 10th command in history
+	- `!!`
+		- Execute the previous command
+	- `cat file.txt | cut -f 1`
+		- Cut the first field
+	- `cat test.txt | cut -c1`
+		- Cut the first column
+	- `cat test.txt | sort`
+		- Sort the output alphabetically
+	- `cat test.txt | sort -n`
+		- Sort the output numerically
+	- `cat test.txt | uniq`
+		- Eliminate duplicates
+	- `cat text.txt | wc -l`
+		- Count how many lines are in the output
+	- `cat text.txt | nl`
+		- Show line numbers
+	- `cat text.txt | sed -n '11p'`
+		- Print line 11
+	- `cat text.txt | sed -n '10,15p'`
+		- Print lines between 10 and 15
+	- `cat text.txt | awk 'NR < 11 {print $0}'`
+		- Print lines below 11
+	- `cat text.txt | awk 'NR == 1 {print $0]'`
+		- Print line 11
+	- `rev`
+		- Reverse string characters
+	- `sort | uniq -c`
+		- Remove duplicates and count the number of occurrences for each value
+	- `cut -d '.' -f 1-2`
+		- Split the string on every dot and print keep the first two fields
+	- `grep -v 'test'`
+		- Display lines that don't match the "test" string
+	- `grep -v -e 'test1' -e 'test2'`
+		- Display lines that don't match one or both "test1" and "test2" strings
+	- `file`
+		- View file information
+	- `grep -rin Testvalue1 * | column -t | less -S`
+		- Search the "Testvalue1" string everywhere, organise column spaces and view the output with less
+	- `sort -nr | uniq | wc -l`
+		- numeric sort and in reverse
+	- `grep -rin some-term-to-look-for-STRING * | column -T | nl | less -S`
+		- `-rin`
+			- recursive (directories=recurse through them)
+			- ignore-casing
+			- line number in the file that the searched-variable was found
+		- `column -t`
+			- Organise the findings in columns, easier to read
+		- `nl`
+			- A numbered list output
+		- `less -S`
+			- Chop long-lines (rather than wrapping them across the terminal window)
+	- 

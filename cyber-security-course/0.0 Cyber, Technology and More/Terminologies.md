@@ -873,4 +873,6 @@
 	- https://www.netresec.com/?page=NetworkMiner
 - NTA
 	- Network Traffic Analysis
-- 
+- GPT
+	- Generative Pre-trained Transformer
+	- 
