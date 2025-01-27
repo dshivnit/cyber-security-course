@@ -875,4 +875,17 @@
 	- Network Traffic Analysis
 - GPT
 	- Generative Pre-trained Transformer
-	- 
+- CAM table
+	- Content Addressable Memory
+	- Stores the mapping between a devices MAC address and the switch port it is connected to
+	- Allows the switch to efficiently forward network traffic based on the destination MAC address by quickly looking up the corresponding port on the table (also known as the MAC Address Table)
+- DCE/RPC
+	- Distributed Computing Environment/Remote Procedure Call
+	- A protocol which allows a computer program to call a procedure on a remote machine as if it were a local procedure, essentially enabling distributed computing by hiding the network complexities from the programmer
+	- Standard way to implement RPCs across networks
+	- Often used in Win-systems to access network services like Active Directory
+- EPM
+	- Endpoint Privilege Management
+	- A set of rules and procedures designed to control user access to endpoints
+		- Like computers, servers or mobile devices
+	- By ensuring they only have the minimum level of privileges needed to perform their tasks
