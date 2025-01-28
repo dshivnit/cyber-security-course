@@ -1,0 +1,187 @@
+https://www.brimdata.io/ (SuperDB is currently under development)
+https://tryhackme.com/r/room/brim
+
+- An open-source desktop application that processes pcap files and logs files
+- Primary focus is providing search and analytics
+- Uses the **Zeek log** processing format - also supports Zeek signatures and Suricata Rules for detection
+
+- Can handle two types of data for input:
+	- Packet Capture Files: 
+		- .pcap's created with tcpdump, tshark, and Wireshark type applications
+	- Log Files
+		- Structured log files like Zeek logs
+
+- Brim is build on open-source platforms:
+	- Zeek
+		- Real good log generating engine
+	- Zed Language
+		- Log querying language that allows performing keyword searches with filters and pipelines
+	- ZNG Data Format
+		- Data storage format that supports saving data streams
+	- Electron and React
+		- Cross-platform UI
+
+- .pcap files that are bigger than 1GB can be heavy for Wireshark to process efficiently
+- Processing with `tcpdump` and `Zeek` is efficient, but time-consuming and requires a fair bit of effort
+- Brim intends to reduce the time and effort spent when processing pcap files and investigating the log files by providing a simple and powerful GUI application
+
+Brim vs Wireshark vs Zeek
+- The things that they don't do:
+	- Brim:
+		- Sniffing (packet sniffing, not other kinds of sniffing ;) )
+		- Packet decoding
+		- Scripting
+		- File Extraction
+	- Wireshark
+		- Log processing
+		- Scripting
+		- Signature support
+	- Zeek
+		- GUI
+- Otherwise they all do:
+	- Pcap processing
+	- Filtering
+	- Statistics
+	- File extraction
+- Handling pcaps over 1GB:
+	- Brim - Medium performance
+	- Wireshark - Low Performance
+	- Zeek - Good performance
+
+Brim
+- Once a .pcap file is loaded, Brim processes it and then creates Zeek logs, correlates them, and displays all available findings in a timeline
+- Correlation
+	- There is a correlation section in each Log detail of a packet
+	- Can assist on where to look next scenarios
+- Remember right-click menu's
+	- Filter search values, create new searched based on a fields values
+	- Details
+	- Whois Lookups
+	- VT Lookups
+	- And so on
+- Queries (lower left-hand side) -- You can also add new queries (top-right of the query sub-pane)
+- You may note that the query command-string is located at the top of each log
+			- **Useful!**
+	- Activity Overview
+		- General info on the .pcap file
+		- Useful for further investigation and query creation
+		- Logs are generated based on the .pcap file being analysed
+	- Unique DNS Queries
+	- Windows Networking Activity
+		- Focuses on Windows networking activity and details source, destination addresses and named pipe, endpoint and operation detection
+		- Helps investigate and understand specific Windows events like SMB enumeration, logins and service exploiting
+	- HTTP Requests
+	- Unique Network Connections
+		- Can assist in identifying weird and malicious connections and suspicious and beaconing activities
+	- Connection Received Data
+	- File Activity
+		- Can assist with possible data leakage attempts, suspicious file activity
+		- Can provide information on the detected MIME type, and file name along with hash values
+	- HTTP Post Requests
+		- This query can be tweaked to show GET and other HTTP requests
+		- Remember one can add custom queries in this pane
+	- Show IP Subnets
+	- Suricata Alerts by
+		- Category
+		- Source and Destination
+		- Subnet
+		- These formats are based on the Suricata rule-sets
+		- Suricata is an open-source threat detection engine that can act as a rule-based Intrusion Detection and Prevention System
+		- developed by the Open Information Security Foundation (OISF)
+		- It works and detects anomalies in a similar way to Snort and can use the same signatures!
+			![](https://tryhackme-images.s3.amazonaws.com/user-uploads/6131132af49360005df01ae3/room-content/1fa588a68ed5d635ba8842ff3ecec6ad.png)
+			Very neat!
+
+- Custom Queries and Use Cases (**RIGHT-CLICK MENU IS YOUR FRIEND**.)
+- `_path=="conn" | cut id.resp_p, service | sort | uniq -c | sort -r count`put toat
+	- Gets the receiving port number, service running, sorts and counts the results
+- `_path=="dns" | count() by query | sort -r`
+	- Will print out how many times a domain had traffic going to it from the network
+	- **Utilise the built-in VirusTool linking tool for weird domain names!** (in the right-click menu towards the bottom)
+- `_path=="http" | cut id.orig_h, id.resp_h, id_resp_p, method, host, uri | uniq -c | sort value.uri`
+	- Basing on the http log, get the sending ip, receiving ip, receiving port, the HTTP method used, the host URI, and sort it by the uri with a count of how many times hit
+	- **Good to do this after running the previous DNS query, so that you can see what HTTP requests were actually made and if anything was transferred between said Domain and URI and the network**
+- `_path=="conn" | cut id.resp_p, service | sort | uniq -c | sort -r count`
+	- Filtering just the receiving port, the service used, and sorting it
+- `_path=="conn" | put total_bytes := orig_bytes + resp_bytes | sort -r total_bytes | cut uid, id, orig_bytes, resp_bytes, total_bytes`
+	- Real good one - totals the sent and received bytes per connection and sorts by highest trafficked first
+- `event_type=="alret" | count() by alert.severity,alert.category | sort count`
+- `event_type=="alert" | cut alert.category, alert.metadata.mire_technique_name, alert.metadata.mitre_technique_id, alert.metadata.mitre_tactic_name | sort | uniq -c`
+	- These are Suricata queries (need to touch on this more)
+- Basic Query References
+	- Basic Search
+		- Can search any string and numeric value
+			- `10.0.0.1`
+	- Logical Operators
+		- Or, And, Not
+			- `192 and NTP`
+	- Filter Values
+		- `<field-name> == <value>`
+			- `id.orig_h==192.168.121.40`'
+	- List specific log file contents
+		- `_path=="<log-name>"`
+			- `_path=="conn"`
+	- Count field values
+		- `count () by <field>`
+			- `count () by _path`
+	- Sort Findings
+		- sort
+			- Count the number of available log files and sort recursively
+			- `count () by _path | sort -r`
+	- Cut specific field from a log file
+		- `_path=="conn" | cut id.orig_h, id.resp_p, id.resp_h`
+	- List Unique Values
+		- `_path=="conn" | cut id.orig_h, id.resp_p, id.resp_h | sort | uniq`
+- Best practice is always to use field filters to search for the event of interest
+	- Communicated Hosts
+		- First step of an investigation
+		- Analysts need to know which hosts are actively communicating on the network to detect any suspicious and abnormal activity in the first place. 
+		- Helps analysts to detect possible access violations, exploitation attempts and malware infections
+			- `_path=="conn" | cut id.orig_h, id.resp_h | sort | uniq`
+	- Frequently Communicated Hosts
+		- Important to find out which hosts communicate with each other most frequently - for purposes of being able to possibly identify entities that could be involved with data exfiltration, exploitation and backdooring activities
+			- `_path=="conn" | cut id.orig_h, id.resp_h | sort | uniq -c | sort -r`
+	- Most Active Ports
+		- Can assist in detecting silent and well-hidden anomalies by focusing on the data bus and used services
+			- `_path=="conn" | cut id.orig_h, id.resp_h | sort | uniq -c | sort -r`
+			- `_path=="conn" | cut id.orig_h, id.resp_h, id.resp_p, service | sort id.resp_p | uniq c | sort -r`
+	- Long Connections
+		- A a client is not designed to serve a continuous service, investigation the duration of a connection between two IP addy's can reveal possible anomalies (like backdoors)
+			- `_path=="conn" | cut id.orig_h, id.resp_p, id.resp_h, duration | sort -r duration`
+	- Transferred Data
+		- Calculating the transferred data size can be useful in investigations
+		- Compare to what baseline records show for any given client and see if there is something out of the ordinary
+		- Data exfil, suspicious file actions, malware downloading, spreading, and so on
+			- `_path=="conn" | put total_bytes := orig_bytes + resp_bytes | sort -r total_bytes | cut uid, id, orig_bytes, resp_bytes, total_bytes`
+	- DNS and HTTP Queries
+		- Identifying out of the ordinary domain connections and requests can be useful. Abnormal connections could be possible C2 communications, and possible compromised/infected hosts. 
+			- `_path=="dns" | count () by query | sort -r`
+			- `_path=="http" | count () by uri | sort -r`
+	- Suspicious Hostnames
+		- Can assist in identifying rogue-hosts
+		- Investigating DHCP logs provide the hostname and domain information
+			- `_path=="dhcp" | cut host_name, domain`
+	- Suspicious IP Addresses
+		- For security analysts, identifying suspicious and out of ordinary IP addresses is essential as identifying weird domain addresses. 
+		- Since the connection logs are stored in one single log file (conn), filtering IP addresses is more manageable and provides more reliable results
+		- **This is real cool!!**
+			- `_path=="conn" | put classnet := network_of(id.resp_h) | cut classnet | count() by classnet | sort -r`
+	- Detect Files
+		- Analysing transferred files is another important part of traffic investigation. 
+		- Can assist in the detection or transfer of malware or infected files by correlating their hash values. 
+		- Also useful in detecting the transfer of sensitive files!
+			- `filename!=null`
+	- SMB Activity
+		- Helps to detect possible malicious activities like exploitation, lateral movement and malicious file sharing.
+		- When running an investigation, ask, "What is going on in SMB?"
+			- `_path="dce_rpc" OR _path=="smb_mapping" OR _path=="smb_files"`
+	- Known Patterns
+		- Represent alerts generated by security solutions
+		- Generated against the common attack/threat/malware patterns and known by endpoint security products, firewalls, and IDS/IPS solutoins
+		- This data source highly relies on available signatures, attacks, and anomaly patterns. 
+		- Investigating available log sources containing alerts is vital for a security analyst
+		- BRIM supports Zeek and Suricata logs
+			- Any anomaly detected by these products will create a log file. 
+			- Investigating these log files can provide a clue as to where the analyst may choose to focus
+		- `event_type=="alert" or _path=="notice" or _path=="signatures"`
+			- 

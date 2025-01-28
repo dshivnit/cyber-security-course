@@ -1,3 +1,38 @@
+ - DMARC
+	 - Domain-based Message Authentication, Reporting and Compliance
+	 - An email authentication protocol
+	 - It is designed to give email domain owners the ability to protect their domain from unauthorised use, commonly known as email spoofing
+	 - The purpose and primary outcome of implementing DMARC is to protect a domain from being used in business email compromise attacks, phishing, email and email scams
+	- Receiving mail-servers can authenticate incoming emails based on the instructions published by the domain owner within the DNS entry
+		- If email passes the authentication, it will be delivered and trusted
+		- If it fails the check, depending on the instructions held within the DMARC record, the email could be delivered, quarantined, or rejected.
+		(wikipedia)
+- SPF Alignment
+	- The alignment of two headers found in an email message, meaning the value found in those two headers (a domain) needs to align with one another
+	- This alignment basically means that the value found in each header, which is a domain must match with the domain found in the other header
+	- An SPF Alignment PASS indicates that there is an exact match to the domain (ie, `outlook.com = outlook.com`) OR if there is a parent and a child match (a parent domain and a sub-domain)
+		(mxtoolbox)
+- SPF Authenticated
+	- SPF can be evaluated in two ways - authentication and alignment. 
+	- An email passes SPF authentication when delivered from an IP address published in the SPF policy for the domain found in the envelope "mail from:" designator. 
+	- Essentially the IP address that sent the email must match an IP address published in the SPF record for the domain
+		(mxtoolbox)
+- DKIM (DomainKeys Identified Mail) Alignment
+	- Two types of alignment exist. 
+	- One is based on SPF, while the other is based on DKIM
+	- The alignment test for DKIM is performed in order to verify the authenticity of the domain sending the email by using two signatures found in the message where the sender's domain is present
+		- The *from* domain
+		- The dkim domain (*d=tag*) from the DKIM-Signature header
+	- To achieve DKIM alignment, the from header visible to the receiver must match the domain in the DKIM-signature header
+	- By default, this test will look for a loose match between the two domains (domain/domain or parent domain/child domain) 
+- DKIM Authenticated
+	- DKIM can be achieved in two ways
+		- Authentication
+		- Alignment
+	- An email passes DKIM authentication when correctly signed by the d= domain in the DKIM header
+	- A DKIM-Signature is added to the header of outbound messages by the sender, and the recipient then compares the included signature to a publicly available DKIM key for decoding. 
+	- If decoded, the message is authenticated as being from the shown sender.
+ 
  - Email delivery over the Internet requires these:
 	 - MSA - Mail Submission Agent
 		 - MUA's connect to these to send their emails
