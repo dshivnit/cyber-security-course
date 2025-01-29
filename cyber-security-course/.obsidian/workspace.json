@@ -22,20 +22,6 @@
             }
           },
           {
-            "id": "1120e714fd819b24",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "1.0 Types of Attacks & Defense/1.2 Defense/BRIM.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "BRIM"
-            }
-          },
-          {
             "id": "77a81cd4d5d9fbbb",
             "type": "leaf",
             "state": {
@@ -47,6 +33,34 @@
               },
               "icon": "lucide-file",
               "title": "Wireshark"
+            }
+          },
+          {
+            "id": "f44adfb26432febf",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "4.0 Networking/Email(s).md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Email(s)"
+            }
+          },
+          {
+            "id": "a4e69f9f4dd6bc54",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "4.0 Networking/Networking.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Networking"
             }
           },
           {
@@ -64,20 +78,6 @@
             }
           },
           {
-            "id": "cfdcebe6fe9493fa",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "1.0 Types of Attacks & Defense/1.2 Defense/Network Miner & Network Forensics.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Network Miner & Network Forensics"
-            }
-          },
-          {
             "id": "e2130e31c48f0593",
             "type": "leaf",
             "state": {
@@ -91,7 +91,8 @@
               "title": "People"
             }
           }
-        ]
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -261,19 +262,21 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "088adb3c15e02d3e",
+  "active": "f44adfb26432febf",
   "lastOpenFiles": [
+    "4.0 Networking/Network Administration/Wireshark.md",
+    "4.0 Networking/Stratoshark.md",
+    "4.0 Networking/Networking.md",
+    "0.0 Cyber, Technology and More/Terminologies.md",
+    "1.0 Types of Attacks & Defense/1.2 Defense/Network Miner & Network Forensics.md",
+    "1.0 Types of Attacks & Defense/1.1 Attacks/Shelling!.md",
     "1.0 Types of Attacks & Defense/1.2 Defense/BRIM.md",
     "4.0 Networking/Email(s).md",
-    "4.0 Networking/Network Administration/Wireshark.md",
     "4.0 Networking/DNS (Domain Name System)/DNS (Domain Name System).md",
     "1.0 Types of Attacks & Defense/1.2 Defense/Zeek (formerly Bro).md",
     "0.0 Cyber, Technology and More/People.md",
-    "1.0 Types of Attacks & Defense/1.2 Defense/Network Miner & Network Forensics.md",
-    "0.0 Cyber, Technology and More/Terminologies.md",
     "5.0 Programming/5.1 Programming Languages/ASM - Assembly Language (and related).md",
     "0.0 Cyber, Technology and More/Commands.md",
-    "1.0 Types of Attacks & Defense/1.1 Attacks/Shelling!.md",
     "1.0 Types of Attacks & Defense/1.2 Defense/FlareVM - Forensics, Logic Analysis, and Reverse Engineering (Arsenal of Tools).md",
     "3.0 Software/3.1 Operating Systems/3.1.1 Desktops & Laptops/3.1.1.2 Linux & Unix.md",
     "1.0 Types of Attacks & Defense/1.2 Defense/Digital Forensics.md",
@@ -288,8 +291,6 @@
     "0.0 Cyber, Technology and More/Notes/Topics to update, expand.md",
     "1.0 Types of Attacks & Defense/1.2 Defense/OpenCTI.md",
     "1.0 Types of Attacks & Defense/Frameworks/Goguen-Meseguer Model (non-interference).md",
-    "1.0 Types of Attacks & Defense/Frameworks/Cyber Kill Chain.md",
-    "1.0 Types of Attacks & Defense/Frameworks/Clark-Wilson Model.md",
     "99.99 Images Used/Pasted image 20250121193309 1.png",
     "99.99 Images Used/Pasted image 20250121193309.png",
     "99.99 Images Used/Pasted image 20250121193520.png",

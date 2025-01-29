@@ -137,15 +137,65 @@ Wireshark Default Packet Colouring Schema:
 		- Allows for the organisation of all endpoints and IPs found within a specific capture
 			- Statistics > Endpoints
 	- **Statistics**
-		- There are heaps of options in here!
+		- **There are heaps of options in here!**
 		- Capture File Properties
 		- Resolved Addresses
+			- Assists in identifying IP addresses and DNS names available in the .pcap file (hostnames are taken from the DNS answers in the pcap file)
 		- Protocol Hierarchy 
+			- Breaks down all available protocols from the capture file and assists analysts to view protocols in a tree-view based on packet counters and percentages 
+			- Analysts can view the overall usage of the ports and services and focus on the event of interest
+			- **Don't forget about right-click and filtering events of interest!**
 		- Conversations
+			- Represent traffic between two specific endpoints
+			- Provides a list of conversations in five formats
+				- ethernet
+				- IPv4
+				- IPv6 
+				- TCP 
+				- UDP
+			- Also can provide the country, approximate location
 		- Endpoints
+			- Similar to conversations but different
+			- Provides unique information for a single information field 
+			- You can also translate MAC addresses into human-readable format!
+				- Being the first three bytes of the MAC address and works with known manufacturers (keep that in mind)
+			- You can also enable name resolutions for IP addresses and port numbers as well (these aren't enabled in Wireshark by default)
+				- *Edit > Pref > Name Resolution > resolve transport/IP addresses*
+			- There is also geolocation mapping that can assist analysts to identify the map's source and destination address (also not activated by default)
+				- **Needs supplementary data like the GeoIP database**
+				- **Wireshark at the time of me going through this module, supports MaxMind databases**
+				- ***Edit > Pref > Name resolution > Maxmine database directories***
+					- https://wiki.wireshark.org/HowToUseGeoIP
+					- https://dev.maxmind.com/geoip/geolite2-free-geolocation-data/
 		- Packet Lengths
 		- I/O Graphs
 		- Service Response Time 
+		- DNS
+			- Breaks down all DNS packets can assist in viewing findings in a tree view based on packet counters and percentages of the DNS protocol
+				- Overall usage
+				- rcode
+				- opcode
+				- class
+				- query type
+				- service
+				- query stats
+		- HTTP
+			- Packet counter
+			- Requests
+			- Load Distributions
+			- Request Sequences
+			- Tree-view based on packet counters and percentages
+			- Overall usage
+			- request codes
+			- response codes
+			- original requests
+			- 
+		- IPv4/IPv6 Statistics
+			- All addresses
+			- IP Protocol Types
+			- Destination and Ports
+			- Source and Destination addresses
+		- 
 		- Check it out (I was thinking to take a screenshot but Obsidian and uploading to GitHub is a mission - may do later.)
 
 - HTTPS Traffic
@@ -166,7 +216,140 @@ Wireshark Default Packet Colouring Schema:
 		- Also - HTTP Object Feature would now be available too
 			- File > Export Objects > HTTP
 
-Having solid knowledge on Threat Intelligence, current, in the past, potential - is vital in knowing what to look out for when doing packet analysis. 
+Having solid and growing knowledge on Threat Intelligence, current, in the past, potential - is vital in knowing what to look out for when doing packet analysis. 
 
-Some Wireshark documenation:
+Filters - Query Based
+- Capture Filters
+	- This type of filter is used to save only a specific part of the traffic, it is set before capturing traffic and not changeable during the capture
+	- Experienced professionals use capture filters and sniff traffic.
+	- These filters use byte offsets hex values and masks with boolean operators, and it is not easy to understand/predict the filter's purpose at first glance
+	- Syntax:
+		- Scope
+			- host, net, port and range
+		- Direction
+			- src, dst, src or dst, src and dst
+		- Protocol
+			- ether, wlan, ip, ip6, arp, rarp, tcp and udp
+		- **Quick Reference (in Wireshark):**
+			- **Capture > Capture Filters**
+		- Example:
+			- `tcp port 80`
+			- Sample filter to capture port 80 traffic
+	- More on Capture Filter Syntax:
+		- https://gitlab.com/wireshark/wireshark/-/wikis/CaptureFilters#useful-filters
+		- https://www.wireshark.org/docs/man-pages/pcap-filter.html
+- Display Filters
+	- https://www.wireshark.org/docs/dfref/
+	- Used to investigate packets by reducing the number of visible packets, and it is changeable during the capture
+	- Supports 3000 protocols and allows conducting packet-level searches under the protocol breakdown. 
+	- Example
+		- `tcp.port == 80`
+		- Sample filter to capture port 80 traffic
+	- Built-in option : Display Filter Expression
+		- stores all supported protocol structures to help analysts create display filters. 
+	- **Quick reference in Wireshark**
+		- **Analyse > Display Filters**
+	- Usual C-like boolean operators (the one's we all know and love, okay love would be debatable but know is something that should be the case)
+		- == , != , < , <= , > , >= 
+	- Wireshark supports decimal and hexadecimal values in filtering
+		- You can use any format you want according to the search you will conduct
+	- SameC-like expressions as well
+		- && , || , !
+	- You put these filters into the Filter Toolbar
+	- TIPS!:
+		- packet filters are defined in lowercase
+		- have an autocomplete feature to break down protocol details
+			- each detail is represented by a .
+		- packet filters have a three-colour representation
+			- GREEN
+				- Valid filter
+			- RED
+				- Invalid filter
+			- YELLOW
+				- Warning filter
+				- Works, but is unreliable, and it is suggested to change it with a valid filter
+- Protocol Filters
+	- Recall that 3000 protocols are supported in Wireshark and that Wireshark allows packet-level investigation by filtering the protocol fields. 
+	- IP Filters
+		- `ip`
+		- `ip.addr == 10.10.10.10`
+		- `ip.addr == 10.10.10.0/24`
+		- `ip.src == 10.10.10.111`
+		- `ip.dst == 192.168.1.42`
+		- **ip.addr** filters traffic without considering the packet direction - keep that in mind.
+	- TCP / UDP Filters
+		- Filters traffic to protocol-level information from the packets
+		- Can filter transport protocol level information like 
+			- source and destination ports, sequence numbers, acknowledgement numbers, window sizes, timestamps, flags, lengths and protocol errors
+		- `tcp.port == 80`
+		- `tcp.srcport == 1234`
+		- `tcp.dstport == 80`
+	- Application Level Protocol Filters | HTTP and DNS
+		- Filters application-specific information like
+			- payload and linked data, depends on the application being used
+		- `http`
+		- `http.response.code == 200`
+		- `http.request.method == "GET"`
+		- `http.request.method == "POST"`
+	- Display Filter Expressions
+		- Stores all supported protocol structures to help analysts create display filters
+		- When an analyst can't recall the required filter for a specific protocol or is unsure about the assignable values for a filter - **the Display Filter Expressions menu provides an easy to use display filter builder guide!**
+		- **Analyse > Display Filter Expression**
+		- Each protocol can have different fields and can accept various types of values
+		- This menu shows all protocol fields, accepted value types, or predefined values. 
+			![](https://tryhackme-images.s3.amazonaws.com/user-uploads/6131132af49360005df01ae3/room-content/08c2f3592d0b286f784d14407206bee8.png)
+		- Don't forget that you can assign custom colours to your custom rules/filters :) 
+
+- Advanced Filtering
+	- `contains`
+		- Comparison operator
+		- Search a value inside packets. Case-sensitive and provides similar functionality to the "Find" option by focusing on a specific field
+		- `http.server contains "Apache"`
+	- `matches`
+		- Comparison operator
+		- Search a pattern of a regular expression. Case-sensitive and complex queries have a margin of error.
+		- `http.host matches "\.(php|html")`
+			- Find all .php and .html pages
+	- `in`
+		- Set membership
+		- Search a value or field inside of a specific scope/range.
+		- `tcp.port in {80 443 8080}`
+			- Find all packets that use ports 80, 443, or 8080
+	- `upper`
+		- Function
+		- Convert a string value to uppercase
+		- `upper(http.server) contains "APACHE"`
+			- Find all "APACHE" servers
+			- Will find "Server: Apache\r\n"" for example in a HTTP Response.
+	- `lower`
+		- Function
+		- Convert a string value to lowercase
+		- `lower(http.server) contains "apache"`
+			- Find all "apache" servers
+			- Will find "Server: Apache\r\n" for example in an HTTP response
+	- `string`
+		- Function
+		- Convert a non-string value to a string
+		- `string(frame.number) matches "[13579]$"`
+			- Find all frames with odd numbers
+			- Convert all "frame number" fields to string values, and list frames ending with odd values
+
+- Bookmarks and Filtering Buttons
+	- You can save your filters for later
+	- There is a plus (`+`) icon to the right of the Filter-Query Field 
+	- And there is a Bookmark to the left
+	- Test away
+	- `(http.response.code == 200 ) && (http.content_type matches "image(gif||jpeg)")`
+
+- Profiles
+	- Profiles can be created for different investigation cases and to be used accordingly
+	- Some elements that can be saved under a Profile
+		- Set of colouring rules
+		- Filtering buttons
+	- **Edit > Configuration Profiles**
+	- or
+		- **Lower-right section of the status bar**
+		- 
+
+Some Wireshark documentation:
 https://www.wireshark.org/docs/
