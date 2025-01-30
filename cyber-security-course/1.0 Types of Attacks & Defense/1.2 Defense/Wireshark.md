@@ -1,0 +1,794 @@
+- https://wiki.wireshark.org/CaptureFilters
+- https://tryhackme.com/r/room/wireshark
+- 
+
+*(I'm most likely not going to describe this tool in this page, well that is the current thought anyway. I suggest to run some modules through THM or do some fiddling on your end :) Very powerful tool)*
+
+- Network packet sniffing tool
+- Can be used to find network traffic anomaly's (suspicious traffic)
+- Tools like Datto and other RMM solutions can also be used for Enterprise networks - but as far as I am currently aware not to the detail of what Wireshark provides (it literally breaks down a packets details without destroying it :)
+
+Firstly
+- Start with a sample capture to ensure that Wireshark is set up correctly and that it is capturing traffic appropriately
+- Ensure that the machine/system you are running Wireshark on has enough resources (hardware) to handle the amount of network traffic that it will be handling
+	- This will depend on the size of the network that is being analysed
+- Ensure you also have ENOUGH DISK SPACE! to store all of the packet captures (.pcaps :) )
+
+Network Taps
+- A physical implant in which you physically tap between a cable
+- Commonly used by Threat Hunting/DFIR teams, read teams - when in an engagement to sniff and capture packets
+	-  Using hardware to tap the wire and intercept traffic as it comes across
+		- A vampire tap 
+			- ![](https://assets.tryhackme.com/additional/wireshark101/7.gif)
+	- Planting a network tap that would be an inline network tap
+	- You would plant this between or inline two network devices
+	- The tap will replicate packets as they pass the tap
+	- Like a throwing star LAN tap
+		- ![](https://assets.tryhackme.com/additional/wireshark101/8.jpg)
+
+- MAC Floods
+	- Commonly used tactic by Red Teams to actively sniff packets
+	- Intended to stress the switch and fill the CAM table
+		- When the CAM(Content Addressable Memory) table is filled, the switch will no longer be able to accept new MAC addresses
+		- In order to keep the network alive, the switch will send out packets to all ports on the switch
+- ARP Poisoning
+	- Another technique used to actively sniff packets
+	- With ARP poisoning, you can redirect the traffic from the host(s) to the machine you're monitoring from. 
+	- This technique will not stress network equipment like MAC flooding
+
+Wireshark Default Packet Colouring Schema:
+![](https://assets.tryhackme.com/additional/wireshark101/6.png)
+
+
+- Filtering Captures in Wireshark
+	- Use of boolean and logic operators
+		- and
+			- `and` / `&&`
+		- or
+			- `or` / `||`
+		- equals
+			- `eq` / `==`
+		- not equal
+			- `ne` / `!=`
+		- greater than 
+			- `gt` / `>`
+		- less than
+			- `lt` / `<`
+	- contains
+	- matches
+	- bitwise_and (AND, OR, XOR, NOT)
+		- https://www.wireshark.org/docs/wsug_html_chunked/ChWorkBuildDisplayFilterSection.html
+	- Basic Filtering
+		- `ip.addr == <ip-address>`
+		- `ip.src == <src-ip-address> and ip.dst == <dst-ip-address>`
+		- `tcp.port eq <port-num> or <protocol-name>`
+		- `udp.port eq <port-num> or <protocol-name>`
+
+- Packet Dissection
+	- Packets are broken down according to the seven layers in the OSI model
+		- Frame
+		- MAC Addresses
+		- IP Addresses
+		- Transport Layer 4 Protocols
+		- Protocol Errors
+		- Application Protocol
+		- Application Data
+
+- ARP Traffic
+	- Address Resolution Protocol
+	- ARP is a Layer 2 protocol
+	- It's used to connect IP Addresses with MAC addresses
+	- They will contain REQUEST and RESPONSE messages
+	- Ensure that physical addresses are resolved in Wireshark
+		- View > Name Resolution > Resolve Physical Addresses (ticked)
+
+- ICMP Traffic
+- https://datatracker.ietf.org/doc/html/rfc792
+	- Internet Control Message Protocol
+	- Runs on Layer 3
+	- Used to analyse various nodes on a network
+	- Commonly used with utilities like ping and traceroute
+	- host-to-host datagram service in a system of interconnected networks
+		- Type 8's - request packet
+		- Type 0 - reply packet
+			- If these codes are altered, then something strange is going on
+	- Timestamps
+		- Are almost always important to consider
+	- Data
+		- Typically should just be a random string.
+
+- TCP Traffic
+- https://datatracker.ietf.org/doc/html/rfc793
+	- Layer 4
+	- Don't forget about the default colouring schema that Wireshark incorporates
+		- You can change these to your preference too
+	- Using tools like **RSA NetWitness** and **NetworkMiner** in conjunction with TCP packet analysis is worthy
+		- Otherwise there's just too much to go through by just using Wireshark alone
+	- The hand shake (the TCP one ;) ) 
+		- syn, synack, ack (**Flags**)
+		- If something is out of order in this handshake, or when it includes other packets like an RST packet - then there is something weird going on in the network
+		- (like an NMAP scan to a closed port)
+	- You can see the original sequence number of a packet
+		- edit > pref > protocols > TCP > uncheck relative sequence numbers
+	- Typically TCP packets need to be looked at as a whole to get the entire story - as opposed to by one by one... (much fragmentation)
+
+- DNS Traffic
+	- Layer 4 (UDP)
+- https://www.ietf.org/rfc/rfc1035.txt (1987, hah!)
+	- Resolves names with IP addresses
+	- Always check out the flags and get familiar with them
+	- Look out for what is being queried for signs of weirdness/suspicion 
+
+- HTTP Traffic
+	- Layer 7
+	- https://www.ietf.org/rfc/rfc2616.txt
+	- Straight forward protocol for analysis
+		- no handshakes or prerequisites before communication
+	- URI's can be informative when a GET request is placed
+	- This is HTTP, and not HTTPS - so bear that in mind. Everything's unencrypted 
+	- You can organise the protocols present in a capture the **Protocol Hierarchy**
+		- Statistics > Protocol Hierarchy
+	![](https://assets.tryhackme.com/additional/wireshark101/36.png)
+	- Real useful in practical applications like threat hunting to identify discrepancies in packet captures
+	- **Exporting an HTTP Object**
+		- Allows for the organisation of all requested URIs in the capture
+			- File > Export Objects > HTTP
+	- **Endpoints**
+		- Allows for the organisation of all endpoints and IPs found within a specific capture
+			- Statistics > Endpoints
+	- **Statistics**
+		- **There are heaps of options in here!**
+		- Capture File Properties
+		- Resolved Addresses
+			- Assists in identifying IP addresses and DNS names available in the .pcap file (hostnames are taken from the DNS answers in the pcap file)
+		- Protocol Hierarchy 
+			- Breaks down all available protocols from the capture file and assists analysts to view protocols in a tree-view based on packet counters and percentages 
+			- Analysts can view the overall usage of the ports and services and focus on the event of interest
+			- **Don't forget about right-click and filtering events of interest!**
+		- Conversations
+			- Represent traffic between two specific endpoints
+			- Provides a list of conversations in five formats
+				- ethernet
+				- IPv4
+				- IPv6 
+				- TCP 
+				- UDP
+			- Also can provide the country, approximate location
+		- Endpoints
+			- Similar to conversations but different
+			- Provides unique information for a single information field 
+			- You can also translate MAC addresses into human-readable format!
+				- Being the first three bytes of the MAC address and works with known manufacturers (keep that in mind)
+			- You can also enable name resolutions for IP addresses and port numbers as well (these aren't enabled in Wireshark by default)
+				- *Edit > Pref > Name Resolution > resolve transport/IP addresses*
+			- There is also geolocation mapping that can assist analysts to identify the map's source and destination address (also not activated by default)
+				- **Needs supplementary data like the GeoIP database**
+				- **Wireshark at the time of me going through this module, supports MaxMind databases**
+				- ***Edit > Pref > Name resolution > Maxmine database directories***
+					- https://wiki.wireshark.org/HowToUseGeoIP
+					- https://dev.maxmind.com/geoip/geolite2-free-geolocation-data/
+		- Packet Lengths
+		- I/O Graphs
+		- Service Response Time 
+		- DNS
+			- Breaks down all DNS packets can assist in viewing findings in a tree view based on packet counters and percentages of the DNS protocol
+				- Overall usage
+				- rcode
+				- opcode
+				- class
+				- query type
+				- service
+				- query stats
+		- HTTP
+			- Packet counter
+			- Requests
+			- Load Distributions
+			- Request Sequences
+			- Tree-view based on packet counters and percentages
+			- Overall usage
+			- request codes
+			- response codes
+			- original requests
+			- 
+		- IPv4/IPv6 Statistics
+			- All addresses
+			- IP Protocol Types
+			- Destination and Ports
+			- Source and Destination addresses
+		- 
+		- Check it out (I was thinking to take a screenshot but Obsidian and uploading to GitHub is a mission - may do later.)
+
+- HTTPS Traffic
+	- Before sending encrypted traffic, the client and server need to make an agreement first
+		- 1. Both agree on a protocol version
+		- 2. A cryptographic algorithm is selected and agreed upon (one that both sides can support)
+		- 3. The client and server can authenticate with each other, this is optional?
+		- 4. A secure tunnel is created with a public key (which then will lead to the symmetric encryption connection)
+	- We can start analysing HTTPS traffic by looking at packets for the handshake between the client and the server
+	- Adding an encryption key for debugging..
+		- Edit > Preferences > Protocols > TLS (or whatever) > RSA Keys List > Edit > add the relevant bits here. 
+			- Port might be '`start_tls'` 
+			- Protocol more than likely would be '`http`'
+	- Remember, looking out for
+		- Request URIs
+		- User-Agents
+			- Can be useful in practical applications of Wireshark, especially for threat hunting and network administration
+		- Also - HTTP Object Feature would now be available too
+			- File > Export Objects > HTTP
+
+Having solid and growing knowledge on Threat Intelligence, current, in the past, potential - is vital in knowing what to look out for when doing packet analysis. 
+
+Filters - Query Based
+- Capture Filters
+	- This type of filter is used to save only a specific part of the traffic, it is set before capturing traffic and not changeable during the capture
+	- Experienced professionals use capture filters and sniff traffic.
+	- These filters use byte offsets hex values and masks with boolean operators, and it is not easy to understand/predict the filter's purpose at first glance
+	- Syntax:
+		- Scope
+			- host, net, port and range
+		- Direction
+			- src, dst, src or dst, src and dst
+		- Protocol
+			- ether, wlan, ip, ip6, arp, rarp, tcp and udp
+		- **Quick Reference (in Wireshark):**
+			- **Capture > Capture Filters**
+		- Example:
+			- `tcp port 80`
+			- Sample filter to capture port 80 traffic
+	- More on Capture Filter Syntax:
+		- https://gitlab.com/wireshark/wireshark/-/wikis/CaptureFilters#useful-filters
+		- https://www.wireshark.org/docs/man-pages/pcap-filter.html
+- Display Filters
+	- **Handy tip is to look at the various options when you first type in a protocol to filter (or something to filter) - ie `http.` and you'll see various options**
+	- **Another tip is when you're analysing a packet, say for example you're looking at the source MAC address, look at the bottom information pane which will have what kind of filter-name the object has, then you can use that to create your filter queries etc :)** 
+	- https://www.wireshark.org/docs/dfref/
+	- Used to investigate packets by reducing the number of visible packets, and it is changeable during the capture
+	- Supports 3000 protocols and allows conducting packet-level searches under the protocol breakdown. 
+	- Example
+		- `tcp.port == 80`
+		- Sample filter to capture port 80 traffic
+	- Built-in option : Display Filter Expression
+		- stores all supported protocol structures to help analysts create display filters. 
+	- **Quick reference in Wireshark**
+		- **Analyse > Display Filters**
+	- Usual C-like boolean operators (the one's we all know and love, okay love would be debatable but know is something that should be the case)
+		- == , != , < , <= , > , >= 
+	- Wireshark supports decimal and hexadecimal values in filtering
+		- You can use any format you want according to the search you will conduct
+	- SameC-like expressions as well
+		- && , || , !
+	- You put these filters into the Filter Toolbar
+	- TIPS!:
+		- packet filters are defined in lowercase
+		- have an autocomplete feature to break down protocol details
+			- each detail is represented by a .
+		- packet filters have a three-colour representation
+			- GREEN
+				- Valid filter
+			- RED
+				- Invalid filter
+			- YELLOW
+				- Warning filter
+				- Works, but is unreliable, and it is suggested to change it with a valid filter
+- Protocol Filters
+	- Recall that 3000 protocols are supported in Wireshark and that Wireshark allows packet-level investigation by filtering the protocol fields. 
+	- IP Filters
+		- `ip`
+		- `ip.addr == 10.10.10.10`
+		- `ip.addr == 10.10.10.0/24`
+		- `ip.src == 10.10.10.111`
+		- `ip.dst == 192.168.1.42`
+		- **ip.addr** filters traffic without considering the packet direction - keep that in mind.
+	- TCP / UDP Filters
+		- Filters traffic to protocol-level information from the packets
+		- Can filter transport protocol level information like 
+			- source and destination ports, sequence numbers, acknowledgement numbers, window sizes, timestamps, flags, lengths and protocol errors
+		- `tcp.port == 80`
+		- `tcp.srcport == 1234`
+		- `tcp.dstport == 80`
+	- Application Level Protocol Filters | HTTP and DNS
+		- Filters application-specific information like
+			- payload and linked data, depends on the application being used
+		- `http`
+		- `http.response.code == 200`
+		- `http.request.method == "GET"`
+		- `http.request.method == "POST"`
+	- Display Filter Expressions
+		- Stores all supported protocol structures to help analysts create display filters
+		- When an analyst can't recall the required filter for a specific protocol or is unsure about the assignable values for a filter - **the Display Filter Expressions menu provides an easy to use display filter builder guide!**
+		- **Analyse > Display Filter Expression**
+		- Each protocol can have different fields and can accept various types of values
+		- This menu shows all protocol fields, accepted value types, or predefined values. 
+			![](https://tryhackme-images.s3.amazonaws.com/user-uploads/6131132af49360005df01ae3/room-content/08c2f3592d0b286f784d14407206bee8.png)
+		- Don't forget that you can assign custom colours to your custom rules/filters :) 
+
+- Advanced Filtering
+	- `contains`
+		- Comparison operator
+		- Search a value inside packets. Case-sensitive and provides similar functionality to the "Find" option by focusing on a specific field
+		- `http.server contains "Apache"`
+	- `matches`
+		- Comparison operator
+		- Search a pattern of a regular expression. Case-sensitive and complex queries have a margin of error.
+		- `http.host matches "\.(php|html")`
+			- Find all .php and .html pages
+	- `in`
+		- Set membership
+		- Search a value or field inside of a specific scope/range.
+		- `tcp.port in {80 443 8080}`
+			- Find all packets that use ports 80, 443, or 8080
+	- `upper`
+		- Function
+		- Convert a string value to uppercase
+		- `upper(http.server) contains "APACHE"`
+			- Find all "APACHE" servers
+			- Will find "Server: Apache\r\n"" for example in a HTTP Response.
+	- `lower`
+		- Function
+		- Convert a string value to lowercase
+		- `lower(http.server) contains "apache"`
+			- Find all "apache" servers
+			- Will find "Server: Apache\r\n" for example in an HTTP response
+	- `string`
+		- Function
+		- Convert a non-string value to a string
+		- `string(frame.number) matches "[13579]$"`
+			- Find all frames with odd numbers
+			- Convert all "frame number" fields to string values, and list frames ending with odd values
+
+- Bookmarks and Filtering Buttons
+	- You can save your filters for later
+	- There is a plus (`+`) icon to the right of the Filter-Query Field 
+	- And there is a Bookmark to the left
+	- Test away
+	- `(http.response.code == 200 ) && (http.content_type matches "image(gif||jpeg)")`
+
+- Profiles
+	- Profiles can be created for different investigation cases and to be used accordingly
+	- Some elements that can be saved under a Profile
+		- Set of colouring rules
+		- Filtering buttons
+	- **Edit > Configuration Profiles**
+	- or
+		- **Lower-right section of the status bar**
+
+Traffic Analysis
+- **NMAP** 
+	- Patterns
+		- TCP connect scans
+		- SYN scans
+		- UDP scans
+	- TCP Flags (summary)
+		- Global search
+			- `tcp`
+			- `udp`
+		- Only SYN Flag
+			- `tcp.flags == 2`
+		- SYN flag is set, rest of the bits are not important
+			- `tcp.flags.syn == 1`
+		- Only ACK Flag
+			- `tcp.flags == 16`
+		- ACK flag is set. Rest of the bits not important
+			- `tcp.flags.ack == 1`
+		- Only SYN, ACK flags
+			- `tcp.flags == 18`
+		- SYN and ACK are set, other bits don't matter
+			- `(tcp.flags.syn == 1) and (tcp.flags.ack == 1)`
+		- Only RST flag
+			- `tcp.flags == 4`
+		- RST flag is set. Rest of the bits are not important
+			- `tcp.flags.reset == 1`
+		- Only RST, ACK flags
+			- `tcp.flags == 20`
+		- RST and ACK are set, other bits don't matter
+			- `(tcp.flags.reset == 1) and (tcp.flags.ack == 1`)`
+		- Only FIN flag
+			- `tcp.flags == 1`
+		- FIN flag set, other bits don't matter
+			- `tcp.flags.fin == 1`
+	- **TCP Connect Scans**
+		- Relies on a three-way handshake (which needs to finish.)
+		- `nmap -sT`
+		- Used by non-priv users (it's the only option given to non root users)
+		- **Window sizes are normally bigger than 1024 bytes as the request expects some data due to the nature of the protocol**
+		- Open TCP Port:
+			- `SYN -->`
+			- `<-- SYN,ACK`
+			- `ACK -->`
+		- Open TCP Port:
+			- `SYN -->`
+			- `<-- SYN,ACK`
+			- `ACK --> `
+			- `RST,ACK -->`
+		- Closed TCP Port:
+			- `SYN -->`
+			- `<-- RST, ACK`
+		- Filter it down! Who's probing, mapping?!
+			- `tcp.flags.syn==1 and tcp.flags.ack==0 and tcp.window_size > 1024`
+	- **SYN Scans**
+		- Doesn't rely on the three-way handshake, it doesn't complete the process (with the third `ACK` - it will wait to see if a `SYN,ACK` is received them move on - thus not completing a full TCP connection.)
+		- `nmap -sS`
+		- Priv'd users
+		- TCP window `<= 1024` as the request won't finish and it doesn't expect to receive data
+		- Open TCP Port:
+			- `SYN -->`
+			- `<-- SYN,ACK`
+			- `RST -->`
+		- Closed TCP Port:
+			- `SYN -->`
+			- `<-- RST,ACK`
+		- Filter it down, who's trying to be stealthy when probing?!
+			- `tcp.flags.syn==1 and tcp.flags.ack==0 and tcp.window_size <= 1024`
+	- UDP Scans
+		- No handshake process
+		- No prompt for open ports
+		- ICMP error message for closed ports
+		- `nmap -sU`
+		- Open UDP Port:
+			- `UDP packet -->`
+		- Closed UDP Port:
+			- `UDP packet -->`
+			- `ICMP Type 3, Code 3 message. (Destination unreachable, port unreachable)`
+		- Filter down UDP Scannerings!
+			- `icmp.type==3 and icmp.code==3`
+		- The returned type3 packets will have the original request contained within it as well 
+
+- ARP Poisoning
+	- ARP is the protocol responsible for allowing devices to identify themselves on a network
+	- ARP Poisoning, or Spoofing, or MITM (Man In The Middle) Attack - is a type of attack that involves network jamming/manipulating by sending malicious ARP packets to the default gateway
+	- The ultimate aim is to manipulate the **IP to MAC address table** and sniff the traffic of the target host.
+		- Works on the local network
+		- Enables communication between MAC addresses
+		- Not a secure protocol
+		- Not a routable protocol
+		- Doesn't have an authentication function
+		- Common patterns are request and response, announcement and gratuitous packets
+	- Some commands
+		- Global search
+			- `arp`
+		- ARP options for grabbing low hanging fruits:
+			- Opcode 1: ARP requests
+				- `arp.opcode == 1`
+			- Opcode 2: ARP responses
+				- `arp.opcode == 2`
+			- HUNT ARP Scanning
+				- `arp.dst.hw_mac==00:00:00:00:00:00`
+			- HUNT Possible ARP Poisoning Detection
+				- `arp.duplicate-address-detected or arp.duplicate-address-frame`
+			- HUNT Possible ARP flooding from detection:
+				- `((arp) && (arp.opcode == 1) && (arp.src.hw_mac == <target-mac-address>)`
+	- Scenario
+		- A suspicious situation related to ARP responses could be that there are two different ARP responses (a conflict) for a particular IP address. 
+		- Wiresharks' expert info tab will warm the analyst in such a scenario
+		- BUT, it is only the second occurrence of the duplicate value to highlight the conflict
+			- So figuring out the malicious packet from the legitimate one is the challenge
+	- Always take note of your findings as you go along with your investigations.
+		- Should be a given.
+		- Helps to keep your research/investigation organised
+		- Assists in being able to refer to information/findings quickly
+		- Build a pattern more efficiently, etc etc
+		- Good habit :) 
+	- Look at this image carefully and see what's happening
+		![](https://tryhackme-images.s3.amazonaws.com/user-uploads/6131132af49360005df01ae3/room-content/7f0e92a248da129dda0593a299ecb368.png)
+		- You can see that a host on the network (192.168.1.25) probed to see who has has 192.168.1.1's details (this could potentially be the networks router) 
+		- 192.168.1.25 then started ARP broadcasting saying that it was 192.168.1.1.
+	- Adding the MAC Address column in Wireshark can be useful to cross-reference between requests being made from IP Addresses and what their associated MAC Address is -- so that you can see if there is an MITM Attack at play or not
+			![](https://tryhackme-images.s3.amazonaws.com/user-uploads/6131132af49360005df01ae3/room-content/f885817e77449e6898ba3ede164723c4.png)
+		`arp.duplicate-address-frame`
+
+- Identifying Hosts (DHCP, NetBIOS, Kerberos)
+	- Having host and user identification skills is essential
+	- DHCP
+		- Global search
+			- `dhcp`, or
+			- `bootp`
+		- Filtering the DHCP packet options:
+			- DHCP Request (contains hostname information)
+				- `dhcp.option.dhcp == 3`
+			- DHCP ACK (represents accepted requests)
+				- `dhcp.option.dhcp == 5`
+			- DHCP NAK (represents denied requests)
+				- `dhcp.option.dhcp == 6`
+		- Due to the nature of DHCP - only Option 53 (request type) has predefined static values
+			- **Filtering packet type first, then you can filter the rest of the options by "applying as column" or use the advanced filters like "contains" and "matches"**
+		- DHCP Request options (good for grabbing low hanging fruits)
+			- Option 12
+				- Hostname
+			- Option 50
+				- Requested IP address
+			- Option 51
+				- Requested lease time
+			- Option 61
+				- Client's MAC address
+			- `dhcp.option.hostname contains "keyword"`
+		- DHCP ACK
+			- Option 15
+				- Domain Name
+			- Option 51
+				- Assigned IP lease time
+			- `dhcp.option.domain_name contains "keyword"`
+		- DHCP NAK
+			- Option 56
+				- Message (rejection details/reason)
+			- Read the message as opposed to filtering it, as these messages could be unique depending on the nature of the case/situation
+	- NetBIOS
+		- Allows applications on different hosts to communicate with one another
+			- Global search
+				- `nbns`
+			- NBNS Queries (could be name, TTL, IP address details)
+				- `nbns.name contains "keyword"`
+			- Normally like with other Wireshark protocol filtering commands, just look out for options that appear when you first type in `nbns.` 
+	- Kerberos Analysis
+		- Default authentication service for MS domains
+		- Responsible for authenticating service requests between two or more computers over the untrusted network. 
+		- The aim is to prove identity securely
+			- Global search
+				- `kerberos`
+			- User account search (note that some packets could provide hostname information. Filter the "`$`" value. Values with "`$`" are hostnames, and the ones without it are user names :) )
+				- `kerberos.CNameString contains "keyword"`
+				- `kerberos.CNameString and !(kerberos.CNameString contains "$")`
+					- AND VICE VERSA TO GET HOST NAMES!.
+			- Low hanging fruits
+				- Protocol version
+					- `kerberos.pvno == 5`
+				- Realm (domain name for the generated ticket)
+					- `kerberos.realm contains ".org"`
+				- sname (service and domain name for the generated ticket)
+					- `kerberos.SNameString == "krbtg"`
+				- Addresses - Client IP address and NetBIOS name
+					- the addresses information is only available in request packets (I'm not familiar with Kerberos properly just yet, more practice needed :) ) 
+
+- Tunnelling Traffic: ICMP and DNS
+	- aka Port Forwarding
+	- Transferring data/resources in a secure method to network segments and zones
+	- Used for "internet to private networks" and "private networks to internet" flow/direction
+	- Encapsulation process to hide the data
+		- So transferred data appear natural for the case
+			- But it contains private data packets and transfers them to the final destination securely
+	- Tunnelling provides anonymity and traffic security - highly used by enterprise networks
+	- As it gives a significant level of data encryption - ATTACKERS use tunnelling to bypass security perimeters using the standard and trusted protocols used in everyday traffic like ICMP and DNS. 
+	- It is crucial to have the ability to spot ICMP and DNS anomalies 
+	- Especially for analyst(s) involved. 
+	- ICMP Analysis
+		- ICMP is designed for diagnosing and reporting network communication issues
+		- Used a lot in error reporting and testing
+		- As it is a **trusted network layer protocol** sometimes it is used for DoS attacks and adversaries can use it in data exfiltration and C2 tunnelling activities
+		- Normally - ICMP tunneling attacks are anomalies that appear/start after a malware execution or vulnerability exploitation. 
+		- **As ICMP packets can transfer an additional data payload, adversaries use this section to exfiltrate data and establish a C2 connection.** 
+		- It could be a TCP, HTTP, or SSH data
+		- As the ICMP protocols provide a great opportunity to carry extra data, it also has disadvantages
+			- Most enterprise networks block custom packets or require administrator privileges to create custom ICMP packets. 
+		- **A large volume of ICMP traffic or anomalous packet sizes are indicators of ICMP tunneling**
+		- However, th**reat actors could create custom packets that match the regular ICMP packet size (64 bytes)**, so it is still cumbersome to detect these tunnelling activities. 
+		- However, a security analyst should know the normal and abnormal to spot the possible anomaly and escalate it for further analysis
+		- Global search
+			- `icmp`
+		- Packet length
+			- `data.len > 64 and icmp`
+			- ICMP destination address
+			- Encapsulated protocol signs in ICMP payload
+		- Are there any protocols that could be running in the encrypted data that the icmp packet is transferring? 
+			- `icmp and data.len>64 and (icmp contains "ssh" or "icmp contains "ftp" or icmp contains "http" or icmp contains "tcp")`
+
+- DNS Analysis
+	- DNS - the phonebook of the internet
+	- DNS attacks, similar to ICMP tunnels, start appearing after a malware execution or exploitation of a vulnerability
+	- Attackers will normally create a domain address and configure it as a C2 tunnel.
+	- The malware or the commands that are executed after exploitation will send DNS queries to the C2 server
+	- However these queries are longer than default DNS queries and crafted for subdomain addresses.
+	- **These subdomain addresses are not actual addresses, they are encoded as commands as below:**
+		- `encoded-commands.maliciousdomain.com`
+		- When this query is routed to the C2 server - the server will then send the actual malicious code/commands to the host
+		- As the DNS queries are a natural part of networking activity, these packets have the chance of not being detected by network perimeters
+		- A security analyst should know how to investigate the DNS packet lengths and target addresses to spot these anomalies
+	- Global search
+		- `dns`
+	- Query length
+	- Anomalous and non-regular names in DNS addresses
+	- Long DNS addresses with encoded subdomain addresses
+	- Known patterns like `dnscat` and `dns2tcp`
+	- Statistical analysis like the anomalous volume of DNS requests for a particular target
+		- `dns contains "dnscat"`
+		- `dns.qry.name.len > 15 and !mdns`
+	- `!mdns`
+		- Disable local link device queries
+	- dnscat - https://www.skullsecurity.org/2010/dns-backdoors-with-dnscat
+
+- Cleartext Protocol Analysis
+	- Investigating a big network trace for incident analysis and response, takes a lot of time - even for investigating cleartext protocol traces.
+	- Proper analysis is more than following the stream and reading the cleartext data 
+	- For a security analyst, it is important to create statistics and key results from the investigation process
+- FTP Analysis
+	- Using this protocol in unsecured environments could create security issues - one would like to say obviously!
+		- MITM attacks
+		- Credential stealing and unauthorised access
+		- Phishing
+		- Malware planting
+		- Data exfiltration
+- FTP analysis in a nutshell
+	- Global search
+		- `ftp`
+	- FTP Options for grabbing low hanging fruits
+		- `x1x series`
+			- Information request responses
+			- 211 - system status
+			- 212 - directory status
+			- 213 - file status
+			- `ftp.response.code == 211`
+		- `x2x series`
+			- Connection messages
+			- 220 - service ready
+			- 227 - entering passive mode
+			- 228 - long passive mode
+			- 229 - extended passive mode
+			- `ftp.response.code == 227`
+		- `x3x series`
+			- Authentication messages
+			- 230 - user login
+			- 231 - user logout
+			- 331 - valid username
+			- 430 - invalid username or password
+			- 530 - no login, invalid password
+			- `ftp.response.code == 230`
+		- 200 means command successful. 
+		- USER: Username
+			- `ftp.request.command == "USER"`
+		- PASS: Password
+			- `ftp.request.command == "PASS"`
+			- `ftp.request.arg == "password"`
+		- CWD: Current work directory
+		- LIST: List
+		- Advanced usage examples:
+			- Bruteforce signal: List failed login attempts
+			- Bruteforce signal: List target username
+			- Password spray signal: List targets for a static password
+				- `ftp.response.code == 530`
+				- `(ftp.response.code == 530) and (ftp.response.arg contains "username")`
+				- `(ftp.response.command == "PASS") and (ftp.request.arg == "password")`
+- HTTP Analysis
+	- Cleartext-based
+	- Request-response
+	- Client-server model
+	- By default not blocked by any network perimeter
+	- HTTP analysis can assist in detecting:
+		- Phishing Attacks
+		- Web Attacks
+		- Data Exfiltration
+		- Command and Control (C2)
+	- Analysis in a nutshell:
+		- Global search
+			- `http`
+			- `http2`
+			- (HTTP2 is a revision of HTTP for better performance and security)
+			- It supports binary data transfer and request & response multiplexing
+		- HTTP Request Methods
+			- GET
+				- `http.request.method == "GET"`
+			- POST
+				- `http.request.method == "POST"`
+			- Request: Listing all requests
+				- `http.request`
+		- HTTP Response Status Codes
+		- https://http.cat/
+			- 200 OK - request successful
+				- `http.response.code == 200`
+			- 301 Moved Permanently
+			- 302 Moved Temporarily
+			- 400 Bad Request
+				- Server didn't understand the request
+			- 401 Unauthorised
+				- No perms
+			- 403 Forbidden
+				- No access to the requested URL
+			- 404 Not Found
+			- 405 Method Not Allowed
+				- Used method is not suitable, or blocked
+			- 408 Request Timeout
+				- Request took longer than server wait time
+			- 500 Internal Server Error
+				- Request not completed, unexpected error
+			- 503 Service Unavailable
+				- Request not completed on the server, or the service is down
+		- HTTP Parameters
+			- User Agent
+				- Browser and operating system system identification to a web server application
+				- `http.user_agent contains "nmap"`
+				- `(http.user_agent contains "sqlmap") or (http.user_agent contains "Nmap") or (http.user_agent contains "wfuzz") or (http.user_agent contains "Nikto")`
+				- Look out for
+					- Different user agent information from the same host in a short time notice
+					- Non-standard and custom user agent info
+					- Subtle spelling differences
+					- Audit tools like **nmap, nikto, wfuzz** and **sqlmap**
+					- Payload data in the user-agent field
+			- Request URI
+				- `http.request.uri contains "admin"`
+			- Full URI
+				- `http.request.full_uri contains "admin"`
+			- Server
+				- `http.server contains "apache"`
+					- don't forget that you can also use `lower(http.server) contains "apache"`
+			- Host
+				- `http.host contains "something"`
+				- `http.host == "something"`
+			- Connection
+				- `http.connection == "Keep-Alive"`
+			- Line-based text data
+				- Cleartext data provided by the server
+				- `data-text-lines contain "something"`
+			- HTML Form URL Encoded
+				- Web form information
+	- Adversaries will always try to leave traces that are similar to natural traffic through known and trusted protocols
+	- It is important to spot the anomaly signs on the bits and pieces of the packets
+	- The user-agent field is one of the great resources for spotting anomalies in HTTP trarfffic.
+	- In some case, adversaries may modify the user-agent data, which could look legit - but it isn't!
+		- So you can't rely just on the UA field to spot an anomaly
+	- **NEVER WHITELIST A USER-AGENT**
+	- User agent-based anomaly/threat detection/hunting is an additional data source to check and is useful when there is an obvious anomaly 
+	- If in doubt, conduct a web search to validate your findings with the default and normal user-agent info
+		- https://explore.whatismybrowser.com/useragents/explore/
+	- `http.authbasic`
+
+- Log4j Analysis
+	- A proper investigation starts with prior research on threats and anomalies going to be hunted
+	- What is the Log4j attack?
+		- The attack starts with a POST request
+		- There are known cleartext patterns: "**jndi:ldap**" and "**Exlploit.class**".
+			- `http.request.method=="POST"`
+			- `(ip contains "jndi") or (ip contains "Exploit")`
+			- `(frame contains "jndi") or (frame contains "Exploit")`
+			- `(http.user_agent contains "$") or (http.user_agent contains "==")`
+
+- Decrypting HTTPS Traffic
+	- You need the key pairs.
+	- Attackers and malicious website also use HTTPS
+	- An analyst should know how to use key files to decrypt encrypted traffic and investigate the traffic activity
+	- HTTPS Parameters
+		- Global search
+			- `http.request`
+		- TLS global search
+			- `tls`
+		- TLS Client response:
+			- `tls.handhake.type == 1`
+		- TLS Server response:
+			- `tls.handshake.type == 2`
+		- Local Simple Service Discovery Protocol:
+			- `ssdp`
+			- Simple Service Discovery Protocol
+				- A protocol that provides advertisement and discovery of network services
+	- TLS protocol, like TCP, has a handshake process
+	- The first two steps contain the "Client Hello" and "Server Hello" messages
+		- Client Hello
+			- `(http.request or tls.handshake.type == 1) and !(ssdp)`
+			- `(http.request or tls.handshake.type == 2) and !(ssdp)`
+	- An encryption key log is a text file that contains unique key pairs to decrypt the encrypted traffic session
+	- These key pairs are automatically created (per session) when a connection is established with an SSL/TLS-enabled webpage
+	- As these processes are all accomplished in the browser, you need to configure your system and use a suitable browser (Chrome and Firefox support this) to save these values as a key log file
+	- To do this, you will need to set up an environment variable and create the **SSLKEYLOGFILE** , and the browser will dump the keys to this file as you browse the web. 
+	- SSL/TLS key pairs are created per session at the connection time, so it is **important** to dump the keys during the traffic capture. 
+		- Otherwise it is not possible to create/generate a suitable key log file to decrypt captured traffic. 
+	- You can use the "right-click" menu or "edit > Pref > Protocols > TLS" menu to add/remove key log files. 
+	- Don't forget that you can export HTTP stuff - so if there are objects you want to look at, especially after decrypting traffic in TLS > check this part out
+
+ Wireshark is not all about packet details
+	- It can also assist in creating firewall rules ready to implement with a couple of clicks
+	- You can do so by by:
+		- **Tools -> Firewall ACL Rules** menu
+	- These rules are generated for implementation on an outside firewall interface
+	- Wireshark can (currently, and probably more at this stage) create rules for:
+		- Netfilter (iptables)
+		- Cisco IOS (standard/extended)
+		- IP Filter (ipfilter)
+		- IPFirewall (ipfw)
+		- Packet filter (pf)
+		- Windows Firewall (netsh new/old format)
+
+- **Don't forget about 
+	- Analyzer --> Expert Information
+	- Tools --> Credentials
+	- Statistics -->
+	- File --> Export Objects
+	- Tools --> Firewall ACL Rules (when you have a packet selected)
+
+
+Some Wireshark documentation:
+https://www.wireshark.org/docs/
