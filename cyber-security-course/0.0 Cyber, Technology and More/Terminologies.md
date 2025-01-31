@@ -889,3 +889,6 @@
 	- A set of rules and procedures designed to control user access to endpoints
 		- Like computers, servers or mobile devices
 	- By ensuring they only have the minimum level of privileges needed to perform their tasks
+- IANA
+	- Internet Assigned Numbers Authority
+- 
