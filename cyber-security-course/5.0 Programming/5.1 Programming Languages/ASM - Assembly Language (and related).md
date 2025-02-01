@@ -4,6 +4,8 @@ https://pwn.college/computing-101/hello-hackers/
 https://open.umn.edu/opentextbooks/textbooks/733 
 https://cs.brown.edu/courses/cs033/docs/guides/x64_cheatsheet.pdf
 https://en.wikibooks.org/wiki/X86_Assembly/X86_Architecture
+https://github.com/mschwartz/assembly-tutorial?tab=readme-ov-file#introduction
+
 
 All roads lead to the CPU:
 
@@ -1023,6 +1025,24 @@ finito:
 	- Does not change the state of any registers or status flags except `rip`
 	- It does not access any memory
 	- It's 1 byte long and very predicable
+
+Call and Ret Instructions
+https://en.wikipedia.org/wiki/X86_calling_conventions#System_V_AMD64_ABI
+- The `call` instruction pushes the memory address of the next instruction on to the stack and then jumps to the value stored in the first argument
+	```asm
+	0x1021 mov rax, 0x400000
+	0x1028 call rax
+	0x102a mov [rsi], rax
+	```
+	- `call` pushes `0x102a`, the address of the next instruction on to the stack
+	- `call` jumps to `0x400000`, the value stored in `rax`
+
+- The `ret` instruction is the opposite of `call` - `ret` pops the top value off the stack and jumps to it
+	```asm
+	0x103f mov rax, rdx     RSP + 0x8     0xdeadbeef
+	0x1042 ret              RSP + 0x0     0x0000102a
+	```
+	- `ret` will jump to `0x102a`
 
 Directives
 https://ftp.gnu.org/old-gnu/Manuals/gas-2.9.1/html_chapter/as_7.html

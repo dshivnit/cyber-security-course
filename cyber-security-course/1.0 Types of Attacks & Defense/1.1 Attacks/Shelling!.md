@@ -6,7 +6,7 @@ Remote shelling allows several 'things' from an attack perspective:
 	- Gives the attacker the ability to execute commands or software remotely in the target system
 - Privilege Escalation
 	- If the initial remote session through a shell is limited/restricted - the attacker(s) can explore ways to escalate privileges to more elevated or administrative access
-- Data Exfiltration
+- Data Exfiltration 
 	- Once the adversaries have access to execute commands through an obtained shell, they can then explore the system to read, and perhaps copy sensitive data from it
 - Persistence and Maintenance Access
 	- Once shell access is gained, attackers could then create access through users and credentials or copy backdoor software to maintain access to the target system for later usage
