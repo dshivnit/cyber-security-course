@@ -324,6 +324,8 @@ Example:
 	- Will list frame 27's details and only 27 from the entire pcap! :) 
 
 - Remember how to extract:
+-  After viewing statistics and creating an investigation plan
+- https://www.wireshark.org/docs/dfref/
 	- hostnames
 		- `tshark -r filename.pcap -T fields -e dhcp.option.hostname`
 		- `tshark -r filename.pcap -T fields -e dhcp.option.hostname | awk NF | sort -r | uniq -c | sort -r`
@@ -333,6 +335,7 @@ Example:
 		- `tshark -r capture-file.pcap -T fields -e dns.qry.name | awk NF | sort -r | uniq -c | sort -r`
 	- User Agents
 		- `tshark -r capture-file.pcap -T fields http.user_agent | awk NF | sort -r | uniq -c | sort -r`
-- After viewing statistics and creating an investigation plan
-- https://www.wireshark.org/docs/dfref/
-- 
+-
+-  Export Objects
+	- Extract files from DICOM, HTTP, IMF, SMB and TFTP
+	- `--export-objects http,/path/to/folder -q

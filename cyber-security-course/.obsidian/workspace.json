@@ -41,12 +41,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "0.0 Cyber, Technology and More/Commands.md",
+                "file": "0.0 Cyber, Technology and More/Notes/REGEX Solutions.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Commands"
+              "title": "REGEX Solutions"
             }
           },
           {
@@ -237,9 +237,10 @@
   },
   "active": "76c3c07d1a0813ea",
   "lastOpenFiles": [
+    "0.0 Cyber, Technology and More/Notes/REGEX Solutions.md",
     "0.0 Cyber, Technology and More/Commands.md",
-    "0.0 Cyber, Technology and More/Cheat Sheets.md",
     "1.0 Types of Attacks & Defense/1.2 Defense/TShark.md",
+    "0.0 Cyber, Technology and More/Cheat Sheets.md",
     "1.0 Types of Attacks & Defense/1.1 Attacks/Shelling!.md",
     "0.0 Cyber, Technology and More/Security+ SY0-701/Cryptographic Solutions.md",
     "1.0 Types of Attacks & Defense/1.1 Attacks/Wi-Fi Pen.md",
@@ -262,7 +263,6 @@
     "1.0 Types of Attacks & Defense/1.2 Defense/Digital Forensics.md",
     "1.0 Types of Attacks & Defense/1.2 Defense/Threat Intelligence Tools.md",
     "1.0 Types of Attacks & Defense/1.2 Defense/Network Traffic Analysis and Network Security.md",
-    "1.0 Types of Attacks & Defense/1.2 Defense/Defense in Depth (Multi-Level Security).md",
     "99.99 Images Used/Pasted image 20250125183314.png",
     "99.99 Images Used/Pasted image 20250121193309 1.png",
     "99.99 Images Used/Pasted image 20250121193309.png",
