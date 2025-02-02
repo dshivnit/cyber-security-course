@@ -171,9 +171,168 @@ Capture Condition Parameters
 			- Filtering DNS packets
 				- `tshark -Y 'dns'`
 			- Filtering all DNS "A" packets
-				- `tshark -Y 'dns.qry.type == 1`
+				- `tshark -Y 'dns.qry.type == 1'`
 	- Tip - use `nl` when filtering packets from a .pcap* (if you want)
 	- You can save the results of your filter-queries into a txt file for processing
 	- Also don't forget about piping `wc -l` which is handy (imo)
 	- `Dup` will identify a duplicate packet
 
+
+- Packet Hierarchy Statistics (`phs` option)
+- `-z something,something -q` 
+	-- will show you a list of all the options available
+	- Once this command is used, the result will start with the PHS header
+		- `--color`
+			- Wireshark-like
+			- `tshark --colour -r capture.pcap`
+		- `-z`
+			- **Statistics**
+			- Multiple options available under this parameter
+				- `tshark -z help`
+			- Sample usage
+				- `tshark -z filter`
+			- Each time you filter the statistics, packets are shown first, then the statistics provided. 
+			- `-q`
+				- You can suppress packets and focus on the statistics by using the -q parameter
+- Colourised Output
+	- Just like Wireshark
+		- `tshark --color -r capture-file.pcap`
+- **Statistics | Protocol Hierarchy**
+	- General overview
+		- `tshark -r cap-file.pcapng -z io,phs -q`
+	- Focusing on a particular protocol more - in this instance UDP
+		- `tshark -r cap-file.pcapng -z io,phs,udp -q`
+- **Statistics | Packet Lengths Tree**
+	- Helps to get an overview of the general distribution of packets by size in a tree view
+	- Allows analysts to detect anomalously big and small packets at an easy glance
+	- `-z plen,tree -q`
+		- `tshark -r cap-file.pcapng -z plen,tree -q`
+- Statistics | Endpoints
+	- Gives an overview of the unique endpoints
+	- Shows the number of packets associated with each endpoint
+	- `-z endpoints,ip -q`
+		- `tshark -r cap-file.pcapng -z endpoints,ip -q`
+	- if you type in `endpoints,something` then tshark will show you a report of what entries are allowed (as you would have put in a wrong filter type 'something' -- good way to see the list of possibilities :) ) 
+	- endpoints,bluetooth
+     endpoints,eth
+     endpoints,fc
+     endpoints,fddi
+     endpoints,ip
+     endpoints,ipv6
+     endpoints,ipx
+     endpoints,jxta
+     endpoints,mptcp
+     endpoints,ncp
+     endpoints,rsvp
+     endpoints,sctp
+     endpoints,sll
+     endpoints,tcp
+     endpoints,tr
+     endpoints,udp
+     endpoints,usb
+     endpoints,wlan
+     endpoints,wpan
+     endpoints,zbee_nwk
+- Statistics | Conversations
+	- `-z conv,ip -q`
+- Specific Filters for Particular Protocols
+	- Statistics | IPv4 and IPv6
+	- Viewing all hosts on the network
+		- `-z ip_hosts,tree -q`
+		- `-z ipv6_hosts,tree -q`
+	- Handy one - source and destination addresses
+		- `-z ip_srcdst,tree -q`
+		- `-z ipv6_srcdst,tree -q`
+	- Destinations, outgoing traffic
+		- `-z dests,tree -q`
+		- `-z ipv6_dests,tree -q`
+	- DNS
+		- `-z dns,tree -q`
+	- HTTP
+		- `-z http,tree -q`
+		- `-z http2,tree -q`
+		- `-z http_srv,tree -q`
+		- `-z http_req,tree -q`
+		- `-z http_seq,tree -q`
+- Stream, Objects and Credentials
+	- Follow Stream
+		- `-z follow`
+		- Protocols
+			- `tcp`
+			- `udp`
+			- `http`
+			- `http2`
+		- View Modes
+			- `hex`
+			- `ascii`
+		- Stream Number
+			- `0`
+			- `1`
+			- `2`
+			- `...`
+		- Additional Parameter
+			- `-q` (quiet the output down)
+		- `-z follow,tcp,ascii,0 -q`
+			- This is very comprehensive!!
+			- `tshark -Y 'ip.addr=63.208.228.223' -r demo.pcapng -z follow,tcp,ascii,0 -q`
+				- Gives you all of the returns from the web-server above with the HTML get responses
+				- In a sequential stream
+		- `-z follow,udp,ascii,0 -q`
+		- `-z follow,http,ascii,0 -q`
+	- Export Objects
+		- Extract files from DICOM, HTTP, IMF, SMB and TFTP
+		- `--export-objects http,/path/to/folder -q`
+	- Credentials
+		- `-z credentials -q`
+
+- Advanced Filtering | Contains, Matches, and Extract Fields
+	- Contains
+		- Case-sensitive
+		- Search a value inside packets
+		- Similar to Wireshark's "find" option
+	- Matches
+		- Case-sensitive
+		- Supports regex
+		- Search a pattern inside packets
+		- Complex queries have a margin of error
+	- NOTE: These operators cannot be used with fields consisting of 'integer' values
+	- Extract
+		- Extract specific parts of data from packets
+		- Collect and correlate various fields from the packets
+		- Assists in managing the query output on the terminal!
+		- Main Filter
+			- `-T`
+		- Target Field
+			- `-e <field-name>`
+		- Show Field Name
+			- `-E header=y`
+		- Example:
+			- `tshark -r cap-file.pcapng -T fields -e ip.src -e ip.dst -E header=y -c 5`
+				- `-c` list the first five results.
+	- Contains
+		- Example:
+			- `tshark -r capfile.pcap -Y 'http.server contains "Apache"'`
+			- lower works here too
+			- `tshark -r capfile.pcap -Y 'lower(http.server) contains "apache"'`
+	- Matches
+		- Example:
+			- `tshark -r capture.pcap -Y 'http.request.method matches "(GET|POST)"'`
+
+Example:
+- `tshark -r filecap-pcap -Y 'lower(http.request.method) matches "(GET|POST)" -T fields -e ip.src -e ip.dst -E header=y'`
+- `thsark -r netcapture.pcap -Y 'frame.number==27'` -V
+	- Will list frame 27's details and only 27 from the entire pcap! :) 
+
+- Remember how to extract:
+	- hostnames
+		- `tshark -r filename.pcap -T fields -e dhcp.option.hostname`
+		- `tshark -r filename.pcap -T fields -e dhcp.option.hostname | awk NF | sort -r | uniq -c | sort -r`
+			- `awk NF` - removes empty lines.
+			- Will give you all hostnames found and the amount of times they were found as well
+	- DNS queries
+		- `tshark -r capture-file.pcap -T fields -e dns.qry.name | awk NF | sort -r | uniq -c | sort -r`
+	- User Agents
+		- `tshark -r capture-file.pcap -T fields http.user_agent | awk NF | sort -r | uniq -c | sort -r`
+- After viewing statistics and creating an investigation plan
+- https://www.wireshark.org/docs/dfref/
+- 

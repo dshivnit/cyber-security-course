@@ -72,6 +72,8 @@ Bash (pipe to the pipe pipe ;) )
 	- The backslash character `\` is needed to escape the forward slash in our pattern and tell `sed` to treat the forward slash `/` as a literal character
 	- the `-i` parameter can be used to overwrite the file that is being analysed (be careful with this and make sure you have a backup!)
 - awk
+	- `awk NF` 
+		- REMOVE EMPTY LINES!
 	- Conditional actions based on specific fields in the file being analysed
 	- ie from the example that we've been working with above, printing out HTTP Responses which are 400 (remember that these signify an error has been thrown by the Web Server) or higher
 		- `awk '$9 >= 400' apache.log` | tail -n 1
