@@ -257,7 +257,20 @@ Resources
 		# The items() call will allow you to be able to pick up the keyname as well as the value of the key to be able to work with them
 ```
 	(now imagine making a 2D dictionary - same stuff, just an embedded Dictionary in another.)
-	
+
+- 2D Dictionary
+	```python
+	clue = {}
+
+	while True:
+		name = input("Name: ")
+		location = input("Location: ")
+		weapon = input("Weapon: ")
+
+		clue[name] = {"location": location, "weapon": weapon}
+
+		print(clue)
+	```
 - Files
 	- 
 - chr()

@@ -1,0 +1,4 @@
+- Jumping to a line
+	- In command mode:
+		- Type the line number you want to go to then press `G` (capital G)
+	- 
