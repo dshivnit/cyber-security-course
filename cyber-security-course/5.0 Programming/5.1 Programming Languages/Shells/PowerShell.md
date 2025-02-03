@@ -1,3 +1,5 @@
+https://adamtheautomator.com/psexec/ (look through some of the Invoke-Commands and document later)
+
 What is PowerShell?
 - Windows Scripting Language and shell environment using the .NET framework
 - Allows PS to execute .NET functions directly from its shell

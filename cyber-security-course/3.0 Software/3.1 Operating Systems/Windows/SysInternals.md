@@ -1,0 +1,187 @@
+https://learn.microsoft.com/en-us/sysinternals/downloads/sysinternals-suite
+https://live.sysinternals.com/
+https://tryhackme.com/room/btsysinternalssg
+
+A basic rundown of SysInternals (there are many applications/programs within the suite) 
+
+- Powershell Install
+	- `Download-SysInternalTools C:\Tools\Sysint`
+		- This didn't work for me
+
+- A compilation of over 70+ Windows tools - categorised into:
+	- File and Disk Utilities
+	- Networking Utilities
+	- Process Utilities
+	- Security Utilities
+	- System Information
+	- Miscellaneous
+- Environment Variable (PATH) - you can include the suite in your PATH if you wish to. Making it easier to run commands/applications via the CLI
+
+- SysInternalsLive
+	- You can run SysInternal programs on the fly via command-line or from Windows Explorer - for example:
+		- `\\live.sysinternals.com\tools\procmon.exe`
+	- Just note that it can take a while for it to load..
+
+- File and Disk Utilities
+	- Sigcheck
+	- https://learn.microsoft.com/en-us/sysinternals/downloads/sigcheck
+		- CLI utility that shows
+			- File version number
+			- Timestamp information
+			- Digital signature details
+				- Including certificate chains
+		- Also has an option to check a file's status on VirusTotal
+		- Example - checking for Unsigned Files in System32
+			- `sigcheck -u -e C:\Windows\System32 -accepteula`
+	- Streams
+	- https://learn.microsoft.com/en-us/sysinternals/downloads/streams
+		- The NTFS file system provides applications the ability to create alternate data streams of information
+		- By default, all data is stored in a file's main unnamed data stream
+		- Using the syntax `file:stream` - you are able to read and write to alternates
+		- **ADS - Alternate Data Streams**
+			- A file attribute specific to Windows NTFS
+			- Every file has at least the **$DATA** stream
+			- ADS allows files to contain more than one
+			- WindowsExplorer (natively) doesn't display ADS to the user
+			- Powershell and third-party executables can be used to view them however
+		- Streams example
+			- `streams D:\APPS\SysInternalsSuite\SysinternalsSuite.zip`
+			- This file has an identifier and an additional security measure has been added to its properties
+				![](https://assets.tryhackme.com/additional/sysinternals/streams2.png)
+				![](https://assets.tryhackme.com/additional/sysinternals/streams3.png)
+			- To view streams that have been found, say for example in a txt file
+				- `streams somefile.txt`
+				- `notepad somefile.txt:ADS-NAME`
+					- Where ADS-NAME is the additional stream name seen from running the streams program - `ads.txt` (additional stream to $DATA)
+						- `:ads.txt:$DATA 26`
+	- SDelete
+	- https://learn.microsoft.com/en-us/sysinternals/downloads/sdelete
+		- Secure Delete
+		- A CLI tool that takes a number of options - allows the deletion of one or more files/directories or to cleanse the free space on a logical disk\
+		- Implemented the DOD 5220.22-M (Department of Defense clearing and sanitizing protocol)
+			- https://www.lifewire.com/data-sanitization-methods-2626133
+		- Has been used by threat actors and is associated with MITRE Technique T1485 (https://attack.mitre.org/techniques/T1485/) and T1070.004 (Indicator Removal on Host: File Deletion) (https://attack.mitre.org/techniques/T1070/004/). 
+			- MITRE ID S0195 (https://attack.mitre.org/software/S0195/)
+
+- Networking Utilities
+	- TCPView (alongside with Resource Monitor)
+		- Provides a more informative and conveniently presented subset of the Netstat program that comes with Windows (also includes Tcpvcon)
+	- Whois tool (CLI version)
+		- Didn't work when I tried to run some IPs against it as per the THM module (link further at the top)
+
+- Process Utiilities
+	- autoruns
+		- Most comprehensive knowledge of auto-starting locations of any startup monitor
+		- Shows what programs are configured to run during system bootup or login
+		- And also when you start various built-in applications like Explorer and so on
+		- These programs and drivers include ones that are in:
+			- Your Startup Folder
+			- Run
+			- RunOnce
+			- and other Registry Keys
+		- Autoruns reports:
+			- Explorer shell extensions
+			- Toolbars
+			- Browser helper objects
+			- Winlogon notifications auto-start services
+			- and heaps more
+		- Good tool to use to check for any malicious entries that could be used to establish a threat actors persistence phase
+	- ProcDump
+	- https://learn.microsoft.com/en-us/sysinternals/downloads/procdump
+		- CLI tool with the purpose of monitoring an application for CPU spikes and generating crash dumps during a spike that an administrator can use to determine the cause of why the spike happened
+	- ProcessExplorer(ProcExp)
+		- Has a top-window (where current active processes are)
+		- A bottom-window (mode dependant) 
+			- Handle-mode
+				- Will show the handles that the selected process has opened
+			- DLL mode
+				- Will show the DLLs and memory-mapped files that the process has loaded
+		- You can **verify signatures** as well
+		- Run at logon
+		- Replace Task Manager
+		- **Colouring System**
+			- **Purple**
+				- **The files may be packed**
+			- **Red**
+				- **Process is exiting/stopping**
+			- **Green**
+				- **Freshly spawned process**
+			- **Light Blue**
+				- **Processes run by the same account that started ProcExp**
+			- **Dark Blue**
+				- **PRocess is selected**
+			- **Pink**
+				- **Process is a service**
+			- **Dark Grey**
+				- **Suspended until it is resumed**
+		- I use this in conjunction with ProcHacker (SystemInformer) as they show different items in comparison. Both are good. Just that I found subtle things missing in ProcExp which I want to look into later
+
+		- When wanting to check out IP addresses, a handy tool can be Cisco's Talos Intelligence Search
+			  https://talosintelligence.com/reputation_center/
+	- Process Monitor (ProcMon)
+	- https://adamtheautomator.com/procmon/
+	- https://learn.microsoft.com/en-us/windows/win32/procthread/about-processes-and-threads
+	- https://learn.microsoft.com/en-us/windows/win32/apiindex/windows-api-list
+		- Combines two legacy Sysint tools - Filemon and Regmon
+		- Provides
+			- An extensive list of enhancements including
+				- Rich filters
+				- non-destructive filtering
+			- Comprehensive event properties such as
+				- Session IDs
+				- User names
+				- Reliable process information
+				- Full thread stacks
+					- with Integrated symbol support for each operation
+				- Simultaneous logging to a file
+			- And heaps more
+		- USE FILTERS! 
+	- PsExec
+	- https://learn.microsoft.com/en-us/sysinternals/downloads/psexec
+	- https://adamtheautomator.com/psexec/
+		- A light-weight telnet-replacement that lets you execute processes on other systems
+		- Full interactivity for console applications without having to manually install client software
+			- Launching interactive command-prompts on remote systems
+			- Remote-enabling tools like ipconfig that otherwise do not have the ability to show information about remote systems
+		- Also used by Threat Actors
+			- MITRE ID (https://attack.mitre.org/software/S0029/) Techniques
+				- Lateral Tool Transfer (https://attack.mitre.org/techniques/T1570/)
+				- Remote Services: SMB/Windows Admin Shares (https://attack.mitre.org/techniques/T1021/002/)
+				- System Services: Service Execution (https://attack.mitre.org/techniques/T1569/002/)
+					- PsExec can also be used to execute commands or payloads via a temporary Windows service created through the service control manager API. Tools like PsExec and sc.exe can accept remote servers as arguments and may be used to conduct remote execution
+
+- Security Utilities
+	- Sysmon
+		- System Monitor
+		- Windows system service and device driver that when installed remains resident across reboots to monitor and log system activity to the Windows event log
+		- Provides detailed information about:
+			- Process creations
+			- Network connections
+			- Changes to file creation time
+		- By collecting events it generates using Windows Event Collection or SIEM agents and subsequently analyzing them 
+			- You can identify malicious or anomalous activity and understand how intruders and malware operate on your network
+
+- System Information
+	- Winobj
+		- 32-bit Windows NT Program
+		- Uses native Windows NT API
+			- provided by NTDLL.DLL
+		- To access and display information on the NT Object Manager's name space
+		- Session 0 - OS Session
+		- Session 1 - User Session
+			- Remember that there will be two csrss.exe processes running - one for each session
+
+- Miscellaneous
+	- BgInfo
+	- https://learn.microsoft.com/en-us/sysinternals/downloads/bginfo
+		- Displays relevant information about a Windows computer on the desktop's background, such as the computer name, IP addresses, SP version and more
+		- Handy for when managing multiple machines to have the relevant (to the admin or user) information displayed on the Background
+	- RegJump
+		- CLI Applet that takes a registry path and makes Regedit open to that path
+		- Accepts root keys in standard `HKEY_LOCAL_MACHINE` and abbreviated `HKLM` form
+		- There are other ways to query the Windows Registry without the use of regedit
+			- `reg query`
+			- `Get-Item` / `Get-ItemProperty`
+	- Strings!
+		- Scans the file passed to it for UNICODE (or ASCII) strings ofa default length of three or more UNICODE/ASCII characters
+		- 

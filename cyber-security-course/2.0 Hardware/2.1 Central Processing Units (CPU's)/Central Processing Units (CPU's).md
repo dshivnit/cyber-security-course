@@ -1,5 +1,5 @@
 [[2.1.1.0 AMD CPUs]]
-
+https://learn.microsoft.com/en-us/windows/win32/procthread/about-processes-and-threads
 - Registers
 - CU
 	- Control Unit
