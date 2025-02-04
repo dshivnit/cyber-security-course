@@ -347,4 +347,12 @@ Resources
 		- will print the default the file name that the function is being called from (the script from where it is being called if it is in one) 
 	- The sys module/library provides functions and variables that are used to manipulate different parts of the Python runtime environment
 - Python Web-socket
-	- 
+	- *to add stuff here when I return to it*
+
+- Notations:
+	- Hex notation `0x`
+	- Binary notation `ob`
+	- Decimal notation `as is`
+	- `11` == `0b1011` == `0xb`
+	- `3` == `0b11` == `0x3`
+	- `17` == `0b10001` == `0x11`

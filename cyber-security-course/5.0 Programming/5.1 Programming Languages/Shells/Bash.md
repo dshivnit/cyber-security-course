@@ -172,6 +172,9 @@
 	- using the lesser-than symbol
 	- `<`
 	- `rev < text.file` will output whatever is in the text_file file in reverse
+	- `/path-to/executable-file < /path-to/list-of-stdin-stuff`
+		- Will put in to the executable-file whatever is in the list-of-stdin-stuff file
+	- 
 - Redirecting File Descriptors to each other
 	- `2>& 1`
 		- Redirects stderr (standard error) to stdout (standard output)
