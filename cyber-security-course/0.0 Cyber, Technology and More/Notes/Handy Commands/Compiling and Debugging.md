@@ -13,4 +13,14 @@ There are several common ways to get the memory address of a function named `spe
 		`objdump -t ./program | grep special`
 	- Using nm:
 		`nm ./program | grep special`
--  
+
+- Debugging with GDB
+	- Get into gdb mode
+		- `gdb program-name`
+	- If we know the program will take input from stdin, let's see how many characters it will allow, is it broken?
+		- `(gdb) run $(python -c "print('A'*42)")`
+			- Increase, decrease the amount of bytes put into the program to see what kind of results you get and returns
+			- Essentially finding the 
+	- See registers
+		- `(gdb) i r`
+	- 

