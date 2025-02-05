@@ -5,7 +5,10 @@ https://open.umn.edu/opentextbooks/textbooks/733
 https://cs.brown.edu/courses/cs033/docs/guides/x64_cheatsheet.pdf
 https://en.wikibooks.org/wiki/X86_Assembly/X86_Architecture
 https://github.com/mschwartz/assembly-tutorial?tab=readme-ov-file#introduction
+https://tryhackme.com/room/x86assemblycrashcourse
+https://tryhackme.com/room/bof1
 
+*The majority of the below are based on the pwn.college Computer101 dojo (please bear that in mind - I went in without 'much' knowledge of assembly and some background with programming (Java, Python). I have covered assembly further (after going through the below) in the page [[x86 Architecture]]. Probably best to have a look at that first as it will paint a better context -- also don't forget to get into THM and pwn.college yourself! They're great learning platforms, two of many :)* 
 
 All roads lead to the CPU:
 
@@ -1027,6 +1030,7 @@ finito:
 	- It's 1 byte long and very predicable
 
 Call and Ret Instructions
+https://tryhackme.com/room/bof1
 https://en.wikipedia.org/wiki/X86_calling_conventions#System_V_AMD64_ABI
 - The `call` instruction pushes the memory address of the next instruction on to the stack and then jumps to the value stored in the first argument
 	```asm
@@ -1062,3 +1066,11 @@ Other Resources
 	- Intel's x86_64 architecture manual:
 		- http://www.intel.com/content/dam/www/public/us/en/documents/manuals/64-ia-32-architectures-software-developer-instruction-set-reference-manual-325383.pdf
 
+---
+
+x86 Assembly (from TryHackMe's module - https://tryhackme.com/room/x86assemblycrashcourse)
+- Assembly is the lowest level of human-readable language, and also the highest level of language into which binary can be reliably decompiled. 
+- Essential knowledge/skill to have for malware reverse engineering
+- More than likely a malware sample that is being analysed will be a compiled binary, needing to decompile it using a decompiler or disassembler will be required. 
+	- The issue with decompiling a program is that a lot of information in the written code is removed when it is compiled into a binary - ie variable names, function names and so on. 
+- The most reliable code we have for a compiled binary is its assembly code. 

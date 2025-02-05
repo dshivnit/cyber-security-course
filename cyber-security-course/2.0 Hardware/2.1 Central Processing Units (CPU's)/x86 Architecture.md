@@ -1,0 +1,501 @@
+https://tryhackme.com/room/x8664arch
+
+- This initial overview will take x86 architecture with malware analysis into consideration - so there will be items missed out (don't freak out)
+
+The Von Neumann architecture
+![](https://tryhackme-images.s3.amazonaws.com/user-uploads/61306d87a330ed00419e22e7/room-content/8ddadb4fef3506e96698c52fdb668f62.png)
+
+- CPU
+	- Registers
+	- Arithmetic Logic Unit 
+		- Input/Output Devices
+	- Control Unit
+			- RAM
+
+- Control Unit
+	- Gets instructions from Main Memory (which is outside the CPU)
+	- The address to the next instruction to execute is stored in a register called the **Instruction Pointer** or **IP**
+		- In 32-bit systems, this is called **EIP**
+		- In 64-bit systems, this is called **RIP**
+- Arithmetic Logic Unit
+	- Executes the instruction fetched from memory
+	- Results of the executed instruction are then stored in either the Registers or in Memory
+- Registers
+	- Registers are the CPUs storage
+	- Helps save time in executing instructions by placing important data in direct access to the CPU
+- Memory
+	- Main Memory, Physical Memory, RAM
+	- Contains all the code and data for a program to run
+- I/O Devices
+
+Registers Overview
+- The CPUs direct storage
+- Has to be used effectively
+- Divided into:
+	- **Instruction Pointer**
+		- Contains the address of the next instruction to be executed by the CPU
+		- Also called the **Program Counter**
+		- Originally was a 16-bit register in the Intel 8086 processor (from where the term x86 came from)
+		- In 32-bit processors, the Instruction Pointer became a 32-bit register called the EIP
+			- Extended Instruction Pointer
+		- In 64-bit systems, it became the 64-bit register called RIP
+			- Register Instruction Pointer
+	- **General Purpose Registers**
+		- The general purpose registers in an x86 system are all 32-bit registers
+		- In 64-bit systems, they are extended as 64-bit registers
+		- They contain:
+			- EAX or RAX
+				- The **Accumulator Register**
+				- Results of arithmetic operations are often stored in this register
+				- The last 16 bits of this register can be accessed by addressing AX
+				- AL for the last lower 8 bits
+				- AH for the last higher 8 bits
+			- EBX or RBX
+				- The **Base Register**
+				- Often used to store the Base Address for referencing an offset
+				- BX
+				- BL
+				- BH
+			- ECX or RCX
+				- The **Counter Register**
+				- Often used in counting operations such as loops
+				- CX
+				- CL 
+				- CH
+			- EDX or RDX
+				- The **Data Register**
+				- Often used in multiplication/division operations
+				- DX
+				- DL
+				- DH
+			- ESP or RSP
+				- The **Stack Pointer**
+				- Points to the top of the stack and is used in conjunction with the Stack Segment register
+				- Is **not** addressed in smaller addresses (bear this in mind)
+			- EBP or RBP
+				- Called the **Base Pointer**
+				- Used to access parameters passed by the stack
+				- used in conjunction with the Stack Segment register
+			- ESI or RSI
+				- The **Source Index** Register
+				- Used for string operations
+				- Used with the Data Segment (DS) register as an offset
+			- EDI or RDI
+				- Called the **Destination Index** register
+				- Used for string operations as well
+				- Used with the Extra Segment (ES) register as an offset
+			- R8 - R15
+				- 64-bit general purpose registers
+				- Addressable in 32-bit, 16-bit and 8-bit modes (take note that this is only for 64-bit systems, ie introduced with 64-bit processors)
+				- Examples of lower registers
+					- R8D - lower 32-bit
+					- R8W - lower 16-bit
+					- R8B - lower 8-bit
+					- D for double-word
+					- W for word
+					- B for byte
+	- **Status Flag Registers**
+		- When executing, indications around the status of the execution is sometimes required. 
+			- This is where Status Flags come in
+		- 32-bit register for 32-bit systems called EFLAGS
+		- Extended to 64-bit systems called RFLAGS
+		- Status flags register consists of individual single-bit flags that can be either 1 or 0
+		- Some necessary flags are as follows:
+			- Zero Flag
+				- Denoted by ZF
+				- Indicates when the result of the last executed instruction was zero
+				- ie if an instruction is executed that subtracts RAX from itself, the result will be 0
+					- In this instance, the ZF will be set to 1
+			- Carry Flag
+				- Denoted by CF
+				- Indicates when the last executed instruction resulted in a number too big or too small for the destination 
+				- ie if we add `0xFFFFFFFF` and `0x00000001` and store the result in a 32-bit register
+					- The result will be too big for the register
+					- The CF will be set to 1
+			- Sign Flag
+				- Denoted by SF
+				- Indicates if the result of an operation is negative or the *most significant bit* is set to 1
+				- If those conditions are met, the SF is set to 1
+				- Otherwise it is set to 0
+			- Trap Flag
+				- Denoted by TF
+				- Indicates if the processor is in debugging mode
+				- If the TF is set, the CPU will execute one instruction at a time for debugging purposes
+				- This can be used by malware to identify if they are being run in a debugger!
+	- **Segment Registers**
+		- 16-bit registers that convert the flat memory space into different segments for easier addressing
+		- Six segment registers described below:
+			- Code Segment (CS) Register
+				- Points to the Code section in the memory
+			- Data Segment (DS) Register
+				- Points to the program's Data section in the memory
+			- Stack Segment (SS) Register
+				- Points to the program's Stack in the memory
+			- Extra Segments
+				- ES, FS, GS
+				- Point to different data sections
+				- These and the DS register divide the program's memory into four distinct data sections
+
+Memory Overview
+- When a program is loaded into memory in a Win OS - it sees an abstracted view of the memory
+	- Meaning that the program doesn't have access to the entirety of memory
+		- It only has access to its own memory
+	- For that program, that is all the memory that it needs
+- The OS does this abstraction (and I'm hoping to cover that later)
+- For now, we'll be covering how a program sees its designated memory (we're focusing on reverse-engineering malware)
+- Memory is divided into different sections - Stack, Heap, Code, and Data (doesn't have to be in that order). 
+	- Code Section
+		- Contains the program's code
+		- Refers to the text section in a Portable Executable file
+			- Which includes instructions executed by the CPU
+		- The Code Section has execute permissions
+			- Meaning that the CPU can execute the data in this section of the program memory
+	- Data Section
+		- Contains initialised data that is not variable and remains constant
+		- It refers to the data section in a PE (Portable Executable) file
+		- Often contains Global Variables and other data that are *not* supposed to change during the program's execution
+	- Heap Section
+		- Also known as **Dynamic Memory**
+		- Contains variables and data created and destroyed during program execution
+		- When a variable is created, memory is allocated for that variable at runtime
+		- When that variable is deleted, the memory is freed
+	- Stack Section
+		- One of the most important parts of memory from a malware analysis point of view
+		- The Stack Section contains local variables, arguments passed to the program, and the return address of the parent process that called the program
+		- Since the return address is related to the control flow of the CPUs instructions, the stack is often targeted by malware to hijack the control flow
+
+Stack Layout
+- The stack is part of a program's memory that contains:
+	- the arguments passed to the program
+	- the local variables
+	- program's control flow
+- Malware will often exploit the stack to hijack the control flow of the program
+- The stack operates with a **Last In First Out (LIFO)** way about doing things
+	- Meaning that the last element *pushed* on to the stack is the first one that is *popped* out
+- The CPU uses two registers to keep track of the stack
+	- **Stack Pointer** (ESP, or RSP)
+	- **Base Pointer** (EBP or RBP)
+		- The Stack Pointer (ESP/RSP)
+			- Points to the top of the stack
+			- When any new element is pushed into the stack, the location of the Stack Pointer changes to consider the new element that was pushed on the stack
+			- When an element is popped off the stack, it adjusts to reflect that change
+		- The Base Pointer (EBP/RBP)
+			- Remains constant
+			- **This is the reference address where the current program stack tracks its local variables and arguments**
+- Old Base Pointer and Return Address
+	- Below the Base Pointer is the Old Base Pointer of the calling program (the program that calls the current program)
+	- Below the Old Base Pointer is the Return Address
+		- This is where the Instruction Pointer will return once the program's execution ends
+	- A common technique to hijack control flow is to overflow a local variable on the stack such that it overwrites the Return Address with an address of the malware's choice
+	- This technique is known as a **Stack Buffer Overflow**
+- Arguments
+	- Arguments passed to a function are pushed to the stack before the function starts execution
+	- These arguments are present right below the Return Address on the stack
+- Function Prologue and Epilogue
+	- Function Prologue
+		- When a function is called, the stack is prepared for the function to execute
+			- Meaning that the arguments are pushed to the stack before the start of the function execution
+		- After that, the Return Address and the Old Base Pointer are pushed onto the stack 
+		- Once these are pushed, the Base Pointer address is changed to the top of the stack 
+			- Which will be the Stack Pointer of the caller function at that time.
+		- As the function executes, the Stack Pointer moves as per the requirements of the function.
+		- This portion of code that pushes the Arguments, the Return Address, and the Base Pointer onto the Stack and rearranges the Stack and Base Pointers, is called the **Function Prologue**
+	- Function Epilogue
+		- Similarly, the Old Base Pointer is popped off the stack and onto the Base Pointer when the function exits
+		- The Return Address is popped off to the Instruction Pointer, and the Stack Pointer is rearranged to point to the top of the Stack.
+		- The part of the code that performs this action is called the **Function Epilogue**
+	![](https://tryhackme-images.s3.amazonaws.com/user-uploads/61306d87a330ed00419e22e7/room-content/aed105638dc28ee3524baeaba8925e12.png)
+
+---
+
+**Processes**
+https://tryhackme.com/room/bof1
+
+- Current computer architecture allows processes to run concurrently
+- The computer switches between processes very quickly (like, super quickly) to make it seem as though they are running at the same time
+	- Have a look at what runs through your computer in real-time using a tool like Process Monitor (on Windows) to have a look at what processes the CPU is processing as time goes by. 
+- Switching between processes is called a **context switch**
+- Since each process needs different information to run (the current instruction to execute), the OS has to keep track of all the information in a process.
+- The memory in the process is organised sequentially and has the following layout
+
+![](https://i.imgur.com/KmWsaIs.png)
+
+- User Stack
+	- Contains the information required to run the program
+	- Includes:
+		- Current program counter
+			- Saved registers
+			- Information about functions
+			- Local Arguments
+			- and more information 
+		- Unused memory, used in case the stack grows (downwards)
+		- Shared Library regions
+			- Used to either statically/dynamically link libraries that are used by the program
+		- The Heap
+			- Increases and decreases dynamically depending on whether a program dynamically assigns memory
+			- The section above the heap is unassigned, which can be used in the event that the size of the heap increases
+		- The Program Data and Code
+			- Stores the program executable and initialised variables
+
+**x86-64 Procedures**
+- A program will normally comprise of multiple functions and there needs to be a way to be able to track which function has been called and which data is passed from one function to another
+- The stack is a region of contiguous memory addresses and it is used to make it easy to transfer control and data between functions
+- The top of the stack is at the lowest memory address and the stack grows towards lower memory addresses
+- The most common operations of the Stack are:
+	- Pushing
+		- Used to add data on to the stack
+	- Popping
+			- Used to remove data from the stack
+	![](https://i.imgur.com/YITSp30.png)
+
+`push var`
+- The assembly instruction to push a value onto the stack
+- It does the following:
+	- Uses var or value stored in memory location of var
+	- Decrements the stack pointer (known as `rsp`) by 8
+	- Writes the above value to new location of `rsp` which is now the top of the stack
+	![](https://i.imgur.com/TFH7KDf.png)
+
+	![](https://i.imgur.com/fLz86wR.png)
+
+`pop var`
+- Assembly instruction to read a value and pop it off the stack
+- It does the following:
+	- Reads the value at the address given by the stack pointer (`rsp`)
+	- Store the value that was read from `rsp` into var
+	- Increment the stack pointer by 8 (`0x8`)
+
+- **It is important to note that the memory does not change when popping values of the stack - it is only the value of the stack pointer that changes.**
+- Each compiled program may include multiple functions, where each function would need to store local variables, arguments passed to the function and more. 
+- **To make this easy to manage, each function has its own separate stack frame**
+	- Where each new stack frame is allocated when a function is called, and deallocated when the function is complete
+*Stacks direction of growing is lower*
+	![](https://i.imgur.com/0OsNBwQ.png)
+
+```
+	int add(int a, int b){
+		int new = a + b;
+		return new;
+	}
+
+	int calc(int a, int b){
+		int final = add(a, b);
+		return final
+	}
+
+	calc(4, 5)
+```
+- Assuming that the current point of execution is inside the `calc` function
+- The **Caller Function** will be `calc`
+- The **Callee Function** will be `add`
+- Assembly code representation:
+	- *(I hope these images stick around :) thanks THM Crew!)*
+	![](https://lh3.googleusercontent.com/drfkuTdzr6yTKq2tPgCO95_knSqbNa0_iApkl3w62yDGZIOu_6ZxMMcQE4SD-X4p-3AW656Azf3iWqCjRqC4S6O8PbcseQS3r0mzuyB0T2WZdfxs7HtVVqGheU5R2zBVSjEix3sS)
+- The Add Function is invoked by using the call operand in Assembly
+- The call operand can either take a label as an argument (a Function Name) or it can take a memory address as an offset to the location of the function in the form of call \*value 
+- Once the Add Function is invoked (and also after it is completed)
+	- The program would need to know what point to continue the program
+	- To do this, the computer pushes the address of the next instruction on to the stack
+	- After this, the program would allocate a stack frame for the new function
+	- Change the current instruction pointer to the first instruction in the function
+	- Change the stack pointer (`rsp`) to the top of the stack
+	- And change the frame pointer (`rbp`) to point to the start of the new frame.
+	![](https://lh3.googleusercontent.com/IgWTFeegf8jSIlpJAz-jdJW_I477jiXWvY-kkGUjZ_iIIGgj_gBKac0-bzonwNrlpAw6sUvh7ZkejC50peTnWKfxZAUUiQA_QiYwlAkgDA7gkOdJZIqpDruAeVeqOODCEfCsv325)
+	![](https://i.imgur.com/BZMUlMe.png)
+- Once the function is done executing
+	- It will call the return instruction 
+	- This instruction will pop the value of the return address of the stack
+	- Deallocate the stack frame for the add function
+	- Change the instruction pointer to the value of the return address
+	- Change the stack pointer (`rsp`) to the top of the stack 
+	- and change the frame pointer (`rbp`)to the stack frame of calc
+	![](https://lh4.googleusercontent.com/t_UvTV0iBr99rf31_UNd3VmXKjpN4CNwJ5bI3_q5mGksmCMYTzryujyZg_6NP-sljh1J7xFfbeUEv0cPmoXsLtBF6GpUTJVMnqU4xquGSr2UQNFg1xhz7E6zRVgAZfrdlUlOoWAl)
+	![](https://i.imgur.com/VF6LfjU.png)
+- Looking at how data is transferred
+- Above (hopefully the image is still there..), we save the functions that take arguments
+- The calc function takes two (2) arguments (a and b). 
+- Up to six (6) arguments for functions can be stored in the following registers:
+	- `rdi`
+	- `rsi`
+	- `rdx`
+	- `rcx`
+	- `r8`
+	- `r9`
+- **NOTE: `rax` is a special register that stores the return values of the functions (if there are any!)**
+- If a function has any more arguments, then these arguments would be stored on the functions stack frame.
+- Now it can be seen that a Caller Function may save their values in their registers.
+- What about a Callee also wanting to save their values in registers??
+	- So that the values are not overwritten
+		- The Callee Function (or values??) first save the values of registers on their stack frame
+		- Use the registers
+		- And then load the values back into the registers
+- The Caller Function can also save values on the caller function frame to prevent the values from being overwritten
+- Here are some rules around which registers are Caller and Callee saved:
+	- `rax` is Caller saved
+	- `rdi`, `rsi`, `rdx`, `rcx`, `r8` and `r9` are called (*not sure if this is supposed to be callee or caller, but THM wrote it as called..*) saved (and they are usually arguments for the functions)
+	- `r10`, `r11` are Caller saved
+	- `rbx`, `r12`, `r13`, `r14`, are Callee saved
+	- `rbp` is also Callee saved (and can be optionally used as a frame pointer)
+	- `rsp` is Callee saved
+
+- So far (this is on the THM module) - this is "a more thorough example of the run time stack:"
+	![](https://i.imgur.com/vA0ug3J.png)
+
+Endianess
+- The above programs outline binary information being represented in hexadecimal format
+- Note that different architectures actually represent the same hexadecimal number in different ways
+	- This is referred to as **endianess**
+- Take the value of 0x12345678
+	- Here the least significant value is the right most value (78)
+	- while the most significant value is the left most value (12)
+- **Little Endian** is where the value is arranged from the least significant byte to the most significant byte
+		LSB												MSB
+		78				56				34				12
+- **Big Endian** is where the value is arranged from the most significant byte to the least significant byte
+		MSB												LSB
+		12				34				56				78
+- Here each "value" requires at least a byte to represent, as part of a multi-byte object. 
+
+Overwriting Variables
+```C
+int main(int argc, char **argv)
+{
+	volatile int variable = 0;
+	char buffer[14];
+
+	gets(buffer);
+
+	if(variable != 0) {
+		printf("You have changed the value of the variable\n");
+	} else {
+		printf("Try again?\n");
+	}
+}
+```
+- Memory is allocated in continuous bytes, one could assume that variables that are written adjacently to each other in code would be allocated next to each other in the buffer
+	- However, this is not always the case. With how the compiler and stack are configured, when variables are allocated - they would need to be aligned to particular size boundaries (8 bytes, 16 bytes) to make it easier for memory allocation/deallocation. 
+	- So if a 12-byte array is allocated where the stack is aligned for 16bytes, this is what the memory would look like:
+		![](https://i.imgur.com/kjxX8SC.png)
+		buffer										padding
+		0										12			16
+	- The compiler would automatically add 4 bytes to ensure that the size of the variable aligns with the stack size. 
+	- From the image of the stack (above), one can assume that the stack frame for the main function looks like this:
+		![](https://i.imgur.com/lqE6o0S.png)
+	\[Text Representation of the image above *in-case it disappears*\]
+	```
+		Stack Bottom
+		--------------
+		Saved Registers
+		Volatile int variable
+		Char buffer[13]
+		.
+		.
+		.
+		buffer[0]
+		Char **argv
+		Int argc
+		--------------
+		Stack Top
+	```
+	- Even though the stack grows downwards, when data is copied/written into the buffer, it is copied from lower to higher addresses
+	- Depending on how data is entered into the buffer, means that it's possible to overwrite the integer variable
+	- From the C code above - the Gets Function is used to enter data into the buffer from standard input. 
+		- The function is dangerous because it doesn't really have a length check
+		- This would mean that you can enter more than 14 bytes of data, which would then overwrite the integer variable
+
+---
+*Additional Notes*
+- *There are several common ways to get the memory address of a function named `special()` from code that is already compiled:*
+	- *Using GDB:*
+		*`gdb ./program (gdb) print special`*
+	- *Using objdump:*
+		*`objdump -t ./program | grep special`*
+	- *Using nm:*
+		*`nm ./program | grep special`*
+- *In a simple scenario - if you have identified the amount of characters required to cause a buffer overflow due to some badly written C code, you could then put that many characters into the stdin of the compiled code/program, then since the buffer has overflowed be able to call other functions from somewhere - providing you know what address in memory those functions live in (bearing in mind that these memory addresses will often be written in Hex, and ALSO bearing in mind, of little endian, or big endian - depending on the architecture that is being used.* 
+	- *Something like that*
+----
+Another example:
+```C
+void copy_arg(char *string)
+{
+	char buffer[140];
+	strcpy(buffer, string);
+	printf("%s\n", buffer);
+	return 0;
+}
+
+int main(int argc, char **argv)
+{
+	printf("Here's a program that echo's out your input\n");
+	copy_arg(argv[1]);
+}
+```
+- The copy_arg Function the strcpy Function is copying input from a string (which is argv\[1\] which is a command line argument) to a buffer which has a length of 140 bytes. 
+- The nature of strcpy doesn't check the length of the data being input, so here it's also possible to overflow the buffer. 
+- The stack for the copy_arg Function (this stack excludes the stack for the strcpy Function)
+	![](https://i.imgur.com/zNMC7in.png)
+	```
+	Stack Bottom
+	------------
+	Return Address
+	------------
+	Saved Registers
+	------------
+	Char Buffer [140]
+	.
+	.
+	.
+	buffer [0]
+	-------------
+	Stack Top
+	```
+	- When a function (in this context, the Main Function) calls another function (in this case the copy_args Function), it needs to add the return address on the stack so that the callee function (copy_args) knows where to transfer control to once its finished executing.
+	- From the stack above, we know that data will be copied upwards from buffer\[0\]  to buffer\[140\]. 
+	- Since we can overflow the buffer, it follows that we can overflow the return address with our own value
+		- **We can control where the function returns and change the flow of execution of a program...**
+	- The flow of execution can be controlled by directing the return address to some memory address. 
+		- This is where shellcode comes in 
+			- Shell code quite literally is code that will open up a shell!
+			- It is binary instructions that can be executed..
+			- Since shellcode is just machine code (in the form of binary instructions) you can usually start off by writing a  C program to do whatever you want, compile it into assembly, and extract the hex characters (alternatively it would involve writing your own assembly). 
+			- For now, the module I'm doing will use the shellcode that will open up a basic shell
+			- `\x48\xb9\x2f\x62\x69\x6e\x2f\x73\x68\x11\x48\xc1\xe1\x08\x48\xc1\xe9\x08\x51\x48\x8d\x3c\x24\x48\x31\xd2\xb0\x3b\x0f\x05`
+			- The basic idea is we'd need to point the overwritten return address to the shell code, but where will the shellcode be stored and what actual address would we point at it?!
+			- Store the shellcode in the buffer, because we know the address at the beginning of the buffer - we can overwrite the return address to point to the start of the buffer
+	- Process so far:
+		- Find out the address of the start of the buffer and the start address of the return address
+		- Calculate the difference between these two addresses so that you know how much data to enter to overflow
+		- Start out by entering the shellcode in the buffer, entering random data between the shellcode and the return address and the address of the buffer in the return address
+			![](https://i.imgur.com/ktEI9zu.png)
+			```
+			Stack Bottom
+			------------
+			Address of Buffer (overwritten Old Return Address)
+			------------
+			Random Data (overwritten saved registers)
+			------------
+			Random Data (inside buffer)
+			------------
+			Shellcode (inside buffer)
+			------------
+			Stack Top
+			```
+		- Keep in mind that memory addresses may not be the same on different systems
+			- Even across the same computer when a program is recompiled
+		- So we can make this flexible using a NOP instruction
+			- A NOP instruction is a No Operation instruction
+			- When the system processes this instruction, it does nothing, and carries on execution
+			- Represented by using `\x90`
+			- Putting NOPs as part of the payload means an attacker can jump anywhere in the memory region that includes a NOP and eventually reach the intended instructions
+			- This is what an Injection Vector would look like:
+			![](https://i.imgur.com/olQ17Tg.png)
+			NOP Sled			|	Shell Code		|	Memory Address
+	- Shellcode, Memory Addresses and NOP Sleds are usually in hex code
+	- To make it easy to pass the payload to an input program, you can use python:
+	- `python -c "print (NOP * no_of_nops + shellcode + random_data * no_of_random_data + memory_address)"`
+	- In this particular module/challenge:
+	`python -c "print('\90' * 30 + '\x48\xb9\x2f\x62\x69\x6e\x2f\x73\x68\x11\x48\xc1\xe1\x08\x48\xc1\xe9\x08\x51\x48\x8d\x3c\x24\x48\x31\xd2\xb0\x3b\x0f\x05' + '\x41' * 60 + '\xef\xbe\xad\xde') | ./program-name"
+	- lol `deadbeef` ^ 
+	- There can be cases where you need to pass xargs before the ./prrogram-name
+	- oof.
