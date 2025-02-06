@@ -1074,3 +1074,21 @@ x86 Assembly (from TryHackMe's module - https://tryhackme.com/room/x86assemblycr
 - More than likely a malware sample that is being analysed will be a compiled binary, needing to decompile it using a decompiler or disassembler will be required. 
 	- The issue with decompiling a program is that a lot of information in the written code is removed when it is compiled into a binary - ie variable names, function names and so on. 
 - The most reliable code we have for a compiled binary is its assembly code. 
+
+Opcodes and Operands
+- 
+
+General Assembly Instructions
+- 
+
+Flags
+- 
+
+Arithmetic and Logical Instructions
+- 
+
+Conditionals and Branching
+- 
+
+Stack and Function Calls
+- 
