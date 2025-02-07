@@ -108,8 +108,48 @@ Code Breakpoints: Setting, Listing and Deleting
 - Note that the memory addresses can change from where breakpoints are initially pointed out. Reason being is that the debugger has no idea where in memory the actual code, when being run/executed, will reside in memory until it has started running. Also, the OS may randomize where the executable is loaded into memory - a mechanism called **Address Space Layout Randomization (ASLR)** - which is designed to assist in mitigating some security vulnerabilities. 
 	- So , after an executable has started, the debugger will be able to display exactly the real addresses for the executable after it has been loaded in memory and started. 
 
+Code Breakpoints: Disabling and Enabling
+https://web.archive.org/web/20221203080449/http://www.sourceware.org/gdb/current/onlinedocs/gdb/Disabling.html
+- Disabling Breakpoints:
+	- Once you have a breakpoint number from `info break` you can `disable` it (via calling upon its number in `info b`)
+- Enabling Breakpoints
+	- `enable <breakpoint-number>`
 
+Examining Source Code
+- Listing Source Code Lines
+- https://web.archive.org/web/20220606212422/https://sourceware.org/gdb/current/onlinedocs/gdb/List.html#List
+	- Only relevant to situations in which you have the source code for the program being debugged, and if it was built with symbols enabled 
+		- The `-g` or `-ggdb` flags to `gcc`
+	- It will not be useful when reverse engineering opaque binaries
+	- `list`
+		- Will show you source code surrounding the current location you are stopped at
+	- `list <function-name>`
+		- Will show source code before and after the given function
+	- `list <source-file-name>:<line-number>`
+		- Will show source code before and after the given line in the given file
 
+Examining Assembly
+- One-time Disassembly Display
+- https://web.archive.org/web/20221127202729/https://sourceware.org/gdb/current/onlinedocs/gdb/Machine-Code.html
+	- `diassemble` or `disas`
+		- will show assembly surrounding the current location where you are stopped at
+	- `disassemble <address-or-symbol-name>`
+		- Disassembles the memory specified by the address or symbol name
+	- `disassemble /r`
+		- Gives the raw bytes which make up the instructions
+	- `disassemble /m`
+		- Mixes source code and assembly in the output
+	- `x`
+		- Examine memory command
+		- Can display some number of instructions at a given address, form is
+			- `x/10i <address>`
+- Continuously-updating Disassembly Display
+	- `display` and one of it's forms can ensure that every time a program stops, that some number of instructions ()
+		- `display/10i <instruction-pointer / program-counter>`
+
+Commands: x (examine), print, display
+- Format Specifiers
+	- 
 ---
 
 

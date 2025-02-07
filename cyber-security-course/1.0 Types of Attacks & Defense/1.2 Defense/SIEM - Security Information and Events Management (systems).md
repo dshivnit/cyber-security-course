@@ -21,6 +21,21 @@ https://tryhackme.com/r/room/introtosiem
 	- A user accessing company's resources through VPN
 	- Network file sharing activities
 
+- SIEM Capabilities
+	- Main Features
+		- Threat detection
+		- Investigation
+		- Time to respond
+	- Additional Features
+		- Basic security monitoring
+		- Advanced threat protection
+		- Forensics & incident response
+		- Log collection
+		- Normalisation
+		- Notifications and alerts
+		- Security incident detection
+		- Threat response workflow
+
 - Devices generate hundreds of events per second (can)
 - SIEMs only take logs from various sources in real-time but provide the ability to correlate between events, search through the logs, investigate incidents and respond in a timely manner
 - Some key features of a SIEM:

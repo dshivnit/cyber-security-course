@@ -263,6 +263,7 @@ zsh (z Shell) (/bin/zsh (providing it's there) will change $SHELL on the fly, zs
 	- `cat test.txt | uniq`
 		- Eliminate duplicates
 	- `cat text.txt | wc -l`
+	- `Get-Content text.txt | Measure-Object -line`
 		- Count how many lines are in the output
 	- `cat text.txt | nl`
 		- Show line numbers
@@ -301,4 +302,5 @@ zsh (z Shell) (/bin/zsh (providing it's there) will change $SHELL on the fly, zs
 			- A numbered list output
 		- `less -S`
 			- Chop long-lines (rather than wrapping them across the terminal window)
-	- 
+
+- `zip -r -Z bzip2 zipped-file-name.zip folder-to-zip`
