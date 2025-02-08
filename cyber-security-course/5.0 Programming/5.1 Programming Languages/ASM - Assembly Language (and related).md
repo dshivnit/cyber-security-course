@@ -1076,19 +1076,300 @@ x86 Assembly (from TryHackMe's module - https://tryhackme.com/room/x86assemblycr
 - The most reliable code we have for a compiled binary is its assembly code. 
 
 Opcodes and Operands
-- 
-
+- Opcodes
+	- Denote the hex for actual operations
+	- Numbers that correspond to instructions performed by the CPU
+	- When a program is disassembled, it reads the opcodes
+		- Translates them into assembly instructions to make them human-readable
+		- Example - the instruction for moving `0x5F` to the `eax` register:
+			- `mov eax, 0x5F`
+		- When looking at the above in a disassembler, we'd see:
+			- `040000:  b8 5f 00 00 00   mov eax, 0x5f`
+		- Here the `040000:` is the address where the instruction is located
+		- `b8` refers to the opcode of the instruction `mov eax`
+		- `5f 00 00 00` indicates the other operand, `0x5f`
+		- Note that **endianness** is at hand here, so it is written as `5f 00 00 00` where it is actually `00 00 00 5f` 
+	- There is an opcode for each instruction in the assembly language. There are references available for converting opcodes into assembly instructions. 
+	- Unless we are writing a disassembler, we will not need them
+		- The disassembler does that work well enough
+	- It is still good to understand what is happening under the hood for a better picture overall
+- Operands
+	- The registers or memory locations on which the operations are performed
+		- Types of Operands
+			- Immediate Operands
+				- Considered as constants
+				- Fixed values like we had the `0x5f` previously
+			- Registers Operands
+				- Such as `eax` where an immediate operand could be stored for example
+			- Memory Operands
+				- Denoted by square brackets
+				- Reference memory locations
+					- ie `[eax]` as an operand would mean the value in eax is the memory location on which the operation has to be performed
+					  
 General Assembly Instructions
-- 
-
+- Tell the CPU what operation to perform
+- Often use operands from registers, memory or immediate operands to perform operations and then store the results in either registers or memory
+	- The MOV Instruction
+		- Moves a value from one location to another, general syntax:
+			- `mov <destination>, <source>`
+		- Can move a fixed value to a register, a register to another register, and a value in a memory location to a register
+		- `mov eax, 0x5f`
+			- Copies `0x5f` a fixed-value to a register
+		- `mov ebx, eax`
+			- The value stored in `eax` is moved to `ebx`
+		- `mov eax, [0x5fc53e]`
+			- Copies the value stored in a memory location to a register
+		- We use square brackets when referencing memory
+		- Suppose we see a register in square brackets, that will mean that the value in that register will be treated as a memory location, and the value in that memory location will be moved to the destination 
+		- Meaning that `mov eax, [0x5fc3e]` will be the same as
+			- `mov ebx, 0x5fc3e`
+			- `mov eax, [ebx]`
+		- The `mov` instruction can be used to perform arithmetic calculations when referencing memory addresses
+		- For example, this instruction calculates `ebp+4` (adding an offset of 4 bytes to the memory location) and moves the value in the resulting memory address into `eax`:
+			- `mov eax, [ebp+4]`
+	- The LEA Instruction
+		- Load Effective Address
+		- Format example:
+			- `lea <destination>, <source>`
+		- Where the `mov` instruction moves the data at the source memory address to the destination 
+		- The `lea` instruction moves the address of the source into the destination
+		- `lea eax, [ebp+4]`
+			- `ebp`'s value will be increased by four (4) and moved to `eax`
+			- If `mov` was used, it would have moved the value in the memory location `ebp+4`
+			- We have performed an arithmetic operation on a register and saved the result in another register using a single instruction
+			- `lea` is often used by compilers not for referencing memory locations but so that an arithmetic operation is performed on a register and saved to another using a single instruction. 
+				- Especially if the arithmetic operations are more complex, like adding and multiplying in a single instruction
+	- The NOP Instruction
+		- No Operation instruction
+		- Syntax:
+			- `nop`
+		- This instruction exchanges the value in `eax` (the accumulator register) with itself
+			- resulting in a no meaningful operation
+		- NOPs are used for consuming CPU cycles while waiting for an operation or other such purpose
+		- `nop`'s can be used by malware authors when redirecting execution to their shellcode
+		- The exact location where the execution will redirect is often unknown, so the malware author uses a bunch of `nop` instructions to ensure that the shellcode execution does not start from the middle
+		- The padding of `nop` instructions is called a `nop sled`
+	- Shift Instructions
+		- Shift instructions are used to shift each register bit to the adjacent bit
+		- Shift left, shift right
+		- Syntax:
+			- `shr <destination>, <count>`
+				- Shift right
+			- `shl <destination>, <count>`
+				- Shift left
+		- The bits which are shifted out of their location are filled with zeroes
+			- If we had `00000010` in `eax` and `shl` it will become `00000100`
+		- The `CF` (Carry Flag) is used to augment the destination, as it is filled by the last bit overflowing the destination.
+			- If we have `00000101` in `eax` and `shr` it by 1, the result we will have is `00000010` in `eax` and the CF (Carry Flag) will be set, meaning that the CF will have a value of `1`
+		- **Shift instructions are used instead of multiplication and division by two or powers of two** (2^n where n is the count in the shift instruction). This saves execution time by not having to manipulate values in registers before performing multiplication or division. 
+			- **For example, if `eax` has `00000010` and we `shr` by 1-bit, we get `00000001`, which is the same result as dividing `eax` by 2.** 
+			- **Similarly, if `eax` has `00000001` and we `shl` by 1-bit, the result is `00000010` - the same as multiplying `eax` by 2**
+	- Rotate Instructions
+		- Similar to shift instructions
+		- Difference is that bits are rotated back to the other end of the register instead of moving the overflowing bit into the CF (Carry Flag) or adding zeroes (0s) instead of shifted-out bits. 
+		- Rotate general syntax:
+			- `ror <destination>, <count>`
+			- `rol <destination>, <count>`
+		- Here, the `ror` instruction rotates the destination to the right, and `rol` is to the left
+		- The rest of the syntax remains the same similar to the shift instructions
+		- Example
+			- we have `10101010` in `al` (the lower part of `rax` remember? (lowest 8-bits)
+			- We `ror` by 1-bit
+			- It results in `01010101`
+			- And vice versa for `rol`
+			  
 Flags
-- 
+- The CPU has several flags that indicate the outcome of certain operations or conditions
+- These flags are bits in a special register known as the **flags register** or **EFLAGS**
+- Each flag represents a specific condition or result of the most recent arithmetic or logical operation 
+- Here are the most common flags in x86 and their explanations 
+	- Carry (`CF`)
+		- Set when a carry-out or borrow is required from the most significant bit in an arithmetic operation
+		- Also used for bit-wise shifting operations
+	- Parity (`PF`)
+		- Set if the least significant byte of the result contains an even number of 1 bits
+	- Auxiliary (`AF`)
+		- Set if a carry-out or borrow is required from bit 3 to bit 4 in an arithmetic operation (BCD arithmetic)
+	- Zero (`ZF`)
+		- Set if the result of the operation is zero
+	- Sign (`SF`)
+		- Set if the result of the operation is negative (ie the most significant bit is 1)
+	- Overflow (`OF`)
+		- Set if there's a signed arithmetic overflow (eg adding two positive numbers and getting a negative result or vice versa)
+	- Direction (`DF`)
+		- Determines the direction for string processing instructions
+		- If `DF=0` the string is processed forward
+		- If `DF=1` the string is processed backward
+	- Interrupt Enable (`IF`)
+		- If set `(1)` it enables maskable hardware interrupts
+		- If cleared `(0)` interrupts are disabled.
+- Flags can be used in conditional jumps and are crucial for implementing conditional branching in assembly code. For example you might only jump to a specific address if a certain flag is set or cleared.
 
 Arithmetic and Logical Instructions
-- 
+- Addition and Subtraction Instructions
+	- Value is added to the destination and the result is stored in the destination
+		- `add <destination>, <value>`
+	- Same but value is subtracted from the destination and the result is stored in the destination
+		- `sub <destination>, <value>`
+	- The value can be either a fixed value constant or a register.
+	- For the subtraction operation, `ZF` is set if the result of the subtraction is zero
+	- If the destination is smaller than the subtracted value, then the `CF` is set
+- Multiplication and Division Instructions
+	- **These use the Accumulator Register `eax` (or `rax` for 64-bit processors/systems) and the Data Register `edx` (or `rdx`)** 
+	- We will have to look at the last instruction that manipulated these registers for every multiply and division operation
+	- **The multiply instruction has the following format**
+		- **It multiplies the value with `eax`** and stores the result in `edx:eax` as a 64-bit value.
+		- Two registers are required here because the result of multiplying two 32-bit values can often be higher than 32-bits. 
+		- The lower 32 bits of the result are stored in the `eax` register, and the higher 32 bits are stored in the `edx` register
+			- *I am thinking that this will purely be `rax` and `edx` in the case of processing in 64-bit systems*
+		- Syntax:
+			- `mul value`
+	- The value can be another register or a constant as an immediate operand
+	- **Division instruction the case is opposite**
+		- It divides the value in `edx:eax` and saves the result in `eax` and the remainder in `edx` 
+			- *thinking again that 64-bit systems will be different in treating `rdx` and `rax` independently of each other*
+		- Syntax:
+			- `div value`
+- Increment and Decrement Instructions
+	- Either increment or decrement the operand register by 1
+		- `inc eax`
+		- `dec eax`
+		  
+Logical Instructions
+	Used to perform logical operations
+- AND Instruction
+	- Performs a bitwise AND operation on the operands
+	- Returns an output of 1 when both inputs are 1
+		- Otherwise it returns a 0
+	- Example:
+		- `and al, 0x7c`
+		- `0x7c` converts to `01111100` in binary
+			- Suppose we had a value of `0xfc` (which is `11111100`)
+				- In this case the the output of the above instruction will be `01111100` or `0x8c`
+			- Suppose we had a value of `0x8c` (`10001100`)
+				- The result of the above instruction would be `00001100` or `0xc`
+- OR Instruction
+	- The bitwise OR operation
+	- Returns 1 if *at least one* of the operands is 1, otherwise it returns 0
+	- `or al, 0x7c`
+- NOT Instruction
+	- Takes one operand
+	- Simply inverts the operand bits
+	- 1s become 0s
+	- 0s become 1s
+	- `not al`
+- XOR Instruction
+	- Returns 1 *if both inputs are opposite*
+	- Returns 0 *if both inputs are the same*
+	- Good way to zero (0) a register
 
-Conditionals and Branching
-- 
+Conditionals
+	- A CPU often must determine if two values are equal to, greater than or less than each other
+	- To be able to do so, it has to use some conditional instructions
+- The TEST Instruction
+	- Performs a bitwise AND operation and instead of storing the result in the destination operand as the AND instruction does, it sets the `ZF` if the result is 0
+	- This instruction is often used to check if an operand has a NULL value
+		- For example - by testing the operand against itself
+	- **This is done because it takes fewer bytes to use the test instruction than by comparing it to 0**
+	- Following syntax:
+		- `test <destination>, <source>`
+- The CMP Instruction
+	- **Compares** the two operands and sets the `ZF` or the `CF` 
+	- Syntax
+		- `cmp <destination>, <source>`
+	- The compare instruction works similarly to the subtract instruction
+	- Difference is that the operands are not modified
+	- The `ZF` is set if both operands are equal
+	- If the source of the operand is greater than the destination operand, the `CF` is set
+	- The `ZF` and `CF` operands are cleared if the destination operand is greater than the source operand
 
-Stack and Function Calls
-- 
+Branching
+	- When there is no branching, the Instruction Pointer goes from one instruction to the other in the order that they are placed in memory.
+	- The control flow remains in a  straight line unless there is a branching operation
+	- Branching operations change the value of the Instruction Pointer and change the program's control flow from linear to branching out
+- The JMP Instruction
+	- Makes the control flow jump to a specified location
+	- Syntax
+		- `jmp <location>`
+	- The location operation will be moved to the Instruction Pointer, making it the address where the next instruction will be fetched for execution
+- Conditional Jumps
+	- Quite often, the code will require to move if a specific condition is met
+	- In higher-level languages, there are `if` conditions that help fulfill this requirement
+		- There is no IF statement in Assembly 
+	- This requirement is fulfilled using conditional jumps
+	- Conditional jumps decide whether to jump based on the value of the Flag Registers
+	- Similar syntax to the jump instruction, as follows:
+		- `jz`
+			- Jump if `ZF` is set (`ZF=1`)
+		- `jnz`
+			- Jump if the `ZF` is not set (`ZF=0`)
+		- `je`
+			- Jump if equal
+			- Often used after a `cmp` (compare) Instruction
+		- `jne`
+			- Jump if not equal
+			- Often used after a `cmp` (compare) Instruction
+		- `jg`
+			- Jump if the destination is greater than the source operand
+			- Performs signed comparison and is often used after a `cmp` (compare) Instruction
+		- `jl`
+			- Jump if the destination is less than the source operand
+			- Performs signed comparison and is often used after a `cmp` (compare) Instruction
+		- `jge`
+			- Jump if greater than or equal to
+			- Jumps if the destination operand is greater than or equal to the source operand
+		- `jle`
+			- Jump if lesser than or equal to
+			- Jumps if the destination operand is lesser than or equal to the source operand
+		- `ja`
+			- Jump if above
+			- Similar to `ja` but uses an unsigned comparison
+		- `jb`
+			- Jump if below
+			- Similar to `jl` but uses an unsigned comparison
+		- `jae`
+			- Jump if above or equal to
+			- Uses an unsigned comparison
+		- `jbe`
+			- Jump if below or equal to
+			- Uses an unsigned comparison
+
+The Stack
+	- Recall that The Stack is a Last In First Out type of memory - LIFO.
+	- Meaning that the last variable pushed on to the stack is the first variable to pop out. 
+	- Push and pop operations are performed by following instructions in the assembly language
+- The PUSH Instruction
+	- Syntax
+		- `push <source>`
+	- The value of the operand is stored at the memory location pointed to by the stack pointer (`esp`/`rsp`)
+		- Becoming the new top of the stack
+	- The stack pointer is then adjusted (decremented) to reflect the updated top position of the stack
+	- The following instructions also push all the general-purpose registers to the stack (for 32-bit systems)
+		- `pusha`
+			- Push all WORDS
+			- Pushes all the 16-bit general purposes registers to the stack
+				- `ax`,`bx`,`cx`, `dx`, `si`, `di`, `sp`, `bp`
+		- `pushad`
+			- Push all DOUBLE WORDS
+			- Pushes all the 32-bit general purpose registers to the stack
+				- `eax`, `ebx`, `ecx`, `edx`, `esi`, `edi`, `esp`, `ebp`
+	- **When we encounter these instructions, it is often a sign of someone manually injecting assembly instructions to save the states of registers, as is often the case with shellcode**
+- The POP Instruction
+	- Retrieves the value of the top of the stack and stores it in the destination operand 
+	- `esp` (the stack pointer) is incremented to reflect the adjustment made after popping the value
+	- The following instructions can pop all the general-purpose registers from the stack
+		- `popa`
+			- All WORDS
+			- `di`, `si`, `bp`, `bx`, `dx`, `cx`, `ax` 
+			- The `sp` or `esp` is adjusted to reflect the new top position of the stack
+		- `popad`
+			- All DOUBLE WORDS
+			- `edi`, `esi`, `ebp`, `ebx`, `edx`, `ecx`, `eax`
+			- The `sp` or `esp` is adjusted to reflect the new top position of the stack
+- The CALL Instruction and Function Calls
+	- Used for performing a function call operation to perform a specific task 
+	- Syntax
+		- `call <location>`
+	- Depending on the calling convention, the arguments are placed on the stack or in the registers in a function call
+	- The function prologue prepares the stack by adjusting the `ebp` and `esp` and pushing the return address on the stack
+	- Similarly, when the function returns, the epilogue restores the stack for the caller function
