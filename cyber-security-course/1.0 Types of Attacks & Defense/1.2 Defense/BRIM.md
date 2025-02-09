@@ -26,7 +26,7 @@ https://tryhackme.com/r/room/brim
 - Brim intends to reduce the time and effort spent when processing pcap files and investigating the log files by providing a simple and powerful GUI application
 
 Brim vs Wireshark vs Zeek
-- The things that they don't do:
+- **The things that they don't do:**
 	- Brim:
 		- Sniffing (packet sniffing, not other kinds of sniffing ;) )
 		- Packet decoding

@@ -356,3 +356,17 @@ Resources
 	- `11` == `0b1011` == `0xb`
 	- `3` == `0b11` == `0x3`
 	- `17` == `0b10001` == `0x11`
+
+Files
+- Writing to a file
+	- `f = open(<file-name>, <mode>)`
+		- Modes:
+			- `"w"` - write
+			- `"a"` - append
+			- `"a+"` - append + create
+	- `f = open("file-name.ext", "w")`
+	- `f.write("Whaddup?!")`
+- CLOSE THE FILE (don't let it sit in RAM...)
+	- `f.close()`
+- Reading from a file
+	- 

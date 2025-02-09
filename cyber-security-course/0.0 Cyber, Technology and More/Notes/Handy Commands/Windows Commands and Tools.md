@@ -35,3 +35,9 @@
 	- Pattern matching utility
 	- Example:
 		- `strings portableexec.exe | findstr "remote"`
+
+PowerShell
+
+- `Get-WinEvent -Path C:\Users\THM-Analyst\Desktop\Scenarios\Practice\Filtering.evtx -Oldest -FilterXPath '*/System/EventID=3' -MaxEvents 1 | Select-Object -Property *`
+
+ - `Get-WinEvent -Path <path-to-log-file> -FilterXPath '*/System/EventID=3 and */EventData/Data[@Name="DestinationPOrt"] and */EventData/Data=<port>'`

@@ -204,3 +204,9 @@ https://tryhackme.com/room/windowseventlogs
 			- `Local Computer Policy > Computer Configuration > Administrative Templates > System > Audit Process Creation`
 				- https://learn.microsoft.com/en-us/windows-server/identity/ad-ds/manage/component-updates/command-line-process-auditing#try-this-explore-command-line-process-auditing
 - **Seek, learn, find out.**
+
+
+Some example commands:
+- ` Get-WinEvent -Path C:\Users\THM-Analyst\Desktop\Scenarios\Practice\Filtering.evtx -Oldest -FilterXPath '*/System/EventID=3' -MaxEvents 1 | Select-Object -Property *`
+	- Good way to get properties of the event returned and also a good way to filter it down to the most earliest event
+- 

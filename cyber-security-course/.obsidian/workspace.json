@@ -22,63 +22,21 @@
             }
           },
           {
-            "id": "2133277be7100016",
+            "id": "c3bdc401fd9dbc46",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "1.0 Types of Attacks & Defense/1.2 Defense/Event Viewer.md",
+                "file": "5.0 Programming/5.1 Programming Languages/Python.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Event Viewer"
-            }
-          },
-          {
-            "id": "c054b78bd5d9d305",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "5.0 Programming/5.1 Programming Languages/GDB.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "GDB"
-            }
-          },
-          {
-            "id": "33e1b97d0892f90c",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "0.0 Cyber, Technology and More/Tools/VIM.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "VIM"
-            }
-          },
-          {
-            "id": "2780c174856f6526",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "2.0 Hardware/2.1 Central Processing Units (CPU's)/x86 Architecture.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "x86 Architecture"
+              "title": "Python"
             }
           }
         ],
-        "currentTab": 3
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -249,22 +207,29 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "33e1b97d0892f90c",
+  "active": "c3bdc401fd9dbc46",
   "lastOpenFiles": [
-    "0.0 Cyber, Technology and More/Tools/Bloodhound.md",
+    "1.0 Types of Attacks & Defense/1.1 Attacks/Shelling!.md",
+    "1.0 Types of Attacks & Defense/1.2 Defense/SysMon - System Monitor.md",
+    "1.0 Types of Attacks & Defense/1.1 Attacks/1.1.1 Types of Attacks.md",
+    "0.0 Cyber, Technology and More/Notes/Handy Commands/Windows Commands and Tools.md",
+    "1.0 Types of Attacks & Defense/1.2 Defense/Windows Event Logs - Event Viewer - Get-WinEvent - wevutil.exe.md",
+    "0.0 Cyber, Technology and More/Notes/Handy Commands/Commands.md",
+    "99.99 Images Used/Hunting_Metasploit_1609814643558.evtx",
+    "3.0 Software/3.1 Operating Systems/Windows/Core Windows Processes.md",
+    "3.0 Software/3.1 Operating Systems/Windows/SysInternals.md",
+    "1.0 Types of Attacks & Defense/1.2 Defense/BRIM.md",
     "0.0 Cyber, Technology and More/Tools/VIM.md",
+    "0.0 Cyber, Technology and More/Tools/Bloodhound.md",
     "5.0 Programming/5.1 Programming Languages/ASM - Assembly Language (and related).md",
     "2.0 Hardware/2.1 Central Processing Units (CPU's)/x86 Architecture.md",
     "1.0 Types of Attacks & Defense/1.1 Attacks/DAD - Disclosure, Alteration, Destruction Denial.md",
     "1.0 Types of Attacks & Defense/1.1 Attacks/Cross-Site Scripting (XSS).md",
-    "0.0 Cyber, Technology and More/Notes/Handy Commands/Commands.md",
     "5.0 Programming/5.1 Programming Languages/GDB.md",
-    "1.0 Types of Attacks & Defense/1.2 Defense/Event Viewer.md",
     "99.99 Images Used/Reddit_csharp_HandlesDef.png",
     "99.99 Images Used/Pasted image 20250207080316.png",
     "99.99 Images Used/Pasted image 20250207080304.png",
     "1.0 Types of Attacks & Defense/1.2 Defense/SIEM - Security Information and Events Management (systems).md",
-    "1.0 Types of Attacks & Defense/1.1 Attacks/Shelling!.md",
     "5.0 Programming/5.1 Programming Languages/Rust.md",
     "0.0 Cyber, Technology and More/Notes/Handy Commands/Compiling and Debugging.md",
     "0.0 Cyber, Technology and More/Notes/Course/Week 07/20240805 - Day 030.md",
@@ -275,12 +240,6 @@
     "99.99 Images Used/Pasted image 20250205132829.png",
     "2.0 Hardware/2.1 Central Processing Units (CPU's)/Processes.md",
     "2.0 Hardware/2.1 Central Processing Units (CPU's)/Central Processing Units (CPU's).md",
-    "2.0 Hardware/Untitled.md",
-    "1.0 Types of Attacks & Defense/1.1 Attacks/1.1.1 Types of Attacks.md",
-    "5.0 Programming/5.1 Programming Languages/Shells/Bash.md",
-    "5.0 Programming/5.1 Programming Languages/Python.md",
-    "5.0 Programming/Binary and Hex.md",
-    "3.0 Software/VIM.md",
     "0.0 Cyber, Technology and More/Notes/Handy Commands",
     "3.0 Software/3.1 Operating Systems/Windows",
     "99.99 Images Used/Pasted image 20250125183314.png",
@@ -295,7 +254,6 @@
     "1.0 Types of Attacks & Defense/DevSecOps",
     "0.0 Cyber, Technology and More/Notes/Course/Week 14",
     "0.0 Cyber, Technology and More/Notes/Course/Week 13",
-    "0.0 Cyber, Technology and More/Notes/Course/Week 12",
     "Untitled.canvas",
     "99.99 Images Used/HEX_Table.png",
     "Untitled 1.canvas"
