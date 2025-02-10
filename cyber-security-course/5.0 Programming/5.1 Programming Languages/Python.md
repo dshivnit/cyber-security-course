@@ -1,4 +1,4 @@
-Resources
+0Resources
 - https://github.com/krp/python-examples
 - https://tryhackme.com/r/room/pythonbasics
 
@@ -271,8 +271,29 @@ Resources
 
 		print(clue)
 	```
-- Files
-	- 
+- `eval()`
+	- Allows us to evaluate a string as Python code
+	- If the string is formatted in a manner that is valid Python dictionary format, then it can be converted directly into a dictionary using this function!
+- **If you want to sort a dictionary, example:**
+	- `sorted_dict = dict(sorted(dict1.items(), key=lambda x: int(x[1]['Score']_, reverse=True))`
+		- This will take a dictionary (named `dict1`) and sort it by the `Score` values within it, converting them to int and sorting as it iterates through each key. The highest score in this instance will be the first key.
+Files
+- Writing to a file
+	- `f = open("<file-name>", "<mode>")`
+		- Modes:
+			- `"w"` - write
+			- `"a"` - append
+			- `"a+"` - append + create
+	- `f = open("file-name.ext", "w")`
+	- `f.write("Whaddup?!")`
+- CLOSE THE FILE (don't let it sit in RAM...)
+	- `f.close()`
+- Reading from a file
+	- `f = open("<file-name>", "<mode>"`
+	- `f = open("somefile.txt", "r")`
+	- `var1 = f.read()`
+	- `f.close()`
+	- `print(var1)`
 - chr()
 	- convert an Integer in ASCII to a character/letter
 - ord()
@@ -356,17 +377,3 @@ Resources
 	- `11` == `0b1011` == `0xb`
 	- `3` == `0b11` == `0x3`
 	- `17` == `0b10001` == `0x11`
-
-Files
-- Writing to a file
-	- `f = open(<file-name>, <mode>)`
-		- Modes:
-			- `"w"` - write
-			- `"a"` - append
-			- `"a+"` - append + create
-	- `f = open("file-name.ext", "w")`
-	- `f.write("Whaddup?!")`
-- CLOSE THE FILE (don't let it sit in RAM...)
-	- `f.close()`
-- Reading from a file
-	- 

@@ -4,7 +4,7 @@
     "type": "split",
     "children": [
       {
-        "id": "b400f6a68797dcfa",
+        "id": "7fa8af4410f5ee2e",
         "type": "tabs",
         "children": [
           {
@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "5.0 Programming/5.1 Programming Languages/Python.md",
+                "file": "1.0 Types of Attacks & Defense/1.2 Defense/Wazuh.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Python"
+              "title": "Wazuh"
             }
           }
         ],
@@ -209,6 +209,9 @@
   },
   "active": "c3bdc401fd9dbc46",
   "lastOpenFiles": [
+    "5.0 Programming/5.1 Programming Languages/Python.md",
+    "1.0 Types of Attacks & Defense/1.2 Defense/Wazuh.md",
+    "1.0 Types of Attacks & Defense/1.2 Defense/OSquery.md",
     "1.0 Types of Attacks & Defense/1.1 Attacks/Shelling!.md",
     "1.0 Types of Attacks & Defense/1.2 Defense/SysMon - System Monitor.md",
     "1.0 Types of Attacks & Defense/1.1 Attacks/1.1.1 Types of Attacks.md",
@@ -236,10 +239,7 @@
     "0.0 Cyber, Technology and More/Cyber, Technology and More.md",
     "0.0 Cyber, Technology and More/People.md",
     "0.0 Cyber, Technology and More/Resources.md",
-    "0.0 Cyber, Technology and More/Topics.md",
     "99.99 Images Used/Pasted image 20250205132829.png",
-    "2.0 Hardware/2.1 Central Processing Units (CPU's)/Processes.md",
-    "2.0 Hardware/2.1 Central Processing Units (CPU's)/Central Processing Units (CPU's).md",
     "0.0 Cyber, Technology and More/Notes/Handy Commands",
     "3.0 Software/3.1 Operating Systems/Windows",
     "99.99 Images Used/Pasted image 20250125183314.png",
