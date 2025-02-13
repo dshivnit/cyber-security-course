@@ -891,4 +891,6 @@
 	- By ensuring they only have the minimum level of privileges needed to perform their tasks
 - IANA
 	- Internet Assigned Numbers Authority
-- 
+- Bitsadmin
+	- Background Intelligent Transfer Service
+	- Facilitates asynchronous, prioritized and throttled transfer of files between machines using idle network bandwidth

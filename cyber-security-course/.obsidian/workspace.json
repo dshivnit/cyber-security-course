@@ -27,16 +27,44 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "1.0 Types of Attacks & Defense/1.2 Defense/Wazuh.md",
+                "file": "1.0 Types of Attacks & Defense/1.2 Defense/ELK - Elastic Stack.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Wazuh"
+              "title": "ELK - Elastic Stack"
+            }
+          },
+          {
+            "id": "2d81c1a32c79f3c2",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "4.0 Networking/Subnetting.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Subnetting"
+            }
+          },
+          {
+            "id": "16e1421a72c50002",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "1.0 Types of Attacks & Defense/1.2 Defense/Splunk.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Splunk"
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -207,12 +235,16 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "c3bdc401fd9dbc46",
+  "active": "16e1421a72c50002",
   "lastOpenFiles": [
-    "5.0 Programming/5.1 Programming Languages/Python.md",
+    "0.0 Cyber, Technology and More/Terminologies.md",
+    "1.0 Types of Attacks & Defense/1.2 Defense/Splunk.md",
+    "4.0 Networking/Subnetting.md",
+    "1.0 Types of Attacks & Defense/1.2 Defense/ELK - Elastic Stack.md",
     "1.0 Types of Attacks & Defense/1.2 Defense/Wazuh.md",
-    "1.0 Types of Attacks & Defense/1.2 Defense/OSquery.md",
     "1.0 Types of Attacks & Defense/1.1 Attacks/Shelling!.md",
+    "5.0 Programming/5.1 Programming Languages/Python.md",
+    "1.0 Types of Attacks & Defense/1.2 Defense/OSquery.md",
     "1.0 Types of Attacks & Defense/1.2 Defense/SysMon - System Monitor.md",
     "1.0 Types of Attacks & Defense/1.1 Attacks/1.1.1 Types of Attacks.md",
     "0.0 Cyber, Technology and More/Notes/Handy Commands/Windows Commands and Tools.md",
@@ -235,10 +267,6 @@
     "1.0 Types of Attacks & Defense/1.2 Defense/SIEM - Security Information and Events Management (systems).md",
     "5.0 Programming/5.1 Programming Languages/Rust.md",
     "0.0 Cyber, Technology and More/Notes/Handy Commands/Compiling and Debugging.md",
-    "0.0 Cyber, Technology and More/Notes/Course/Week 07/20240805 - Day 030.md",
-    "0.0 Cyber, Technology and More/Cyber, Technology and More.md",
-    "0.0 Cyber, Technology and More/People.md",
-    "0.0 Cyber, Technology and More/Resources.md",
     "99.99 Images Used/Pasted image 20250205132829.png",
     "0.0 Cyber, Technology and More/Notes/Handy Commands",
     "3.0 Software/3.1 Operating Systems/Windows",

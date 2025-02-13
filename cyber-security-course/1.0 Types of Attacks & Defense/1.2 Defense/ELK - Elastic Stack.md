@@ -1,0 +1,65 @@
+https://tryhackme.com/room/investigatingwithelk101
+
+- Elastic stack is the collection of different open source components linked together to help users take the data from any source and in any format and perform a search, analyse and visualize data in real-time.
+	- Elastic Search
+	- Logstash
+	- Beats
+	- Kibana
+- Elastic Search
+	- Full-text search and analytics engine used to store JSON-formatted documents
+	- Supports RESTFul API for data interaction
+- Logstash
+	- Data processing engine used to take the data from different sources, apply a filter on it or normalize it, then send it to the destination which could be Kibana or a listening port
+	- A logstash configuration file is divided into three parts:
+		- Input
+			- Where the user defines the source from which the data is being ingested
+			- Supports various inputs
+			- [https://www.elastic.co/guide/en/logstash/8.1/input-plugins.html](https://www.elastic.co/guide/en/logstash/8.1/input-plugins.html)
+		- Filter
+			- Where the user specifies the filter options to normalize the log ingested above
+			- Supports various filter plugins
+			- [https://www.elastic.co/guide/en/logstash/8.1/filter-plugins.html](https://www.elastic.co/guide/en/logstash/8.1/filter-plugins.html)
+		- Output
+			- Where the user wants the filtered data to be be sent
+			- It can be a listening port, a Kibana interface, an Elasticsearch database
+			- Supports various output plugins
+			- [https://www.elastic.co/guide/en/logstash/8.1/output-plugins.html](https://www.elastic.co/guide/en/logstash/8.1/output-plugins.html)
+- Beats
+	- Beats is a host-based agent known as data-shippers that is used to ship (or transfer) data from the endpoints to elastic search
+	- It's the shipper!
+	- Each beat is a single-purpose agent that sends specific data to the elastic search
+		- Filebeat
+			- For logs and other data
+		- Metricbeat
+			- Metric data
+		- Packetbeat
+			- Network data
+		- Winlogbeat
+			- Windows Event logs
+		- Auditbeat
+			- Audit data
+		- Heartbeat
+			- Uptime monitoring
+		- Functionbeat
+			- Cloud data
+- Kibana
+	- Kibana is a web-based data visualization tool that works with elasticsearch to analyze, investigate and visualize the data stream in real-time. 
+	- Allows users to create multiple visualizations and dashboards for better visibility 
+	- Beats -> Logstash -> Elastic Search <-> Kibana
+
+	- Beats is a set of different data shipping agents used to collect data from multiple agents 
+		- Shipping agents are the Filebeat, Metricbeat, Winlogbeat, Auditbeat, Heartbeat and Functionbeat agents
+	- Logstash collects data from beats, ports or files etc
+		- Parses and normalizes the logs into field value pairs, and then stores them in Elasticsearch
+	- Elasticsearch acts as a database and is used to search and analyze the data
+	- Kibana displays and visualizes data that is stored in elasticsearch
+		- The data stored in elasticsearch can be easily shaped into different visualisations, time charts, infographics etc - with the use of Kibana (elastic search is text-based ;) )
+
+Kibana Query Language (KQL)
+- *Kibana itself is a very interactive and efficient GUI tool to view and analyze logs*
+- KQL is a search query language used to search the ingested logs/documents in the elasticsearch database
+- Kibana alongside KQL also supports Lucene Query Language
+	- Lucene can be enabled by disabling KQL 
+
+- Search Query Tags:
+	- https://www.elastic.co/guide/en/kibana/7.17/kuery-query.html
