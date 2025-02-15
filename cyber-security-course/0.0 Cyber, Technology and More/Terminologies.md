@@ -2,6 +2,8 @@
 	- Forty-two is the ASCII code for the symbol * also known as the asterisk. This symbol is often thought to translate to anything or everything. In this instance, 42 = **everything, the meaning of life**.
 
 *Rationalise/organise these ...*
+- LOLBin - Living Off the Land Binary
+	- Binaries of a non-malicious nature, local to the operating system, that have been utilised and exploited by cyber criminals and crime groups to camouflage their malicious activity. (SecurityHQ.com)
 - CERT NZ (Computer Emergency Response Team)
 - PIP - Preferred Installer Program (heck I thought this was the Python installer program..)
 - IDE - Integrated Development Environment

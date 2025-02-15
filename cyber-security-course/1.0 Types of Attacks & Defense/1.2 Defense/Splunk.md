@@ -60,10 +60,14 @@ Data
 	- Reconnaissance
 		- An attempt to discover and collect information about a target
 	- Weaponization
+		- Malware can be created to avoid detection, and so on
+		- Establish domains similar to the target domain to trick users
+		- Create a C2 (Command and Control) server for the post-exploitation communication/activity and so on
 	- Delivery
 	- Exploitation
 		- Attackers would need to exploit any found vulnerabilities (or selected ones) to gain access to systems
 	- Installation
+		- After a successful exploit, an attacker may attempt to install a backdoor or an application that will gain persistence or to gain further control of the system. 
 	- Command and Control
 	- Actions on Objectives
 
@@ -123,4 +127,7 @@ Data
 		|  table _time src_ip uri http_user_agent creds
 		```
 		- Further to above, we can now specify more columns to display in the table
-	- 
+	- `index="botsv1" 192.168.250.70 ".exe" sourcetype="stream:http"`
+		- Look out for any possible .exe files under the http data/tcp stream
+		- Recall that you can further fine tune selected fields by looking at "`see all`" - you may find a field like `part_filename{}`
+		- 
