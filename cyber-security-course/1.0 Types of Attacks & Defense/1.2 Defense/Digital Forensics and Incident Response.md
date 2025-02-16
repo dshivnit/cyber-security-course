@@ -169,7 +169,7 @@ Tools
 
 ---
 
-Windows Forensics
+Windows Forensics - Registry
 https://tryhackme.com/room/windowsforensics1
 
 - Windows Registry
@@ -437,3 +437,139 @@ https://tryhackme.com/room/windowsforensics1
 		- The GUID seen in this key can be compared with the Disk ID we see on other keys mentioned in device identification to correlate names with unique devices
 
 ---
+
+Windows Forensics - File Systems
+https://tryhackme.com/room/windowsforensics2
+
+- FAT - File Allocation Table
+	- https://en.wikipedia.org/wiki/File_Allocation_Table
+	- Has been the default file system for MS OSes since at least the late 1970s - not the default anymore. 
+	- FAT creates a table that indexes the location of bits that are allocated to different files
+	- Supports these data structures:
+		- Clusters
+			- A basic storage unit for the file system
+			- Each file is stored on a storage device can be considered a group of clusters containing bits of information
+		- Directory
+			- Contains information about file identification (like file name, starting cluster and filename length)
+		- FAT is a linked list of all the clusters
+		- Contains the status of the cluster and the pointer to the next cluster in the chain
+		- The bits that make up a file are stored in clusters
+	- FAT12, FAT16, FAT32
+		- FAT12
+			- Addressable Bits
+				- 12
+			- Max number of clusters
+				- 4,096
+			- Supported size of clusters
+				- 512B - 8KB
+			- Max volume size
+				- 32MB
+		- FAT16
+			- Addressable Bits
+				- 16
+			- Max number of clusters
+				- 65,536
+			- Supported size of clusters
+				- 2KB - 32KB
+			- Max volume size
+				- 2GB
+		- FAT32
+			- Addressable Bits
+				- 28
+			- Max number of clusters
+				- 268,435,456
+			- Supported size of clusters
+				- 4KB - 32KB
+			- Max volume size
+				- 2TB
+	- 4GB file and volume size limitation for both FAT16 and FAT32
+- exFAT
+	- The default for SD cards larger than 32GB
+	- Supports a cluster size of 32MB
+	- Maximum file and volume size of 128PB
+	- Maximum of 2,796,202 files per directory
+- NTFS
+	- New Technology File System (NTFS)
+	- Introduced in 1993 with Windows NT 3.1
+	- Became mainstream with Windows XP
+	- Provides security, reliability and recovery capabilities
+	- Journaling
+		- Keeps a log of changes to the metadata in the volume
+		- Helps the system recover from a crash or data movement due to defragmentation
+		- Log is stored in $LOGFILE in the volume's root directory
+		- NTFS is called the 'journaling file system'
+	- Access Controls
+		- Ability to define an owner of a file/directory and permissions for each user
+	- Volume Shadow Copy
+		- NTFS file systems keep track of changes made to a file using a feature called the Volume Shadow Copies
+		- Previous file versions can be restored for recovery or system restore
+		- Ransomware actors have been noted to delete the shadow copies on a victim's file system to prevent them from recovering their data
+	- ADS - Alternate Data Streams
+		- Allows for files to have multiple streams of data stored in a single file
+		- Browsers use ADS's to identify files downloaded from the Internet (using the ADS Zone Identifier) 
+		- Malware has been noted to hide code in ADS as well
+	- Master File Table (MFT)
+		- A structured database that tracks the objects stored in a volume
+		- Critical files in the MFT:
+			- $MFT
+				- The first record in the volume
+				- the VBR (Volume Boot Record) points to the cluster where it is located
+				- $MFT stores information about the clusters where all other objects present on the volume are located
+				- This file contains a directory of all the files present on the volume
+			- $LOGFILE
+				- Stores the transactional logging of the file system
+				- Helps to maintain the integrity of the file system in the event of a crash
+			- $UsnJrnl
+				- Update Sequence Number (USN) Journal
+				- Present in the $Extend record
+				- Contains information about all the files that were changed in the file system and the reason for the change
+				- Also called the 'Change Journal'
+			- MFT Explorer
+				- Eric Zimmerman's tools to explore MFT files
+				- Available in both CLI and GUI versions
+				- `MFTEcmd.exe`
+				- Parses data from different files created by the NTFS file system, like $MFT, $Boot ...
+				- `MFTECmd.exe -f <path-to-$MFT-file> --csv <save-file-path>`
+				- EZViewer can then be used to view the output given above
+- Recovering Deleted Files
+	- When a file is deleted, the file system deletes the entries that store the file's location on the disk
+	- For the file system, the location where the file existed is now available for writing or unallocated
+	- The file contents, however, are still physically there (providing they haven't been overwritten)
+	- Disk Image File
+		- A file that contains a bit-by-bit copy of a disk drive
+		- Saves all the data in a disk image file, including the metadata, in a single file
+		- When conducting forensics, an analyst will be able to make several copies of the physical evidence, and use them for investigation
+			- The original evidence isn't contaminated
+			- The disk image file can be copied to another disk and analyzed without using any specialised hardware
+	- Autopsy
+		- https://www.autopsy.com/download/
+- Evidence of Execution
+	- Artifacts that provide us evidence of execution
+		- Windows Prefetch Files
+			- When a program is run, it stores its information for future use
+			- This information is used to load the program quickly in case of frequent use
+			- The information is stored in prefetch files which are located in 
+				- `C:\Windows\Prefetch`
+			- File extension of `.pf`
+			- `.pf` files contain the last run times of the application, the number of times the application was run and any files and device handles used by the file
+			- Good source of information about the last executed programs and files
+			- **Prefetch Parser** (PECmd.exe) from Eric Zimmerman can be used
+				- `PECmd.exe -f <path-to-prefetch-files> --csv <path-to-save-output>`
+				- `PECMD.exe -f <path-to-prefetch-directory> --csv <path-to-save-csv>`
+	- Windows 10 Timeline
+		- Win10 stores recently used applications and files in a SQLite db, called the Windows 10 Timeline
+		- Found in
+			- `C:\Users\<username>\AppData\Local\ConnectedDevicesPlatform\{randomfolder}\ActivitiesCache.db`
+		- Can be a source for the last executed programs
+		- **`WxTCmd.exe`** can be used for parsing the Win10 Timeline
+		- Seems to be as though this is a file that is in Win11 as well (haven't tested)
+		- `WxTCmd.exe -f <path-to-timeline-file> --csv <path-to-save-csv>`
+	- Windows Jump Lists
+		- Jump lists help users go directly to their recently used files from the taskbar
+		- Files opened by other applications can be viewed here as well
+		- Stored in
+			- `C:\Users\<username>\AppData\Roaming\Microssoft\Windows\Recent\AutomaticDestinations`
+		- Jumplists include information around the applications executed, first time of execution, and last time of execution of the application against an AppID
+		- **JLECmd.exe** can be used to parse Jump Lists
+		- `JLECmd.exe -f <path-to-Jumplist-file> --csv <path-to-save-csv>`
+		- 
