@@ -41,12 +41,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "0.0 Cyber, Technology and More/Terminologies.md",
+                "file": "1.0 Types of Attacks & Defense/1.2 Defense/Digital Forensics and Incident Response.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Terminologies"
+              "title": "Digital Forensics and Incident Response"
             }
           }
         ],
@@ -107,7 +107,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 340.5
+    "width": 372.5110321044922
   },
   "right": {
     "id": "ef67db9403793248",
@@ -224,8 +224,9 @@
   "active": "14651b8992789aa9",
   "lastOpenFiles": [
     "1.0 Types of Attacks & Defense/1.1 Attacks/Shelling!.md",
-    "1.0 Types of Attacks & Defense/1.2 Defense/Splunk.md",
+    "1.0 Types of Attacks & Defense/1.2 Defense/Digital Forensics and Incident Response.md",
     "0.0 Cyber, Technology and More/Terminologies.md",
+    "1.0 Types of Attacks & Defense/1.2 Defense/Splunk.md",
     "4.0 Networking/Subnetting.md",
     "1.0 Types of Attacks & Defense/1.2 Defense/ELK - Elastic Stack.md",
     "1.0 Types of Attacks & Defense/1.2 Defense/Wazuh.md",
@@ -252,7 +253,6 @@
     "99.99 Images Used/Pasted image 20250207080304.png",
     "1.0 Types of Attacks & Defense/1.2 Defense/SIEM - Security Information and Events Management (systems).md",
     "5.0 Programming/5.1 Programming Languages/Rust.md",
-    "0.0 Cyber, Technology and More/Notes/Handy Commands/Compiling and Debugging.md",
     "99.99 Images Used/Pasted image 20250205132829.png",
     "0.0 Cyber, Technology and More/Notes/Handy Commands",
     "3.0 Software/3.1 Operating Systems/Windows",
