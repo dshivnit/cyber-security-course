@@ -167,6 +167,36 @@ Tools
 	- Open-source, yet powerful
 - FTK Imager
 
+The Incident Response Process
+- The NIST Handling Guide:
+	- https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-61r2.pdf
+	- Preparation
+	- Detection and Analysis
+	- Containment, Eradication, and Recovery
+	- Post-incident Activity
+- SANS Handler's Handbook: (PICERL)
+	- https://www.sans.org/white-papers/33901/
+	- Preparation
+		- Before an incident occurs
+		- Ensuring everyone that would be involved is ready before an event
+		- The right people, processes, and technology to prevent and respond to incidents
+	- Identification
+		- Incident is identified though indicators
+		- Indicators are analysed for False Positives, then documented, and communicated to relevant stakeholders
+	- Containment
+		- Incident/threat is contained
+		- Efforts to minimise incidents effects are carried out
+		- Short and long-term fixes for containment of the threat based on the forensic analysis of the incident that will also be a part of this phase
+	- Eradication
+		- Threat is eradicated from the system/network
+		- A proper forensic analysis must be ensured to be carried out and the threat effectively contained before eradication
+		- If the entry point of the threat actor(s) on to the system is not mitigated, eradicated - then this is no good (lol)
+	- Recovery
+		- Services that had been disrupted are brought back to pre-incident status/conditions
+	- Lessons Learned
+		- A review of the incident is performed
+		- The incident is documented, and steps are taken based on the findings from the incident to ensure that teams are better prepared for a next time should the incident occur again
+
 ---
 
 Windows Forensics - Registry
@@ -572,4 +602,34 @@ https://tryhackme.com/room/windowsforensics2
 		- Jumplists include information around the applications executed, first time of execution, and last time of execution of the application against an AppID
 		- **JLECmd.exe** can be used to parse Jump Lists
 		- `JLECmd.exe -f <path-to-Jumplist-file> --csv <path-to-save-csv>`
-		- 
+- Shortcut Files
+	- There is a shortcut that is created for each file opened either locally or remotely
+		- It contains information about the first and last opened times of the file and the path of the opened file, along with some other data
+	- They can be found here:
+		- `C:\Users\<username>\AppData\Roaming\Microsoft\Windows\Recent`
+		- `C:\Users\<username>\AppData\Roaming\Microsoft\Office\Recent\`
+	- **LECmd.exe** tool can be used to parse Shortcut files
+	- `LECmd.exe -d C:\Users\THM-4n6\Desktop\triage\C\Users\THM-4n6\AppData\Roaming\Microsoft\Windows\Recent --csv ..\shortcuts1`
+- IE/Edge History
+	- The browser's history includes files opened in the system as well
+	- Whether the files were open with the browser, or not
+	- Found in:
+		- `C:\Users\<username>\AppData\Microsoft\Windows\WebCache\WebCacheV*.dat`
+	- The files/folders appear with a `file:///*` prefix
+	- Autopsy can be used to view web-cache data if required (although there are other tools as well)
+- Jump Lists
+	- Jump Lists create a list of the last opened files
+	- This information can be used to identify both the last executed programs and the last opened files in a system
+	- Location:
+		- `C:\Users\<username>\AppData\Roaming\Microsoft\Windows\Recent\AutomaticDestinations`
+- External Devices/USB Device Forensics
+	- When a new device is connected to a system, information related to the setup of said device is stored in a log
+		- `setupapi.dev.log`
+	- Located in:
+		- `C:\Windows\inf\setupapi.dev.log`
+- Shortcut Files
+	- Can also sometimes provide information about connected USB devices
+		- Volume name, type, and serial number
+	- 
+
+---
