@@ -41,12 +41,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "1.0 Types of Attacks & Defense/1.2 Defense/Digital Forensics and Incident Response.md",
+                "file": "1.0 Types of Attacks & Defense/1.2 Defense/DFIR/DFIR - Linux.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Digital Forensics and Incident Response"
+              "title": "DFIR - Linux"
             }
           }
         ],
@@ -223,8 +223,11 @@
   },
   "active": "14651b8992789aa9",
   "lastOpenFiles": [
+    "1.0 Types of Attacks & Defense/1.2 Defense/DFIR/Digital Forensics and Incident Response.md",
+    "1.0 Types of Attacks & Defense/1.2 Defense/DFIR/DFIR - Linux.md",
+    "1.0 Types of Attacks & Defense/1.2 Defense/DFIR/DFIR - Windows.md",
+    "1.0 Types of Attacks & Defense/1.2 Defense/DFIR",
     "1.0 Types of Attacks & Defense/1.1 Attacks/Shelling!.md",
-    "1.0 Types of Attacks & Defense/1.2 Defense/Digital Forensics and Incident Response.md",
     "0.0 Cyber, Technology and More/Terminologies.md",
     "1.0 Types of Attacks & Defense/1.2 Defense/Splunk.md",
     "4.0 Networking/Subnetting.md",
@@ -251,8 +254,6 @@
     "99.99 Images Used/Reddit_csharp_HandlesDef.png",
     "99.99 Images Used/Pasted image 20250207080316.png",
     "99.99 Images Used/Pasted image 20250207080304.png",
-    "1.0 Types of Attacks & Defense/1.2 Defense/SIEM - Security Information and Events Management (systems).md",
-    "5.0 Programming/5.1 Programming Languages/Rust.md",
     "99.99 Images Used/Pasted image 20250205132829.png",
     "0.0 Cyber, Technology and More/Notes/Handy Commands",
     "3.0 Software/3.1 Operating Systems/Windows",
@@ -267,7 +268,6 @@
     "0.0 Cyber, Technology and More/Notes/Course/Week 15",
     "1.0 Types of Attacks & Defense/DevSecOps",
     "0.0 Cyber, Technology and More/Notes/Course/Week 14",
-    "0.0 Cyber, Technology and More/Notes/Course/Week 13",
     "Untitled.canvas",
     "99.99 Images Used/HEX_Table.png",
     "Untitled 1.canvas"
