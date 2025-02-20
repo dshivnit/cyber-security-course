@@ -1067,6 +1067,7 @@ Other Resources
 		- http://www.intel.com/content/dam/www/public/us/en/documents/manuals/64-ia-32-architectures-software-developer-instruction-set-reference-manual-325383.pdf
 
 ---
+[[x86 Architecture]] -- Check this out as well.
 
 x86 Assembly (from TryHackMe's module - https://tryhackme.com/room/x86assemblycrashcourse)
 - Assembly is the lowest level of human-readable language, and also the highest level of language into which binary can be reliably decompiled. 
@@ -1373,3 +1374,31 @@ The Stack
 	- Depending on the calling convention, the arguments are placed on the stack or in the registers in a function call
 	- The function prologue prepares the stack by adjusting the `ebp` and `esp` and pushing the return address on the stack
 	- Similarly, when the function returns, the epilogue restores the stack for the caller function
+
+---
+https://pwn.college/computing-101/hello-hackers/
+
+Writing Output
+- FD 0 - Standard Input
+- FD 1 - Standard Output
+- FD 0 - Standard Error
+
+- If you want to write to Standard Output
+	- Set `rdi` to 1
+- If you want to write to Standard Error
+	- Set `rdi` to 2
+
+- Know that registers don't fit a tonne of data.
+- Solution is to write multiple characters at the same time
+- The `write` system call does this by taking two parameters for the "what":*where* (in memory) to start writing form and a *how many* characters to write
+- These parameters are passed as the second and third parameter to `write`
+- In a C style syntax:
+	- `write(file_descriptor, memory_address, number_of_characters_to_write)`
+- If you wanted to write 10 characters from memory address `1337000` to standard output (FD 1):
+	- `write(1, 1337000, 10);`
+		- Pass the first parameter of a system call into `rdi`
+		- Pass the second parameter via `rsi`
+			- (agreed upon convention in Linux is that `rsi` is used as the second parameter to system calls)
+		- Pass the third parameter via the `rdx` register
+		- The `write` syscall index into `rax` - `1`
+		- 
