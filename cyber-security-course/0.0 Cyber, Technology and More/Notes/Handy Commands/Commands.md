@@ -11,6 +11,9 @@ Covered/covering so far:
 - Bash
 - zh 
 
+Adding to PATH in Linux
+	`export PATH=/path/to/bin:$PATH`
+	
 PowerShell
 - wsl (Windows Subsystem for Linux)
 

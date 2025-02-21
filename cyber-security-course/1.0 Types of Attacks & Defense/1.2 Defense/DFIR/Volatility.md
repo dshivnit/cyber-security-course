@@ -1,0 +1,143 @@
+https://tryhackme.com/room/volatility
+- A free memory forensics tool developed by the Volatility Foundation
+- Written in Python and made up of Python plugins and modules
+- Designed as a plug-and-play solution for analyzing memory dumps
+
+- Linux and Mac files will need the symbol files from Volatility:
+	- [https://github.com/volatilityfoundation/volatility3#symbol-tables](https://github.com/volatilityfoundation/volatility3#symbol-tables)
+
+- Memory Extraction
+	- Some techniques and tools
+		- FTK Imager
+		- Redline
+		- DumpIt.exe
+		- win32dd.exe / win64dd.exe
+		- Memoryze
+		- FastDump
+	- When using an extraction tool on a bare-metal host, it can usually take a considerable amount of time
+		- Take this into account
+	- Most of the tools above will output a .raw file with some exceptions - like Redline that can use its own agent and session structure
+	- For VMs, gathering a memory file can be done by collecting the virtual memory file from the host machine's drive
+	- This file can change depending on the hypervisor used
+	- Some VM files:
+		- VMWare - `.vmem`
+		- Hyper-V - `.bin`
+		- Parallels - `.mem`
+		- VirtualBox - `.sav`
+			- The VBox is only a partial memory file
+	- Exercise caution whenever attempting to extract or move memory from both bare-metal and virtual machines
+
+- Plugins
+	- Previously with the Python2 build, one would need to specify a specific OS profile exact to the OS and build version of the host
+	- Now with Volatility3 - profiles have been scrapped, the tool will automatically identify the host and build of the memory file
+	- With Volatility3 you need to specify the operating system prior to specifying the plugin to be used - ie `windows.info` or `linux.info`
+
+- Identifying Image Information and Profiles
+	- Volatility comes with all existing Windows profiles from WinXP to Win10
+	- Profiles can be hard to determine if you don't know exactly what version and build the machine you extracted a memory dump from was
+	- There is a plugin named `imageinfo` that can assist in clearing this uncertainty
+		- It will take the provided memory dump and assign it a list of the best possible OS profiles
+		- This is only the case with Volatility2 - bear that in mind
+	- There are also plugins:
+		- `windows.info`, `linux.info`, `mac.info` 
+	- Syntax:
+		- `python3 vol.py -f <file> windows.info`
+
+- Listing Processes and Connections
+	- Five different plugins allow one to dump processes and network connections (each with varying techniques used) 
+	- `pslist`
+		- Most basic way to list processes
+		- Will list processes from the doubly-linked list that keeps track of processes in memory
+			- Equivalent to the process list in Task Manager
+		- The output will include all current processes and terminated processes with their exit times
+		- Syntax:
+			- `python3 vol.py -f <file> windows.pslist`
+	- `psscan`
+		- Some malware will attempt to hide their processes and unlink themselves from the list - this is where `psscan` might be able to help
+		- Will attempt to locate processes by finding data structures that match `_EPROCESS`
+		- Bear in mind that this technique can assist with evasion countermeasures, however, it can also result in false positives
+		- Syntax:
+			- `python3 vol.py -f <file> windows.psscan`
+	- `pstree`
+		- Will list all processes based on their parent PID
+		- Uses the same methods as `pslist`
+		- Can be useful to get a full story of the processes and what may have been occurring at the time of extraction
+		- Syntax:
+			- `python3 vol.py -f <file> windows.pstree`
+	- `netstat`
+		- Will attempt to identify all memory structures within a network connection
+		- Syntax:
+			- `python3 vol.py -f <file> windows.netstat`
+		- Currently quite unstable in Volatility3
+		- Other tools like `bulk_extractor` can be used to extract a `.pcap` file from the memory file
+		- In some cases, this is preferred in network connections that you cannot identify from Volatility alone
+			- https://www.kali.org/tools/bulk-extractor/
+	- `dlllist`
+		- Will list all DLLs associated with processes at the time of execution
+		- Can be useful once you've done further analysis and can filter output to a specific DLL that might be an indicator for a malware you believe to be present on the system
+		- Syntax:
+			- `python3 vol.py -f <file> windows.dlllist`
+
+- Volatility Hunting and Detection Capabilities
+	- `malfind`
+		- Will attempt to identify injected processes and their PIDs, along with the offset address, a Hex, ASCII, and Disassembly view of the infected area
+		- It works by scanning the heap and identifying processes that have the executable bit set `RWE` or `RX` and/or no memory-mapped file on disk (file-less malware)
+		- Based on what `malfind` will find, the injected area will change
+		- An MZ header is an indicator of a Windows executable file
+		- The injected area could also be directed towards shellcode which requires further analysis
+		- Syntax
+			- `python3 vol.py -f <file> windows.malfind`
+	- `yarascan`
+		- Volatility offers the capability to compare the memory file against YARA rules
+		- `yarascan` will search for strings, patterns and compound rules against a rule-set
+		- You can either use a YARA file as an argument tor list rules within the command line
+		- Syntax
+			- `python3 vol.py -f <file> windows.yarascan`
+	- There are many more plugins that can be considered a part of Volatility's hunting and detection capabilities
+
+- Advanced Memory Forensics
+	- You will encounter evasion measures that will require an in-depth look at
+		- Drivers
+		- Mutexes
+		- Hooked Functions
+			- SSDT Hooks
+			- IRP Hooks
+			- IAT Hooks
+			- EAT Hooks
+			- Inline Hooks
+	- `ssdt` (Service System Descriptor Table)
+		- Will search for hooking and output its results
+		- There will be hooking that is used by legitimate applications - it's a matter of analyzing what is legit, and what isn't
+		- The Windows kernel looks at the `SSDT` to look up system functions
+		- An adversary can hook into this table and modify pointers to point to a location the rootkit controls
+		- There can be hundreds of table entries
+		- Suggestion would be to use this plugin after investigating the initial compromise and working off it as part of your lead investigation
+		- Syntax
+			- `python3 vol.py -f <file> windows.ssdt`
+	- `modules`
+		- To assist in identifying malicious drivers
+		- `modules` will dump a list of loaded kernel modules - can be useful in identifying active malware
+		- If, however, a malicious file is idle and/or hidden - this plugin may miss it
+		- `modules` is best used once you have further investigated and found potential indicators to use as input for searching and filtering
+		- Syntax
+			- `python3 vol.py -f <file> windows.modules`
+	- `driverscan`
+		- Will scan for drivers present on the system at the time of the extraction
+		- Can help to identify driver files that the `modules` plugin might have missed
+		- Also recommended to have a prior investigation before moving on to using this plugin
+		- Also look at the results from the `modules` plugin first before using `driverscan`
+			- `python3 vol.py -f <file> windows.driverscan`
+	- Other plugins
+		- `modscan`
+		- `driverirp`
+		- `callbacks`
+		- `idt`
+		- `apihooks`
+		- `moddump`
+		- `handles`
+		- Do note that some of these are only available on Volatility2 or are third-party plugins
+
+- **Handy commands**
+	- For finding a User-Agent say for example in an `explorer.exe` process
+		- `vol.py -f <dump> -o /dir/to/store_dump/ windows.memmap.Memmap --pid <suspicious PID> --dump Once the dump is stored use, strings *.dmp | grep -i "user-agent"`
+	- 

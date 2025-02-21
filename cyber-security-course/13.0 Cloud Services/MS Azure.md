@@ -6,4 +6,3 @@
 	- Application Security Group
 - NSG
 	- Network Security Group
-- 
