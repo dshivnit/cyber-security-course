@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "13.0 Cloud Services/MS Azure.md",
+                "file": "1.0 Types of Attacks & Defense/1.2 Defense/Malware Analysis.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "MS Azure"
+              "title": "Malware Analysis"
             }
           },
           {
@@ -223,8 +223,11 @@
   },
   "active": "4c93a795f6b0169d",
   "lastOpenFiles": [
-    "1.0 Types of Attacks & Defense/1.2 Defense/DFIR/Velociraptor.md",
     "1.0 Types of Attacks & Defense/1.1 Attacks/Shelling!.md",
+    "1.0 Types of Attacks & Defense/1.2 Defense/Malware Analysis.md",
+    "1.0 Types of Attacks & Defense/1.2 Defense/DFIR/Redline.md",
+    "13.0 Cloud Services/MS Azure.md",
+    "1.0 Types of Attacks & Defense/1.2 Defense/DFIR/Velociraptor.md",
     "1.0 Types of Attacks & Defense/1.2 Defense/DFIR/KAPE.md",
     "1.0 Types of Attacks & Defense/1.2 Defense/DFIR/Volatility.md",
     "0.0 Cyber, Technology and More/Cyber, Technology and More.md",
@@ -236,7 +239,6 @@
     "0.0 Cyber, Technology and More/Terminologies.md",
     "2.0 Hardware/2.1 Central Processing Units (CPU's)/x86 Architecture.md",
     "5.0 Programming/5.1 Programming Languages/ASM - Assembly Language (and related).md",
-    "1.0 Types of Attacks & Defense/1.2 Defense/DFIR/Redline.md",
     "1.0 Types of Attacks & Defense/1.2 Defense/Splunk.md",
     "1.0 Types of Attacks & Defense/1.2 Defense/DFIR/Autopsy.md",
     "1.0 Types of Attacks & Defense/1.2 Defense/DFIR/DFIR - Windows.md",
@@ -248,8 +250,6 @@
     "1.0 Types of Attacks & Defense/1.2 Defense/Wazuh.md",
     "5.0 Programming/5.1 Programming Languages/Python.md",
     "1.0 Types of Attacks & Defense/1.2 Defense/OSquery.md",
-    "1.0 Types of Attacks & Defense/1.2 Defense/SysMon - System Monitor.md",
-    "1.0 Types of Attacks & Defense/1.1 Attacks/1.1.1 Types of Attacks.md",
     "99.99 Images Used/Hunting_Metasploit_1609814643558.evtx",
     "99.99 Images Used/Reddit_csharp_HandlesDef.png",
     "99.99 Images Used/Pasted image 20250207080316.png",
