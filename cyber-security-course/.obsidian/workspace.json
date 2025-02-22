@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "1.0 Types of Attacks & Defense/1.2 Defense/Malware Analysis.md",
+                "file": "1.0 Types of Attacks & Defense/1.2 Defense/DFIR/DFIR - Windows.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Malware Analysis"
+              "title": "DFIR - Windows"
             }
           },
           {
@@ -82,7 +82,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "hex",
+                "query": "Registry Explorer",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -223,12 +223,15 @@
   },
   "active": "4c93a795f6b0169d",
   "lastOpenFiles": [
-    "1.0 Types of Attacks & Defense/1.1 Attacks/Shelling!.md",
+    "1.0 Types of Attacks & Defense/1.2 Defense/DFIR/Digital Forensics and Incident Response.md",
+    "1.0 Types of Attacks & Defense/1.2 Defense/DFIR/DFIR - Windows.md",
+    "1.0 Types of Attacks & Defense/1.2 Defense/DFIR/KAPE.md",
+    "1.0 Types of Attacks & Defense/1.2 Defense/DFIR/Autopsy.md",
     "1.0 Types of Attacks & Defense/1.2 Defense/Malware Analysis.md",
+    "1.0 Types of Attacks & Defense/1.1 Attacks/Shelling!.md",
     "1.0 Types of Attacks & Defense/1.2 Defense/DFIR/Redline.md",
     "13.0 Cloud Services/MS Azure.md",
     "1.0 Types of Attacks & Defense/1.2 Defense/DFIR/Velociraptor.md",
-    "1.0 Types of Attacks & Defense/1.2 Defense/DFIR/KAPE.md",
     "1.0 Types of Attacks & Defense/1.2 Defense/DFIR/Volatility.md",
     "0.0 Cyber, Technology and More/Cyber, Technology and More.md",
     "0.0 Cyber, Technology and More/Notes/Handy Commands/Commands.md",
@@ -240,10 +243,7 @@
     "2.0 Hardware/2.1 Central Processing Units (CPU's)/x86 Architecture.md",
     "5.0 Programming/5.1 Programming Languages/ASM - Assembly Language (and related).md",
     "1.0 Types of Attacks & Defense/1.2 Defense/Splunk.md",
-    "1.0 Types of Attacks & Defense/1.2 Defense/DFIR/Autopsy.md",
-    "1.0 Types of Attacks & Defense/1.2 Defense/DFIR/DFIR - Windows.md",
     "1.0 Types of Attacks & Defense/1.2 Defense/DFIR/DFIR - Linux.md",
-    "1.0 Types of Attacks & Defense/1.2 Defense/DFIR/Digital Forensics and Incident Response.md",
     "1.0 Types of Attacks & Defense/1.2 Defense/DFIR",
     "4.0 Networking/Subnetting.md",
     "1.0 Types of Attacks & Defense/1.2 Defense/ELK - Elastic Stack.md",

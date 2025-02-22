@@ -429,3 +429,8 @@ https://tryhackme.com/room/windowsforensics2
 - Shortcut Files
 	- Can also sometimes provide information about connected USB devices
 		- Volume name, type, and serial number
+
+- Jlecmd
+	- `jlecmd.exe` is a great tool to be able to find out information about files that were accessed, how many times, the last time etc
+	- https://github.com/EricZimmerman/JLECmd
+	- Keep in mind this is a CLI-based tool :) 
