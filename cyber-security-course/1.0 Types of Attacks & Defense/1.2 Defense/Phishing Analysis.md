@@ -1,0 +1,69 @@
+https://tryhackme.com/room/phishingemails3tryoe
+
+- Information to be collected (on most cases)
+	- Sender's email address
+	- Sender's IP address
+	- Reverse lookup of the sender's IP address
+	- Email subject line
+	- Recipient email address (cc/bcc's)
+	- Reply-to email address (if there is one)
+	- Date/time
+- Artifacts to be collected
+	- Any URL links (un-shortened if shortened)
+	- Name of any attachments
+	- Hash value of any attachments (preferably SHA256)
+
+- Some tools
+	- Google's "MessageHeader"
+		- https://toolbox.googleapps.com/apps/messageheader/analyzeheader
+		- Analyzes SMTP message headers, which help identify the root cause of delivery delays
+		- You can detect misconfigured servers and mail-routing problems
+	- Message Header Analyzer
+		- https://mha.azurewebsites.net/
+	- Mail Header Analysis
+		- https://mailheader.org/
+	- IP Info
+		- https://ipinfo.io/
+	- URL Scan
+		- https://urlscan.io/
+	- URL2PNG
+		- https://www.url2png.com/
+	- Wannabrowser
+		- https://www.wannabrowser.net/
+	- Talos Intelligence Centre
+		- https://talosintelligence.com/reputation
+
+- Email Body Analysis
+	- Links can be manually extracted (either directly from the email itself - 'copy link location', or by going through the raw email header for example)
+	- Or perhaps use a tool
+		- https://www.convertcsv.com/url-extractor.htm
+		- Put the raw email header in
+		- Extract the URLs
+	- CyberChef has a "Extract URLs" tool within it as well
+	- Important to note the root domain for the extracted URLs
+	- Check reputation of found URLs and their root domains (use some of the tools above)
+	- IF there are any attachments - obtain it safely.
+		- Save it, don't open it.
+		- Grab the hash of the acquired attachment and check VirusTotal or similar tools to see if there have been any reports against it
+			- https://talosintelligence.com/talos_file_reputation
+			- virustotal.com
+
+- Malware Sandboxes
+	- Any.run
+		- https://app.any.run/
+	- Hybrid-Analysis
+		- https://www.hybrid-analysis.com/
+	- Joe's Security
+		- https://www.joesecurity.org/
+
+- PhishTool
+	- https://www.phishtool.com/
+	- Combines threat intelligence, OSINT, email metadata and auto-analysis pathways into one phishing response platform.
+	- There is a free-community edition
+	- Upload an email, link your VirusTotal API key and get PhishTool to grab all needed information for analysis from the email
+		- sender/receiver
+		- date/time
+		- subject
+		- IP addresses
+		- URLs
+		- VirusTotal will check the hashes of any attachments and output a report on it via the one interface

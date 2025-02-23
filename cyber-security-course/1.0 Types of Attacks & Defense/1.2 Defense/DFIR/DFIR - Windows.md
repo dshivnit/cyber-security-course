@@ -143,6 +143,7 @@ https://tryhackme.com/room/windowsforensics1
 			- `SOFTWARE\Microsoft\Windows NT\CurrentVersion\NetworkList\Signatures\Managed`
 			- These keys contain past networks as well as the time they were connected
 				- The last write time of the registry keys point to the last time these networks were connected
+		- There is also `NetworkList` in `SOFTWARE\Microsoft\Windows NT\CurrentVersion\NetworkList`
 	- Autostart Programs
 		- These keys include information about programs or commands that run when a user logs on
 			- `NTUSER.DAT\Software\Microsoft\Windows\CurrentVersion\Run`
