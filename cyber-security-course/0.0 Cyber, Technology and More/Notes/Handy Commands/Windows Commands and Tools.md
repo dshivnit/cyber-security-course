@@ -1,3 +1,14 @@
+Powershell
+- Get the PATH Environment
+	- `Get-Childitem Env:\Path | Select-Object *`
+	- `$env:Path`
+	- `$env:Path -split ';'`
+		- Tidier output format
+- Adding to the Path Environment
+	- https://www.techtarget.com/searchitoperations/answer/Manage-the-Windows-PATH-environment-variable-with-PowerShell
+	- Will need to fill in this when I get back to working with PowerShell.
+
+
 
 - Resource Monitor!!
 

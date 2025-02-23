@@ -1,0 +1,10 @@
+- Create an alias
+	- `alias shortname='official command'`
+	- Usage example:
+		- `alias ll='ls -l'`
+		- `ll`
+- List configured aliases
+	- `alias -p`
+- Remove an alias
+	- `unalias <alias-name>`
+- 

