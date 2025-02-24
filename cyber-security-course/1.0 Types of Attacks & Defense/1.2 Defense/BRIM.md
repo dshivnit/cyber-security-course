@@ -28,7 +28,7 @@ https://tryhackme.com/r/room/brim
 Brim vs Wireshark vs Zeek
 - **The things that they don't do:**
 	- Brim:
-		- Sniffing (packet sniffing, not other kinds of sniffing ;) )
+		- Sniffing (packet sniffing)
 		- Packet decoding
 		- Scripting
 		- File Extraction

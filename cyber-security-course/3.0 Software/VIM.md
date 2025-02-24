@@ -1,4 +1,7 @@
 - Jumping to a line
 	- In command mode:
 		- Type the line number you want to go to then press `G` (capital G)
-	- 
+- Find and Replace
+	- Entire file
+		- `:%s/foo/bar/g`
+		- Replace all `foo` with `bar` in the entire file

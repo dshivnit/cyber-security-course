@@ -1,0 +1,30 @@
+- Log Analysis
+	- Sysmon
+	- Firewall
+	- Endpoint Logs
+		- EvtxEcmd (EZ Tool)
+			- CLI tool that can create a CSV output of a SysMon .evtx (eventviewer) file
+		- Timeline Explorer (EZ Tool)
+			- GUI tool
+			- Load CSVs
+		- SysmonView
+			- Export SysMon logs into an XML file via Event Viewer
+			- You can then view correlated events related to a specific process
+		- Event Viewer
+	- Network Logs
+		- Wireshark
+		- Brim
+- Event Correlation
+	- Time/Date(s)
+	- Source / Destination IPs
+	- Source / Destination Ports
+	- Actions Taken
+	- Protocols Used
+	- Process Name(s)
+	- User Account(s)
+	- Machine Name(s)
+- Hashes
+	- Get them for relevant artefacts 
+
+`lnkparse`
+- Good tool to be able to get information from shortcut files that come in as email attachments
