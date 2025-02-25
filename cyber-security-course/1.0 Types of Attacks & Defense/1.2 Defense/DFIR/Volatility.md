@@ -139,5 +139,5 @@ https://tryhackme.com/room/volatility
 
 - **Handy commands**
 	- For finding a User-Agent say for example in an `explorer.exe` process
-		- `vol.py -f <dump> -o /dir/to/store_dump/ windows.memmap.Memmap --pid <suspicious PID> --dump Once the dump is stored use, strings *.dmp | grep -i "user-agent"`
+		- `vol.py -f <dump> -o /dir/to/store_dump/ windows.memmap.Memmap --pid <suspicious PID> --dump` Once the dump is stored use, strings \*.dmp | grep -i "user-agent"
 	- 
