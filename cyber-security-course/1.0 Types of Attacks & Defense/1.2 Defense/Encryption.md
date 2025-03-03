@@ -153,6 +153,7 @@ RSA (Rivest, Shamir, Aldeman)
 		3. Let’s say that the value to encrypt is _x_ = 13, then Alice would calculate and send _y_ = _x__e_ mod _N_ = 13163 mod 31243 = 16342.
 		4. Bob will decrypt the received value by calculating _x_ = _y__d_ mod _N_ = 16341379 mod 31243 = 13.
 		```
+
 - OpenSSL can generate a key pair
 	- `openssl genrsa -out private-key.pem 2048`
 		- Outputting a private key
@@ -166,4 +167,88 @@ RSA (Rivest, Shamir, Aldeman)
 		- `openssl pkeyutl -decrypt -in ciphertext -inkey private-key.pem -out decrypted.txt`
 
 Diffie-Hellman Key Exchange
-- 
+- An asymmetric algorithm
+- Allows for the exchange of a secret over a public channel (consider SSL)
+- Algorithm:
+	- `We will need two mathematical operations: power and modulus. _x__p_, i.e., _x_ raised to the power _p_, is _x_ multiplied by itself _p_ times. Furthermore, _x_ mod _m_, i.e., _x_ modulus _m_, is the remainder of the division of _x_ by _m_.`
+		- 1. `Alice and Bob agree on _q_ and _g_. For this to work, _q_ should be a prime number, and _g_ is a number smaller than _q_ that satisfies certain conditions. (In modular arithmetic, _g_ is a generator.) In this example, we take _q_ = 29 and _g_ = 3.`
+		- 2. `Alice chooses a random number _a_ smaller than _q_. She calculates _A_ = (_g__a_) mod _q_. The number _a_ must be kept a secret; however, _A_ is sent to Bob. Let’s say that Alice picks the number _a_ = 13 and calculates _A_ = 313%29 = 19 and sends it to Bob.`
+		- 3. `Bob picks a random number _b_ smaller than _q_. He calculates _B_ = (_g__b_) mod _q_. Bob must keep _b_ a secret; however, he sends _B_ to Alice. Let’s consider the case where Bob chooses the number _b_ = 15 and calculates _B_ = 315%29 = 26. He proceeds to send it to Alice.`
+		- 4. `Alice receives _B_ and calculates _k__e__y_ = _B__a_ mod _q_. Numeric example _k__e__y_ = 2613 mod 29 = 10.`
+		- 5. `Bob receives _A_ and calculates _k__e__y_ = _A__b_ mod _q_. Numeric example _k__e__y_ = 1915 mod 29 = 10.`
+	- Even though an eavesdropper may have learned the values of `q`, `g`, `A` and `B` - they won't be able to calculate the secret key that Alice and Bob have interchanged - being 10. 
+- Using OpenSSL
+	- `openssl dhparam -in dhparams.pem -text -noout`
+		- Will outline the prime number and generator
+- Albeit that the Diffie-Hellman key exchange allows for parties to agree on a secret over an insecure channel - it is still prone to a MITM attack
+
+Hashing
+- An algorithm that takes data of arbitrary size as its input and returns a fixed size value
+	- Called a message digest or a checksum
+- `sha256sum` will calculate the sha256 hash of a file
+- Written in hexadecimal digits
+- `sha256sum *` - will return sha256 checksums for all files in the current directory
+- The length, regardless of the file size, will always be the same in length
+- Use-cases
+	- Storing passwords
+	- Detecting modifications, integrity of files
+- Some hashing algorithms
+	- SHA224, SHA256, SHA384, SHA512
+	- RIPEMD160
+
+HMAC
+- Hash-based Message Authentication Code (HMAC)
+- Is a MAC (Message Authentication Code) that uses a cryptographic key to a hash function
+- It needs:
+	- A secret key
+	- Inner pad (ipad) a constant string
+	- Outer pad (opad) a constant string
+- Calculating the HMAC follows these steps:
+	- 1. Append zeroes to the key to make it of length B
+		- ie - to make its length match that of the ipad
+	- 2. Using bitwise XOR (exclusive-OR - ⊕), calculate key ⊕ ipad
+	- 3. Append the message to the XOR output from step two
+	- 4. Apply the hash function to the resulting stream of bytes from step three
+	- 5. Using XOR, calculate key ⊕ opad
+	- 6. Append the hash function output from step 4 to the XOR output from step five
+	- 7. Apply the hash function to the resulting stream of bytes in step six to get the HMAC
+		![](https://tryhackme-images.s3.amazonaws.com/user-uploads/5f04259cf9bf5b57aed2c476/room-content/d8b175af1d32a759f66b223efdac8972.png)
+- Calculating HMAC on a Linux machine
+	- `hmac256` (or `sha224hmac`, `sha256hmac`, `sha384hmac`, `sha512hmac`)
+	- The secret key is added after the `--key` switch
+	- `hmac256 1234key message.txt`
+	- `sha256hmac message.txt --key 1234key`
+
+PKI and SSL/TLS
+- Diffie-Hellman allows the exchange of a secret key under the eyes of potential eavesdroppers
+- This key can be used with a symmetric encryption algorithm to ensure confidential communication
+- The key, however, is not immune to MITM attacks
+- Alice would have no way of ensuring that she is communicating with Bob, and vice versa
+- This is where the PKI (Public Key Infrastructure) comes into play
+	- A site or recipients digital certificate will verify their authenticity and identity
+		- So as to be sure that they are truly the ones who are being communicated with
+- Digital Certificates
+	- For a certificate to be signed by a Certificate Authority (CA)
+		- Generate a Certificate Signing Request (CSR)
+			- A certificate is created and a public key is sent with it to be signed by a third party
+		- Send the CSR to a CA
+			- The CA will sign the certificate
+			- There are also self-signed certificate with are insecure in the public realm, however, fit for internal systems
+		- For this to work, the recipient should recognise and trust the CA that signed the certificate 
+- OpenSSL to generate certificates
+	- `openssl req -new -nodes -newkey rsa:4096 -keyout key.pem -out cert.csr`
+		- `req -new` - creates a new certificate signing request
+		- `-nodes` - save private key without a passphrase
+		- `-newkey` - generates a new private key
+		- `rsa:4096` - generate an RSA key with size of 4096 bits
+		- `-keyout` - specify where to save the  key
+		- `-out` - save the CSR
+	- A series of questions will then be prompted go through them
+	- Once the CSR file is ready, it can be sent to a CA of choosing to be signed and ready for use on the respective server
+	- Self-signed
+		- `openssl req -x509 -newkey -nodes rsa:4096 -keyout key.pem -out cert.pem -sha256 -days 365`
+			- `-x509` - indicates we want to generate a self-signed certificate instead of a request
+
+Password Storage
+- Use of hashes, and salts
+
