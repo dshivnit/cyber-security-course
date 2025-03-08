@@ -8,7 +8,7 @@
         "type": "tabs",
         "children": [
           {
-            "id": "fbcf9057f0f2fef5",
+            "id": "7e11f46f46cdcd5c",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -22,63 +22,35 @@
             }
           },
           {
-            "id": "d0847aaae732aedf",
+            "id": "32f295f97df0d145",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "0.0 Cyber, Technology and More/Notes/Handy Commands/Linux Commands.md",
+                "file": "0.0 Cyber, Technology and More/Notes/Courses/Microsoft/AZ-900/Azure Fundamentals - Describe Cloud Concepts.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Linux Commands"
+              "title": "Azure Fundamentals - Describe Cloud Concepts"
             }
           },
           {
-            "id": "4c93a795f6b0169d",
+            "id": "0ccd140bd8e6e86c",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "1.0 Types of Attacks & Defense/1.2 Defense/DFIR/DFIR - Windows.md",
+                "file": "1.0 Types of Attacks & Defense/1.2 Defense/Identity and Access Management.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "DFIR - Windows"
-            }
-          },
-          {
-            "id": "55047f9cd4feff71",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "1.0 Types of Attacks & Defense/1.2 Defense/DFIR/Volatility.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Volatility"
-            }
-          },
-          {
-            "id": "668eaf305163c824",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "1.0 Types of Attacks & Defense/1.2 Defense/Encryption.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Encryption"
+              "title": "Identity and Access Management"
             }
           }
         ],
-        "currentTab": 4
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -249,35 +221,37 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "668eaf305163c824",
+  "active": "0ccd140bd8e6e86c",
   "lastOpenFiles": [
-    "1.0 Types of Attacks & Defense/1.2 Defense/ISO IEC 19249 2017.md",
-    "1.0 Types of Attacks & Defense/1.2 Defense/Encryption.md",
-    "1.0 Types of Attacks & Defense/1.2 Defense/The Security Engineer.md",
-    "1.0 Types of Attacks & Defense/1.1 Attacks/DAD - Disclosure, Alteration, Destruction Denial.md",
-    "0.0 Cyber, Technology and More/Notes/Approaches/Incident Handling Things.md",
-    "1.0 Types of Attacks & Defense/1.2 Defense/DFIR/Volatility.md",
-    "1.0 Types of Attacks & Defense/1.2 Defense/DFIR/DFIR - Windows.md",
-    "1.0 Types of Attacks & Defense/1.2 Defense/DFIR/DFIR - Linux.md",
-    "1.0 Types of Attacks & Defense/1.2 Defense/DFIR/Velociraptor.md",
-    "1.0 Types of Attacks & Defense/1.2 Defense/Phishing Defense/Phishing Prevention.md",
-    "3.0 Software/VIM.md",
     "0.0 Cyber, Technology and More/Notes/Handy Commands/Linux Commands.md",
-    "5.0 Programming/5.1 Programming Languages/Nim.md",
-    "1.0 Types of Attacks & Defense/1.2 Defense/BRIM.md",
-    "0.0 Cyber, Technology and More/Notes/Approaches",
-    "0.0 Cyber, Technology and More/Terminologies.md",
+    "1.0 Types of Attacks & Defense/1.2 Defense/Identity and Access Management.md",
+    "0.0 Cyber, Technology and More/Notes/Courses/Microsoft/AZ-900/Azure Fundamentals - Describe Cloud Concepts.md",
     "1.0 Types of Attacks & Defense/1.1 Attacks/Shelling!.md",
-    "0.0 Cyber, Technology and More/Notes/Handy Commands/REGEX Solutions.md",
-    "0.0 Cyber, Technology and More/Notes/Handy Commands/Handy Links.md",
-    "1.0 Types of Attacks & Defense/1.2 Defense/DFIR/Analyzing Volatile Memory.md",
-    "1.0 Types of Attacks & Defense/1.2 Defense/DFIR/Autopsy.md",
-    "1.0 Types of Attacks & Defense/1.2 Defense/DFIR/Digital Forensics and Incident Response.md",
-    "1.0 Types of Attacks & Defense/1.2 Defense/DFIR/IR Difficulties and Challenges.md",
-    "1.0 Types of Attacks & Defense/1.2 Defense/DFIR/KAPE.md",
-    "1.0 Types of Attacks & Defense/1.2 Defense/DFIR/Redline.md",
+    "0.0 Cyber, Technology and More/Notes/Courses/Microsoft/AZ-900",
+    "0.0 Cyber, Technology and More/Notes/Courses/Microsoft",
+    "0.0 Cyber, Technology and More/Notes/Courses",
+    "0.0 Cyber, Technology and More/Notes/Courses/Security+ SY0-701/Domain 1.md",
+    "0.0 Cyber, Technology and More/Notes/Courses/Security+ SY0-701/Data Protection.md",
+    "0.0 Cyber, Technology and More/Notes/Courses/Security+ SY0-701/Cryptographic Solutions.md",
+    "0.0 Cyber, Technology and More/Notes/Courses/Security+ SY0-701/Risk Management.md",
+    "1.0 Types of Attacks & Defense/1.2 Defense/CIA Triad.md",
+    "1.0 Types of Attacks & Defense/Principles of Security.md",
+    "1.0 Types of Attacks & Defense/1.2 Defense/ELK - Elastic Stack.md",
+    "1.0 Types of Attacks & Defense/1.2 Defense/ISO IEC 19249 2017.md",
+    "0.0 Cyber, Technology and More/Notes/Courses/Security+ SY0-701/Fundamentals of Security.md",
+    "1.0 Types of Attacks & Defense/1.1 Attacks/Wi-Fi Pen.md",
+    "0.0 Cyber, Technology and More/Notes/Approaches/Incident Handling Things.md",
+    "0.0 Cyber, Technology and More/Notes/Miscellaneous/Basic Search Engines (and similar).md",
+    "0.0 Cyber, Technology and More/Notes/Topics to update, expand.md",
+    "0.0 Cyber, Technology and More/Cyber, Technology and More.md",
     "1.0 Types of Attacks & Defense/1.2 Defense/Phishing Defense/Phishing Analysis.md",
-    "4.0 Networking/LANs/LANs.md",
+    "1.0 Types of Attacks & Defense/1.2 Defense/1.2.1 Types of Defense.md",
+    "1.0 Types of Attacks & Defense/1.2 Defense/Incident Response.md",
+    "1.0 Types of Attacks & Defense/1.2 Defense/SysMon - System Monitor.md",
+    "1.0 Types of Attacks & Defense/1.2 Defense/BRIM.md",
+    "1.0 Types of Attacks & Defense/1.2 Defense/Phishing Defense/Phishing Prevention.md",
+    "1.0 Types of Attacks & Defense/1.2 Defense/Encryption.md",
+    "0.0 Cyber, Technology and More/Notes/Approaches",
     "1.0 Types of Attacks & Defense/1.2 Defense/Phishing Defense",
     "1.0 Types of Attacks & Defense/1.2 Defense/DFIR",
     "99.99 Images Used/Hunting_Metasploit_1609814643558.evtx",
@@ -292,10 +266,7 @@
     "99.99 Images Used/Pasted image 20250121193309.png",
     "99.99 Images Used/Pasted image 20250121193520.png",
     "1.0 Types of Attacks & Defense/Frameworks",
-    "4.0 Networking/Routing",
     "99.99 Images Used/Pasted image 20250106071646.png",
-    "0.0 Cyber, Technology and More/Notes/Miscellaneous",
-    "0.0 Cyber, Technology and More/Notes/Course/Week 15",
     "Untitled.canvas",
     "99.99 Images Used/HEX_Table.png",
     "Untitled 1.canvas"

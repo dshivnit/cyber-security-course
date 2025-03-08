@@ -25,3 +25,6 @@ CLI JSON Processor (https://jqlang.org/manual/)
 	- Print some fields out from the entries based upon the field names that you can see from the nice output previously
 - `cat powershell.json-file | jq -s -c 'sort_by(.Timestamp) | .[] | {Field}'`
 - `cat powershell.json | jq -s 'sort_by(.Timestamp) | .[]' | grep -e 'sq3.exe' -e 'cd ' -C 5`
+
+- `hping3`
+
