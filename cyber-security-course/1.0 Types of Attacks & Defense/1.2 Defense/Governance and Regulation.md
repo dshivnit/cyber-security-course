@@ -123,4 +123,99 @@ Making an Incident Response Procedure
 - Organisations only sometimes need to make a standard, framework, or baselines; instead, they follow and use already made documents related to their field or discipline, as the financial sector may follow PCI-DSS and GLBA, healthcare may follow HIPPA and so on
 - There are numerous factors from which a decision is made as to which standard framework of baseline checklist should be used - these include regulatory requirements primarily related to the particular geographical areas, scope, objectives, available resources, and more.
 
+Governance Risk and Compliance (GRC)
+- The GRC framework focuses on steering the organisation's overall governance, enterprise risk management, and compliance in an integrated manner. 
+- It's a holistic approach to information security that aligns with the organisation's goals and objectives and helps to ensure that the organisation operates within the boundaries of relevant regulations and industry standards. 
+- It has the three following components:
+	- Governance Component:
+		- Guiding an organisation by setting its direction through information security strategy, which includes policies, standards, baselines, frameworks (and so on) along with establishing appropriate monitoring methods to measure its performance and assess the outcomes
+	- Risk Management Component:
+		- Identifying, assessing, and prioritising risks to the organisation and implementing controls and mitigation strategies to manage those risks effectively. Includes monitoring and reporting on risks and continuously evaluating and refining the risk management program to ensure its ongoing effectiveness
+	- Compliance Component
+		- Ensuring that the organisation meets its legal, regulatory, and industry obligations and that its activities align with its policies and procedures. This includes developing and implementing compliance programs, conducting regular audits, and assessments, and reporting on compliance issues to stakeholders
 
+Generic Guidelines on Developing a GRC Program:
+- A well developed and implemented GRC program for cyber security provides an integrated framework for managing risks, complying with regulations and standards, and improving the overall security perspective of an organisation. 
+- Define the scope and objectives
+	- Determining the scope of the GRC program and defining its goals
+	- A company can implement a GRC program for its customer data management system for example
+		- The objective might be to reduce cyber risks to 50% in the next 12 months while maintaining a trust of its customers
+- Conduct a risk assessment
+	- The organisation identifies and assesses its cyber risks. 
+	- A risk assessment might reveal that the customer data management system is vulnerable to external attacks due to weak access controls or outdated software for example
+		- The organisation can then prioritize these risks and develop a risk management strategy
+- Develop policies and procedures
+	- Developed to guide cyber security practices within the organisation
+	- The company might establish a password policy to ensure the usage of strong passwords
+	- They might also implement logging and monitoring system access procedures to detect suspicious activity
+- Establish governance processes
+	- Ensure that the GRC program is effectively managed and controlled
+	- The organisation might establish a security steering committee that meets regularly to review security risks and make decisions about security investments and priorities
+	- Roles and responsibilities are defined to ensure everyone understands their role in the program
+- Implement controls
+	- Technical and non-technical controls are implemented to mitigate risks identified in the risk assessment
+	- The company might implement firewalls, IPSes, IDSes, and SIEMs to prevent external attacks and impart employee training to improve security awareness and reduce the risk of human error
+- Monitor and measure performance
+	- Processes are established to monitor and measure the effectiveness of the GRC program 
+	- The organisation can track metrics and compliance with security policies for example
+		- This information is used to identify areas for improvement and adjust the program as needed
+- Continuously improve
+	- The GRC program is constantly reviewed and improved based on performance metrics, changing risk profiles, and stakeholder feedback.
+	- Suppose that the organise experiences a security incident
+		- It might conduct a post-incident analysis to identify the root cause and make changes to prevent a similar incident from happening again.
+
+NIST 800-53
+https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-53r5.pdf
+- Security and Privacy Controls for Information Systems and Organisations
+- This article provides a catalogue of security controls to protect the CIA triad of information systems and serves as a framework for organisations to assess and enhance the security and privacy of their information systems and comply with various laws, regulations, and policies
+- Offers a comprehensive set of security and privacy controls that organisations can use to safeguard their operations, assets, personnel, and other organisations from various threats and risks - which can be intentional attacks, unintentional errors, natural disasters, infrastructure failures, foreign intelligence activity, and privacy concerns
+	![](https://tryhackme-images.s3.amazonaws.com/user-uploads/62a7685ca6e7ce005d3f3afe/room-content/2d3a7efe843b31609b11e53cbc1e2719.png)
+
+![](https://tryhackme-images.s3.amazonaws.com/user-uploads/62a7685ca6e7ce005d3f3afe/room-content/43092cc2b85ee7ce4395ce6d7afd842f.png)
+
+![](https://tryhackme-images.s3.amazonaws.com/user-uploads/62a7685ca6e7ce005d3f3afe/room-content/8b7e0ab2ab4f7b72b59e6489cb893063.png)
+
+NIST 800-63B
+- A set of guidelines created by the NIST to help organisations establish effective digital identity practices
+- Primary focus is on authenticating and verifying the identities of individuals who access digital services, systems and networks
+- Provides recommendations for different levels of identity assurance, ranging from basic to high assurance. 
+- Offers advice on authentication factors, including passwords, biometrics, and tokens, and securely managing and storing user credentials
+
+Information Security Management and Compliance
+- Strategic planning, execution, and continuous administration of security measures
+- Protects information assets from unauthorised access, use, disclosure, interruption, alteration, and destruction
+- Involves risk assessment and identification, security controls and procedures development, incident response planning, and security awareness training
+- Observing information security-related legal, regulatory, contractual, and industry-specific standards
+
+ISO/IEC 27001
+- Internationally recognised standard for requirements to plan, develop, run, and update an organisation's Information Security Management System (ISMS)
+- The official documents are paid for. Developed by the ISO and the IEC
+- Has these components:
+	- Scope - specifies the boundaries, including covered assets and processes
+	- Information security policy - a high-level document defining an organisation's information security approach
+	- Risk treatment - Selecting and implementing controls to reduce the identified risks to an acceptable level
+	- Statement of Applicability (SoA) - specifies controls from the standard which are applicable and the one's that are not
+	- Internal audit - Involves conducting periodic audits of the ISMS to ensure that it is operating effectively 
+	- Management review - review the performance of ISMS at regular levels
+- An ISMS built on the ISO 27001 standard requires careful design and execution
+- Entails exhaustively evaluating the organisations security procedures, detecting gaps, and conducting a thorough risk assessment 
+- Leadership support and resource allocation are also essential for the ISMS to be implemented successfully 
+- Regular monitoring, measurement, and continual development are crucial to guarantee the efficacy and continued alignment of the ISMS with the organisation's objectives
+
+Service Organisation Control 2 (SOC2)
+- Developed by the American Institute of Certified Public Accountants (AICPA) as a compliance/auditing framework
+- Focuses on assessing the efficacy of a company's data security based on the CIA triad
+- Can reassure customers, stakeholders, and business partners that the company has put sufficient controls in place to safeguard its systems, data, and sensitive information
+- Essential for service providers interacting with client data or offering solutions that process, store, or transmit sensitive data
+- Assists businesses in demonstrating their dedication to upholding strict privacy and security standards
+- Customers frequently ask for SOC 2 reports or use them as a competitive advantage to guarantee clients that their information will be handled securely
+
+- SOC2 is an auditing standard that evaluates the usefulness of a service organisation's controls related to confidentiality, availability, integrity, and privacy
+- Independent auditors conduct SOC2 audits to determine that security controls meet the relevant criteria
+- SOC2 reports provide valuable information to customers, stakeholders, and regulators on a service organisation's security and privacy practices
+	- They can be used to demonstrate that the service organisation has adequate controls to protect the data and systems it uses to process customers' information 
+	- Example - a cloud computing company providing infrastructure services to other businesses may undergo a SOC2 audit to demonstrate its adequate controls to protect customer data stored on its servers
+	- The audit may cover physical security, network security, data encryption, backup and recovery and employee training awareness
+	- The SOC2 audit report will assess the controls in place at the cloud computing company and include any findings and/or recommendations for improvement
+	- The information can be shared with customers and other stakeholders to ensure the company takes appropriate measures to protect its data and systems
+- 
