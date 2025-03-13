@@ -41,12 +41,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "1.0 Types of Attacks & Defense/1.2 Defense/Governance and Regulation.md",
+                "file": "1.0 Types of Attacks & Defense/1.2 Defense/Threat Emulation.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Governance and Regulation"
+              "title": "Threat Emulation"
             }
           }
         ],
@@ -223,6 +223,8 @@
   },
   "active": "0ccd140bd8e6e86c",
   "lastOpenFiles": [
+    "1.0 Types of Attacks & Defense/1.2 Defense/Threat Modelling.md",
+    "1.0 Types of Attacks & Defense/1.2 Defense/Threat Emulation.md",
     "1.0 Types of Attacks & Defense/1.1 Attacks/Shelling!.md",
     "1.0 Types of Attacks & Defense/1.2 Defense/Governance and Regulation.md",
     "1.0 Types of Attacks & Defense/1.2 Defense/Identity and Access Management.md",
@@ -250,8 +252,6 @@
     "1.0 Types of Attacks & Defense/1.2 Defense/Incident Response.md",
     "1.0 Types of Attacks & Defense/1.2 Defense/SysMon - System Monitor.md",
     "1.0 Types of Attacks & Defense/1.2 Defense/BRIM.md",
-    "1.0 Types of Attacks & Defense/1.2 Defense/Phishing Defense/Phishing Prevention.md",
-    "1.0 Types of Attacks & Defense/1.2 Defense/Encryption.md",
     "0.0 Cyber, Technology and More/Notes/Approaches",
     "1.0 Types of Attacks & Defense/1.2 Defense/Phishing Defense",
     "1.0 Types of Attacks & Defense/1.2 Defense/DFIR",
