@@ -49,3 +49,137 @@ Emulation vs Simulation
 - Threat Simulation
 	- Exercise of representing adversary functions through predefined and automated attack patterns
 
+Threat Emulation Methodologies
+- Strategies, plans and procedures used to simulate and test network defences and systems against adversaries. There are various methodologies, each with their own unique approach and level of technicality - but all share the goal of discovering weaknesses in security
+- It is essential to know that no adversary is alike - however they would follow a methodology and have their own workflows
+- MITRE ATT&CK
+	- An industry-known knowledge base that provides information about known adversarial TTPs observed in actual attacks and breaches
+	- Threat emulation teams can extract many benefits from integrating ATT&CK with their engagements as it would make it efficient when writing reports and mitigations related to the behaviours experimented with
+	- The framework visually represents attackers' techniques to accomplish a specific objective
+	- It showcases 14 tactics, from reconnaissance to impact and within each tactic, several adversary techniques are listed and describe the activity carried out
+	- An extension to the matrix is the Navigator, a web-based tool for exploring ATT&CK matrices by creating colour-coded heatmap layers of techniques and sub-techniques used by a particular adversary
+- Atomic Testing
+	- https://github.com/redcanaryco/atomic-red-team
+	- A library of emulation tests developed and curated by Red Canary that can be executed to test security defences within an organisation
+	- The testing framework provides a mechanism for learning what malicious activities look like and provide telemetry from every test to facilitate defence improvements
+	- The tests are mapped to the ATT&CK framework, providing a pivot between threat profiles and emulation
+	- Supports emulation on a wide range of platforms, not only on known OSes but also in Cloud Environments
+- TIBER-EU Framework
+	- https://www.ecb.europa.eu/paym/cyber-resilience/tiber-eu/html/index.en.html
+	- Threat Intelligence-based Ethical Red Teaming
+	- European framework developed to deliver controlled, bespoke, intelligence-led emulation testing on entities and organisations' critical live production systems
+	- It is meant to provide a guideline for stakeholders to test and improve cyber resilience through controlled adversary actions
+	- Follows a three-phase process for end-to-end adversary testing
+		- 1. Preparation Phase
+			- Security teams involved in the test are established
+			- Entity's management determines and approves the scope
+			- Represents the formal launch of adversarial testing by ensuring all the planning and procurement processes are fulfilled
+		- 2. Testing Phase
+			- Threat Intelligence team will prepare a detailed report to showcase the threat areas for the organisation and set up the necessary attack scenarios based on interested adversarial behaviour
+			- Meanwhile, the Red Team will use this report to craft the emulation tests against the systems, people and processes that underpin critical functions
+			- The Blue Team will look for the attacks and assess how their defence systems perform against them
+			- This ultimately forms the aspect of collaboration between the various security teams
+		- 3. Closure Phase
+			- Once tests are run and defences measured, the emulation team must consider reporting and remediation measures
+			- Each group will draft their analysis reports, including details of the tests conducted, findings and recommendations for technical controls, policies, procedures and awareness training
+		![](https://tryhackme-images.s3.amazonaws.com/user-uploads/5fc2847e1bbebc03aa89fbf2/room-content/b41e0b64b78018f1cfefa93fbf4aefc7.png)
+- CTID Adversary Emulation Library
+	- Centre for Threat Informed Defense 
+		- Non-profit research and development organisation operated by MITRE Engenuity
+		- Mission focus is to promote the practice of threat-informed defence
+	- Adversary Emulation Plan Library
+		- https://github.com/center-for-threat-informed-defense/adversary_emulation_library
+		- Allows organisations to use the plans to evaluate their capabilities against real-world threats
+		- This library provides users with two approaches to their emulation
+			- Full Emulation
+				- Comprehensive approach to emulating a particular adversary
+
+Threat Emulation Process
+- Defining Emulation Objectives
+	- Objectives should be clearly defined, specific and measurable
+	- ie identify how an attacker could gain access to sensitive data on a particular server, how quickly? etc
+- Research Adversary TTPs
+	- This stem aims to accurately model the behaviour of the target adversary so that the emulation team can conduct the exercise realistically and practically
+	- Involves gathering as much information about the threat and identifying behaviours that can be tested based on the set environment
+	- Information Gathering
+		- Gathering information about threats the emulation team might be concerned about
+		- So if we're looking to emulate financial fraud attacks for example, we'd want to filter down APTs that are focused with targeting financial fraud as opposed to ones that are focused on other industries/actions
+		- Information can be gathered from threat intelligence reports, previous attacks, and publicly available information
+		- Note that as a threat emulation engineer, you would need to start with internal sources, such as network owners, CTI analysts, the cyber defence team and system administrators
+			- These groups will provide information about threats they have seen or heard about and characterise threats based on threat intelligence reports and insights from prior incidents
+	- Select the Emulated Adversary
+		- With a shortlist of adversaries that we could potentially emulate, we need to narrow down to one that we will.
+		- Relevance
+			- Align the adversary to be selected to the engagement objectives and the company's goals
+			- May even include looking at the geographical relevance of particular APTs
+		- Available CTI
+			- Threat intelligence is vital for providing trustworthy information about a threat
+			- You need enough reliable resources around the TTPs that would be used
+		- TTP Complexity
+			- Executing a fruitful emulation plan for complex adversaries who use sophisticated tools and procedures may take a long time
+			- Establishing whether existing tools can handle the emulation or whether custom ones are required
+		- Available Resources
+			- Primarily in-house resources that will have to be provisioned for smooth operation
+			- Budget, time and personnel must be allocated appropriately during the emulation process
+	- Select the Emulated TTPs
+		- This step aims to accurately model the behaviour of the target adversary so that the exercise can be conducted realistically and practically
+		- The TTPs selected will drive the rules of engagement, implementation and operations flow of the emulation
+		- We must understand the TTPs to prioritise our selection
+		- TTPs can be visualised using the ATT&CK Navigator and looking at the specific behaviours the threat group is known to use
+		- Pivoting to CTI resources, such as the ones listed within ATT&CK descriptions would provide information about how the original TTP was executed
+		- This will then be followed by creating a scenario outline for the selected TTP, with appropriate context and sources to fulfill its emulation
+	- Construct the TTP outline
+		- The outline aims to drive follow-up threat emulation activities, such as explaining the planned emulation activities, stating the scope and rules of engagement and how the TTPs will be implemented during the exercise
+		- It is crucial to gather new information and update emulations as ATPs and threat groups/actors change their TTPs over time
+	- Planning the Threat Emulation Engagement
+		- Things to consider when planning would be potential issues that could arise, such as the disclosure of private data, data loss, and unplanned system downtime for example
+		- Planning emulation activities through defining the rules of engagement for the exercise, including communication and approvals, is vital to avert these risks
+		- Planning also involves determining the resources needed for the activity, such as personnel, time and equipment
+		- Threat Emulation Plans
+			- A collection of resources used to organise and set a step-by-step execution of instructions for adversary behaviours based on a particular set of TTPs
+			- A well defined plan will contain the elements of the threat emulation process as well as the following components:
+				- Engagement Objectives
+					- Defined at the beginning of the process to understand the need for threat emulation
+				- Scope
+					- The departments, users and devices upon which emulation activities are permitted should be defined explicitly
+				- Schedule
+					- Dates and times when the activities should occur and when deliverables are due should be defined
+					- Helps to avoid conflicts between emulation activities and legitimate business operations
+				- Rules of Engagement
+					- Acceptable adversary behaviour to be emulated must be planned and discussed
+					- Also includes mitigation actions for any high-risk TTPs used during the exercise
+				- Permission to Execute
+					- Explicit written consent to conduct the emulation activities must be provided by sufficient authority from the organisation
+					- Helps to avoid acting out independently and risking legal or criminal problems
+				- Communication Plan
+					- Emulation team and organisation stakeholders must have a plan to communicate information concerning the emulation activities
+					- You need to define the timings, communication channels, and any collaboration efforts to be included
+	- Conducting the Emulation
+		- This step involves carrying out the attack using the TTPs identified in the research phase
+		- Requires skilled professionals who can accurately replicate the tactics and techniques of the target adversary 
+		- The exercise should be conducted in a controllable manner and safely, and any issues should be addressed immediately
+		- Planning the Deployment
+			- We can use ATT&CK to understand TTPs and map them out using the ATT&CK Navigator
+			- This would be combined with CTI resources on the focused APT group
+			- Lab environment needed should be set up and security teams should know their responsibilities
+	- Implementation of TTP
+		- The deployment of actual TTPs
+		- Say for example the creation and obfuscation of an Initial Access payload by using an RTF document - delivered through a spear phishing email
+			- Can be convincing using DOCX and RTF files with malicious Windows Shortcut Files (.lnk) embedded within it
+			- Such as in the case for APT FIN7
+			- https://github.com/center-for-threat-informed-defense/adversary_emulation_library/tree/master/fin7/Emulation_Plan/Scenario_1#step-1---initial-breach-evaluations-step-11
+	- Detections and Mitigations
+		- The defence team must find ways to detect and mitigate against emulated TTPs
+		- Depending on the organisation setup, the SOC would use standard security tools to collect, correlate and analyst TTP behaviour and logs for detection
+		- MITRE provides a list of mitigation efforts for the adversarial TTPs, and this can be provided as recommendations and implemented as part of the emulation
+	- Observe Results
+		- The observing team (the Blue Team) must identify artefacts that point to the emulation activity
+		- This will be through the analysis of logs, evaluation of event logs, and tracking of networking traffic
+		- Detection rules can also be vital to detect the threat (depending on what TTPs are being used)
+		- YARA rules for example
+		- The output of these results would help to understand if the TTP was successful at its mission, blocked, or detected by security measures if they are available
+	- Document and Report Findings
+		- Once results have been obtained, teams must document and report findings
+		- Documentation provides empirical evidence to demonstrate the cyber security effectiveness of the process
+		- Reporting should cover the exercise procedures, as outlined in the emulation plan and what was executed, the impact faced and recommendations that would be offered to avert the threat
+		- 
