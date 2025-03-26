@@ -39,4 +39,95 @@ High-level Process of Threat Modelling
 	- An example of a simple measurement of success is tracking the identified risks that have been effectively mitigated or eliminated
 
 Collaboration with Different Teams
-- 
+- The process above involves many tasks, so it will be important to have multiple teams collaborating together
+- Each unit will offer valuable skills and expertise, helping improve the organisation's security posture
+- By collaborating, organisations can effectively address and align the security efforts needed to build a better defence. 
+- Some teams perhaps could be:
+	- Security Team
+		- Overarching team of red and blue teams
+		- This team will typically lead the threat modelling process, providing expertise on threats, vulnerabilities, and risk mitigation strategies
+		- They also ensure security measures are implemented, validated, and continuously monitored
+	- Development Team
+		- Responsible for building secure systems and applications
+		- Their involvement ensures that security is always incorporated throughout the development lifecycle
+	- IT and Operations Team
+		- IT and Operations manage the organisation's infrastructure
+		- Including networks, servers, and other critical systems
+		- Their knowledge of network infrastructure, system configurations, and application integrations is essential for effective threat modelling
+	- Governance, Risk and Compliance Team
+		- The GRC Team is responsible for organisation-wide compliance assessments based on industry regulations and internal policies
+		- They collaborate with the security team to align threat modelling with the organisation's risk management objectives
+	- Business Stakeholders
+		- Provide valuable input on the organisation's critical assets, business processes, and risk tolerance
+		- Their involvement ensures that the efforts align with the organisation's strategic goals
+	- End Users
+		- As direct users of a system or application, end users can provide unique insights and perspectives that other teams may not have 
+		- Enabling the identification of vulnerabilities and risks specific to user interactions and behaviours
+
+Attack Trees
+- Creating an attack tree is another good way to identify and map threats
+- A graphical representation used in threat modelling to systematically describe and analyse potential threats against a system, application or infrastructure. 
+- Provides a structured, hierarchical approach to breaking down attack scenarios into smaller components
+	![](https://tryhackme-images.s3.amazonaws.com/user-uploads/5dbea226085ab6182a2ee0f7/room-content/ab10d8571dca42dfcab63c952c436413.png)
+	- The root node in this example outlines the attackers primary goal - being to gain unauthorised access to sensitive data.
+	- Then you have the different high-level strategies an attacker might do to achieve that goal
+	- Then each of those strategies is further broken down detailing specific techniques that the attacker might choose to employ
+	- Attack paths may be seen which will depict the possible routes, or sequence of vulnerabilities that a threat actor can exploit to achieve their goal 
+	- Attack paths are pretty much chains of vulnerabilities that are interconnected
+
+MITRE ATT&CK Navigator
+- https://mitre-attack.github.io/attack-navigator/
+- Great framework for threat modelling as you can filter down various components to fit the modelling's requirements
+
+DREAD Framework
+- A risk assessment model developed by Microsoft to evaluate and prioritise security threats and vulnerabilities
+- Damage
+	- The potential harm that could result from the successful exploitation of a vulnerability
+	- Includes data loss, system downtime, reputational damage 
+- Reproducibility
+	- The ease with which an attacker can successfully recreate the exploitation of a vulnerability
+	- A higher reproducibility score suggests that the vulnerability is straightforward to abuse, posing a greater risk
+- Exploitability
+	- The difficulty level involved in exploiting the vulnerability considering factors such as technical skills required, availability of tools or exploits, and the amount of time it would take to exploit the vulnerability successfully
+- Affected Users
+	- The number or portion of users impacted once the vulnerability has been exploited
+- Discoverability
+	- The ease with which an attacker can find and identify the vulnerability considering whether it is publicly known or how difficult it is to discover based on the exposure of the assets (publicly reachable, or in a regulated environment)
+
+- Damage - How bad would an attack be?
+- Reproducibility - How easy is it to reproduce the attack?
+- Exploitability - How much work is it to launch the attack?
+- Affected Users - How many people will be impacted? 
+- Discoverability - How easy is it to discover the vulnerability?
+
+- The DREAD Framework is an opinion-based model that heavily relies on an analyst's interpretation and assessment
+- However, the reliability of this framework can still be improved by following some guidelines
+	- 1. Establish a standardised set of guidelines and definitions for each DREAD category that provides a consistent understanding of how to rate vulnerabilities
+		- This can be supported by providing examples and scenarios to illustrate how scores should be assigned under various circumstances
+	- 2. Encourage collaboration and discussion among multiple teams. Constructive feedback from different members aids in justifying the assigned scores, which can lead to a more accurate assessment
+	- 3. Use the DREAD framework with other risk-assessment methodologies and regularly review and update the chosen methods and techniques to ensure they remain relevant and aligned with the organisation's needs
+
+- The DREAD framework is mainly used for Qualitative Risk Analysis - rating each category from one to ten based on a subjective assessment and interpretation of the questions above
+
+STRIDE Framework
+- Threat modelling methodology also developed by Microsoft - which helps identify and categorise potential security threats in software development and system design
+
+- Spoofing
+	- Unauthorised access or impersonation of a user or system 
+	- Policy violated - Authentication
+- Tampering
+	- Unauthorised modification or manipulation of data or code
+	- Policy violated - Integrity
+- Repudiation
+	- Ability to deny having acted, typically due to insufficient auditing or logging
+	- Policy violated - Non-repudiation
+- Information Disclosure
+	- Unauthorised access to sensitive information, such as personal or financial data
+	- Policy violated - Confidentiality
+- Denial of Service
+	- Disruption of the system's availability, preventing legitimate users from accessing it
+	- Policy violated - Availability 
+- Elevation of Privilege
+	- Unauthorised elevation of access privileges, allowing threat actors to perform unintended actions
+	- Policy violated - Authorisation
+
